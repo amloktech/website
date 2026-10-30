@@ -1,0 +1,113 @@
+/* Editorial photography shares the typography and signal language of the product graphics. Surface corners follow rounded-system.css. */
+.home-risk-gaps {
+  padding-block:48px;
+  background:var(--canvas);
+  color:var(--ink);
+  scroll-margin-top:calc(var(--home-header-offset,106px) - 100px);
+}
+.home-risk-gaps-inner {
+  width:var(--site-content-width);
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(32px,4.5vw,64px);
+  align-items:stretch;
+}
+.home-risk-gaps-content { min-width:0; align-self:center; }
+.home-risk-gaps-consumer { margin-top:clamp(64px,7vw,112px); scroll-margin-top:calc(var(--home-header-offset,106px) - 84px); }
+.home-risk-gaps-consumer .home-risk-gaps-photo>img { object-position:62% center; }
+/* Place the caption over the open architecture, above the family. */
+.home-risk-gaps-consumer .home-risk-gaps-photo-note { top:40px; bottom:auto; }
+.home-risk-gaps-eyebrow,.home-platform-eyebrow { display:flex; align-items:center; gap:12px; margin:0 0 24px; color:var(--blue); font:500 var(--text-label)/1.5 var(--font-mono); letter-spacing:.12em; }
+.home-risk-gaps-eyebrow i,.home-platform-eyebrow i { width:7px; height:7px; flex:none; border-radius:var(--radius-signal); background:var(--blue-secondary); box-shadow:0 0 0 5px var(--blue-soft); }
+.home-platform-eyebrow { justify-content:center; }
+.home-page .home-platform-intro h2 { margin-top:0; }
+.home-risk-gaps-content h2 { margin:0; font-size:var(--text-section-heading); font-weight:600; letter-spacing:-.04em; line-height:var(--leading-heading); }
+.home-risk-gaps-intro { max-width:54ch; margin:var(--space-heading-body) 0 32px; color:var(--muted); font-size:var(--text-section-description); line-height:var(--leading-body); }
+.home-risk-gaps-accordion { border-top:1px solid var(--line); }
+.home-risk-gap { border-bottom:1px solid var(--line); }
+.home-risk-gap h3 { margin:0; }
+.home-risk-gap button { width:100%; display:grid; grid-template-columns:112px minmax(0,1fr) 20px; align-items:center; gap:16px; padding:20px 0; border:0; background:transparent; text-align:left; cursor:pointer; color:var(--ink); }
+.home-risk-gap button:hover .home-risk-gap-label strong { color:var(--blue); }
+.home-risk-gap-stat { color:var(--blue); font-size:clamp(28px,2.6vw,38px); font-weight:500; line-height:1; letter-spacing:-.045em; font-variant-numeric:tabular-nums; }
+.home-risk-gap-label { display:grid; gap:4px; }
+.home-risk-gap-label strong { font-size:20px; font-weight:600; letter-spacing:-.025em; line-height:1.2; }
+.home-risk-gap-label>span { color:var(--muted); font-size:13px; font-weight:400; line-height:1.4; }
+.home-risk-gap button>svg { color:var(--blue); transition:transform var(--motion-base) var(--ease-out); }
+.home-risk-gap[data-open="true"] button>svg { transform:rotate(45deg); }
+.home-risk-gap-panel { padding:0 0 20px 128px; }
+.home-risk-gap-panel p { margin:0 0 12px; color:var(--muted); font-size:14px; line-height:1.6; }
+.home-risk-gap-panel a { display:inline-flex; align-items:center; gap:6px; min-height:24px; color:var(--blue); font-size:12px; line-height:1.5; text-decoration:underline; text-underline-offset:3px; }
+.home-risk-gap-panel a svg { flex:none; }
+.home-risk-gaps-figure { margin:0; display:flex; flex-direction:column; min-width:0; }
+.home-risk-gaps-photo { position:relative; flex:1; min-height:550px; overflow:hidden; background:var(--surface); border-radius:var(--radius-media); }
+.home-risk-gaps-photo>img { object-fit:cover; object-position:center 70%; }
+.home-risk-gaps-photo-frame { position:absolute; inset:24px; pointer-events:none; }
+.home-risk-gaps-photo-frame>span { position:absolute; width:20px; height:20px; border-color:var(--on-brand); border-style:solid; opacity:.7; }
+.home-risk-gaps-photo-frame>span:nth-child(1) { top:0; left:0; border-width:1px 0 0 1px; }
+.home-risk-gaps-photo-frame>span:nth-child(2) { top:0; right:0; border-width:1px 1px 0 0; }
+.home-risk-gaps-photo-frame>span:nth-child(3) { bottom:0; left:0; border-width:0 0 1px 1px; }
+.home-risk-gaps-photo-frame>span:nth-child(4) { bottom:0; right:0; border-width:0 1px 1px 0; }
+.home-risk-gaps-photo-note { position:absolute; right:40px; bottom:40px; left:40px; padding:24px; color:var(--on-brand); background:var(--gradient-hero); }
+.home-risk-gaps-photo-note-label { display:flex; align-items:center; gap:12px; font:500 10px/1.5 var(--font-mono); letter-spacing:.12em; }
+.home-risk-gaps-photo-note-label svg { width:24px; height:24px; flex:none; }
+.home-risk-gaps-photo-note p { margin:18px 0 20px; font-size:clamp(24px,2.35vw,34px); font-weight:500; line-height:1.15; letter-spacing:-.035em; }
+.home-risk-gaps-signal { display:flex; align-items:center; width:100%; }
+.home-risk-gaps-signal i { display:block; width:6px; height:6px; flex:none; border:1px solid var(--on-brand-muted); }
+.home-risk-gaps-signal i:last-child { background:var(--on-brand); }
+.home-risk-gaps-signal span { height:1px; flex:1; background:var(--on-brand-line); }
+.home-risk-gaps-figure figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 16px; padding-top:12px; color:var(--muted); font-size:10px; line-height:1.5; }
+.home-risk-gaps-figure figcaption a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
+.home-risk-gaps-sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px; clip:rect(0,0,0,0); overflow:hidden; white-space:nowrap; border:0; }
+@media(min-width:1200px) and (max-height:820px) {
+  .home-risk-gaps { padding-block:20px; }
+  .home-risk-gaps-eyebrow,.home-platform-eyebrow { margin-bottom:16px; }
+  .home-risk-gaps-intro { margin-top:16px; margin-bottom:24px; }
+  .home-risk-gap button { padding-block:12px; }
+  .home-risk-gap-panel { padding-bottom:16px; }
+  .home-risk-gaps-photo { min-height:480px; }
+  .home-risk-gaps-consumer .home-risk-gap button { padding-block:8px; }
+  .home-risk-gaps-consumer .home-risk-gap-panel { padding-left:0; padding-bottom:12px; }
+}
+@media(min-width:1200px) and (max-height:760px) {
+  .home-risk-gaps { padding-block:14px; }
+  .home-risk-gaps-eyebrow,.home-platform-eyebrow { margin-bottom:12px; }
+  .home-risk-gaps-intro { margin-bottom:16px; font-size:16px; }
+  .home-risk-gap button { padding-block:8px; }
+  .home-risk-gap-panel { padding-bottom:12px; }
+}
+@media(min-width:761px) and (max-width:1100px) {
+  .home-risk-gaps { padding-block:32px; }
+  .home-risk-gaps-intro { margin-top:16px; margin-bottom:24px; }
+  .home-risk-gaps-content h2 { font-size:clamp(32px,4vw,44px); }
+  .home-risk-gap button { grid-template-columns:90px minmax(0,1fr) 20px; gap:12px; }
+  .home-risk-gap-panel { padding-left:0; }
+  .home-risk-gap-label strong { font-size:18px; }
+  .home-risk-gaps-photo-note { left:24px; right:24px; bottom:24px; padding:20px; }
+  .home-risk-gaps-consumer .home-risk-gaps-photo-note { top:24px; }
+  .home-risk-gaps-photo-frame { inset:12px; }
+}
+@media(max-width:760px) {
+  .home-platform-eyebrow { justify-content:flex-start; }
+  .home-risk-gaps { padding-block:48px; }
+  .home-risk-gaps-inner { grid-template-columns:1fr; gap:32px; }
+  .home-risk-gaps-consumer .home-risk-gaps-content { grid-row:1; }
+  .home-risk-gap button { grid-template-columns:88px minmax(0,1fr) 20px; gap:12px; padding-block:18px; }
+  .home-risk-gap-label strong { font-size:18px; }
+  .home-risk-gap-panel { padding-left:0; }
+  .home-risk-gap-panel p { font-size:16px; }
+  .home-risk-gaps-photo { min-height:0; aspect-ratio:4 / 5; }
+  .home-risk-gaps-photo>img { object-position:center bottom; }
+  .home-risk-gaps-photo-frame { inset:16px; }
+  .home-risk-gaps-photo-note { left:28px; right:28px; bottom:28px; padding:20px; }
+  .home-risk-gaps-consumer .home-risk-gaps-photo-note { top:28px; }
+  .home-risk-gaps-photo-note p { font-size:26px; }
+}
+@media(max-width:360px) {
+  .home-risk-gap button { grid-template-columns:76px minmax(0,1fr) 20px; gap:8px; }
+  .home-risk-gap-stat { font-size:26px; }
+  .home-risk-gaps-photo-note { left:20px; right:20px; bottom:20px; padding:16px; }
+  .home-risk-gaps-consumer .home-risk-gaps-photo-note { top:20px; }
+  .home-risk-gaps-photo-note p { font-size:24px; }
+}
+@media(prefers-reduced-motion:reduce) { .home-risk-gap button>svg { transition:none; } }

@@ -1,0 +1,132 @@
+/* AMLOK 2.0: rounded presentation surfaces; illustration internals retain their geometry.
+   This layer follows the existing layout and artwork styles. No universal radius reset. */
+
+/* The brand guide is the reference implementation of the shared tokens. */
+.ds-system .ds-topbar { border-color:var(--border-subtle); box-shadow:var(--shadow-navigation); }
+.ds-system .ds-sidebar { border-color:var(--border-subtle); }
+.ds-system .ds-sidebar nav a { border-radius:var(--radius-sm); border-left-color:transparent; }
+.ds-system .ds-sidebar nav a[aria-current] { box-shadow:var(--edge-inset); }
+.ds-system .ds-download { border-radius:var(--radius-control); }
+.ds-system :is(.ds-icon-button,.ds-toast button) { border-radius:var(--radius-pill); }
+.ds-system .ds-icon-button { border-color:var(--border-default); }
+.ds-system :is(.ds-button,.ds-search,.ds-form>input,.ds-form select,.ds-form textarea) { border-radius:var(--radius-control); }
+.ds-system .ds-button { box-shadow:var(--shadow-button); transition:background-color var(--motion-fast),border-color var(--motion-fast),box-shadow var(--motion-base); }
+.ds-system .ds-button-quiet { box-shadow:none; }
+.ds-system :is(.ds-button-pill,.ds-overview-copy>.ds-button,.ds-asset-downloads>.ds-button,.ds-implementation-actions>.ds-button,.ds-layout-controls button) { border-radius:var(--radius-pill); }
+.ds-system .ds-checkbox input { border-radius:var(--radius-xs); }
+.ds-system :is(.ds-radio-group input,.ds-radio-group input:checked::after,.ds-switch,.ds-switch::before,.ds-switch>span) { border-radius:var(--radius-pill); }
+.ds-system :is(.ds-status,.ds-skeleton) { border-radius:var(--radius-sm); }
+.ds-system :is(.ds-product-graphics,.ds-spacing-scale,.ds-panel,.ds-swatch,.ds-type-specimen,.ds-layout-facts,.ds-layout-diagram,.ds-layout-preview,.ds-motif-grid>article,.ds-icon-strip,.ds-chart-specimen,.ds-graphics-library,.ds-profile-logo) { border-radius:var(--radius-card); border-color:var(--border-default); }
+.ds-system :is(.ds-logo-grid,.ds-workspace,.ds-ai-example,.ds-motion-stage) { border-radius:var(--radius-panel); border-color:var(--border-default); }
+.ds-system :is(.ds-logo-grid,.ds-swatch,.ds-ai-example,.ds-profile-logo) { overflow:hidden; }
+.ds-system :is(.ds-radar,.ds-field-sample,.ds-media-placeholder,.ds-campaign,.ds-graphics-stage) { border-radius:var(--radius-media); }
+.ds-system .ds-motion-stage>.ds-radar { border-radius:var(--radius-panel) 0 0 var(--radius-panel); }
+.ds-system .ds-workspace-bar { border-radius:var(--radius-panel) var(--radius-panel) 0 0; border-color:var(--border-subtle); }
+.ds-system .ds-ai-example aside { border-color:var(--border-subtle); }
+.ds-system .ds-ai-flow>span { border-radius:var(--radius-inner); border-color:var(--border-default); }
+.ds-system :is(.ds-ai-sources>span,.ds-tabs button,.ds-layout-model-row>span) { border-radius:var(--radius-sm); }
+.ds-system .ds-tabs { padding-top:8px; gap:4px; border-color:var(--border-subtle); }
+.ds-system .ds-tabs button { border-radius:var(--radius-sm) var(--radius-sm) 0 0; }
+.ds-system .ds-tabs button[aria-selected="true"] { background:var(--blue-soft); }
+.ds-system .ds-callout { border-left:0; border-radius:var(--radius-inner); box-shadow:var(--edge-inset); }
+.ds-system .ds-spec-scroll { border-radius:var(--radius-inner); }
+.ds-system :is(.ds-token-groups,.ds-token-groups details) { border:0; }
+.ds-system .ds-token-groups { display:grid; gap:12px; }
+.ds-system .ds-token-groups details { border-radius:var(--radius-inner); box-shadow:var(--edge-inset); background:var(--surface-raised); }
+.ds-system .ds-token-groups summary { border-radius:var(--radius-inner); }
+.ds-system .ds-token-groups details[open] summary { border-bottom:1px solid var(--border-subtle); }
+.ds-system .ds-toast { border:0; border-radius:var(--radius-overlay); box-shadow:var(--shadow-overlay); }
+.ds-system .ds-dialog { border:0; border-radius:var(--radius-panel); box-shadow:var(--edge-inset),var(--shadow-overlay); }
+.ds-system .ds-dialog::backdrop { background:color-mix(in srgb,var(--ink) 38%,transparent); }
+.ds-system :is(.ds-gradient-option,.ds-gradient-preview) { border-radius:var(--radius-card); border-color:var(--border-default); }
+.ds-system .ds-gradient-option { overflow:hidden; }
+.ds-system .ds-gradient-stage { border-radius:var(--radius-media); overflow:hidden; }
+.ds-system .ds-graphics-tabs { gap:8px; padding:16px 20px; }
+.ds-system .ds-graphics-tabs button { border-radius:var(--radius-pill); border-bottom-width:1px; }
+.ds-system .ds-graphics-tabs button[aria-selected="true"] { border-color:transparent; box-shadow:var(--edge-inset); }
+.ds-system .ds-gradient-color>span { border-radius:var(--radius-pill); }
+.ds-system .ds-illustration-families>button { border-radius:var(--radius-inner); border-color:var(--border-default); overflow:hidden; }
+.ds-system .ds-illustration-families>button[aria-pressed="true"] { border-color:var(--blue-secondary); }
+.ds-system .ds-illustration-selected>.product-illustration { border-radius:var(--radius-media); overflow:hidden; }
+.ds-system .ds-layout-model-header>span { border-radius:var(--radius-pill); }
+.ds-system .ds-swatch { transition:box-shadow var(--motion-base),border-color var(--motion-fast); }
+.ds-system .ds-swatch:hover { border-color:var(--line-strong); box-shadow:var(--shadow-raised); }
+
+/* Radius hierarchy and surface samples. The examples use the tokens they document. */
+.ds-radius-board,.ds-elevation-board { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.ds-radius-board>article { display:flex; flex-direction:column; align-items:flex-start; gap:24px; padding:24px; background:var(--surface); border-radius:var(--radius-card); min-width:0; }
+.ds-radius-board>article>p,.ds-elevation-board p { color:var(--muted); font-size:14px; line-height:1.6; }
+.ds-radius-board>article>p { margin-top:auto; }
+.ds-radius-control { display:flex; align-items:center; gap:10px; min-height:44px; padding:12px 16px; border:1px solid var(--line-strong); border-radius:var(--radius-control); background:var(--canvas); color:var(--ink); font-size:13px; width:100%; }
+.ds-radius-control svg { flex-shrink:0; color:var(--blue); }
+.ds-radius-control svg:last-child { margin-left:auto; }
+.ds-radius-card { display:flex; flex-direction:column; gap:16px; padding:24px; width:100%; background:var(--surface-raised); border-radius:var(--radius-card); box-shadow:var(--edge-inset),var(--shadow-raised); }
+.ds-radius-card .ds-meta { font-size:9px; letter-spacing:.08em; }
+.ds-radius-card strong { font-size:22px; line-height:1.2; letter-spacing:-.025em; font-weight:600; }
+.ds-radius-card>span:last-child { font-size:13px; color:var(--muted); }
+.ds-radius-chip { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:var(--radius-pill); background:var(--blue-soft); color:var(--blue); font-size:12px; }
+.ds-elevation-board { padding:32px 0; }
+.ds-elevation-board>article { min-width:0; padding:28px; border-radius:var(--radius-card); background:var(--surface-raised); }
+.ds-elevation-board h3 { font-size:22px; letter-spacing:-.025em; margin:24px 0 16px; line-height:1.25; }
+.ds-elevation-board code { display:block; color:var(--muted); font-size:11px; line-height:1.6; margin-top:24px; overflow-wrap:anywhere; }
+.ds-elevation-flat { box-shadow:var(--edge-inset); }
+.ds-elevation-raised { box-shadow:var(--edge-inset),var(--shadow-raised); }
+.ds-elevation-overlay { box-shadow:var(--edge-inset),var(--shadow-overlay); }
+@media(max-width:1100px) {
+ .ds-radius-board,.ds-elevation-board { grid-template-columns:1fr; }
+ .ds-radius-board>article { padding:28px; }
+ .ds-radius-control,.ds-radius-card { max-width:360px; }
+}
+@media(max-width:700px) {
+ .ds-system .ds-motion-stage>.ds-radar { border-radius:var(--radius-panel) var(--radius-panel) 0 0; }
+}
+
+/* Homepage navigation and actions. */
+.home-page :is(.home-site-cta,.home-header-cta,.home-hero-button,.home-platform-signup,.home-risk-operations-copy a) { border-radius:var(--radius-pill); box-shadow:var(--shadow-button); transition:background-color var(--motion-fast),border-color var(--motion-fast),box-shadow var(--motion-base); }
+.home-page :is(.home-site-cta,.home-hero-button,.home-platform-signup,.home-risk-operations-copy a):hover { box-shadow:var(--shadow-raised); }
+.home-page :is(.home-search-button,.language-trigger,.home-use-cases-controls button) { border-radius:var(--radius-pill); }
+.home-page .home-header.is-scrolled .home-header-cta { box-shadow:var(--shadow-button); }
+.home-page .home-header.is-scrolled { box-shadow:var(--shadow-navigation); border-bottom-color:var(--border-subtle); }
+.home-page .home-kicker { border-radius:var(--radius-pill); }
+.home-page :is(.home-search-field,.home-search-results,.language-popover) { border-radius:var(--radius-overlay); border-color:transparent; box-shadow:var(--edge-inset),var(--shadow-overlay); }
+.home-page :is(.language-option,.home-search-result) { border-radius:var(--radius-sm); }
+.home-page .home-search-field kbd { border-radius:var(--radius-xs); }
+.home-page .home-search-field:focus-within { outline:2px solid var(--focus); outline-offset:3px; }
+.home-page .home-hero-video { border-radius:var(--radius-panel); border-color:transparent; box-shadow:var(--edge-inset),var(--shadow-raised); }
+.home-page .home-hero-video-play { border-radius:var(--radius-pill); border-color:var(--border-default); box-shadow:var(--shadow-button); }
+.home-page .home-hero-video-label { border-radius:var(--radius-pill); }
+
+/* Marketing cards and media. Layout, image crops, and internal illustrations are unchanged. */
+.home-page .home-risk-operations-card { border-radius:var(--radius-panel); }
+.home-page :is(.home-capability-media,.home-products-art,.home-products-layer-detail-image,.home-loan-scale-art,.home-risk-gaps-photo,.workflow-photo-stage) { border-radius:var(--radius-media); }
+.home-page .home-products-group { border-radius:var(--radius-card); border-color:var(--border-default); }
+.home-page .home-products-group.is-active { border-color:var(--border-default); box-shadow:var(--shadow-raised); }
+.home-page .home-products-group-label>span { border-radius:var(--radius-control); border-color:var(--border-subtle); }
+.home-page .home-products-group-phase { border-radius:var(--radius-pill); border-color:var(--border-default); }
+.home-page .home-products-item { border-radius:var(--radius-inner); transition:background-color var(--motion-fast),border-color var(--motion-fast); }
+.home-page .home-products-item.is-active { border:1px solid color-mix(in srgb,var(--blue-secondary) 22%,var(--canvas)); box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--blue-secondary) 4%,transparent); }
+.home-page .home-products-item:hover { background:var(--blue-soft); }
+.home-page .home-risk-gap button { border-radius:var(--radius-sm); transition:background-color var(--motion-fast); }
+.home-page .home-risk-gap button:hover { background:color-mix(in srgb,var(--blue-soft) 35%,transparent); }
+.home-page .home-loan-scale-slide-select { border-radius:var(--radius-sm); }
+.home-page .home-features-card { border-radius:var(--radius-card); border-color:var(--border-default); transition:border-color var(--motion-fast); }
+.home-page .home-features-card:hover { border-color:var(--line-strong); }
+.home-page .home-features-media { border-radius:var(--radius-inner); }
+.home-page .home-use-case { border-radius:var(--radius-card); border-color:var(--border-default); }
+.home-page .home-use-cases-controls button { border-color:var(--border-default); }
+.home-page .home-use-cases-sector-set>span { border-radius:var(--radius-pill); border-color:var(--border-default); }
+
+/* Research tools and cards retain their blue field and semantic inverse colors. */
+.home-page .home-case-studies-toolbar { border-radius:var(--radius-panel); }
+.home-page .home-case-studies-categories button { border-radius:var(--radius-pill); }
+.home-page .home-case-studies-search { border-radius:var(--radius-control); }
+.home-page .home-case-studies-grid { border-radius:var(--radius-panel); }
+.home-page .home-case-study-card { border-radius:var(--radius-overlay); }
+.home-page .home-case-study-signal { border-radius:var(--radius-pill); }
+.home-page .home-case-studies-categories button:focus-visible { outline-color:var(--on-brand); }
+
+/* Surface interactions must respect the same preference as the existing artwork. */
+@media(prefers-reduced-motion:reduce) {
+ .ds-system :is(.ds-button,.ds-swatch),
+ .home-page :is(.home-site-cta,.home-hero-button,.home-platform-signup,.home-risk-operations-copy a,.home-products-item,.home-risk-gap button,.home-features-card) { transition:none; }
+}

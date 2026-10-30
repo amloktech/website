@@ -1,0 +1,119 @@
+Didit UI design-token reference
+Source: https://github.com/didit-protocol/diditui
+Reference commit: 13402adce565cc8017e78095dc6b432d429d4254 (v1.3.4)
+The UI library palette and documented component patterns are adapted from this project.
+
+MIT License
+
+Copyright (c) 2024 Khalid Eddib
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Didit marketing website
+Visual reference only: https://didit.me/ and https://didit.me/brand
+Reviewed 2026-10-07. No website source, Didit logos, customer marks, or marketing
+claims are incorporated into the Amlok website. The provisional Amlok symbol
+and local component implementations are original to this project.
+
+Inter Variable and JetBrains Mono Variable
+Distributed via @fontsource-variable packages under the SIL Open Font License.
+Their licenses are included in the installed packages.
+
+Lucide React icons
+ISC License, included in the installed lucide-react package.
+
+Coffee-shop stock photograph
+Asset: public/images/small-business-coffee-shop.avif
+Photographer: Long Chung (@chungj07)
+Source: https://unsplash.com/photos/barista-working-behind-a-coffee-counter-H7PLuaYW6UQ
+License: Unsplash License — https://unsplash.com/license
+Downloaded 2026-10-21. Used as an illustrative business photograph, not as a
+customer testimonial or a claim about the pictured business. The blue caption
+and corner brackets are separate AMLOK interface elements.
+
+Cool-toned cafe stock photograph (previous risk-gap option)
+Asset: public/images/small-business-cafe-cool.avif
+Photographer: XIAN TING (@jumeirah998)
+Source: https://unsplash.com/photos/baristas-prepare-coffee-at-a-cafe-counter-OJmDa2GGsnk
+License: Unsplash License — https://unsplash.com/license
+Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
+a statement about the pictured business. The square AMLOK overlay is a separate
+interface element. Replaces the warm coffee-shop photograph in this section.
+
+Overhead barista stock photograph (current risk-gap section)
+Asset: public/images/small-business-barista.avif
+Photographer: Lee Campbell (@leecampbell)
+Source: https://unsplash.com/photos/man-wearing-blue-shirt-pouring-coffee-in-his-cup-31QfYo1h32o
+License: Unsplash License — https://unsplash.com/license
+Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
+a statement about the pictured business. The square AMLOK overlay is a separate
+interface element, placed over the foreground to keep the barista at work visible.
+
+Graduation stock photograph (previous consumer risk-gap option)
+Asset: public/images/consumer-graduation.avif
+Photographer: Eduardo Fan (@eduardofanrg)
+Source: https://unsplash.com/photos/a-person-in-a-blue-graduation-gown-holding-a-book-XejjbocR3ZA
+License: Unsplash License — https://unsplash.com/license
+Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
+a claim about the pictured person's finances. The square AMLOK overlay and
+corner brackets are separate interface elements.
+
+Family at home stock photograph (current consumer risk-gap extension)
+Asset: public/images/consumer-family-home.avif
+Photographer: Jennifer Kalenberg (@jkalen71)
+Source: https://unsplash.com/photos/a-couple-of-people-that-are-sitting-in-front-of-a-house-6mHNgUK1hDk
+License: Unsplash License — https://unsplash.com/license
+Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
+a statement about the family's finances or housing tenure. The AMLOK caption
+is a separate interface element, placed above the family to keep them visible.
+
+Product workflow photography (desktop)
+All five photographs below are used under the Unsplash License:
+https://unsplash.com/license
+Downloaded 2026-10-21. Illustrative photography, not customer testimonials,
+endorsements, or claims about the pictured people or businesses. All evidence,
+assessment, monitoring, servicing, and investigation graphics are separate
+AMLOK interface elements showing fictional workflow examples. The photographs
+are displayed with a cool, restrained color treatment in CSS.
+
+Verification / ceramic studio
+Asset: public/images/workflow-verify-studio.avif
+Photographer: Mina Rad (@miinrad)
+Source: https://unsplash.com/photos/a-woman-sitting-at-a-table-in-front-of-a-window-lz_zy3NEyDI
+
+Underwriting / architectural planning
+Asset: public/images/workflow-underwrite-planning.avif
+Photographer: Pedro Miranda (@mirandanef)
+Source: https://unsplash.com/photos/people-reviewing-architectural-blueprints-on-desk-3QzMBrvCeyQ
+
+Monitoring / warehouse colleagues
+Asset: public/images/workflow-monitor-warehouse.avif
+Photographer: Centre for Ageing Better (@ageing_better)
+Source: https://unsplash.com/photos/women-walking-through-warehouse-aisle-ZlOlRnWk8zU
+This image is offered under a dual license; this use follows the Unsplash License.
+
+Servicing / florist at work
+Asset: public/images/workflow-service-florist.avif
+Photographer: Waldemar Brandt (@waldemarbrandt67w)
+Source: https://unsplash.com/photos/woman-wearing-gray-cardigan-holding-flower-bouquet-q3RGXuBc_SU
+
+Investigation / professional reviewing records
+Asset: public/images/workflow-investigate-review.avif
+Photographer: Anastassia Anufrieva (@antoie)
+Source: https://unsplash.com/photos/a-woman-sitting-at-a-table-reading-a-paper-ecHGTPfjNfA

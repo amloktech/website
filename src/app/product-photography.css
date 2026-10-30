@@ -1,0 +1,107 @@
+/* Desktop product stories: real work, portrait crops, and independent AMLOK evidence graphics. */
+@media (min-width:901px) {
+  .home-page .home-products-layout {
+    /* Size the portrait independently so enlarging it never stretches the cards. */
+    --workflow-photo-width:min(calc((var(--site-content-width) - 48px) / 2),calc((100svh - var(--home-header-offset,106px) - 76px) * .8));
+    --workflow-card-height:min(600px,calc((var(--site-content-width) - 48px) * .625 + 25px),calc(100svh - var(--home-header-offset,106px) - 51px));
+  }
+  .home-page .home-products-group { min-height:var(--workflow-card-height); }
+  .home-page .home-products-sticky-art {
+    top:calc(var(--home-header-offset,106px) + 20px);
+    height:auto;
+    min-height:0;
+  }
+  .workflow-photography {
+    width:min(100%,var(--workflow-photo-width));
+    margin:0 auto;
+    color:var(--ink);
+  }
+  .workflow-photo-stage { position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--blue-soft); container-type:inline-size; }
+  .workflow-photo-image { object-fit:cover; opacity:0; transition:opacity 400ms ease; filter:saturate(.66) brightness(1.05); }
+  .workflow-photo-image.is-visible { opacity:1; }
+  .workflow-photo-image--verification { object-position:43% center; }
+  .workflow-photo-image--underwriting { object-position:center; }
+  .workflow-photo-image--monitoring { object-position:43% center; }
+  .workflow-photo-image--servicing { object-position:54% center; }
+  .workflow-photo-image--investigation { object-position:56% center; }
+  .workflow-photo-wash { position:absolute; inset:0; background:linear-gradient(150deg,color-mix(in srgb,var(--blue-soft) 18%,transparent),color-mix(in srgb,var(--blue-secondary) 8%,transparent)); pointer-events:none; }
+  .workflow-photo-corners { position:absolute; inset:16px; pointer-events:none; }
+  .workflow-photo-corners i { position:absolute; width:16px; height:16px; border-color:var(--on-brand); border-style:solid; opacity:.8; }
+  .workflow-photo-corners i:nth-child(1) { top:0; left:0; border-width:1px 0 0 1px; }
+  .workflow-photo-corners i:nth-child(2) { top:0; right:0; border-width:1px 1px 0 0; }
+  .workflow-photo-corners i:nth-child(3) { bottom:0; left:0; border-width:0 0 1px 1px; }
+  .workflow-photo-corners i:nth-child(4) { bottom:0; right:0; border-width:0 1px 1px 0; }
+  .workflow-photography figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:3px 12px; padding-top:10px; color:var(--muted); font-size:10px; line-height:1.5; }
+  .workflow-photography figcaption a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
+  .workflow-photo-overlay { position:absolute; z-index:2; box-shadow:0 8px 28px color-mix(in srgb,var(--ink) 12%,transparent); }
+  .workflow-photo-label { display:flex; align-items:center; gap:8px; font:500 clamp(8px,1.8cqw,10px)/1.4 var(--font-mono); letter-spacing:.11em; text-transform:uppercase; }
+  .workflow-photo-label svg { flex:none; width:19px; height:19px; }
+  .workflow-photo-overlay strong { font-size:clamp(17px,3.8cqw,23px); font-weight:500; line-height:1.2; letter-spacing:-.035em; }
+  .workflow-photo-result { display:flex; align-items:center; gap:8px; color:var(--blue); font-size:clamp(10px,2.2cqw,12px); }
+  .workflow-photo-result svg { flex:none; }
+  .workflow-photo-example { margin-left:auto; color:var(--muted); font:400 8px/1.4 var(--font-mono); text-transform:uppercase; letter-spacing:.08em; }
+
+  /* The studio portrait stays open below this compact evidence chain. */
+  .workflow-identity { top:28px; right:28px; width:54%; padding:14px 14px 12px; background:var(--canvas); border-top:3px solid var(--blue-secondary); }
+  .workflow-identity .workflow-photo-label { color:var(--blue); }
+  .workflow-identity-chain { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:14px 0; }
+  .workflow-identity-chain>span { display:grid; justify-items:center; gap:6px; flex:1; color:var(--muted); }
+  .workflow-identity-chain>span>svg { width:24px; height:24px; padding:6px; box-sizing:content-box; border:1px solid var(--line); background:var(--surface); color:var(--blue); }
+  .workflow-identity-chain>span.is-selected>svg { background:var(--gradient-hero); border-color:var(--blue); color:var(--on-brand); }
+  .workflow-identity-chain small { font-size:clamp(8px,1.9cqw,10px); }
+  .workflow-identity-chain>i { position:relative; flex:1; height:1px; background:var(--line); margin-bottom:21px; }
+  .workflow-identity-chain>i svg { position:absolute; width:13px; height:13px; top:-6px; left:calc(50% - 6px); color:var(--blue-secondary); background:var(--canvas); }
+  .workflow-identity .workflow-photo-result { padding-top:10px; border-top:1px solid var(--line); }
+
+  /* A paper-like assessment sits in the foreground, below the working hands. */
+  .workflow-assessment { bottom:28px; left:28px; width:calc(100% - 80px); max-width:360px; background:var(--canvas); }
+  .workflow-assessment::before { position:absolute; z-index:-1; content:''; inset:-8px 8px 8px -8px; border:1px solid var(--on-brand-line); background:color-mix(in srgb,var(--canvas) 82%,transparent); }
+  .workflow-assessment-sheet { display:grid; gap:12px; padding:18px 20px; background:var(--gradient-hero); color:var(--on-brand); }
+  .workflow-assessment-sheet>span { font-size:11px; color:var(--on-brand-muted); }
+  .workflow-assessment-evidence { display:flex; flex-wrap:wrap; gap:10px 18px; padding:15px 20px; }
+  .workflow-assessment-evidence>span { display:flex; gap:7px; align-items:center; font-size:11px; }
+  .workflow-assessment-evidence svg { color:var(--blue); flex:none; }
+  .workflow-assessment-footer { display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--line); margin:0 20px; padding:10px 0; color:var(--muted); font-size:10px; }
+
+  /* A time rail leaves both warehouse colleagues and their tools unobstructed. */
+  .workflow-monitor { bottom:28px; left:28px; right:28px; padding:18px 20px 14px; color:var(--on-brand); background:var(--gradient-hero); }
+  .workflow-monitor-title { display:flex; align-items:center; gap:9px; margin:14px 0 20px; }
+  .workflow-monitor-title>svg { flex:none; }
+  .workflow-monitor-title strong { font-size:clamp(16px,3.6cqw,21px); }
+  .workflow-monitor-live { margin-left:auto; padding:4px 5px; border:1px solid var(--on-brand-line); font:500 8px var(--font-mono); letter-spacing:.1em; }
+  .workflow-monitor-track { display:flex; justify-content:space-between; }
+  .workflow-monitor-track>span { position:relative; display:grid; gap:11px; flex:1; justify-items:center; }
+  .workflow-monitor-track>span::before { content:''; position:absolute; top:5px; left:0; right:0; height:1px; background:var(--on-brand-line); }
+  .workflow-monitor-track>span:first-child::before { left:50%; }
+  .workflow-monitor-track>span:last-child::before { right:50%; }
+  .workflow-monitor-track i { position:relative; z-index:1; display:block; width:11px; height:11px; border:1px solid var(--on-brand-muted); background:var(--blue); }
+  .workflow-monitor-track .is-selected i { background:var(--on-brand); outline:5px solid color-mix(in srgb,var(--on-brand) 16%,transparent); }
+  .workflow-monitor-track small { font-size:10px; color:var(--on-brand-muted); }
+  .workflow-monitor-foot { display:flex; justify-content:space-between; gap:12px; margin-top:18px; padding-top:11px; border-top:1px solid var(--on-brand-line); font:400 clamp(7px,1.7cqw,9px)/1.4 var(--font-mono); }
+
+  /* The slim request trail occupies the florist's background, beside her face. */
+  .workflow-service { left:24px; top:28px; width:44%; padding:16px; border-top:3px solid var(--blue-secondary); background:var(--canvas); }
+  .workflow-service .workflow-photo-label { color:var(--blue); font-size:clamp(7px,1.6cqw,9px); gap:6px; }
+  .workflow-service>strong { display:block; margin:15px 0; font-size:clamp(15px,3.3cqw,20px); }
+  .workflow-service-trail { display:grid; gap:18px; }
+  .workflow-service-trail>div { display:flex; position:relative; align-items:center; gap:8px; }
+  .workflow-service-trail>div>span { display:grid; place-items:center; flex:none; width:28px; height:28px; background:var(--blue-soft); color:var(--blue); border:1px solid var(--line); }
+  .workflow-service-trail>div:last-child>span { background:var(--gradient-hero); color:var(--on-brand); border-color:var(--blue); }
+  .workflow-service-trail small { font-size:clamp(9px,2.1cqw,11px); line-height:1.4; }
+  .workflow-service-arrow { position:absolute; bottom:-15px; left:8px; color:var(--blue-secondary); }
+  .workflow-service-foot { display:block; margin-top:14px; padding-top:10px; border-top:1px solid var(--line); color:var(--muted); font-size:clamp(8px,1.8cqw,10px); }
+
+  /* Records, rather than the pictured person, are the subject of investigation. */
+  .workflow-investigation { bottom:28px; left:28px; right:28px; padding:16px 20px 12px; background:var(--canvas); border-top:3px solid var(--blue-secondary); }
+  .workflow-investigation .workflow-photo-label { color:var(--blue); }
+  .workflow-investigation>strong { display:block; margin:12px 0; }
+  .workflow-source-comparison { display:flex; align-items:center; }
+  .workflow-source-comparison>div { display:grid; grid-template-columns:20px 1fr; gap:7px; flex:1; padding:11px; border:1px solid var(--line); background:var(--surface); color:var(--blue); }
+  .workflow-source-comparison small { font:400 9px/1.5 var(--font-mono); align-self:center; }
+  .workflow-source-comparison>div>i { height:2px; background:var(--line); grid-column:1/-1; }
+  .workflow-source-comparison>div>i:last-child { width:64%; background:var(--blue-secondary); }
+  .workflow-source-link { display:grid; place-items:center; position:relative; flex:none; width:52px; color:var(--blue); }
+  .workflow-source-link::before { position:absolute; content:''; width:100%; height:1px; background:var(--blue-secondary); }
+  .workflow-source-link>svg { position:relative; z-index:1; width:30px; height:30px; padding:6px; background:var(--gradient-hero); color:var(--on-brand); }
+  .workflow-investigation .workflow-photo-result { margin-top:12px; padding-top:10px; border-top:1px solid var(--line); }
+}

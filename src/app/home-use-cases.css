@@ -1,0 +1,71 @@
+/* Cash flow adoption — shared /brand light surfaces, precise graphics, and signal colors. */
+.home-use-cases {
+  --adoption-accent:var(--blue-secondary);
+  --adoption-muted:var(--muted);
+  background:var(--surface);
+  color:var(--ink);
+  padding:72px 0;
+  /* The document already reserves 100px for the sticky header. */
+  scroll-margin-top:calc(var(--home-header-offset,106px) - 100px);
+  overflow:hidden;
+}
+.home-use-cases-inner { width:var(--site-content-width); margin-inline:auto; }
+.home-use-cases-header { display:flex; align-items:flex-end; justify-content:space-between; gap:32px; margin-bottom:40px; }
+.home-use-cases-header>div:first-child { max-width:1000px; }
+.home-use-cases-eyebrow { display:flex; align-items:center; gap:12px; margin:0 0 20px; color:var(--blue); font:500 var(--text-label)/1.5 var(--font-mono); letter-spacing:.12em; text-transform:uppercase; }
+.home-use-cases-eyebrow i { flex:none; width:7px; height:7px; background:var(--adoption-accent); border-radius:50%; box-shadow:0 0 0 5px color-mix(in srgb,var(--blue-secondary) 12%,transparent); }
+.home-use-cases-header h2 { margin:0; font-size:var(--text-section-heading); font-weight:600; line-height:1.08; letter-spacing:-.04em; text-wrap:balance; }
+.home-use-cases-controls { display:flex; gap:8px; flex:none; padding-bottom:3px; }
+.home-use-cases-controls button { display:grid; place-items:center; width:var(--control-height); height:var(--control-height); border-radius:var(--radius-control); background:var(--canvas); border:1px solid var(--line-strong); color:var(--blue); cursor:pointer; transition:background var(--motion-fast),border-color var(--motion-fast); }
+.home-use-cases-controls button:hover { background:var(--blue-soft); border-color:var(--adoption-accent); }
+.home-use-cases :where(button,[tabindex]):focus-visible { outline:2px solid var(--focus); outline-offset:3px; }
+.home-use-cases-viewport { position:relative; }
+.home-use-cases-viewport::after { content:''; position:absolute; inset:0 0 0 auto; width:24px; background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--surface) 70%,transparent)); pointer-events:none; }
+.home-use-cases-track { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; overscroll-behavior-x:contain; }
+.home-use-cases-track::-webkit-scrollbar { display:none; }
+.home-use-case { flex:0 0 calc((100% - 32px)/3); min-width:0; background:var(--canvas); border:1px solid var(--line); border-radius:var(--radius-card); scroll-snap-align:start; overflow:hidden; }
+.home-use-case-graphic { position:relative; height:clamp(260px,calc(100svh - 620px),300px); padding:var(--space-card-inset); background:var(--surface); overflow:hidden; isolation:isolate; }
+.home-use-case-copy { padding:20px 24px 28px; }
+.home-use-case-copy h3 { margin:0 0 12px; color:var(--ink); font-size:clamp(18px,1.6vw,24px); font-weight:600; letter-spacing:-.025em; line-height:1.25; }
+.home-use-case-copy p { margin:0; font-size:var(--text-secondary); line-height:var(--leading-body); color:var(--adoption-muted); }
+.home-use-cases-sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px; clip:rect(0,0,0,0); overflow:hidden; white-space:nowrap; border:0; }
+.home-use-cases-sectors { display:grid; gap:12px; margin-top:20px; mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent); }
+.home-use-cases-marquee { overflow:hidden; }
+.home-use-cases-marquee>div { display:flex; width:max-content; animation:adoption-marquee 70s linear infinite; }
+.home-use-cases-marquee.row-1>div { animation-direction:reverse; animation-duration:64s; }
+.home-use-cases-sector-set { display:flex; flex:none; gap:12px; padding-right:12px; }
+.home-use-cases-sector-set>span { display:block; flex:none; padding:12px 18px; border:1px solid var(--line); background:var(--canvas); color:var(--muted); font-size:13px; line-height:20px; white-space:nowrap; }
+.home-use-cases[data-motion="paused"] *, .home-use-cases[data-motion="paused"] *::before, .home-use-cases[data-motion="paused"] *::after { animation-play-state:paused!important; }
+@keyframes adoption-marquee { to { transform:translateX(-50%); } }
+@media(min-width:1200px) and (max-height:820px) {
+  .home-use-cases { padding:28px 0; }
+  .home-use-cases-header { margin-bottom:24px; }
+  .home-use-cases-eyebrow { margin-bottom:16px; }
+  .home-use-case-graphic { height:260px; padding:20px 24px; }
+  .home-use-case-copy { padding-top:16px; padding-bottom:20px; }
+  .home-use-cases-sectors { margin-top:8px; gap:8px; }
+  .home-use-cases-sector-set>span { padding:8px 16px; }
+}
+@media(max-width:1100px) {
+  .home-use-cases { padding:64px 0; }
+  .home-use-case { flex-basis:calc((100% - 16px)/2); }
+  .home-use-cases-header { gap:24px; }
+  .home-use-case-graphic { height:250px; }
+}
+@media(max-width:760px) {
+  .home-use-cases-header { display:block; margin-bottom:24px; }
+  .home-use-cases-eyebrow { align-items:flex-start; font-size:11px; }
+  .home-use-cases-eyebrow i { margin-top:7px; }
+  .home-use-cases-controls { justify-content:flex-end; margin-top:24px; padding-bottom:0; }
+  .home-use-case { flex-basis:calc(100% - 28px); }
+  .home-use-case-graphic { height:250px; }
+  .home-use-case-copy { padding:20px; }
+  .home-use-case-copy h3 { font-size:20px; }
+  .home-use-case-copy p { font-size:16px; }
+  .home-use-cases-sectors { margin-top:16px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .home-use-cases *, .home-use-cases *::before,.home-use-cases *::after { animation:none!important; transition:none!important; }
+  .home-use-cases-marquee { overflow-x:auto; scrollbar-width:thin; }
+  .home-use-cases-sector-set[aria-hidden="true"] { display:none; }
+}

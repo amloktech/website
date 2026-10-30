@@ -1,0 +1,29 @@
+.home-page .home-faq { padding:64px 0 var(--space-section); background:var(--canvas); color:var(--ink); }
+.home-faq-inner { width:min(var(--site-content-width),860px); margin-inline:auto; }
+.home-faq-heading { margin-bottom:32px; text-align:center; }
+.home-faq-heading .home-products-eyebrow { justify-content:center; }
+.home-faq-heading h2 { margin:20px 0 0; font-size:var(--text-section-heading); font-weight:600; line-height:var(--leading-heading); letter-spacing:-.04em; }
+.home-faq-list { max-width:1040px; margin-inline:auto; }
+.home-faq-item { border-bottom:1px solid var(--line); }
+.home-faq-item summary { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:18px 0; list-style:none; cursor:pointer; }
+.home-faq-item summary::-webkit-details-marker { display:none; }
+.home-faq-item summary h3 { margin:0; font-size:18px; font-weight:500; line-height:1.4; letter-spacing:-.025em; }
+.home-faq-item summary>svg { flex:none; color:var(--muted); transition:transform 180ms ease; }
+.home-faq-item[open] summary>svg { transform:rotate(180deg); }
+.home-faq-item summary:hover { color:var(--blue); }
+.home-faq-item summary:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:4px; border-radius:4px; }
+.home-faq-answer { padding:0 44px 20px 0; }
+.home-faq-answer p { max-width:900px; margin:0; color:var(--muted); font-size:16px; line-height:1.7; }
+.home-faq-documentation { display:table; margin:24px auto 0; color:var(--blue); font-size:15px; text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:767px) {
+  .home-page .home-faq { padding-block:64px; }
+  .home-faq-heading { margin-bottom:32px; }
+  .home-faq-heading .home-products-eyebrow { font-size:11px; }
+  .home-faq-heading h2 { font-size:36px; line-height:1.15; }
+  .home-faq-item summary { padding:20px 0; gap:16px; }
+  .home-faq-item summary h3 { font-size:18px; line-height:1.4; }
+  .home-faq-answer { padding:0 0 20px; }
+  .home-faq-answer p { font-size:15px; line-height:1.625; }
+  .home-faq-documentation { font-size:14px; }
+}
+@media(prefers-reduced-motion:reduce) { .home-faq-item summary>svg { transition:none; } }

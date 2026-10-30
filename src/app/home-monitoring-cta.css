@@ -1,0 +1,35 @@
+.home-page .home-monitoring-cta { padding-block:var(--space-section); background:var(--surface); color:var(--ink); }
+.home-monitoring-cta-inner { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:clamp(48px,6vw,88px); align-items:center; width:var(--site-content-width); margin-inline:auto; }
+.home-monitoring-cta-copy h2 { margin:0; font-size:clamp(40px,4.2vw,60px); font-weight:600; line-height:1.08; letter-spacing:-.045em; }
+.home-monitoring-title-line { display:block; }
+.home-monitoring-cta-copy>.home-products-eyebrow { margin-bottom:24px; }
+.home-monitoring-cta-copy>p { margin:32px 0 0; max-width:580px; color:var(--muted); font-size:clamp(18px,1.5vw,21px); line-height:1.7; }
+.home-monitoring-cta-actions { display:flex; flex-wrap:wrap; gap:16px; margin-top:40px; }
+.home-monitoring-cta-actions a { display:inline-flex; align-items:center; justify-content:center; gap:12px; min-height:48px; padding:0 24px; border:1px solid var(--line); border-radius:var(--radius-pill); background:var(--canvas); color:var(--ink); font-size:15px; font-weight:500; }
+.home-monitoring-cta-actions a:first-child { border-color:var(--blue); background:var(--blue); color:var(--on-brand); box-shadow:var(--shadow-button); }
+.home-monitoring-cta-actions a:hover { border-color:var(--blue-secondary); }
+.home-monitoring-cta-actions a:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:4px; }
+.home-monitoring-cta-figure { min-width:0; width:100%; max-width:520px; justify-self:end; margin:0; }
+.home-monitoring-cta-photo { position:relative; isolation:isolate; height:560px; overflow:hidden; border-radius:var(--radius-panel); background:var(--blue-soft); }
+.home-monitoring-cta-photo>img { object-fit:cover; object-position:center; }
+.home-monitoring-photo-cards { position:absolute; inset:0; }
+.home-monitoring-photo-card { position:absolute; padding:16px 18px; border:1px solid var(--line); border-radius:var(--radius-overlay); background:linear-gradient(135deg,var(--canvas),var(--blue-soft)); box-shadow:inset 0 1px 0 var(--canvas),3px 4px 0 color-mix(in srgb,var(--blue-secondary) 20%,var(--line)),0 12px 28px color-mix(in srgb,var(--identity-blue) 16%,transparent); }
+.home-monitoring-card-label { display:flex; align-items:center; gap:7px; color:var(--blue); font:500 9px/1.5 var(--font-mono); letter-spacing:.08em; text-transform:uppercase; }
+.home-monitoring-photo-card strong { display:block; margin-top:12px; color:var(--ink); font-size:15px; font-weight:500; line-height:1.4; }
+.home-monitoring-photo-card small { display:block; margin-top:5px; color:var(--muted); font-size:11px; line-height:1.5; }
+.home-monitoring-photo-card.is-early { top:22px; left:22px; width:222px; }
+.home-monitoring-photo-card.is-early .home-monitoring-card-label { color:#ac4d26; }
+.home-monitoring-photo-card.is-baseline { bottom:140px; left:22px; width:200px; }
+.home-monitoring-photo-card.is-baseline strong { font-size:22px; }
+.home-monitoring-photo-card.is-active { bottom:22px; right:22px; width:254px; border-color:var(--blue-secondary); background:linear-gradient(135deg,var(--blue-secondary),var(--blue-field) 55%,var(--identity-blue)); }
+.home-monitoring-photo-card.is-active :is(.home-monitoring-card-label,strong) { color:var(--on-brand); }
+.home-monitoring-photo-card.is-active small { color:var(--on-brand-muted); }
+.home-monitoring-card-label>i { width:6px; height:6px; border-radius:50%; background:currentColor; box-shadow:0 0 8px currentColor; }
+.home-monitoring-photo-frame { position:absolute; inset:24px; pointer-events:none; }
+.home-monitoring-photo-frame i { position:absolute; width:20px; height:20px; border-color:var(--on-brand); border-style:solid; opacity:.8; }
+.home-monitoring-photo-frame i:first-child { top:0; right:0; border-width:1px 1px 0 0; }
+.home-monitoring-photo-frame i:last-child { bottom:0; left:0; border-width:0 0 1px 1px; }
+.home-monitoring-cta-figure figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 16px; margin-top:12px; color:var(--muted); font-size:11px; line-height:1.5; }
+@media(max-width:1199px) { .home-monitoring-cta-inner { gap:40px; } .home-monitoring-cta-photo { height:520px; } }
+@media(max-width:900px) { .home-monitoring-cta-inner { grid-template-columns:minmax(0,1fr); } .home-monitoring-cta-copy h2 { font-size:var(--text-section-heading); } .home-monitoring-cta-figure { max-width:none; } .home-monitoring-cta-photo { height:560px; } }
+@media(max-width:540px) { .home-monitoring-cta-photo { height:560px; } .home-monitoring-photo-card.is-early { top:16px; left:16px; } .home-monitoring-photo-card.is-baseline { bottom:142px; left:16px; } .home-monitoring-photo-card.is-active { bottom:16px; right:16px; } .home-monitoring-cta-actions { margin-top:28px; } }

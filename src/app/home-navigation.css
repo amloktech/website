@@ -1,0 +1,144 @@
+/* Mobile navigation is a full-screen surface; desktop keeps the inline header. */
+/* Keep the page's fixed navigation above the separately rendered footer.
+   Footer image filters must not escape into the navigation's paint layer. */
+.home-page { z-index:1; }
+.site-footer { position:relative; z-index:0; isolation:isolate; }
+.home-page .home-search-layer {
+  background:color-mix(in srgb,var(--ink) 8%,transparent);
+  -webkit-backdrop-filter:blur(28px) saturate(1.15);
+  backdrop-filter:blur(28px) saturate(1.15);
+}
+.home-page .home-search-field:focus-within {
+  outline:none;
+  border-color:var(--line-strong);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--blue-secondary) 10%,transparent),var(--shadow-overlay);
+}
+.home-page .home-search-field input:focus-visible { outline:none; box-shadow:none; }
+@media(min-width:1024px) {
+  .home-page .home-header :is(.home-solutions-panel,.home-developer-panel,.home-resource-panel) { right:var(--desktop-menu-right,var(--site-gutter)); }
+  .home-header :is(.home-solutions-menu,.home-developer-menu,.home-resource-menu)[data-open="true"]::after {
+    content:'';
+    position:fixed;
+    top:var(--home-header-height);
+    left:var(--site-gutter);
+    right:var(--desktop-menu-right,var(--site-gutter));
+    height:14px;
+  }
+}
+.home-mobile-controls,
+.home-mobile-menu { display:none; }
+
+@media (max-width:1023px) {
+  .home-page { --home-header-height:72px; --home-header-offset:var(--home-header-height); }
+
+  .home-page .home-header,
+  .home-mobile-menu-header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    height:var(--home-header-height);
+    min-height:var(--home-header-height);
+    padding:0 var(--site-gutter);
+    background:var(--canvas);
+    color:var(--ink);
+    border-bottom:1px solid var(--border-subtle);
+  }
+  .home-page .home-header { top:0; }
+  .home-page .home-header .home-nav,
+  .home-page .home-header .home-header-actions { display:none; }
+  .home-page .home-header .home-logo { color:var(--blue); }
+  .home-page .home-header .wordmark { font-size:28px; }
+  .home-page .home-header .wordmark>svg { width:30px; height:30px; }
+  .home-mobile-controls,
+  .home-mobile-menu-tools { display:flex; align-items:center; gap:12px; }
+  .home-mobile-controls { margin-left:auto; }
+  .home-mobile-icon {
+    display:grid;
+    place-items:center;
+    flex:0 0 44px;
+    width:44px;
+    height:44px;
+    padding:0;
+    border:0;
+    border-radius:var(--radius-pill);
+    background:transparent;
+    color:var(--ink);
+    cursor:pointer;
+  }
+  .home-mobile-icon>svg { width:26px; height:26px; stroke-width:1.8; }
+  .home-mobile-icon:hover { background:var(--surface); }
+
+  .home-mobile-menu[open] {
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    inset:0;
+    width:100%;
+    max-width:none;
+    height:100dvh;
+    max-height:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    border:0;
+    border-radius:0;
+    background:var(--canvas);
+    color:var(--ink);
+  }
+  .home-mobile-menu::backdrop { background:var(--canvas); }
+  .home-mobile-menu-header { flex-shrink:0; }
+  .home-mobile-menu-body {
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    min-height:0;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding:24px max(24px,var(--site-gutter)) max(24px,env(safe-area-inset-bottom));
+  }
+  .home-mobile-nav { display:grid; gap:12px; }
+  .home-mobile-nav-heading,
+  .home-mobile-menu-actions>a {
+    display:flex;
+    align-items:center;
+    min-height:44px;
+    padding:6px 0;
+    color:var(--ink);
+    font-family:var(--font-sans);
+    font-size:clamp(30px,7.7vw,38px);
+    font-weight:500;
+    line-height:1.25;
+    letter-spacing:-.035em;
+    text-decoration:none;
+  }
+  .home-mobile-nav-heading { width:100%; justify-content:space-between; gap:20px; border:0; background:transparent; text-align:left; cursor:pointer; }
+  .home-mobile-nav-heading>svg { width:22px; height:22px; flex-shrink:0; color:var(--muted); transition:transform var(--motion-fast); }
+  .home-mobile-nav-heading[aria-expanded="true"]>svg { transform:rotate(180deg); }
+  .home-mobile-subnav { margin:8px 0 4px; padding:0 0 0 16px; list-style:none; border-left:1px solid var(--line); }
+  .home-mobile-subnav a { display:flex; align-items:center; min-height:44px; padding:10px 0; color:var(--muted); font-size:16px; line-height:1.5; text-decoration:none; }
+  .home-mobile-subnav a:hover,
+  .home-mobile-nav-heading:hover { color:var(--blue); }
+  .home-mobile-menu-actions { display:grid; gap:12px; margin-top:28px; padding:24px 0 48px; border-top:1px solid var(--border-subtle); }
+  .home-mobile-menu-actions .home-mobile-contact { gap:10px; color:var(--blue-secondary); }
+  .home-mobile-contact>svg { width:28px; height:28px; stroke-width:1.8; }
+  .home-mobile-menu-actions .home-mobile-signup { color:var(--muted); }
+  .home-mobile-language { position:relative; display:flex; align-items:center; min-height:48px; flex-shrink:0; gap:12px; margin-top:auto; border-radius:var(--radius-pill); background:var(--surface); }
+  .home-mobile-language>svg { position:absolute; left:18px; width:22px; height:22px; pointer-events:none; }
+  .home-mobile-language>svg:last-child { left:auto; right:18px; width:18px; height:18px; color:var(--muted); }
+  .home-mobile-language select { appearance:none; width:100%; min-height:48px; padding:10px 48px 10px 54px; border:0; border-radius:inherit; background:transparent; color:var(--ink); font:inherit; font-size:16px; cursor:pointer; }
+  .home-mobile-menu :is(a,button,select):focus-visible,
+  .home-mobile-controls button:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:4px; }
+  .home-page .home-search-layer { top:var(--home-header-height); }
+  .home-page .home-products-group { scroll-margin-top:calc(var(--home-header-height) + 16px); }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .home-mobile-nav-heading>svg { transition:none; }
+}
+.home-page .home-header.is-scrolled .home-nav>a,
+.home-page .home-header.is-scrolled .home-solutions-trigger,
+.home-page .home-header.is-scrolled .home-developer-trigger,
+.home-page .home-header.is-scrolled .home-resource-trigger {
+  color:var(--ink);
+}

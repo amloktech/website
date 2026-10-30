@@ -1,0 +1,188 @@
+/* Desktop layout rhythm. Keep these rules width-based so shorter laptop
+   windows do not compress copy, cards, or section boundaries. Mobile and
+   tablet layouts retain their own spacing in mobile-system.css. */
+@media (min-width:1024px) {
+  .home-page {
+    --space-section:clamp(80px,6.667vw,112px);
+    --space-section-content:48px;
+    --space-heading-body:24px;
+    --space-card-gap:24px;
+    --desktop-column-gap:clamp(40px,4.5vw,64px);
+    --text-section-heading:clamp(36px,3.4vw,52px);
+  }
+
+  /* A surface change has padding on each side. Sections sharing a surface
+     use one section gap, owned by the next section. */
+  .home-page :is(.home-risk-operations,.home-risk-gaps,.home-platform-section,
+    .home-products,.home-use-cases,.home-customer-layers,.home-risk-comparison,
+    .home-loan-scale,.home-security,.home-pricing,.home-faq,.home-monitoring-cta) {
+    padding-block:var(--space-section);
+  }
+  .home-page :is(.home-risk-operations,.home-risk-gaps,.home-products,
+    .home-customer-layers,.home-pricing) { padding-bottom:0; }
+  .home-page .home-security + .home-features { padding-block:0; }
+  .home-page :is(.home-platform-section,.home-customer-layers) { display:block; min-height:0; }
+  .home-page .home-products + .home-use-cases { padding-top:var(--space-section); }
+  .home-page .home-risk-operations + .home-risk-gaps { padding-top:var(--space-section); }
+
+  /* Labels, headings, descriptions, then the section's main content. */
+  .home-page :is(.home-platform-intro,.home-products-heading,
+    .home-use-cases-header,.home-customer-layers-heading,.home-features-heading,
+    .home-pricing-heading) { margin-bottom:var(--space-section-content); }
+  .home-page :is(.home-risk-gaps-eyebrow,.home-platform-eyebrow,
+    .home-use-cases-eyebrow,.home-loan-scale-eyebrow) { margin-bottom:24px; }
+  .home-page :is(.home-products-heading h2,.home-customer-layers-heading h2,
+    .home-risk-comparison h2,.home-pricing-heading h2) { margin:24px 0 0; }
+  .home-page :is(.home-risk-gaps-content h2,.home-platform-intro h2,
+    .home-products-heading h2,.home-use-cases-header h2,.home-customer-layers-heading h2,
+    .home-risk-comparison h2,.home-loan-scale-intro h2,.home-security-copy h2,
+    .home-features-heading h2,.home-pricing-heading h2) {
+    font-size:var(--text-section-heading);
+    line-height:1.1;
+  }
+  .home-page :is(.home-platform-intro>p,.home-customer-layers-heading>p,
+    .home-loan-scale-intro>p,.home-security-copy>p,.home-pricing-heading>p) {
+    margin-top:24px;
+    font-size:var(--text-section-description);
+    line-height:1.65;
+  }
+  .home-page .home-platform-actions { margin-top:24px; }
+
+  /* Hero content keeps its viewport centering; the logo strip has its own
+     breathing room rather than borrowing space from the following section. */
+  .home-page .home-hero.is-content-only { gap:48px; padding-bottom:40px; }
+  .home-page .home-hero-validation-heading { margin-bottom:24px; }
+
+  .home-page .home-risk-operations-grid { gap:24px; }
+  .home-page .home-risk-operations-card { min-height:336px; }
+  .home-page .home-risk-operations-card.whitepaper-card { min-height:280px; }
+  .home-page .home-risk-operations-copy { padding:32px 16px 32px 32px; }
+  .home-page .whitepaper-card .home-risk-operations-copy { padding:32px; }
+  .home-page .home-risk-operations-copy h3 { margin:12px 0 16px; white-space:normal; }
+  .home-page .home-risk-operations-copy p { margin-bottom:24px; }
+  .home-page .whitepaper-card .home-risk-operations-copy a { margin-top:0; }
+
+  .home-page .home-risk-gaps-inner { gap:var(--desktop-column-gap); }
+  .home-page .home-risk-gaps-consumer { margin-top:var(--space-section); }
+  .home-page .home-risk-gaps-intro { margin:24px 0 32px; font-size:var(--text-section-description); }
+  .home-page .home-risk-gap button { padding-block:20px; padding-right:4px; }
+  .home-page .home-risk-gap-panel { padding-bottom:20px; padding-left:128px; }
+  .home-page .home-risk-gaps-photo { min-height:550px; }
+
+  .home-page .home-capability-grid { gap:24px; }
+  .home-page .home-capability-media { height:auto; min-height:0; max-height:none; aspect-ratio:1.25; margin-bottom:20px; }
+  .home-page .home-capability-card>p { margin-top:12px; line-height:1.6; }
+
+  .home-page .home-products-heading { align-items:start; grid-template-columns:minmax(0,1.8fr) minmax(240px,.8fr); gap:40px; }
+  .home-page .home-products-heading h2 { max-width:none; text-wrap:balance; }
+  .home-page .home-products-title-line { white-space:normal; }
+  .home-page .home-products-modularity { max-width:320px; height:184px; align-self:center; }
+  .home-page .home-products-layout { gap:48px; }
+  .home-page .home-products-list { gap:24px; }
+  .home-page .home-products-group { min-height:540px; padding:32px; }
+  .home-page .home-products-group h3 { margin-top:24px; }
+  .home-page .home-products-lede { margin-top:16px; }
+  .home-page .home-products-items { margin-top:24px; }
+
+  .home-page .home-use-cases-header { gap:32px; }
+  .home-page .home-use-case-graphic { height:260px; padding:24px; }
+  .home-page .home-use-case-copy { padding:24px; }
+  .home-page .home-use-cases-sectors { margin-top:32px; gap:12px; }
+  .home-page .home-use-cases-sector-set>span { padding:12px 18px; }
+
+  .home-page .home-products-layer-layout { gap:var(--desktop-column-gap); align-items:start; }
+  .home-page .home-products-top-layer { min-height:104px; padding:20px 24px; margin-bottom:24px; }
+  .home-page .home-products-stack-label { margin-bottom:16px; }
+  .home-page .home-products-stack-layers { gap:8px; }
+  .home-page .home-products-layer { min-height:64px; grid-template-columns:40px minmax(0,1fr) 112px; }
+  .home-page .home-products-layer-body { padding:10px 14px; }
+  .home-page .home-products-layer-detail-image { min-height:0; max-height:none; aspect-ratio:1.5; }
+  .home-page .home-products-layer-detail h3 { margin-top:20px; white-space:normal; }
+  .home-page .home-products-layer-detail p { margin-top:16px; }
+
+  .home-page .home-risk-comparison-description { margin:24px 0 48px; }
+  .home-page .home-risk-comparison-table :is(th,td) { padding:18px 24px; }
+  .home-page .home-risk-comparison-table thead th { padding-block:16px; }
+  .home-page .home-risk-comparison-table tbody :is(th,td) { font-size:14px; line-height:1.5; }
+  .home-page .home-risk-comparison-cell { gap:12px; }
+
+  .home-page .home-loan-scale-intro { margin-bottom:64px; }
+  .home-page .home-lifecycle-rows { gap:80px; }
+  .home-page .home-lifecycle-row { gap:var(--desktop-column-gap); }
+  .home-page .home-lifecycle-copy>p { margin-top:24px; }
+
+  .home-page .home-security-intro { align-items:start; gap:var(--desktop-column-gap); }
+  .home-page .home-security-assurances { margin-top:48px; padding:32px; gap:24px; }
+  .home-page .home-security-scope { margin-top:24px; }
+  .home-page .home-features-heading-copy { margin-top:24px; gap:var(--desktop-column-gap); }
+  .home-page .home-features-heading-copy>p { margin:0; }
+  .home-page .home-features-card { padding:16px; }
+  .home-page .home-features-card-copy { padding:20px 8px 8px; }
+  .home-page .home-features-card-copy p { margin-top:12px; }
+
+  .home-page .home-pricing-heading>p { max-width:800px; }
+  .home-page .home-pricing-grid { gap:24px; }
+  .home-page .home-pricing-card { padding:32px; }
+  .home-page .home-pricing-card h3 { font-size:30px; }
+  .home-page .home-pricing-price { margin-top:12px; }
+  .home-page .home-pricing-price>strong { font-size:36px; }
+  .home-page .home-pricing-billing { min-height:48px; margin-top:16px; font-size:14px; line-height:1.5; }
+  .home-page .home-pricing-features { margin-top:24px; }
+  .home-page .home-pricing-features h4 { margin-bottom:16px; }
+  .home-page .home-pricing-features ul { gap:12px; }
+  .home-page .home-pricing-features li { font-size:14px; line-height:1.5; }
+  .home-page .home-pricing-actions { padding-top:24px; gap:12px; }
+  .home-page .home-pricing-note { margin-top:24px; max-width:1000px; white-space:normal; }
+  .home-page .home-faq-heading h2 { margin-top:24px; }
+  .home-page .home-faq-documentation { margin-top:32px; }
+
+  .home-page .home-monitoring-cta-inner { gap:var(--desktop-column-gap); }
+  .home-page .home-monitoring-cta-copy>p { margin-top:24px; }
+  .home-page .home-monitoring-cta-actions { margin-top:32px; }
+
+  /* About uses the same outer rhythm, with a natural-height timeline. */
+  .home-page.about-page :is(.about-company,.about-purpose,.about-journey) { padding-block:var(--space-section); }
+  .home-page.about-page .about-hero { padding-block:calc(var(--home-header-height) + 80px) var(--space-section); }
+  .home-page.about-page .about-intro { gap:var(--desktop-column-gap); margin-top:24px; }
+  .home-page.about-page .about-team { max-width:1024px; margin:48px auto 0; }
+  .home-page.about-page .about-company-grid { column-gap:var(--desktop-column-gap); }
+  .home-page.about-page .about-company-heading h2 { margin:24px 0; }
+  .home-page.about-page :is(.about-purpose-heading,.about-journey-heading) { margin-bottom:48px; }
+  .home-page.about-page .about-purpose article { padding:32px; }
+  .home-page.about-page .about-purpose p { margin-top:16px; }
+  .home-page.about-page .about-journey-heading { gap:var(--desktop-column-gap); }
+  .home-page.about-page .about-timeline li { min-height:0; padding-block:64px; }
+  .home-page.about-page .about-timeline h3 { margin:16px 0 24px; }
+  .home-page.about-page .about-timeline-placeholder { margin-top:24px; }
+
+  .site-footer-primary { padding-block:64px; gap:32px; }
+  .site-footer-secondary { padding-block:48px 64px; gap:32px; }
+  .site-footer-group h2 { margin-bottom:20px; }
+  .site-footer-group.is-split .site-footer-link-columns { gap:32px; }
+}
+
+/* Keep narrower desktop columns readable without adopting the mobile layout. */
+@media (min-width:1024px) and (max-width:1199px) {
+  .home-page .home-validation-logos { grid-template-columns:repeat(6,minmax(0,1fr)); gap:24px; --validation-logo-height:18px; }
+  .home-page .home-risk-operations-grid { grid-template-columns:1fr; }
+  .home-page .home-risk-operations-card { grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); min-height:300px; }
+  .home-page .home-risk-operations-copy h3 { font-size:26px; }
+  .home-page .home-risk-gap-panel { padding-left:0; }
+  .home-page .home-capability-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 24px; }
+  .home-page .home-capability-media { aspect-ratio:1.65; }
+  .home-page .home-products-heading { grid-template-columns:minmax(0,1.7fr) minmax(220px,.8fr); gap:32px; }
+  .home-page .home-products-group { padding:28px; }
+  .home-page .home-products-layer-layout { grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+  .home-page .home-products-layer { grid-template-columns:40px minmax(0,1fr) 86px; }
+  .home-page .home-products-layer-phase { white-space:normal; max-width:86px; padding-inline:10px; }
+  .home-page .home-security-assurances { padding:24px; gap:16px; }
+  .home-page .home-pricing-card { padding:28px; }
+  .site-footer-primary { grid-template-columns:repeat(4,minmax(0,1fr)); gap:40px 24px; }
+  .site-footer-identity { display:grid; grid-column:1/-1; grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr)); gap:16px 32px; align-items:start; }
+  .site-footer-identity :is(.site-footer-logo,.site-footer-tagline,p:not([class])) { grid-column:1; margin:0; }
+  .site-footer-identity p:not([class]) { max-width:340px; }
+  .site-footer-identity .site-footer-partners { grid-column:2; grid-row:1/span 3; margin-top:0; }
+  .site-footer-identity .site-footer-location { grid-column:3; grid-row:1; margin-top:0; }
+  .site-footer-identity .site-footer-email { grid-column:3; grid-row:2; margin-top:0; }
+  .site-footer-secondary { gap:24px; }
+}

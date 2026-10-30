@@ -1,0 +1,35 @@
+/* Each capability has its own illustration; alternate the two desktop columns. */
+.home-lifecycle-rows { display:grid; gap:80px; }
+.home-lifecycle-row {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:center;
+  gap:clamp(40px,5vw,80px);
+  scroll-margin-top:calc(var(--home-header-height) + 24px);
+}
+.home-lifecycle-copy { max-width:540px; min-width:0; }
+.home-lifecycle-label { display:block; margin-bottom:16px; color:var(--blue); font:600 11px/1.5 var(--font-mono); letter-spacing:.12em; }
+.home-lifecycle-copy h3 { margin:0; color:var(--ink); font-size:clamp(26px,2.8vw,38px); font-weight:500; line-height:1.12; letter-spacing:-.035em; text-wrap:balance; }
+.home-lifecycle-copy>p { margin:24px 0 0; color:var(--muted); font-size:var(--text-section-description); line-height:var(--leading-body); }
+.home-page .home-lifecycle-visual.home-loan-scale-art { position:relative; min-width:0; min-height:0; height:clamp(320px,32vw,440px); margin:0; border-color:var(--border-default); border-radius:var(--radius-media); }
+.home-lifecycle-row.is-reversed .home-lifecycle-copy { grid-column:2; grid-row:1; }
+.home-lifecycle-row.is-reversed .home-lifecycle-visual { grid-column:1; grid-row:1; }
+
+@media(max-width:1023px) {
+  .home-lifecycle-rows { gap:64px; }
+  .home-lifecycle-row { gap:32px; }
+  .home-lifecycle-copy h3 { font-size:28px; }
+  .home-page .home-lifecycle-visual.home-loan-scale-art { height:320px; }
+}
+@media(max-width:760px) {
+  .home-lifecycle-rows { gap:56px; }
+  .home-lifecycle-row { grid-template-columns:minmax(0,1fr); gap:24px; }
+  .home-lifecycle-copy { display:contents; }
+  .home-lifecycle-label { order:0; margin-bottom:0; }
+  .home-lifecycle-visual { order:1; }
+  .home-lifecycle-copy h3 { order:2; }
+  .home-lifecycle-copy>p { order:3; margin-top:0; font-size:16px; }
+  .home-lifecycle-row.is-reversed .home-lifecycle-copy,
+  .home-lifecycle-row.is-reversed .home-lifecycle-visual { grid-column:auto; grid-row:auto; }
+  .home-page .home-lifecycle-visual.home-loan-scale-art { height:clamp(260px,70vw,360px); }
+}

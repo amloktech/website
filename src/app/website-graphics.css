@@ -1,0 +1,159 @@
+/* Shared website illustrations. Live reference: /brand#website-graphics. */
+.adoption-telemetry { font-family:var(--font-mono); font-size:9px; line-height:1.5; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }
+.adoption-axis { display:flex; align-items:center; justify-content:space-between; gap:8px; color:var(--muted); font-family:var(--font-mono); font-size:8px; line-height:1.5; }
+.adoption-approval { height:100%; position:relative; }
+.adoption-legend { display:flex; justify-content:space-between; margin-top:8px; color:var(--muted); font-size:9px; }
+.adoption-legend>span { display:flex; align-items:center; gap:5px; }
+.adoption-legend i { width:6px; height:6px; background:var(--blue-secondary); border-radius:50%; }
+.adoption-legend>span:last-child i { background:var(--line-strong); }
+.adoption-approval>svg { position:absolute; top:24px; left:0; width:100%; height:calc(100% - 30px); }
+.adoption-ring { animation:adoption-ring 6s ease-in-out infinite; }
+.adoption-graphic-note { position:absolute; bottom:0; width:100%; display:flex; align-items:center; justify-content:center; gap:7px; font-size:9px; color:var(--muted); }
+.adoption-hatched-key { width:9px; height:9px; border:1px solid var(--blue); background:repeating-linear-gradient(135deg,transparent 0 2px,var(--blue-secondary) 2px 3px); }
+.adoption-radar { position:absolute; inset:0; display:grid; place-items:center; overflow:hidden; }
+.adoption-radar-grid { position:absolute; inset:0; background-image:linear-gradient(color-mix(in srgb,var(--blue-secondary) 8%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--blue-secondary) 8%,transparent) 1px,transparent 1px); background-size:24px 24px; mask-image:radial-gradient(ellipse,#000,transparent 75%); }
+.adoption-radar-frame { position:relative; height:72%; aspect-ratio:1.25; border:1px solid var(--line-strong); background:var(--blue-soft); }
+.adoption-radar-frame>i { position:absolute; inset:15%; border:1px solid color-mix(in srgb,var(--blue-secondary) 25%,transparent); }
+.adoption-radar-frame>i:nth-child(2) { inset:30%; }
+.adoption-radar-frame>i:nth-child(3) { inset:45%; }
+.adoption-radar-cross { position:absolute; background:var(--line); }
+.adoption-radar-cross.horizontal { top:50%; left:0; width:100%; height:1px; }
+.adoption-radar-cross.vertical { left:50%; top:0; height:100%; width:1px; }
+.adoption-radar-point { position:absolute; z-index:2; width:6px; height:6px; border-radius:50%; background:var(--blue-secondary); box-shadow:0 0 0 5px color-mix(in srgb,var(--blue-secondary) 12%,transparent); animation:adoption-signal 4s ease-in-out infinite; }
+.adoption-radar-point.point-one { left:25%; top:32%; }
+.adoption-radar-point.point-two { left:68%; top:63%; animation-delay:1s; }
+.adoption-radar-point.point-alert { left:76%; top:20%; background:var(--signal-orange); box-shadow:0 0 0 5px var(--signal-orange-soft); animation-delay:2s; }
+.adoption-radar-scan { position:absolute; inset:0; overflow:hidden; }
+.adoption-radar-scan::after { content:''; display:block; height:100%; width:40%; background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--blue-secondary) 14%,transparent)); border-right:1px solid var(--blue-secondary); animation:adoption-scan 5s ease-in-out infinite; }
+.adoption-radar-label { position:absolute; bottom:12px; left:24px; }
+.adoption-fraud { height:100%; display:flex; flex-direction:column; gap:12px; }
+.adoption-flags { padding:12px; background:var(--warning-bg); border:1px solid color-mix(in srgb,var(--warning-fg) 40%,transparent); animation:adoption-review 6s ease-in-out infinite; }
+.adoption-flags>span { display:flex; align-items:center; gap:7px; color:var(--warning-fg); font-size:10px; font-weight:500; }
+.adoption-flags ul { margin:8px 0 0; padding-left:18px; color:var(--warning-fg); font-size:9px; line-height:1.7; }
+.adoption-mini-file { display:grid; gap:5px; padding-left:12px; border-left:2px solid var(--blue-secondary); color:var(--muted); font-size:9px; }
+.adoption-mini-file strong { margin-bottom:3px; font-size:12px; font-weight:500; color:var(--ink); }
+.adoption-income { display:flex; flex-direction:column; height:100%; }
+.adoption-deposit { display:flex; align-items:center; gap:8px; padding:10px; border:1px solid var(--line); background:var(--canvas); color:var(--muted); font-size:9px; }
+.adoption-deposit svg { flex:none; color:var(--blue); }
+.adoption-deposit>div { display:grid; gap:4px; }
+.adoption-deposit strong { font-weight:500; }
+.adoption-deposit small { color:var(--muted); font-size:8px; }
+.adoption-deposit>b { margin-left:auto; color:var(--blue); font-size:9px; font-weight:500; }
+.adoption-deposit.secondary { margin:8px 0 0 16px; background:var(--canvas); }
+.adoption-income-bars { display:flex; align-items:flex-end; justify-content:space-between; flex:1; gap:12px; min-height:50px; padding:12px 8px 0; border-bottom:1px solid var(--line); }
+.adoption-income-bars i { display:block; flex:1; height:var(--bar-height); background:var(--blue-secondary); transform-origin:bottom; animation:adoption-bar 5s ease-in-out var(--bar-delay) infinite; }
+.adoption-income-bars i.projected { background:repeating-linear-gradient(135deg,transparent 0 3px,color-mix(in srgb,var(--blue-secondary) 25%,transparent) 3px 4px); border:1px dashed var(--blue-secondary); }
+.adoption-income>.adoption-axis { margin-top:8px; }
+.adoption-offers { height:100%; display:flex; flex-direction:column; gap:18px; }
+.adoption-capacity>span { font-size:10px; color:var(--muted); }
+.adoption-capacity-track { display:flex; gap:3px; position:relative; margin:10px 0 6px; }
+.adoption-capacity-track>i { flex:1; height:12px; background:var(--line); }
+.adoption-capacity-track>i:nth-child(n+3) { background:color-mix(in srgb,var(--blue-secondary) 50%,var(--canvas)); }
+.adoption-capacity-track>i:nth-child(n+5) { background:var(--blue-secondary); }
+.adoption-capacity-track>i:nth-child(n+7) { background:var(--blue); }
+.adoption-capacity-track>b { position:absolute; left:72%; top:-4px; width:2px; height:20px; background:var(--ink); box-shadow:0 0 0 3px var(--surface); animation:adoption-capacity 6s ease-in-out infinite; }
+.adoption-offer-file { position:relative; display:grid; gap:8px; padding:12px; background:var(--canvas); border:1px solid var(--line); }
+.adoption-offer-tags { display:flex; gap:4px; }
+.adoption-offer-tags>span { display:flex; align-items:center; gap:3px; background:var(--warning-bg); color:var(--warning-fg); padding:3px 5px; font-size:8px; }
+.adoption-offer-tags>span:last-child { background:var(--success-bg); color:var(--success-fg); }
+.adoption-offer-file>strong { font-size:12px; font-weight:500; }
+.adoption-offer-file>div:not(.adoption-offer-tags) { display:flex; justify-content:space-between; color:var(--muted); font-size:9px; }
+.adoption-offer-file b { color:var(--ink); font-weight:500; }
+.adoption-portfolio { height:100%; display:flex; flex-direction:column; }
+.adoption-portfolio>svg { flex:1; width:100%; min-height:0; }
+.adoption-trend { stroke-dasharray:100; animation:adoption-trend 7s ease-in-out infinite; }
+.adoption-trend-point { animation:adoption-signal 3s ease-in-out infinite; }
+.adoption-trend-alert { display:flex; align-items:center; gap:6px; padding:8px 0; color:var(--warning-fg); font-size:9px; }
+.adoption-collections { position:absolute; inset:0; overflow:hidden; display:grid; place-items:center; }
+.adoption-code { position:absolute; inset:20px; mask-image:linear-gradient(180deg,transparent,#000 15%,#000 75%,transparent); }
+.adoption-code pre { color:var(--muted); font-family:var(--font-mono); font-size:11px; line-height:2; animation:adoption-code 14s linear infinite; }
+.adoption-person { z-index:1; display:grid; place-items:center; width:76px; height:76px; color:var(--blue); background:var(--blue-soft); border:1px solid var(--blue-secondary); box-shadow:0 0 0 12px color-mix(in srgb,var(--surface) 70%,transparent); }
+.adoption-collections-tag { position:absolute; bottom:20px; display:flex; align-items:center; gap:6px; color:var(--blue); padding:8px; background:var(--canvas); border:1px solid var(--line); font-size:9px; }
+
+/* The same ceramic faces, cobalt material, shallow edges, and two-stage
+   lighting used by ProductIllustration in the One platform section. */
+.website-graphic {
+  --adoption-ceramic:linear-gradient(135deg,var(--canvas),color-mix(in srgb,var(--blue-soft) 42%,var(--canvas)));
+  --adoption-cobalt:linear-gradient(135deg,var(--blue-secondary),var(--blue-field) 55%,var(--identity-blue));
+  --adoption-lift:0 2px 4px color-mix(in srgb,var(--identity-blue) 6%,transparent),0 12px 22px color-mix(in srgb,var(--identity-blue) 10%,transparent);
+  --adoption-edge:color-mix(in srgb,var(--line) 70%,var(--canvas));
+}
+.adoption-ring-object { filter:drop-shadow(0 2px 2px color-mix(in srgb,var(--identity-blue) 6%,transparent)) drop-shadow(0 10px 9px color-mix(in srgb,var(--identity-blue) 10%,transparent)); }
+
+/* Extruded panel edges are independent of their content and animation. */
+:is(.adoption-radar-frame,.adoption-flags,.adoption-mini-file,.adoption-deposit,.adoption-offer-file,.adoption-trend-plane,.adoption-person,.adoption-collections-tag)::before,
+:is(.adoption-radar-frame,.adoption-flags,.adoption-mini-file,.adoption-deposit,.adoption-offer-file,.adoption-trend-plane,.adoption-person,.adoption-collections-tag)::after {
+  content:'';
+  position:absolute;
+  pointer-events:none;
+  background:var(--blue-soft);
+}
+:is(.adoption-radar-frame,.adoption-flags,.adoption-mini-file,.adoption-deposit,.adoption-offer-file,.adoption-trend-plane,.adoption-person,.adoption-collections-tag)::before {
+  top:100%; left:0; width:calc(100% + 6px); height:6px;
+  clip-path:polygon(0 0,calc(100% - 6px) 0,100% 100%,6px 100%);
+}
+:is(.adoption-radar-frame,.adoption-flags,.adoption-mini-file,.adoption-deposit,.adoption-offer-file,.adoption-trend-plane,.adoption-person,.adoption-collections-tag)::after {
+  top:0; left:100%; width:6px; height:calc(100% + 6px);
+  background:color-mix(in srgb,var(--line) 65%,var(--blue-soft));
+  clip-path:polygon(0 0,100% 6px,100% 100%,0 calc(100% - 6px));
+}
+.adoption-radar-frame {
+  background:var(--adoption-cobalt);
+  border-color:var(--blue-secondary);
+  box-shadow:inset 0 1px 0 var(--on-brand-line),var(--adoption-lift);
+}
+.adoption-radar-frame::before { background:var(--identity-blue); }
+.adoption-radar-frame::after { background:var(--blue); }
+.adoption-radar-frame>i { border-color:var(--on-brand-line); }
+.adoption-radar-cross { background:var(--on-brand-line); }
+.adoption-radar-point { background:var(--on-brand); box-shadow:0 0 0 5px var(--on-brand-surface); }
+.adoption-radar-point.point-alert { box-shadow:0 0 0 5px color-mix(in srgb,var(--signal-orange) 20%,transparent); }
+.adoption-radar-scan::after { background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--on-brand) 20%,transparent)); border-color:var(--on-brand-muted); }
+
+.adoption-flags,.adoption-mini-file,.adoption-deposit,.adoption-offer-file,.adoption-trend-plane {
+  position:relative;
+  background:var(--adoption-ceramic);
+  border:1px solid var(--adoption-edge);
+  box-shadow:inset 0 1px 0 var(--canvas),var(--adoption-lift);
+}
+.adoption-fraud { gap:10px; padding-right:6px; }
+.adoption-flags { width:calc(100% - 18px); background:linear-gradient(135deg,var(--canvas),var(--warning-bg)); border-top:2px solid color-mix(in srgb,var(--warning-fg) 55%,var(--canvas)); }
+.adoption-fraud>.adoption-telemetry { margin-left:20px; }
+.adoption-mini-file { margin-left:20px; padding:10px 12px; border-left:3px solid var(--blue-secondary); gap:4px; }
+.adoption-deposit { margin-right:10px; }
+.adoption-deposit.secondary { margin-right:0; background:var(--adoption-ceramic); }
+.adoption-income-bars { gap:14px; padding-right:14px; }
+.adoption-income-bars i { position:relative; background:var(--adoption-cobalt); box-shadow:0 6px 10px color-mix(in srgb,var(--identity-blue) 8%,transparent); }
+.adoption-income-bars i::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:5px; background:var(--blue-secondary); clip-path:polygon(0 100%,5px 0,100% 0,calc(100% - 5px) 100%); }
+.adoption-income-bars i::after { content:''; position:absolute; top:0; left:100%; width:5px; height:100%; background:var(--identity-blue); clip-path:polygon(0 0,100% -5px,100% calc(100% - 5px),0 100%); }
+.adoption-income-bars i.projected { box-shadow:none; }
+.adoption-income-bars i.projected::before,.adoption-income-bars i.projected::after { background:var(--blue-soft); }
+
+.adoption-capacity-track { padding-bottom:3px; }
+.adoption-capacity-track>i { box-shadow:0 3px 0 color-mix(in srgb,var(--line-strong) 45%,var(--canvas)); }
+.adoption-capacity-track>i:nth-child(n+5) { background:var(--adoption-cobalt); box-shadow:0 3px 0 var(--identity-blue); }
+.adoption-offer-file { margin-right:6px; border-left:3px solid var(--blue-secondary); }
+.adoption-offer-file>.adoption-telemetry { color:var(--blue); }
+.adoption-trend-plane { display:flex; flex:1; min-height:0; margin:12px 6px 4px 0; padding:4px 8px; }
+.adoption-trend-plane>svg { display:block; width:100%; height:100%; min-height:0; }
+.adoption-trend { filter:drop-shadow(0 3px 2px color-mix(in srgb,var(--blue-secondary) 20%,transparent)); }
+.adoption-trend-alert { position:relative; z-index:1; }
+
+.adoption-code { inset:20px 32px 28px 20px; overflow:hidden; mask-image:none; border:1px solid var(--adoption-edge); background:var(--adoption-ceramic); box-shadow:6px 6px 0 var(--blue-soft),var(--adoption-lift); }
+.adoption-code pre { margin:12px; font-size:10px; }
+.adoption-person { position:relative; background:var(--adoption-cobalt); color:var(--on-brand); border-color:var(--blue-secondary); box-shadow:inset 0 1px 0 var(--on-brand-line),var(--adoption-lift); }
+.adoption-person::before,.adoption-person::after { background:var(--identity-blue); }
+.adoption-collections-tag { background:var(--adoption-ceramic); border-color:var(--adoption-edge); box-shadow:var(--adoption-lift); }
+@keyframes adoption-ring { 0%,100% { stroke-dasharray:52 48; } 50% { stroke-dasharray:58 42; } }
+@keyframes adoption-signal { 0%,100% { opacity:.45; } 45%,65% { opacity:1; } }
+@keyframes adoption-scan { 0% { transform:translateX(-100%); } 80%,100% { transform:translateX(260%); } }
+@keyframes adoption-review { 0%,100% { border-color:color-mix(in srgb,var(--warning-fg) 30%,transparent); } 50% { border-color:var(--warning-fg); } }
+@keyframes adoption-bar { 0%,100% { transform:scaleY(.85); } 50% { transform:scaleY(1); } }
+@keyframes adoption-capacity { 0%,100% { left:65%; } 50% { left:76%; } }
+@keyframes adoption-trend { 0% { stroke-dashoffset:100; } 40%,85% { stroke-dashoffset:0; opacity:1; } 100% { stroke-dashoffset:0; opacity:0; } }
+@keyframes adoption-code { from { transform:translateY(8%); } to { transform:translateY(-45%); } }
+
+.website-graphic[data-motion="paused"] *, .website-graphic[data-motion="paused"] *::after { animation-play-state:paused!important; }
+@media(prefers-reduced-motion:reduce) {
+  .website-graphic *, .website-graphic *::before, .website-graphic *::after { animation:none!important; transition:none!important; }
+}

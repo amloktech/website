@@ -1,0 +1,33 @@
+.home-page .home-security { padding-block:var(--space-section); background:var(--canvas); color:var(--ink); scroll-margin-top:var(--home-header-height); }
+.home-security-inner { width:var(--site-content-width); margin-inline:auto; }
+/* These adjacent white sections share the security section's bottom spacing. */
+.home-page .home-security + .home-features { padding-top:0; }
+.home-security-intro { display:grid; grid-template-columns:minmax(0,1.9fr) minmax(300px,1fr); gap:clamp(40px,6vw,88px); align-items:center; margin-top:24px; }
+.home-security-copy h2 { margin:0; font-size:var(--text-section-heading); font-weight:600; line-height:1.08; letter-spacing:-.04em; }
+.home-security-copy>p { margin:32px 0 0; max-width:760px; color:var(--muted); font-size:var(--text-section-description); line-height:1.75; }
+.home-security-status { display:grid; gap:12px; }
+.home-security-status-card { display:flex; align-items:center; gap:16px; padding:20px; border:1px solid var(--line); border-radius:var(--radius-card); background:linear-gradient(135deg,var(--canvas),var(--blue-soft)); }
+.home-security-status-icon { display:grid; place-items:center; flex:0 0 44px; width:44px; height:44px; border-radius:var(--radius-inner); background:var(--blue-soft); color:var(--blue-secondary); }
+.home-security-status-icon i { width:11px; height:11px; background:var(--blue-secondary); border-radius:50%; box-shadow:0 0 14px color-mix(in srgb,var(--blue-secondary) 35%,transparent); }
+.home-security-status-card h3 { display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; margin:0; font-size:15px; font-weight:600; line-height:1.4; }
+.home-security-status-card h3>span { color:var(--blue); font:500 9px/1.5 var(--font-mono); letter-spacing:.09em; }
+.home-security-status-card p { margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6; }
+.home-security-assurances { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:clamp(16px,2vw,32px); margin-top:80px; padding:44px; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--surface); }
+.home-security-badge { overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--canvas); color:#1c1c1c; box-shadow:0 3px 0 var(--line),0 8px 16px color-mix(in srgb,var(--identity-blue) 7%,transparent); }
+.home-security-badge svg { display:block; width:100%; height:auto; font-family:Arial,sans-serif; fill:currentColor; }
+.home-security-badge>span { display:block; padding:12px 4px; background:linear-gradient(115deg,var(--blue-secondary),var(--blue-field) 55%,var(--identity-blue)); color:var(--on-brand); text-align:center; text-transform:uppercase; font-size:clamp(9px,.85vw,12px); font-weight:600; letter-spacing:.06em; }
+.home-security-scope { max-width:1100px; margin:28px 0 0; color:var(--muted); font-size:12px; line-height:1.7; }
+@media(max-width:1199px) {
+  .home-security-intro { grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr); gap:32px; }
+  .home-security-assurances { padding:28px; gap:14px; }
+}
+@media(max-width:900px) {
+  .home-security-intro { grid-template-columns:minmax(0,1fr); }
+  .home-security-status { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .home-security-assurances { grid-template-columns:repeat(4,minmax(0,1fr)); margin-top:48px; }
+}
+@media(max-width:540px) {
+  .home-security-status { grid-template-columns:minmax(0,1fr); }
+  .home-security-assurances { grid-template-columns:repeat(2,minmax(0,1fr)); padding:20px; }
+  .home-security-copy>p { margin-top:24px; }
+}
