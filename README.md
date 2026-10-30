@@ -5,7 +5,7 @@ Local Next.js / React / TypeScript website. `/` is the marketing homepage;
 
 ## Run locally
 
-Requires Node.js 20.9+ and pnpm.
+Requires Node.js 22+ and pnpm.
 
 ```sh
 pnpm install
@@ -19,6 +19,9 @@ pnpm typecheck
 pnpm build
 pnpm start
 ```
+
+`pnpm build` exports the site to `out/`. `pnpm start` previews that export
+with Cloudflare's local runtime on http://127.0.0.1:3000.
 
 On this Mac, `./scripts/local.sh dev` (or `install`, `typecheck`, `build`, `start`)
 uses the system pnpm or the bundled runtime. If Turbopack cannot launch its CSS
@@ -72,4 +75,29 @@ and mobile layouts, both guide themes, keyboard behavior, reduced motion, and
 loading/error states. A major version changes existing contracts; minor versions
 add compatible patterns; patches correct implementation or documentation.
 
-Development is local only. Nothing has been deployed.
+## Cloudflare deployment
+
+The `website` Worker in the Amlok Tech account is connected to
+`amloktech/website`, branch `main`. Keep its build settings as:
+
+- Build command: `pnpm run build`
+- Deploy command: `npx wrangler deploy`
+- Root directory: `/`
+
+`wrangler.jsonc` serves the static Next.js export from `out/`, including
+the custom 404 page. Images are served directly from the exported assets;
+there is no Next.js image-optimization server. The brand token download's
+response headers are preserved in `public/_headers`.
+
+Wrangler is pinned in the lockfile. Only the pinned `esbuild` and `workerd`
+setup scripts are approved in `pnpm-workspace.yaml`, so CI does not need
+an interactive `pnpm approve-builds` step or automatic framework migration.
+
+To validate a deployment without publishing:
+
+```sh
+pnpm build
+pnpm exec wrangler deploy --dry-run
+```
+
+Authenticated maintainers can also publish with `pnpm run deploy`.

@@ -3,26 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3000",
     "build": "next build",
-    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "start": "wrangler dev --local --ip 127.0.0.1 --port 3000",
+    "deploy": "pnpm run build && wrangler deploy",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
-    "next": "16.4.0",
+    "lucide-react": "^0.577.0",
+    "next": "16.4.3",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "lucide-react": "^0.577.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
-    "tailwindcss": "^4.2.1",
-    "typescript": "^5.9.3",
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0"
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3",
+    "wrangler": "4.156.0"
   }
 }
