@@ -73,10 +73,10 @@
   .home-page .home-capability-media { height:auto; min-height:0; max-height:none; aspect-ratio:1.25; margin-bottom:20px; }
   .home-page .home-capability-card>p { margin-top:12px; line-height:1.6; }
 
-  .home-page .home-products-heading { align-items:start; grid-template-columns:minmax(0,1.8fr) minmax(240px,.8fr); gap:40px; }
+  .home-page .home-products-heading { align-items:start; grid-template-columns:minmax(0,1.5fr) minmax(320px,1fr); gap:40px; }
   .home-page .home-products-heading h2 { max-width:none; text-wrap:balance; }
   .home-page .home-products-title-line { white-space:normal; }
-  .home-page .home-products-modularity { max-width:320px; height:184px; align-self:center; }
+  .home-page .home-products-modularity { max-width:480px; height:auto; align-self:center; }
   .home-page .home-products-layout { gap:48px; }
   .home-page .home-products-list { gap:24px; }
   .home-page .home-products-group { min-height:540px; padding:32px; }
@@ -112,7 +112,9 @@
   .home-page .home-lifecycle-copy>p { margin-top:24px; }
 
   .home-page .home-security-intro { align-items:start; gap:var(--desktop-column-gap); }
-  .home-page .home-security-assurances { margin-top:48px; padding:32px; gap:24px; }
+  .home-page .home-security-assurances { grid-template-columns:repeat(10,minmax(0,1fr)); margin-top:40px; padding:24px; gap:16px; }
+  .home-page .home-security-badge { width:100%; max-width:112px; justify-self:center; border-radius:12px; }
+  .home-page .home-security-badge>span { padding:8px 2px; font-size:8px; letter-spacing:.04em; }
   .home-page .home-security-scope { margin-top:24px; }
   .home-page .home-features-heading-copy { margin-top:24px; gap:var(--desktop-column-gap); }
   .home-page .home-features-heading-copy>p { margin:0; }
@@ -170,7 +172,7 @@
   .home-page .home-risk-gap-panel { padding-left:0; }
   .home-page .home-capability-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:40px 24px; }
   .home-page .home-capability-media { aspect-ratio:1.65; }
-  .home-page .home-products-heading { grid-template-columns:minmax(0,1.7fr) minmax(220px,.8fr); gap:32px; }
+  .home-page .home-products-heading { grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr); gap:32px; }
   .home-page .home-products-group { padding:28px; }
   .home-page .home-products-layer-layout { grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
   .home-page .home-products-layer { grid-template-columns:40px minmax(0,1fr) 86px; }

@@ -1,4 +1,4 @@
-/* Each capability has its own illustration; alternate the two desktop columns. */
+/* Each capability pairs copy on the left with its illustration on the right. */
 .home-lifecycle-rows { display:grid; gap:80px; }
 .home-lifecycle-row {
   display:grid;
@@ -11,9 +11,11 @@
 .home-lifecycle-label { display:block; margin-bottom:16px; color:var(--blue); font:600 11px/1.5 var(--font-mono); letter-spacing:.12em; }
 .home-lifecycle-copy h3 { margin:0; color:var(--ink); font-size:clamp(26px,2.8vw,38px); font-weight:500; line-height:1.12; letter-spacing:-.035em; text-wrap:balance; }
 .home-lifecycle-copy>p { margin:24px 0 0; color:var(--muted); font-size:var(--text-section-description); line-height:var(--leading-body); }
+.home-lifecycle-link { display:inline-flex; align-items:center; gap:12px; min-height:44px; margin-top:20px; color:var(--blue); font-size:16px; font-weight:500; text-decoration:none; }
+.home-lifecycle-link:hover { text-decoration:underline; text-underline-offset:4px; }
+.home-lifecycle-link:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:5px; border-radius:4px; }
 .home-page .home-lifecycle-visual.home-loan-scale-art { position:relative; min-width:0; min-height:0; height:clamp(320px,32vw,440px); margin:0; border-color:var(--border-default); border-radius:var(--radius-media); }
-.home-lifecycle-row.is-reversed .home-lifecycle-copy { grid-column:2; grid-row:1; }
-.home-lifecycle-row.is-reversed .home-lifecycle-visual { grid-column:1; grid-row:1; }
+.home-page .home-lifecycle-visual.home-loan-scale-art:has([data-illustration="embedded"]) { height:440px; aspect-ratio:auto; }
 
 @media(max-width:1023px) {
   .home-lifecycle-rows { gap:64px; }
@@ -29,7 +31,7 @@
   .home-lifecycle-visual { order:1; }
   .home-lifecycle-copy h3 { order:2; }
   .home-lifecycle-copy>p { order:3; margin-top:0; font-size:16px; }
-  .home-lifecycle-row.is-reversed .home-lifecycle-copy,
-  .home-lifecycle-row.is-reversed .home-lifecycle-visual { grid-column:auto; grid-row:auto; }
+  .home-lifecycle-link { order:4; justify-self:start; margin-top:-8px; }
   .home-page .home-lifecycle-visual.home-loan-scale-art { height:clamp(260px,70vw,360px); }
+  .home-page .home-lifecycle-visual.home-loan-scale-art:has([data-illustration="embedded"]) { height:420px; }
 }

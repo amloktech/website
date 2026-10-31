@@ -1,0 +1,161 @@
+{
+  "catalog": "https://docs.amlok.io/integrations",
+  "selection": "36 recognizable companies from the catalog, with compact/profile marks prioritized. Catalog presence does not imply all connections are active.",
+  "assets": {
+    "shopify.svg": {
+      "company": "Shopify",
+      "source": "https://svgl.app/library/shopify.svg",
+      "brandSource": "https://www.shopify.com/brand-assets"
+    },
+    "stripe.svg": {
+      "company": "Stripe",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/stripe.svg"
+    },
+    "paypal.svg": {
+      "company": "PayPal",
+      "source": "https://svgl.app/library/paypal.svg",
+      "brandSource": "https://paypal.com"
+    },
+    "square.svg": {
+      "company": "Square",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/square.svg"
+    },
+    "amazon.svg": {
+      "company": "Amazon",
+      "source": "https://www.vectorlogo.zone/logos/amazon/amazon-icon.svg"
+    },
+    "walmart.svg": {
+      "company": "Walmart",
+      "source": "https://www.vectorlogo.zone/logos/walmart/walmart-icon.svg"
+    },
+    "ebay.svg": {
+      "company": "eBay",
+      "source": "https://www.vectorlogo.zone/logos/ebay/ebay-icon.svg"
+    },
+    "etsy.svg": {
+      "company": "Etsy",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/etsy.svg",
+      "brandSource": "https://www.etsy.com/uk/press"
+    },
+    "adobe.svg": {
+      "company": "Adobe Commerce",
+      "source": "https://svgl.app/library/adobe.svg",
+      "brandSource": "https://www.adobe.com/legal/permissions.html"
+    },
+    "woocommerce.png": {
+      "company": "WooCommerce",
+      "source": "https://woocommerce.com/wp-content/uploads/2024/12/cropped-logo-w-favicon.png?w=180"
+    },
+    "bigcommerce.png": {
+      "company": "BigCommerce",
+      "source": "https://www.bigcommerce.com/mm/icons/apple-touch-icon-180x180.png"
+    },
+    "wix.png": {
+      "company": "Wix",
+      "source": "https://www.wix.com/favicon.ico"
+    },
+    "microsoft.svg": {
+      "company": "Microsoft Dynamics 365",
+      "source": "https://svgl.app/library/microsoft.svg",
+      "brandSource": "https://www.microsoft.com/"
+    },
+    "salesforce.svg": {
+      "company": "Salesforce",
+      "source": "https://svgl.app/library/salesforce.svg",
+      "brandSource": "https://brand.salesforce.com/"
+    },
+    "quickbooks.svg": {
+      "company": "QuickBooks",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/quickbooks.svg"
+    },
+    "xero.svg": {
+      "company": "Xero",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/xero.svg"
+    },
+    "oracle.svg": {
+      "company": "Oracle",
+      "source": "https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg"
+    },
+    "sap.svg": {
+      "company": "SAP",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/sap.svg",
+      "brandSource": "https://www.sap.com"
+    },
+    "workday.svg": {
+      "company": "Workday",
+      "source": "https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/workday/default.svg"
+    },
+    "sage.svg": {
+      "company": "Sage",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/sage.svg",
+      "brandSource": "https://www.sage.com"
+    },
+    "zoho.svg": {
+      "company": "Zoho",
+      "source": "https://www.vectorlogo.zone/logos/zoho/zoho-icon.svg"
+    },
+    "freshbooks.svg": {
+      "company": "FreshBooks",
+      "source": "https://www.freshbooks.com/mask-icon.svg"
+    },
+    "webflow.svg": {
+      "company": "Webflow",
+      "source": "https://svgl.app/library/webflow.svg",
+      "brandSource": "https://brand-at.webflow.io/resources"
+    },
+    "squarespace.svg": {
+      "company": "Squarespace",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/squarespace.svg",
+      "brandSource": "https://www.squarespace.com/logo-guidelines"
+    },
+    "mastercard.svg": {
+      "company": "Mastercard Open Finance",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+    },
+    "plaid.png": {
+      "company": "Plaid",
+      "source": "https://plaid.com/assets/img/favicons/apple-touch-icon.png"
+    },
+    "flinks.jpg": {
+      "company": "Flinks",
+      "source": "https://cdn.prod.website-files.com/6733567c88ece7f1d9007402/67349ac1936e891beb457710_logo_webclip.jpg"
+    },
+    "fico.png": {
+      "company": "FICO",
+      "source": "https://www.google.com/s2/favicons?domain=fico.com&sz=256"
+    },
+    "experian.png": {
+      "company": "Experian",
+      "source": "https://www.experian.com/favicon-512x512.png"
+    },
+    "ncino.png": {
+      "company": "nCino",
+      "source": "https://www.google.com/s2/favicons?domain=ncino.com&sz=256"
+    },
+    "lightspeed.png": {
+      "company": "Lightspeed",
+      "source": "https://www.lightspeedhq.com/apple-touch-icon.png?v=2"
+    },
+    "clover.png": {
+      "company": "Clover",
+      "source": "https://www.google.com/s2/favicons?domain=clover.com&sz=256"
+    },
+    "temenos.png": {
+      "company": "Temenos",
+      "source": "https://www.temenos.com/wp-content/uploads/2025/04/favicon.png"
+    },
+    "adyen.svg": {
+      "company": "Adyen",
+      "source": "https://www.adyen.com/icon.svg"
+    },
+    "prestashop.svg": {
+      "company": "PrestaShop",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/prestashop.svg",
+      "brandSource": "https://prestashop.com/brand-book"
+    },
+    "godaddy.svg": {
+      "company": "GoDaddy",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/godaddy.svg"
+    }
+  }
+}

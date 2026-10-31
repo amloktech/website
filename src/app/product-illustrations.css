@@ -80,6 +80,22 @@
 .pi-flow { fill:none; stroke:var(--blue-secondary); stroke-width:1.5; stroke-dasharray:5 24; animation:pi-flow 6s linear infinite; }
 .pi-flow.secondary { stroke:var(--signal-orange); animation-delay:-2s; }
 .pi-chrome { fill:var(--blue-soft); }
+/* Lifecycle sequences stay legible throughout the loop, including before hydration. */
+.pi-lifecycle-stage { animation:pi-lifecycle-stage 9.6s ease-in-out infinite; animation-delay:var(--pi-phase,0s); }
+.pi-lifecycle-trace { fill:none; stroke:var(--blue-secondary); stroke-width:1.6; stroke-dasharray:.16 .84; animation:pi-lifecycle-trace 9.6s linear infinite; animation-delay:var(--pi-phase,0s); }
+.pi-lifecycle-trace.attention { stroke:var(--signal-orange); }
+.pi-lifecycle-meter { fill:none; stroke:var(--blue-secondary); stroke-width:2; stroke-dasharray:1; animation:pi-lifecycle-meter 9.6s ease-in-out infinite; animation-delay:var(--pi-phase,0s); }
+.pi-lifecycle-meter.inverse { stroke:var(--on-brand); stroke-width:3; }
+.pi-lifecycle-callout { animation:pi-lifecycle-callout 9.6s ease-in-out infinite; }
+.pi-lifecycle-baseline { fill:none; stroke:var(--line-strong); stroke-width:1.2; stroke-dasharray:3 3; }
+.pi-lifecycle-chart { fill:none; stroke:var(--blue-secondary); stroke-width:2; stroke-dasharray:1; animation:pi-lifecycle-chart 9.6s ease-in-out infinite; }
+.pi-lifecycle-orbit { fill:none; stroke:var(--blue-secondary); stroke-width:1.5; stroke-dasharray:.08 .92; animation:pi-lifecycle-orbit 18s linear infinite; }
+@keyframes pi-lifecycle-stage { 0%,48%,100% { opacity:1; transform:translateY(0); } 68%,82% { opacity:.85; transform:translateY(3px); } }
+@keyframes pi-lifecycle-trace { from { stroke-dashoffset:1; } to { stroke-dashoffset:0; } }
+@keyframes pi-lifecycle-meter { 0%,12%,100% { stroke-dashoffset:.6; } 42%,85% { stroke-dashoffset:0; } }
+@keyframes pi-lifecycle-callout { 0%,15%,100% { opacity:.65; transform:translateY(3px); } 42%,85% { opacity:1; transform:translateY(0); } }
+@keyframes pi-lifecycle-chart { 0%,8%,100% { stroke-dashoffset:.45; } 48%,88% { stroke-dashoffset:0; } }
+@keyframes pi-lifecycle-orbit { to { stroke-dashoffset:-1; } }
 .product-illustration[data-motion="paused"] *, .product-illustration[data-motion="paused"] *::after { animation-play-state:paused!important; }
 @keyframes pi-signal { 0%,100% { opacity:.1; } 50% { opacity:.24; } }
 @keyframes pi-hover-card { 0%,20%,100% { transform:translateY(0); } 50%,75% { transform:translateY(-5px); } }

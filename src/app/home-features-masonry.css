@@ -1,4 +1,5 @@
 .home-page .home-features { padding-bottom:0; }
+.home-page .home-features:has(+ #featured-resources) { padding-bottom:var(--space-section); }
 /* Natural card heights pack into columns without stretching adjacent cards. */
 .home-page .home-features-grid {
   display:grid;

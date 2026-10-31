@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { heroGradient } from '@/lib/brand';
+import { EmbeddedConnectionWidget } from './embedded-connection-widget';
 
 type GlyphName = 'person' | 'document' | 'shield' | 'message' | 'calendar' | 'cursor' | 'code' | 'building' | 'check' | 'phone' | 'voice' | 'link' | 'flag';
 export const illustrationDescriptions = {
@@ -16,9 +17,14 @@ export const illustrationDescriptions = {
   simulation: 'A portfolio and its digital twin are compared side by side, with a changed scenario isolated in a raised cobalt plane.',
   customer: 'The institution’s customer experience sits above the connected AMLOK operating layers.',
   browser: 'A browser agent selects an application field and carries its source-linked evidence into a review.',
-  embedded: 'An AMLOK intelligence module fits directly into an institution’s existing product interface.',
+  embedded: 'An AMLOK connection widget scrolls through one list of Canadian banks and business integrations: TD, RBC, Scotiabank, BMO, CIBC, National Bank, Stripe, Shopify, QuickBooks, Square, Xero, and PayPal.',
   workflow: 'An agent workflow branches between evidence requests and a human approval step.',
   api: 'Raw transaction strings pass through a structured API boundary and emerge as labeled data.',
+  'connected-risk': 'Northstar Foods is connected to its bank account, payment processor, registry, principal, related company, and a newly identified debt obligation.',
+  'event-automations': 'Three connected notifications show a portfolio alert being created, supporting evidence collected, and the analyst notified.',
+  'explainable-signals': 'An illustrative revenue deterioration signal links a risk score of 68 to three source records, contributing factors, confidence, and a manual policy review.',
+  'behaviour-insights': 'Illustrative live operating behavior diverges from a 90-day baseline, with payment timing, transfer velocity, and new beneficiaries linked to an early warning and signal timeline.',
+  'lifecycle-api': 'One AMLOK API connects application, identity and entity, data connections, underwriting, capital deployed, continuous monitoring, risk signals, and decision package.',
   compliance: 'A policy shield checks an incoming document and identifies an exception for review.',
   quality: 'A field of interaction records is inspected, with one conversation enlarged for quality review.',
   builder: 'An operating procedure is translated into modular, connected agent instructions.',
@@ -186,12 +192,6 @@ function Browser() {
     <Box x={252} y={227} w={204} h={49} tone="brand"><Signal x={20} y={24}/><Label x={38} y={22} size={12}>Evidence captured</Label><Label x={38} y={38} size={8} tone="muted">Original source stays attached</Label></Box>
   </>;
 }
-function Embedded() {
-  return <><Caption>EMBEDDED / PART OF YOUR PRODUCT</Caption>
-    <Box x={29} y={49} w={385} h={215}><rect width={385} height={30} className="pi-chrome"/><Label x={16} y={19} size={9} tone="telemetry">YOUR PRODUCT</Label><rect x={15} y={47} width={103} height={151} className="pi-chrome"/><Glyph name="person" x={49} y={64} size={33}/><Label x={27} y={124} size={10}>Borrower profile</Label><DocumentLines x={27} y={144} width={72} count={2}/><Label x={145} y={64} size={11} tone="strong">Financial context</Label><DocumentLines x={145} y={91} width={217} count={4}/></Box>
-    <g className="pi-module-insert"><Box x={193} y={117} w={252} h={154} tone="brand"><Label x={18} y={25} size={8} tone="telemetry muted">AMLOK / CONNECTED INTELLIGENCE</Label><Label x={18} y={57} size={20}>The complete picture.</Label><Label x={18} y={80} size={10} tone="muted">Evidence. Context. Next steps.</Label><path d="M18 96H234" className="pi-inverse-grid"/><Glyph name="document" x={18} y={113} size={22} tone="inverse"/><Label x={52} y={124} size={11}>Borrower file connected</Label><Label x={52} y={141} size={8} tone="muted">Inside your existing workspace</Label></Box></g>
-  </>;
-}
 function Workflow() {
   return <><Caption>WORKFLOW AGENTS / COORDINATE THE WORK</Caption>
     <Connection d="M130 151H195M259 151H290V85H335M290 151V222H335"/>
@@ -272,6 +272,195 @@ function WhiteLabel() {
     <g transform="translate(99 57)"><path d="M0 0 17-11h262l-17 11Z" className="pi-facet-top"/><path d="M262 0 279-11v155l-17 11Z" className="pi-side-face"/><Box x={0} y={0} w={262} h={155}><rect width={262} height={37} className="pi-blue-block"/><Glyph name="building" x={13} y={9} size={20} tone="inverse"/><Label x={43} y={24} size={11} tone="inverse">YOUR BRAND</Label><Label x={19} y={65} size={16} tone="strong">A familiar experience.</Label><path d="M19 82H243M19 100H196" className="pi-document-line"/><rect x={18} y={119} width={108} height={22} className="pi-blue-block"/><Label x={42} y={134} size={9} tone="inverse">Continue</Label><Glyph name="check" x={214} y={119} size={23} tone="blue"/></Box></g>
   </>;
 }
+/* The lifecycle stories retain the live site's data and sequence, using our shared materials. */
+function LifecycleStage({ children, index=0 }: { children:ReactNode; index?:number }) {
+  return <g className="pi-lifecycle-stage" style={{'--pi-phase':`${index * 1.2}s`} as CSSProperties}>{children}</g>;
+}
+
+function LifecycleConnection({ d, index=0, attention=false }: { d:string; index?:number; attention?:boolean }) {
+  return <g style={{'--pi-phase':`${index * 1.2}s`} as CSSProperties}>
+    <path d={d} className="pi-connection"/>
+    <path d={d} pathLength={1} className={'pi-lifecycle-trace'+(attention?' attention':'')}/>
+  </g>;
+}
+
+function ConnectedRisk() {
+  const nodes: { x:number; y:number; title:string; detail:string; icon:GlyphName; attention?:boolean }[] = [
+    { x:12, y:72, title:'Bank account', detail:'•• 4821', icon:'building' },
+    { x:12, y:196, title:'Payment processor', detail:'Merchant ID 8492', icon:'code' },
+    { x:168, y:42, title:'Business registry', detail:'Ontario · Active', icon:'document' },
+    { x:324, y:72, title:'Principal', detail:'28% ownership', icon:'person' },
+    { x:324, y:196, title:'Related company', detail:'Shared director', icon:'link' },
+    { x:168, y:238, title:'Debt obligation', detail:'$42K outstanding', icon:'flag', attention:true },
+  ];
+  const paths=['M184 139L156 96','M184 165L156 220','M240 126V90','M296 139L324 96','M296 165L324 220','M240 182V238','M396 120V196'];
+  return <>
+    <Caption>CONNECTED RISK GRAPH / LIVE RELATIONSHIPS</Caption>
+    {paths.map((d,i)=><LifecycleConnection key={d} d={d} index={i} attention={i===5}/>)}
+    {nodes.map((node,i)=><LifecycleStage key={node.title} index={i}>
+      <Box x={node.x} y={node.y} w={144} h={48} tone={node.attention?'attention':''}>
+        <Glyph name={node.icon} x={10} y={13} size={22} tone={node.attention?'attention':'blue'}/>
+        <Label x={41} y={21} size={9.5} tone="strong">{node.title}</Label>
+        <Label x={41} y={36} size={8} tone="muted">{node.detail}</Label>
+      </Box>
+    </LifecycleStage>)}
+    <Box x={163} y={126} w={154} h={56} tone="brand">
+      <Glyph name="building" x={12} y={15} size={26} tone="inverse"/>
+      <Label x={48} y={25} size={12}>Northstar Foods</Label>
+      <Label x={48} y={42} size={8} tone="muted">Resolved business</Label>
+    </Box>
+    <Signal x={240} y={214} tone="attention"/>
+  </>;
+}
+
+function EventAutomations() {
+  const notifications = [
+    { title:'Portfolio alert created', detail:'Revenue concentration increased.', icon:'flag' },
+    { title:'Evidence collected', detail:'Payment and accounting signals reconciled.', icon:'document' },
+    { title:'Analyst notified', detail:'Decision context sent to the risk team.', icon:'person' },
+  ] as const;
+  return <>
+    <Caption>EVENT-BASED AUTOMATIONS / CONNECTED OPERATIONS</Caption>
+    <LifecycleConnection d="M43 86V254"/>
+    {notifications.map((item,i)=><g key={item.title}>
+      <Signal x={43} y={84+i*82}/>
+      <LifecycleStage index={i*2}>
+        <Box x={70} y={47+i*82} w={369} h={70}>
+          <rect x={0} y={0} width={4} height={70} className="pi-blue-block"/>
+          <rect x={16} y={20} width={31} height={31} className="pi-selection"/>
+          <Glyph name={item.icon} x={23} y={27} size={17} tone="blue"/>
+          <Glyph name="check" x={60} y={11} size={12} tone="blue"/>
+          <Label x={78} y={21} size={8} tone="telemetry blue">AMLOK · COMPLETED</Label>
+          <Label x={61} y={41} size={14} tone="strong">{item.title}</Label>
+          <Label x={61} y={58} size={9} tone="muted">{item.detail}</Label>
+        </Box>
+      </LifecycleStage>
+    </g>)}
+  </>;
+}
+
+function ExplainableSignals() {
+  const sources=[['Bank transactions','Revenue −18.4%'],['Accounting ledger','Receivables +21 days'],['Payment processor','Refund rate 6.2%']];
+  const factors=[['Revenue trend','HIGH IMPACT','−12'],['Cash coverage','MEDIUM IMPACT','−7'],['Payment behavior','MEDIUM IMPACT','−5']];
+  return <>
+    <Caption>EXPLAINABLE SIGNAL / NORTHSTAR FOODS</Caption>
+    <Box x={20} y={45} w={172} h={192} tone="brand">
+      <Label x={14} y={23} size={7.5} tone="telemetry">RISK SIGNAL · MATERIAL</Label>
+      <Label x={14} y={45} size={14}>Revenue deterioration</Label>
+      <Label x={14} y={96} size={45}>68</Label>
+      <Label x={77} y={75} size={7.5} tone="telemetry muted">RISK SCORE</Label>
+      <Label x={77} y={92} size={10}>+24 points</Label>
+      <path d="M14 112H158" className="pi-inverse-grid"/>
+      <path d="M14 112H112" pathLength={1} className="pi-lifecycle-meter inverse"/>
+      <Label x={14} y={134} size={7} tone="telemetry muted">EXPLANATION</Label>
+      <Label x={14} y={150} size={8.5}>Revenue declined while payment</Label>
+      <Label x={14} y={164} size={8.5}>delays and refunds increased,</Label>
+      <Label x={14} y={178} size={8.5}>reducing short-term debt coverage.</Label>
+    </Box>
+    <Box x={210} y={45} w={250} h={108}>
+      <Glyph name="document" x={12} y={11} size={16} tone="blue"/>
+      <Label x={36} y={23} size={12} tone="strong">Source evidence</Label>
+      {sources.map(([source,value],i)=><g key={source}>
+        <Label x={14} y={46+i*25} size={9} tone="muted">{source}</Label>
+        <text x={236} y={46+i*25} textAnchor="end" className="pi-label" style={{fontSize:9}}>{value}</text>
+        <path d={`M14 ${53+i*25}H236`} className="pi-grid"/>
+        <path d={`M14 ${53+i*25}H236`} pathLength={1} className="pi-lifecycle-meter" style={{'--pi-phase':`${i*1.2}s`} as CSSProperties}/>
+      </g>)}
+    </Box>
+    <Box x={210} y={163} w={250} h={74}>
+      <Label x={12} y={18} size={10} tone="strong">Contributing factors</Label>
+      <text x={238} y={18} textAnchor="end" className="pi-label telemetry blue" style={{fontSize:7}}>94% CONFIDENCE</text>
+      {factors.map(([label,impact,points],i)=><g key={label}>
+        <Label x={12} y={35+i*15} size={8.5} tone="muted">{label}</Label>
+        <Label x={137} y={35+i*15} size={6.5} tone="telemetry blue">{impact}</Label>
+        <text x={238} y={35+i*15} textAnchor="end" className="pi-label warning" style={{fontSize:9}}>{points}</text>
+      </g>)}
+    </Box>
+    <g className="pi-lifecycle-callout">
+      <Box x={20} y={252} w={440} h={36} tone="selected">
+        <Glyph name="shield" x={12} y={9} size={18} tone="blue"/>
+        <Label x={40} y={14} size={7} tone="telemetry blue">POLICY IMPACT · EXPLAINED</Label>
+        <Label x={40} y={28} size={10}>Manual review required · covenant threshold approaching</Label>
+      </Box>
+    </g>
+  </>;
+}
+
+function BehaviourInsights() {
+  const patterns=[['Payment timing','7.2 days later'],['Transfer velocity','+38%'],['New beneficiaries','3 detected']];
+  const events=[['09:12','Deposit cadence','changed'],['11:48','Cash buffer','crossed policy'],['14:06','Risk trajectory','escalated']];
+  return <>
+    <Caption>CONTINUOUS BEHAVIOUR / NORTHSTAR FOODS</Caption>
+    <Box x={20} y={45} w={268} h={162}>
+      <Label x={14} y={23} size={13} tone="strong">Operating behavior</Label>
+      <Label x={14} y={39} size={7} tone="telemetry muted">LIVE ACTIVITY VS. 90-DAY BASELINE</Label>
+      {[62,82,102].map(y=><path key={y} d={`M14 ${y}H254`} className="pi-grid"/>)}
+      <path d="M14 88C39 82 57 86 77 83S117 86 139 82S183 86 205 83S234 86 254 83" className="pi-lifecycle-baseline"/>
+      <path d="M14 87C38 81 55 89 77 84S116 87 139 80S176 87 192 101S216 114 230 72S245 60 254 65" pathLength={1} className="pi-lifecycle-chart"/>
+      <Signal x={230} y={72} tone="attention"/>
+      <circle cx={18} cy={120} r={2.5} className="pi-blue-block"/>
+      <Label x={26} y={123} size={7} tone="telemetry blue">LIVE BEHAVIOR</Label>
+      <path d="M121 120H135" className="pi-lifecycle-baseline"/>
+      <Label x={140} y={123} size={7} tone="telemetry muted">BASELINE</Label>
+      <g className="pi-lifecycle-callout">
+        <rect x={12} y={134} width={244} height={20} className="pi-attention-fill"/>
+        <Label x={20} y={147} size={8.5} tone="warning">Default probability increased: 3.8% → 11.6%</Label>
+      </g>
+    </Box>
+    <Box x={302} y={45} w={158} h={162}>
+      <Label x={13} y={23} size={12} tone="strong">Pattern changes</Label>
+      {patterns.map(([label,value],i)=><g key={label}>
+        <Label x={13} y={47+i*36} size={8.5} tone="muted">{label}</Label>
+        <Label x={13} y={62+i*36} size={10} tone="blue">{value}</Label>
+        <path d={`M13 ${69+i*36}H145`} className="pi-grid"/>
+        <path d={`M13 ${69+i*36}H${[105,133,94][i]}`} pathLength={1} className="pi-lifecycle-meter" style={{'--pi-phase':`${i*1.2}s`} as CSSProperties}/>
+      </g>)}
+    </Box>
+    <Box x={20} y={220} w={440} h={68}>
+      <Label x={14} y={19} size={10} tone="strong">Signal timeline</Label>
+      <text x={426} y={19} textAnchor="end" className="pi-label telemetry muted" style={{fontSize:7}}>TODAY</text>
+      <path d="M24 34H319" className="pi-connection"/>
+      {events.map(([time,line1,line2],i)=><LifecycleStage key={time} index={i*2}>
+        <Signal x={24+i*145} y={34} tone={i===2?'attention':''}/>
+        <Label x={36+i*145} y={37} size={8} tone="telemetry blue">{time}</Label>
+        <Label x={14+i*145} y={51} size={9}>{line1}</Label>
+        <Label x={14+i*145} y={63} size={9} tone="muted">{line2}</Label>
+      </LifecycleStage>)}
+    </Box>
+  </>;
+}
+
+function LifecycleApi() {
+  const stages: { x:number; y:number; icon:GlyphName; lines:string[] }[] = [
+    { x:240,y:49,icon:'document',lines:['Application'] },
+    { x:363,y:78,icon:'person',lines:['Identity & entity'] },
+    { x:412,y:150,icon:'link',lines:['Data connections'] },
+    { x:363,y:224,icon:'shield',lines:['Underwriting'] },
+    { x:240,y:253,icon:'building',lines:['Capital deployed'] },
+    { x:117,y:224,icon:'calendar',lines:['Continuous monitoring'] },
+    { x:68,y:150,icon:'flag',lines:['Risk signals'] },
+    { x:117,y:78,icon:'document',lines:['Decision package'] },
+  ];
+  return <>
+    <Caption>ONE API / FULL LIFECYCLE</Caption>
+    <ellipse cx={240} cy={151} rx={172} ry={102} className="pi-grid"/>
+    <ellipse cx={240} cy={151} rx={114} ry={68} className="pi-dashed"/>
+    <ellipse cx={240} cy={151} rx={114} ry={68} pathLength={1} className="pi-lifecycle-orbit"/>
+    {stages.map((stage,i)=><LifecycleConnection key={i} d={`M240 151L${stage.x} ${stage.y}`} index={i}/>)}
+    {stages.map((stage,i)=><LifecycleStage key={i} index={i}>
+      <Box x={stage.x-17} y={stage.y-17} w={34} h={34}>
+        <Glyph name={stage.icon} x={7} y={7} size={20} tone="blue"/>
+      </Box>
+      {stage.lines.map((line,j)=><text key={line} x={stage.x} y={stage.y+32+j*12} textAnchor="middle" className="pi-label" style={{fontSize:9}}>{line}</text>)}
+    </LifecycleStage>)}
+    <Box x={179} y={119} w={122} h={64} tone="brand">
+      <Glyph name="code" x={13} y={20} size={24} tone="inverse"/>
+      <Label x={46} y={29} size={12}>AMLOK API</Label>
+      <Label x={46} y={45} size={9} tone="muted">One risk layer</Label>
+    </Box>
+  </>;
+}
+
 function Scene({kind,step}:{kind:IllustrationKind;step:number}) {
   switch(kind) {
     case 'verification':return <Verification step={step}/>;
@@ -285,9 +474,14 @@ function Scene({kind,step}:{kind:IllustrationKind;step:number}) {
     case 'simulation':return <Simulation/>;
     case 'customer':return <Customer/>;
     case 'browser':return <Browser/>;
-    case 'embedded':return <Embedded/>;
+    case 'embedded':return null; // Rendered as a responsive HTML widget by ProductIllustration.
     case 'workflow':return <Workflow/>;
     case 'api':return <Api/>;
+    case 'connected-risk':return <ConnectedRisk/>;
+    case 'event-automations':return <EventAutomations/>;
+    case 'explainable-signals':return <ExplainableSignals/>;
+    case 'behaviour-insights':return <BehaviourInsights/>;
+    case 'lifecycle-api':return <LifecycleApi/>;
     case 'compliance':return <Compliance/>;
     case 'quality':return <Quality/>;
     case 'builder':return <Builder/>;
@@ -358,7 +552,7 @@ export function ProductIllustration({ kind, step=0, className='', format='standa
     return()=>observer.disconnect();
   },[]);
   return <div ref={ref} style={materials} className={'product-illustration '+className} data-illustration={kind} data-format={format} data-brand-fill={brandFill} data-motion={visible?'running':'paused'} role="img" aria-label={'Illustrative graphic: '+illustrationDescriptions[kind]}>
-    <svg viewBox={format==='portrait'?'0 0 320 414':format==='compact'?'0 0 320 206':'0 0 480 300'} fill="none" aria-hidden="true" focusable="false"><IllustrationMaterials id={id}/>{format==='portrait'?<PortraitScene kind={kind}/>:format==='compact'?<CompactScene kind={kind}/>:format==='detail'?<DetailScene kind={kind}/>:<Scene kind={kind} step={step}/>}</svg>
+    {kind==='embedded'?<EmbeddedConnectionWidget/>:<svg viewBox={format==='portrait'?'0 0 320 414':format==='compact'?'0 0 320 206':'0 0 480 300'} fill="none" aria-hidden="true" focusable="false"><IllustrationMaterials id={id}/>{format==='portrait'?<PortraitScene kind={kind}/>:format==='compact'?<CompactScene kind={kind}/>:format==='detail'?<DetailScene kind={kind}/>:<Scene kind={kind} step={step}/>}</svg>}
   </div>;
 }
 

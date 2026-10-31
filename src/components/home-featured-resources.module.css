@@ -1,0 +1,159 @@
+.section {
+  padding: var(--space-section) 0;
+  background: var(--surface);
+  color: var(--ink);
+  scroll-margin-top: calc(var(--home-header-height) + 24px);
+}
+
+.inner {
+  width: var(--site-content-width);
+  margin-inline: auto;
+}
+
+.eyebrow { margin-bottom: 24px; }
+
+.inner > h2 {
+  margin: 0 0 var(--space-section-content);
+  font-size: var(--text-section-heading);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -.04em;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 411px);
+  gap: 32px;
+}
+
+/* Stretch the column, not the card: the whole resource can stick until
+   the last item in the adjacent column has passed. No nested Y scroller. */
+.featureColumn { min-width: 0; }
+
+.card {
+  display: block;
+  min-width: 0;
+  border-radius: 12px;
+}
+
+.featured {
+  position: sticky;
+  top: calc(var(--home-header-height) + 24px);
+}
+
+.media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1200 / 650;
+  border: 1px solid color-mix(in srgb, var(--blue) 8%, transparent);
+  border-radius: 12px;
+  background: #e1eaff;
+}
+
+.media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Keep the full preview copy visible while the featured book is sticky. */
+.featured .media { max-height: clamp(180px, calc(100svh - 360px), 480px); }
+
+.copy { margin-top: 20px; }
+.featured .copy { margin-top: 24px; }
+
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 12px; }
+
+.category {
+  display: block;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.status::before { content: ''; width: 3px; height: 3px; border-radius: 50%; background: currentColor; }
+
+.copy h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 1.35;
+  letter-spacing: -.025em;
+  text-wrap: pretty;
+}
+
+.copy > p { margin: 12px 0 0; max-width: 640px; color: var(--muted); font-size: 14px; line-height: 1.6; text-wrap: pretty; }
+.featured .copy > p { font-size: 16px; }
+
+.featured h3 {
+  max-width: 640px;
+  font-size: clamp(26px, 2.2vw, 32px);
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+
+.mobileHint { display: none; }
+
+.rail {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.rail:focus-visible { outline: 2px solid var(--blue-secondary); outline-offset: 6px; }
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .layout { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 24px; }
+}
+
+@media (max-width: 1023px) {
+  .layout { display: block; }
+
+  /* The feature stays outside the carousel, so swiping only moves the
+     additional resources. Normal vertical page scrolling remains native. */
+  .featured { position: static; }
+  .featured .media { max-height: none; }
+  .featured .copy { margin-top: 24px; }
+
+  .mobileHint { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 36px; color: var(--muted); font-size: 12px; }
+  .mobileHint > span { display: inline-flex; align-items: center; gap: 8px; color: var(--blue); }
+
+  .rail {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 14px calc(-1 * var(--site-gutter)) 0;
+    padding: 6px var(--site-gutter) 8px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--site-gutter);
+    scrollbar-width: none;
+  }
+
+  .rail::-webkit-scrollbar { display: none; }
+  .rail .card { flex: 0 0 90%; scroll-snap-align: center; }
+  .rail .media { width: 100%; }
+}
+
+@media (max-width: 767px) {
+  .inner > h2 { font-size: 36px; line-height: 1.15; }
+  .featured h3 { font-size: 24px; line-height: 1.2; }
+  .copy h3 { text-wrap: initial; }
+  .rail h3 { font-size: 20px; }
+  .featured .copy > p { font-size: 14px; }
+}

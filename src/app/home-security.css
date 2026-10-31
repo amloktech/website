@@ -12,7 +12,7 @@
 .home-security-status-card h3 { display:flex; align-items:center; flex-wrap:wrap; gap:6px 10px; margin:0; font-size:15px; font-weight:600; line-height:1.4; }
 .home-security-status-card h3>span { color:var(--blue); font:500 9px/1.5 var(--font-mono); letter-spacing:.09em; }
 .home-security-status-card p { margin:6px 0 0; color:var(--muted); font-size:13px; line-height:1.6; }
-.home-security-assurances { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:clamp(16px,2vw,32px); margin-top:80px; padding:44px; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--surface); }
+.home-security-assurances { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:clamp(16px,2vw,32px); margin-top:80px; padding:44px; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--surface); }
 .home-security-badge { overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--canvas); color:#1c1c1c; box-shadow:0 3px 0 var(--line),0 8px 16px color-mix(in srgb,var(--identity-blue) 7%,transparent); }
 .home-security-badge svg { display:block; width:100%; height:auto; font-family:Arial,sans-serif; fill:currentColor; }
 .home-security-badge>span { display:block; padding:12px 4px; background:linear-gradient(115deg,var(--blue-secondary),var(--blue-field) 55%,var(--identity-blue)); color:var(--on-brand); text-align:center; text-transform:uppercase; font-size:clamp(9px,.85vw,12px); font-weight:600; letter-spacing:.06em; }

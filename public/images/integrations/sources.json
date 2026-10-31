@@ -1,0 +1,19 @@
+{
+  "note": "Logos identify illustrative connection options. Trademarks belong to their respective owners.",
+  "assets": {
+    "td.png": "https://www.td.com/content/dam/tdb/images/navigation-header-and-footer/td-logo-desktop.png",
+    "rbc.svg": "https://www.rbc.com/dvl/v1.0/assets/images/logos/rbc-logo-shield.svg",
+    "scotiabank.svg": "https://www.scotiabank.com/content/dam/scotiabank/images/logos/2023/scotiabank-logo-red-mobile.svg",
+    "bmo.svg": "https://upload.wikimedia.org/wikipedia/commons/0/03/BMO_Logo.svg",
+    "cibc.svg": "https://us.cibc.com/content/dam/global-assets/logos/cibc-logos/no-tagline/cibc-logo-colour-142x36.svg",
+    "national-bank.svg": "https://www.nbc.ca/content/dam/bnc/commun/logo/logo-nbc-155x50.svg",
+    "stripe.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/stripe.svg",
+    "shopify.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/shopify.svg",
+    "quickbooks.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/quickbooks.svg",
+    "square.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/square.svg",
+    "xero.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/xero.svg",
+    "paypal.svg": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/paypal.svg"
+  },
+  "bmoOriginalSource": "https://www.bmo.com/dist/images/logos/bank-of-montreal/bmo-blue-rev-pride.svg",
+  "integrationLogoTreatment": "Original Simple Icons vector paths with brand-color fills."
+}

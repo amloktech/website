@@ -51,6 +51,8 @@
   .home-page .home-copy>p { margin-top:24px; font-size:14px; line-height:22px; }
   .home-page .home-kicker { margin-bottom:24px; }
   .home-page .home-partners { margin-top:28px; }
+  .home-page .home-partner-logos { gap:12px; }
+  .home-page .home-partner-lvlup { width:clamp(104px,32vw,128px); }
   .home-page .home-partner-cla { height:22px; }
   .home-page .home-partner-nvidia { height:20px; }
   .site-footer-partners { grid-template-columns:repeat(2,120px); align-items:center; column-gap:20px; }

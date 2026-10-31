@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="844" height="442" viewBox="0 0 844 442" fill="none">
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" stroke="#0A269D" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h844v442H0z"/>
+  <circle cx="422" cy="221" r="166" stroke="#0A269D" stroke-opacity=".08"/>
+  <circle cx="422" cy="221" r="124" stroke="#0A269D" stroke-opacity=".08"/>
+  <rect x="341" y="133" width="176" height="188" rx="12" fill="#0A269D" fill-opacity=".07"/>
+  <rect x="334" y="125" width="176" height="188" rx="12" fill="white" fill-opacity=".85" stroke="#0A269D" stroke-opacity=".14"/>
+  <rect x="387" y="167" width="70" height="55" rx="6" stroke="#2449BC" stroke-width="2"/>
+  <circle cx="406" cy="184" r="6" stroke="#2449BC" stroke-width="2"/>
+  <path d="m388 212 17-15 15 13 19-22 18 19" stroke="#2449BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="422" y="258" text-anchor="middle" fill="#53638A" font-family="Arial,sans-serif" font-size="13">Image placeholder</text>
+  <path d="M389 278h66" stroke="#0A269D" stroke-opacity=".15" stroke-width="3" stroke-linecap="round"/>
+</svg>

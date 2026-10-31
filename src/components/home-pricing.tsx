@@ -32,7 +32,7 @@ export function HomePricing() {
     <div className="home-pricing-inner">
       <header className="home-pricing-heading">
         <span className="home-pricing-eyebrow"><i aria-hidden="true" />TWO PLANS. ONE SHARED BALANCE.</span>
-        <h2 id="home-pricing-title">Pay as you go. <span className="home-pricing-title-scale">Scale to Enterprise.</span></h2>
+        <h2 id="home-pricing-title">Pay as you go. <span className="home-pricing-title-scale home-heading-gradient">Scale to Enterprise.</span></h2>
         <p>One credit balance for underwriting and portfolio monitoring. Start with published usage rates, or agree custom pricing for your volume and workflows.</p>
       </header>
 

@@ -1,0 +1,70 @@
+.widget {
+  --scroll-duration: 28s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 410px);
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--canvas);
+  box-shadow: 0 4px 8px color-mix(in srgb, var(--identity-blue) 4%, transparent), 0 18px 36px color-mix(in srgb, var(--identity-blue) 9%, transparent);
+  text-align: left;
+}
+
+.header { flex: none; padding: 18px 20px 12px; }
+.brandRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 15px; }
+.brandRow > img { width: 83px; height: 20px; object-fit: contain; }
+.brandRow > span { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font: 10px/1.3 var(--font-sans); }
+.title { color: var(--ink); font: 550 21px/1.2 var(--font-sans); letter-spacing: -.035em; }
+.description { margin-top: 5px; color: var(--muted); font: 11px/1.4 var(--font-sans); }
+.search { display: flex; align-items: center; gap: 8px; margin-top: 13px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); background: var(--surface); font: 11px/1.3 var(--font-sans); }
+.search svg { flex: none; }
+
+.listArea { position: relative; flex: 1; min-height: 0; margin: 0 12px 0 20px; }
+.viewport { height: 100%; overflow: hidden; margin-right: 12px; }
+.track { --scroll-target: calc(-1 * var(--list-overflow, 0px)); display: grid; gap: 8px; animation: scrollList var(--scroll-duration) linear infinite; }
+.option { display: flex; align-items: center; gap: 11px; height: 57px; padding: 7px 11px; border: 1px solid var(--line); border-radius: 9px; background: linear-gradient(115deg, var(--canvas), color-mix(in srgb, var(--blue-soft) 14%, var(--canvas))); }
+.logo { display: grid; place-items: center; width: 40px; height: 40px; flex: none; padding: 3px; border: 1px solid color-mix(in srgb, var(--line) 60%, transparent); border-radius: 8px; background: var(--canvas); }
+.logo img { display: block; width: 32px; height: 32px; object-fit: contain; }
+.optionCopy { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.optionCopy strong { color: var(--ink); font: 550 12px/1.25 var(--font-sans); letter-spacing: -.015em; }
+.optionCopy > span { color: var(--muted); font: 10px/1.2 var(--font-sans); }
+.arrow { flex: none; margin-left: auto; color: var(--blue); }
+.scrollbar { position: absolute; top: 0; right: 0; bottom: 0; width: 3px; overflow: hidden; border-radius: 3px; background: var(--surface); }
+.thumb { --scroll-target: var(--thumb-overflow, 0px); display: block; height: var(--thumb-height, 36px); width: 100%; border-radius: inherit; background: color-mix(in srgb, var(--blue) 35%, var(--line)); animation: scrollList var(--scroll-duration) linear infinite; }
+
+.cursor { position: absolute; top: 49%; right: 20%; z-index: 1; display: flex; align-items: flex-start; gap: 5px; pointer-events: none; filter: drop-shadow(0 2px 3px color-mix(in srgb, var(--identity-blue) 20%, transparent)); animation: cursorScroll var(--scroll-duration) linear infinite; }
+.wheel { display: block; width: 12px; height: 23px; margin-top: 12px; padding: 4px; border: 1px solid var(--line); border-radius: 7px; background: var(--canvas); }
+.wheel i { display: block; width: 2px; height: 5px; border-radius: 2px; background: var(--blue-secondary); animation: wheelScroll 1.6s ease-in-out infinite; }
+.footer { display: flex; flex: none; align-items: center; justify-content: center; gap: 6px; padding: 11px 12px; color: var(--blue); background: var(--canvas); font: 10px/1.2 var(--font-sans); }
+
+@keyframes scrollList {
+  0%, 10% { transform: translateY(0); }
+  72%, 86% { transform: translateY(var(--scroll-target)); }
+  98%, 100% { transform: translateY(0); }
+}
+@keyframes cursorScroll {
+  0%, 3%, 96%, 100% { transform: translate(18px, 20px); opacity: 0; }
+  8%, 88% { transform: translate(0, 0); opacity: 1; }
+}
+@keyframes wheelScroll {
+  0%, 100% { transform: translateY(0); opacity: .4; }
+  50% { transform: translateY(7px); opacity: 1; }
+}
+
+@media (max-width: 760px) {
+  .header { padding: 17px 16px 12px; }
+  .listArea { margin-left: 16px; }
+  .brandRow > span { font-size: 9px; }
+  .title { font-size: 20px; }
+  .option { gap: 9px; padding-inline: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track, .thumb, .cursor, .wheel i { animation: none; }
+  .cursor, .scrollbar { display: none; }
+  .viewport { overflow-y: auto; overscroll-behavior: contain; }
+}

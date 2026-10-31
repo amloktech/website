@@ -167,6 +167,7 @@ svg { flex-shrink: 0; }
 .home-partners-label { display: block; margin: 0; color: color-mix(in srgb,var(--on-brand-muted) 73.3%,transparent); font-size: 12px; font-weight: 600; letter-spacing: .16em; white-space: nowrap; }
 .home-partner-logos { display: flex; align-items: center; justify-content: center; gap: 22px; color: var(--canvas); }
 .home-partner-logo { display: block; height: auto; object-fit: contain; }
+.home-partner-lvlup { width: 160px; filter: brightness(0) invert(1); }
 .home-partner-cla,.home-partner-nvidia { width: auto; height: 26px; max-width: min(160px,36vw); filter: brightness(0) invert(1); }
 .home-partner-cla { height: 29px; }
 .home-hero-actions { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 48px; }

@@ -1,5 +1,7 @@
 'use client';
 import { HomeFaq } from './home-faq';
+import { HomeFeaturedResources } from './home-featured-resources';
+import { HomeConnect } from './home-connect';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Activity, ArrowUpRight, Building2, Check, ChevronDown, CircleAlert, Gauge, Globe, Image as ImageIcon, Layers, Play, Search, ShieldCheck, WalletCards, X } from 'lucide-react';
@@ -214,35 +216,74 @@ function CustomerLayersSection() {
 }
 
 const loanScaleSlides = [
+  // Keep anchor IDs stable when reordering so header, footer, and CTA links retain their destinations.
   {
-    surface: 'BROWSER AGENTS',
-    title: 'Work directly in the systems you already use.',
-    description: 'No integration required. Train AMLOK agents to work directly in your existing systems, navigating applications and executing your financial risk workflows alongside your team.',
-    graphic: 'browser',
+    id: 'loan-scale-slide-5',
+    surface: 'CONNECTED RISK GRAPH',
+    title: 'Underwriting, risk and operations',
+    description: 'Amlok resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
+    graphic: 'connected-risk',
+    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
   },
   {
-    surface: 'DIGITAL TWIN SIMULATOR',
-    title: 'Test decisions before putting capital at risk.',
-    description: 'Simulate changes before putting capital at risk. Test credit policies, portfolio strategies, and economic scenarios against a digital twin of your existing book to understand potential outcomes before deployment.',
-    graphic: 'simulation',
-  },
-  {
+    id: 'loan-scale-slide-2',
     surface: 'EMBEDDINGS',
     title: 'Connect borrower experiences to AMLOK intelligence.',
     description: 'Deploy ready-made borrower and underwriter experiences for intake, onboarding, underwriting, and ongoing servicing, all connected to AMLOK intelligence and agents.',
     graphic: 'embedded',
   },
   {
+    id: 'loan-scale-slide-6',
+    surface: 'EVENT-BASED AUTOMATIONS',
+    title: 'Effortless risk operations',
+    description: 'Route assessments, exceptions, monitoring events, and evidence into the systems your team already uses—from origination through portfolio management.',
+    graphic: 'event-automations',
+    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
+  },
+  {
+    id: 'loan-scale-slide-3',
     surface: 'WORKFLOW AGENTS',
     title: 'Deploy agents for specialized financial risk work.',
     description: 'Pre-built agents for specialized financial risk work. Deploy configurable workflows for verification, underwriting, portfolio monitoring, fraud and compliance, servicing, and collections, adapted to your institution’s policies and processes.',
     graphic: 'workflow',
   },
   {
-    surface: 'API',
-    title: 'Bring AMLOK intelligence into your products.',
-    description: 'Bring AMLOK intelligence directly into your existing products and systems. Access entity and transaction intelligence, risk signals, financial analysis, monitoring, and agent capabilities through a unified API.',
-    graphic: 'api',
+    id: 'loan-scale-slide-7',
+    surface: 'EXPLAINABLE RISK SIGNALS',
+    title: 'Find exactly what changed',
+    description: 'Every signal carries supporting evidence, confidence, and entity context. Teams can understand why risk moved and apply their own policy without relying on an opaque score.',
+    graphic: 'explainable-signals',
+    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
+  },
+  {
+    id: 'loan-scale-slide-8',
+    surface: 'CONTINUOUS BEHAVIOUR INSIGHTS',
+    title: 'Post-funding anomaly detection',
+    description: 'Monitor the deal after capital is deployed. Amlok detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
+    graphic: 'behaviour-insights',
+    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
+  },
+  {
+    id: 'loan-scale-slide-0',
+    surface: 'BROWSER AGENTS',
+    title: 'Work directly in the systems you already use.',
+    description: 'No integration required. Train AMLOK agents to work directly in your existing systems, navigating applications and executing your financial risk workflows alongside your team.',
+    graphic: 'browser',
+  },
+  {
+    id: 'loan-scale-slide-1',
+    surface: 'DIGITAL TWIN SIMULATOR',
+    title: 'Test decisions before putting capital at risk.',
+    description: 'Simulate changes before putting capital at risk. Test credit policies, portfolio strategies, and economic scenarios against a digital twin of your existing book to understand potential outcomes before deployment.',
+    graphic: 'simulation',
+  },
+  {
+    id: 'loan-scale-slide-4',
+    surface: 'ONE API · FULL LIFECYCLE',
+    title: 'One API for the entire risk lifecycle.',
+    description: 'Connect onboarding data, resolve identity and financial activity, apply institution-owned risk policy, create decision packages, and monitor capital after deployment—all through one continuous intelligence layer.',
+    graphic: 'lifecycle-api',
+    link: { label: 'Read the API documentation', href: 'https://amlok.io/api-reference' },
   },
 ] as const;
 
@@ -256,22 +297,24 @@ function LoanScaleSection() {
       </header>
 
       <div className="home-lifecycle-rows">
-        {loanScaleSlides.map((slide, index) => <article
-          className={`home-lifecycle-row${index % 2 === 1 ? ' is-reversed' : ''}`}
-          id={`loan-scale-slide-${index}`}
-          aria-labelledby={`home-lifecycle-title-${index}`}
+        {loanScaleSlides.map(slide => <article
+          className="home-lifecycle-row"
+          id={slide.id}
+          aria-labelledby={`home-lifecycle-title-${slide.graphic}`}
           key={slide.graphic}
         >
           <div className="home-lifecycle-copy">
             <span className="home-lifecycle-label">{slide.surface}</span>
-            <h3 id={`home-lifecycle-title-${index}`}>{slide.title}</h3>
+            <h3 id={`home-lifecycle-title-${slide.graphic}`}>{slide.title}</h3>
             <p>{slide.description}</p>
+            {'link' in slide && <a className="home-lifecycle-link" href={slide.link.href}>{slide.link.label}<ArrowUpRight size={18} aria-hidden="true" /></a>}
           </div>
           <div className="home-lifecycle-visual home-loan-scale-art">
             <ProductIllustration kind={slide.graphic}/>
           </div>
         </article>)}
       </div>
+      <HomeConnect />
     </div>
   </section>;
 }
@@ -360,9 +403,10 @@ export function HomeHero() {
         <span className="home-kicker"><span />RISK IS A MOVIE, NOT A PHOTO</span>
         <h1 id="home-title"><span className="home-headline">Infrastructure for<br />risk intelligence</span></h1>
         <p className="home-description"><span className="home-description-line">We <strong>make risk move at the speed of capital</strong> by deploying <strong>specialized AI agents that work across the credit lifecycle:</strong></span>{' '}<span className="home-description-line">underwriting opportunities, monitoring deployed capital, simulating portfolio decisions, and acting as risk changes.</span></p>
-        <div className="home-partners" aria-label="Partnering with">
-          <span className="home-partners-label">PARTNERING WITH</span>
+        <div className="home-partners" aria-label="Backed by">
+          <span className="home-partners-label">BACKED BY</span>
           <div className="home-partner-logos">
+            <img className="home-partner-logo home-partner-lvlup" src="/images/partners/lvlup-ventures.png" alt="LvlUp Ventures" width={380} height={38} />
             <img className="home-partner-logo home-partner-cla" src="https://amlok.io/logos/cla-lenders.svg" alt="Canadian Lenders Association" />
             <img className="home-partner-logo home-partner-nvidia" src="https://amlok.io/logos/nvidia-inception.svg" alt="NVIDIA Inception Program" />
           </div>
@@ -477,6 +521,7 @@ export function HomeHero() {
     <LoanScaleSection />
     <HomeSecurity />
     <FeaturesIntegrationsSection />
+    <HomeFeaturedResources />
     <HomePricing />
     <HomeFaq />
     <HomeMonitoringCta />
