@@ -427,7 +427,6 @@ export function HomeHero() {
       <div className="home-hero-validation" aria-label="Retrospective model validation">
         <div className="home-hero-validation-heading">
           <p>Models retrospectively validated on 275,019 deals from</p>
-          <a className="home-validation-research" href="/research">Research results <ArrowUpRight size={15} aria-hidden="true" /></a>
         </div>
         <div className="home-validation-logos">
           <span className="home-validation-td-bank" role="img" aria-label="TD Bank"><img className="home-validation-td" src="https://www.td.com/content/dam/tdb/images/navigation-header-and-footer/td-logo-desktop.png" alt="" aria-hidden="true"/><span aria-hidden="true">Bank</span></span>

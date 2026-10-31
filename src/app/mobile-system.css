@@ -44,7 +44,7 @@
   .home-page :is(.home-platform-actions,.home-hero-actions) { flex-direction:column; width:100%; gap:12px; margin-top:32px; }
   .home-page :is(.home-platform-actions a,.home-hero-actions a) { justify-content:center; width:100%; min-height:44px; font-size:14px; }
 
-  .home-page .home-hero.is-content-only { min-height:100vh; min-height:100dvh; padding:calc(var(--home-header-height) + 32px) 0 32px; gap:32px; }
+  .home-page .home-hero.is-content-only { padding:calc(var(--home-header-height) + 32px) 0 32px; gap:32px; }
   .home-page .home-hero.is-content-only .home-copy { flex:1 0 auto; justify-content:center; }
   .home-page .home-hero-validation { flex:none; margin-top:0; }
   .home-page .home-copy h1 { font-size:clamp(36px,9.8vw,40px); line-height:1.05; }

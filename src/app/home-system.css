@@ -261,7 +261,9 @@
  flex-direction:column;
  align-items:center;
  gap:48px;
- min-height:100svh;
+ /* Cover the full mobile viewport, including behind retractable browser controls. */
+ min-height:100vh;
+ min-height:100lvh;
  padding:calc(var(--home-header-height) + 40px) 0 32px;
 }
 .home-page .home-hero.is-content-only .home-atmosphere::after { display:none; }
@@ -270,9 +272,6 @@
 .home-hero-validation { position:relative; z-index:auto; width:var(--site-content-width); margin-top:auto; text-align:left; }
 .home-hero-validation-heading { display:flex; align-items:center; justify-content:space-between; gap:12px 24px; margin-bottom:24px; }
 .home-hero-validation-heading>p { margin:0; color:var(--on-brand-muted); font:500 11px/1.5 var(--font-mono); letter-spacing:.1em; text-transform:uppercase; }
-.home-validation-research { display:inline-flex; flex:none; align-items:center; gap:8px; min-height:24px; color:var(--on-brand-muted); font-size:14px; line-height:1.5; text-decoration:none; white-space:nowrap; }
-.home-validation-research:hover { color:white; text-decoration:underline; text-underline-offset:4px; }
-.home-validation-research:focus-visible { outline:2px solid white; outline-offset:4px; border-radius:2px; }
 .home-validation-logos { --validation-logo-height:clamp(14px,1.2vw,18px); display:flex; align-items:center; justify-content:space-between; gap:20px; }
 .home-validation-logos>img { display:block; flex:0 1 auto; min-width:0; width:auto; height:var(--validation-logo-height); object-fit:contain; filter:brightness(0) invert(1); }
 .home-validation-logos>img[alt="ATB"],.home-validation-logos>img[alt="Laurentian Bank"] { height:calc(var(--validation-logo-height) * 1.2); }
@@ -285,4 +284,4 @@
 .home-validation-td-bank>img { display:block; width:calc(var(--validation-logo-height) * 1.2); height:calc(var(--validation-logo-height) * 1.2); padding:2px; border:1px solid white; object-fit:contain; filter:grayscale(1) brightness(.65) contrast(20); mix-blend-mode:screen; }
 .home-validation-td-bank>span { font-size:calc(var(--validation-logo-height) * 1.1); font-weight:700; letter-spacing:-.045em; line-height:1; }
 @media(max-width:1199px) { .home-validation-logos { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); justify-items:center; gap:24px; --validation-logo-height:22px; } .home-validation-logos>img { max-width:100%; } }
-@media(max-width:767px) { .home-page .home-hero.is-content-only { gap:40px; padding-bottom:28px; } .home-hero-validation-heading { flex-wrap:wrap; gap:8px; margin-bottom:20px; } .home-hero-validation-heading>p { flex-basis:100%; font-size:9px; } .home-validation-research { margin-left:auto; font-size:12px; } .home-validation-logos { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 28px; --validation-logo-height:20px; } }
+@media(max-width:767px) { .home-page .home-hero.is-content-only { gap:40px; padding-bottom:28px; } .home-hero-validation-heading { flex-wrap:wrap; gap:8px; margin-bottom:20px; } .home-hero-validation-heading>p { flex-basis:100%; font-size:9px; } .home-validation-logos { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 28px; --validation-logo-height:20px; } }
