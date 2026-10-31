@@ -96,7 +96,8 @@
   .home-page .home-products-stack-layers { gap:8px; }
   .home-page .home-products-layer { min-height:64px; grid-template-columns:40px minmax(0,1fr) 112px; }
   .home-page .home-products-layer-body { padding:10px 14px; }
-  .home-page .home-products-layer-detail-image { min-height:0; max-height:none; aspect-ratio:1.5; }
+  .home-page .home-products-layer-detail { align-self:stretch; display:flex; flex-direction:column; }
+  .home-page .home-products-layer-detail-image { flex:1; min-height:0; max-height:none; aspect-ratio:auto; }
   .home-page .home-products-layer-detail h3 { margin-top:20px; white-space:normal; }
   .home-page .home-products-layer-detail p { margin-top:16px; }
 
@@ -153,9 +154,8 @@
   .home-page.about-page .about-purpose article { padding:32px; }
   .home-page.about-page .about-purpose p { margin-top:16px; }
   .home-page.about-page .about-journey-heading { gap:var(--desktop-column-gap); }
-  .home-page.about-page .about-timeline li { min-height:0; padding-block:64px; }
+  .home-page.about-page .about-timeline>ol>li { min-height:0; padding-block:64px; }
   .home-page.about-page .about-timeline h3 { margin:16px 0 24px; }
-  .home-page.about-page .about-timeline-placeholder { margin-top:24px; }
 
   .site-footer-primary { padding-block:64px; gap:32px; }
   .site-footer-secondary { padding-block:48px 64px; gap:32px; }

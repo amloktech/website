@@ -1,0 +1,26 @@
+[
+  {
+    "name": "LvlUp Ventures",
+    "url": "https://www.lvlup.vc/portfolio-company-database/amlok",
+    "description": "AMLOK is included in the LvlUp Ventures portfolio and program-company directory. Its profile describes a risk intelligence layer for financial institutions.",
+    "relationship": "Venture ecosystem",
+    "source": "https://www.lvlup.vc/portfolio-company-database/amlok",
+    "logo": "/images/partners/lvlup-ventures.png"
+  },
+  {
+    "name": "Canadian Lenders Association",
+    "url": "https://www.canadianlenders.org/roundtables/smb-roundtable/",
+    "description": "AMLOK is listed among participating companies in the CLA Small Business Lender Roundtable.",
+    "relationship": "Industry community",
+    "source": "https://www.canadianlenders.org/roundtables/smb-roundtable/",
+    "logo": "https://amlok.io/logos/cla-lenders.svg"
+  },
+  {
+    "name": "NVIDIA Inception",
+    "url": "https://www.nvidia.com/en-us/startups/",
+    "description": "The NVIDIA Inception program connects startups with technical resources and its startup ecosystem.",
+    "relationship": "Startup program (user-confirmed membership via existing homepage)",
+    "source": "Existing approved homepage plus https://www.nvidia.com/en-us/startups/",
+    "logo": "https://amlok.io/logos/nvidia-inception.svg"
+  }
+]

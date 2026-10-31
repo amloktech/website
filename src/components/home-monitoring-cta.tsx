@@ -9,7 +9,7 @@ export function HomeMonitoringCta({ apiHref = '#loan-scale-slide-4' }: { apiHref
         <h2 id="home-monitoring-cta-title"><span className="home-monitoring-title-line">Keep up with <span className="home-heading-gradient">risk</span></span><span className="home-monitoring-title-line">as fast as it <span className="home-heading-gradient">changes</span></span></h2>
         <p>A point-in-time decision does not need to become a blind spot for the life of the deal.</p>
         <div className="home-monitoring-cta-actions">
-          <a href="mailto:support@amlok.tech?subject=AMLOK%20demo">Get a demo <ArrowRight size={18} aria-hidden="true" /></a>
+          <a href="/contact">Get a demo <ArrowRight size={18} aria-hidden="true" /></a>
           <a href={apiHref}>Explore API <ArrowRight size={18} aria-hidden="true" /></a>
         </div>
       </div>

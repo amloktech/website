@@ -1,0 +1,386 @@
+[
+  {
+    "path": "/",
+    "title": "Home",
+    "description": "Infrastructure for risk intelligence.",
+    "category": "Platform"
+  },
+  {
+    "path": "/about-us",
+    "title": "About us",
+    "description": "The team, mission, and story behind AMLOK.",
+    "category": "Company"
+  },
+  {
+    "path": "/platform",
+    "title": "The AMLOK platform",
+    "description": "Connect financial evidence, understand the relationships behind it, and follow risk as it changes. One intelligence layer across your credit lifecycle.",
+    "category": "platform"
+  },
+  {
+    "path": "/products",
+    "title": "Our products",
+    "description": "Insights for underwriting. Signal for continuous monitoring. Two connected products built around the same borrower context.",
+    "category": "products"
+  },
+  {
+    "path": "/products/underwriting",
+    "title": "AMLOK Insights",
+    "description": "Turn fragmented borrower information into a connected credit assessment, with the evidence and policy context your team needs to make the final decision.",
+    "category": "products"
+  },
+  {
+    "path": "/products/portfolio-monitoring",
+    "title": "AMLOK Signal",
+    "description": "Follow changing financial conditions after origination. Connect new signals to the baseline, evidence, and borrower relationships that explain them.",
+    "category": "products"
+  },
+  {
+    "path": "/platform/risk-graph",
+    "title": "Foundational risk graph",
+    "description": "Connect entities, transactions, accounts, and obligations to understand the financial context around a borrower.",
+    "category": "platform"
+  },
+  {
+    "path": "/platform/risk-simulation",
+    "title": "Risk simulation",
+    "description": "Bring evidence, policy assumptions, and portfolio context together before deciding how to respond to changing conditions.",
+    "category": "platform"
+  },
+  {
+    "path": "/solutions",
+    "title": "Use cases",
+    "description": "Explore the work that connected risk intelligence can support, from the first application to a changing portfolio.",
+    "category": "solutions"
+  },
+  {
+    "path": "/modules",
+    "title": "Lifecycle modules",
+    "description": "Bring the right evidence and intelligence into each stage of your existing credit workflow. Your institution stays in control.",
+    "category": "modules"
+  },
+  {
+    "path": "/modules/verification-onboarding",
+    "title": "Verification & onboarding",
+    "description": "Connect applicant, business, ownership, and financial evidence before the underwriting starts.",
+    "category": "modules"
+  },
+  {
+    "path": "/modules/white-label-experiences",
+    "title": "White-label experiences",
+    "description": "Keep the borrower experience familiar while bringing authorized financial connections and evidence into your AMLOK workflow.",
+    "category": "modules"
+  },
+  {
+    "path": "/industries",
+    "title": "Industries",
+    "description": "Start with the financial questions your industry needs to answer. Connect the evidence across underwriting, monitoring, and review.",
+    "category": "industries"
+  },
+  {
+    "path": "/integrations",
+    "title": "Integrations",
+    "description": "Bring bank, payment, accounting, commerce, and enterprise evidence into your risk workflows. Explore providers from the AMLOK integration catalogue.",
+    "category": "integrations"
+  },
+  {
+    "path": "/pricing",
+    "title": "Pricing",
+    "description": "One shared credit balance for underwriting and portfolio monitoring. Start with published usage rates or agree terms for your volume and workflows.",
+    "category": "pricing"
+  },
+  {
+    "path": "/contact",
+    "title": "Talk to us",
+    "description": "Tell us about your institution, your workflow, and the decision you want to improve. We’ll help you find the right starting point.",
+    "category": "contact"
+  },
+  {
+    "path": "/get-started",
+    "title": "Get started",
+    "description": "Work with AMLOK to define your first use case, agree the required evidence, and prepare your team for integration.",
+    "category": "get-started"
+  },
+  {
+    "path": "/developers",
+    "title": "Developers",
+    "description": "Build evidence-backed underwriting and monitoring into your products with a documented API, event-driven workflows, and practical integration tools.",
+    "category": "developers"
+  },
+  {
+    "path": "/manifesto",
+    "title": "Our manifesto",
+    "description": "We believe financial decisions deserve the context of a changing financial life—not just the snapshot that was easiest to collect.",
+    "category": "manifesto"
+  },
+  {
+    "path": "/partners",
+    "title": "Our ecosystem",
+    "description": "The organizations and communities supporting AMLOK as we build infrastructure for connected risk intelligence.",
+    "category": "partners"
+  },
+  {
+    "path": "/careers",
+    "title": "Careers at AMLOK",
+    "description": "We’re working at the intersection of financial systems, connected data, and applied AI. Help make the evidence behind risk easier to understand.",
+    "category": "careers"
+  },
+  {
+    "path": "/research",
+    "title": "Research",
+    "description": "Research, reports, and practical perspectives on the financial relationships, borrower behaviour, and emerging signals shaping modern credit decisions.",
+    "category": "research"
+  },
+  {
+    "path": "/blog",
+    "title": "Blog",
+    "description": "Ideas, practical perspectives, and fresh thinking on credit, connected data, and the intelligence behind better-informed decisions.",
+    "category": "blog"
+  },
+  {
+    "path": "/demo-center",
+    "title": "Demo center",
+    "description": "Step through illustrative underwriting, monitoring, and investigation workflows. See how evidence connects to a decision your team owns.",
+    "category": "demo-center"
+  },
+  {
+    "path": "/help-center",
+    "title": "Help Center",
+    "description": "Guides and practical starting points for onboarding, integrations, product usage, billing, and support.",
+    "category": "help-center"
+  },
+  {
+    "path": "/compare",
+    "title": "Compare AMLOK",
+    "description": "Compare documented product scope, integration approaches, and operating models. Some platforms complement AMLOK; others solve a different part of the lending workflow.",
+    "category": "compare"
+  },
+  {
+    "path": "/blog/from-snapshot-to-signal",
+    "title": "From a snapshot to a living baseline.",
+    "description": "Why monitoring begins with a clear account of what was known at underwriting.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/read-the-cash-flow",
+    "title": "Read the cash flow. Understand the movement.",
+    "description": "Why a deposit is a starting point for analysis, rather than the answer to an income question.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/designing-reviewable-ai",
+    "title": "Build intelligence people can review.",
+    "description": "Evidence, uncertainty, and human ownership are design requirements for a useful risk workflow.",
+    "category": "blog"
+  },
+  {
+    "path": "/industries/consumer-lending",
+    "title": "Consumer lending",
+    "description": "Bring permissioned financial evidence, verification results and ongoing risk signals into a connected view of consumer credit. Support your lending team's assessment from application through the life of the relationship.",
+    "category": "industries"
+  },
+  {
+    "path": "/industries/business-lending",
+    "title": "Business lending",
+    "description": "Connect banking, accounting, payments and lender-supplied records to understand how a business earns, spends and meets its commitments. Keep underwriting and monitoring tied to the evidence behind each finding.",
+    "category": "industries"
+  },
+  {
+    "path": "/industries/financial-institutions",
+    "title": "Financial institutions",
+    "description": "Bring a consistent evidence foundation to underwriting, monitoring and investigation. AMLOK supports the risk workflow while your institution retains its policies, governance and decision authority.",
+    "category": "industries"
+  },
+  {
+    "path": "/industries/fintech",
+    "title": "Fintech",
+    "description": "Bring verification, underwriting evidence and portfolio signals into your digital lending workflow. Use a consistent API model while keeping the customer experience and final decision in your hands.",
+    "category": "industries"
+  },
+  {
+    "path": "/industries/insurtech",
+    "title": "Insurtech",
+    "description": "Explore connected risk assessment for trade credit, surety and premium-finance workflows. Bring business financial evidence and changing exposure signals into the team's underwriting review.",
+    "category": "industries"
+  },
+  {
+    "path": "/solutions/cash-flow-intelligence",
+    "title": "Cash-flow intelligence",
+    "description": "Understand how money moves, with the evidence behind every measure. Connect authorized bank, payment and accounting records to assess financial activity over a defined period.",
+    "category": "solutions"
+  },
+  {
+    "path": "/solutions/entity-fraud-resolution",
+    "title": "Entity & fraud resolution",
+    "description": "Connect identity, relationships and financial evidence to investigate the signals that deserve a closer look. Give reviewers the context behind a possible match or inconsistency.",
+    "category": "solutions"
+  },
+  {
+    "path": "/solutions/decision-automation",
+    "title": "Decision automation",
+    "description": "Make repeatable risk workflows part of your decision process. Coordinate evidence, approved policy configuration and assessment outputs while retaining clear review and approval boundaries.",
+    "category": "solutions"
+  },
+  {
+    "path": "/solutions/borrower-servicing-collections",
+    "title": "Borrower servicing & collections",
+    "description": "Give servicing teams a current view of borrower risk. Connect monitored financial changes with lender-supplied loan and repayment evidence so the team can review the right context before taking action.",
+    "category": "solutions"
+  },
+  {
+    "path": "/developers/api-reference",
+    "title": "API reference",
+    "description": "A documented resource model for connecting sources, assessing risk, monitoring changes and tracing evidence.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/sdks",
+    "title": "SDKs & developer tools",
+    "description": "Start with OpenAPI, runnable examples and signature verification helpers for Node.js and Python.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/webhooks",
+    "title": "Webhooks",
+    "description": "Receive changes as events, verify their origin and retrieve the authoritative resource when your workflow needs it.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/mcp",
+    "title": "MCP integration",
+    "description": "Design an MCP integration around authorized AMLOK resources, scoped tools and the evidence behind each result.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/integration-prompt",
+    "title": "Integration prompt",
+    "description": "A focused integration brief grounded in the AMLOK contract, your environment and production-ready handling.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/sandbox",
+    "title": "Sandbox",
+    "description": "Exercise underwriting and monitoring with provisioned synthetic records, realistic state changes and test credits.",
+    "category": "developers"
+  },
+  {
+    "path": "/developers/agent-skills",
+    "title": "Agent Skills",
+    "description": "Package the right references, checks and workflow instructions so your team’s agents work from the same foundation.",
+    "category": "developers"
+  },
+  {
+    "path": "/changelog",
+    "title": "Changelog",
+    "description": "Follow the current contract and compatibility guidance when adopting changes to your AMLOK integration.",
+    "category": "changelog"
+  },
+  {
+    "path": "/status",
+    "title": "Service status",
+    "description": "Check your environment’s health, follow service-level signals and reach the right support channel when a workflow is affected.",
+    "category": "status"
+  },
+  {
+    "path": "/security-compliance",
+    "title": "Security & compliance",
+    "description": "Security, privacy, and governance designed into the workflow. Review the controls and responsibilities that apply to your deployment.",
+    "category": "security-compliance"
+  },
+  {
+    "path": "/privacy",
+    "title": "Privacy",
+    "description": "How AMLOK approaches website enquiries and authorized financial-data processing.",
+    "category": "privacy"
+  },
+  {
+    "path": "/cookies",
+    "title": "Cookies & preferences",
+    "description": "Understand the preferences this website stores and how to manage them.",
+    "category": "cookies"
+  },
+  {
+    "path": "/terms",
+    "title": "Terms of business",
+    "description": "A guide to the agreements, authorized use, and responsibilities that govern an AMLOK relationship.",
+    "category": "terms"
+  },
+  {
+    "path": "/compare/prism-data",
+    "title": "AMLOK vs Prism Data",
+    "description": "Prism Data turns bank transaction history into cash-flow scores and financial attributes. AMLOK combines authorized evidence with underwriting workflows and ongoing risk reassessment. There is overlap in credit intelligence; the practical choice depends on whether you need a specialist score, a connected assessment workflow, or both.",
+    "category": "compare"
+  },
+  {
+    "path": "/compare/flinks",
+    "title": "AMLOK vs Flinks",
+    "description": "Flinks provides bank connectivity, document verification, enriched financial insights, and payment infrastructure. AMLOK uses authorized evidence to support underwriting and continued risk assessment. The products overlap in financial analysis, while connectivity and risk workflow needs can also be complementary.",
+    "category": "compare"
+  },
+  {
+    "path": "/compare/judi-ai",
+    "title": "AMLOK vs JUDI.AI",
+    "description": "JUDI.AI focuses on small-business lending for community financial institutions, combining borrower applications, cash-flow underwriting, and configurable lending workflows. AMLOK focuses on connected risk intelligence and assessment workflows. They overlap in underwriting, with different implications for the institution's application experience and operating systems.",
+    "category": "compare"
+  },
+  {
+    "path": "/compare/covaleyo",
+    "title": "AMLOK vs Covaleyo",
+    "description": "Covaleyo combines loan-origination software with Covarity's commercial loan monitoring. AMLOK connects underwriting evidence and ongoing risk signals. There is overlap in monitoring, while an LOS, borrowing-base platform, and risk-intelligence layer can serve different roles within the same institution.",
+    "category": "compare"
+  },
+  {
+    "path": "/compare/intellifi",
+    "title": "AMLOK vs Intellifi / Nesto Cloud",
+    "description": "Intellifi's official website now identifies the business as Nesto Cloud. Its current offering spans residential and commercial lending technology, including origination, underwriting, servicing, and operational delivery. AMLOK provides risk intelligence within the credit lifecycle, which can complement operational platforms rather than replace every function they perform.",
+    "category": "compare"
+  },
+  {
+    "path": "/compare/inverite-insights",
+    "title": "AMLOK vs Inverité Insights",
+    "description": "Inverité brings together identity checks, bank verification, enriched financial data, and risk models. AMLOK combines authorized evidence into underwriting and monitoring workflows. Both address risk assessment; the relevant comparison is the data, outputs, and workflow responsibility each supplies for your institution.",
+    "category": "compare"
+  },
+  {
+    "path": "/site-map",
+    "title": "Site map",
+    "description": "Explore every page across the AMLOK platform, products, industries, developer resources, and company.",
+    "category": "site-map"
+  },
+  {
+    "path": "/blog/risk-is-a-relationship",
+    "title": "See the connections. Understand the risk.",
+    "description": "Why the connections between borrowers, accounts, and obligations matter as much as the records themselves.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/monitoring-without-the-noise",
+    "title": "Less noise. More useful signals.",
+    "description": "Design monitoring around meaningful changes, clear evidence, and a team that knows what happens next.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/cash-flow-for-merchant-finance",
+    "title": "Merchant receipts need a little more context.",
+    "description": "A practical perspective on sales, settlements, refunds, and the timing behind merchant cash flow.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/underwriting-to-monitoring",
+    "title": "The decision is a moment. The relationship continues.",
+    "description": "Carry the assumptions behind underwriting into the monitoring that follows funding.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/event-driven-risk-workflows",
+    "title": "Every event needs a clear next step.",
+    "description": "How to design evidence-led automation without losing ownership, review, or the history of a decision.",
+    "category": "blog"
+  },
+  {
+    "path": "/blog/embedded-finance-context",
+    "title": "One connection. A fuller borrower picture.",
+    "description": "What an embedded financial-data experience should preserve beyond the initial connection.",
+    "category": "blog"
+  }
+]

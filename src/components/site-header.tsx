@@ -8,6 +8,7 @@ import { MobileNavigation } from './mobile-navigation';
 import { SolutionsMenu } from './solutions-menu';
 import { ResourcesMenu } from './resources-menu';
 import { DevelopersMenu } from './developers-menu';
+import pageIndex from '@/content/page-index.json';
 
 const languages = [
   { label: 'English', englishName: '' },
@@ -15,20 +16,8 @@ const languages = [
 ];
 type SearchEntry = { title: string; description: string; category: 'Pages' | 'Sections'; href: string; keywords: string };
 const searchIndex: SearchEntry[] = [
-  { title: 'Infrastructure for risk intelligence', description: 'Map the financial ecosystem into actionable risk intelligence.', category: 'Pages', href: '#top', keywords: 'risk capital financial ecosystem entities transactions relationships' },
-  { title: 'AMLOK design system', description: 'Explore the AMLOK identity, guidelines, and interface patterns.', category: 'Pages', href: '/brand', keywords: 'brand identity design system colors typography logo' },
-  { title: 'About us', description: 'Meet AMLOK and explore our mission and vision.', category: 'Pages', href: '/about-us', keywords: 'about company team mission vision risk movie picture' },
-  { title: 'Pricing', description: 'Usage-based credits and Enterprise pricing for underwriting and monitoring.', category: 'Sections', href: '#pricing', keywords: 'pricing rates costs pay as you go enterprise credits billing' },
-  { title: 'Underwriting', description: 'Evaluate risk before capital is deployed.', category: 'Sections', href: '#platform', keywords: 'credit lending risk evaluation' },
-  { title: 'Servicing', description: 'Monitor and manage capital after origination.', category: 'Sections', href: '#platform', keywords: 'servicing borrower collections repayment' },
-  { title: 'Simulate', description: 'Model portfolio choices and risk scenarios.', category: 'Sections', href: '#platform', keywords: 'simulation scenarios portfolio policies' },
-  { title: 'Monitoring', description: 'Follow entities, transactions, and relationships over time.', category: 'Sections', href: '#platform', keywords: 'ongoing monitoring transactions relationships' },
-  { title: 'Platform overview', description: 'Explore the Amlok platform capabilities.', category: 'Sections', href: '#platform', keywords: 'platform product app preview' },
-  { title: 'Risk operations at the speed of capital', description: 'Explore AI underwriting, portfolio monitoring, and risk intelligence research.', category: 'Sections', href: '#risk-operations', keywords: 'underwriting credit monitoring servicing transactions borrowers financial institutions research AI model' },
-  { title: 'Financial intelligence', description: 'Assess, decide, simulate, and monitor financial risk.', category: 'Sections', href: '#platform', keywords: 'assess decide simulate monitor financial intelligence credit portfolio' },
-  { title: 'Risk assessment has blind spots', description: 'Business and consumer lending gaps, with research and statistics.', category: 'Sections', href: '#risk-gaps', keywords: 'visibility veracity velocity vigilance statistics fraud small business risk assessment' },
-  { title: 'Consumer lending risk', description: 'How risk changes across personal credit, auto finance, mortgages, student financing, and rent payments.', category: 'Sections', href: '#consumer-risk-gaps', keywords: 'consumer personal loans auto mortgage student education rent housing payments statistics' },
-  { title: 'Cash flow use cases', description: 'Explore cash flow intelligence across the credit lifecycle.', category: 'Sections', href: '#use-cases', keywords: 'adoption approvals risk fraud income offers portfolio collections' },
+  ...pageIndex.map(page => ({ title: page.title, description: page.description, category: 'Pages' as const, href: page.path, keywords: `${page.category} ${page.path} ${page.title}`.toLowerCase() })),
+  { title: 'AMLOK design system', description: 'Identity, graphics, and interface guidelines.', category: 'Pages', href: '/brand', keywords: 'brand identity design colors typography logo' },
 ];
 
 export function SiteHeader({isHome=false}:{isHome?:boolean}) {
@@ -121,7 +110,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
         <SolutionsMenu homeHref={homeHref} otherMenuOpen={searchOpen||languageMenuOpen||resourcesOpen||developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(false);}} />
         <DevelopersMenu open={developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(true);}} onClose={()=>setDevelopersOpen(false)} />
         <ResourcesMenu open={resourcesOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setDevelopersOpen(false);setResourcesOpen(true);}} onClose={()=>setResourcesOpen(false)} />
-        <a href={`${homeHref}#pricing`}>Pricing</a>
+        <a href="/pricing">Pricing</a>
         <div className="home-search-control">
           <button className="home-search-button" type="button" aria-label={searchOpen ? 'Close search' : 'Search Amlok'} aria-expanded={searchOpen} onClick={() => {setSearchOpen(!searchOpen); setLanguageMenuOpen(false);}}>{searchOpen ? <X size={19}/> : <Search size={19}/>}</button>
         </div>
@@ -136,8 +125,8 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
             </div>
           </div>}
         </div>
-        <a className="home-signup" href={`${homeHref}#platform`}><span ref={signupLabelRef}>Sign up</span> <ArrowUpRight size={19}/></a>
-        <a className="home-site-cta home-header-cta" href={`${homeHref}#platform`}>Talk to us</a>
+        <a className="home-signup" href="/get-started"><span ref={signupLabelRef}>Sign up</span> <ArrowUpRight size={19}/></a>
+        <a className="home-site-cta home-header-cta" href="/contact">Talk to us</a>
       </div>
       <MobileNavigation homeHref={homeHref} language={language} languages={languages} onLanguageChange={setLanguage} searchOpen={searchOpen}
         onSearch={() => { setSearchOpen(!searchOpen); setLanguageMenuOpen(false); }}

@@ -45,7 +45,7 @@ export function HomeConnect() {
         <p>Integrations across KYC/KYB, credit, fraud, open banking, and PEP screening—plus flexible connections to your internal systems.</p>
       </div>
       <div className={styles.actions}>
-        <a href="https://docs.amlok.io/integrations">Integrations <ArrowUpRight size={17} aria-hidden="true" /></a>
+        <a href="/integrations">Integrations <ArrowUpRight size={17} aria-hidden="true" /></a>
       </div>
     </div>
   </article>;

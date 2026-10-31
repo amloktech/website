@@ -1,0 +1,487 @@
+{
+  "period": "December 2022 – October 2026",
+  "milestones": [
+    {
+      "date": "December 2022",
+      "phase": "Company formation",
+      "title": "AMLOK Incorporated",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK was federally incorporated under Innovation, Science and Economic Development Canada, establishing the foundation for developing alternative models of capital formation through blockchain technology and emerging financial infrastructure."
+        }
+      ],
+      "dateTime": "2022-12"
+    },
+    {
+      "date": "December 2022 – June 2023",
+      "phase": "Real-world assets & SMB financing",
+      "title": "Real Estate Tokenization & Real-World Yield",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK's original concept focused on real estate tokenization, exploring how blockchain technology could connect digital asset ownership and participation with real-world yield rewards."
+        }
+      ]
+    },
+    {
+      "date": "Second Half of 2023",
+      "phase": "Real-world assets & SMB financing",
+      "title": "Evolution Toward SMB Financing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Expanded beyond real estate into alternative financing for small and medium-sized businesses, exploring how tokenization, programmable financial instruments and new capital formation models could improve access to financing."
+        }
+      ]
+    },
+    {
+      "date": "May 2024",
+      "phase": "Alternative capital infrastructure",
+      "title": "Blockchain Innovation Grant Awarded",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK received a blockchain innovation grant supporting its work developing blockchain-enabled financial infrastructure and alternative capital formation solutions."
+        }
+      ],
+      "dateTime": "2024-05"
+    },
+    {
+      "date": "2024",
+      "phase": "Alternative capital infrastructure",
+      "title": "Business Cash-Flow Tokenization",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Advanced a model enabling businesses to access financing against future revenues rather than surrendering equity, incorporating smart contracts, tokenized revenue claims and community participation."
+        }
+      ],
+      "dateTime": "2024"
+    },
+    {
+      "date": "December 2024",
+      "phase": "Alternative capital infrastructure",
+      "title": "Early Funding Campaign Development",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Developed early funding use cases combining community-backed financing, digital rewards and alternative capital formation, including the LingoPods/LingoAI concept."
+        }
+      ],
+      "dateTime": "2024-12"
+    },
+    {
+      "date": "April 2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Crowdfunding Platform Development",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Built infrastructure supporting fiat and cryptocurrency contributions, rewards-based campaigns, programmable funding milestones and community participation."
+        }
+      ],
+      "dateTime": "2025-04"
+    },
+    {
+      "date": "May 2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Consensus Top 40 Startup Selection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK was selected among the Top 40 startups at Consensus 2025, receiving international industry recognition for its approach to financial innovation and alternative capital infrastructure."
+        }
+      ],
+      "dateTime": "2025-05"
+    },
+    {
+      "date": "2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Selected for Representation by Canada's Trade Commissioner Service",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Following its recognition at Consensus 2025, AMLOK was proactively approached and selected for representation by Canada's Trade Commissioner Service (TCS), expanding its access to government-backed international trade networks and business development opportunities."
+        }
+      ],
+      "dateTime": "2025"
+    },
+    {
+      "date": "2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Ontario Securities Commission (OSC) LaunchPad Engagement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Shortly after its selection by the Trade Commissioner Service, AMLOK engaged with OSC LaunchPad, the Ontario Securities Commission's innovation-support initiative, to explore regulatory considerations surrounding emerging financial technologies and alternative financing models."
+        }
+      ],
+      "dateTime": "2025"
+    },
+    {
+      "date": "June–July 2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Genesis Campaign & Platform Pilot Readiness",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Developed AMLOK's Genesis self-funding campaign as an early demonstration of its crowdfunding infrastructure. By July 2025, the platform was live and ready for pilot activity, with early partners and campaign opportunities identified."
+        }
+      ]
+    },
+    {
+      "date": "August 2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Expansion into Community & Event-Based Financing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Explored additional crowdfunding applications, including Interac e-Transfer and USDC contributions, NFT ticketing, event funding and real-time campaign dashboards."
+        }
+      ],
+      "dateTime": "2025-08"
+    },
+    {
+      "date": "October–November 2025",
+      "phase": "Crowdfunding & industry recognition",
+      "title": "Community-Powered Working Capital",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Refined AMLOK's positioning around helping businesses convert customer loyalty, community support and future demand into working capital through rewards-based and non-dilutive financing models."
+        },
+        {
+          "type": "paragraph",
+          "text": "The platform's core proposition evolved around the principle of turning trust capital into working capital."
+        }
+      ]
+    },
+    {
+      "date": "January 2026",
+      "phase": "Live product validation",
+      "title": "Rewards-Based Crowdfunding Platform Live",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Advanced AMLOK's rewards-based funding platform, with a longer-term roadmap incorporating revenue participation, asset-linked financing and institutional financial instruments."
+        }
+      ],
+      "dateTime": "2026-01"
+    },
+    {
+      "date": "February–March 2026",
+      "phase": "Live product validation",
+      "title": "First Live Crowdfunding Pilots",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Activated real-world crowdfunding campaigns with businesses and their communities, validating the platform's initial market application and generating feedback from early participants."
+        }
+      ]
+    },
+    {
+      "date": "March 31, 2026",
+      "phase": "Live product validation",
+      "title": "Genesis Campaign Concluded",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Completed AMLOK's Genesis crowdfunding campaign and continued expanding business pilot activity and platform adoption."
+        }
+      ],
+      "dateTime": "2026-03-31"
+    },
+    {
+      "date": "April 2026",
+      "phase": "AI-powered capital intelligence",
+      "title": "Expansion into AI-Powered Fundability Intelligence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Began shifting beyond facilitating access to capital toward addressing the underlying information gaps influencing financing eligibility, borrower assessment and capital allocation."
+        },
+        {
+          "type": "paragraph",
+          "text": "This introduced a new strategic direction focused on financial intelligence, business fundability and underwriting support."
+        }
+      ],
+      "dateTime": "2026-04"
+    },
+    {
+      "date": "May 2026",
+      "phase": "AI-powered capital intelligence",
+      "title": "AI-Powered Capital Intelligence Product Launch",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Introduced new capabilities to evaluate business financial health, assess fundability and identify financing opportunities, while onboarding businesses and expanding funding and referral partnerships."
+        }
+      ],
+      "dateTime": "2026-05"
+    },
+    {
+      "date": "June 2026",
+      "phase": "AI-powered capital intelligence",
+      "title": "Early Market Traction & Ecosystem Validation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Reached key early ecosystem milestones:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "2 integrated funding partners",
+            "3 onboarded referral partners",
+            "100+ SMBs in the pipeline",
+            "500+ funding initiatives matched",
+            "Initial engagement with Canadian credit unions"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "These developments provided further insight into the opportunities and limitations of serving borrowers directly."
+        }
+      ],
+      "dateTime": "2026-06"
+    },
+    {
+      "date": "June–August 2026",
+      "phase": "The institutional pivot",
+      "title": "Shift from Direct-to-SMB Solutions to Institutional & Enterprise Risk Intelligence",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK made a deliberate strategic decision to focus on financial institutions and enterprise clients rather than serving SMBs directly."
+        },
+        {
+          "type": "paragraph",
+          "text": "The team recognized that equipping institutions with better financial and risk intelligence would enable AMLOK to support significantly more businesses and, eventually, a broader range of borrowers at scale, while simultaneously improving how institutions assess risk, allocate capital and manage ongoing lending relationships."
+        },
+        {
+          "type": "paragraph",
+          "text": "This marked the transition from a direct-to-business financing model toward AI-native infrastructure embedded within institutional workflows."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rather than changing its underlying mission, AMLOK identified a more scalable way to improve capital access and allocation while creating value for both lenders and borrowers."
+        }
+      ]
+    },
+    {
+      "date": "August 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Institutional Risk Intelligence Beta Live",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Developed and launched the beta of AMLOK's AI-native risk intelligence platform for financial institutions, incorporating:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Entity and counterparty resolution",
+            "Bilingual transaction enrichment, including Canadian payment data",
+            "Connected borrower and counterparty mapping",
+            "Anomaly and financial risk detection",
+            "Explainable risk profiles and configurable workflows",
+            "Continuous monitoring and risk alerts",
+            "Browser-based integration into institutional lending workflows"
+          ]
+        }
+      ],
+      "dateTime": "2026-08"
+    },
+    {
+      "date": "August 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Data Infrastructure & Technical Validation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Documented significant data and validation milestones:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "275,019+ public-record validations",
+            "650+ Canadian funding programs normalized",
+            "Merchant Growth identified as a design partner",
+            "Two credit unions in the institutional pipeline"
+          ]
+        }
+      ],
+      "dateTime": "2026-08"
+    },
+    {
+      "date": "August 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Canadian Lenders Association Vendor & Community Membership",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK became a vendor and community member of the Canadian Lenders Association (CLA), strengthening its presence within Canada's lending ecosystem and expanding opportunities to engage with financial institutions, industry leaders and prospective partners."
+        },
+        {
+          "type": "paragraph",
+          "text": "This milestone supported AMLOK's strategic transition toward institutional risk intelligence and its growing involvement in the Canadian lending industry."
+        }
+      ],
+      "dateTime": "2026-08"
+    },
+    {
+      "date": "August 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Accepted into NVIDIA Inception Program",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK was approved to join NVIDIA Inception, a program supporting startups developing innovative AI technologies."
+        },
+        {
+          "type": "paragraph",
+          "text": "The acceptance marked another milestone in AMLOK's development as an AI-native financial infrastructure company, providing access to NVIDIA's startup ecosystem, technical resources and opportunities to accelerate AI product development."
+        }
+      ],
+      "dateTime": "2026-08"
+    },
+    {
+      "date": "August–September 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Accelerator & Ecosystem Development",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Advanced participation in Canada's financial technology and innovation ecosystem, including A2E and AITA Labs, strengthening AMLOK's advisory network, institutional positioning and commercialization strategy."
+        }
+      ]
+    },
+    {
+      "date": "September 2026",
+      "phase": "Institutional product & market validation",
+      "title": "Institutional Sales & Credit Union Engagement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Expanded institutional business development, including credit-union demonstrations, lender-specific product positioning and commercial discussions with prospective financial-institution partners."
+        },
+        {
+          "type": "paragraph",
+          "text": "Engagement included Libro Credit Union and other Canadian lending institutions, with particular interest in borrower intelligence, counterparty mapping, underwriting support and continuous portfolio monitoring."
+        }
+      ],
+      "dateTime": "2026-09"
+    },
+    {
+      "date": "October 2026",
+      "phase": "Commercial traction & investment",
+      "title": "Executive-Level Institutional Validation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Received positive feedback from credit-union executive leadership, including approximately 12 executives, on AMLOK's ecosystem underwriting and post-loan monitoring capabilities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Discussions advanced toward potential commercial agreements and institutional deployments."
+        }
+      ],
+      "dateTime": "2026-10"
+    },
+    {
+      "date": "October 13, 2026",
+      "phase": "Commercial traction & investment",
+      "title": "Institutional Fundraising Round Opened",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Opened a fundraising round to support institutional commercialization, enterprise integrations, continued product development and expansion across the Canadian financial sector."
+        }
+      ],
+      "dateTime": "2026-10-13"
+    },
+    {
+      "date": "October 2026",
+      "phase": "Commercial traction & investment",
+      "title": "First Investment Received | LvlUp Ventures",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK received its first investment check from LvlUp Ventures, marking a significant milestone in the company's fundraising journey and securing its first external investment backing."
+        },
+        {
+          "type": "paragraph",
+          "text": "This investment provided initial financial support for AMLOK's next phase of institutional commercialization, product development and growth."
+        }
+      ],
+      "dateTime": "2026-10"
+    },
+    {
+      "date": "October 2026",
+      "phase": "Commercial traction & investment",
+      "title": "First Customer Signed & Commercial Pipeline Established",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AMLOK signed its first customer, marking the company's transition from product development and institutional validation into initial commercial traction."
+        },
+        {
+          "type": "paragraph",
+          "text": "With several additional prospective customers in the pipeline, this milestone demonstrated growing market interest in AMLOK's AI-native risk intelligence infrastructure and established an important foundation for broader institutional adoption."
+        }
+      ],
+      "dateTime": "2026-10"
+    },
+    {
+      "date": "October 2026",
+      "phase": "Commercial traction & investment",
+      "title": "AltaLab Fall Cohort",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Selected to participate in AltaLab's Fall 2026 cohort, expanding AMLOK's access to mentorship, strategic networks and commercialization support."
+        }
+      ],
+      "dateTime": "2026-10"
+    },
+    {
+      "date": "October 2026",
+      "phase": "Commercial traction & investment",
+      "title": "Canadian Lending Industry Engagement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Strengthened AMLOK's presence within the Canadian lending ecosystem through industry events, institutional relationship-building and participation in the Momentum Credit Union Conference in Montréal, where CEO Abdallah Kanaan was scheduled to speak on a panel."
+        }
+      ],
+      "dateTime": "2026-10"
+    }
+  ],
+  "today": [
+    {
+      "type": "paragraph",
+      "text": "AMLOK is building AI-native risk intelligence infrastructure for financial institutions, helping lenders understand borrowers, uncover connected financial relationships, identify emerging risks and continuously monitor lending portfolios."
+    },
+    {
+      "type": "paragraph",
+      "text": "The platform combines entity resolution, transaction enrichment, explainable risk intelligence and continuous monitoring to improve visibility throughout the lending lifecycle, from initial assessment and underwriting to ongoing portfolio management."
+    },
+    {
+      "type": "paragraph",
+      "text": "As of October 2026, AMLOK has reached several important commercialization milestones, including its first signed customer, its first external investment from LvlUp Ventures, an expanding institutional pipeline and participation in Canadian financial innovation and lending ecosystems."
+    },
+    {
+      "type": "paragraph",
+      "text": "What began with real estate tokenization and real-world yield in 2022 evolved through alternative SMB financing, community-powered crowdfunding and AI-driven fundability intelligence before becoming institutional risk intelligence infrastructure in 2026."
+    },
+    {
+      "type": "paragraph",
+      "text": "The mission has remained consistent: improving how capital is accessed, allocated and managed."
+    },
+    {
+      "type": "paragraph",
+      "text": "By moving from directly facilitating financing to strengthening the intelligence behind financial decisions, AMLOK aims to support more borrowers at scale while helping financial institutions make better-informed decisions, manage risk proactively and build stronger, more sustainable lending relationships."
+    }
+  ]
+}

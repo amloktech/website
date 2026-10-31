@@ -55,11 +55,9 @@
   .home-page .home-partner-lvlup { width:clamp(104px,32vw,128px); }
   .home-page .home-partner-cla { height:22px; }
   .home-page .home-partner-nvidia { height:20px; }
-  .site-footer-partners { grid-template-columns:repeat(2,120px); align-items:center; column-gap:20px; }
-  .site-footer-partners>h2 { grid-column:1 / -1; }
   .home-validation-logos { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px 12px; --validation-logo-height:14px; }
   .home-validation-logos>img { max-width:100%; }
-  .home-hero-validation-heading>p { max-width:100%; font-size:9px; line-height:1.7; }
+  .home-hero-validation-heading>p { max-width:100%; font-size:9px; line-height:1.7; text-align:center; }
   .home-validation-logos>img[alt="Lendefied"] { filter:grayscale(1) invert(1) brightness(3) contrast(3); mix-blend-mode:screen; }
 
   .home-page .home-risk-operations-inner>h2 { text-align:left; margin-bottom:32px; }

@@ -7,7 +7,7 @@ import { ArrowUpRight, ChevronDown } from 'lucide-react';
 
 export const developerGroups = [
   {title:'Build',links:[
-    {label:'Documentation',href:'https://amlok-docs.mintlify.site/'},
+    {label:'Documentation',href:'https://docs.amlok.io/'},
     {label:'API Reference',href:'/developers/api-reference'},
     {label:'MCP Server',href:'/developers/mcp'},
     {label:'SDKs',href:'/developers/sdks'},
@@ -58,7 +58,7 @@ export function DevelopersMenu({open,onOpen,onClose}:{open:boolean;onOpen:()=>vo
         <div className="home-developer-terminal-body" role="img" aria-label="Animated example: Codex reads AMLOK documentation, scaffolds an API client, adds request validation, and prepares a monitoring workflow for review.">
           <div aria-hidden="true">{terminalLines.map((line,index)=><div className={`home-developer-line ${line.tone}${index<=step?' is-visible':''}`} key={line.text}>{line.text}{index===0&&step===0&&<span className="home-developer-cursor">▍</span>}</div>)}</div>
         </div>
-        <a className="home-developer-quickstart" href="https://amlok-docs.mintlify.site/overview/introduction" onClick={onClose}><span><strong>Quickstart</strong><small>BUILD WITH AMLOK</small></span><span>Read the quickstart <ArrowUpRight size={16} aria-hidden="true"/></span></a>
+        <a className="home-developer-quickstart" href="https://docs.amlok.io/api-reference/quickstart" onClick={onClose}><span><strong>Quickstart</strong><small>BUILD WITH AMLOK</small></span><span>Read the quickstart <ArrowUpRight size={16} aria-hidden="true"/></span></a>
       </div>
       {developerGroups.map(group=><div className="home-developer-links" key={group.title}><h2>{group.title}</h2>{group.links.map(link=><a href={link.href} key={link.label} onClick={onClose}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a>)}</div>)}
     </div>}

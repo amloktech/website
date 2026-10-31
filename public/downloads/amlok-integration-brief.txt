@@ -1,0 +1,11 @@
+Build an AMLOK integration for our institution’s approved workflow.
+
+Start with https://docs.amlok.io/llms.txt and the OpenAPI contract at https://docs.amlok.io/openapi/amlok-v1.json. Read the quickstart, product scope, integration security, and relevant sandbox journey before implementing endpoints. Use the current contract for exact operation names and schemas.
+
+Ask the developer to provide the framework, intended Insights or Signal journey, workspace scope, and institution-issued sandbox base URL. Read API credentials from the server environment; never put secrets in client code, logs, prompts, or source control.
+
+Implement input validation, workspace authorization, explicit asynchronous states, safe retries, and error handling. Verify webhook signatures against raw bytes; persist accepted events and deduplicate deliveries before processing. Retrieve authoritative results and their source evidence.
+
+Keep approval, borrower outreach, payments, and consequential interventions in institution-owned systems. Do not invent API endpoints or convert missing evidence into a valid zero.
+
+Validate against the provisioned sandbox, including expired access, incomplete evidence, repeated requests, duplicate events, and unavailable providers. Summarize tested behavior and remaining deployment requirements for engineering review.

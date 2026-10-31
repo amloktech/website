@@ -102,7 +102,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
               <ul className="home-mobile-subnav" id={panelId} hidden={!expanded}>
                 {group.title==='Solutions'?<>
                   {[{label:'Our products',items:solutionProducts},{label:'Use cases',items:solutionUseCases},{label:'By module',items:solutionModules},{label:'By industry',items:solutionIndustries}].map(category=><li className="home-mobile-solution-category" key={category.label}><span>{category.label}</span><ul>{category.items.map(item=><li key={item.title}><a href={destination(item.href)} onClick={closeMenu}>{item.title}<ArrowUpRight size={15} aria-hidden="true"/><small>{item.description}</small></a></li>)}</ul></li>)}
-                  <li><a href={destination("#platform")} onClick={closeMenu}>All solutions <ArrowUpRight size={16} aria-hidden="true" /></a></li>
+                  <li><a href="/solutions" onClick={closeMenu}>All solutions <ArrowUpRight size={16} aria-hidden="true" /></a></li>
                 </>:group.title==='Developers'?developerGroups.map(category=><li className="home-mobile-solution-category" key={category.title}><span>{category.title}</span><ul>{category.links.map(link=><li key={link.label}><a href={link.href} onClick={closeMenu}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a></li>)}</ul></li>):group.title==='Resources'?<>
                   <li><a href="/about-us" onClick={closeMenu}>Meet the team <ArrowUpRight size={16} aria-hidden="true" /></a></li>
                   {resourceGroups.map(category=><li className="home-mobile-solution-category" key={category.title}><span>{category.title}</span><ul>{category.links.map(link=><li key={link.label}><a href={link.href} onClick={closeMenu}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a></li>)}</ul></li>)}
@@ -110,12 +110,12 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
               </ul>
             </div>;
           })}
-          <a className="home-mobile-nav-heading" href={destination("#pricing")} onClick={closeMenu}>Pricing</a>
+          <a className="home-mobile-nav-heading" href="/pricing" onClick={closeMenu}>Pricing</a>
         </nav>
 
         <div className="home-mobile-menu-actions">
-          <a className="home-mobile-contact" href={destination("#platform")} onClick={closeMenu}>Talk to us <ArrowUpRight aria-hidden="true" /></a>
-          <a className="home-mobile-signup" href={destination("#platform")} onClick={closeMenu}>Sign up</a>
+          <a className="home-mobile-contact" href="/contact" onClick={closeMenu}>Talk to us <ArrowUpRight aria-hidden="true" /></a>
+          <a className="home-mobile-signup" href="/get-started" onClick={closeMenu}>Sign up</a>
         </div>
 
         <div className="home-mobile-language">

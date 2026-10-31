@@ -413,7 +413,7 @@ export function HomeHero() {
         </div>
         <div className="home-hero-actions">
           <a className="home-hero-button home-hero-button-primary" href="#platform">See how it works <ArrowUpRight size={18} strokeWidth={1.8} /></a>
-          <a className="home-hero-button home-hero-button-secondary" href="#platform">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
+          <a className="home-hero-button home-hero-button-secondary" href="/contact">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
         </div>
       </div>
 
@@ -454,7 +454,7 @@ export function HomeHero() {
               <span className="home-risk-operations-type"><i aria-hidden="true"/>PRODUCT</span>
               <h3>Deal Underwriting</h3>
               <p>AI agents read borrower files, reconcile financials, and surface policy-aligned risk signals so credit teams can move faster and more consistently. Your team owns the final decision.</p>
-              <a href="#platform">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
+              <a href="/products/underwriting">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
             </div>
             <div className="home-risk-operations-visual">
               <div className="home-risk-operations-graphic"><ProductIllustration kind="underwriting" format="portrait" brandFill="hero"/></div>
@@ -466,7 +466,7 @@ export function HomeHero() {
               <span className="home-risk-operations-type"><i aria-hidden="true"/>PRODUCT</span>
               <h3>Portfolio monitoring</h3>
               <p>Continuously monitor borrowers, transactions, and connected entities after funding. Surface emerging risk and changing repayment behavior early, so teams can act before it affects the portfolio.</p>
-              <a href="#platform">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
+              <a href="/products/portfolio-monitoring">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
             </div>
             <div className="home-risk-operations-visual">
               <div className="home-risk-operations-graphic"><ProductIllustration kind="monitoring" format="portrait" brandFill="hero"/></div>
@@ -478,7 +478,7 @@ export function HomeHero() {
               <span className="home-risk-operations-type"><i aria-hidden="true"/>RESEARCH</span>
               <h3>Building a foundational risk graph</h3>
               <p>We’re building a risk intelligence AI model to remove intelligence as a bottleneck to deploying capital. By connecting borrowers, transactions, and related entities, it will help institutions see how risk moves across a portfolio over time.</p>
-              <a href="#platform">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
+              <a href="/platform/risk-graph">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
             </div>
             <div className="home-risk-operations-visual whitepaper-image-area">
               <div className="home-risk-operations-graphic"><ProductIllustration kind="graph" brandFill="hero"/></div>
@@ -497,8 +497,8 @@ export function HomeHero() {
           <h2 id="home-platform-title"><span>One platform.</span><span>Assess, decide, simulate, and monitor.</span></h2>
           <p>Connect the full financial picture across borrowers, transactions, and portfolios to uncover relationships, surface risk as it changes, and equip your team to make clearer, faster decisions throughout the credit lifecycle.</p>
           <div className="home-platform-actions">
-            <a className="home-platform-signup" href="#platform">Sign up</a>
-            <a className="home-platform-contact" href="#platform">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
+            <a className="home-platform-signup" href="/get-started">Sign up</a>
+            <a className="home-platform-contact" href="/contact">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
           </div>
         </div>
         <div className="home-capability-grid">

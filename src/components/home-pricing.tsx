@@ -1,6 +1,6 @@
 import { Activity, ArrowRight, Bot, ChartNoAxesCombined, CreditCard, Database, FileCheck2, FileText, Headphones, Layers, Palette, RefreshCw, Scale, SlidersHorizontal, WalletCards } from 'lucide-react';
 
-const docs = 'https://amlok-docs.mintlify.site';
+const docs = 'https://docs.amlok.io';
 
 // Enterprise billing model: /pricing/overview and /pricing/contract-terms.
 // Monthly minimum and annual prepayment apply to Enterprise only (user clarification, 2026-10-28).
@@ -48,7 +48,7 @@ export function HomePricing() {
           </div>
           <div className="home-pricing-actions">
             <a className="home-pricing-details" href={`${docs}/pricing/overview`}>See all product rates <ArrowRight size={17} aria-hidden="true" /></a>
-            <a className="home-pricing-cta" href={`${docs}/overview/introduction`}>Get started</a>
+            <a className="home-pricing-cta" href="/get-started">Get started</a>
           </div>
         </article>
 
@@ -62,7 +62,7 @@ export function HomePricing() {
           </div>
           <div className="home-pricing-actions">
             <a className="home-pricing-details" href={`${docs}/pricing/contract-terms`}>Explore agreement terms <ArrowRight size={17} aria-hidden="true" /></a>
-            <a className="home-pricing-cta" href="mailto:support@amlok.tech?subject=AMLOK%20Enterprise%20pricing">Talk to us</a>
+            <a className="home-pricing-cta" href="/contact">Talk to us</a>
           </div>
         </article>
       </div>

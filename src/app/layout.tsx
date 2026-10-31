@@ -27,13 +27,15 @@ import './mobile-system.css';
 import './desktop-spacing.css';
 import { SiteFooter } from '@/components/site-footer';
 import { tokensCSS } from '@/lib/brand';
+import { siteOrigin } from '@/lib/site-config';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteOrigin),
   title: 'AMLOK — Risk intelligence at the speed of capital',
   description: 'Risk intelligence and AI workflows across the credit lifecycle. Your team owns the final decision.',
   icons: { icon: '/icon.svg' },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><head><style id="amlok-design-tokens">{tokensCSS}</style></head><body>{children}<SiteFooter /></body></html>;
+  return <html lang="en"><head><style id="amlok-design-tokens">{tokensCSS}</style></head><body>{children}<SiteFooter siteOrigin={siteOrigin} /></body></html>;
 }

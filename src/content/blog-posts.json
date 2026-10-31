@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "risk-is-a-relationship",
+    "title": "See the connections. Understand the risk.",
+    "description": "Why the connections between borrowers, accounts, and obligations matter as much as the records themselves.",
+    "topic": "Connected data",
+    "topicId": "connected-data",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 2,
+    "image": "/images/blog/risk-is-a-relationship.svg"
+  },
+  {
+    "slug": "from-snapshot-to-signal",
+    "title": "From a snapshot to a living baseline.",
+    "description": "Why monitoring begins with a clear account of what was known at underwriting.",
+    "topic": "Monitoring",
+    "topicId": "monitoring",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/from-snapshot-to-signal.svg"
+  },
+  {
+    "slug": "designing-reviewable-ai",
+    "title": "Build intelligence people can review.",
+    "description": "Evidence, uncertainty, and human ownership are design requirements for a useful risk workflow.",
+    "topic": "AI & workflows",
+    "topicId": "ai-workflows",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/designing-reviewable-ai.svg"
+  },
+  {
+    "slug": "read-the-cash-flow",
+    "title": "Read the cash flow. Understand the movement.",
+    "description": "Why a deposit is a starting point for analysis, rather than the answer to an income question.",
+    "topic": "Cash flow",
+    "topicId": "cash-flow",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/read-the-cash-flow.svg"
+  },
+  {
+    "slug": "underwriting-to-monitoring",
+    "title": "The decision is a moment. The relationship continues.",
+    "description": "Carry the assumptions behind underwriting into the monitoring that follows funding.",
+    "topic": "Underwriting",
+    "topicId": "underwriting",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/underwriting-to-monitoring.svg"
+  },
+  {
+    "slug": "cash-flow-for-merchant-finance",
+    "title": "Merchant receipts need a little more context.",
+    "description": "A practical perspective on sales, settlements, refunds, and the timing behind merchant cash flow.",
+    "topic": "Cash flow",
+    "topicId": "cash-flow",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/cash-flow-for-merchant-finance.svg"
+  },
+  {
+    "slug": "monitoring-without-the-noise",
+    "title": "Less noise. More useful signals.",
+    "description": "Design monitoring around meaningful changes, clear evidence, and a team that knows what happens next.",
+    "topic": "Monitoring",
+    "topicId": "monitoring",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 2,
+    "image": "/images/blog/monitoring-without-the-noise.svg"
+  },
+  {
+    "slug": "event-driven-risk-workflows",
+    "title": "Every event needs a clear next step.",
+    "description": "How to design evidence-led automation without losing ownership, review, or the history of a decision.",
+    "topic": "AI & workflows",
+    "topicId": "ai-workflows",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/event-driven-risk-workflows.svg"
+  },
+  {
+    "slug": "embedded-finance-context",
+    "title": "One connection. A fuller borrower picture.",
+    "description": "What an embedded financial-data experience should preserve beyond the initial connection.",
+    "topic": "Embedded finance",
+    "topicId": "embedded-finance",
+    "author": "AMLOK",
+    "date": "2026-10-31",
+    "readMinutes": 1,
+    "image": "/images/blog/embedded-finance-context.svg"
+  }
+]

@@ -30,6 +30,39 @@ worker in a restricted environment, validate with `pnpm exec next build --webpac
 Read the installed Next.js documentation under `node_modules/next/dist/docs/`
 before changing framework behavior; this project uses Next.js 16.4.
 
+## Sitemap and canonical URLs
+
+The website generates `/sitemap.xml` and `/robots.txt` during the static build.
+Preview them locally at http://127.0.0.1:3000/sitemap.xml and
+http://127.0.0.1:3000/robots.txt.
+
+`src/content/page-index.json` is the shared index for site search, the human-readable
+`/site-map`, and XML sitemap. The content pages are defined in
+`src/content/site-pages.json` and rendered by `src/components/content-page.tsx`
+through the statically generated catch-all route. Add new public pages to both
+content files. The brand guidelines page is excluded because it is marked `noindex`.
+The original architecture and implementation status live in `docs/website-sitemap.md`.
+
+After building, run `python3 scripts/verify-site.py` to check all public pages,
+internal links and anchors, local assets, canonical URLs, headings, and sitemap coverage.
+Interactive page tools live in `src/components/page-tools.tsx`. The contact form
+opens an email draft; it does not submit to a backend. Research covers are previews,
+workflow stories are illustrative, and the status page does not claim live telemetry.
+
+The blog at `/blog` uses `src/content/blog-posts.json` for card metadata, topics,
+author, dates, and image paths; article bodies remain in `site-pages.json`.
+Its nine starter articles use editable SVG placeholders in `public/images/blog`.
+Topic/search/pagination state is shareable through `?topic=monitoring&q=noise&page=1#all-posts`.
+The signup form prepares an email request to `support@amlok.tech`; it does not
+store addresses or subscribe anyone automatically. Connect a mailing-list service
+before replacing that explicit request flow with direct subscriptions.
+
+The default canonical origin is the current deployment,
+`https://website.a-6fa.workers.dev`. Set `SITE_URL` in the build environment when
+the custom domain is connected (for example, `SITE_URL=https://amlok.io`). This
+updates sitemap URLs, the robots sitemap reference, and page canonical URLs
+together. A domain change requires rebuilding the static export.
+
 ## AMLOK system 1.0
 
 **Protected by structure. Connected by signals.**

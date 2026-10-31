@@ -15,9 +15,10 @@
 .site-footer-logo svg { width:30px; height:30px; }
 .site-footer-identity p { margin:20px 0 0; max-width:270px; color:#ffffffb8; font-size:13px; line-height:1.65; }
 .site-footer-identity .site-footer-tagline { max-width:none; color:white; font-size:clamp(16px,1.25vw,18px); line-height:1.4; font-weight:500; white-space:nowrap; }
-.site-footer-partners { display:grid; justify-items:start; gap:14px; margin-top:28px; }
+.site-footer-partners { display:grid; justify-items:start; min-width:0; gap:14px; margin-top:28px; }
 .site-footer-partners h2 { margin:0; color:#ffffff9e; font:500 11px/1.5 var(--font-mono); letter-spacing:.1em; text-transform:uppercase; }
-.site-footer-partners img { display:block; width:120px; height:auto; max-height:33px; object-fit:contain; object-position:left; filter:brightness(0) invert(1); }
+.site-footer-partner-logos { display:grid; grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(0,1fr)); align-items:center; gap:16px; width:100%; max-width:320px; }
+.site-footer-partner-logos img { display:block; width:100%; min-width:0; height:28px; object-fit:contain; object-position:left center; filter:brightness(0) invert(1); }
 .site-footer-identity .site-footer-location { max-width:none; margin-top:28px; color:#ffffffa8; font:500 9px/1.6 var(--font-mono); letter-spacing:.06em; text-transform:uppercase; }
 .site-footer-email { display:inline-flex; gap:8px; align-items:center; margin-top:10px; font-size:13px; }
 .site-footer-group { min-width:0; }

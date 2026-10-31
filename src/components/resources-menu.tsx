@@ -6,12 +6,11 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
 
-// Reserved paths are placeholders until their resource pages are ready.
+// Shared by desktop navigation, mobile navigation, and the footer.
 export const resourceGroups = [
   {title:'Read & Explore',links:[
     {label:'Research',href:'/research'},
     {label:'Blog',href:'/blog'},
-    {label:'Success Stories',href:'/success-stories'},
     {label:'Help Center',href:'/help-center'},
     {label:'Demo Center',href:'/demo-center'},
   ]},
@@ -20,8 +19,8 @@ export const resourceGroups = [
     {label:'Manifesto',href:'/manifesto'},
     {label:'Partners',href:'/partners'},
     {label:'Careers',href:'/careers'},
-    {label:'Security & Compliance',href:'/#security-compliance'},
-    {label:'Contact',href:'mailto:support@amlok.tech'},
+    {label:'Security & Compliance',href:'/security-compliance'},
+    {label:'Contact',href:'/contact'},
   ]},
 ] as const;
 

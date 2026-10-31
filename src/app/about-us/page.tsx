@@ -8,6 +8,7 @@ import { HomeMonitoringCta } from '@/components/home-monitoring-cta';
 import './about-us.css';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about-us' },
   title:'About us — AMLOK',
   description:'Risk is a movie, not a picture. Meet the team building connected risk intelligence across the credit lifecycle, and explore AMLOK’s mission and vision.',
 };
