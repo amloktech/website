@@ -1,35 +1,23 @@
-import { ArrowRight, ArrowUpRight, Check, ChevronRight, FileText, Layers, Network, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, Check, ChevronRight, FileText, Layers, Network, ShieldCheck } from 'lucide-react';
+import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
 import { ProductIllustration } from './product-illustration';
 import { HomePricing } from './home-pricing';
 import { ResearchLibrary } from './research-library';
+import { ResearchListing } from './research-listing';
 import { BlogArticle, BlogPage } from './blog-page';
 import { blogPosts } from '@/content/blog-posts';
-import { ContactComposer, CopyGuide, GuidedDemo, HelpDirectory, IntegrationDirectory, PricingEstimator } from './page-tools';
+import { ContactComposer, CopyGuide, IntegrationDirectory, PricingEstimator } from './page-tools';
 import { findSitePage, type SitePageContent } from '@/lib/site-content';
 import { siteOrigin } from '@/lib/site-config';
-import partners from '@/content/partners.json';
 import pageIndex from '@/content/page-index.json';
 
 const groupNames: Record<string,string> = {products:'Products',platform:'Platform',solutions:'Use cases',modules:'Modules',industries:'Industries',developers:'Developers',compare:'Comparisons',blog:'Journal'};
 const groupPaths: Record<string,string> = {products:'/products',platform:'/platform',solutions:'/solutions',modules:'/modules',industries:'/industries',developers:'/developers',compare:'/compare',blog:'/blog'};
-const directoryGroups: Record<string,string> = {Platform:'Platform & products',platform:'Platform & products',products:'Platform & products',integrations:'Platform & products',pricing:'Platform & products',solutions:'Solutions & modules',modules:'Solutions & modules',industries:'Industries',developers:'Developers',changelog:'Developers',status:'Developers',research:'Resources',blog:'Resources','help-center':'Resources','demo-center':'Resources',Company:'Company',manifesto:'Company',partners:'Company',careers:'Company','security-compliance':'Company',contact:'Company','get-started':'Company',compare:'Comparisons',privacy:'Policies',cookies:'Policies',terms:'Policies','site-map':'Resources'};
+const directoryGroups: Record<string,string> = {Platform:'Platform & products',platform:'Platform & products',products:'Platform & products',integrations:'Platform & products',pricing:'Platform & products',solutions:'Solutions & modules',modules:'Solutions & modules',industries:'Industries',developers:'Developers',changelog:'Developers',status:'Developers',research:'Resources','case-studies':'Resources',whitepapers:'Resources','industry-guides':'Resources',blog:'Resources',Company:'Company',manifesto:'Company',careers:'Company','security-compliance':'Company',contact:'Company','get-started':'Company',compare:'Comparisons',privacy:'Policies',cookies:'Policies',terms:'Policies','site-map':'Resources'};
 
 function PageCards({slugs,compact=false}:{slugs:string[];compact?:boolean}) {
   return <div className={`cp-link-grid${compact?' is-compact':''}`}>{slugs.map(slug=>{const page=findSitePage(slug);return page?<a className="cp-link-card" href={'/'+page.slug} key={slug}>{!compact&&<div className="cp-card-art"><ProductIllustration kind={page.visual}/></div>}<span className="cp-eyebrow">{groupNames[slug.split('/')[0]]||'Explore AMLOK'}</span><h3>{page.label}</h3><p>{page.description}</p><span className="cp-text-link">Explore <ArrowUpRight size={17} aria-hidden="true"/></span></a>:null;})}</div>;
-}
-
-function Partners() {
-  return <section className="cp-section cp-muted"><div className="cp-inner cp-partner-grid">
-    {partners.map((partner,index)=><article className="cp-partner-card" key={partner.name}>
-      <div className="cp-partner-art"><img src={partner.logo} alt={partner.name} width={240} height={110}/></div>
-      <div className="cp-partner-copy">
-        <span className="cp-eyebrow">{['Venture backing','Industry community','Startup programme'][index]}</span>
-        <h2>{partner.name}</h2><p>{partner.description}</p>
-        <a className="cp-text-link" href={partner.url}>Explore the relationship <ArrowUpRight size={17}/></a>
-      </div>
-    </article>)}
-  </div></section>;
 }
 
 function Comparison({page}:{page:SitePageContent}) {
@@ -48,8 +36,9 @@ export function ContentPage({page}:{page:SitePageContent}) {
   if (blogPost) return <BlogArticle page={page} post={blogPost}/>;
   const group=page.slug.split('/')[0];
   const legal=page.kind==='legal';
+  const researchCollection = ['research','whitepapers','industry-guides'].includes(page.slug);
+  const collectionLabel = page.slug==='whitepapers'?'whitepapers':page.slug==='industry-guides'?'industry guides':'research';
   const editorial=['article','manifesto','legal'].includes(page.kind);
-  const primary=page.primary||{label:page.kind==='article'?'Explore the platform':page.kind==='research'?'Explore the library':page.kind==='demo'?'Start the walkthrough':page.kind==='integrations'?'Explore integrations':'Talk to us',href:page.kind==='article'?'/platform':page.kind==='research'?'#all-posts':page.kind==='demo'?'#walkthrough':page.kind==='integrations'?'#catalogue':page.slug==='contact'?'#enquiry':'/contact'};
   const breadcrumb=[{name:'Home',item:siteOrigin},...(page.slug.includes('/')?[{name:groupNames[group]||group,item:siteOrigin+(groupPaths[group]||'/')}]:[]),{name:page.label,item:siteOrigin+'/'+page.slug}];
   const schema={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:breadcrumb.map((item,index)=>({'@type':'ListItem',position:index+1,...item}))};
   return <main className={`home-page cp-page cp-${page.kind}`} id="top">
@@ -57,17 +46,15 @@ export function ContentPage({page}:{page:SitePageContent}) {
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,'\\u003c')}}/>
     <section className={`cp-hero${editorial?' is-editorial':''}`} aria-labelledby="page-title"><div className="cp-inner">
       <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13}/>{page.slug.includes('/')&&<><a href={groupPaths[group]}>{groupNames[group]}</a><ChevronRight size={13}/></>}<span aria-current="page">{page.label}</span></nav>
-      <div className="cp-hero-grid"><div className="cp-hero-copy"><span className="cp-eyebrow"><i/>{page.label}</span><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p>{!legal&&<div className="cp-actions"><a className="cp-button" href={primary.href}>{primary.label}<ArrowUpRight size={18}/></a>{page.slug!=='developers'&&page.kind!=='research'&&<a className="cp-text-link" href={page.kind==='developer'?'/developers':'/developers/api-reference'}>{page.kind==='developer'?'Developer overview':'Explore API'}<ArrowRight size={17}/></a>}</div>}{page.kind==='article'&&<span className="cp-article-meta">AMLOK Editorial · 31 October 2026 · 3 minute read</span>}</div>{!editorial&&(page.kind==='research'?<div className="cp-research-graphic"><ProductIllustration kind={page.visual} brandFill="hero"/></div>:<div className="cp-hero-visual"><div className="cp-visual-top"><span>AMLOK / CONNECTED INTELLIGENCE</span><i/></div><ProductIllustration kind={page.visual} brandFill="hero"/><div className="cp-visual-bottom"><span>Evidence</span><span>Context</span><span>Human judgment</span></div></div>)}</div>
+      <div className="cp-hero-grid"><div className="cp-hero-copy"><span className="cp-eyebrow"><i/>{page.label}</span><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p>{!legal&&<PageActions/>}{page.kind==='article'&&<span className="cp-article-meta">AMLOK Editorial · 31 October 2026 · 3 minute read</span>}</div>{!editorial&&(page.kind==='research'?<div className="cp-research-graphic"><ProductIllustration kind={page.visual} brandFill="hero"/></div>:<div className="cp-hero-visual"><div className="cp-visual-top"><span>AMLOK / CONNECTED INTELLIGENCE</span><i/></div><ProductIllustration kind={page.visual} brandFill="hero"/><div className="cp-visual-bottom"><span>Evidence</span><span>Context</span><span>Human judgment</span></div></div>)}</div>
     </div></section>
     {page.notice&&<div className="cp-inner"><p className="cp-notice">{page.notice}</p></div>}
     {page.cards&&<section className="cp-section cp-muted"><div className="cp-inner"><PageCards slugs={page.cards}/></div></section>}
     {page.kind==='integrations'&&<IntegrationDirectory/>}
     {page.kind==='contact'&&<ContactComposer/>}
     {page.kind==='pricing'&&<><HomePricing/><PricingEstimator/></>}
-    {page.kind==='demo'&&<GuidedDemo/>}
-    {page.kind==='research'&&<ResearchLibrary/>}
-    {page.kind==='partners'&&<Partners/>}
-    {page.kind==='help'&&<HelpDirectory/>}
+    {page.slug==='research'&&<ResearchLibrary/>}
+    {(page.slug==='whitepapers'||page.slug==='industry-guides')&&<ResearchListing collection={page.slug}/>}
     {page.kind==='sitemap'&&<section className="cp-section"><div className="cp-inner cp-site-map">{Object.entries(Object.groupBy(pageIndex,page=>directoryGroups[page.category]||'Explore AMLOK')).map(([group,entries])=><nav key={group} aria-label={group}><h2>{group}</h2><ul>{entries?.map(entry=><li key={entry.path}><a href={entry.path}>{entry.title}<ArrowUpRight size={14}/></a></li>)}</ul></nav>)}</div></section>}
     {page.kind==='comparison'&&<Comparison page={page}/>}
     {page.slug==='security-compliance'&&<SecurityScope/>}
@@ -79,6 +66,6 @@ export function ContentPage({page}:{page:SitePageContent}) {
     {page.links&&<section className="cp-section cp-muted"><div className="cp-inner"><div className="cp-section-heading"><span className="cp-eyebrow">BUILD WITH THE RIGHT REFERENCES</span><h2>Tools and documentation.</h2></div><div className="cp-download-grid">{page.links.map(link=><a key={link.url} href={link.url}><FileText size={22}/><span>{link.title}</span><ArrowUpRight size={17}/></a>)}</div></div></section>}
     {page.faq.length>0&&<section className="cp-section"><div className="cp-inner cp-faq"><span className="cp-eyebrow">COMMON QUESTIONS</span><h2>A little more context.</h2>{page.faq.map(item=><details key={item.question}><summary>{item.question}<span aria-hidden="true">+</span></summary><p>{item.answer}</p></details>)}</div></section>}
     {page.related.length>0&&<section className="cp-section cp-muted"><div className="cp-inner"><div className="cp-related-heading"><span className="cp-eyebrow">KEEP EXPLORING</span><h2>Connect the next piece.</h2></div><PageCards slugs={page.related} compact/></div></section>}
-    {!legal&&page.slug!=='contact'&&<section className="cp-section cp-closing"><div className="cp-inner"><span className="cp-eyebrow"><i/>BUILD WITH AMLOK</span><h2>Make the full picture<br/><span className="home-heading-gradient">part of your next decision.</span></h2><a className="cp-button" href="/contact">Let’s talk <ArrowUpRight size={18}/></a></div></section>}
+    {!legal&&page.slug!=='contact'&&<section className="cp-section cp-closing"><div className="cp-inner">{researchCollection?<><span className="cp-eyebrow"><i/>KEEP READING</span><h2>More perspectives.<br/><span className="home-heading-gradient">A clearer view of risk.</span></h2><div className="cp-actions"><a className="cp-button" href="#all-posts">Explore {collectionLabel} <ArrowUpRight size={18} aria-hidden="true"/></a></div></>:<><span className="cp-eyebrow"><i/>BUILD WITH AMLOK</span><h2>Make the full picture<br/><span className="home-heading-gradient">part of your next decision.</span></h2><PageActions/></>}</div></section>}
   </main>;
 }

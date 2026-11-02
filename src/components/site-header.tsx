@@ -1,5 +1,6 @@
 'use client';
 
+import { BookingLink } from './booking-link';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowUpRight, Check, ChevronDown, Globe, Search, X } from 'lucide-react';
 import { Wordmark } from './ui';
@@ -105,7 +106,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
   return <>
 
     <header ref={headerRef} className={`home-header ${headerScrolled ? 'is-scrolled' : ''}`}>
-      <a href={`${homeHref}#top`} className="home-logo" aria-label="Amlok home"><Wordmark /></a>
+      <a href={`${homeHref}#top`} className="home-logo" aria-label="Amlok home"><Wordmark gradient /></a>
       <nav className="home-nav" aria-label="Main navigation">
         <SolutionsMenu homeHref={homeHref} otherMenuOpen={searchOpen||languageMenuOpen||resourcesOpen||developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(false);}} />
         <DevelopersMenu open={developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(true);}} onClose={()=>setDevelopersOpen(false)} />
@@ -126,7 +127,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
           </div>}
         </div>
         <a className="home-signup" href="/get-started"><span ref={signupLabelRef}>Sign up</span> <ArrowUpRight size={19}/></a>
-        <a className="home-site-cta home-header-cta" href="/contact">Talk to us</a>
+        <BookingLink className="home-site-cta home-header-cta">Talk to us</BookingLink>
       </div>
       <MobileNavigation homeHref={homeHref} language={language} languages={languages} onLanguageChange={setLanguage} searchOpen={searchOpen}
         onSearch={() => { setSearchOpen(!searchOpen); setLanguageMenuOpen(false); }}

@@ -1,6 +1,5 @@
-import { Activity, ArrowRight, Bot, ChartNoAxesCombined, CreditCard, Database, FileCheck2, FileText, Headphones, Layers, Palette, RefreshCw, Scale, SlidersHorizontal, WalletCards } from 'lucide-react';
-
-const docs = 'https://docs.amlok.io';
+import { BookingLink } from './booking-link';
+import { Activity, ArrowUpRight, Bot, ChartNoAxesCombined, CreditCard, Database, FileCheck2, FileText, Headphones, Layers, Palette, RefreshCw, Scale, SlidersHorizontal, WalletCards } from 'lucide-react';
 
 // Enterprise billing model: /pricing/overview and /pricing/contract-terms.
 // Monthly minimum and annual prepayment apply to Enterprise only (user clarification, 2026-10-28).
@@ -47,8 +46,7 @@ export function HomePricing() {
             <ul>{usageFeatures.map(({ icon: Icon, text }, index) => <li key={index}><Icon size={20} aria-hidden="true" /><span>{text}</span></li>)}</ul>
           </div>
           <div className="home-pricing-actions">
-            <a className="home-pricing-details" href={`${docs}/pricing/overview`}>See all product rates <ArrowRight size={17} aria-hidden="true" /></a>
-            <a className="home-pricing-cta" href="/get-started">Get started</a>
+            <a className="home-pricing-cta" href="https://docs.amlok.io/api-reference/overview">Explore API <ArrowUpRight size={18} aria-hidden="true"/></a>
           </div>
         </article>
 
@@ -61,8 +59,7 @@ export function HomePricing() {
             <ul>{enterpriseFeatures.map(({ icon: Icon, text }, index) => <li key={index}><Icon size={20} aria-hidden="true" /><span>{text}</span></li>)}</ul>
           </div>
           <div className="home-pricing-actions">
-            <a className="home-pricing-details" href={`${docs}/pricing/contract-terms`}>Explore agreement terms <ArrowRight size={17} aria-hidden="true" /></a>
-            <a className="home-pricing-cta" href="/contact">Talk to us</a>
+            <BookingLink className="home-pricing-cta">Talk to us <ArrowUpRight size={18} aria-hidden="true"/></BookingLink>
           </div>
         </article>
       </div>

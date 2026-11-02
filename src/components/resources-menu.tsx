@@ -10,17 +10,17 @@ import { ArrowUpRight, ChevronDown } from 'lucide-react';
 export const resourceGroups = [
   {title:'Read & Explore',links:[
     {label:'Research',href:'/research'},
+    {label:'Case Studies',href:'/case-studies'},
+    {label:'Whitepapers',href:'/whitepapers'},
+    {label:'Industry Guides',href:'/industry-guides'},
     {label:'Blog',href:'/blog'},
-    {label:'Help Center',href:'/help-center'},
-    {label:'Demo Center',href:'/demo-center'},
   ]},
   {title:'Company',links:[
     {label:'About us',href:'/about-us'},
     {label:'Manifesto',href:'/manifesto'},
-    {label:'Partners',href:'/partners'},
+    {label:'Contact',href:'/contact'},
     {label:'Careers',href:'/careers'},
     {label:'Security & Compliance',href:'/security-compliance'},
-    {label:'Contact',href:'/contact'},
   ]},
 ] as const;
 

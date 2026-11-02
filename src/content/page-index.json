@@ -114,12 +114,6 @@
     "category": "manifesto"
   },
   {
-    "path": "/partners",
-    "title": "Our ecosystem",
-    "description": "The organizations and communities supporting AMLOK as we build infrastructure for connected risk intelligence.",
-    "category": "partners"
-  },
-  {
     "path": "/careers",
     "title": "Careers at AMLOK",
     "description": "We’re working at the intersection of financial systems, connected data, and applied AI. Help make the evidence behind risk easier to understand.",
@@ -132,22 +126,28 @@
     "category": "research"
   },
   {
+    "path": "/case-studies",
+    "title": "Case Studies",
+    "description": "A closer look at how connected evidence can support underwriting, portfolio monitoring, and the decisions in between. Our case study collection is coming soon.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/whitepapers",
+    "title": "Whitepapers",
+    "description": "Explore the ideas behind connected risk intelligence, from financial relationships and borrower behaviour to the evidence that supports a better-informed decision. Preview our upcoming whitepapers.",
+    "category": "whitepapers"
+  },
+  {
+    "path": "/industry-guides",
+    "title": "Industry Guides",
+    "description": "Look closer at the cash flows, obligations, and changing conditions that shape each lending market. Explore our upcoming guides for merchant cash advance, mortgage, and business lending.",
+    "category": "industry-guides"
+  },
+  {
     "path": "/blog",
     "title": "Blog",
     "description": "Ideas, practical perspectives, and fresh thinking on credit, connected data, and the intelligence behind better-informed decisions.",
     "category": "blog"
-  },
-  {
-    "path": "/demo-center",
-    "title": "Demo center",
-    "description": "Step through illustrative underwriting, monitoring, and investigation workflows. See how evidence connects to a decision your team owns.",
-    "category": "demo-center"
-  },
-  {
-    "path": "/help-center",
-    "title": "Help Center",
-    "description": "Guides and practical starting points for onboarding, integrations, product usage, billing, and support.",
-    "category": "help-center"
   },
   {
     "path": "/compare",

@@ -1,17 +1,16 @@
 import Image from 'next/image';
-import { ArrowRight, CircleAlert } from 'lucide-react';
+import { CircleAlert } from 'lucide-react';
 
-export function HomeMonitoringCta({ apiHref = '#loan-scale-slide-4' }: { apiHref?: string }) {
+import { PageActions } from './page-actions';
+
+export function HomeMonitoringCta() {
   return <section className="home-monitoring-cta" id="continuous-risk" aria-labelledby="home-monitoring-cta-title">
     <div className="home-monitoring-cta-inner">
       <div className="home-monitoring-cta-copy">
         <span className="home-products-eyebrow"><i aria-hidden="true" />CONTINUOUS RISK INTELLIGENCE</span>
         <h2 id="home-monitoring-cta-title"><span className="home-monitoring-title-line">Keep up with <span className="home-heading-gradient">risk</span></span><span className="home-monitoring-title-line">as fast as it <span className="home-heading-gradient">changes</span></span></h2>
         <p>A point-in-time decision does not need to become a blind spot for the life of the deal.</p>
-        <div className="home-monitoring-cta-actions">
-          <a href="/contact">Get a demo <ArrowRight size={18} aria-hidden="true" /></a>
-          <a href={apiHref}>Explore API <ArrowRight size={18} aria-hidden="true" /></a>
-        </div>
+        <PageActions className="home-monitoring-cta-actions" primaryClassName="" secondaryClassName=""/>
       </div>
       <figure className="home-monitoring-cta-figure">
         <div className="home-monitoring-cta-photo">

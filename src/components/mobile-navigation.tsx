@@ -1,5 +1,6 @@
 'use client';
 
+import { BookingLink } from './booking-link';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, ChevronDown, Globe, Menu, Search, X } from 'lucide-react';
 import { Wordmark } from './ui';
@@ -83,7 +84,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
       }
     }}>
       <div className="home-mobile-menu-header">
-        <a className="home-logo" href={destination("#top")} aria-label="Amlok home" onClick={closeMenu}><Wordmark /></a>
+        <a className="home-logo" href={destination("#top")} aria-label="Amlok home" onClick={closeMenu}><Wordmark gradient /></a>
         <div className="home-mobile-menu-tools">
           <button className="home-mobile-icon" type="button" aria-label="Search Amlok" onClick={() => { closeMenu(); onSearch(); }}><Search aria-hidden="true" /></button>
           <button className="home-mobile-icon" type="button" aria-label="Close menu" ref={closeRef} onClick={closeMenu}><X aria-hidden="true" /></button>
@@ -114,7 +115,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
         </nav>
 
         <div className="home-mobile-menu-actions">
-          <a className="home-mobile-contact" href="/contact" onClick={closeMenu}>Talk to us <ArrowUpRight aria-hidden="true" /></a>
+          <BookingLink className="home-mobile-contact" onClick={closeMenu}>Talk to us <ArrowUpRight aria-hidden="true" /></BookingLink>
           <a className="home-mobile-signup" href="/get-started" onClick={closeMenu}>Sign up</a>
         </div>
 

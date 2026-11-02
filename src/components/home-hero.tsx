@@ -1,4 +1,5 @@
 'use client';
+import { PageActions } from './page-actions';
 import { HomeFaq } from './home-faq';
 import { HomeFeaturedResources } from './home-featured-resources';
 import { HomeConnect } from './home-connect';
@@ -223,7 +224,6 @@ const loanScaleSlides = [
     title: 'Underwriting, risk and operations',
     description: 'Amlok resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
     graphic: 'connected-risk',
-    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
   },
   {
     id: 'loan-scale-slide-2',
@@ -238,7 +238,6 @@ const loanScaleSlides = [
     title: 'Effortless risk operations',
     description: 'Route assessments, exceptions, monitoring events, and evidence into the systems your team already uses—from origination through portfolio management.',
     graphic: 'event-automations',
-    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
   },
   {
     id: 'loan-scale-slide-3',
@@ -253,7 +252,6 @@ const loanScaleSlides = [
     title: 'Find exactly what changed',
     description: 'Every signal carries supporting evidence, confidence, and entity context. Teams can understand why risk moved and apply their own policy without relying on an opaque score.',
     graphic: 'explainable-signals',
-    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
   },
   {
     id: 'loan-scale-slide-8',
@@ -261,7 +259,6 @@ const loanScaleSlides = [
     title: 'Post-funding anomaly detection',
     description: 'Monitor the deal after capital is deployed. Amlok detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
     graphic: 'behaviour-insights',
-    link: { label: 'How it works', href: 'https://amlok.io/#contact' },
   },
   {
     id: 'loan-scale-slide-0',
@@ -283,7 +280,6 @@ const loanScaleSlides = [
     title: 'One API for the entire risk lifecycle.',
     description: 'Connect onboarding data, resolve identity and financial activity, apply institution-owned risk policy, create decision packages, and monitor capital after deployment—all through one continuous intelligence layer.',
     graphic: 'lifecycle-api',
-    link: { label: 'Read the API documentation', href: 'https://amlok.io/api-reference' },
   },
 ] as const;
 
@@ -307,7 +303,6 @@ function LoanScaleSection() {
             <span className="home-lifecycle-label">{slide.surface}</span>
             <h3 id={`home-lifecycle-title-${slide.graphic}`}>{slide.title}</h3>
             <p>{slide.description}</p>
-            {'link' in slide && <a className="home-lifecycle-link" href={slide.link.href}>{slide.link.label}<ArrowUpRight size={18} aria-hidden="true" /></a>}
           </div>
           <div className="home-lifecycle-visual home-loan-scale-art">
             <ProductIllustration kind={slide.graphic}/>
@@ -411,10 +406,7 @@ export function HomeHero() {
             <img className="home-partner-logo home-partner-nvidia" src="https://amlok.io/logos/nvidia-inception.svg" alt="NVIDIA Inception Program" />
           </div>
         </div>
-        <div className="home-hero-actions">
-          <a className="home-hero-button home-hero-button-primary" href="#platform">See how it works <ArrowUpRight size={18} strokeWidth={1.8} /></a>
-          <a className="home-hero-button home-hero-button-secondary" href="/contact">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
-        </div>
+        <PageActions className="home-hero-actions" primaryClassName="home-hero-button home-hero-button-primary" secondaryClassName="home-hero-button home-hero-button-secondary"/>
       </div>
 
       {/* Temporarily hidden; retain the video block for restoration. */}
@@ -478,7 +470,7 @@ export function HomeHero() {
               <span className="home-risk-operations-type"><i aria-hidden="true"/>RESEARCH</span>
               <h3>Building a foundational risk graph</h3>
               <p>We’re building a risk intelligence AI model to remove intelligence as a bottleneck to deploying capital. By connecting borrowers, transactions, and related entities, it will help institutions see how risk moves across a portfolio over time.</p>
-              <a href="/platform/risk-graph">Learn more <ArrowUpRight size={18} aria-hidden="true"/></a>
+              <a href="/research">Explore research <ArrowUpRight size={18} aria-hidden="true"/></a>
             </div>
             <div className="home-risk-operations-visual whitepaper-image-area">
               <div className="home-risk-operations-graphic"><ProductIllustration kind="graph" brandFill="hero"/></div>
@@ -496,10 +488,7 @@ export function HomeHero() {
           <span className="home-platform-eyebrow"><i aria-hidden="true" />HOW WE CLOSE THE GAP</span>
           <h2 id="home-platform-title"><span>One platform.</span><span>Assess, decide, simulate, and monitor.</span></h2>
           <p>Connect the full financial picture across borrowers, transactions, and portfolios to uncover relationships, surface risk as it changes, and equip your team to make clearer, faster decisions throughout the credit lifecycle.</p>
-          <div className="home-platform-actions">
-            <a className="home-platform-signup" href="/get-started">Sign up</a>
-            <a className="home-platform-contact" href="/contact">Talk to us <ArrowUpRight size={18} strokeWidth={1.8} /></a>
-          </div>
+          <PageActions className="home-platform-actions" primaryClassName="home-platform-signup" secondaryClassName="home-platform-contact"/>
         </div>
         <div className="home-capability-grid">
           {capabilities.map((capability, index) => <article className="home-capability-card" key={capability.title}>

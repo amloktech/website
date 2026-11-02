@@ -670,7 +670,7 @@
     "steps": [],
     "faq": [],
     "related": [
-      "demo-center",
+      "products",
       "developers",
       "security-compliance"
     ],
@@ -733,11 +733,7 @@
         "title": "Quickstart",
         "url": "https://docs.amlok.io/api-reference/quickstart"
       }
-    ],
-    "primary": {
-      "label": "Request access",
-      "href": "/contact"
-    }
+    ]
   },
   {
     "slug": "developers",
@@ -765,7 +761,7 @@
     "faq": [],
     "related": [
       "integrations",
-      "help-center",
+      "contact",
       "changelog"
     ],
     "sources": [
@@ -782,11 +778,7 @@
       "developers/integration-prompt",
       "developers/agent-skills",
       "developers/mcp"
-    ],
-    "primary": {
-      "label": "Read the quickstart",
-      "href": "https://docs.amlok.io/api-reference/quickstart"
-    }
+    ]
   },
   {
     "slug": "manifesto",
@@ -824,29 +816,6 @@
       "about-us",
       "platform",
       "careers"
-    ],
-    "sources": []
-  },
-  {
-    "slug": "partners",
-    "label": "Our ecosystem",
-    "title": "Better connected.",
-    "accent": "Built together.",
-    "description": "The organizations and communities supporting AMLOK as we build infrastructure for connected risk intelligence.",
-    "visual": "connected-risk",
-    "kind": "partners",
-    "sections": [
-      {
-        "title": "Different relationships. A shared ambition.",
-        "body": "Investment, industry participation, and startup support each contribute in a different way. These relationships help connect our work to the financial and technology communities around it."
-      }
-    ],
-    "steps": [],
-    "faq": [],
-    "related": [
-      "about-us",
-      "contact",
-      "research"
     ],
     "sources": []
   },
@@ -889,11 +858,7 @@
       "manifesto",
       "developers"
     ],
-    "sources": [],
-    "primary": {
-      "label": "Introduce yourself",
-      "href": "mailto:support@amlok.tech?subject=Careers%20at%20AMLOK"
-    }
+    "sources": []
   },
   {
     "slug": "research",
@@ -914,6 +879,65 @@
     "sources": []
   },
   {
+    "kind": "research",
+    "sections": [
+      {
+        "title": "Case studies are coming soon.",
+        "body": "We’re preparing a collection focused on the workflows, evidence, and lessons behind connected risk intelligence. While we build it, explore our research or talk to us about your own credit lifecycle."
+      }
+    ],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "slug": "case-studies",
+    "label": "Case Studies",
+    "title": "Risk intelligence.",
+    "accent": "In practice.",
+    "description": "A closer look at how connected evidence can support underwriting, portfolio monitoring, and the decisions in between. Our case study collection is coming soon.",
+    "visual": "underwriting",
+    "related": [
+      "research",
+      "products/underwriting",
+      "products/portfolio-monitoring"
+    ]
+  },
+  {
+    "kind": "research",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "slug": "whitepapers",
+    "label": "Whitepapers",
+    "title": "Deeper thinking.",
+    "accent": "Clearer decisions.",
+    "description": "Explore the ideas behind connected risk intelligence, from financial relationships and borrower behaviour to the evidence that supports a better-informed decision. Preview our upcoming whitepapers.",
+    "visual": "graph",
+    "related": [
+      "research",
+      "industry-guides",
+      "blog"
+    ]
+  },
+  {
+    "kind": "research",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "slug": "industry-guides",
+    "label": "Industry Guides",
+    "title": "Every industry.",
+    "accent": "A different risk picture.",
+    "description": "Look closer at the cash flows, obligations, and changing conditions that shape each lending market. Explore our upcoming guides for merchant cash advance, mortgage, and business lending.",
+    "visual": "behaviour-insights",
+    "related": [
+      "research",
+      "whitepapers",
+      "industries"
+    ]
+  },
+  {
     "slug": "blog",
     "label": "Blog",
     "title": "A clearer view.",
@@ -930,47 +954,6 @@
       "developers"
     ],
     "sources": []
-  },
-  {
-    "slug": "demo-center",
-    "label": "Demo center",
-    "title": "Explore the work",
-    "accent": "behind the intelligence.",
-    "description": "Step through illustrative underwriting, monitoring, and investigation workflows. See how evidence connects to a decision your team owns.",
-    "visual": "underwriting",
-    "kind": "demo",
-    "sections": [],
-    "steps": [],
-    "faq": [],
-    "related": [
-      "contact",
-      "products",
-      "developers/sandbox"
-    ],
-    "sources": []
-  },
-  {
-    "slug": "help-center",
-    "label": "Help Center",
-    "title": "Find your",
-    "accent": "next step.",
-    "description": "Guides and practical starting points for onboarding, integrations, product usage, billing, and support.",
-    "visual": "support",
-    "kind": "help",
-    "sections": [],
-    "steps": [],
-    "faq": [],
-    "related": [
-      "developers",
-      "contact",
-      "status"
-    ],
-    "sources": [
-      {
-        "title": "AMLOK support",
-        "url": "https://docs.amlok.io/support/overview"
-      }
-    ]
   },
   {
     "slug": "compare",
@@ -1806,7 +1789,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -1822,11 +1805,7 @@
         "title": "Response conventions",
         "url": "https://docs.amlok.io/api-reference/response-format"
       }
-    ],
-    "primary": {
-      "label": "Open API reference",
-      "href": "https://docs.amlok.io/api-reference/products-and-endpoints"
-    }
+    ]
   },
   {
     "slug": "developers/sdks",
@@ -1876,7 +1855,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -1900,11 +1879,7 @@
         "title": "Python verifier",
         "url": "https://raw.githubusercontent.com/amloktech/docs/main/downloads/verify_webhook.py"
       }
-    ],
-    "primary": {
-      "label": "Developer downloads",
-      "href": "https://docs.amlok.io/api-reference/downloads"
-    }
+    ]
   },
   {
     "slug": "developers/webhooks",
@@ -1946,7 +1921,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -1962,11 +1937,7 @@
         "title": "Operate and recover webhooks",
         "url": "https://docs.amlok.io/api-reference/webhook-operations"
       }
-    ],
-    "primary": {
-      "label": "Webhooks and signatures",
-      "href": "https://docs.amlok.io/api-reference/webhooks"
-    }
+    ]
   },
   {
     "slug": "developers/mcp",
@@ -2012,7 +1983,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2032,11 +2003,7 @@
         "title": "Discuss an MCP integration",
         "url": "mailto:support@amlok.tech?subject=MCP%20integration"
       }
-    ],
-    "primary": {
-      "label": "Discuss your integration",
-      "href": "/contact"
-    }
+    ]
   },
   {
     "slug": "developers/integration-prompt",
@@ -2078,7 +2045,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2094,11 +2061,7 @@
         "title": "Sandbox journeys",
         "url": "https://docs.amlok.io/api-reference/sandbox-journeys"
       }
-    ],
-    "primary": {
-      "label": "Documentation index",
-      "href": "https://docs.amlok.io/llms.txt"
-    }
+    ]
   },
   {
     "slug": "developers/sandbox",
@@ -2140,7 +2103,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2156,11 +2119,7 @@
         "title": "Integration onboarding",
         "url": "https://docs.amlok.io/api-reference/onboarding"
       }
-    ],
-    "primary": {
-      "label": "Test complete product journeys",
-      "href": "https://docs.amlok.io/api-reference/sandbox-journeys"
-    }
+    ]
   },
   {
     "slug": "developers/agent-skills",
@@ -2206,7 +2165,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2226,11 +2185,7 @@
         "title": "Agent Skills format",
         "url": "https://agentskills.io/home"
       }
-    ],
-    "primary": {
-      "label": "Documentation index",
-      "href": "https://docs.amlok.io/llms.txt"
-    }
+    ]
   },
   {
     "slug": "changelog",
@@ -2272,7 +2227,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2288,11 +2243,7 @@
         "title": "Integration onboarding",
         "url": "https://docs.amlok.io/api-reference/onboarding"
       }
-    ],
-    "primary": {
-      "label": "Versioning and compatibility",
-      "href": "https://docs.amlok.io/api-reference/versioning"
-    }
+    ]
   },
   {
     "slug": "status",
@@ -2338,7 +2289,7 @@
     ],
     "related": [
       "developers",
-      "help-center",
+      "contact",
       "security-compliance"
     ],
     "links": [
@@ -2359,10 +2310,6 @@
         "url": "mailto:support@amlok.tech"
       }
     ],
-    "primary": {
-      "label": "Service-status reference",
-      "href": "https://docs.amlok.io/api-reference/endpoints/platform/service-status"
-    },
     "notice": "Live telemetry is not connected to this website. Use your institution-issued environment to retrieve its current service report."
   },
   {
@@ -2419,11 +2366,7 @@
       "developers",
       "privacy",
       "contact"
-    ],
-    "primary": {
-      "label": "Request a security review",
-      "href": "mailto:support@amlok.tech?subject=Security%20review"
-    }
+    ]
   },
   {
     "slug": "privacy",
@@ -2477,8 +2420,7 @@
     ],
     "related": [
       "contact",
-      "security-compliance",
-      "help-center"
+      "security-compliance"
     ]
   },
   {
@@ -2521,8 +2463,7 @@
     ],
     "related": [
       "contact",
-      "security-compliance",
-      "help-center"
+      "security-compliance"
     ]
   },
   {
@@ -2578,8 +2519,7 @@
     ],
     "related": [
       "contact",
-      "security-compliance",
-      "help-center"
+      "security-compliance"
     ]
   },
   {
@@ -3086,11 +3026,7 @@
     "steps": [],
     "faq": [],
     "sources": [],
-    "related": [],
-    "primary": {
-      "label": "XML sitemap",
-      "href": "/sitemap.xml"
-    }
+    "related": []
   },
   {
     "slug": "blog/risk-is-a-relationship",

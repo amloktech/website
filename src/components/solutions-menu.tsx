@@ -35,7 +35,7 @@ export const solutionUseCases = [
   { title:'Decision automation', description:'Apply institution-owned policy consistently.', detail:'Apply institution-owned policy consistently across your workflows, with explainable evidence and human oversight.', href:'/solutions/decision-automation' },
   { title:'Portfolio monitoring', description:'Detect deterioration before a missed payment.', detail:'Detect deterioration before a missed payment. Follow changing financial activity and borrower behaviour with ongoing context.', href:'/products/portfolio-monitoring' },
   { title:'Portfolio simulation', description:'Explore policies and scenarios before deployment.', href:'/platform/risk-simulation' },
-  { title:'Borrower servicing & collections', description:'Guide outreach with current account context.', href:'/solutions/borrower-servicing-collections' },
+  { title:'Servicing & collections', description:'Guide outreach with current account context.', href:'/solutions/borrower-servicing-collections' },
 ] as const;
 
 export function SolutionsMenu({onOpen,otherMenuOpen,homeHref=''}:{onOpen:()=>void;otherMenuOpen:boolean;homeHref?:string}) {

@@ -9,7 +9,7 @@ export type SitePageContent = {
   sections: Array<ContentItem & { items?: ContentItem[]; href?: string }>;
   steps: ContentItem[]; faq: Array<{ question: string; answer: string }>;
   sources: ContentLink[]; related: string[]; cards?: string[]; links?: ContentLink[];
-  primary?: { label: string; href: string }; notice?: string;
+  notice?: string;
   comparison?: { vendor: string; category: string; vendorStrengths: string[]; amlokFit: string[]; considerations: string[] };
 };
 

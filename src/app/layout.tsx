@@ -26,6 +26,7 @@ import './home-faq.css';
 import './mobile-system.css';
 import './desktop-spacing.css';
 import { SiteFooter } from '@/components/site-footer';
+import { BookingEmbed } from '@/components/booking-embed';
 import { tokensCSS } from '@/lib/brand';
 import { siteOrigin } from '@/lib/site-config';
 
@@ -37,5 +38,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><head><style id="amlok-design-tokens">{tokensCSS}</style></head><body>{children}<SiteFooter siteOrigin={siteOrigin} /></body></html>;
+  return <html lang="en"><head><style id="amlok-design-tokens">{tokensCSS}</style></head><body>{children}<SiteFooter siteOrigin={siteOrigin} /><BookingEmbed/></body></html>;
 }

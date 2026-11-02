@@ -3,6 +3,13 @@
    Footer image filters must not escape into the navigation's paint layer. */
 .home-page { z-index:1; }
 .site-footer { position:relative; z-index:0; isolation:isolate; }
+.home-page .home-header .home-header-cta {
+  background:var(--gradient-hero);
+  border-color:transparent;
+  color:var(--on-brand);
+}
+.home-page .home-header .home-header-cta:hover { filter:brightness(1.1); }
+.home-page .home-header:not(.is-scrolled) .home-header-cta { border-color:var(--on-brand-line); }
 .home-page .home-search-layer {
   background:color-mix(in srgb,var(--ink) 8%,transparent);
   -webkit-backdrop-filter:blur(28px) saturate(1.15);
@@ -15,7 +22,20 @@
 }
 .home-page .home-search-field input:focus-visible { outline:none; box-shadow:none; }
 @media(min-width:1024px) {
+  .home-page .home-header:not(.is-scrolled) .wordmark-gradient>span { background:none; color:var(--on-brand); }
+  .home-page .home-header:not(.is-scrolled) .wordmark-gradient>svg>path { fill:var(--on-brand); }
   .home-page .home-header :is(.home-solutions-panel,.home-developer-panel,.home-resource-panel) { right:var(--desktop-menu-right,var(--site-gutter)); }
+  .home-page .home-header :is(.home-developer-panel,.home-resource-panel) {
+    /* Preserve the original media width while fitting both link columns to
+       their content. The original grid excludes 48px of gaps and 2px of borders. */
+    --desktop-menu-track:calc((100vw - var(--site-gutter) - var(--desktop-menu-right,var(--site-gutter)) - 2 * var(--menu-panel-padding) - 50px) / 3.95);
+    right:auto;
+    width:max-content;
+    max-width:calc(100vw - 2 * var(--site-gutter));
+    grid-template-columns:minmax(0,calc(2 * var(--desktop-menu-track))) max-content max-content;
+    column-gap:40px;
+    padding-right:calc(var(--menu-panel-padding) + 16px);
+  }
   .home-header :is(.home-solutions-menu,.home-developer-menu,.home-resource-menu)[data-open="true"]::after {
     content:'';
     position:fixed;
@@ -48,8 +68,8 @@
   .home-page .home-header .home-nav,
   .home-page .home-header .home-header-actions { display:none; }
   .home-page .home-header .home-logo { color:var(--blue); }
-  .home-page .home-header .wordmark { font-size:28px; }
-  .home-page .home-header .wordmark>svg { width:30px; height:30px; }
+  .home-page .home-header .wordmark { font-size:32px; }
+  .home-page .home-header .wordmark>svg { width:34px; height:34px; }
   .home-mobile-controls,
   .home-mobile-menu-tools { display:flex; align-items:center; gap:12px; }
   .home-mobile-controls { margin-left:auto; }

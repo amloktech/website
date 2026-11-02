@@ -1,5 +1,5 @@
 export const brand = {
-  name: 'AMLOK', version: '2.0.0', reviewed: '2026-10-23',
+  name: 'AMLOK', version: '2.1.0', reviewed: '2026-11-01',
   principle: 'Clear by design. Connected by signals.',
 };
 

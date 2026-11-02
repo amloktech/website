@@ -1,4 +1,5 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
+import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
 import { BlogListing, BlogSignup } from './blog-tools';
 import { BlogAuthor } from './blog-author';
@@ -54,6 +55,7 @@ export function BlogPage() {
         <span className="cp-eyebrow"><i/>THE AMLOK JOURNAL</span>
         <h1 id="blog-title">A clearer view.<br/><span className="home-heading-gradient">On risk.</span></h1>
         <p>Ideas, practical perspectives, and fresh thinking on credit, connected data, and the intelligence behind better-informed decisions.</p>
+        <PageActions/>
         <BlogSignup/>
       </div><JournalGraphic/></div>
       <BlogFeatured/>

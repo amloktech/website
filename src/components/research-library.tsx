@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { ResearchAction } from './research-action';
 import { resources } from '@/content/research-resources';
 import { ResearchListing } from './research-listing';
 import styles from './research-library.module.css';
@@ -11,10 +11,10 @@ export function ResearchLibrary() {
       <div className="cp-inner">
         <article className={styles.featured}>
           <div className={styles.featuredCopy}>
-            <div className={styles.metadata}><span className="cp-eyebrow">Featured report</span><span className="cp-pill">Coming soon</span></div>
+            <div className={styles.metadata}><span className="cp-eyebrow">Featured report</span><span className="cp-pill" id="featured-research-status">Coming soon</span></div>
             <h2 id="featured-research-title"><span className="home-heading-gradient">{featured.gradientTitle}</span> {featured.title}</h2>
             <p>An upcoming deep dive into AMLOK’s retrospective model validation: connecting historical lending outcomes, financial relationships, and the evidence behind better-informed risk decisions.</p>
-            <a className="cp-button" href="mailto:support@amlok.tech?subject=Foundational%20risk%20graph%20research">Ask about the report <ArrowUpRight size={17} aria-hidden="true"/></a>
+            <ResearchAction resource={featured} className={`cp-button ${styles.featuredAction}`} availabilityId="featured-research-status"/>
           </div>
           <div className={styles.featuredArt}><Image src={`/images/resources/${featured.image}.svg`} alt="AMLOK research book: Building a foundational risk graph" width={1200} height={650} priority/></div>
         </article>

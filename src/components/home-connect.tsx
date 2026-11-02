@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowUpRight } from 'lucide-react';
+import { PageActions } from './page-actions';
 import { useEffect, useRef } from 'react';
 import { integrationLogoRows } from './home-connect-logos';
 import styles from './home-connect.module.css';
@@ -44,9 +44,7 @@ export function HomeConnect() {
         <h3 id="home-connect-title">Connect the context you need.</h3>
         <p>Integrations across KYC/KYB, credit, fraud, open banking, and PEP screening—plus flexible connections to your internal systems.</p>
       </div>
-      <div className={styles.actions}>
-        <a href="/integrations">Integrations <ArrowUpRight size={17} aria-hidden="true" /></a>
-      </div>
+      <PageActions className={styles.actions} primaryClassName="" secondaryClassName=""/>
     </div>
   </article>;
 }

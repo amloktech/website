@@ -100,9 +100,10 @@ Documentation links directly to [docs.amlok.io](https://docs.amlok.io/). Quickst
 | Page | Canonical route | Content focus |
 | --- | --- | --- |
 | Research library | `/research` | The featured foundational-risk-graph project and industry research collection, with clear publication states. |
+| Case Studies | `/case-studies` | Coming-soon collection for future documented customer workflows and outcomes. |
+| Whitepapers | `/whitepapers` | Searchable collection of upcoming whitepaper previews. |
+| Industry Guides | `/industry-guides` | Searchable collection of upcoming guides for lending markets. |
 | Blog | `/blog` | Original articles on risk intelligence, connected data, lending workflows, and model evaluation. |
-| Help Center | `/help-center` | Searchable starting points for onboarding, integrations, billing, troubleshooting, and [support](https://docs.amlok.io/support/overview). |
-| Demo Center | `/demo-center` | Guided product walkthroughs, existing illustrations, and demo booking. Label sample data as illustrative. |
 
 Future article routes are `/research/[slug]` and `/blog/[slug]`. Publish individual routes only with substantive content. The eight existing book covers are research previews, not completed reports.
 
@@ -114,7 +115,6 @@ The featured research title remains **Building a foundational risk graph: Retros
 | --- | --- | --- |
 | About us | `/about-us` | Existing. Team, mission, vision, and company journey. |
 | Manifesto | `/manifesto` | New. Connected evidence, continuously changing risk, explainability, and institutional control. |
-| Partners | `/partners` | New. Verified relationships with LvlUp Ventures, the Canadian Lenders Association, NVIDIA, and other confirmed partners; describe each relationship accurately. |
 | Careers | `/careers` | New. Company mission, working environment, and genuine openings or expressions of interest. |
 | Security and compliance | `/security-compliance` | New. Controls, data handling, governance, deployment scope, and a due-diligence contact, backed by the [security documentation](https://docs.amlok.io/security/overview). |
 | Brand guidelines | `/brand` | Existing. Retain the design system and its current noindex setting. |

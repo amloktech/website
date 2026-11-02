@@ -47,6 +47,6 @@ export default function AboutUsPage() {
       </div>
     </section>
     <AboutTimeline />
-    <HomeMonitoringCta apiHref="/#loan-scale-slide-4" />
+    <HomeMonitoringCta />
   </main>;
 }

@@ -37,7 +37,7 @@
 .home-pricing-actions { display:grid; gap:16px; margin-top:auto; padding-top:40px; }
 .home-pricing-details { display:flex; align-items:center; justify-content:center; gap:8px; min-height:32px; color:var(--muted); font-size:13px; line-height:1.5; text-align:center; text-decoration:none; }
 .home-pricing-details:hover { text-decoration:underline; text-underline-offset:4px; }
-.home-pricing-cta { display:flex; align-items:center; justify-content:center; min-height:48px; padding:12px 24px; border:1px solid transparent; border-radius:var(--radius-pill); background:var(--blue); color:var(--on-brand); font-size:16px; font-weight:500; line-height:1.5; text-decoration:none; transition:background-color var(--motion-fast); }
+.home-pricing-cta { display:flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:12px 24px; border:1px solid transparent; border-radius:var(--radius-pill); background:var(--blue); color:var(--on-brand); font-size:16px; font-weight:500; line-height:1.5; text-decoration:none; transition:background-color var(--motion-fast); }
 .home-pricing-cta:hover { background:var(--blue-secondary-hover); }
 .home-pricing-card.is-featured .home-pricing-cta { background:var(--canvas); color:var(--blue); }
 .home-pricing-card.is-featured .home-pricing-cta:hover { background:var(--blue-soft); }

@@ -19,8 +19,8 @@
     --space-copy-actions:24px;
   }
   .home-page .home-header,.home-mobile-menu-header { height:56px; min-height:56px; }
-  .home-page .home-header .wordmark { font-size:24px; }
-  .home-page .home-header .wordmark>svg { width:26px; height:26px; }
+  .home-page .home-header .wordmark { font-size:28px; }
+  .home-page .home-header .wordmark>svg { width:30px; height:30px; }
   .home-mobile-controls { gap:4px; }
   .home-mobile-icon>svg { width:22px; height:22px; }
   .home-mobile-menu-body { padding:24px 16px; }
