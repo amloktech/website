@@ -1,3 +1,11 @@
+import { LegalPage } from './legal-page';
+import { legalPolicies } from '@/content/legal';
+import { IndustryPage, IndustriesOverview } from './industry-page';
+import { industries } from '@/content/industries';
+import { ModulePage, ModulesOverview } from './module-page';
+import { moduleDetails } from '@/content/modules';
+import { UseCasePage, UseCasesOverview } from './use-case-page';
+import { useCaseDetails } from '@/content/use-cases';
 import { ArrowUpRight, Check, ChevronRight, FileText, Layers, Network, ShieldCheck } from 'lucide-react';
 import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
@@ -7,6 +15,12 @@ import { ResearchLibrary } from './research-library';
 import { ResearchListing } from './research-listing';
 import { BlogArticle, BlogPage } from './blog-page';
 import { blogPosts } from '@/content/blog-posts';
+import { findPublication } from '@/lib/publications';
+import { PublicationPage } from './publication-page';
+import { ManifestoPage } from './manifesto-page';
+import { RiskSimulationPage } from './risk-simulation-page';
+import { MonitoringPage } from './monitoring-page';
+import { UnderwritingPage } from './underwriting-page';
 import { ContactComposer, CopyGuide, IntegrationDirectory, PricingEstimator } from './page-tools';
 import { findSitePage, type SitePageContent } from '@/lib/site-content';
 import { siteOrigin } from '@/lib/site-config';
@@ -31,7 +45,23 @@ function SecurityScope() {
 }
 
 export function ContentPage({page}:{page:SitePageContent}) {
+  const policy = legalPolicies.find(item => item.slug === page.slug);
+  if (policy) return <LegalPage policy={policy}/>;
+  if (page.slug === 'industries') return <IndustriesOverview/>;
+  const industry = industries.find(item => `industries/${item.slug}` === page.slug);
+  if (industry) return <IndustryPage industry={industry}/>;
+  if (page.slug === 'modules') return <ModulesOverview/>;
+  if (page.slug in moduleDetails) return <ModulePage detail={moduleDetails[page.slug as keyof typeof moduleDetails]}/>;
+  if (page.slug === 'solutions') return <UseCasesOverview page={page}/>;
+  const useCase = useCaseDetails.find(item => item.slug === page.slug);
+  if (useCase) return <UseCasePage detail={useCase}/>;
+  if (page.slug === 'platform/risk-simulation') return <RiskSimulationPage page={page}/>;
+  if (page.slug === 'products/portfolio-monitoring') return <MonitoringPage page={page}/>;
+  if (page.slug === 'products/underwriting') return <UnderwritingPage page={page}/>;
+  if (page.kind === 'manifesto') return <ManifestoPage page={page}/>;
   if (page.slug === 'blog') return <BlogPage/>;
+  const publication = findPublication(page.slug);
+  if (publication) return <PublicationPage publication={publication}/>;
   const blogPost = blogPosts.find(post => page.slug === `blog/${post.slug}`);
   if (blogPost) return <BlogArticle page={page} post={blogPost}/>;
   const group=page.slug.split('/')[0];

@@ -1,63 +1,110 @@
-// Editorial previews only. Add publication URLs when the research is released.
-// Cover diagrams are illustrations, not measured results.
+import guideIndex from './industry-guide-index.json';
+
+// Keep the homepage curated while the searchable library includes every guide.
 export const resources = [
   {
-    format: 'Report',
-    category: 'Featured research',
-    gradientTitle: 'Building a foundational risk graph:',
-    title: 'Retrospective validation across 275,019 closed deals.',
-    description: 'An upcoming look at how AMLOK retrospectively validated its models against historical lending outcomes across the institutions featured above.',
-    image: 'retrospective-validation',
+    "format": "Report",
+    "category": "Risk intelligence",
+    "gradientTitle": "Evidence before intelligence:",
+    "title": "building a foundational risk graph.",
+    "description": "A transparent account of AMLOK’s public-data experiments, the measurements they support, and the work still required for lending decisions.",
+    "image": "retrospective-validation",
+    "href": "/research/evidence-before-intelligence",
+    "readMinutes": 9,
+    "date": "2026-11-02"
   },
   {
-    format: 'Guide',
-    category: 'Merchant cash advance',
-    title: 'Reading the rhythm of merchant cash flow',
-    description: 'Daily receipts, revenue volatility, and repayment capacity: exploring the signals behind merchant resilience.',
-    image: 'merchant-cash-advance',
+    "format": "Guide",
+    "category": "Merchant cash advance",
+    "gradientTitle": "",
+    "title": "Follow the receipts. Understand merchant resilience.",
+    "description": "A merchant cash advance guide to settlement timing, recurring cash generation, and contract-aware stress testing.",
+    "image": "merchant-cash-advance",
+    "href": "/research/follow-the-receipts",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Whitepaper',
-    category: 'Insurtech',
-    title: 'A clearer view of changing exposure',
-    description: 'Connecting policy, claims, and financial behaviour to understand how risk evolves between renewal dates.',
-    image: 'insurtech',
+    "format": "Whitepaper",
+    "category": "Insurtech",
+    "gradientTitle": "",
+    "title": "Exposure changes. The policy needs context.",
+    "description": "A whitepaper on connected evidence for trade credit insurance, from buyer concentration to invoice-level review.",
+    "image": "insurtech",
+    "href": "/research/exposure-between-renewals",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Guide',
-    category: 'Mortgage lending',
-    title: 'Beyond the mortgage application',
-    description: 'Income stability, household cash flow, and the changing context behind long-term mortgage risk.',
-    image: 'mortgage',
+    "format": "Guide",
+    "category": "Mortgage lending",
+    "gradientTitle": "",
+    "title": "The mortgage after the application.",
+    "description": "A guide to affordability, renewal scenarios, and the evidence that connects an origination decision to the years that follow.",
+    "image": "mortgage",
+    "href": "/research/mortgage-after-the-application",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Report',
-    category: 'Auto finance',
-    title: 'The road ahead for auto credit',
-    description: 'Bringing borrower behaviour, affordability, and vehicle exposure into a connected view of the lending lifecycle.',
-    image: 'auto-finance',
+    "format": "Report",
+    "category": "Auto finance",
+    "gradientTitle": "",
+    "title": "Two risks inside every auto loan.",
+    "description": "An auto-finance report on the interaction between payment capacity, vehicle exposure, and the measurement of realized loss.",
+    "image": "auto-finance",
+    "href": "/research/two-risks-in-auto-finance",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Whitepaper',
-    category: 'Fintech',
-    title: 'Intelligence for embedded finance',
-    description: 'How financial products can connect fragmented data and keep risk decisions grounded as they scale.',
-    image: 'fintech',
+    "format": "Whitepaper",
+    "category": "Fintech",
+    "gradientTitle": "",
+    "title": "One sale. Many records. One financial truth.",
+    "description": "A whitepaper on evidence architecture for embedded finance: reconciliation, data coverage, and the boundaries of an API response.",
+    "image": "fintech",
+    "href": "/research/one-sale-many-records",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Guide',
-    category: 'Business lending',
-    title: 'The connected business borrower',
-    description: 'Reading working capital, cash conversion, and trading relationships to see beyond the balance sheet.',
-    image: 'business-lending',
+    "format": "Guide",
+    "category": "Business lending",
+    "gradientTitle": "",
+    "title": "Underwrite the connected business.",
+    "description": "A business-lending guide to cash conversion, financing capacity, and the relationships behind the balance sheet.",
+    "image": "business-lending",
+    "href": "/research/underwrite-the-connected-business",
+    "readMinutes": 7,
+    "date": "2026-11-02"
   },
   {
-    format: 'Whitepaper',
-    category: 'Consumer credit',
-    title: 'A living view of consumer credit',
-    description: 'Understanding affordability and repayment resilience as household circumstances change.',
-    image: 'consumer-credit',
-  },
+    "format": "Whitepaper",
+    "category": "Consumer credit",
+    "gradientTitle": "",
+    "title": "Affordability is a moving picture.",
+    "description": "A consumer-credit whitepaper on income timing, financial buffers, and evidence-led review as household circumstances change.",
+    "image": "consumer-credit",
+    "href": "/research/affordability-in-motion",
+    "readMinutes": 7,
+    "date": "2026-11-02"
+  }
 ] as const;
 
-export type ResearchResource = typeof resources[number];
+export type ResearchResource = {
+  format: 'Report' | 'Whitepaper' | 'Guide';
+  category: string;
+  industry?: string;
+  gradientTitle: string;
+  title: string;
+  description: string;
+  image: string;
+  href: string;
+  readMinutes: number;
+  date: string;
+};
+
+export const industryGuides: ResearchResource[] = guideIndex.map(guide => ({ ...guide, format: 'Guide' }));
+export const researchLibrary: ResearchResource[] = [...resources, ...industryGuides];
+export const industryGroups = ['Consumer Lending', 'Business Lending', 'Financial Institutions', 'Fintech', 'Insurtech'] as const;

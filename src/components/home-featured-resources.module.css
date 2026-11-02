@@ -157,3 +157,7 @@
   .rail h3 { font-size: 20px; }
   .featured .copy > p { font-size: 14px; }
 }
+
+.readLink { display:inline-flex; align-items:center; gap:8px; margin-top:16px; color:var(--blue); font-size:13px; font-weight:550; text-decoration:none; }
+.readLink:hover { text-decoration:underline; }
+.readLink:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:5px; }

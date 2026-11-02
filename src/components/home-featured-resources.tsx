@@ -17,10 +17,11 @@ function ResourceCard({ resource, featured = false }: {
     <div className={styles.copy}>
       <div className={styles.meta}>
         <span className={styles.category}>{resource.category}</span>
-        <span className={styles.status}>Coming soon</span>
+        <span className={styles.status}>{resource.readMinutes} min read</span>
       </div>
       <h3>{'gradientTitle' in resource && <><span className="home-heading-gradient">{resource.gradientTitle}</span>{' '}</>}{resource.title}</h3>
       <p>{resource.description}</p>
+      <a className={styles.readLink} href={resource.href}>Read {resource.format.toLowerCase()} <ArrowRight size={16} aria-hidden="true"/></a>
     </div>
   </article>;
 }
@@ -35,7 +36,7 @@ export function HomeFeaturedResources() {
           <ResourceCard resource={resources[0]} featured />
         </div>
         <div className={styles.mobileHint} aria-hidden="true">Explore the series <span>Swipe <ArrowRight size={16} /></span></div>
-        <div className={styles.rail} role="region" aria-label="Upcoming industry research. Scroll to explore." tabIndex={0}>
+        <div className={styles.rail} role="region" aria-label="Industry research. Scroll to explore." tabIndex={0}>
           {resources.slice(1).map(resource => <ResourceCard key={resource.image} resource={resource} />)}
         </div>
       </div>

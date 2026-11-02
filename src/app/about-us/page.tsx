@@ -5,6 +5,7 @@ import { SiteHeader } from '@/components/site-header';
 import { ProductIllustration } from '@/components/product-illustration';
 import { AboutTimeline } from '@/components/about-timeline';
 import { HomeMonitoringCta } from '@/components/home-monitoring-cta';
+import { companyPurpose } from '@/content/company-purpose';
 import './about-us.css';
 
 export const metadata: Metadata = {
@@ -41,8 +42,8 @@ export default function AboutUsPage() {
       <div className="about-inner">
       <header className="about-purpose-heading"><span className="home-products-eyebrow"><i aria-hidden="true" />OUR PURPOSE</span><h2 id="about-purpose-title">What <span className="home-heading-gradient">guides us.</span></h2></header>
       <div className="about-purpose-grid">
-        <article><span className="about-purpose-icon"><Network size={27} aria-hidden="true" /></span><h2>Our mission</h2><p>Map the financial ecosystem and turn its entities, transactions, and relationships into actionable risk intelligence.</p></article>
-        <article><span className="about-purpose-icon"><Compass size={27} aria-hidden="true" /></span><h2>Our vision</h2><p>A financial ecosystem where understanding risk is never the bottleneck to deploying capital.</p></article>
+        <article><span className="about-purpose-icon"><Network size={27} aria-hidden="true" /></span><h2>Our mission</h2><p>{companyPurpose.mission}</p></article>
+        <article><span className="about-purpose-icon"><Compass size={27} aria-hidden="true" /></span><h2>Our vision</h2><p>{companyPurpose.vision}</p></article>
       </div>
       </div>
     </section>

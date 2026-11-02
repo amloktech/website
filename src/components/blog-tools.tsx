@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, ChevronDown, Search, X } from 'lucide-react';
-import { blogDate, blogPosts, blogTopics } from '@/content/blog-posts';
+import { blogPosts, blogTopics } from '@/content/blog-posts';
 import { BlogAuthor } from './blog-author';
 import styles from './blog.module.css';
 
@@ -74,8 +74,7 @@ export function BlogListing() {
     </div>
     <div className={styles.resultsMeta}><p role="status" aria-live="polite" aria-atomic="true">{matches.length} {matches.length===1?'post':'posts'}{query.trim()?` matching “${query.trim()}”`:''}{matches.length>pageSize?` · Page ${currentPage} of ${totalPages}`:''}</p>{filtered&&<button type="button" onClick={()=>update('all','',1,true)}>Clear filters <X size={13} aria-hidden="true"/></button>}</div>
     <div className={styles.grid} id="blog-results">{visible.map(post=><article className={styles.card} key={post.slug}>
-      <a className={styles.cardLink} href={`/blog/${post.slug}`}><div className={styles.cardImage}><img src={post.image} alt="" width={1200} height={630} loading="lazy"/></div><div className={styles.tags}><span>{post.topic}</span><span aria-hidden="true">◆</span><time dateTime={post.date}>{blogDate(post.date)}</time></div><h3>{post.title}<ArrowUpRight size={21} aria-hidden="true"/></h3><p>{post.description}</p></a>
-      <BlogAuthor post={post}/>
+      <a className={styles.cardLink} href={`/blog/${post.slug}`}><div className={styles.cardImage}><img src={post.image} alt="" width={1200} height={630} loading="lazy"/></div><BlogAuthor post={post}/><h3>{post.title}<ArrowUpRight size={21} aria-hidden="true"/></h3><p>{post.description}</p></a>
     </article>)}</div>
     {!matches.length&&<div className={styles.empty}><Search size={30} aria-hidden="true"/><h3>No posts found.</h3><p>Try a different search or explore another topic.</p><button className="cp-button" type="button" onClick={()=>update('all','',1,true)}>View all posts</button></div>}
     {totalPages>1&&<nav className={styles.pagination} aria-label="Blog pagination"><button type="button" aria-label="Previous page" disabled={currentPage===1} onClick={()=>paginate(currentPage-1)}><ArrowLeft size={18} aria-hidden="true"/></button>{Array.from({length:totalPages},(_,i)=><button key={i} type="button" aria-label={`Page ${i+1}`} aria-current={currentPage===i+1?'page':undefined} onClick={()=>paginate(i+1)}>{i+1}</button>)}<button type="button" aria-label="Next page" disabled={currentPage===totalPages} onClick={()=>paginate(currentPage+1)}><ArrowRight size={18} aria-hidden="true"/></button></nav>}

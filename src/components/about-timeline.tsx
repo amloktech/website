@@ -57,9 +57,29 @@ export function AboutTimeline() {
           <article><span className="about-timeline-step">{milestone.phase}</span><h3>{milestone.title}</h3><TimelineCopy blocks={milestone.blocks} /></article>
         </li>)}</ol>
       </div>
-      <aside className="about-journey-today" aria-labelledby="about-today-title">
-        <div><span className="home-products-eyebrow"><i aria-hidden="true" />OCTOBER 2026</span><h2 id="about-today-title">AMLOK <span className="home-heading-gradient">today.</span></h2></div>
-        <TimelineCopy blocks={timeline.today as TimelineBlock[]} />
+      <aside className="about-journey-today" id="amlok-today" aria-labelledby="about-today-title">
+        <header className="about-today-header">
+          <div><span className="home-products-eyebrow"><i aria-hidden="true" />OCTOBER 2026</span><h2 id="about-today-title">AMLOK <span className="home-heading-gradient">today.</span></h2></div>
+          <p>{timeline.today.introduction}</p>
+        </header>
+        <div className="about-today-grid">
+          {[timeline.today.platform, timeline.today.milestones].map(section => <section className="about-today-detail" key={section.title}>
+            <h3>{section.title}</h3>
+            <p>{section.description}</p>
+            <ul>{section.items.map(item => <li key={item}>{item}</li>)}</ul>
+          </section>)}
+        </div>
+        <div className="about-today-grid about-today-story">
+          <section className="about-today-detail">
+            <h3>{timeline.today.evolution.title}</h3>
+            {timeline.today.evolution.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+          </section>
+          <section className="about-today-detail">
+            <h3>{timeline.today.purpose.title}</h3>
+            <p className="about-today-statement">{timeline.today.purpose.statement}</p>
+            {timeline.today.purpose.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+          </section>
+        </div>
       </aside>
     </div>
   </section>;

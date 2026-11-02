@@ -1,4 +1,4 @@
-"""Generate the editable AMLOK research book series (no publication claims).
+"""Generate the editable AMLOK research book series.
 
 Run: python3 scripts/generate-resource-covers.py
 The diagrams are editorial illustrations, not research results or data plots.
@@ -32,7 +32,7 @@ def label(x, y, text, size=10, opacity=.7):
 
 
 def validation():
-    parts = ['<text x="40" y="350" fill="currentColor" font-size="70" font-weight="500" letter-spacing="-4">275,019</text>', label(43, 375, "CLOSED DEALS · ONE CONNECTED VIEW", 10)]
+    parts = ['<text x="40" y="350" fill="currentColor" font-size="58" font-weight="500" letter-spacing="-4">EVIDENCE</text>', label(43, 375, "SOURCES / METHODS / MEASUREMENTS", 10)]
     for row in range(5):
         y = 418 + row * 30
         for col in range(9):
@@ -125,24 +125,24 @@ def consumer():
 
 
 BOOKS = [
-    ('retrospective-validation', 'RESEARCH REPORT', 'RETROSPECTIVE VALIDATION', ['Looking back.', 'Seeing risk', 'earlier.'], 'Retrospective model validation', '#174bef', '#092b99', '#ffffff', '#dce7ff', validation),
-    ('merchant-cash-advance', 'INDUSTRY OUTLOOK', 'MERCHANT CASH ADVANCE', ['Reading the', 'rhythm of', 'merchant cash flow.'], 'Signals behind merchant resilience', '#c9dfff', '#9fbef0', '#073095', '#e7effc', merchant),
-    ('insurtech', 'INDUSTRY OUTLOOK', 'INSURTECH', ['A clearer view', 'of changing', 'exposure.'], 'Risk intelligence for insurance', '#123878', '#061d4b', '#eef5ff', '#d5dfed', insurance),
-    ('mortgage', 'INDUSTRY OUTLOOK', 'MORTGAGE LENDING', ['Beyond the', 'mortgage', 'application.'], 'A fuller picture of borrower risk', '#eaf2ff', '#c2d6fa', '#073095', '#e0e9f8', mortgage),
-    ('auto-finance', 'INDUSTRY OUTLOOK', 'AUTO FINANCE', ['The road ahead', 'for auto', 'credit.'], 'From origination to the last payment', '#2364e2', '#1246b0', '#ffffff', '#cfdef5', auto),
-    ('fintech', 'INDUSTRY OUTLOOK', 'FINTECH', ['Intelligence for', 'embedded', 'finance.'], 'Connecting decisions at scale', '#ffffff', '#e4edfd', '#0c36a3', '#cfddf3', fintech),
-    ('business-lending', 'INDUSTRY OUTLOOK', 'BUSINESS LENDING', ['The connected', 'business', 'borrower.'], 'Beyond the balance sheet', '#153b9a', '#082361', '#ffffff', '#d7e2f5', business),
-    ('consumer-credit', 'INDUSTRY OUTLOOK', 'CONSUMER CREDIT', ['A living view', 'of consumer', 'credit.'], 'Affordability in a changing world', '#4775f1', '#244aba', '#ffffff', '#e1e8fc', consumer),
+    ('retrospective-validation', 'RESEARCH REPORT', 'RISK INTELLIGENCE', ['Evidence before', 'intelligence.'], 'Building a foundational risk graph', '#174bef', '#092b99', '#ffffff', '#dce7ff', validation),
+    ('merchant-cash-advance', 'INDUSTRY GUIDE', 'MERCHANT CASH ADVANCE', ['Follow the', 'receipts.'], 'Understand merchant resilience', '#c9dfff', '#9fbef0', '#073095', '#e7effc', merchant),
+    ('insurtech', 'WHITEPAPER', 'INSURTECH', ['Exposure changes.', 'The policy needs', 'context.'], 'Connected evidence for trade credit', '#123878', '#061d4b', '#eef5ff', '#d5dfed', insurance),
+    ('mortgage', 'INDUSTRY GUIDE', 'MORTGAGE LENDING', ['The mortgage', 'after the', 'application.'], 'Affordability beyond origination', '#eaf2ff', '#c2d6fa', '#073095', '#e0e9f8', mortgage),
+    ('auto-finance', 'RESEARCH REPORT', 'AUTO FINANCE', ['Two risks inside', 'every auto', 'loan.'], 'Payment capacity meets collateral', '#2364e2', '#1246b0', '#ffffff', '#cfdef5', auto),
+    ('fintech', 'WHITEPAPER', 'FINTECH', ['One sale.', 'Many records.', 'One financial truth.'], 'Evidence architecture for embedded finance', '#ffffff', '#e4edfd', '#0c36a3', '#cfddf3', fintech),
+    ('business-lending', 'INDUSTRY GUIDE', 'BUSINESS LENDING', ['Underwrite the', 'connected', 'business.'], 'Cash conversion, capacity, and context', '#153b9a', '#082361', '#ffffff', '#d7e2f5', business),
+    ('consumer-credit', 'WHITEPAPER', 'CONSUMER CREDIT', ['Affordability', 'is a moving', 'picture.'], 'The evidence behind household resilience', '#4775f1', '#244aba', '#ffffff', '#e1e8fc', consumer),
 ]
 
 
 def render(book, number):
     slug, category, industry, title, subtitle, cover_top, cover_bottom, ink, background, diagram = book
-    title_size = 34 if slug == 'merchant-cash-advance' else 39
+    title_size = 34 if slug in ('fintech', 'insurtech') else 39
     title_text = ''.join(f'<tspan x="40" y="{124+i*44}">{escape(line)}</tspan>' for i, line in enumerate(title))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
   <title>AMLOK — {escape(industry.title())} research book cover</title>
-  <desc>Blue editorial book mockup with an abstract industry illustration. Research preview; publication forthcoming.</desc>
+  <desc>Blue editorial book mockup with an abstract industry illustration. Published research, methods, and industry guides. Cover artwork is an editorial illustration.</desc>
   <defs>
     <linearGradient id="backdrop" x1="0" y1="1" x2="1" y2="0"><stop stop-color="{background}"/><stop offset="1" stop-color="#f6f9ff"/></linearGradient>
     <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{cover_top}"/><stop offset="1" stop-color="{cover_bottom}"/></linearGradient>

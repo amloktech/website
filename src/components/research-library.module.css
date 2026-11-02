@@ -17,6 +17,11 @@
 .typeFilters button:hover { color:var(--blue); }
 .typeFilters button[aria-pressed=true] { background:white; color:var(--blue); border-color:#e3e9f5; box-shadow:0 2px 4px #05269806; }
 .mobileFilter { display:none; }
+.industryFilters { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; }
+.industryFilters button { display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:11px 16px; border:1px solid var(--cp-line); border-radius:999px; background:#fff; color:var(--cp-muted); font:500 13px/1.4 var(--font-sans); cursor:pointer; }
+.industryFilters button span { font:500 10px/1 var(--font-mono); opacity:.75; }
+.industryFilters button[aria-pressed=true] { background:linear-gradient(120deg,#2563ff,#0c269f); color:#fff; border-color:transparent; }
+.industryFilters button:hover { border-color:#738fdb; }
 .search { display:flex; align-items:center; gap:10px; width:280px; max-width:100%; min-height:44px; padding:8px 16px; background:#fff; border:1px solid var(--cp-line); border-radius:999px; color:var(--cp-muted); }
 .search:focus-within { border-color:var(--blue-secondary); box-shadow:0 0 0 3px #2567ff12; }
 .collectionToolbar .search { width:100%; }
@@ -59,6 +64,7 @@
   .cardArt { max-height:340px; }
 }
 @media(max-width:767px) {
+  .industryFilters { display:none; }
   .featuredSection { padding-bottom:48px; }
   .featured { grid-template-columns:1fr; padding:24px; gap:28px; border-radius:22px; }
   .featuredCopy h2 { font-size:28px; margin:20px 0; }
@@ -83,3 +89,6 @@
   .tags { font-size:11px; }
 }
 @media(prefers-reduced-motion:reduce) { .cardArt img,.typeFilters button { transition:none; } .card:hover .cardArt img { transform:none; } }
+
+.cardCopy h3 a { color:inherit; text-decoration:none; }
+.cardCopy h3 a:hover { color:var(--blue); }

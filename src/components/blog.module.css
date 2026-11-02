@@ -28,7 +28,7 @@
 .tags time { text-transform:uppercase; font:400 10px var(--font-mono); }
 .featuredCopy h2 { margin:22px 0 14px; font-size:clamp(25px,2.55vw,36px); line-height:1.14; letter-spacing:-.04em; font-weight:550; }
 .featuredCopy>p { font-size:15px; line-height:1.65; color:var(--muted); margin:0 0 24px; }
-.author { display:flex; align-items:center; gap:10px; color:var(--ink); font-size:12px; font-weight:500; }
+.author { display:flex; align-items:center; flex-wrap:wrap; gap:10px; color:var(--ink); font-size:12px; font-weight:500; }
 .authorMark { width:34px; height:34px; border-radius:10px; background:#eef3ff; display:grid; place-items:center; flex-shrink:0; }
 .readTime { font-size:11px; font-weight:400; color:var(--muted); margin-left:4px; padding-left:12px; border-left:1px solid var(--line); }
 .readLink { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--blue); margin-top:22px; }
@@ -58,7 +58,8 @@
 .card h3 { font-size:clamp(23px,2vw,28px); line-height:1.24; font-weight:550; letter-spacing:-.035em; margin:16px 0 12px; display:flex; justify-content:space-between; gap:16px; }
 .card h3 svg { flex-shrink:0; margin-top:4px; color:var(--blue); }
 .cardLink>p { margin:0 0 20px; font-size:15px; color:var(--muted); line-height:1.65; max-width:540px; }
-.card>.author { margin-top:auto; }
+.topic { color:var(--blue); font-size:11px; font-weight:500; border-left:1px solid var(--line); padding-left:12px; }
+.articleImage+.author { margin-top:24px; }
 .pagination { display:flex; align-items:center; justify-content:center; gap:10px; margin-top:58px; }
 .pagination button { border:1px solid var(--line); border-radius:50%; background:white; width:42px; height:42px; display:grid; place-items:center; color:var(--blue); cursor:pointer; font-size:13px; }
 .pagination [aria-current=page] { background:var(--blue); color:white; border-color:var(--blue); }

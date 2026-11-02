@@ -147,7 +147,6 @@
   .home-page.about-page :is(.about-company,.about-purpose,.about-journey) { padding-block:var(--space-section); }
   .home-page.about-page .about-hero { padding-block:calc(var(--home-header-height) + 80px) var(--space-section); }
   .home-page.about-page .about-intro { gap:var(--desktop-column-gap); margin-top:24px; }
-  .home-page.about-page .about-team { max-width:1024px; margin:48px auto 0; }
   .home-page.about-page .about-company-grid { column-gap:var(--desktop-column-gap); }
   .home-page.about-page .about-company-heading h2 { margin:24px 0; }
   .home-page.about-page :is(.about-purpose-heading,.about-journey-heading) { margin-bottom:48px; }

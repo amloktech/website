@@ -3,7 +3,7 @@ import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
 import { BlogListing, BlogSignup } from './blog-tools';
 import { BlogAuthor } from './blog-author';
-import { blogDate, blogPosts, type BlogPost } from '@/content/blog-posts';
+import { blogPosts, type BlogPost } from '@/content/blog-posts';
 import { siteOrigin } from '@/lib/site-config';
 import type { SitePageContent } from '@/lib/site-content';
 import styles from './blog.module.css';
@@ -29,9 +29,9 @@ function BlogFeatured() {
     <a className={styles.featured} href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
       <div className={styles.featuredImage}><img src={post.image} alt="" width={1200} height={630} fetchPriority="high"/></div>
       <div className={styles.featuredCopy}>
-        <div className={styles.tags}><span>{post.topic}</span><span aria-hidden="true">◆</span><time dateTime={post.date}>{blogDate(post.date)}</time></div>
+        <BlogAuthor post={post}/>
         <h2>{post.title}</h2><p>{post.description}</p>
-        <BlogAuthor post={post}/><span className={styles.readLink}>Read article <ArrowUpRight size={17} aria-hidden="true"/></span>
+        <span className={styles.readLink}>Read article <ArrowUpRight size={17} aria-hidden="true"/></span>
       </div>
     </a>
   </section>;
@@ -76,10 +76,10 @@ export function BlogArticle({ page, post }: { page: SitePageContent; post: BlogP
     <article>
       <header className={styles.articleHero}><div className="cp-inner">
         <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13}/><a href="/blog">Blog</a><ChevronRight size={13}/><span aria-current="page">{post.topic}</span></nav>
-        <div className={styles.articleIntro}><div className={styles.tags}><a href={`/blog?topic=${post.topicId}#all-posts`}>{post.topic}</a><span aria-hidden="true">◆</span><time dateTime={post.date}>{blogDate(post.date)}</time></div>
-          <h1>{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{post.description}</p><BlogAuthor post={post}/>
+        <div className={styles.articleIntro}>
+          <h1>{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{post.description}</p>
         </div>
-        <img className={styles.articleImage} src={post.image} alt={`Abstract AMLOK illustration for ${post.topic.toLowerCase()}`} width={1200} height={630}/>
+        <img className={styles.articleImage} src={post.image} alt={`Abstract AMLOK illustration for ${post.topic.toLowerCase()}`} width={1200} height={630}/><BlogAuthor post={post}/>
       </div></header>
       <div className={`cp-inner ${styles.articleBody}`}>
         <aside><span className="cp-eyebrow">IN THIS ARTICLE</span><nav aria-label="Article sections">{page.sections.map((section,index) => <a key={section.title} href={`#perspective-${index+1}`}>{section.title}</a>)}</nav></aside>

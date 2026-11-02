@@ -53,14 +53,25 @@
 .about-timeline h3 { margin:20px 0; font-size:clamp(28px,2.7vw,40px); line-height:1.15; font-weight:500; letter-spacing:-.035em; }
 .about-timeline-copy { max-width:640px; color:var(--muted); font-size:18px; line-height:1.65; }
 .about-timeline-copy p { margin:0; }
-.about-timeline-copy>*+* { margin-top:20px; }
+.about-timeline-copy>:is(p,ul)+:is(p,ul) { margin-top:20px; }
 .about-timeline-copy ul { list-style:disc; padding-left:22px; margin-bottom:0; }
 .about-timeline-copy ul>li { padding-left:4px; }
 .about-timeline-copy ul>li+li { margin-top:8px; }
 .about-timeline-copy li::marker { color:var(--blue-secondary); }
-.about-journey-today { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:48px; margin-top:64px; padding:48px; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--canvas); }
+.about-journey-today { margin-top:64px; padding:48px; border:1px solid var(--line); border-radius:var(--radius-panel); background:var(--canvas); scroll-margin-top:calc(var(--home-header-height) + 24px); }
 .about-page .about-journey-today h2 { font-size:clamp(32px,3vw,44px); }
-.about-journey-today .about-timeline-copy { font-size:16px; }
+.about-today-header { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); gap:48px; align-items:start; padding-bottom:36px; }
+.about-today-header>p { margin:0; color:var(--muted); font-size:18px; line-height:1.7; }
+.about-today-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:48px; padding-top:36px; border-top:1px solid var(--line); }
+.about-today-detail { min-width:0; }
+.about-page .about-today-detail h3 { margin:0 0 16px; color:var(--ink); font-size:22px; font-weight:550; line-height:1.3; letter-spacing:-.025em; }
+.about-today-detail p { margin:0; color:var(--muted); font-size:16px; line-height:1.75; }
+.about-today-detail p+p { margin-top:18px; }
+.about-today-detail ul { display:grid; gap:12px; list-style:disc; margin:20px 0 0; padding-left:20px; color:var(--ink); font-size:15px; line-height:1.65; }
+.about-today-detail li { padding-left:5px; }
+.about-today-detail li::marker { color:var(--blue-secondary); }
+.about-today-story { margin-top:36px; }
+.about-today-detail .about-today-statement { max-width:400px; color:var(--blue); font-size:22px; font-weight:500; line-height:1.4; letter-spacing:-.025em; }
 @media(max-width:767px) {
   .home-page .about-purpose,.home-page .about-journey { padding-block:64px; }
   .about-purpose-heading { margin-bottom:32px; }
@@ -75,7 +86,15 @@
   .about-timeline article { padding-left:28px; }
   .about-timeline h3 { margin:16px 0; font-size:24px; }
   .about-timeline-copy { font-size:15px; }
-  .about-journey-today { grid-template-columns:1fr; gap:28px; padding:28px 24px; margin-top:40px; }
+  .about-journey-today { padding:28px 24px; margin-top:40px; }
+  .about-today-header,.about-today-grid { grid-template-columns:1fr; gap:28px; }
+  .about-today-header { padding-bottom:28px; }
+  .about-today-header>p { font-size:16px; }
+  .about-today-grid { padding-top:28px; }
+  .about-today-story { margin-top:28px; }
+  .about-page .about-today-detail h3 { font-size:20px; }
+  .about-today-detail p { font-size:15px; }
+  .about-today-detail .about-today-statement { font-size:21px; }
 }
 @media(prefers-reduced-motion:reduce) { .about-timeline-marker { transition:none; } }
 .home-page .about-closing { padding-block:var(--space-section); background:var(--surface); text-align:center; }

@@ -103,9 +103,9 @@
   {
     "slug": "products/underwriting",
     "label": "AMLOK Insights",
-    "title": "Underwrite with evidence.",
-    "accent": "Decide with confidence.",
-    "description": "Turn fragmented borrower information into a connected credit assessment, with the evidence and policy context your team needs to make the final decision.",
+    "title": "Underwrite",
+    "accent": "the whole ecosystem.",
+    "description": "Connect the applicant to the people, accounts, income, obligations, and counterparties that shape the deal. Give business, consumer, and insurance teams the context to make a well-informed decision.",
     "visual": "underwriting",
     "kind": "detail",
     "sections": [
@@ -184,8 +184,8 @@
     "slug": "products/portfolio-monitoring",
     "label": "AMLOK Signal",
     "title": "Risk keeps moving.",
-    "accent": "So should your view.",
-    "description": "Follow changing financial conditions after origination. Connect new signals to the baseline, evidence, and borrower relationships that explain them.",
+    "accent": "Stay connected.",
+    "description": "Follow changing cash flow, obligations, and financial relationships after the original decision. AMLOK Signal connects new evidence to the underwriting baseline so your team can review what matters.",
     "visual": "behaviour-insights",
     "kind": "detail",
     "sections": [
@@ -313,9 +313,9 @@
   {
     "slug": "platform/risk-simulation",
     "label": "Risk simulation",
-    "title": "Explore the scenario.",
-    "accent": "Understand the trade-off.",
-    "description": "Bring evidence, policy assumptions, and portfolio context together before deciding how to respond to changing conditions.",
+    "title": "Explore the what-if.",
+    "accent": "Understand the impact.",
+    "description": "Explore how changing income, costs, payment timing, and connected exposure could affect a financial assessment. Keep the evidence, assumptions, and trade-offs visible before your team decides.",
     "visual": "simulation",
     "kind": "detail",
     "sections": [
@@ -366,10 +366,10 @@
   },
   {
     "slug": "solutions",
-    "label": "Use cases",
+    "label": "All use cases",
     "title": "Start with the question.",
-    "accent": "Connect the answer.",
-    "description": "Explore the work that connected risk intelligence can support, from the first application to a changing portfolio.",
+    "accent": "Connect the context.",
+    "description": "Explore seven ways connected risk intelligence can support your team—from resolving identity and understanding cash flow to underwriting, monitoring, simulation, and servicing reviews.",
     "visual": "decision",
     "kind": "directory",
     "sections": [],
@@ -431,9 +431,9 @@
   {
     "slug": "modules/verification-onboarding",
     "label": "Verification & onboarding",
-    "title": "A clearer beginning.",
-    "accent": "A stronger foundation.",
-    "description": "Connect applicant, business, ownership, and financial evidence before the underwriting starts.",
+    "title": "Start with evidence.",
+    "accent": "Build on understanding.",
+    "description": "Connect applicant, business, relationship, and authorized financial evidence. Keep verification outcomes and unresolved requirements visible throughout onboarding.",
     "visual": "verification",
     "kind": "detail",
     "sections": [
@@ -490,9 +490,9 @@
   {
     "slug": "modules/white-label-experiences",
     "label": "White-label experiences",
-    "title": "Your brand up front.",
-    "accent": "Connected intelligence behind it.",
-    "description": "Keep the borrower experience familiar while bringing authorized financial connections and evidence into your AMLOK workflow.",
+    "title": "Your customer journey.",
+    "accent": "Connected to intelligence.",
+    "description": "Bring authorized financial evidence into your branded customer journey, with clear connection handoffs, confirmed statuses, and recovery paths.",
     "visual": "embedded",
     "kind": "detail",
     "sections": [
@@ -785,29 +785,49 @@
     "label": "Our manifesto",
     "title": "Risk is a movie.",
     "accent": "Not a picture.",
-    "description": "We believe financial decisions deserve the context of a changing financial life—not just the snapshot that was easiest to collect.",
+    "description": "We are building a connected understanding of financial life, so institutions can see how risk changes, act with greater clarity, and put capital to work with confidence.",
     "visual": "graph",
     "kind": "manifesto",
     "sections": [
       {
-        "title": "01 / Connect what was separate.",
-        "body": "A transaction belongs to an account. An account belongs to an entity. An entity has relationships, obligations, and a history. Intelligence starts when we can see those connections and trace the evidence behind them."
+        "title": "See the relationships.",
+        "body": "A business exists within a network of customers, suppliers, owners, accounts, and obligations. A household’s financial position reflects income, commitments, and the timing of both. An isolated record can tell us something important. Understanding how it connects to other records can change what it means.\n\nOur mission begins with mapping those connections. An invoice, a processor settlement, and a bank deposit may describe different stages of the same economic event. Resolving that relationship helps prevent double counting and makes the underlying activity easier to understand. It also helps teams distinguish an established connection from one that still needs investigation.\n\nWe believe a useful risk graph must preserve the evidence behind every relationship. Its value comes from helping a team ask better questions: who is connected, through what activity, over which period, and with what degree of certainty?"
       },
       {
-        "title": "02 / Keep uncertainty visible.",
-        "body": "A confident-looking number cannot replace missing context. Coverage, freshness, conflicting evidence, and unresolved questions should be part of an assessment, not footnotes that disappear."
+        "title": "Follow the financial life.",
+        "body": "Risk unfolds over time. A strong month can sit inside a weakening trend. A temporary disruption can occur in an otherwise resilient business. The same balance can mean different things depending on when it was observed, what came before it, and which obligations come next.\n\nWe believe an assessment should carry its time and context with it. Teams need to know what was available when a decision was made, what has changed since, and whether the change warrants another look. New evidence should build on the history of a relationship while preserving the original assessment for review.\n\nThis is what we mean when we say risk is a movie. Monitoring should make the story easier to follow, with a clear account of source freshness, gaps in coverage, and the limits of what can currently be observed."
       },
       {
-        "title": "03 / Follow the change.",
-        "body": "The moment capital moves is not the moment risk stops. A borrower’s circumstances continue to evolve. The intelligence supporting that relationship should evolve with them."
+        "title": "Keep the evidence in view.",
+        "body": "An insight is more useful when someone can examine how it was reached. A team should be able to trace an observation to its source, understand the calculation or interpretation behind it, and see what remains unresolved. Evidence, inference, and judgment each have a place in a decision. Their differences should stay visible.\n\nWe believe missing information deserves an explicit place in an assessment. Conflicting records, uncertain entity matches, incomplete periods, and stale connections can materially change an interpretation. A polished output should make those limitations easier to see. Confidence must be supported by what the evidence can actually establish.\n\nThat belief shapes our approach to risk intelligence: preserve provenance, expose assumptions, make calculations reproducible, and give reviewers a clear path back to the underlying record. The goal is understanding that can survive a serious question."
       },
       {
-        "title": "04 / Make the reasoning reviewable.",
-        "body": "An institution needs to understand why a signal appeared and which evidence supports it. Useful intelligence helps a person ask a better question and take responsibility for the answer."
+        "title": "Understand the opportunity.",
+        "body": "Capital allocation involves understanding both exposure and possibility. A business may have reliable receipts despite an irregular billing cycle. A borrower may have capacity that becomes clearer when income, expenses, and obligations are considered together. Better context can reveal questions worth pursuing and opportunities worth understanding.\n\nOur ambition is to help institutions distinguish uncertainty that can be investigated from risk they are prepared to accept. A useful assessment should explain the sources of resilience as carefully as the sources of concern. It should support decisions about structure, timing, capacity, and the conditions that require review.\n\nImproving access to capital starts with improving the quality of understanding behind it. Each institution sets its own appetite and policies. We want teams to have the evidence to apply those policies thoughtfully and consistently, with a clearer view of the customer and the opportunity."
       },
       {
-        "title": "05 / Keep the institution in control.",
-        "body": "Technology should strengthen the team that owns the customer relationship. Policy, approval, communication, and intervention belong with the institution—not with an unexplained black box."
+        "title": "Strengthen human judgment.",
+        "body": "AI can help teams read records, reconcile information, investigate inconsistencies, and prepare evidence for review. Specialized agents can take on defined analytical work within an institution’s workflow. Their contribution should be visible enough for a person to challenge, correct, or reject.\n\nWe believe authority must be explicit. A model’s output, a policy check, a recommendation, and a final decision are different steps. Teams need clear review points, meaningful exceptions, and a record of how responsibility moved through the process. The institution retains control of lending decisions, customer communication, and intervention.\n\nThe measure of useful automation is the quality of the work it enables people to do. We want analysts to spend more time resolving important questions, applying experience, and exercising judgment. Technology should give them a stronger basis for taking responsibility for the answer."
+      },
+      {
+        "title": "Carry context through the lifecycle.",
+        "body": "The work of understanding a customer should remain useful after an approval. Verification establishes evidence. Underwriting interprets capacity and obligations. Monitoring follows changes. Servicing and review decisions draw on the history of the relationship. Each stage benefits from knowing what the previous stage established and what it left open.\n\nWe believe the original assessment should provide a clear baseline for what comes next. When permitted new evidence arrives, teams should be able to examine it against that baseline and understand why a reassessment may be needed. A change in circumstances should be connected to the reasoning that supported the earlier decision.\n\nThis is the continuity we are building toward: financial understanding that travels with the relationship. AMLOK’s role is to support that understanding across the credit lifecycle, while institutions and their operational systems remain responsible for executing the actions they approve."
+      },
+      {
+        "title": "Connect with permission.",
+        "body": "Financial evidence comes with responsibilities to the people and businesses it describes. Mapping an ecosystem requires disciplined boundaries around what can be accessed, why it is needed, who can use it, and how long it should be retained. Broader understanding must be earned through appropriate permission and careful handling.\n\nWe believe every deployment should make data access, intended use, and accountability clear. Access for a particular assessment does not by itself authorize unrelated reuse, sharing between institutions, or model training. Those purposes require their own explicit basis and agreed controls.\n\nThe same care applies to interpretation. Financial patterns can reflect differences in context and coverage. Institutions should examine whether the evidence and methods are appropriate for the population and decision at hand. Respect for the customer belongs in the design of the workflow, from collection through review."
+      },
+      {
+        "title": "Earn trust through measurement.",
+        "body": "An ambitious vision needs rigorous evaluation. We believe every performance claim should be tied to a defined task, a documented dataset, a meaningful baseline, and a clear account of its limits. A result becomes useful when others can understand how it was produced and where it may fail.\n\nFinancial research requires particular care with time. Evaluation should respect what was knowable at the point of decision, keep future information out of historical inputs, and examine performance across relevant segments. Retrospective findings can inform a deployment. Prospective observation and ongoing review are needed to understand how a system behaves in use.\n\nOur commitment is to state the scope of our research precisely. Evidence from extraction, retrieval, or a structured prediction task supports conclusions about that task. Broader claims about financial understanding require their own evidence. We intend to keep testing assumptions, documenting limitations, and improving the system as we learn."
+      },
+      {
+        "title": "Build infrastructure that fits.",
+        "body": "Financial institutions have systems, policies, teams, and customer relationships that already carry responsibility. Risk intelligence should be able to join that environment through clear interfaces and dependable handoffs. Adoption should have a defined purpose, a reviewable scope, and an understandable path into production.\n\nWe believe teams should be able to start with a concrete problem: organizing an underwriting file, resolving conflicting evidence, or reviewing a change after funding. They should be able to inspect the result, establish the controls they need, and expand the role of the technology as its usefulness is demonstrated.\n\nThat is why we think in terms of infrastructure. APIs, connected evidence, repeatable assessments, and observable workflows give institutions building blocks they can use within their own operating model. The aim is intelligence that remains useful as products, policies, and customer needs evolve."
+      },
+      {
+        "title": "Put understanding to work.",
+        "body": "The purpose of better risk intelligence reaches beyond producing a score or completing a file. Capital supports livelihoods, businesses, and long-term plans. The systems that inform its allocation should help institutions understand those real circumstances with greater care and clarity.\n\nWe want a future in which a team can investigate an opportunity without repeatedly assembling its history from scratch; in which a changing relationship can be reviewed with its original context intact; and in which a question about risk can be answered with evidence that people can examine.\n\nThis future will be built through research, practical deployment, and sustained collaboration with the institutions that serve customers. Our role is to make financial relationships more understandable and the reasoning around them more useful. Our purpose remains improving how capital is accessed, allocated, and managed."
       }
     ],
     "steps": [],
@@ -911,7 +931,7 @@
     "label": "Whitepapers",
     "title": "Deeper thinking.",
     "accent": "Clearer decisions.",
-    "description": "Explore the ideas behind connected risk intelligence, from financial relationships and borrower behaviour to the evidence that supports a better-informed decision. Preview our upcoming whitepapers.",
+    "description": "Evidence-led perspectives on connected financial data, changing exposure, and household affordability. Read the methods, inspect the diagrams, and follow the sources.",
     "visual": "graph",
     "related": [
       "research",
@@ -927,9 +947,9 @@
     "sources": [],
     "slug": "industry-guides",
     "label": "Industry Guides",
-    "title": "Every industry.",
-    "accent": "A different risk picture.",
-    "description": "Look closer at the cash flows, obligations, and changing conditions that shape each lending market. Explore our upcoming guides for merchant cash advance, mortgage, and business lending.",
+    "title": "Your industry.",
+    "accent": "The complete risk picture.",
+    "description": "18 comprehensive guides across consumer lending, business lending, financial institutions, fintech and insurtech. Explore how AMLOK fits your workflow—with market data, evidence maps, worked calculations and implementation plans.",
     "visual": "behaviour-insights",
     "related": [
       "research",
@@ -983,36 +1003,19 @@
   },
   {
     "slug": "blog/from-snapshot-to-signal",
-    "label": "Perspective · Monitoring",
-    "title": "From a snapshot",
-    "accent": "to a living baseline.",
-    "description": "Why monitoring begins with a clear account of what was known at underwriting.",
+    "label": "Before the signal, save the baseline.",
+    "title": "Before the signal,",
+    "accent": "save the baseline.",
+    "description": "Why monitoring needs a versioned account of what was known, when it was known, and how it was interpreted.",
     "visual": "behaviour-insights",
     "kind": "article",
-    "sections": [
-      {
-        "title": "A baseline is a set of assumptions, not just a score.",
-        "body": "An underwriting captures a view of income, obligations, liquidity, and the information available at a particular time. If those inputs change, the original conclusion may deserve a second look. Keeping the baseline means preserving the evidence and assumptions that made the assessment meaningful."
-      },
-      {
-        "title": "Compare like with like.",
-        "body": "A drop in observed deposits can have several explanations. A business may be seasonal, a connection may have stopped refreshing, or trading conditions may have changed. A useful signal helps the reviewer distinguish those possibilities by showing coverage and timing alongside the observation."
-      },
-      {
-        "title": "Make the review actionable.",
-        "body": "A monitoring workflow should tell a team what changed, where to look, and who owns the next step. It does not need to decide every action automatically. For many institutions, the most valuable result is a precise, evidence-backed reason to review a borrower."
-      },
-      {
-        "title": "Close the loop with the institution.",
-        "body": "AMLOK Signal supplies results, alerts, and evidence. The institution decides whether to request more information, adjust an exposure, or continue monitoring. That separation keeps the customer relationship and final decision with the team responsible for them."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "related": [
-      "products/portfolio-monitoring",
-      "solutions/borrower-servicing-collections",
-      "research"
+      "blog/monitoring-without-the-noise",
+      "blog/underwriting-to-monitoring",
+      "research/affordability-in-motion"
     ],
     "sources": [
       {
@@ -1023,36 +1026,19 @@
   },
   {
     "slug": "blog/read-the-cash-flow",
-    "label": "Perspective · Financial evidence",
-    "title": "Read the cash flow.",
-    "accent": "Understand the movement.",
-    "description": "Why a deposit is a starting point for analysis, rather than the answer to an income question.",
+    "label": "A deposit is not always revenue.",
+    "title": "A deposit is not",
+    "accent": "always revenue.",
+    "description": "How financing, transfers, and settlement adjustments can change the story a bank balance seems to tell.",
     "visual": "financial",
     "kind": "article",
-    "sections": [
-      {
-        "title": "The balance alone cannot explain the business.",
-        "body": "A bank account reflects operating receipts, transfers, borrowing, refunds, and other activity. Combining those movements into one total can obscure the financial pattern an analyst is trying to understand. Classification matters because different flows have different implications for capacity."
-      },
-      {
-        "title": "Bring another source into the conversation.",
-        "body": "Payment-platform records can help explain receipts. Accounting data can offer a view of invoices and expenses. A statement can show settlement timing. These sources are useful together when their periods, identifiers, and coverage are understood; one should not silently be treated as a substitute for another."
-      },
-      {
-        "title": "Keep the exceptions.",
-        "body": "Unreconciled movements and incomplete history are information. An assessment that makes those gaps visible gives the institution an opportunity to request evidence or constrain a conclusion. Filling them with an assumption creates apparent precision without a stronger foundation."
-      },
-      {
-        "title": "Read the pattern over time.",
-        "body": "A borrower’s capacity is not defined by one good month. Examining volatility, obligations, and recurring patterns helps turn financial activity into a question a credit team can evaluate. The institution’s policy determines how that evidence affects its decision."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "related": [
-      "solutions/cash-flow-intelligence",
-      "products/underwriting",
-      "industries/business-lending"
+      "research/underwrite-the-connected-business",
+      "research/follow-the-receipts",
+      "blog/cash-flow-for-merchant-finance"
     ],
     "sources": [
       {
@@ -1063,36 +1049,19 @@
   },
   {
     "slug": "blog/designing-reviewable-ai",
-    "label": "Perspective · Decision design",
-    "title": "Build intelligence",
-    "accent": "people can review.",
-    "description": "Evidence, uncertainty, and human ownership are design requirements for a useful risk workflow.",
+    "label": "The answer is only as strong as the evidence it found.",
+    "title": "The answer is only as strong",
+    "accent": "as the evidence it found.",
+    "description": "What AMLOK’s financial-document retrieval experiment teaches about reviewable AI.",
     "visual": "observability",
     "kind": "article",
-    "sections": [
-      {
-        "title": "An explanation needs somewhere to go.",
-        "body": "A summary is more useful when a reviewer can follow it back to supporting records. Evidence lineage connects a statement to the source and time window it describes. It lets the reviewer check the interpretation rather than accept the wording on trust."
-      },
-      {
-        "title": "Make uncertainty part of the interface.",
-        "body": "Missing periods, conflicting records, and limited coverage should be legible where the assessment is reviewed. The goal is not to make every output appear certain. It is to help the team understand which conclusions have support and which need more information."
-      },
-      {
-        "title": "Keep policy ownership explicit.",
-        "body": "The organization taking the credit risk sets its policy and owns its final decisions. A workflow should make review gates, exception handling, and the handoff to institution systems clear. Those boundaries help an assessment become operationally useful."
-      },
-      {
-        "title": "Evaluate the whole workflow.",
-        "body": "A convincing demonstration is only one part of validation. Teams also need to understand how the system handles incomplete evidence, repeated events, unavailable sources, and unexpected changes. Designing those paths carefully is part of designing the product itself."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "related": [
-      "solutions/decision-automation",
-      "security-compliance",
-      "developers/webhooks"
+      "research/evidence-before-intelligence",
+      "research/one-sale-many-records",
+      "blog/event-driven-risk-workflows"
     ],
     "sources": [
       {
@@ -1105,8 +1074,8 @@
     "slug": "industries/consumer-lending",
     "label": "Consumer lending",
     "title": "See the person.",
-    "accent": "Understand the capacity.",
-    "description": "Bring permissioned financial evidence, verification results and ongoing risk signals into a connected view of consumer credit. Support your lending team's assessment from application through the life of the relationship.",
+    "accent": "Understand the commitments.",
+    "description": "Connect permitted income, financial activity, and contractual obligations to understand the household behind the application. Keep the evidence relevant to the credit product—and the decision with your team.",
     "visual": "financial",
     "kind": "industry",
     "sections": [
@@ -1180,9 +1149,9 @@
   {
     "slug": "industries/business-lending",
     "label": "Business lending",
-    "title": "Beyond the balance sheet.",
-    "accent": "Into the business.",
-    "description": "Connect banking, accounting, payments and lender-supplied records to understand how a business earns, spends and meets its commitments. Keep underwriting and monitoring tied to the evidence behind each finding.",
+    "title": "Understand the business.",
+    "accent": "Connect the ecosystem.",
+    "description": "Follow how a business earns, collects, spends, and meets its obligations. Connect financial records and supported relationships so the assessment reflects the operating reality behind the application.",
     "visual": "connected-risk",
     "kind": "industry",
     "sections": [
@@ -1257,8 +1226,8 @@
     "slug": "industries/financial-institutions",
     "label": "Financial institutions",
     "title": "Connected intelligence.",
-    "accent": "Institutional control.",
-    "description": "Bring a consistent evidence foundation to underwriting, monitoring and investigation. AMLOK supports the risk workflow while your institution retains its policies, governance and decision authority.",
+    "accent": "Institution-owned decisions.",
+    "description": "Build a consistent evidence foundation across the portfolios your institution manages. Bring underwriting, monitoring, and review into a connected workflow while retaining your policies and governance.",
     "visual": "data-security",
     "kind": "industry",
     "sections": [
@@ -1332,9 +1301,9 @@
   {
     "slug": "industries/fintech",
     "label": "Fintech",
-    "title": "Build it into",
-    "accent": "your experience.",
-    "description": "Bring verification, underwriting evidence and portfolio signals into your digital lending workflow. Use a consistent API model while keeping the customer experience and final decision in your hands.",
+    "title": "Build the experience.",
+    "accent": "Connect the intelligence.",
+    "description": "Bring permissioned financial evidence into digital lending and platform journeys. Keep the customer experience in your product, with a clear handoff from source records to assessment and ongoing review.",
     "visual": "api",
     "kind": "industry",
     "sections": [
@@ -1408,9 +1377,9 @@
   {
     "slug": "industries/insurtech",
     "label": "Insurtech",
-    "title": "Financial context.",
-    "accent": "A clearer exposure.",
-    "description": "Explore connected risk assessment for trade credit, surety and premium-finance workflows. Bring business financial evidence and changing exposure signals into the team's underwriting review.",
+    "title": "Understand the exposure.",
+    "accent": "Keep financial context connected.",
+    "description": "Bring connected financial evidence to trade credit, surety, and premium-finance reviews. Understand the counterparty, contractual obligations, and changing conditions without losing the structure of the underlying exposure.",
     "visual": "compliance",
     "kind": "industry",
     "sections": [
@@ -1484,9 +1453,9 @@
   {
     "slug": "solutions/cash-flow-intelligence",
     "label": "Cash-flow intelligence",
-    "title": "Understand the movement.",
-    "accent": "See the capacity.",
-    "description": "Understand how money moves, with the evidence behind every measure. Connect authorized bank, payment and accounting records to assess financial activity over a defined period.",
+    "title": "Understand the cash.",
+    "accent": "Explain the capacity.",
+    "description": "Turn authorized banking, payment, commerce, and accounting records into a financial view your team can inspect. Reconcile the movement before measuring income, liquidity, and repayment capacity.",
     "visual": "financial",
     "kind": "detail",
     "sections": [
@@ -1551,9 +1520,9 @@
   {
     "slug": "solutions/entity-fraud-resolution",
     "label": "Entity & fraud resolution",
-    "title": "Connect the records.",
-    "accent": "Follow the evidence.",
-    "description": "Connect identity, relationships and financial evidence to investigate the signals that deserve a closer look. Give reviewers the context behind a possible match or inconsistency.",
+    "title": "Resolve the identity.",
+    "accent": "Investigate the connection.",
+    "description": "Bring identity, ownership, transaction, and document evidence into the same review. Understand which records belong together, where they disagree, and what needs further investigation.",
     "visual": "investigation",
     "kind": "detail",
     "sections": [
@@ -1618,9 +1587,9 @@
   {
     "slug": "solutions/decision-automation",
     "label": "Decision automation",
-    "title": "Repeatable workflows.",
-    "accent": "Accountable decisions.",
-    "description": "Make repeatable risk workflows part of your decision process. Coordinate evidence, approved policy configuration and assessment outputs while retaining clear review and approval boundaries.",
+    "title": "Automate the analysis.",
+    "accent": "Keep decisions accountable.",
+    "description": "Coordinate evidence readiness, approved workflow configuration, and reviewable assessments. Give repeatable analytical work a clear path while keeping exceptions and institutional authority visible.",
     "visual": "decision",
     "kind": "detail",
     "sections": [
@@ -1684,10 +1653,10 @@
   },
   {
     "slug": "solutions/borrower-servicing-collections",
-    "label": "Borrower servicing & collections",
-    "title": "The right context.",
-    "accent": "Before the next action.",
-    "description": "Give servicing teams a current view of borrower risk. Connect monitored financial changes with lender-supplied loan and repayment evidence so the team can review the right context before taking action.",
+    "label": "Servicing & collections",
+    "title": "Understand the change.",
+    "accent": "Inform the next conversation.",
+    "description": "Bring current financial evidence, the original assessment, and lender-supplied repayment context into servicing reviews. Help your team understand what changed before deciding how to respond.",
     "visual": "monitoring",
     "kind": "detail",
     "sections": [
@@ -2371,9 +2340,9 @@
   {
     "slug": "privacy",
     "label": "Privacy",
-    "title": "Respect the purpose.",
-    "accent": "Protect the information.",
-    "description": "How AMLOK approaches website enquiries and authorized financial-data processing.",
+    "title": "Privacy Policy",
+    "accent": "",
+    "description": "How AMLOK handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
     "visual": "data-security",
     "kind": "legal",
     "sections": [
@@ -2426,9 +2395,9 @@
   {
     "slug": "cookies",
     "label": "Cookies & preferences",
-    "title": "Your browser.",
-    "accent": "Your preferences.",
-    "description": "Understand the preferences this website stores and how to manage them.",
+    "title": "Cookies Policy",
+    "accent": "",
+    "description": "Learn about AMLOK website language storage, Cal.com scheduling, external services, and browser controls.",
     "visual": "customer",
     "kind": "legal",
     "sections": [
@@ -2469,9 +2438,9 @@
   {
     "slug": "terms",
     "label": "Terms of business",
-    "title": "Clear scope.",
-    "accent": "Shared responsibilities.",
-    "description": "A guide to the agreements, authorized use, and responsibilities that govern an AMLOK relationship.",
+    "title": "Terms of Business",
+    "accent": "",
+    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an AMLOK relationship.",
     "visual": "compliance",
     "kind": "legal",
     "sections": [
@@ -3030,216 +2999,578 @@
   },
   {
     "slug": "blog/risk-is-a-relationship",
-    "label": "Connected data",
-    "title": "See the connections.",
-    "accent": "Understand the risk.",
-    "description": "Why the connections between borrowers, accounts, and obligations matter as much as the records themselves.",
+    "label": "A connection is not a conclusion.",
+    "title": "A connection is not",
+    "accent": "a conclusion.",
+    "description": "What a risk graph should preserve before a relationship becomes evidence in a financial decision.",
     "visual": "graph",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Start with the relationship, not the score.",
-        "body": "A borrower rarely fits inside one record. A business can hold several bank accounts, collect payments through different processors, and share ownership with other entities. Looking at each source separately can leave a reviewer with individually accurate facts and an incomplete picture. A connected risk graph provides a way to organise those facts around the relationships that make them meaningful."
-      },
-      {
-        "title": "Keep the evidence attached.",
-        "body": "A useful connection should answer three questions: what relates these records, which source supports that relationship, and when was it observed? A verified ownership relationship is different from a similar name or a shared address. Preserve that distinction. Keep uncertain matches available for review instead of turning them into established facts. The graph should make the evidence easier to inspect, including the reasons a connection may be incomplete."
-      },
-      {
-        "title": "Read movement in context.",
-        "body": "Consider a transfer between two accounts held by the same business. Without the relationship, the deposit could be counted as fresh revenue. With the relationship and transaction evidence in view, a reviewer can distinguish movement inside the business from new receipts. The same principle applies to obligations, related entities, and recurring flows. Context changes the questions a team asks; it does not remove the need to check the underlying record."
-      },
-      {
-        "title": "Build a graph that can change.",
-        "body": "An ownership record, an account connection, and a transaction history do not refresh on the same schedule. A practical graph needs dates, source coverage, and a clear treatment of missing data. New evidence may strengthen a relationship, challenge it, or show that it is no longer current. Keeping that history makes it possible to explain why the present view differs from the one used at underwriting."
-      },
-      {
-        "title": "Keep judgment with the institution.",
-        "body": "The goal is a more reviewable picture of risk. AMLOK connects financial evidence and borrower context so a team can investigate relationships across the credit lifecycle. Lending policy, exceptions, and final decisions remain with the institution. A graph is most useful when it helps that team ask a better question and trace the answer back to evidence."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "platform/risk-graph",
-      "solutions/entity-fraud-resolution",
-      "products/underwriting"
+      "research/evidence-before-intelligence",
+      "research/underwrite-the-connected-business",
+      "blog/read-the-cash-flow"
     ]
   },
   {
     "slug": "blog/monitoring-without-the-noise",
-    "label": "Monitoring",
-    "title": "Less noise.",
-    "accent": "More useful signals.",
-    "description": "Design monitoring around meaningful changes, clear evidence, and a team that knows what happens next.",
+    "label": "An alert is a cost. Make it earn the review.",
+    "title": "An alert is a cost.",
+    "accent": "Make it earn the review.",
+    "description": "Why rare events, false positives, and review capacity belong in the design of a monitoring system.",
     "visual": "behaviour-insights",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Begin with a reviewable question.",
-        "body": "An alert is only useful if someone can explain why it deserves attention. “Revenue moved” is a starting point. “Receipts changed relative to a comparable period, with these records supporting the change” gives a reviewer something to investigate. Define the question before choosing a threshold, and connect it to the institution’s policy and review process."
-      },
-      {
-        "title": "Separate a change in risk from a change in coverage.",
-        "body": "A disconnected account can resemble a sudden decline in activity. A delayed data feed can make an otherwise stable borrower look different. Monitoring should carry freshness and coverage alongside the observation. Teams need to know whether they are seeing a change in the borrower’s financial behaviour or a change in the information available to them."
-      },
-      {
-        "title": "Make the baseline explicit.",
-        "body": "A meaningful comparison needs a stated window and a reason that window is appropriate. Seasonal businesses, recent borrowers, and businesses with uneven billing cycles require different context. Preserve the baseline established during underwriting, then explain how later observations relate to it. Avoid silently changing the comparison while presenting the result as if it were continuous."
-      },
-      {
-        "title": "Design the handoff.",
-        "body": "Attach the supporting evidence, the affected borrower, and the reason for the signal. Define which team reviews it and which system records the outcome. Repeated signals may belong to the same underlying change; grouping them can make the review clearer. AMLOK Signal supplies monitoring intelligence, while the institution owns borrower communication, case handling, and any resulting action."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "products/portfolio-monitoring",
-      "solutions/borrower-servicing-collections",
-      "developers/webhooks"
+      "blog/from-snapshot-to-signal",
+      "blog/event-driven-risk-workflows",
+      "research/two-risks-in-auto-finance"
     ]
   },
   {
     "slug": "blog/cash-flow-for-merchant-finance",
-    "label": "Cash flow",
-    "title": "Merchant receipts need",
-    "accent": "a little more context.",
-    "description": "A practical perspective on sales, settlements, refunds, and the timing behind merchant cash flow.",
+    "label": "When sales rise but cash does not.",
+    "title": "When sales rise but",
+    "accent": "cash does not.",
+    "description": "A settlement bridge can explain the gap between a merchant’s activity and the money available to operate.",
     "visual": "financial",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Sales and settlements tell different stories.",
-        "body": "A sale recorded by a commerce platform is not always a deposit received by a bank account on the same day. Settlement timing, fees, refunds, and reserves can change both the amount and the date. Reading only one side can leave a funding team with a misleading sense of the money available to the business."
-      },
-      {
-        "title": "Connect the observation windows.",
-        "body": "When comparing processor activity with banking evidence, start by checking that the periods overlap. State which accounts and channels are covered. A merchant may use more than one processor or move receipts between accounts. Differences should lead to reconciliation questions rather than automatic conclusions about missing revenue."
-      },
-      {
-        "title": "Look beyond the strongest week.",
-        "body": "Recurring obligations, changing sales concentration, and irregular receipts matter alongside total volume. A strong trading period may coincide with a large upcoming payment or an unusual promotion. A useful review considers the pattern and its limits, instead of treating one peak period as a stable operating baseline."
-      },
-      {
-        "title": "Keep the funding decision separate from the evidence.",
-        "body": "Connected financial information can help a team understand the merchant and follow later changes. It does not set the institution’s terms or replace its policy. AMLOK’s cash-flow intelligence is designed to preserve the context and source evidence around financial activity so reviewers can make and revisit their own decisions."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "solutions/cash-flow-intelligence",
-      "industries/business-lending",
-      "integrations"
+      "research/follow-the-receipts",
+      "blog/read-the-cash-flow",
+      "research/one-sale-many-records"
     ]
   },
   {
     "slug": "blog/underwriting-to-monitoring",
-    "label": "Underwriting",
-    "title": "The decision is a moment.",
-    "accent": "The relationship continues.",
-    "description": "Carry the assumptions behind underwriting into the monitoring that follows funding.",
+    "label": "The credit memo should have a memory.",
+    "title": "The credit memo should",
+    "accent": "have a memory.",
+    "description": "Carry the assumptions behind approval into a monitoring process that can revisit them.",
     "visual": "underwriting",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Write down what the decision depended on.",
-        "body": "An underwriting decision is built on a view of the borrower at a particular time. The evidence window, obligations, recurring receipts, and policy exceptions are part of that view. If those assumptions disappear after funding, monitoring starts without a clear account of what it is trying to follow."
-      },
-      {
-        "title": "Define the handoff before funding.",
-        "body": "A useful handoff identifies the borrower, the authorised sources, the observation window, and the questions that remain open. It also names the team responsible for reviewing a later change. This is a shared context, not a second approval process. The institution’s policies determine what should be followed and which conditions need further review."
-      },
-      {
-        "title": "Compare new evidence to the original context.",
-        "body": "A later observation becomes more useful when it can be traced to the baseline. Did recurring receipts change? Is an obligation still visible? Has source coverage become incomplete? Explain both the new observation and the quality of the comparison. A difference between two snapshots is not automatically a change in creditworthiness."
-      },
-      {
-        "title": "Make continuity part of the design.",
-        "body": "AMLOK Insights supports underwriting intelligence, and Signal supports monitoring after origination. Connecting them around borrower evidence helps teams retain context across the lifecycle. The institution remains responsible for lending policy, the decision to fund, and any subsequent servicing or collections action."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "products/underwriting",
-      "products/portfolio-monitoring",
-      "platform"
+      "blog/from-snapshot-to-signal",
+      "research/underwrite-the-connected-business",
+      "research/mortgage-after-the-application"
     ]
   },
   {
     "slug": "blog/event-driven-risk-workflows",
-    "label": "AI & workflows",
+    "label": "Every event needs an accountable next step.",
     "title": "Every event needs",
-    "accent": "a clear next step.",
-    "description": "How to design evidence-led automation without losing ownership, review, or the history of a decision.",
+    "accent": "an accountable next step.",
+    "description": "How to connect evidence, workflow state, and institutional ownership without turning every signal into an automatic decision.",
     "visual": "event-automations",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Distinguish an event from an instruction.",
-        "body": "A new document, a refreshed account, or a changed observation tells a system that something happened. It does not, by itself, authorise a borrower-facing action. Keep the event, the policy evaluation, and the resulting task separate so a reviewer can understand the path from evidence to action."
-      },
-      {
-        "title": "Plan for the ordinary failure modes.",
-        "body": "Events can arrive more than once or in an unexpected order. A downstream system may be temporarily unavailable. Workflows should retain identifiers, recognise already-processed events, and make retries visible. The goal is predictable handling, including when a workflow cannot safely continue."
-      },
-      {
-        "title": "Make review a first-class step.",
-        "body": "Not every situation should be resolved by automation. Incomplete evidence, conflicting records, and an unfamiliar exception may need a person to assess the context. Give that reviewer the source record, the relevant policy, and a clear explanation of what is uncertain. A queue entry without evidence simply moves the investigation elsewhere."
-      },
-      {
-        "title": "Measure the whole handoff.",
-        "body": "A completed workflow is more than a successful API response. Consider whether the intended system received the information, whether the review had an owner, and whether the outcome can be traced. AMLOK intelligence can support the workflow; the institution’s systems and teams remain responsible for the operational actions it authorises."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "solutions/decision-automation",
-      "developers/webhooks",
-      "developers"
+      "blog/designing-reviewable-ai",
+      "blog/monitoring-without-the-noise",
+      "research/one-sale-many-records"
     ]
   },
   {
     "slug": "blog/embedded-finance-context",
-    "label": "Embedded finance",
-    "title": "One connection.",
-    "accent": "A fuller borrower picture.",
-    "description": "What an embedded financial-data experience should preserve beyond the initial connection.",
+    "label": "Connected does not mean complete.",
+    "title": "Connected does not",
+    "accent": "mean complete.",
+    "description": "What an embedded financial-data experience needs to preserve after the user finishes connecting an account.",
     "visual": "embedded",
     "kind": "article",
-    "sections": [
-      {
-        "title": "Make the request understandable.",
-        "body": "A connection experience should help a borrower understand which source they are connecting and why it is relevant. Banking, accounting, commerce, and payment records serve different purposes. Present the options clearly, and keep the institution’s approved disclosures and consent process close to the step where access is requested."
-      },
-      {
-        "title": "Respect the differences between sources.",
-        "body": "An accounting record, a card settlement, and a bank transaction describe different parts of the same activity. They may use different dates, identifiers, and reporting periods. A shared interface should not flatten those differences. Carry the source, time window, and available coverage into the resulting review."
-      },
-      {
-        "title": "Design for interruption.",
-        "body": "A borrower may leave midway through the flow, choose the wrong institution, or encounter a connection that needs attention. Explain the current state and provide a clear recovery path. Avoid presenting a partial connection as a complete financial picture. The reviewer should see what arrived and what is still missing."
-      },
-      {
-        "title": "Connect the experience to the lifecycle.",
-        "body": "An embedded experience is the beginning of a relationship with evidence. The institution needs to understand the access scope, refresh behaviour, and handling of a later disconnection. AMLOK supports branded connection experiences and connected risk intelligence, while the institution controls the borrower relationship and its policy decisions."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
     "sources": [],
     "related": [
-      "modules/white-label-experiences",
-      "integrations",
-      "industries/fintech"
+      "research/one-sale-many-records",
+      "blog/from-snapshot-to-signal",
+      "blog/read-the-cash-flow"
     ]
+  },
+  {
+    "slug": "research/evidence-before-intelligence",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/underwrite-the-connected-business",
+      "blog/designing-reviewable-ai",
+      "blog/risk-is-a-relationship"
+    ],
+    "label": "Evidence before intelligence: building a foundational risk graph.",
+    "title": "Evidence before intelligence:",
+    "accent": "building a foundational risk graph.",
+    "description": "A transparent account of AMLOK’s public-data experiments, the measurements they support, and the work still required for lending decisions."
+  },
+  {
+    "slug": "research/follow-the-receipts",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/underwrite-the-connected-business",
+      "blog/cash-flow-for-merchant-finance",
+      "blog/read-the-cash-flow"
+    ],
+    "label": "Follow the receipts. Understand merchant resilience.",
+    "title": "Follow the receipts.",
+    "accent": "Understand merchant resilience.",
+    "description": "A merchant cash advance guide to settlement timing, recurring cash generation, and contract-aware stress testing."
+  },
+  {
+    "slug": "research/exposure-between-renewals",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/underwrite-the-connected-business",
+      "blog/risk-is-a-relationship",
+      "blog/designing-reviewable-ai"
+    ],
+    "label": "Exposure changes. The policy needs context.",
+    "title": "Exposure changes.",
+    "accent": "The policy needs context.",
+    "description": "A whitepaper on connected evidence for trade credit insurance, from buyer concentration to invoice-level review."
+  },
+  {
+    "slug": "research/mortgage-after-the-application",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/affordability-in-motion",
+      "blog/underwriting-to-monitoring",
+      "research/evidence-before-intelligence"
+    ],
+    "label": "The mortgage after the application.",
+    "title": "The mortgage after",
+    "accent": "the application.",
+    "description": "A guide to affordability, renewal scenarios, and the evidence that connects an origination decision to the years that follow."
+  },
+  {
+    "slug": "research/two-risks-in-auto-finance",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/affordability-in-motion",
+      "blog/monitoring-without-the-noise",
+      "research/mortgage-after-the-application"
+    ],
+    "label": "Two risks inside every auto loan.",
+    "title": "Two risks inside",
+    "accent": "every auto loan.",
+    "description": "An auto-finance report on the interaction between payment capacity, vehicle exposure, and the measurement of realized loss."
+  },
+  {
+    "slug": "research/one-sale-many-records",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/evidence-before-intelligence",
+      "blog/embedded-finance-context",
+      "blog/event-driven-risk-workflows"
+    ],
+    "label": "One sale. Many records. One financial truth.",
+    "title": "One sale. Many records.",
+    "accent": "One financial truth.",
+    "description": "A whitepaper on evidence architecture for embedded finance: reconciliation, data coverage, and the boundaries of an API response."
+  },
+  {
+    "slug": "research/underwrite-the-connected-business",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/follow-the-receipts",
+      "research/evidence-before-intelligence",
+      "blog/underwriting-to-monitoring"
+    ],
+    "label": "Underwrite the connected business.",
+    "title": "Underwrite the",
+    "accent": "connected business.",
+    "description": "A business-lending guide to cash conversion, financing capacity, and the relationships behind the balance sheet."
+  },
+  {
+    "slug": "research/affordability-in-motion",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/mortgage-after-the-application",
+      "research/two-risks-in-auto-finance",
+      "blog/from-snapshot-to-signal"
+    ],
+    "label": "Affordability is a moving picture.",
+    "title": "Affordability",
+    "accent": "is a moving picture.",
+    "description": "A consumer-credit whitepaper on income timing, financial buffers, and evidence-led review as household circumstances change."
+  },
+  {
+    "slug": "industry-guides/consumer-personal",
+    "label": "Consumer Personal",
+    "title": "Consumer Personal.",
+    "accent": "Affordability beyond a balance.",
+    "description": "An implementation guide to personal-loan underwriting and monitoring: income quality, recurring obligations, liquidity and reviewable financial change.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/affordability-in-motion",
+      "industry-guides/consumer-auto",
+      "industry-guides/consumer-rent"
+    ]
+  },
+  {
+    "slug": "industry-guides/consumer-auto",
+    "label": "Consumer Auto",
+    "title": "Consumer Auto.",
+    "accent": "See the borrower and the vehicle.",
+    "description": "A complete guide to auto-finance evidence, payment capacity, vehicle exposure, negative equity, monitoring and a measurable AMLOK implementation.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/two-risks-in-auto-finance",
+      "industry-guides/consumer-personal",
+      "industry-guides/alternative-lenders"
+    ]
+  },
+  {
+    "slug": "industry-guides/consumer-mortgage",
+    "label": "Consumer Mortgage",
+    "title": "Consumer Mortgage.",
+    "accent": "Understand the years after approval.",
+    "description": "A mortgage-lending guide to verified income, housing obligations, collateral, renewal scenarios and continuous risk assessment with AMLOK.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/mortgage-after-the-application",
+      "industry-guides/consumer-personal",
+      "industry-guides/alternative-lenders"
+    ]
+  },
+  {
+    "slug": "industry-guides/consumer-student",
+    "label": "Consumer Student",
+    "title": "Consumer Student.",
+    "accent": "Follow the transition into repayment.",
+    "description": "A student-lending guide to contract states, income transitions, assistance, repayment evidence and responsible use of AMLOK assessments.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/consumer-personal",
+      "research/affordability-in-motion",
+      "blog/designing-reviewable-ai"
+    ]
+  },
+  {
+    "slug": "industry-guides/consumer-rent",
+    "label": "Consumer Rent",
+    "title": "Consumer Rent.",
+    "accent": "Understand the household obligation.",
+    "description": "A rental-assessment guide to tenancy evidence, household affordability, payment continuity and source-backed monitoring with AMLOK.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/consumer-personal",
+      "industry-guides/consumer-mortgage",
+      "research/affordability-in-motion"
+    ]
+  },
+  {
+    "slug": "industry-guides/business-smb",
+    "label": "Business SMB",
+    "title": "Business SMB.",
+    "accent": "See how the business earns and pays.",
+    "description": "A small-business lending guide to reconciled revenue, cash conversion, owner relationships and ongoing monitoring with Insights and Signal.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/underwrite-the-connected-business",
+      "industry-guides/business-financing",
+      "industry-guides/business-commercial"
+    ]
+  },
+  {
+    "slug": "industry-guides/business-commercial",
+    "label": "Business Commercial",
+    "title": "Business Commercial.",
+    "accent": "Connect the group, facility and covenant.",
+    "description": "A commercial-lending guide to entity structures, facility availability, covenant evidence, collateral and ongoing financial review with AMLOK.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/business-smb",
+      "industry-guides/business-financing",
+      "research/evidence-before-intelligence"
+    ]
+  },
+  {
+    "slug": "industry-guides/business-financing",
+    "label": "Business Financing",
+    "title": "Business Financing.",
+    "accent": "Match the evidence to the structure.",
+    "description": "A guide to term loans, equipment finance, invoice finance and revolving credit: product-specific evidence, calculations and AMLOK workflows.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/business-smb",
+      "industry-guides/business-commercial",
+      "research/follow-the-receipts"
+    ]
+  },
+  {
+    "slug": "industry-guides/banks",
+    "label": "Banks",
+    "title": "Banks.",
+    "accent": "Bring evidence across the credit lifecycle.",
+    "description": "A bank implementation guide to underwriting evidence, portfolio monitoring, group exposure, governance and measurable adoption of AMLOK.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/business-commercial",
+      "industry-guides/credit-unions",
+      "research/evidence-before-intelligence"
+    ]
+  },
+  {
+    "slug": "industry-guides/credit-unions",
+    "label": "Credit Unions",
+    "title": "Credit Unions.",
+    "accent": "Keep member context in the assessment.",
+    "description": "A credit-union guide to connected member evidence, joint obligations, local concentration and practical AMLOK adoption by lending teams.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/banks",
+      "industry-guides/consumer-personal",
+      "industry-guides/business-smb"
+    ]
+  },
+  {
+    "slug": "industry-guides/alternative-lenders",
+    "label": "Alternative Lenders",
+    "title": "Alternative Lenders.",
+    "accent": "Make specialist credit explainable.",
+    "description": "A guide for non-bank lenders to product-specific assessments, contract evidence, portfolio segmentation and AMLOK monitoring.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/consumer-mortgage",
+      "industry-guides/business-financing",
+      "research/follow-the-receipts"
+    ]
+  },
+  {
+    "slug": "industry-guides/digital-lenders",
+    "label": "Digital Lenders",
+    "title": "Digital Lenders.",
+    "accent": "Make speed accountable to evidence.",
+    "description": "A digital-lending guide to application coverage, evidence quality, reviewable underwriting, API integration and ongoing AMLOK monitoring.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "blog/designing-reviewable-ai",
+      "industry-guides/embedded-finance",
+      "industry-guides/platforms"
+    ]
+  },
+  {
+    "slug": "industry-guides/embedded-finance",
+    "label": "Embedded Finance",
+    "title": "Embedded Finance.",
+    "accent": "Turn platform activity into financial context.",
+    "description": "An embedded-finance guide to commerce-to-cash reconciliation, merchant evidence, repayment structures and AMLOK integration.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/one-sale-many-records",
+      "industry-guides/platforms",
+      "research/follow-the-receipts"
+    ]
+  },
+  {
+    "slug": "industry-guides/platforms",
+    "label": "Platforms",
+    "title": "Platforms.",
+    "accent": "Make connected records mean the same thing.",
+    "description": "A platform guide to financial-data identity, reconciliation, freshness, versioning and the evidence infrastructure behind AMLOK assessments.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/embedded-finance",
+      "industry-guides/digital-lenders",
+      "blog/event-driven-risk-workflows"
+    ]
+  },
+  {
+    "slug": "industry-guides/trade-credit",
+    "label": "Trade Credit",
+    "title": "Trade Credit.",
+    "accent": "Understand the buyer behind the receivable.",
+    "description": "A trade-credit insurance guide to buyer identity, receivable aging, concentration, policy limits and evidence-led assessment with AMLOK.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "research/exposure-between-renewals",
+      "industry-guides/business-financing",
+      "industry-guides/surety"
+    ]
+  },
+  {
+    "slug": "industry-guides/surety",
+    "label": "Surety",
+    "title": "Surety.",
+    "accent": "Connect contractor capacity to the project.",
+    "description": "A surety guide to contractor financial evidence, work in progress, backlog, bonded obligations and AMLOK-supported monitoring.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/business-commercial",
+      "industry-guides/trade-credit",
+      "industry-guides/business-smb"
+    ]
+  },
+  {
+    "slug": "industry-guides/premium-finance",
+    "label": "Premium Finance",
+    "title": "Premium Finance.",
+    "accent": "Understand the obligation and the recovery.",
+    "description": "A premium-finance guide to agreement and policy matching, installments, recoverable premium, timing and AMLOK-supported assessment.",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "industry-guides/trade-credit",
+      "industry-guides/consumer-personal",
+      "industry-guides/business-financing"
+    ]
+  },
+  {
+    "slug": "industry-guides/merchant-cash-advance",
+    "title": "Merchant Cash Advance.",
+    "accent": "Underwrite the receipts. Understand the merchant.",
+    "description": "A Canada and US guide to merchant cash advance underwriting: financing statistics, receipt reconciliation, remittance capacity, worked examples and AMLOK monitoring workflows.",
+    "related": [
+      "research/follow-the-receipts",
+      "industry-guides/business-smb",
+      "industry-guides/embedded-finance"
+    ],
+    "label": "Merchant Cash Advance",
+    "visual": "graph",
+    "kind": "article",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": []
   }
 ]

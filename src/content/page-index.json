@@ -26,13 +26,13 @@
   {
     "path": "/products/underwriting",
     "title": "AMLOK Insights",
-    "description": "Turn fragmented borrower information into a connected credit assessment, with the evidence and policy context your team needs to make the final decision.",
+    "description": "Connect the applicant to the people, accounts, income, obligations, and counterparties that shape the deal. Give business, consumer, and insurance teams the context to make a well-informed decision.",
     "category": "products"
   },
   {
     "path": "/products/portfolio-monitoring",
     "title": "AMLOK Signal",
-    "description": "Follow changing financial conditions after origination. Connect new signals to the baseline, evidence, and borrower relationships that explain them.",
+    "description": "Follow changing cash flow, obligations, and financial relationships after the original decision. AMLOK Signal connects new evidence to the underwriting baseline so your team can review what matters.",
     "category": "products"
   },
   {
@@ -44,13 +44,13 @@
   {
     "path": "/platform/risk-simulation",
     "title": "Risk simulation",
-    "description": "Bring evidence, policy assumptions, and portfolio context together before deciding how to respond to changing conditions.",
+    "description": "Explore how changing income, costs, payment timing, and connected exposure could affect a financial assessment. Keep the evidence, assumptions, and trade-offs visible before your team decides.",
     "category": "platform"
   },
   {
     "path": "/solutions",
-    "title": "Use cases",
-    "description": "Explore the work that connected risk intelligence can support, from the first application to a changing portfolio.",
+    "title": "All use cases",
+    "description": "Explore seven ways connected risk intelligence can support your team—from resolving identity and understanding cash flow to underwriting, monitoring, simulation, and servicing reviews.",
     "category": "solutions"
   },
   {
@@ -62,13 +62,13 @@
   {
     "path": "/modules/verification-onboarding",
     "title": "Verification & onboarding",
-    "description": "Connect applicant, business, ownership, and financial evidence before the underwriting starts.",
+    "description": "Connect applicant, business, relationship, and authorized financial evidence. Keep verification outcomes and unresolved requirements visible throughout onboarding.",
     "category": "modules"
   },
   {
     "path": "/modules/white-label-experiences",
     "title": "White-label experiences",
-    "description": "Keep the borrower experience familiar while bringing authorized financial connections and evidence into your AMLOK workflow.",
+    "description": "Bring authorized financial evidence into your branded customer journey, with clear connection handoffs, confirmed statuses, and recovery paths.",
     "category": "modules"
   },
   {
@@ -110,7 +110,7 @@
   {
     "path": "/manifesto",
     "title": "Our manifesto",
-    "description": "We believe financial decisions deserve the context of a changing financial life—not just the snapshot that was easiest to collect.",
+    "description": "We are building a connected understanding of financial life, so institutions can see how risk changes, act with greater clarity, and put capital to work with confidence.",
     "category": "manifesto"
   },
   {
@@ -134,13 +134,13 @@
   {
     "path": "/whitepapers",
     "title": "Whitepapers",
-    "description": "Explore the ideas behind connected risk intelligence, from financial relationships and borrower behaviour to the evidence that supports a better-informed decision. Preview our upcoming whitepapers.",
+    "description": "Evidence-led perspectives on connected financial data, changing exposure, and household affordability. Read the methods, inspect the diagrams, and follow the sources.",
     "category": "whitepapers"
   },
   {
     "path": "/industry-guides",
     "title": "Industry Guides",
-    "description": "Look closer at the cash flows, obligations, and changing conditions that shape each lending market. Explore our upcoming guides for merchant cash advance, mortgage, and business lending.",
+    "description": "18 comprehensive AMLOK industry guides with market data, financial examples, evidence requirements and implementation plans.",
     "category": "industry-guides"
   },
   {
@@ -157,74 +157,74 @@
   },
   {
     "path": "/blog/from-snapshot-to-signal",
-    "title": "From a snapshot to a living baseline.",
-    "description": "Why monitoring begins with a clear account of what was known at underwriting.",
+    "title": "Before the signal, save the baseline.",
+    "description": "Why monitoring needs a versioned account of what was known, when it was known, and how it was interpreted.",
     "category": "blog"
   },
   {
     "path": "/blog/read-the-cash-flow",
-    "title": "Read the cash flow. Understand the movement.",
-    "description": "Why a deposit is a starting point for analysis, rather than the answer to an income question.",
+    "title": "A deposit is not always revenue.",
+    "description": "How financing, transfers, and settlement adjustments can change the story a bank balance seems to tell.",
     "category": "blog"
   },
   {
     "path": "/blog/designing-reviewable-ai",
-    "title": "Build intelligence people can review.",
-    "description": "Evidence, uncertainty, and human ownership are design requirements for a useful risk workflow.",
+    "title": "The answer is only as strong as the evidence it found.",
+    "description": "What AMLOK’s financial-document retrieval experiment teaches about reviewable AI.",
     "category": "blog"
   },
   {
     "path": "/industries/consumer-lending",
     "title": "Consumer lending",
-    "description": "Bring permissioned financial evidence, verification results and ongoing risk signals into a connected view of consumer credit. Support your lending team's assessment from application through the life of the relationship.",
+    "description": "Connect permitted income, financial activity, and contractual obligations to understand the household behind the application. Keep the evidence relevant to the credit product—and the decision with your team.",
     "category": "industries"
   },
   {
     "path": "/industries/business-lending",
     "title": "Business lending",
-    "description": "Connect banking, accounting, payments and lender-supplied records to understand how a business earns, spends and meets its commitments. Keep underwriting and monitoring tied to the evidence behind each finding.",
+    "description": "Follow how a business earns, collects, spends, and meets its obligations. Connect financial records and supported relationships so the assessment reflects the operating reality behind the application.",
     "category": "industries"
   },
   {
     "path": "/industries/financial-institutions",
     "title": "Financial institutions",
-    "description": "Bring a consistent evidence foundation to underwriting, monitoring and investigation. AMLOK supports the risk workflow while your institution retains its policies, governance and decision authority.",
+    "description": "Build a consistent evidence foundation across the portfolios your institution manages. Bring underwriting, monitoring, and review into a connected workflow while retaining your policies and governance.",
     "category": "industries"
   },
   {
     "path": "/industries/fintech",
     "title": "Fintech",
-    "description": "Bring verification, underwriting evidence and portfolio signals into your digital lending workflow. Use a consistent API model while keeping the customer experience and final decision in your hands.",
+    "description": "Bring permissioned financial evidence into digital lending and platform journeys. Keep the customer experience in your product, with a clear handoff from source records to assessment and ongoing review.",
     "category": "industries"
   },
   {
     "path": "/industries/insurtech",
     "title": "Insurtech",
-    "description": "Explore connected risk assessment for trade credit, surety and premium-finance workflows. Bring business financial evidence and changing exposure signals into the team's underwriting review.",
+    "description": "Bring connected financial evidence to trade credit, surety, and premium-finance reviews. Understand the counterparty, contractual obligations, and changing conditions without losing the structure of the underlying exposure.",
     "category": "industries"
   },
   {
     "path": "/solutions/cash-flow-intelligence",
     "title": "Cash-flow intelligence",
-    "description": "Understand how money moves, with the evidence behind every measure. Connect authorized bank, payment and accounting records to assess financial activity over a defined period.",
+    "description": "Turn authorized banking, payment, commerce, and accounting records into a financial view your team can inspect. Reconcile the movement before measuring income, liquidity, and repayment capacity.",
     "category": "solutions"
   },
   {
     "path": "/solutions/entity-fraud-resolution",
     "title": "Entity & fraud resolution",
-    "description": "Connect identity, relationships and financial evidence to investigate the signals that deserve a closer look. Give reviewers the context behind a possible match or inconsistency.",
+    "description": "Bring identity, ownership, transaction, and document evidence into the same review. Understand which records belong together, where they disagree, and what needs further investigation.",
     "category": "solutions"
   },
   {
     "path": "/solutions/decision-automation",
     "title": "Decision automation",
-    "description": "Make repeatable risk workflows part of your decision process. Coordinate evidence, approved policy configuration and assessment outputs while retaining clear review and approval boundaries.",
+    "description": "Coordinate evidence readiness, approved workflow configuration, and reviewable assessments. Give repeatable analytical work a clear path while keeping exceptions and institutional authority visible.",
     "category": "solutions"
   },
   {
     "path": "/solutions/borrower-servicing-collections",
-    "title": "Borrower servicing & collections",
-    "description": "Give servicing teams a current view of borrower risk. Connect monitored financial changes with lender-supplied loan and repayment evidence so the team can review the right context before taking action.",
+    "title": "Servicing & collections",
+    "description": "Bring current financial evidence, the original assessment, and lender-supplied repayment context into servicing reviews. Help your team understand what changed before deciding how to respond.",
     "category": "solutions"
   },
   {
@@ -289,20 +289,20 @@
   },
   {
     "path": "/privacy",
-    "title": "Privacy",
-    "description": "How AMLOK approaches website enquiries and authorized financial-data processing.",
+    "title": "Privacy Policy",
+    "description": "How AMLOK handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
     "category": "privacy"
   },
   {
     "path": "/cookies",
-    "title": "Cookies & preferences",
-    "description": "Understand the preferences this website stores and how to manage them.",
+    "title": "Cookies Policy",
+    "description": "Learn about AMLOK website language storage, Cal.com scheduling, external services, and browser controls.",
     "category": "cookies"
   },
   {
     "path": "/terms",
-    "title": "Terms of business",
-    "description": "A guide to the agreements, authorized use, and responsibilities that govern an AMLOK relationship.",
+    "title": "Terms of Business",
+    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an AMLOK relationship.",
     "category": "terms"
   },
   {
@@ -349,38 +349,194 @@
   },
   {
     "path": "/blog/risk-is-a-relationship",
-    "title": "See the connections. Understand the risk.",
-    "description": "Why the connections between borrowers, accounts, and obligations matter as much as the records themselves.",
+    "title": "A connection is not a conclusion.",
+    "description": "What a risk graph should preserve before a relationship becomes evidence in a financial decision.",
     "category": "blog"
   },
   {
     "path": "/blog/monitoring-without-the-noise",
-    "title": "Less noise. More useful signals.",
-    "description": "Design monitoring around meaningful changes, clear evidence, and a team that knows what happens next.",
+    "title": "An alert is a cost. Make it earn the review.",
+    "description": "Why rare events, false positives, and review capacity belong in the design of a monitoring system.",
     "category": "blog"
   },
   {
     "path": "/blog/cash-flow-for-merchant-finance",
-    "title": "Merchant receipts need a little more context.",
-    "description": "A practical perspective on sales, settlements, refunds, and the timing behind merchant cash flow.",
+    "title": "When sales rise but cash does not.",
+    "description": "A settlement bridge can explain the gap between a merchant’s activity and the money available to operate.",
     "category": "blog"
   },
   {
     "path": "/blog/underwriting-to-monitoring",
-    "title": "The decision is a moment. The relationship continues.",
-    "description": "Carry the assumptions behind underwriting into the monitoring that follows funding.",
+    "title": "The credit memo should have a memory.",
+    "description": "Carry the assumptions behind approval into a monitoring process that can revisit them.",
     "category": "blog"
   },
   {
     "path": "/blog/event-driven-risk-workflows",
-    "title": "Every event needs a clear next step.",
-    "description": "How to design evidence-led automation without losing ownership, review, or the history of a decision.",
+    "title": "Every event needs an accountable next step.",
+    "description": "How to connect evidence, workflow state, and institutional ownership without turning every signal into an automatic decision.",
     "category": "blog"
   },
   {
     "path": "/blog/embedded-finance-context",
-    "title": "One connection. A fuller borrower picture.",
-    "description": "What an embedded financial-data experience should preserve beyond the initial connection.",
+    "title": "Connected does not mean complete.",
+    "description": "What an embedded financial-data experience needs to preserve after the user finishes connecting an account.",
     "category": "blog"
+  },
+  {
+    "path": "/research/evidence-before-intelligence",
+    "category": "research",
+    "title": "Evidence before intelligence: building a foundational risk graph.",
+    "description": "A transparent account of AMLOK’s public-data experiments, the measurements they support, and the work still required for lending decisions."
+  },
+  {
+    "path": "/research/follow-the-receipts",
+    "category": "research",
+    "title": "Follow the receipts. Understand merchant resilience.",
+    "description": "A merchant cash advance guide to settlement timing, recurring cash generation, and contract-aware stress testing."
+  },
+  {
+    "path": "/research/exposure-between-renewals",
+    "category": "research",
+    "title": "Exposure changes. The policy needs context.",
+    "description": "A whitepaper on connected evidence for trade credit insurance, from buyer concentration to invoice-level review."
+  },
+  {
+    "path": "/research/mortgage-after-the-application",
+    "category": "research",
+    "title": "The mortgage after the application.",
+    "description": "A guide to affordability, renewal scenarios, and the evidence that connects an origination decision to the years that follow."
+  },
+  {
+    "path": "/research/two-risks-in-auto-finance",
+    "category": "research",
+    "title": "Two risks inside every auto loan.",
+    "description": "An auto-finance report on the interaction between payment capacity, vehicle exposure, and the measurement of realized loss."
+  },
+  {
+    "path": "/research/one-sale-many-records",
+    "category": "research",
+    "title": "One sale. Many records. One financial truth.",
+    "description": "A whitepaper on evidence architecture for embedded finance: reconciliation, data coverage, and the boundaries of an API response."
+  },
+  {
+    "path": "/research/underwrite-the-connected-business",
+    "category": "research",
+    "title": "Underwrite the connected business.",
+    "description": "A business-lending guide to cash conversion, financing capacity, and the relationships behind the balance sheet."
+  },
+  {
+    "path": "/research/affordability-in-motion",
+    "category": "research",
+    "title": "Affordability is a moving picture.",
+    "description": "A consumer-credit whitepaper on income timing, financial buffers, and evidence-led review as household circumstances change."
+  },
+  {
+    "path": "/industry-guides/consumer-personal",
+    "category": "industry-guides",
+    "title": "Consumer Personal. Affordability beyond a balance.",
+    "description": "An implementation guide to personal-loan underwriting and monitoring: income quality, recurring obligations, liquidity and reviewable financial change."
+  },
+  {
+    "path": "/industry-guides/consumer-auto",
+    "category": "industry-guides",
+    "title": "Consumer Auto. See the borrower and the vehicle.",
+    "description": "A complete guide to auto-finance evidence, payment capacity, vehicle exposure, negative equity, monitoring and a measurable AMLOK implementation."
+  },
+  {
+    "path": "/industry-guides/consumer-mortgage",
+    "category": "industry-guides",
+    "title": "Consumer Mortgage. Understand the years after approval.",
+    "description": "A mortgage-lending guide to verified income, housing obligations, collateral, renewal scenarios and continuous risk assessment with AMLOK."
+  },
+  {
+    "path": "/industry-guides/consumer-student",
+    "category": "industry-guides",
+    "title": "Consumer Student. Follow the transition into repayment.",
+    "description": "A student-lending guide to contract states, income transitions, assistance, repayment evidence and responsible use of AMLOK assessments."
+  },
+  {
+    "path": "/industry-guides/consumer-rent",
+    "category": "industry-guides",
+    "title": "Consumer Rent. Understand the household obligation.",
+    "description": "A rental-assessment guide to tenancy evidence, household affordability, payment continuity and source-backed monitoring with AMLOK."
+  },
+  {
+    "path": "/industry-guides/business-smb",
+    "category": "industry-guides",
+    "title": "Business SMB. See how the business earns and pays.",
+    "description": "A small-business lending guide to reconciled revenue, cash conversion, owner relationships and ongoing monitoring with Insights and Signal."
+  },
+  {
+    "path": "/industry-guides/business-commercial",
+    "category": "industry-guides",
+    "title": "Business Commercial. Connect the group, facility and covenant.",
+    "description": "A commercial-lending guide to entity structures, facility availability, covenant evidence, collateral and ongoing financial review with AMLOK."
+  },
+  {
+    "path": "/industry-guides/business-financing",
+    "category": "industry-guides",
+    "title": "Business Financing. Match the evidence to the structure.",
+    "description": "A guide to term loans, equipment finance, invoice finance and revolving credit: product-specific evidence, calculations and AMLOK workflows."
+  },
+  {
+    "path": "/industry-guides/banks",
+    "category": "industry-guides",
+    "title": "Banks. Bring evidence across the credit lifecycle.",
+    "description": "A bank implementation guide to underwriting evidence, portfolio monitoring, group exposure, governance and measurable adoption of AMLOK."
+  },
+  {
+    "path": "/industry-guides/credit-unions",
+    "category": "industry-guides",
+    "title": "Credit Unions. Keep member context in the assessment.",
+    "description": "A credit-union guide to connected member evidence, joint obligations, local concentration and practical AMLOK adoption by lending teams."
+  },
+  {
+    "path": "/industry-guides/alternative-lenders",
+    "category": "industry-guides",
+    "title": "Alternative Lenders. Make specialist credit explainable.",
+    "description": "A guide for non-bank lenders to product-specific assessments, contract evidence, portfolio segmentation and AMLOK monitoring."
+  },
+  {
+    "path": "/industry-guides/digital-lenders",
+    "category": "industry-guides",
+    "title": "Digital Lenders. Make speed accountable to evidence.",
+    "description": "A digital-lending guide to application coverage, evidence quality, reviewable underwriting, API integration and ongoing AMLOK monitoring."
+  },
+  {
+    "path": "/industry-guides/embedded-finance",
+    "category": "industry-guides",
+    "title": "Embedded Finance. Turn platform activity into financial context.",
+    "description": "An embedded-finance guide to commerce-to-cash reconciliation, merchant evidence, repayment structures and AMLOK integration."
+  },
+  {
+    "path": "/industry-guides/platforms",
+    "category": "industry-guides",
+    "title": "Platforms. Make connected records mean the same thing.",
+    "description": "A platform guide to financial-data identity, reconciliation, freshness, versioning and the evidence infrastructure behind AMLOK assessments."
+  },
+  {
+    "path": "/industry-guides/trade-credit",
+    "category": "industry-guides",
+    "title": "Trade Credit. Understand the buyer behind the receivable.",
+    "description": "A trade-credit insurance guide to buyer identity, receivable aging, concentration, policy limits and evidence-led assessment with AMLOK."
+  },
+  {
+    "path": "/industry-guides/surety",
+    "category": "industry-guides",
+    "title": "Surety. Connect contractor capacity to the project.",
+    "description": "A surety guide to contractor financial evidence, work in progress, backlog, bonded obligations and AMLOK-supported monitoring."
+  },
+  {
+    "path": "/industry-guides/premium-finance",
+    "category": "industry-guides",
+    "title": "Premium Finance. Understand the obligation and the recovery.",
+    "description": "A premium-finance guide to agreement and policy matching, installments, recoverable premium, timing and AMLOK-supported assessment."
+  },
+  {
+    "path": "/industry-guides/merchant-cash-advance",
+    "category": "industry-guides",
+    "title": "Merchant Cash Advance. Underwrite the receipts. Understand the merchant.",
+    "description": "A Canada and US guide to merchant cash advance underwriting: financing statistics, receipt reconciliation, remittance capacity, worked examples and AMLOK monitoring workflows."
   }
 ]

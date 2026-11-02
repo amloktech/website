@@ -458,30 +458,42 @@
       "dateTime": "2026-10"
     }
   ],
-  "today": [
-    {
-      "type": "paragraph",
-      "text": "AMLOK is building AI-native risk intelligence infrastructure for financial institutions, helping lenders understand borrowers, uncover connected financial relationships, identify emerging risks and continuously monitor lending portfolios."
+  "today": {
+    "introduction": "AMLOK is building AI-native risk intelligence infrastructure for financial institutions, helping lenders understand borrowers, uncover connected financial relationships, identify emerging risks and continuously monitor lending portfolios.",
+    "platform": {
+      "title": "Connected intelligence across the lifecycle",
+      "description": "From initial assessment and underwriting to ongoing portfolio management, the platform brings together:",
+      "items": [
+        "Entity resolution",
+        "Transaction enrichment",
+        "Explainable risk intelligence",
+        "Continuous portfolio monitoring"
+      ]
     },
-    {
-      "type": "paragraph",
-      "text": "The platform combines entity resolution, transaction enrichment, explainable risk intelligence and continuous monitoring to improve visibility throughout the lending lifecycle, from initial assessment and underwriting to ongoing portfolio management."
+    "milestones": {
+      "title": "Commercial momentum",
+      "description": "Milestones reached as of October 2026:",
+      "items": [
+        "Customers live in production",
+        "First external investment from LvlUp Ventures",
+        "An expanding institutional pipeline",
+        "Participation in Canadian financial innovation and lending ecosystems"
+      ]
     },
-    {
-      "type": "paragraph",
-      "text": "As of October 2026, AMLOK has reached several important commercialization milestones, including its first signed customer, its first external investment from LvlUp Ventures, an expanding institutional pipeline and participation in Canadian financial innovation and lending ecosystems."
+    "evolution": {
+      "title": "How we got here",
+      "paragraphs": [
+        "AMLOK began with real estate tokenization and real-world yield in 2022, then evolved through alternative SMB financing, community-powered crowdfunding, and AI-driven fundability intelligence.",
+        "By 2026, that journey had led to institutional risk intelligence infrastructure."
+      ]
     },
-    {
-      "type": "paragraph",
-      "text": "What began with real estate tokenization and real-world yield in 2022 evolved through alternative SMB financing, community-powered crowdfunding and AI-driven fundability intelligence before becoming institutional risk intelligence infrastructure in 2026."
-    },
-    {
-      "type": "paragraph",
-      "text": "The mission has remained consistent: improving how capital is accessed, allocated and managed."
-    },
-    {
-      "type": "paragraph",
-      "text": "By moving from directly facilitating financing to strengthening the intelligence behind financial decisions, AMLOK aims to support more borrowers at scale while helping financial institutions make better-informed decisions, manage risk proactively and build stronger, more sustainable lending relationships."
+    "purpose": {
+      "title": "One consistent purpose",
+      "statement": "Improving how capital is accessed, allocated, and managed.",
+      "paragraphs": [
+        "Our focus has evolved from directly facilitating financing to strengthening the intelligence behind financial decisions.",
+        "Through that work, AMLOK aims to support more borrowers at scale and help financial institutions make better-informed decisions, manage risk proactively, and build stronger, more sustainable lending relationships."
+      ]
     }
-  ]
+  }
 }
