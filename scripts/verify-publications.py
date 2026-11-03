@@ -1,6 +1,6 @@
 """Audit publication citations, data figures, routes, and worked calculations.
 
-Evidence fixtures are unmodified public AMLOK result manifests retrieved on
+Evidence fixtures are unmodified public Amlok result manifests retrieved on
 2026-11-02 from the source URLs cited in the featured report. They preserve the
 publication's measurement snapshot; this audit does not rerun the experiments.
 """
@@ -47,7 +47,7 @@ for p in PUBLICATIONS:
     if p['format'] == 'Article':
         post = next(b for b in BLOGS if 'blog/' + b['slug'] == p['slug'])
         assert post['title'] == p['title'] + ' ' + p['accent']
-        assert post['author'] == 'AMLOK'
+        assert post['author'] == 'Amlok'
 
 # Check plotted measurements against the downloaded source manifests.
 sba = json.loads((ROOT / 'scripts/fixtures/publication-evidence/sba-baseline-results.json').read_text())

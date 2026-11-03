@@ -21,16 +21,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blogPost = blogPosts.find(post => page.slug === `blog/${post.slug}`);
   const socialImage = publication ? `/images/publications/${publication.slug.split('/').pop()}.png` : '/images/amlok-social-card.png';
   return {
-    title: `${publication ? `${publication.title} ${publication.accent}` : blogPost?.title || page.label} | AMLOK`,
+    title: `${publication ? `${publication.title} ${publication.accent}` : blogPost?.title || page.label} | Amlok`,
     description: page.description,
-    ...(publication ? { authors: [{ name: 'AMLOK', url: siteOrigin }] } : {}),
+    ...(publication ? { authors: [{ name: 'Amlok', url: siteOrigin }] } : {}),
     alternates: { canonical: `/${page.slug}` },
     openGraph: {
       title: `${page.title} ${page.accent}`, description: page.description,
       type: page.kind === 'article' ? 'article' : 'website',
-      ...(publication ? { authors: ['AMLOK'] } : {}),
+      ...(publication ? { authors: ['Amlok'] } : {}),
       url: new URL(`/${page.slug}`, siteOrigin).href,
-      images: [{ url: socialImage, width: 1200, height: 630, alt: publication ? `${publication.title} ${publication.accent}` : 'AMLOK: Infrastructure for risk intelligence' }],
+      images: [{ url: socialImage, width: 1200, height: 630, alt: publication ? `${publication.title} ${publication.accent}` : 'Amlok: Infrastructure for risk intelligence' }],
     },
     twitter: { card: 'summary_large_image', images: [socialImage] },
   };

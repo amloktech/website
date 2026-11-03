@@ -3,7 +3,7 @@
 import { useSiteLanguage } from '@/lib/use-site-language';
 import { usePathname } from 'next/navigation';
 import { Github, Globe, Linkedin, Mail } from 'lucide-react';
-import { Wordmark } from './ui';
+import { BrandText, Wordmark } from './ui';
 import { solutionProducts, solutionModules, solutionIndustries, solutionUseCases } from './solutions-menu';
 import { developerGroups } from './developers-menu';
 import { resourceGroups } from './resources-menu';
@@ -27,12 +27,12 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
   const [language,setLanguage]=useSiteLanguage();
   if(pathname.startsWith('/brand'))return null;
   const pageUrl=`${siteOrigin}${pathname}`;
-  const prompt=encodeURIComponent(`Please read ${pageUrl} and summarise this page for me. Explain what AMLOK is, what this page covers, who it is for, the products and pricing described, and how a developer can integrate it. Cite the URL in your answer.`);
-  return <footer className="site-footer" aria-label="AMLOK footer">
+  const prompt=encodeURIComponent(`Please read ${pageUrl} and summarise this page for me. Explain what Amlok is, what this page covers, who it is for, the products and pricing described, and how a developer can integrate it. Cite the URL in your answer.`);
+  return <footer className="site-footer" aria-label="Amlok footer">
     <div className="site-footer-summary"><div className="site-footer-inner"><p>Ask an AI to summarise this page</p><div className="site-footer-ai">{providers.map(({name,url,logo})=><a key={name} href={`${url}${prompt}`} target="_blank" rel="noopener noreferrer" aria-label={`Summarise this page with ${name}`} title={name}><img src={`/${logo}-logo.svg`} width={20} height={20} alt="" aria-hidden="true"/></a>)}</div></div></div>
     <div className="site-footer-inner">
       <div className="site-footer-primary">
-        <div className="site-footer-identity"><a className="site-footer-logo" href="/" aria-label="AMLOK home"><Wordmark/></a><p className="site-footer-tagline">Infrastructure for risk intelligence.</p><p>Continuously connecting entities, transactions, and relationships across the credit lifecycle.</p><div className="site-footer-partners">
+        <div className="site-footer-identity"><a className="site-footer-logo" href="/" aria-label="Amlok home"><Wordmark/></a><p className="site-footer-tagline">Infrastructure for risk intelligence.</p><p>Continuously connecting entities, transactions, and relationships across the credit lifecycle.</p><div className="site-footer-partners">
           <h2>Backed by</h2>
           <div className="site-footer-partner-logos">
             <img src="/images/partners/lvlup-ventures.png" alt="LvlUp Ventures" width={380} height={38}/>
@@ -59,6 +59,6 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
         <FooterGroup title="Company" links={[...resourceGroups[1].links,{label:'Brand Kit',href:'/brand'},{label:'Site map',href:'/site-map'}]}/>
       </div>
     </div>
-    <div className="site-footer-bottom"><div className="site-footer-inner"><div className="site-footer-legal"><span>© 2026 AMLOK</span><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms of business</a><a href="/contact">Contact</a></div><div className="site-footer-controls"><a href="https://www.linkedin.com/company/amlok" aria-label="AMLOK on LinkedIn" title="LinkedIn"><Linkedin size={20} aria-hidden="true"/></a><a href="https://github.com/amloktech" aria-label="AMLOK on GitHub" title="GitHub"><Github size={20} aria-hidden="true"/></a><label className="site-footer-language"><Globe size={19} aria-hidden="true"/><select aria-label="Footer language" value={language} onChange={event=>setLanguage(event.target.value)}><option value="English">English</option><option value="Français">Français</option></select></label></div></div></div>
+    <div className="site-footer-bottom"><div className="site-footer-inner"><div className="site-footer-legal"><BrandText>© 2026 Amlok</BrandText><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms of business</a><a href="/contact">Contact</a></div><div className="site-footer-controls"><a href="https://www.linkedin.com/company/amlok" aria-label="Amlok on LinkedIn" title="LinkedIn"><Linkedin size={20} aria-hidden="true"/></a><a href="https://github.com/amloktech" aria-label="Amlok on GitHub" title="GitHub"><Github size={20} aria-hidden="true"/></a><label className="site-footer-language"><Globe size={19} aria-hidden="true"/><select aria-label="Footer language" value={language} onChange={event=>setLanguage(event.target.value)}><option value="English">English</option><option value="Français">Français</option></select></label></div></div></div>
   </footer>;
 }

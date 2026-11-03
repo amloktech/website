@@ -1,4 +1,4 @@
-"""Create original, editable AMLOK editorial illustrations for the journal.
+"""Create original, editable Amlok editorial illustrations for the journal.
 
 Cover quantities labelled illustrative are worked examples, not customer data.
 Run after editing article metadata: python3 scripts/generate-blog-covers.py
@@ -29,7 +29,7 @@ def art(index):
   for i,(a,b) in enumerate([('01','BASELINE'),('02','EVIDENCE'),('03','REVIEW')]):
    x=690+i*185;p+=f'<circle cx="{x}" cy="350" r="14" fill="#275fff"/>'+text(x-26,305,a,26,weight=600)+text(x-35,403,b,12)
   return p+rect(685,175,390,64)+text(705,215,'Event time  +  knowledge time',20,weight=600)
- if index==2:return bar(665,240,360*.739,'MEAN RECALL@5','73.90%')+bar(665,345,360*.6181,'COMPLETE EVIDENCE@5','61.81%')+text(665,440,'MEASURED · FINQA / BM25',13)+text(665,468,'1,147 questions · AMLOK research 0.3',15)
+ if index==2:return bar(665,240,360*.739,'MEAN RECALL@5','73.90%')+bar(665,345,360*.6181,'COMPLETE EVIDENCE@5','61.81%')+text(665,440,'MEASURED · FINQA / BM25',13)+text(665,468,'1,147 questions · Amlok research 0.3',15)
  if index==3:
   p=rect(680,155,360,340)+text(708,200,'CASH INFLOWS',14,weight=600)
   for i,(a,b) in enumerate([('Customer receipts','50,000'),('Financing','20,000'),('Internal transfer','15,000')]):p+=line(704,225+i*67,1013,225+i*67,'#d4def1')+text(708,261+i*67,a,18)+text(929,261+i*67,b,18,weight=600)
@@ -55,13 +55,13 @@ for i,post in enumerate(POSTS):
  title=' '.join(LINES[i]);subtitle=post['topic'].upper()
  main=''.join(text(58,265+n*57,line,46,'#0b2482',600) for n,line in enumerate(LINES[i]))
  svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
-<title>AMLOK: {escape(post['title'])}</title><desc>Original blue editorial illustration for {escape(post['topic'])}. {escape(title)}. Quantitative examples are labelled in the artwork and explained in the article.</desc>
+<title>Amlok: {escape(post['title'])}</title><desc>Original blue editorial illustration for {escape(post['topic'])}. {escape(title)}. Quantitative examples are labelled in the artwork and explained in the article.</desc>
 <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f0f5ff"/><stop offset="1" stop-color="#cadcff"/></linearGradient><linearGradient id="blue" x2="1" y2="1"><stop stop-color="#2867ff"/><stop offset="1" stop-color="#0b269e"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#8ba8e8" stroke-opacity=".12"/></pattern></defs>
 <rect width="1200" height="650" fill="url(#bg)"/><rect width="1200" height="650" fill="url(#grid)"/><circle cx="1070" cy="170" r="380" fill="#fff" opacity=".22"/>
 <svg x="58" y="44" width="126" height="24" viewBox="4.125 17.449 158.973 29.553" fill="#0d299c">{PATHS}</svg>
 {text(938,62,f'JOURNAL / {i+1:02}',13)}
 {text(58,194,subtitle,12,weight=600)}{main}
-{text(58,572,'AMLOK PERSPECTIVES',12)}
+{text(58,572,'Amlok PERSPECTIVES',12)}
 {art(i)}<path d="M1108 570L1140 538M1108 538H1140V570" stroke="#153b9c" fill="none" stroke-width="2"/>
 </svg>'''
  (ROOT/'public'/post['image'].lstrip('/')).write_text(svg)

@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* The written name keeps its capitalization, even inside uppercase labels. */
+.brand-name { text-transform: none; }
+
 @theme {
   --font-sans: 'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;

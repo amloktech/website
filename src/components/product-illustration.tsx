@@ -15,25 +15,25 @@ export const illustrationDescriptions = {
   financial: 'Fragmented transaction records are reconciled into one structured financial record.',
   decision: 'Evidence passes through a policy gate, with an exception routed to the credit team.',
   simulation: 'A portfolio and its digital twin are compared side by side, with a changed scenario isolated in a raised cobalt plane.',
-  customer: 'The institution’s customer experience sits above the connected AMLOK operating layers.',
+  customer: 'The institution’s customer experience sits above the connected Amlok operating layers.',
   browser: 'A browser agent selects an application field and carries its source-linked evidence into a review.',
-  embedded: 'An AMLOK connection widget scrolls through one list of Canadian banks and business integrations: TD, RBC, Scotiabank, BMO, CIBC, National Bank, Stripe, Shopify, QuickBooks, Square, Xero, and PayPal.',
+  embedded: 'An Amlok connection widget scrolls through one list of Canadian banks and business integrations: TD, RBC, Scotiabank, BMO, CIBC, National Bank, Stripe, Shopify, QuickBooks, Square, Xero, and PayPal.',
   workflow: 'An agent workflow branches between evidence requests and a human approval step.',
   api: 'Raw transaction strings pass through a structured API boundary and emerge as labeled data.',
   'connected-risk': 'Northstar Foods is connected to its bank account, payment processor, registry, principal, related company, and a newly identified debt obligation.',
   'event-automations': 'Three connected notifications show a portfolio alert being created, supporting evidence collected, and the analyst notified.',
   'explainable-signals': 'An illustrative revenue deterioration signal links a risk score of 68 to three source records, contributing factors, confidence, and a manual policy review.',
   'behaviour-insights': 'Illustrative live operating behavior diverges from a 90-day baseline, with payment timing, transfer velocity, and new beneficiaries linked to an early warning and signal timeline.',
-  'lifecycle-api': 'One AMLOK API connects application, identity and entity, data connections, underwriting, capital deployed, continuous monitoring, risk signals, and decision package.',
+  'lifecycle-api': 'One Amlok API connects application, identity and entity, data connections, underwriting, capital deployed, continuous monitoring, risk signals, and decision package.',
   compliance: 'A policy shield checks an incoming document and identifies an exception for review.',
   quality: 'A field of evidence records is inspected, with one incomplete file enlarged for review.',
   builder: 'An operating procedure connects evidence collection, policy evaluation, and human review.',
   testing: 'Several scenario paths run through a sandbox and arrive at distinct test outcomes.',
   observability: 'A highlighted source passage is linked to the exact statement it supports.',
-  support: 'An institution and an AMLOK specialist collaborate around a shared implementation plan.',
+  support: 'An institution and an Amlok specialist collaborate around a shared implementation plan.',
   channels: 'An institution’s product, API integration, and review team connect to shared borrower context.',
   'data-security': 'A protected data vault connects residency, retention, and security review controls.',
-  'white-label': 'An institution’s branded borrower flow sits above a connected AMLOK intelligence layer.',
+  'white-label': 'An institution’s branded borrower flow sits above a connected Amlok intelligence layer.',
 } as const;
 export type IllustrationKind = keyof typeof illustrationDescriptions;
 type IllustrationFormat = 'standard' | 'compact' | 'portrait' | 'detail';
@@ -122,7 +122,7 @@ function Underwriting({step}:{step:number}) {
   return <><Caption>UNDERWRITE / EVIDENCE INTO JUDGMENT</Caption>
     <Paper x={30} y={82} w={175} h={176} title="Borrower evidence"><DocumentLines width={126} count={4}/><Glyph name="link" x={17} y={139} size={17} tone="blue"/><Label x={43} y={152} size={9} tone="muted">3 linked sources</Label></Paper>
     <path d="M192 121H260" className="pi-connection"/>
-    <Box x={222} y={49} w={229} h={213}><rect width={229} height={64} className="pi-blue-block"/><Label x={18} y={23} size={9} tone="inverse telemetry">AMLOK / CREDIT MEMO</Label><Label x={18} y={48} size={20} tone="inverse">A clearer decision.</Label>{items.map((s,i)=><g key={s}><rect x={12} y={76+i*28} width={205} height={26} className={step===i?'pi-selection':'pi-clear'}/><Glyph name={i===2?'flag':'check'} x={21} y={81+i*28} size={15} tone={i===2?'attention':'blue'}/><Label x={47} y={93+i*28} size={11}>{s}</Label></g>)}</Box>
+    <Box x={222} y={49} w={229} h={213}><rect width={229} height={64} className="pi-blue-block"/><Label x={18} y={23} size={9} tone="inverse telemetry">Amlok / CREDIT MEMO</Label><Label x={18} y={48} size={20} tone="inverse">A clearer decision.</Label>{items.map((s,i)=><g key={s}><rect x={12} y={76+i*28} width={205} height={26} className={step===i?'pi-selection':'pi-clear'}/><Glyph name={i===2?'flag':'check'} x={21} y={81+i*28} size={15} tone={i===2?'attention':'blue'}/><Label x={47} y={93+i*28} size={11}>{s}</Label></g>)}</Box>
     <BrandCore x={171} y={131} size={48}/><Badge x={274} y={265} w={177} label="Final decision: your team" icon="person"/>
   </>;
 }
@@ -182,7 +182,7 @@ function Simulation() {
 function Customer() {
   return <><Caption>CUSTOMER / YOUR EXPERIENCE ON TOP</Caption>
     {[0,1,2].map(i=><g key={i}><path d={'M91 '+(143+i*33)+'H352L394 '+(166+i*33)+'H133Z'} className={i===2?'pi-blue-block':'pi-facet-top'}/><path d={'M133 '+(166+i*33)+'V'+(178+i*33)+'H394V'+(166+i*33)+'Z'} className={i===2?'pi-side-face':'pi-selection'}/><path d={'M91 '+(143+i*33)+'v12l42 23v-12Z'} className="pi-side-face"/></g>)}
-    <Box x={111} y={48} w={282} h={108}><Glyph name="building" x={20} y={24} size={38} tone="blue"/><Label x={74} y={42} size={19} tone="strong">Your institution</Label><Label x={74} y={64} size={10} tone="muted">Brand · relationship · decision</Label><path d="M20 86H261" className="pi-grid"/></Box><Connection d="M86 92H57V217H91"/><Signal x={57} y={143}/><Label x={140} y={280} size={8} tone="telemetry blue">AMLOK / THE OPERATING LAYERS</Label>
+    <Box x={111} y={48} w={282} h={108}><Glyph name="building" x={20} y={24} size={38} tone="blue"/><Label x={74} y={42} size={19} tone="strong">Your institution</Label><Label x={74} y={64} size={10} tone="muted">Brand · relationship · decision</Label><path d="M20 86H261" className="pi-grid"/></Box><Connection d="M86 92H57V217H91"/><Signal x={57} y={143}/><Label x={140} y={280} size={8} tone="telemetry blue">Amlok / THE OPERATING LAYERS</Label>
   </>;
 }
 function Browser() {
@@ -205,7 +205,7 @@ function Api() {
   return <><Caption>API / INTELLIGENCE AT THE BOUNDARY</Caption>
     {['INTERAC E-TRF ***a2','STRIPE MSP DEPOSIT','PAD SPF*94110NT'].map((s,i)=><Box key={s} x={23+i*9} y={73+i*54} w={190} h={39}><Label x={12} y={24} size={10} tone="code">{s}</Label></Box>)}
     <Connection d="M221 143H265"/>
-    <Box x={255} y={54} w={202} h={215} tone="brand"><Label x={18} y={25} size={8} tone="telemetry muted">AMLOK / STRUCTURED RESPONSE</Label><path d="M18 38H184" className="pi-inverse-grid"/><Label x={18} y={64} size={18} tone="code">{'{'}</Label>{[['entity','example_business'],['category','operating_revenue'],['evidence','source_01']].map(([a,b],i)=><g key={a}><Label x={34} y={85+i*38} size={9} tone="code muted">{a+':'}</Label><Label x={34} y={102+i*38} size={10} tone="code">{b}</Label></g>)}<Label x={18} y={205} size={18} tone="code">{'}'}</Label></Box><Glyph name="code" x={214} y={128} size={33} tone="blue"/>
+    <Box x={255} y={54} w={202} h={215} tone="brand"><Label x={18} y={25} size={8} tone="telemetry muted">Amlok / STRUCTURED RESPONSE</Label><path d="M18 38H184" className="pi-inverse-grid"/><Label x={18} y={64} size={18} tone="code">{'{'}</Label>{[['entity','example_business'],['category','operating_revenue'],['evidence','source_01']].map(([a,b],i)=><g key={a}><Label x={34} y={85+i*38} size={9} tone="code muted">{a+':'}</Label><Label x={34} y={102+i*38} size={10} tone="code">{b}</Label></g>)}<Label x={18} y={205} size={18} tone="code">{'}'}</Label></Box><Glyph name="code" x={214} y={128} size={33} tone="blue"/>
   </>;
 }
 function Compliance() {
@@ -246,7 +246,7 @@ function Support() {
   return <><Caption>SUPPORT / A SHARED PATH FORWARD</Caption>
     <Box x={115} y={47} w={263} h={213}><Label x={18} y={29} size={10} tone="telemetry blue">IMPLEMENTATION PLAN</Label><path d="M18 43H244" className="pi-grid"/>{['Connect the workspace','Configure your policies','Review the first workflow'].map((s,i)=><g key={s}><Glyph name={i===2?'document':'check'} x={18} y={65+i*42} size={20} tone="blue"/><Label x={49} y={79+i*42} size={11}>{s}</Label></g>)}</Box>
     <Box x={28} y={100} w={129} h={75}><Glyph name="person" x={15} y={14} size={25} tone="blue"/><Label x={15} y={58} size={11}>Your team</Label></Box>
-    <Box x={312} y={182} w={139} h={81} tone="brand"><Glyph name="message" x={16} y={15} size={26} tone="inverse"/><Label x={16} y={62} size={12}>AMLOK specialist</Label></Box>
+    <Box x={312} y={182} w={139} h={81} tone="brand"><Glyph name="message" x={16} y={15} size={26} tone="inverse"/><Label x={16} y={62} size={12}>Amlok specialist</Label></Box>
   </>;
 }
 function Channels() {
@@ -267,7 +267,7 @@ function DataSecurity() {
 }
 function WhiteLabel() {
   return <><Caption>YOUR BRAND / ONE CONNECTED EXPERIENCE</Caption>
-    <Box x={68} y={205} w={328} h={59} tone="brand"><Glyph name="link" x={21} y={18} size={25} tone="inverse"/><Label x={61} y={35} size={13}>AMLOK intelligence underneath</Label></Box>
+    <Box x={68} y={205} w={328} h={59} tone="brand"><Glyph name="link" x={21} y={18} size={25} tone="inverse"/><Label x={61} y={35} size={13}>Amlok intelligence underneath</Label></Box>
     <Connection d="M235 186V205"/>
     <g transform="translate(99 57)"><path d="M0 0 17-11h262l-17 11Z" className="pi-facet-top"/><path d="M262 0 279-11v155l-17 11Z" className="pi-side-face"/><Box x={0} y={0} w={262} h={155}><rect width={262} height={37} className="pi-blue-block"/><Glyph name="building" x={13} y={9} size={20} tone="inverse"/><Label x={43} y={24} size={11} tone="inverse">YOUR BRAND</Label><Label x={19} y={65} size={16} tone="strong">A familiar experience.</Label><path d="M19 82H243M19 100H196" className="pi-document-line"/><rect x={18} y={119} width={108} height={22} className="pi-blue-block"/><Label x={42} y={134} size={9} tone="inverse">Continue</Label><Glyph name="check" x={214} y={119} size={23} tone="blue"/></Box></g>
   </>;
@@ -330,7 +330,7 @@ function EventAutomations() {
           <rect x={16} y={20} width={31} height={31} className="pi-selection"/>
           <Glyph name={item.icon} x={23} y={27} size={17} tone="blue"/>
           <Glyph name="check" x={60} y={11} size={12} tone="blue"/>
-          <Label x={78} y={21} size={8} tone="telemetry blue">AMLOK · COMPLETED</Label>
+          <Label x={78} y={21} size={8} tone="telemetry blue">Amlok · COMPLETED</Label>
           <Label x={61} y={41} size={14} tone="strong">{item.title}</Label>
           <Label x={61} y={58} size={9} tone="muted">{item.detail}</Label>
         </Box>
@@ -455,7 +455,7 @@ function LifecycleApi() {
     </LifecycleStage>)}
     <Box x={179} y={119} w={122} h={64} tone="brand">
       <Glyph name="code" x={13} y={20} size={24} tone="inverse"/>
-      <Label x={46} y={29} size={12}>AMLOK API</Label>
+      <Label x={46} y={29} size={12}>Amlok API</Label>
       <Label x={46} y={45} size={9} tone="muted">One risk layer</Label>
     </Box>
   </>;
@@ -515,7 +515,7 @@ function CompactScene({kind}:{kind:IllustrationKind}) {
 
 function PortraitScene({kind}:{kind:IllustrationKind}) {
   if(kind==='monitoring')return <><Label x={21} y={25} size={8} tone="telemetry blue">PORTFOLIO / LIVE SIGNALS</Label><RadarField x={32} y={49} size={256}/><Box x={18} y={244} w={277} h={99}><Label x={17} y={25} size={8} tone="telemetry muted">BORROWER 024 / EVIDENCE ATTACHED</Label><Label x={17} y={53} size={20} tone="strong">A change worth reviewing.</Label><Signal x={23} y={77} tone="attention"/><Label x={40} y={81} size={11} tone="warning">New conditions. Original context.</Label></Box><Badge x={66} y={361} w={230} label="Review against the original assessment" icon="link"/></>;
-  return <><Label x={21} y={25} size={8} tone="telemetry blue">DEAL / EVIDENCE INTO ASSESSMENT</Label><Box x={37} y={71} w={247} h={280} tone="selected"/><Box x={21} y={51} w={247} h={280}><rect width={247} height={88} className="pi-blue-block"/><Label x={18} y={27} size={8} tone="telemetry inverse">AMLOK / CREDIT MEMO</Label><Label x={18} y={58} size={25} tone="inverse">Coffee &amp; Co</Label><Label x={18} y={76} size={9} tone="inverse muted">Prepared from linked borrower evidence</Label>{['Repayment capacity','Policy alignment','Unresolved questions'].map((label,i)=><g key={label}><path d={'M17 '+(103+i*43)+'H229'} className="pi-grid"/><Glyph name={i===2?'flag':'check'} x={18} y={117+i*43} size={19} tone={i===2?'attention':'blue'}/><Label x={49} y={131+i*43} size={12}>{label}</Label></g>)}<rect x={15} y={240} width={217} height={25} className="pi-selection"/><Label x={27} y={257} size={10} tone="blue">Final decision: your team</Label></Box><Badge x={62} y={367} w={236} label="Sources stay with the assessment" icon="link"/></>;
+  return <><Label x={21} y={25} size={8} tone="telemetry blue">DEAL / EVIDENCE INTO ASSESSMENT</Label><Box x={37} y={71} w={247} h={280} tone="selected"/><Box x={21} y={51} w={247} h={280}><rect width={247} height={88} className="pi-blue-block"/><Label x={18} y={27} size={8} tone="telemetry inverse">Amlok / CREDIT MEMO</Label><Label x={18} y={58} size={25} tone="inverse">Coffee &amp; Co</Label><Label x={18} y={76} size={9} tone="inverse muted">Prepared from linked borrower evidence</Label>{['Repayment capacity','Policy alignment','Unresolved questions'].map((label,i)=><g key={label}><path d={'M17 '+(103+i*43)+'H229'} className="pi-grid"/><Glyph name={i===2?'flag':'check'} x={18} y={117+i*43} size={19} tone={i===2?'attention':'blue'}/><Label x={49} y={131+i*43} size={12}>{label}</Label></g>)}<rect x={15} y={240} width={217} height={25} className="pi-selection"/><Label x={27} y={257} size={10} tone="blue">Final decision: your team</Label></Box><Badge x={62} y={367} w={236} label="Sources stay with the assessment" icon="link"/></>;
 }
 
 function DetailScene({kind}:{kind:IllustrationKind}) {

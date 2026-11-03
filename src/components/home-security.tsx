@@ -4,7 +4,7 @@ const controls = [
   { icon: LockKeyhole, title: 'Data protection', description: 'Review encryption, permitted processing locations, and retention requirements for your deployment.' },
   { icon: KeyRound, title: 'Scoped access', description: 'Define tenant boundaries, approved access, and credential responsibilities before connecting live data.' },
   { icon: Network, title: 'Evidence & accountability', description: 'Keep source permissions, assessment evidence, and institutional decision ownership explicit.' },
-  { icon: FileCheck2, title: 'Security due diligence', description: 'Review applicable policies, provider assurance materials, and incident-response responsibilities with AMLOK.' },
+  { icon: FileCheck2, title: 'Security due diligence', description: 'Review applicable policies, provider assurance materials, and incident-response responsibilities with Amlok.' },
 ] as const;
 
 export function HomeSecurity() {
@@ -14,7 +14,7 @@ export function HomeSecurity() {
       <div className="home-security-intro">
         <div className="home-security-copy">
           <h2 id="home-security-title">Security throughout <span className="home-heading-gradient">the lifecycle.</span></h2>
-          <p>AMLOK protects the information behind financial decisions. Define processing scope, data access, retention, and deployment responsibilities with your institution, from the first connection through ongoing portfolio monitoring.</p>
+          <p>Amlok protects the information behind financial decisions. Define processing scope, data access, retention, and deployment responsibilities with your institution, from the first connection through ongoing portfolio monitoring.</p>
         </div>
         <div className="home-security-status">
           <div className="home-security-status-card"><span className="home-security-status-icon"><ShieldCheck size={24} aria-hidden="true" /></span><div><h3>Controls aligned to your deployment</h3><p>Security requirements and responsibilities reviewed together.</p></div></div>

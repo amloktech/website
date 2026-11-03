@@ -1,4 +1,4 @@
-"""Generate the editable AMLOK research book series.
+"""Generate the editable Amlok research book series.
 
 Run: python3 scripts/generate-resource-covers.py
 The diagrams are editorial illustrations, not research results or data plots.
@@ -141,7 +141,7 @@ def render(book, number):
     title_size = 34 if slug in ('fintech', 'insurtech') else 39
     title_text = ''.join(f'<tspan x="40" y="{124+i*44}">{escape(line)}</tspan>' for i, line in enumerate(title))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
-  <title>AMLOK: {escape(industry.title())} research book cover</title>
+  <title>Amlok: {escape(industry.title())} research book cover</title>
   <desc>Blue editorial book mockup with an abstract industry illustration. Published research, methods, and industry guides. Cover artwork is an editorial illustration.</desc>
   <defs>
     <linearGradient id="backdrop" x1="0" y1="1" x2="1" y2="0"><stop stop-color="{background}"/><stop offset="1" stop-color="#f6f9ff"/></linearGradient>
@@ -155,7 +155,7 @@ def render(book, number):
   <path d="M540-70L1250 274V326L432-70Z" fill="#fff" opacity=".14"/>
   <path d="M715-70L1250 187V209L659-70Z" fill="#fff" opacity=".24"/>
   {logo(38, 36, 116, '#073095')}
-  <g fill="#173768" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.8"><text x="902" y="51">AMLOK RESEARCH</text><text x="1120" y="51">{number:02}</text><text x="38" y="612" font-size="10">{escape(industry)}</text></g>
+  <g fill="#173768" font-family="Arial, sans-serif" font-size="11" letter-spacing="1.8"><text x="902" y="51">Amlok RESEARCH</text><text x="1120" y="51">{number:02}</text><text x="38" y="612" font-size="10">{escape(industry)}</text></g>
   <g filter="url(#shadow)">
     <g transform="translate(375 112) rotate(-2 225 300)">
       <rect x="-17" y="1" width="30" height="600" rx="3" fill="url(#spine)"/>

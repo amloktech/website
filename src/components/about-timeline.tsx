@@ -48,7 +48,7 @@ export function AboutTimeline() {
     <div className="about-inner">
       <header className="about-journey-heading">
         <div><span className="home-products-eyebrow"><i aria-hidden="true" />OUR JOURNEY</span><h2 id="about-journey-title">From capital access to<br /><span className="home-heading-gradient">connected risk intelligence.</span></h2></div>
-        <p><span className="about-journey-period">{timeline.period}</span>Follow the ideas and milestones that have shaped AMLOK.</p>
+        <p><span className="about-journey-period">{timeline.period}</span>Follow the ideas and milestones that have shaped Amlok.</p>
       </header>
       <div className="about-timeline" aria-label="Company progress timeline">
         <ol>{milestones.map((milestone,index) => <li key={milestone.title} ref={element => { rows.current[index] = element; }} data-milestone={index} className={index === active ? 'is-active' : ''}>
@@ -59,7 +59,7 @@ export function AboutTimeline() {
       </div>
       <aside className="about-journey-today" id="amlok-today" aria-labelledby="about-today-title">
         <header className="about-today-header">
-          <div><span className="home-products-eyebrow"><i aria-hidden="true" />OCTOBER 2026</span><h2 id="about-today-title">AMLOK <span className="home-heading-gradient">today.</span></h2></div>
+          <div><span className="home-products-eyebrow"><i aria-hidden="true" />OCTOBER 2026</span><h2 id="about-today-title">Amlok <span className="home-heading-gradient">today.</span></h2></div>
           <p>{timeline.today.introduction}</p>
         </header>
         <div className="about-today-grid">

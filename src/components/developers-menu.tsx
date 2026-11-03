@@ -23,8 +23,8 @@ export const developerGroups = [
 ] as const;
 const terminalLines = [
   {text:'$ codex',tone:'command'},
-  {text:'> Integrate AMLOK risk intelligence',tone:'prompt'},
-  {text:'↻ Reading AMLOK documentation',tone:'muted'},
+  {text:'> Integrate Amlok risk intelligence',tone:'prompt'},
+  {text:'↻ Reading Amlok documentation',tone:'muted'},
   {text:'✓ API client scaffolded',tone:'success'},
   {text:'✓ Request validation added',tone:'success'},
   {text:'✓ Monitoring workflow prepared',tone:'success'},
@@ -54,11 +54,11 @@ export function DevelopersMenu({open,onOpen,onClose}:{open:boolean;onOpen:()=>vo
     <button className="home-developer-trigger" ref={trigger} type="button" aria-expanded={open} aria-controls="home-developer-panel" onClick={()=>{if(isHoverPointer())onOpen();else if(open)onClose();else onOpen();}} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();onOpen();requestAnimationFrame(()=>root.current?.querySelector<HTMLAnchorElement>('a')?.focus());}}}>Developers <ChevronDown size={12} aria-hidden="true"/></button>
     {open&&<div className="home-developer-panel" id="home-developer-panel" aria-label="Developer resources">
       <div className="home-developer-terminal">
-        <div className="home-developer-terminal-header"><span>~/AMLOK · ZSH</span><span className="home-developer-demo"><i/>DEMO</span></div>
-        <div className="home-developer-terminal-body" role="img" aria-label="Animated example: Codex reads AMLOK documentation, scaffolds an API client, adds request validation, and prepares a monitoring workflow for review.">
+        <div className="home-developer-terminal-header"><span>~/Amlok · ZSH</span><span className="home-developer-demo"><i/>DEMO</span></div>
+        <div className="home-developer-terminal-body" role="img" aria-label="Animated example: Codex reads Amlok documentation, scaffolds an API client, adds request validation, and prepares a monitoring workflow for review.">
           <div aria-hidden="true">{terminalLines.map((line,index)=><div className={`home-developer-line ${line.tone}${index<=step?' is-visible':''}`} key={line.text}>{line.text}{index===0&&step===0&&<span className="home-developer-cursor">▍</span>}</div>)}</div>
         </div>
-        <a className="home-developer-quickstart" href="https://docs.amlok.io/api-reference/quickstart" onClick={onClose}><span><strong>Quickstart</strong><small>BUILD WITH AMLOK</small></span><span>Read the quickstart <ArrowUpRight size={16} aria-hidden="true"/></span></a>
+        <a className="home-developer-quickstart" href="https://docs.amlok.io/api-reference/quickstart" onClick={onClose}><span><strong>Quickstart</strong><small>BUILD WITH Amlok</small></span><span>Read the quickstart <ArrowUpRight size={16} aria-hidden="true"/></span></a>
       </div>
       {developerGroups.map(group=><div className="home-developer-links" key={group.title}><h2>{group.title}</h2>{group.links.map(link=><a href={link.href} key={link.label} onClick={onClose}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a>)}</div>)}
     </div>}

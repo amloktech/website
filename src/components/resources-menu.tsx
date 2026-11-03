@@ -40,8 +40,8 @@ export function ResourcesMenu({open,onOpen,onClose}:{open:boolean;onOpen:()=>voi
     <button className="home-resource-trigger" ref={trigger} type="button" aria-expanded={open} aria-controls="home-resource-panel" onClick={()=>{if(isHoverPointer())onOpen();else if(open)onClose();else onOpen();}} onKeyDown={event=>{if(event.key==='ArrowDown'){event.preventDefault();onOpen();requestAnimationFrame(()=>root.current?.querySelector<HTMLAnchorElement>('.home-resource-feature')?.focus());}}}>Resources <ChevronDown size={12} aria-hidden="true"/></button>
     {open&&<div className="home-resource-panel" id="home-resource-panel" aria-label="Resources">
       <a className="home-resource-feature" href="/about-us" onClick={onClose}>
-        <Image src="/images/amlok-team-updated.jpg" unoptimized alt="The AMLOK team together in their workspace." fill sizes="(max-width: 1200px) 50vw, 620px" />
-        <div className="home-resource-feature-copy"><h2>Meet the team</h2><p>The people behind connected risk intelligence.</p><span>Read about AMLOK <ArrowUpRight size={16} aria-hidden="true"/></span></div>
+        <Image src="/images/amlok-team-updated.jpg" unoptimized alt="The Amlok team together in their workspace." fill sizes="(max-width: 1200px) 50vw, 620px" />
+        <div className="home-resource-feature-copy"><h2>Meet the team</h2><p>The people behind connected risk intelligence.</p><span>Read about Amlok <ArrowUpRight size={16} aria-hidden="true"/></span></div>
       </a>
       {resourceGroups.map(group=><div className="home-resource-links" key={group.title}><h2>{group.title}</h2>{group.links.map(link=><a href={link.href} key={link.label} onClick={onClose}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a>)}</div>)}
     </div>}

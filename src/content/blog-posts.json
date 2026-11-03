@@ -5,7 +5,7 @@
     "description": "What a risk graph should preserve before a relationship becomes evidence in a financial decision.",
     "topic": "Connected data",
     "topicId": "connected-data",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/risk-is-a-relationship.svg"
@@ -16,7 +16,7 @@
     "description": "Why monitoring needs a versioned account of what was known, when it was known, and how it was interpreted.",
     "topic": "Monitoring",
     "topicId": "monitoring",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/from-snapshot-to-signal.svg"
@@ -24,10 +24,10 @@
   {
     "slug": "designing-reviewable-ai",
     "title": "The answer is only as strong as the evidence it found.",
-    "description": "What AMLOK’s financial-document retrieval experiment teaches about reviewable AI.",
+    "description": "What Amlok’s financial-document retrieval experiment teaches about reviewable AI.",
     "topic": "AI & workflows",
     "topicId": "ai-workflows",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/designing-reviewable-ai.svg"
@@ -38,7 +38,7 @@
     "description": "How financing, transfers, and settlement adjustments can change the story a bank balance seems to tell.",
     "topic": "Cash flow",
     "topicId": "cash-flow",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/read-the-cash-flow.svg"
@@ -49,7 +49,7 @@
     "description": "Carry the assumptions behind approval into a monitoring process that can revisit them.",
     "topic": "Underwriting",
     "topicId": "underwriting",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/underwriting-to-monitoring.svg"
@@ -60,7 +60,7 @@
     "description": "A settlement bridge can explain the gap between a merchant’s activity and the money available to operate.",
     "topic": "Cash flow",
     "topicId": "cash-flow",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/cash-flow-for-merchant-finance.svg"
@@ -71,7 +71,7 @@
     "description": "Why rare events, false positives, and review capacity belong in the design of a monitoring system.",
     "topic": "Monitoring",
     "topicId": "monitoring",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/monitoring-without-the-noise.svg"
@@ -82,7 +82,7 @@
     "description": "How to connect evidence, workflow state, and institutional ownership without turning every signal into an automatic decision.",
     "topic": "AI & workflows",
     "topicId": "ai-workflows",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/event-driven-risk-workflows.svg"
@@ -93,7 +93,7 @@
     "description": "What an embedded financial-data experience needs to preserve after the user finishes connecting an account.",
     "topic": "Embedded finance",
     "topicId": "embedded-finance",
-    "author": "AMLOK",
+    "author": "Amlok",
     "date": "2026-11-02",
     "readMinutes": 4,
     "image": "/images/blog/embedded-finance-context.svg"

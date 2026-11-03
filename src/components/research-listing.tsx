@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { BrandText } from './ui';
 import { ResearchAction } from './research-action';
 import { useEffect, useState } from 'react';
 import { ChevronDown, Search, X } from 'lucide-react';
@@ -105,12 +106,12 @@ export function ResearchListing({ collection }: { collection?: 'whitepapers' | '
         {matches.map(resource => {
           const title = `${'gradientTitle' in resource ? resource.gradientTitle + ' ' : ''}${resource.title}`;
           return <article key={resource.image} className={styles.card}>
-            <div className={styles.cardArt}><Image src={`/images/resources/${resource.image}.svg`} alt={`AMLOK research book: ${title}`} width={1200} height={650} sizes="(max-width: 767px) 100vw, 264px"/></div>
+            <div className={styles.cardArt}><Image src={`/images/resources/${resource.image}.svg`} alt={`Amlok research book: ${title}`} width={1200} height={650} sizes="(max-width: 767px) 100vw, 264px"/></div>
             <div className={styles.cardCopy}>
               <div className={styles.tags}><span>{resource.format}</span><i aria-hidden="true"/><span>{isIndustryLibrary ? resource.industry : resource.category}</span></div>
               <h3><a href={resource.href}>{title}</a></h3>
               <p>{resource.description}</p>
-              <span className={styles.preview} id={`research-status-${resource.image}`}>{resource.readMinutes} min read · AMLOK</span>
+              <span className={styles.preview} id={`research-status-${resource.image}`}><BrandText>{`${resource.readMinutes} min read · Amlok`}</BrandText></span>
               <div className={styles.cardActions}><ResearchAction resource={resource} availabilityId={`research-status-${resource.image}`}/></div>
             </div>
           </article>;

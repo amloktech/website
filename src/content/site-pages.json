@@ -1,7 +1,7 @@
 [
   {
     "slug": "platform",
-    "label": "The AMLOK platform",
+    "label": "The Amlok platform",
     "title": "The whole picture.",
     "accent": "At every decision.",
     "description": "Connect financial evidence, understand the relationships behind it, and follow risk as it changes. One intelligence layer across your credit lifecycle.",
@@ -10,7 +10,7 @@
     "sections": [
       {
         "title": "Connected evidence becomes shared understanding.",
-        "body": "A statement, a transaction, and a business record each tell part of a story. AMLOK brings that evidence into context so underwriting and monitoring can work from a connected view.",
+        "body": "A statement, a transaction, and a business record each tell part of a story. Amlok brings that evidence into context so underwriting and monitoring can work from a connected view.",
         "items": [
           {
             "title": "Connect",
@@ -32,7 +32,7 @@
       },
       {
         "title": "Your customer. Your policies. Your decision.",
-        "body": "AMLOK supports the intelligence behind an action. Your institution controls credit policy, approval, customer communications, and interventions in its own systems."
+        "body": "Amlok supports the intelligence behind an action. Your institution controls credit policy, approval, customer communications, and interventions in its own systems."
       }
     ],
     "steps": [
@@ -102,7 +102,7 @@
   },
   {
     "slug": "products/underwriting",
-    "label": "AMLOK Insights",
+    "label": "Amlok Insights",
     "title": "Underwrite",
     "accent": "the whole ecosystem.",
     "description": "Connect the applicant to the people, accounts, income, obligations, and counterparties that shape the deal. Give business, consumer, and insurance teams the context to make a well-informed decision.",
@@ -152,8 +152,8 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK approve or fund the loan?",
-        "answer": "Your institution owns the final credit decision and funding. AMLOK supplies the risk assessment and evidence."
+        "question": "Does Amlok approve or fund the loan?",
+        "answer": "Your institution owns the final credit decision and funding. Amlok supplies the risk assessment and evidence."
       },
       {
         "question": "Is a retry a second underwriting?",
@@ -182,10 +182,10 @@
   },
   {
     "slug": "products/portfolio-monitoring",
-    "label": "AMLOK Signal",
+    "label": "Amlok Signal",
     "title": "Risk keeps moving.",
     "accent": "Stay connected.",
-    "description": "Follow changing cash flow, obligations, and financial relationships after the original decision. AMLOK Signal connects new evidence to the underwriting baseline so your team can review what matters.",
+    "description": "Follow changing cash flow, obligations, and financial relationships after the original decision. Amlok Signal connects new evidence to the underwriting baseline so your team can review what matters.",
     "visual": "behaviour-insights",
     "kind": "detail",
     "sections": [
@@ -233,7 +233,7 @@
     "faq": [
       {
         "question": "Who contacts the borrower?",
-        "answer": "Your team performs outreach and other interventions in its own systems. AMLOK provides results, alerts, and evidence."
+        "answer": "Your team performs outreach and other interventions in its own systems. Amlok provides results, alerts, and evidence."
       },
       {
         "question": "Is monitoring billed per API call?",
@@ -339,7 +339,7 @@
       },
       {
         "title": "A scenario is a decision aid.",
-        "body": "Use scenario exploration to support policy discussions and portfolio reviews. Outcomes depend on assumptions and available data; they do not guarantee future borrower behaviour. Discuss the simulation workflow and delivery scope with AMLOK for your deployment."
+        "body": "Use scenario exploration to support policy discussions and portfolio reviews. Outcomes depend on assumptions and available data; they do not guarantee future borrower behaviour. Discuss the simulation workflow and delivery scope with Amlok for your deployment."
       }
     ],
     "steps": [
@@ -402,7 +402,7 @@
     "sections": [
       {
         "title": "Capabilities that work together.",
-        "body": "Modules describe the work inside a workflow. They are not separately billed AMLOK products. Verification, calculation, and permitted investigation run within an authorized Insights or Signal context."
+        "body": "Modules describe the work inside a workflow. They are not separately billed Amlok products. Verification, calculation, and permitted investigation run within an authorized Insights or Signal context."
       }
     ],
     "steps": [],
@@ -563,7 +563,7 @@
     "label": "Integrations",
     "title": "Connect the context",
     "accent": "you need.",
-    "description": "Bring bank, payment, accounting, commerce, and enterprise evidence into your risk workflows. Explore providers from the AMLOK integration catalogue.",
+    "description": "Bring bank, payment, accounting, commerce, and enterprise evidence into your risk workflows. Explore providers from the Amlok integration catalogue.",
     "visual": "embedded",
     "kind": "integrations",
     "sections": [
@@ -624,7 +624,7 @@
       },
       {
         "question": "Where are final commercial terms recorded?",
-        "answer": "Your signed order form governs rates, eligible products, commitments, and workload limits. Discuss the appropriate plan with AMLOK."
+        "answer": "Your signed order form governs rates, eligible products, commitments, and workload limits. Discuss the appropriate plan with Amlok."
       }
     ],
     "related": [
@@ -681,13 +681,13 @@
     "label": "Get started",
     "title": "Start with a workflow.",
     "accent": "Build from there.",
-    "description": "Work with AMLOK to define your first use case, agree the required evidence, and prepare your team for integration.",
+    "description": "Work with Amlok to define your first use case, agree the required evidence, and prepare your team for integration.",
     "visual": "builder",
     "kind": "detail",
     "sections": [
       {
         "title": "From first conversation to a working integration.",
-        "body": "AMLOK onboarding starts with your institution’s scope and operating requirements. Your account manager coordinates access and environment details; your authorized administrators manage API keys.",
+        "body": "Amlok onboarding starts with your institution’s scope and operating requirements. Your account manager coordinates access and environment details; your authorized administrators manage API keys.",
         "items": [
           {
             "title": "Define the outcome",
@@ -811,7 +811,7 @@
       },
       {
         "title": "Carry context through the lifecycle.",
-        "body": "The work of understanding a customer should remain useful after an approval. Verification establishes evidence. Underwriting interprets capacity and obligations. Monitoring follows changes. Servicing and review decisions draw on the history of the relationship. Each stage benefits from knowing what the previous stage established and what it left open.\n\nWe believe the original assessment should provide a clear baseline for what comes next. When permitted new evidence arrives, teams should be able to examine it against that baseline and understand why a reassessment may be needed. A change in circumstances should be connected to the reasoning that supported the earlier decision.\n\nThis is the continuity we are building toward: financial understanding that travels with the relationship. AMLOK’s role is to support that understanding across the credit lifecycle, while institutions and their operational systems remain responsible for executing the actions they approve."
+        "body": "The work of understanding a customer should remain useful after an approval. Verification establishes evidence. Underwriting interprets capacity and obligations. Monitoring follows changes. Servicing and review decisions draw on the history of the relationship. Each stage benefits from knowing what the previous stage established and what it left open.\n\nWe believe the original assessment should provide a clear baseline for what comes next. When permitted new evidence arrives, teams should be able to examine it against that baseline and understand why a reassessment may be needed. A change in circumstances should be connected to the reasoning that supported the earlier decision.\n\nThis is the continuity we are building toward: financial understanding that travels with the relationship. Amlok’s role is to support that understanding across the credit lifecycle, while institutions and their operational systems remain responsible for executing the actions they approve."
       },
       {
         "title": "Connect with permission.",
@@ -841,7 +841,7 @@
   },
   {
     "slug": "careers",
-    "label": "Careers at AMLOK",
+    "label": "Careers at Amlok",
     "title": "Build the intelligence",
     "accent": "behind better decisions.",
     "description": "We’re working at the intersection of financial systems, connected data, and applied AI. Help make the evidence behind risk easier to understand.",
@@ -949,7 +949,7 @@
     "label": "Industry Guides",
     "title": "Your industry.",
     "accent": "The complete risk picture.",
-    "description": "18 comprehensive guides across consumer lending, business lending, financial institutions, fintech and insurtech. Explore how AMLOK fits your workflow, with market data, evidence maps, worked calculations and implementation plans.",
+    "description": "18 comprehensive guides across consumer lending, business lending, financial institutions, fintech and insurtech. Explore how Amlok fits your workflow, with market data, evidence maps, worked calculations and implementation plans.",
     "visual": "behaviour-insights",
     "related": [
       "research",
@@ -977,10 +977,10 @@
   },
   {
     "slug": "compare",
-    "label": "Compare AMLOK",
+    "label": "Compare Amlok",
     "title": "Choose the right layer",
     "accent": "for your stack.",
-    "description": "Compare documented product scope, integration approaches, and operating models. Some platforms complement AMLOK; others solve a different part of the lending workflow.",
+    "description": "Compare documented product scope, integration approaches, and operating models. Some platforms complement Amlok; others solve a different part of the lending workflow.",
     "visual": "lifecycle-api",
     "kind": "directory",
     "sections": [],
@@ -1052,7 +1052,7 @@
     "label": "The answer is only as strong as the evidence it found.",
     "title": "The answer is only as strong",
     "accent": "as the evidence it found.",
-    "description": "What AMLOK’s financial-document retrieval experiment teaches about reviewable AI.",
+    "description": "What Amlok’s financial-document retrieval experiment teaches about reviewable AI.",
     "visual": "observability",
     "kind": "article",
     "sections": [],
@@ -1114,21 +1114,21 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK replace our lending policy?",
-        "answer": "Your institution sets policy and owns the final decision. AMLOK supplies risk intelligence and evidence within your agreed workflow."
+        "question": "Does Amlok replace our lending policy?",
+        "answer": "Your institution sets policy and owns the final decision. Amlok supplies risk intelligence and evidence within your agreed workflow."
       },
       {
         "question": "How do we evaluate the fit?",
-        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with AMLOK before connecting live data."
+        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with Amlok before connecting live data."
       }
     ],
     "sources": [
       {
-        "title": "AMLOK integration workflows",
+        "title": "Amlok integration workflows",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
-        "title": "AMLOK coverage considerations",
+        "title": "Amlok coverage considerations",
         "url": "https://docs.amlok.io/data-model/coverage-considerations"
       },
       {
@@ -1190,21 +1190,21 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK replace our lending policy?",
-        "answer": "Your institution sets policy and owns the final decision. AMLOK supplies risk intelligence and evidence within your agreed workflow."
+        "question": "Does Amlok replace our lending policy?",
+        "answer": "Your institution sets policy and owns the final decision. Amlok supplies risk intelligence and evidence within your agreed workflow."
       },
       {
         "question": "How do we evaluate the fit?",
-        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with AMLOK before connecting live data."
+        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with Amlok before connecting live data."
       }
     ],
     "sources": [
       {
-        "title": "AMLOK workflow guide",
+        "title": "Amlok workflow guide",
         "url": "https://docs.amlok.io/data-model/workflow-guide"
       },
       {
-        "title": "AMLOK integration catalog",
+        "title": "Amlok integration catalog",
         "url": "https://docs.amlok.io/integrations"
       },
       {
@@ -1266,21 +1266,21 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK replace our lending policy?",
-        "answer": "Your institution sets policy and owns the final decision. AMLOK supplies risk intelligence and evidence within your agreed workflow."
+        "question": "Does Amlok replace our lending policy?",
+        "answer": "Your institution sets policy and owns the final decision. Amlok supplies risk intelligence and evidence within your agreed workflow."
       },
       {
         "question": "How do we evaluate the fit?",
-        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with AMLOK before connecting live data."
+        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with Amlok before connecting live data."
       }
     ],
     "sources": [
       {
-        "title": "AMLOK due diligence",
+        "title": "Amlok due diligence",
         "url": "https://docs.amlok.io/security/due-diligence"
       },
       {
-        "title": "AMLOK Canadian requirements",
+        "title": "Amlok Canadian requirements",
         "url": "https://docs.amlok.io/security/canada"
       },
       {
@@ -1342,25 +1342,25 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK replace our lending policy?",
-        "answer": "Your institution sets policy and owns the final decision. AMLOK supplies risk intelligence and evidence within your agreed workflow."
+        "question": "Does Amlok replace our lending policy?",
+        "answer": "Your institution sets policy and owns the final decision. Amlok supplies risk intelligence and evidence within your agreed workflow."
       },
       {
         "question": "How do we evaluate the fit?",
-        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with AMLOK before connecting live data."
+        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with Amlok before connecting live data."
       }
     ],
     "sources": [
       {
-        "title": "AMLOK API reference",
+        "title": "Amlok API reference",
         "url": "https://docs.amlok.io/api-reference/overview"
       },
       {
-        "title": "AMLOK sandbox journeys",
+        "title": "Amlok sandbox journeys",
         "url": "https://docs.amlok.io/api-reference/sandbox-journeys"
       },
       {
-        "title": "AMLOK products and endpoint scope",
+        "title": "Amlok products and endpoint scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
@@ -1418,21 +1418,21 @@
     ],
     "faq": [
       {
-        "question": "Does AMLOK replace our lending policy?",
-        "answer": "Your institution sets policy and owns the final decision. AMLOK supplies risk intelligence and evidence within your agreed workflow."
+        "question": "Does Amlok replace our lending policy?",
+        "answer": "Your institution sets policy and owns the final decision. Amlok supplies risk intelligence and evidence within your agreed workflow."
       },
       {
         "question": "How do we evaluate the fit?",
-        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with AMLOK before connecting live data."
+        "answer": "Start with a representative use case, your required sources, and the outputs your team needs. Confirm coverage, security requirements, and integration scope with Amlok before connecting live data."
       }
     ],
     "sources": [
       {
-        "title": "AMLOK products and endpoint scope",
+        "title": "Amlok products and endpoint scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
-        "title": "AMLOK coverage considerations",
+        "title": "Amlok coverage considerations",
         "url": "https://docs.amlok.io/data-model/coverage-considerations"
       },
       {
@@ -1499,11 +1499,11 @@
     "faq": [],
     "sources": [
       {
-        "title": "AMLOK coverage considerations",
+        "title": "Amlok coverage considerations",
         "url": "https://docs.amlok.io/data-model/coverage-considerations"
       },
       {
-        "title": "AMLOK integration workflows",
+        "title": "Amlok integration workflows",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
@@ -1544,7 +1544,7 @@
           },
           {
             "title": "Maintain institutional authority",
-            "body": "AMLOK supplies findings and evidence; your institution determines the response, including any regulatory reporting or borrower contact."
+            "body": "Amlok supplies findings and evidence; your institution determines the response, including any regulatory reporting or borrower contact."
           }
         ]
       }
@@ -1566,11 +1566,11 @@
     "faq": [],
     "sources": [
       {
-        "title": "AMLOK workflow guide",
+        "title": "Amlok workflow guide",
         "url": "https://docs.amlok.io/data-model/workflow-guide"
       },
       {
-        "title": "AMLOK related-person verification",
+        "title": "Amlok related-person verification",
         "url": "https://docs.amlok.io/api-reference/related-person-verification"
       },
       {
@@ -1633,15 +1633,15 @@
     "faq": [],
     "sources": [
       {
-        "title": "AMLOK integration workflows",
+        "title": "Amlok integration workflows",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
-        "title": "AMLOK workflow guide",
+        "title": "Amlok workflow guide",
         "url": "https://docs.amlok.io/data-model/workflow-guide"
       },
       {
-        "title": "AMLOK products and endpoint scope",
+        "title": "Amlok products and endpoint scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       }
     ],
@@ -1678,7 +1678,7 @@
           },
           {
             "title": "Keep actions in authorized systems",
-            "body": "Your institution handles borrower communication, follow-up, repayment collection and changes to terms. AMLOK provides risk intelligence and supporting evidence for those decisions."
+            "body": "Your institution handles borrower communication, follow-up, repayment collection and changes to terms. Amlok provides risk intelligence and supporting evidence for those decisions."
           }
         ]
       }
@@ -1700,11 +1700,11 @@
     "faq": [],
     "sources": [
       {
-        "title": "AMLOK products and endpoint scope",
+        "title": "Amlok products and endpoint scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
-        "title": "AMLOK intervention signals",
+        "title": "Amlok intervention signals",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
@@ -1795,7 +1795,7 @@
       },
       {
         "title": "Language examples and helpers",
-        "body": "Follow cURL, Node.js fetch and Python requests examples. The maintained webhook helpers verify raw-body signatures; your integration adds persistence, deduplication and processing. These tools are examples and helpers rather than packaged AMLOK SDKs."
+        "body": "Follow cURL, Node.js fetch and Python requests examples. The maintained webhook helpers verify raw-body signatures; your integration adds persistence, deduplication and processing. These tools are examples and helpers rather than packaged Amlok SDKs."
       }
     ],
     "steps": [],
@@ -1913,7 +1913,7 @@
     "label": "MCP integration",
     "title": "Connect your AI tools",
     "accent": "to accountable context.",
-    "description": "Design an MCP integration around authorized AMLOK resources, scoped tools and the evidence behind each result.",
+    "description": "Design an MCP integration around authorized Amlok resources, scoped tools and the evidence behind each result.",
     "visual": "graph",
     "kind": "developer",
     "sections": [
@@ -1926,7 +1926,7 @@
         "body": "Use least-privilege credentials on the server and validate every resource request. Separate retrieving evidence from starting a workflow or changing monitoring configuration."
       },
       {
-        "title": "Plan your AMLOK connection",
+        "title": "Plan your Amlok connection",
         "body": "Review the API contract and your intended AI workflow with the team. Server availability, deployment and supported operations are confirmed for your integration."
       }
     ],
@@ -1979,7 +1979,7 @@
     "label": "Integration prompt",
     "title": "A better brief.",
     "accent": "A stronger integration.",
-    "description": "A focused integration brief grounded in the AMLOK contract, your environment and production-ready handling.",
+    "description": "A focused integration brief grounded in the Amlok contract, your environment and production-ready handling.",
     "visual": "builder",
     "kind": "developer",
     "sections": [
@@ -2161,13 +2161,13 @@
     "label": "Changelog",
     "title": "Keep your integration",
     "accent": "in step.",
-    "description": "Follow the current contract and compatibility guidance when adopting changes to your AMLOK integration.",
+    "description": "Follow the current contract and compatibility guidance when adopting changes to your Amlok integration.",
     "visual": "api",
     "kind": "developer",
     "sections": [
       {
         "title": "Current documented reference",
-        "body": "The integration onboarding guide identifies AMLOK API 1.4.2. The downloadable contract provides the current operation and schema definitions."
+        "body": "The integration onboarding guide identifies Amlok API 1.4.2. The downloadable contract provides the current operation and schema definitions."
       },
       {
         "title": "Treat versions separately",
@@ -2175,7 +2175,7 @@
       },
       {
         "title": "A deliberate release process",
-        "body": "Pin the contract used by your integration, review changed fields and capabilities, rerun sandbox checks, and confirm environment-specific details with your AMLOK contact."
+        "body": "Pin the contract used by your integration, review changed fields and capabilities, rerun sandbox checks, and confirm environment-specific details with your Amlok contact."
       }
     ],
     "steps": [],
@@ -2219,13 +2219,13 @@
     "label": "Service status",
     "title": "Service health",
     "accent": "and support.",
-    "description": "Check live website and documentation availability, find the status reference for your AMLOK environment, and reach support when a workflow is affected.",
+    "description": "Check live website and documentation availability, find the status reference for your Amlok environment, and reach support when a workflow is affected.",
     "visual": "monitoring",
     "kind": "developer",
     "sections": [
       {
         "title": "Read the service report",
-        "body": "Request /v1/service-status from your institution-issued AMLOK API URL. The endpoint does not require an API key. Inspect the overall status, each service’s status, and the updated_at observation time. A successful HTTP response means the report was retrieved, not that every service is operational."
+        "body": "Request /v1/service-status from your institution-issued Amlok API URL. The endpoint does not require an API key. Inspect the overall status, each service’s status, and the updated_at observation time. A successful HTTP response means the report was retrieved, not that every service is operational."
       },
       {
         "title": "Check the workflow as well",
@@ -2295,7 +2295,7 @@
       },
       {
         "title": "Evidence for your review",
-        "body": "AMLOK’s security program aligns controls with SOC 2 Trust Services Criteria and ISO/IEC 27001 principles. Scoped assurance materials and applicable provider reports are available for review under NDA."
+        "body": "Amlok’s security program aligns controls with SOC 2 Trust Services Criteria and ISO/IEC 27001 principles. Scoped assurance materials and applicable provider reports are available for review under NDA."
       },
       {
         "title": "Keep decisions accountable",
@@ -2341,17 +2341,17 @@
     "label": "Privacy",
     "title": "Privacy Policy",
     "accent": "",
-    "description": "How AMLOK handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
+    "description": "How Amlok handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
     "visual": "data-security",
     "kind": "legal",
     "sections": [
       {
         "title": "Purpose-limited processing",
-        "body": "AMLOK processes information for the agreed underwriting and monitoring workflows. Institutions define permitted purposes and source permissions; processing responsibilities are documented in their agreements."
+        "body": "Amlok processes information for the agreed underwriting and monitoring workflows. Institutions define permitted purposes and source permissions; processing responsibilities are documented in their agreements."
       },
       {
         "title": "Information you provide",
-        "body": "When you contact AMLOK, the information you choose to send is used to respond to your request. Send only what is needed and use an approved secure channel when sensitive material is required."
+        "body": "When you contact Amlok, the information you choose to send is used to respond to your request. Send only what is needed and use an approved secure channel when sensitive material is required."
       },
       {
         "title": "Connected financial information",
@@ -2363,7 +2363,7 @@
       },
       {
         "title": "Application and enterprise policies",
-        "body": "The published application privacy policy describes collection, consent, rights and cross-border processing for the AMLOK web application. Enterprise processing instructions are governed by the applicable agreement."
+        "body": "The published application privacy policy describes collection, consent, rights and cross-border processing for the Amlok web application. Enterprise processing instructions are governed by the applicable agreement."
       }
     ],
     "steps": [],
@@ -2396,7 +2396,7 @@
     "label": "Cookies & preferences",
     "title": "Cookies Policy",
     "accent": "",
-    "description": "Learn about AMLOK website language storage, Cal.com scheduling, external services, and browser controls.",
+    "description": "Learn about Amlok website language storage, Cal.com scheduling, external services, and browser controls.",
     "visual": "customer",
     "kind": "legal",
     "sections": [
@@ -2414,7 +2414,7 @@
       },
       {
         "title": "Website and application",
-        "body": "The marketing website and authenticated AMLOK application are separate experiences. The application’s published privacy and security policies describe its session and data-handling practices."
+        "body": "The marketing website and authenticated Amlok application are separate experiences. The application’s published privacy and security policies describe its session and data-handling practices."
       }
     ],
     "steps": [],
@@ -2439,7 +2439,7 @@
     "label": "Terms of business",
     "title": "Terms of Business",
     "accent": "",
-    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an AMLOK relationship.",
+    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an Amlok relationship.",
     "visual": "compliance",
     "kind": "legal",
     "sections": [
@@ -2457,7 +2457,7 @@
       },
       {
         "title": "Decisions and shared responsibility",
-        "body": "AMLOK provides risk intelligence and evidence. Your institution owns its lending policies, review procedures, borrower communications and final decisions."
+        "body": "Amlok provides risk intelligence and evidence. Your institution owns its lending policies, review procedures, borrower communications and final decisions."
       },
       {
         "title": "Questions about your agreement",
@@ -2465,7 +2465,7 @@
       },
       {
         "title": "Photography and asset credits",
-        "body": "Team photography: AMLOK. Provider and partner marks belong to their respective owners. Additional asset and software attributions are available in the website’s third-party notices.",
+        "body": "Team photography: Amlok. Provider and partner marks belong to their respective owners. Additional asset and software attributions are available in the website’s third-party notices.",
         "href": "/third-party-notices.txt"
       }
     ],
@@ -2492,10 +2492,10 @@
   },
   {
     "slug": "compare/prism-data",
-    "label": "AMLOK vs Prism Data",
-    "title": "AMLOK and",
+    "label": "Amlok vs Prism Data",
+    "title": "Amlok and",
     "accent": "Prism Data.",
-    "description": "Prism Data turns bank transaction history into cash-flow scores and financial attributes. AMLOK combines authorized evidence with underwriting workflows and ongoing risk reassessment. There is overlap in credit intelligence; the practical choice depends on whether you need a specialist score, a connected assessment workflow, or both.",
+    "description": "Prism Data turns bank transaction history into cash-flow scores and financial attributes. Amlok combines authorized evidence with underwriting workflows and ongoing risk reassessment. There is overlap in credit intelligence; the practical choice depends on whether you need a specialist score, a connected assessment workflow, or both.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2511,15 +2511,15 @@
         "url": "https://www.prismdata.com/cashscore/"
       },
       {
-        "title": "AMLOK product scope",
+        "title": "Amlok product scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
-        "title": "AMLOK integration catalog",
+        "title": "Amlok integration catalog",
         "url": "https://docs.amlok.io/integrations"
       },
       {
-        "title": "AMLOK data model",
+        "title": "Amlok data model",
         "url": "https://docs.amlok.io/data-model/start-here"
       }
     ],
@@ -2532,7 +2532,7 @@
       "slug": "prism-data",
       "vendor": "Prism Data",
       "category": "Cash-flow scoring and credit intelligence",
-      "summary": "Prism Data turns bank transaction history into cash-flow scores and financial attributes. AMLOK combines authorized evidence with underwriting workflows and ongoing risk reassessment. There is overlap in credit intelligence; the practical choice depends on whether you need a specialist score, a connected assessment workflow, or both.",
+      "summary": "Prism Data turns bank transaction history into cash-flow scores and financial attributes. Amlok combines authorized evidence with underwriting workflows and ongoing risk reassessment. There is overlap in credit intelligence; the practical choice depends on whether you need a specialist score, a connected assessment workflow, or both.",
       "vendorStrengths": [
         "CashScore provides credit-risk and first-party-fraud predictions derived from deposit-account activity.",
         "Dedicated products cover transaction categorization, income assessment, and financial attributes.",
@@ -2558,15 +2558,15 @@
           "url": "https://www.prismdata.com/cashscore/"
         },
         {
-          "title": "AMLOK product scope",
+          "title": "Amlok product scope",
           "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
         },
         {
-          "title": "AMLOK integration catalog",
+          "title": "Amlok integration catalog",
           "url": "https://docs.amlok.io/integrations"
         },
         {
-          "title": "AMLOK data model",
+          "title": "Amlok data model",
           "url": "https://docs.amlok.io/data-model/start-here"
         }
       ]
@@ -2574,10 +2574,10 @@
   },
   {
     "slug": "compare/flinks",
-    "label": "AMLOK vs Flinks",
-    "title": "AMLOK and",
+    "label": "Amlok vs Flinks",
+    "title": "Amlok and",
     "accent": "Flinks.",
-    "description": "Flinks provides bank connectivity, document verification, enriched financial insights, and payment infrastructure. AMLOK uses authorized evidence to support underwriting and continued risk assessment. The products overlap in financial analysis, while connectivity and risk workflow needs can also be complementary.",
+    "description": "Flinks provides bank connectivity, document verification, enriched financial insights, and payment infrastructure. Amlok uses authorized evidence to support underwriting and continued risk assessment. The products overlap in financial analysis, while connectivity and risk workflow needs can also be complementary.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2593,11 +2593,11 @@
         "url": "https://www.flinks.com/products/enrich"
       },
       {
-        "title": "AMLOK integration workflows",
+        "title": "Amlok integration workflows",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
-        "title": "AMLOK integration catalog",
+        "title": "Amlok integration catalog",
         "url": "https://docs.amlok.io/integrations"
       }
     ],
@@ -2610,7 +2610,7 @@
       "slug": "flinks",
       "vendor": "Flinks",
       "category": "Financial connectivity, enrichment, and payments",
-      "summary": "Flinks provides bank connectivity, document verification, enriched financial insights, and payment infrastructure. AMLOK uses authorized evidence to support underwriting and continued risk assessment. The products overlap in financial analysis, while connectivity and risk workflow needs can also be complementary.",
+      "summary": "Flinks provides bank connectivity, document verification, enriched financial insights, and payment infrastructure. Amlok uses authorized evidence to support underwriting and continued risk assessment. The products overlap in financial analysis, while connectivity and risk workflow needs can also be complementary.",
       "vendorStrengths": [
         "Flinks Connect supports financial-account data access, while Upload verifies financial documents.",
         "Enrich analyzes income, cash flow, liabilities, and financial behaviour, with API, webhook, and dashboard access.",
@@ -2623,7 +2623,7 @@
       ],
       "considerations": [
         "Separate the requirements for connecting accounts, analyzing data, assessing risk, and moving money before comparing scope.",
-        "AMLOK supplies risk information; borrower funding, payment controls, and institutional intervention remain in the lender's authorized systems.",
+        "Amlok supplies risk information; borrower funding, payment controls, and institutional intervention remain in the lender's authorized systems.",
         "Validate the specific bank, geography, consent, history, refresh cadence, and integration route. An integration catalog entry is not universal production coverage."
       ],
       "sources": [
@@ -2636,11 +2636,11 @@
           "url": "https://www.flinks.com/products/enrich"
         },
         {
-          "title": "AMLOK integration workflows",
+          "title": "Amlok integration workflows",
           "url": "https://docs.amlok.io/api-reference/workflows"
         },
         {
-          "title": "AMLOK integration catalog",
+          "title": "Amlok integration catalog",
           "url": "https://docs.amlok.io/integrations"
         }
       ]
@@ -2648,10 +2648,10 @@
   },
   {
     "slug": "compare/judi-ai",
-    "label": "AMLOK vs JUDI.AI",
-    "title": "AMLOK and",
+    "label": "Amlok vs JUDI.AI",
+    "title": "Amlok and",
     "accent": "JUDI.AI.",
-    "description": "JUDI.AI focuses on small-business lending for community financial institutions, combining borrower applications, cash-flow underwriting, and configurable lending workflows. AMLOK focuses on connected risk intelligence and assessment workflows. They overlap in underwriting, with different implications for the institution's application experience and operating systems.",
+    "description": "JUDI.AI focuses on small-business lending for community financial institutions, combining borrower applications, cash-flow underwriting, and configurable lending workflows. Amlok focuses on connected risk intelligence and assessment workflows. They overlap in underwriting, with different implications for the institution's application experience and operating systems.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2667,15 +2667,15 @@
         "url": "https://judi.ai/underwriting-science/"
       },
       {
-        "title": "AMLOK integration workflows",
+        "title": "Amlok integration workflows",
         "url": "https://docs.amlok.io/api-reference/workflows"
       },
       {
-        "title": "AMLOK integration catalog",
+        "title": "Amlok integration catalog",
         "url": "https://docs.amlok.io/integrations"
       },
       {
-        "title": "AMLOK introduction",
+        "title": "Amlok introduction",
         "url": "https://docs.amlok.io/overview/introduction"
       }
     ],
@@ -2688,7 +2688,7 @@
       "slug": "judi-ai",
       "vendor": "JUDI.AI",
       "category": "Small-business lending workflows and underwriting",
-      "summary": "JUDI.AI focuses on small-business lending for community financial institutions, combining borrower applications, cash-flow underwriting, and configurable lending workflows. AMLOK focuses on connected risk intelligence and assessment workflows. They overlap in underwriting, with different implications for the institution's application experience and operating systems.",
+      "summary": "JUDI.AI focuses on small-business lending for community financial institutions, combining borrower applications, cash-flow underwriting, and configurable lending workflows. Amlok focuses on connected risk intelligence and assessment workflows. They overlap in underwriting, with different implications for the institution's application experience and operating systems.",
       "vendorStrengths": [
         "A digital small-business application and review workflow can operate alongside an existing LOS or serve as the small-business LOS.",
         "Its credit model uses bank transaction data and categorization to assess business cash flow.",
@@ -2702,7 +2702,7 @@
       "considerations": [
         "Start with your operating model: a small-business lending application platform and an intelligence layer are not identical purchases.",
         "Test relevant loan types, borrower segments, available data, model explanations, and workflow controls using your own evaluation criteria.",
-        "If considering both products, confirm the supported handoff and integration effort. Do not assume an out-of-the-box JUDI.AI–AMLOK connection."
+        "If considering both products, confirm the supported handoff and integration effort. Do not assume an out-of-the-box JUDI.AI–Amlok connection."
       ],
       "sources": [
         {
@@ -2714,15 +2714,15 @@
           "url": "https://judi.ai/underwriting-science/"
         },
         {
-          "title": "AMLOK integration workflows",
+          "title": "Amlok integration workflows",
           "url": "https://docs.amlok.io/api-reference/workflows"
         },
         {
-          "title": "AMLOK integration catalog",
+          "title": "Amlok integration catalog",
           "url": "https://docs.amlok.io/integrations"
         },
         {
-          "title": "AMLOK introduction",
+          "title": "Amlok introduction",
           "url": "https://docs.amlok.io/overview/introduction"
         }
       ]
@@ -2730,10 +2730,10 @@
   },
   {
     "slug": "compare/covaleyo",
-    "label": "AMLOK vs Covaleyo",
-    "title": "AMLOK and",
+    "label": "Amlok vs Covaleyo",
+    "title": "Amlok and",
     "accent": "Covaleyo.",
-    "description": "Covaleyo combines loan-origination software with Covarity's commercial loan monitoring. AMLOK connects underwriting evidence and ongoing risk signals. There is overlap in monitoring, while an LOS, borrowing-base platform, and risk-intelligence layer can serve different roles within the same institution.",
+    "description": "Covaleyo combines loan-origination software with Covarity's commercial loan monitoring. Amlok connects underwriting evidence and ongoing risk signals. There is overlap in monitoring, while an LOS, borrowing-base platform, and risk-intelligence layer can serve different roles within the same institution.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2749,11 +2749,11 @@
         "url": "https://covaleyo.com/loan-monitoring-software"
       },
       {
-        "title": "AMLOK data model",
+        "title": "Amlok data model",
         "url": "https://docs.amlok.io/data-model/start-here"
       },
       {
-        "title": "AMLOK product scope",
+        "title": "Amlok product scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       }
     ],
@@ -2766,7 +2766,7 @@
       "slug": "covaleyo",
       "vendor": "Covaleyo",
       "category": "Loan origination and commercial portfolio monitoring",
-      "summary": "Covaleyo combines loan-origination software with Covarity's commercial loan monitoring. AMLOK connects underwriting evidence and ongoing risk signals. There is overlap in monitoring, while an LOS, borrowing-base platform, and risk-intelligence layer can serve different roles within the same institution.",
+      "summary": "Covaleyo combines loan-origination software with Covarity's commercial loan monitoring. Amlok connects underwriting evidence and ongoing risk signals. There is overlap in monitoring, while an LOS, borrowing-base platform, and risk-intelligence layer can serve different roles within the same institution.",
       "vendorStrengths": [
         "Origination tools cover application capture, configurable adjudication, approvals, and connections to lending systems.",
         "Covarity supports covenant calculations, borrowing-base automation, and commercial portfolio review.",
@@ -2779,7 +2779,7 @@
       ],
       "considerations": [
         "If covenant administration, borrowing-base certificates, or application processing are central requirements, evaluate those workflows explicitly.",
-        "AMLOK is not presented as a replacement for all LOS, loan administration, or borrower-servicing functions.",
+        "Amlok is not presented as a replacement for all LOS, loan administration, or borrower-servicing functions.",
         "For a combined architecture, map the system of record, evidence ownership, alert handoffs, and access controls before planning an integration."
       ],
       "sources": [
@@ -2792,11 +2792,11 @@
           "url": "https://covaleyo.com/loan-monitoring-software"
         },
         {
-          "title": "AMLOK data model",
+          "title": "Amlok data model",
           "url": "https://docs.amlok.io/data-model/start-here"
         },
         {
-          "title": "AMLOK product scope",
+          "title": "Amlok product scope",
           "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
         }
       ]
@@ -2804,10 +2804,10 @@
   },
   {
     "slug": "compare/intellifi",
-    "label": "AMLOK vs Intellifi / Nesto Cloud",
-    "title": "AMLOK and",
+    "label": "Amlok vs Intellifi / Nesto Cloud",
+    "title": "Amlok and",
     "accent": "Intellifi / Nesto Cloud.",
-    "description": "Intellifi's official website now identifies the business as Nesto Cloud. Its current offering spans residential and commercial lending technology, including origination, underwriting, servicing, and operational delivery. AMLOK provides risk intelligence within the credit lifecycle, which can complement operational platforms rather than replace every function they perform.",
+    "description": "Intellifi's official website now identifies the business as Nesto Cloud. Its current offering spans residential and commercial lending technology, including origination, underwriting, servicing, and operational delivery. Amlok provides risk intelligence within the credit lifecycle, which can complement operational platforms rather than replace every function they perform.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2827,15 +2827,15 @@
         "url": "https://nestocloud.ca/commercial/"
       },
       {
-        "title": "AMLOK introduction",
+        "title": "Amlok introduction",
         "url": "https://docs.amlok.io/overview/introduction"
       },
       {
-        "title": "AMLOK product scope",
+        "title": "Amlok product scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
-        "title": "AMLOK data model",
+        "title": "Amlok data model",
         "url": "https://docs.amlok.io/data-model/start-here"
       }
     ],
@@ -2848,7 +2848,7 @@
       "slug": "intellifi",
       "vendor": "Intellifi / Nesto Cloud",
       "category": "Mortgage technology and lending operations",
-      "summary": "Intellifi's official website now identifies the business as Nesto Cloud. Its current offering spans residential and commercial lending technology, including origination, underwriting, servicing, and operational delivery. AMLOK provides risk intelligence within the credit lifecycle, which can complement operational platforms rather than replace every function they perform.",
+      "summary": "Intellifi's official website now identifies the business as Nesto Cloud. Its current offering spans residential and commercial lending technology, including origination, underwriting, servicing, and operational delivery. Amlok provides risk intelligence within the credit lifecycle, which can complement operational platforms rather than replace every function they perform.",
       "vendorStrengths": [
         "Residential tools cover acquisition, applications, adjudication, underwriting, funding, and servicing.",
         "Commercial offerings address origination, underwriting, servicing, and asset management.",
@@ -2862,7 +2862,7 @@
       "considerations": [
         "Compare operational scope first. A mortgage origination or servicing replacement involves functions beyond an intelligence API.",
         "Confirm current Nesto Cloud branding, module availability, and delivery model during evaluation; some published commercial portal features are marked coming soon.",
-        "AMLOK does not collect borrower repayments or administer payment promises. Complementary use depends on a confirmed integration and clear operational responsibility."
+        "Amlok does not collect borrower repayments or administer payment promises. Complementary use depends on a confirmed integration and clear operational responsibility."
       ],
       "sources": [
         {
@@ -2878,15 +2878,15 @@
           "url": "https://nestocloud.ca/commercial/"
         },
         {
-          "title": "AMLOK introduction",
+          "title": "Amlok introduction",
           "url": "https://docs.amlok.io/overview/introduction"
         },
         {
-          "title": "AMLOK product scope",
+          "title": "Amlok product scope",
           "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
         },
         {
-          "title": "AMLOK data model",
+          "title": "Amlok data model",
           "url": "https://docs.amlok.io/data-model/start-here"
         }
       ]
@@ -2894,10 +2894,10 @@
   },
   {
     "slug": "compare/inverite-insights",
-    "label": "AMLOK vs Inverité Insights",
-    "title": "AMLOK and",
+    "label": "Amlok vs Inverité Insights",
+    "title": "Amlok and",
     "accent": "Inverité Insights.",
-    "description": "Inverité brings together identity checks, bank verification, enriched financial data, and risk models. AMLOK combines authorized evidence into underwriting and monitoring workflows. Both address risk assessment; the relevant comparison is the data, outputs, and workflow responsibility each supplies for your institution.",
+    "description": "Inverité brings together identity checks, bank verification, enriched financial data, and risk models. Amlok combines authorized evidence into underwriting and monitoring workflows. Both address risk assessment; the relevant comparison is the data, outputs, and workflow responsibility each supplies for your institution.",
     "visual": "lifecycle-api",
     "kind": "comparison",
     "sections": [],
@@ -2917,15 +2917,15 @@
         "url": "https://inveriteinsights.com/bespoke-models/"
       },
       {
-        "title": "AMLOK product scope",
+        "title": "Amlok product scope",
         "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
       },
       {
-        "title": "AMLOK data model",
+        "title": "Amlok data model",
         "url": "https://docs.amlok.io/data-model/start-here"
       },
       {
-        "title": "AMLOK introduction",
+        "title": "Amlok introduction",
         "url": "https://docs.amlok.io/overview/introduction"
       }
     ],
@@ -2938,7 +2938,7 @@
       "slug": "inverite-insights",
       "vendor": "Inverité Insights",
       "category": "Identity, bank verification, and financial risk signals",
-      "summary": "Inverité brings together identity checks, bank verification, enriched financial data, and risk models. AMLOK combines authorized evidence into underwriting and monitoring workflows. Both address risk assessment; the relevant comparison is the data, outputs, and workflow responsibility each supplies for your institution.",
+      "summary": "Inverité brings together identity checks, bank verification, enriched financial data, and risk models. Amlok combines authorized evidence into underwriting and monitoring workflows. Both address risk assessment; the relevant comparison is the data, outputs, and workflow responsibility each supplies for your institution.",
       "vendorStrengths": [
         "ID Verify and Bank Verify address identity, account ownership, income, and financial activity.",
         "Enrich organizes permissioned transaction data into income, spending, cash-flow, and behaviour information.",
@@ -2968,15 +2968,15 @@
           "url": "https://inveriteinsights.com/bespoke-models/"
         },
         {
-          "title": "AMLOK product scope",
+          "title": "Amlok product scope",
           "url": "https://docs.amlok.io/api-reference/products-and-endpoints"
         },
         {
-          "title": "AMLOK data model",
+          "title": "Amlok data model",
           "url": "https://docs.amlok.io/data-model/start-here"
         },
         {
-          "title": "AMLOK introduction",
+          "title": "Amlok introduction",
           "url": "https://docs.amlok.io/overview/introduction"
         }
       ]
@@ -2987,7 +2987,7 @@
     "label": "Site map",
     "title": "Find your way.",
     "accent": "Connect the pieces.",
-    "description": "Explore every page across the AMLOK platform, products, industries, developer resources, and company.",
+    "description": "Explore every page across the Amlok platform, products, industries, developer resources, and company.",
     "visual": "graph",
     "kind": "sitemap",
     "sections": [],
@@ -3120,7 +3120,7 @@
     "label": "Evidence before intelligence: building a foundational risk graph.",
     "title": "Evidence before intelligence:",
     "accent": "building a foundational risk graph.",
-    "description": "A transparent account of AMLOK’s public-data experiments, the measurements they support, and the work still required for lending decisions."
+    "description": "A transparent account of Amlok’s public-data experiments, the measurements they support, and the work still required for lending decisions."
   },
   {
     "slug": "research/follow-the-receipts",
@@ -3271,7 +3271,7 @@
     "label": "Consumer Auto",
     "title": "Consumer Auto.",
     "accent": "See the borrower and the vehicle.",
-    "description": "A complete guide to auto-finance evidence, payment capacity, vehicle exposure, negative equity, monitoring and a measurable AMLOK implementation.",
+    "description": "A complete guide to auto-finance evidence, payment capacity, vehicle exposure, negative equity, monitoring and a measurable Amlok implementation.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3289,7 +3289,7 @@
     "label": "Consumer Mortgage",
     "title": "Consumer Mortgage.",
     "accent": "Understand the years after approval.",
-    "description": "A mortgage-lending guide to verified income, housing obligations, collateral, renewal scenarios and continuous risk assessment with AMLOK.",
+    "description": "A mortgage-lending guide to verified income, housing obligations, collateral, renewal scenarios and continuous risk assessment with Amlok.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3307,7 +3307,7 @@
     "label": "Consumer Student",
     "title": "Consumer Student.",
     "accent": "Follow the transition into repayment.",
-    "description": "A student-lending guide to contract states, income transitions, assistance, repayment evidence and responsible use of AMLOK assessments.",
+    "description": "A student-lending guide to contract states, income transitions, assistance, repayment evidence and responsible use of Amlok assessments.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3325,7 +3325,7 @@
     "label": "Consumer Rent",
     "title": "Consumer Rent.",
     "accent": "Understand the household obligation.",
-    "description": "A rental-assessment guide to tenancy evidence, household affordability, payment continuity and source-backed monitoring with AMLOK.",
+    "description": "A rental-assessment guide to tenancy evidence, household affordability, payment continuity and source-backed monitoring with Amlok.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3361,7 +3361,7 @@
     "label": "Business Commercial",
     "title": "Business Commercial.",
     "accent": "Connect the group, facility and covenant.",
-    "description": "A commercial-lending guide to entity structures, facility availability, covenant evidence, collateral and ongoing financial review with AMLOK.",
+    "description": "A commercial-lending guide to entity structures, facility availability, covenant evidence, collateral and ongoing financial review with Amlok.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3379,7 +3379,7 @@
     "label": "Business Financing",
     "title": "Business Financing.",
     "accent": "Match the evidence to the structure.",
-    "description": "A guide to term loans, equipment finance, invoice finance and revolving credit: product-specific evidence, calculations and AMLOK workflows.",
+    "description": "A guide to term loans, equipment finance, invoice finance and revolving credit: product-specific evidence, calculations and Amlok workflows.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3397,7 +3397,7 @@
     "label": "Banks",
     "title": "Banks.",
     "accent": "Bring evidence across the credit lifecycle.",
-    "description": "A bank implementation guide to underwriting evidence, portfolio monitoring, group exposure, governance and measurable adoption of AMLOK.",
+    "description": "A bank implementation guide to underwriting evidence, portfolio monitoring, group exposure, governance and measurable adoption of Amlok.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3415,7 +3415,7 @@
     "label": "Credit Unions",
     "title": "Credit Unions.",
     "accent": "Keep member context in the assessment.",
-    "description": "A credit-union guide to connected member evidence, joint obligations, local concentration and practical AMLOK adoption by lending teams.",
+    "description": "A credit-union guide to connected member evidence, joint obligations, local concentration and practical Amlok adoption by lending teams.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3433,7 +3433,7 @@
     "label": "Alternative Lenders",
     "title": "Alternative Lenders.",
     "accent": "Make specialist credit explainable.",
-    "description": "A guide for non-bank lenders to product-specific assessments, contract evidence, portfolio segmentation and AMLOK monitoring.",
+    "description": "A guide for non-bank lenders to product-specific assessments, contract evidence, portfolio segmentation and Amlok monitoring.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3451,7 +3451,7 @@
     "label": "Digital Lenders",
     "title": "Digital Lenders.",
     "accent": "Make speed accountable to evidence.",
-    "description": "A digital-lending guide to application coverage, evidence quality, reviewable underwriting, API integration and ongoing AMLOK monitoring.",
+    "description": "A digital-lending guide to application coverage, evidence quality, reviewable underwriting, API integration and ongoing Amlok monitoring.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3469,7 +3469,7 @@
     "label": "Embedded Finance",
     "title": "Embedded Finance.",
     "accent": "Turn platform activity into financial context.",
-    "description": "An embedded-finance guide to commerce-to-cash reconciliation, merchant evidence, repayment structures and AMLOK integration.",
+    "description": "An embedded-finance guide to commerce-to-cash reconciliation, merchant evidence, repayment structures and Amlok integration.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3487,7 +3487,7 @@
     "label": "Platforms",
     "title": "Platforms.",
     "accent": "Make connected records mean the same thing.",
-    "description": "A platform guide to financial-data identity, reconciliation, freshness, versioning and the evidence infrastructure behind AMLOK assessments.",
+    "description": "A platform guide to financial-data identity, reconciliation, freshness, versioning and the evidence infrastructure behind Amlok assessments.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3505,7 +3505,7 @@
     "label": "Trade Credit",
     "title": "Trade Credit.",
     "accent": "Understand the buyer behind the receivable.",
-    "description": "A trade-credit insurance guide to buyer identity, receivable aging, concentration, policy limits and evidence-led assessment with AMLOK.",
+    "description": "A trade-credit insurance guide to buyer identity, receivable aging, concentration, policy limits and evidence-led assessment with Amlok.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3523,7 +3523,7 @@
     "label": "Surety",
     "title": "Surety.",
     "accent": "Connect contractor capacity to the project.",
-    "description": "A surety guide to contractor financial evidence, work in progress, backlog, bonded obligations and AMLOK-supported monitoring.",
+    "description": "A surety guide to contractor financial evidence, work in progress, backlog, bonded obligations and Amlok-supported monitoring.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3541,7 +3541,7 @@
     "label": "Premium Finance",
     "title": "Premium Finance.",
     "accent": "Understand the obligation and the recovery.",
-    "description": "A premium-finance guide to agreement and policy matching, installments, recoverable premium, timing and AMLOK-supported assessment.",
+    "description": "A premium-finance guide to agreement and policy matching, installments, recoverable premium, timing and Amlok-supported assessment.",
     "visual": "graph",
     "kind": "article",
     "sections": [],
@@ -3558,7 +3558,7 @@
     "slug": "industry-guides/merchant-cash-advance",
     "title": "Merchant Cash Advance.",
     "accent": "Underwrite the receipts. Understand the merchant.",
-    "description": "A Canada and US guide to merchant cash advance underwriting: financing statistics, receipt reconciliation, remittance capacity, worked examples and AMLOK monitoring workflows.",
+    "description": "A Canada and US guide to merchant cash advance underwriting: financing statistics, receipt reconciliation, remittance capacity, worked examples and Amlok monitoring workflows.",
     "related": [
       "research/follow-the-receipts",
       "industry-guides/business-smb",

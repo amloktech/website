@@ -14,7 +14,7 @@ const modules = [
   { x: 96, y: 0, label: 'Underwrite', icon: Gauge },
   { x: 0, y: 96, label: 'Service', icon: WalletCards },
   { x: 192, y: 0, label: 'Monitor', icon: Activity },
-  { x: 96, y: 96, label: 'AMLOK', icon: null },
+  { x: 96, y: 96, label: 'Amlok', icon: null },
   { x: 192, y: 96, label: 'Investigate', icon: Search },
 ];
 
@@ -22,7 +22,7 @@ export function ProductModularity() {
   const id = useId().replace(/:/g, '');
   return <svg className="home-products-modularity" viewBox="0 0 490 345" role="img" aria-labelledby={`${id}-title ${id}-description`}>
     <title id={`${id}-title`}>Modular workflows. One connected foundation.</title>
-    <desc id={`${id}-description`}>Verification, underwriting, monitoring, servicing, and investigation are separate modules connected by AMLOK risk intelligence.</desc>
+    <desc id={`${id}-description`}>Verification, underwriting, monitoring, servicing, and investigation are separate modules connected by Amlok risk intelligence.</desc>
     <defs>
       <radialGradient id={`${id}-blue`} cx="0" cy="0" r="1" gradientTransform={heroGradient.svgTransform}>
         {heroGradient.stops.map(stop => <stop key={stop.offset} offset={stop.offset} stopColor={stop.color} />)}

@@ -60,7 +60,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
 
   return <>
     <div className="home-mobile-controls">
-      <button className="home-mobile-icon" type="button" aria-label={searchOpen ? 'Close search' : 'Search AMLOK'} aria-expanded={searchOpen} onClick={onSearch}>
+      <button className="home-mobile-icon" type="button" aria-label={searchOpen ? 'Close search' : 'Search Amlok'} aria-expanded={searchOpen} onClick={onSearch}>
         {searchOpen ? <X aria-hidden="true" /> : <Search aria-hidden="true" />}
       </button>
       <button className="home-mobile-icon" type="button" aria-label="Open menu" aria-haspopup="dialog" aria-controls="home-mobile-menu" aria-expanded={open} onClick={() => {
@@ -70,7 +70,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
       }}><Menu aria-hidden="true" /></button>
     </div>
 
-    <dialog className="home-mobile-menu" id="home-mobile-menu" ref={dialogRef} aria-label="AMLOK navigation" onCancel={event => { event.preventDefault(); closeMenu(); }} onKeyDown={event => {
+    <dialog className="home-mobile-menu" id="home-mobile-menu" ref={dialogRef} aria-label="Amlok navigation" onCancel={event => { event.preventDefault(); closeMenu(); }} onKeyDown={event => {
       if (event.key !== 'Tab') return;
       const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), select:not([disabled])')).filter(element => element.getClientRects().length > 0);
       const first = controls[0];
@@ -84,9 +84,9 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
       }
     }}>
       <div className="home-mobile-menu-header">
-        <a className="home-logo" href={destination("#top")} aria-label="AMLOK home" onClick={closeMenu}><Wordmark gradient /></a>
+        <a className="home-logo" href={destination("#top")} aria-label="Amlok home" onClick={closeMenu}><Wordmark gradient /></a>
         <div className="home-mobile-menu-tools">
-          <button className="home-mobile-icon" type="button" aria-label="Search AMLOK" onClick={() => { closeMenu(); onSearch(); }}><Search aria-hidden="true" /></button>
+          <button className="home-mobile-icon" type="button" aria-label="Search Amlok" onClick={() => { closeMenu(); onSearch(); }}><Search aria-hidden="true" /></button>
           <button className="home-mobile-icon" type="button" aria-label="Close menu" ref={closeRef} onClick={closeMenu}><X aria-hidden="true" /></button>
         </div>
       </div>

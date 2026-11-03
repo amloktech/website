@@ -1,3 +1,4 @@
+import { BrandText } from './ui';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
@@ -38,7 +39,7 @@ function BlogFeatured() {
 }
 
 function MoreResources() {
-  return <section className={styles.more}><div className="cp-inner"><div><span className="cp-eyebrow"><i/>KEEP EXPLORING</span><h2>A little more <span className="home-heading-gradient">perspective.</span></h2></div><div className={styles.moreLinks}><a href="/research">Research library <ArrowUpRight size={20}/></a><a href="/platform">The AMLOK platform <ArrowUpRight size={20}/></a><a href="/developers">Developer resources <ArrowUpRight size={20}/></a></div></div></section>;
+  return <section className={styles.more}><div className="cp-inner"><div><span className="cp-eyebrow"><i/>KEEP EXPLORING</span><h2>A little more <span className="home-heading-gradient">perspective.</span></h2></div><div className={styles.moreLinks}><a href="/research">Research library <ArrowUpRight size={20}/></a><a href="/platform">The Amlok platform <ArrowUpRight size={20}/></a><a href="/developers">Developer resources <ArrowUpRight size={20}/></a></div></div></section>;
 }
 
 export function BlogPage() {
@@ -52,7 +53,7 @@ export function BlogPage() {
     <section className={styles.hero} aria-labelledby="blog-title"><div className="cp-inner">
       <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13}/><span aria-current="page">Blog</span></nav>
       <div className={styles.heroGrid}><div>
-        <span className="cp-eyebrow"><i/>THE AMLOK JOURNAL</span>
+        <span className="cp-eyebrow"><i/><BrandText>THE Amlok JOURNAL</BrandText></span>
         <h1 id="blog-title">A clearer view.<br/><span className="home-heading-gradient">On risk.</span></h1>
         <p>Ideas, practical perspectives, and fresh thinking on credit, connected data, and the intelligence behind better-informed decisions.</p>
         <PageActions/>
@@ -69,7 +70,7 @@ export function BlogArticle({ page, post }: { page: SitePageContent; post: BlogP
   const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title,
     description: post.description, image: `${siteOrigin}${post.image}`,
     author: { '@type': 'Organization', name: post.author, url: siteOrigin },
-    publisher: { '@type': 'Organization', name: 'AMLOK', url: siteOrigin },
+    publisher: { '@type': 'Organization', name: 'Amlok', url: siteOrigin },
     mainEntityOfPage: `${siteOrigin}/blog/${post.slug}` };
   return <main className={`home-page cp-page ${styles.page}`} id="top"><SiteHeader/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }}/>
@@ -79,7 +80,7 @@ export function BlogArticle({ page, post }: { page: SitePageContent; post: BlogP
         <div className={styles.articleIntro}>
           <h1>{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{post.description}</p>
         </div>
-        <img className={styles.articleImage} src={post.image} alt={`Abstract AMLOK illustration for ${post.topic.toLowerCase()}`} width={1200} height={630}/><BlogAuthor post={post}/>
+        <img className={styles.articleImage} src={post.image} alt={`Abstract Amlok illustration for ${post.topic.toLowerCase()}`} width={1200} height={630}/><BlogAuthor post={post}/>
       </div></header>
       <div className={`cp-inner ${styles.articleBody}`}>
         <aside><span className="cp-eyebrow">IN THIS ARTICLE</span><nav aria-label="Article sections">{page.sections.map((section,index) => <a key={section.title} href={`#perspective-${index+1}`}>{section.title}</a>)}</nav></aside>

@@ -6,8 +6,8 @@ import { Activity, ArrowUpRight, Bot, ChartNoAxesCombined, CreditCard, Database,
 // Website starting rates confirmed by the user on 2026-10-28.
 // Enterprise legal, data, Slack support, and 99.99% SLA copy confirmed by the user on 2026-10-28.
 const usageFeatures = [
-  { icon: FileCheck2, text: <><strong>AMLOK Insights</strong> from CAD 8 per underwriting</> },
-  { icon: Activity, text: <><strong>AMLOK Signal</strong> from CAD 5 per active account / month</> },
+  { icon: FileCheck2, text: <><strong>Amlok Insights</strong> from CAD 8 per underwriting</> },
+  { icon: Activity, text: <><strong>Amlok Signal</strong> from CAD 5 per active account / month</> },
   { icon: Palette, text: <>White-label flow under your own brand</> },
   { icon: WalletCards, text: <>One shared credit balance across all products</> },
   { icon: RefreshCw, text: <>Change-driven reassessment included with Signal</> },

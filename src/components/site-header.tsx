@@ -18,7 +18,7 @@ const languages = [
 type SearchEntry = { title: string; description: string; category: 'Pages' | 'Sections'; href: string; keywords: string };
 const searchIndex: SearchEntry[] = [
   ...pageIndex.map(page => ({ title: page.title, description: page.description, category: 'Pages' as const, href: page.path, keywords: `${page.category} ${page.path} ${page.title}`.toLowerCase() })),
-  { title: 'AMLOK design system', description: 'Identity, graphics, and interface guidelines.', category: 'Pages', href: '/brand', keywords: 'brand identity design colors typography logo' },
+  { title: 'Amlok design system', description: 'Identity, graphics, and interface guidelines.', category: 'Pages', href: '/brand', keywords: 'brand identity design colors typography logo' },
 ];
 
 export function SiteHeader({isHome=false}:{isHome?:boolean}) {
@@ -106,14 +106,14 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
   return <>
 
     <header ref={headerRef} className={`home-header ${headerScrolled ? 'is-scrolled' : ''}`}>
-      <a href={`${homeHref}#top`} className="home-logo" aria-label="AMLOK home"><Wordmark gradient /></a>
+      <a href={`${homeHref}#top`} className="home-logo" aria-label="Amlok home"><Wordmark gradient /></a>
       <nav className="home-nav" aria-label="Main navigation">
         <SolutionsMenu homeHref={homeHref} otherMenuOpen={searchOpen||languageMenuOpen||resourcesOpen||developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(false);}} />
         <DevelopersMenu open={developersOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setResourcesOpen(false);setDevelopersOpen(true);}} onClose={()=>setDevelopersOpen(false)} />
         <ResourcesMenu open={resourcesOpen} onOpen={()=>{setSearchOpen(false);setLanguageMenuOpen(false);setDevelopersOpen(false);setResourcesOpen(true);}} onClose={()=>setResourcesOpen(false)} />
         <a href="/pricing">Pricing</a>
         <div className="home-search-control">
-          <button className="home-search-button" type="button" aria-label={searchOpen ? 'Close search' : 'Search AMLOK'} aria-expanded={searchOpen} onClick={() => {setSearchOpen(!searchOpen); setLanguageMenuOpen(false);}}>{searchOpen ? <X size={19}/> : <Search size={19}/>}</button>
+          <button className="home-search-button" type="button" aria-label={searchOpen ? 'Close search' : 'Search Amlok'} aria-expanded={searchOpen} onClick={() => {setSearchOpen(!searchOpen); setLanguageMenuOpen(false);}}>{searchOpen ? <X size={19}/> : <Search size={19}/>}</button>
         </div>
       </nav>
       <div className="home-header-actions">
@@ -135,7 +135,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
     </header>
 
     {searchOpen && <div className={`home-search-layer ${headerScrolled ? 'is-scrolled' : ''}`} onMouseDown={event => {if (event.target === event.currentTarget) setSearchOpen(false);}}>
-      <section className="home-search-dialog" role="dialog" aria-modal="true" aria-label="Search AMLOK">
+      <section className="home-search-dialog" role="dialog" aria-modal="true" aria-label="Search Amlok">
         <div className="home-search-field">
           <Search size={20} aria-hidden="true" />
           <input ref={searchInputRef} id="home-search" type="search" role="combobox" aria-label="Search query" aria-autocomplete="list" aria-controls="home-search-results" aria-expanded={searchResults.length > 0} aria-activedescendant={searchResults.length ? `home-search-option-${activeSearchResult}` : undefined} placeholder="Search pages, sections..." value={searchQuery} onChange={event => {setSearchQuery(event.target.value); setActiveSearchResult(0);}} onKeyDown={event => {
@@ -162,7 +162,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
             })}
           </> : <p className="home-search-empty">No results for “{searchQuery.trim()}”</p>}
         </div>}
-        <p className="home-search-sr-only">Search every AMLOK page and platform section.</p>
+        <p className="home-search-sr-only">Search every Amlok page and platform section.</p>
       </section>
     </div>}
 

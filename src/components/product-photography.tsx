@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Activity, ArrowDown, ArrowUpRight, Building2, Check, FileCheck2, FileText, Link2, Mail, Search, ShieldCheck, UserRound } from 'lucide-react';
-import { Mark } from './ui';
+import { BrandText, Mark } from './ui';
 
 type Workflow = 'verification' | 'underwriting' | 'monitoring' | 'servicing' | 'investigation';
 
@@ -38,7 +38,7 @@ const photographs = {
 } as const;
 
 function OverlayLabel({ action }: { action: string }) {
-  return <div className="workflow-photo-label"><Mark /><span>AMLOK / {action}</span></div>;
+  return <div className="workflow-photo-label"><Mark /><BrandText>{`Amlok / ${action}`}</BrandText></div>;
 }
 
 function VerificationOverlay({ step }: { step: number }) {

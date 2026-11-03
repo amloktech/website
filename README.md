@@ -1,7 +1,7 @@
-# AMLOK website and design system
+# Amlok website and design system
 
 Local Next.js / React / TypeScript website. `/` is the marketing homepage;
-`/brand` is the interactive AMLOK design system for web, marketing, and product UI.
+`/brand` is the interactive Amlok design system for web, marketing, and product UI.
 
 ## Run locally
 
@@ -65,7 +65,7 @@ Sitemap URLs, robots, structured data, and page canonicals share this value in
 `src/lib/site-config.ts`. Legacy paths are permanently redirected through
 `public/_redirects` on Cloudflare.
 
-## AMLOK system 1.0
+## Amlok system 1.0
 
 **Protected by structure. Connected by signals.**
 
@@ -74,7 +74,7 @@ Sitemap URLs, robots, structured data, and page canonicals share this value in
   preserved illustration exception; small round dots encode signals.
 - The original A and wordmark remain the identity. Angular shields, square scan
   fields, fine grid lines, and corner brackets form the supporting visual language.
-- AMLOK blue `#052698`, signal blue `#2567FF`, navy `#07152F`, and neutral surfaces
+- Amlok blue `#052698`, signal blue `#2567FF`, navy `#07152F`, and neutral surfaces
   anchor a unified semantic palette with light and dark theme pairs.
 - Inter for headings and body text; JetBrains Mono for short structured labels.
   Use shared type roles, a 4px spacing rhythm, and a 1344px content grid.
@@ -112,7 +112,7 @@ add compatible patterns; patches correct implementation or documentation.
 
 ## Cloudflare deployment
 
-The `website` Worker in the AMLOK Tech account is connected to
+The `website` Worker in the Amlok Tech account is connected to
 `amloktech/website`, branch `main`. Keep its build settings as:
 
 - Build command: `pnpm run build`

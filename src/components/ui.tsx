@@ -13,6 +13,13 @@ export function Wordmark({ className = '', gradient = false }: { className?: str
   return <span className={`wordmark ${gradient ? 'wordmark-gradient' : ''} ${className}`}><Mark gradient={gradient}/><span>amlok</span></span>;
 }
 
+/** Preserve the written name inside labels whose surrounding text is uppercase. */
+export function BrandText({ children }: { children: string }) {
+  return <span>{children.split(/\b(Amlok)\b/g).map((part, index) => part === 'Amlok'
+    ? <span className="brand-name" key={index}>{part}</span>
+    : part)}</span>;
+}
+
 export function Button({ variant = 'primary', className = '', children, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: 'primary' | 'blue' | 'secondary' | 'ghost'; children: ReactNode }) {
   return <button className={`button button-${variant} ${className}`} {...props}>{children}</button>;
 }

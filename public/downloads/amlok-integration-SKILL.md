@@ -1,11 +1,11 @@
 ---
 name: amlok-integration
-description: Implement and review institution-authorized AMLOK API integrations.
+description: Implement and review institution-authorized Amlok API integrations.
 ---
 
-# AMLOK integration guide
+# Amlok integration guide
 
-Build an AMLOK integration for our institution’s approved workflow.
+Build an Amlok integration for our institution’s approved workflow.
 
 Start with https://docs.amlok.io/llms.txt and the OpenAPI contract at https://docs.amlok.io/openapi/amlok-v1.json. Read the quickstart, product scope, integration security, and relevant sandbox journey before implementing endpoints. Use the current contract for exact operation names and schemas.
 

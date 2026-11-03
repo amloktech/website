@@ -1,3 +1,4 @@
+import { BrandText } from './ui';
 import type { CSSProperties } from 'react';
 import { ArrowRight, Check, FileText, Landmark, Link2, Network, ReceiptText, ShieldCheck, Users, Wallet } from 'lucide-react';
 import styles from './underwriting.module.css';
@@ -34,7 +35,7 @@ export function EvidenceReconciliation() {
 
 export function AssessmentPreview() {
   return <figure className={styles.assessment}>
-    <div className={styles.artTop}><span>AMLOK INSIGHTS / ILLUSTRATIVE OUTPUT</span><FileText size={17}/></div>
+    <div className={styles.artTop}><BrandText>Amlok INSIGHTS / ILLUSTRATIVE OUTPUT</BrandText><FileText size={17}/></div>
     <header><span>UNDERWRITING SNAPSHOT</span><strong>A clearer case<br/>for your next decision.</strong></header>
     <div className={styles.assessmentRows}>
       {[

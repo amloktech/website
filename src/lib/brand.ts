@@ -1,5 +1,5 @@
 export const brand = {
-  name: 'AMLOK', version: '2.1.0', reviewed: '2026-11-01',
+  name: 'Amlok', version: '2.1.1', reviewed: '2026-11-03',
   principle: 'Clear by design. Connected by signals.',
 };
 
@@ -10,7 +10,7 @@ const heroGradientStops = [
   { offset: 1, color: 'var(--identity-blue)' },
 ] as const;
 export const heroGradient = {
-  name: 'AMLOK hero gradient',
+  name: 'Amlok hero gradient',
   token: '--gradient-hero',
   css: `radial-gradient(ellipse at 50% 42%, ${heroGradientStops.map(stop => `${stop.color} ${stop.offset * 100}%`).join(', ')})`,
   stops: heroGradientStops,
@@ -18,16 +18,16 @@ export const heroGradient = {
   svgTransform: 'translate(0.5 0.42) scale(0.7071067812 0.8202438662)',
 } as const;
 
-/** Supporting color fields for AMLOK product illustrations. */
+/** Supporting color fields for Amlok product illustrations. */
 export const gradientFields = [
   { id: 'orchid', name: 'Orchid mist', token: '--gradient-orchid', from: '#FBEAF9', to: '#E8B9E5', reference: 'Device and behavior', use: 'A gentle field for identity and relationship illustrations.' },
-  { id: 'periwinkle', name: 'Periwinkle blue', token: '--gradient-periwinkle', from: '#D8E3FA', to: '#7198F4', reference: 'Onboarding', use: 'The closest companion to AMLOK blue for product imagery.' },
+  { id: 'periwinkle', name: 'Periwinkle blue', token: '--gradient-periwinkle', from: '#D8E3FA', to: '#7198F4', reference: 'Onboarding', use: 'The closest companion to Amlok blue for product imagery.' },
   { id: 'lavender', name: 'Lavender light', token: '--gradient-lavender', from: '#BB9FE7', to: '#E2D7F4', reference: 'Fraud prevention', use: 'A darker top that opens into light, suited to simulation imagery.' },
   { id: 'lagoon', name: 'Lagoon depth', token: '--gradient-lagoon', from: '#C2EFF4', to: '#0D775E', reference: 'Cyber security', use: 'A deeper field that gives white evidence surfaces strong separation.' },
   { id: 'apricot', name: 'Apricot warmth', token: '--gradient-apricot', from: '#FCDCCF', to: '#F8713A', reference: 'AML compliance', use: 'A warm counterpoint for a featured workflow or editorial graphic.' },
 ].map(field => ({ ...field, css: `linear-gradient(180deg, ${field.from} 0%, ${field.to} 100%)` }));
 
-/** Shared AMLOK marketing layout and responsive gutters. */
+/** Shared Amlok marketing layout and responsive gutters. */
 export const siteLayout = { contentMax: 1280, desktopGutter: 48, compactGutter: 20, desktopBreakpoint: 1024 } as const;
 
 /** Source of truth for the site and the downloadable design tokens. */
@@ -115,7 +115,7 @@ export const darkTokens = {
 } as const;
 
 export const colors = [
-  { name: 'AMLOK blue', hex: '#052698', token: '--blue', use: 'Identity, primary actions, trusted structure', light: false },
+  { name: 'Amlok blue', hex: '#052698', token: '--blue', use: 'Identity, primary actions, trusted structure', light: false },
   { name: 'Signal blue', hex: '#2567FF', token: '--blue-secondary', use: 'Focus, selected signals, chart emphasis', light: false },
   { name: 'Cobalt blue', hex: tokenGroups.Color['--blue-field'].toUpperCase(), token: '--blue-field', use: 'Blue brand panels, reversed identity, and signal fields', light: false },
   { name: 'Canvas', hex: '#FFFFFF', token: '--canvas', use: 'Primary reading and decision surfaces', light: true },
@@ -127,7 +127,7 @@ export const colors = [
 ];
 
 const declarations = (tokens: Record<string, string>) => Object.entries(tokens).map(([key, value]) => `  ${key}: ${value};`).join('\n');
-export const tokensCSS = `/* AMLOK ${brand.version}: Rounded surfaces / Precise graphics / Clear signals. Source: /brand */
+export const tokensCSS = `/* Amlok ${brand.version}: Rounded surfaces / Precise graphics / Clear signals. Source: /brand */
 :root {
 ${Object.values(tokenGroups).map(declarations).join('\n')}
 }

@@ -1,4 +1,4 @@
-// Selected from the AMLOK integration catalogue; source artwork is recorded beside the assets.
+// Selected from the Amlok integration catalogue; source artwork is recorded beside the assets.
 export const integrationLogoRows = [
   [
     { name: "Shopify", image: "/images/connect-logos/shopify.svg" },

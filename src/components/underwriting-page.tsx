@@ -1,3 +1,4 @@
+import { BrandText } from './ui';
 import { HomeMonitoringCta } from './home-monitoring-cta';
 import { Activity, ArrowRight, ArrowUpRight, Check, ChevronRight, Code2, FileSearch, Layers3, Network, ShieldCheck } from 'lucide-react';
 import { underwritingAudiences, underwritingFaqs } from '@/content/underwriting';
@@ -10,7 +11,7 @@ import { AssessmentPreview, EvidenceReconciliation, UnderwritingGraph } from './
 import styles from './underwriting.module.css';
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
-  return <span className={`cp-eyebrow ${styles.eyebrow}`}><i aria-hidden="true"/>{children}</span>;
+  return <span className={`cp-eyebrow ${styles.eyebrow}`}><i aria-hidden="true"/>{typeof children === 'string' ? <BrandText>{children}</BrandText> : children}</span>;
 }
 
 export function UnderwritingPage({ page }: { page: SitePageContent }) {
@@ -19,7 +20,7 @@ export function UnderwritingPage({ page }: { page: SitePageContent }) {
     itemListElement: [
       { '@type':'ListItem',position:1,name:'Home',item:siteOrigin },
       { '@type':'ListItem',position:2,name:'Products',item:`${siteOrigin}/products` },
-      { '@type':'ListItem',position:3,name:'AMLOK Insights',item:`${siteOrigin}/products/underwriting` },
+      { '@type':'ListItem',position:3,name:'Amlok Insights',item:`${siteOrigin}/products/underwriting` },
     ],
   };
   return <main className={`home-page cp-page ${styles.page}`} id="top">
@@ -27,9 +28,9 @@ export function UnderwritingPage({ page }: { page: SitePageContent }) {
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,'\\u003c')}}/>
     <section className={styles.hero} aria-labelledby="page-title">
       <div className="cp-inner">
-        <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13} aria-hidden="true"/><a href="/products">Products</a><ChevronRight size={13} aria-hidden="true"/><span aria-current="page">AMLOK Insights</span></nav>
+        <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13} aria-hidden="true"/><a href="/products">Products</a><ChevronRight size={13} aria-hidden="true"/><span aria-current="page">Amlok Insights</span></nav>
         <div className={styles.heroGrid}>
-          <div className={styles.heroCopy}><Eyebrow>AMLOK INSIGHTS / UNDERWRITING</Eyebrow><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p><div className={styles.actions}><BookingLink className={styles.primary}>Explore your underwriting workflow<ArrowUpRight size={18}/></BookingLink><a className={styles.textLink} href="#underwriting-teams">Find your use case<ArrowRight size={17}/></a></div><p className={styles.heroNote}><ShieldCheck size={16}/>Connected evidence. Reviewable reasoning. Your decision.</p></div>
+          <div className={styles.heroCopy}><Eyebrow>Amlok INSIGHTS / UNDERWRITING</Eyebrow><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p><div className={styles.actions}><BookingLink className={styles.primary}>Explore your underwriting workflow<ArrowUpRight size={18}/></BookingLink><a className={styles.textLink} href="#underwriting-teams">Find your use case<ArrowRight size={17}/></a></div><p className={styles.heroNote}><ShieldCheck size={16}/>Connected evidence. Reviewable reasoning. Your decision.</p></div>
           <figure className={styles.heroArt}><div className={styles.artTop}><span>BEYOND THE APPLICATION</span><span className={styles.liveDot}>CONNECTED CONTEXT</span></div><UnderwritingGraph/><figcaption>Income. Obligations. Relationships.<br/><strong>The context that shapes the deal.</strong></figcaption></figure>
         </div>
         <div className={styles.sourceStrip}><span>BUILD THE PICTURE WITH</span><ul>{['Banking','Payments','Commerce','Accounting','Documents','Permitted external evidence'].map(source => <li key={source}>{source}</li>)}</ul></div>
@@ -38,7 +39,7 @@ export function UnderwritingPage({ page }: { page: SitePageContent }) {
 
     <section className={styles.section} aria-labelledby="ecosystem-title">
       <div className="cp-inner">
-        <div className={styles.splitHeading}><div><Eyebrow>THE ECOSYSTEM VIEW</Eyebrow><h2 id="ecosystem-title">A deal is a network<br/><span className="home-heading-gradient">of relationships.</span></h2></div><p>The application introduces the customer. Their accounts, income sources, commitments, and counterparties explain how the financial relationship works. AMLOK helps you bring those connections into the assessment, within the evidence you are authorized to use.</p></div>
+        <div className={styles.splitHeading}><div><Eyebrow>THE ECOSYSTEM VIEW</Eyebrow><h2 id="ecosystem-title">A deal is a network<br/><span className="home-heading-gradient">of relationships.</span></h2></div><p>The application introduces the customer. Their accounts, income sources, commitments, and counterparties explain how the financial relationship works. Amlok helps you bring those connections into the assessment, within the evidence you are authorized to use.</p></div>
         <div className={styles.principles}>{[
           [Network,'See connected exposure','Understand who and what is linked to the deal. Keep supported relationships, candidate matches, and unresolved questions distinct.'],
           [Layers3,'Reconcile the financial story','Follow activity across records and systems. Separate new economic activity from transfers, financing, and duplicate representations.'],
@@ -83,7 +84,7 @@ export function UnderwritingPage({ page }: { page: SitePageContent }) {
     </section>
 
     <section className={styles.section} aria-labelledby="continuity-title"><div className="cp-inner">
-      <div className={styles.continuity}><div><Eyebrow>INSIGHTS + SIGNAL</Eyebrow><h2 id="continuity-title">Keep the context<br/><span className="home-heading-gradient">after the decision.</span></h2><p>The original assessment becomes a starting point for monitoring. AMLOK Signal compares permitted new evidence with that baseline, surfaces changes for review, and preserves the history behind the relationship.</p><a className={styles.textLink} href="/products/portfolio-monitoring">Explore portfolio monitoring<ArrowUpRight size={17}/></a></div><div className={styles.bridge} aria-label="Insights assessment connects to new evidence and a Signal review"><div><FileSearch/><span>Insights</span><strong>Original assessment</strong></div><span className={styles.bridgeConnection} aria-hidden="true"/><div><Activity/><span>Signal</span><strong>Change in context</strong></div><p>Your team decides when and how to act.</p></div></div>
+      <div className={styles.continuity}><div><Eyebrow>INSIGHTS + SIGNAL</Eyebrow><h2 id="continuity-title">Keep the context<br/><span className="home-heading-gradient">after the decision.</span></h2><p>The original assessment becomes a starting point for monitoring. Amlok Signal compares permitted new evidence with that baseline, surfaces changes for review, and preserves the history behind the relationship.</p><a className={styles.textLink} href="/products/portfolio-monitoring">Explore portfolio monitoring<ArrowUpRight size={17}/></a></div><div className={styles.bridge} aria-label="Insights assessment connects to new evidence and a Signal review"><div><FileSearch/><span>Insights</span><strong>Original assessment</strong></div><span className={styles.bridgeConnection} aria-hidden="true"/><div><Activity/><span>Signal</span><strong>Change in context</strong></div><p>Your team decides when and how to act.</p></div></div>
       <div className={styles.integration}><div><Code2 size={26}/><h3>Bring the assessment into your operating model.</h3><p>Start with a defined underwriting use case, agree the sources and outputs, and connect the results to your team’s existing systems.</p></div><div className={styles.integrationActions}><a className={styles.primary} href="https://docs.amlok.io/api-reference/overview">Explore API<ArrowUpRight size={18}/></a><a className={styles.textLink} href="/integrations">Explore integrations<ArrowRight size={16}/></a></div></div>
     </div></section>
 

@@ -1,4 +1,4 @@
-/* AMLOK design-system documentation and live specimens. Tokens live in lib/brand.ts. */
+/* Amlok design-system documentation and live specimens. Tokens live in lib/brand.ts. */
 .ds-system { min-height:100vh; background:var(--canvas); color:var(--ink); font-size:16px; line-height:1.6; color-scheme:light; }
 .ds-system[data-amlok-theme="dark"] { color-scheme:dark; }
 .ds-system :where(h1,h2,h3,h4,p) { margin:0; }

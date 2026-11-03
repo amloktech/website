@@ -38,7 +38,7 @@ export function ManifestoPage({ page }: { page: SitePageContent }) {
         <div className={styles.prose}>
           <p>Capital gives people and businesses room to move: to buy a home, finance a vehicle, stock a shop, or build something that does not exist yet. Every decision to provide it depends on an understanding of risk. The quality of that understanding shapes which opportunities become possible.</p>
           <p>Yet the evidence behind a decision is often scattered across applications, statements, ledgers, and systems. Teams spend time reconstructing the same financial life. An assessment becomes a snapshot, even as income, obligations, and relationships keep changing.</p>
-          <p>We founded AMLOK to help close that gap. We are building infrastructure that connects financial evidence, makes its meaning easier to examine, and carries that understanding through the life of a credit relationship. Our ambition is to improve how capital is accessed, allocated, and managed.</p>
+          <p>We founded Amlok to help close that gap. We are building infrastructure that connects financial evidence, makes its meaning easier to examine, and carries that understanding through the life of a credit relationship. Our ambition is to improve how capital is accessed, allocated, and managed.</p>
         </div>
       </div>
     </section>

@@ -10,9 +10,9 @@ export function BlogSignup() {
   const [email, setEmail] = useState('');
   const [draft, setDraft] = useState('');
   return <div className={styles.signup}>
-    <form aria-label="Sign up for AMLOK journal updates" onSubmit={event => {
+    <form aria-label="Sign up for Amlok journal updates" onSubmit={event => {
       event.preventDefault();
-      setDraft(`mailto:support@amlok.io?subject=${encodeURIComponent('AMLOK journal: signup request')}&body=${encodeURIComponent(`Please add me to AMLOK journal updates.\n\nEmail: ${email.trim()}`)}`);
+      setDraft(`mailto:support@amlok.io?subject=${encodeURIComponent('Amlok journal: signup request')}&body=${encodeURIComponent(`Please add me to Amlok journal updates.\n\nEmail: ${email.trim()}`)}`);
     }}>
       <input type="email" name="email" autoComplete="email" aria-label="Your email address" aria-describedby="signup-note" placeholder="Your email address" required maxLength={254} value={email} onChange={event => { setEmail(event.target.value); setDraft(''); }}/>
       <button type="submit">Sign up <ArrowUpRight size={16} aria-hidden="true"/></button>

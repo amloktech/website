@@ -8,7 +8,7 @@ import styles from './service-status.module.css';
 
 const labels: Record<Health, string> = { operational: 'Available', degraded: 'Issue detected', unknown: 'Availability unconfirmed' };
 const descriptions = {
-  website: 'Checks that the homepage is available from AMLOK’s Cloudflare asset delivery. This does not test external DNS or every page.',
+  website: 'Checks that the homepage is available from Amlok’s Cloudflare asset delivery. This does not test external DNS or every page.',
   documentation: 'Checks the public documentation homepage over HTTPS. This does not test product API behavior.',
 };
 

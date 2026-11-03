@@ -29,13 +29,13 @@ const capabilities = [
 ];
 
 const platformFeatures = [
-  { title: 'Policy-aligned assessments', description: 'Apply your institution’s credit criteria to connected financial evidence. AMLOK surfaces policy exceptions, screening matches, and unresolved requirements so your team can review the evidence and own the decision.' },
+  { title: 'Policy-aligned assessments', description: 'Apply your institution’s credit criteria to connected financial evidence. Amlok surfaces policy exceptions, screening matches, and unresolved requirements so your team can review the evidence and own the decision.' },
   { title: 'Evidence completeness', description: 'Identify missing documents, inconsistent records, and gaps in source coverage before they become assumptions. Keep incomplete or outdated evidence visible throughout the assessment.' },
   { title: 'Connected risk workflows', description: 'Connect verification, underwriting, monitoring, and investigation around the same borrower and related entities. Carry evidence, policy requirements, and review outcomes forward as the deal evolves.', wide: true },
   { title: 'Scenario and sandbox testing', description: 'Explore changed assumptions against a documented baseline. Use sandbox journeys to test missing evidence, policy exceptions, and integration behavior before introducing a workflow to production.' },
   { title: 'Traceable risk intelligence', description: 'Follow an assessment back to its source records, supporting attributes, and evidence snapshot. Review what changed, where information is incomplete, and which findings need human judgment.' },
-  { title: 'Implementation support', description: 'Work with AMLOK to map your data connections, credit policies, and review process. Define deployment scope, validate the first workflow, and agree the support arrangements your institution needs.', wide: true },
-  { title: 'Shared context across the lifecycle', description: 'Bring applications, accounts, transactions, obligations, and related parties into a connected risk picture. Use AMLOK’s API and review workflows to carry underwriting context into monitoring and reassessment.', wide: true },
+  { title: 'Implementation support', description: 'Work with Amlok to map your data connections, credit policies, and review process. Define deployment scope, validate the first workflow, and agree the support arrangements your institution needs.', wide: true },
+  { title: 'Shared context across the lifecycle', description: 'Bring applications, accounts, transactions, obligations, and related parties into a connected risk picture. Use Amlok’s API and review workflows to carry underwriting context into monitoring and reassessment.', wide: true },
   { title: 'Data residency, retention, security review', description: 'Align data residency and retention requirements with your institution’s policies. Review security controls and deployment requirements with our team.' },
   { title: 'White-label flow under your own brand', description: 'Deliver a consistent borrower experience under your own brand, with your identity, messaging, and customer relationship at the forefront.' },
 ];
@@ -181,7 +181,7 @@ function CustomerLayersSection() {
       <header className="home-customer-layers-heading">
         <span className="home-products-eyebrow"><i aria-hidden="true" />BUILT AROUND YOUR CUSTOMER</span>
         <h2 id="customer-layers-title">You own the <span className="home-heading-gradient">customer relationship.</span><br />We run the <span className="home-heading-gradient">layers underneath.</span></h2>
-        <p>Your institution stays in control of the customer and every final decision.<br />AMLOK strengthens the intelligence and operations across the full credit lifecycle.</p>
+        <p>Your institution stays in control of the customer and every final decision.<br />Amlok strengthens the intelligence and operations across the full credit lifecycle.</p>
       </header>
       <div className="home-products-layer-layout">
         <div className="home-products-stack" aria-label="Customer and credit lifecycle layers">
@@ -190,7 +190,7 @@ function CustomerLayersSection() {
             <strong>Your customer relationship</strong>
             <span className="home-products-customer-sub">Your brand · Your policies · Your decision</span>
           </button>
-          <div className="home-products-stack-label"><i aria-hidden="true" />AMLOK · RISK INTELLIGENCE INFRASTRUCTURE</div>
+          <div className="home-products-stack-label"><i aria-hidden="true" />Amlok · RISK INTELLIGENCE INFRASTRUCTURE</div>
           <div className="home-products-stack-layers">
             {customerLayers.map((layer, index) => <button key={layer.label} className={`home-products-layer${activeLayer === index ? ' is-active' : ''}`} type="button" aria-pressed={activeLayer === index} onClick={() => setActiveLayer(index)} onMouseEnter={() => setActiveLayer(index)} onFocus={() => setActiveLayer(index)}>
               <span className="home-products-layer-face" aria-hidden="true"><i /></span>
@@ -208,7 +208,7 @@ function CustomerLayersSection() {
             <p key={activeLayer}>{active.description}</p>
           </> : <>
             <h3>Your customer relationship</h3>
-            <p>Your institution owns the customer relationship, brand, and final credit decision. AMLOK works behind the scenes to strengthen the intelligence your team brings to every interaction.</p>
+            <p>Your institution owns the customer relationship, brand, and final credit decision. Amlok works behind the scenes to strengthen the intelligence your team brings to every interaction.</p>
           </>}
         </div>
       </div>
@@ -222,14 +222,14 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-5',
     surface: 'CONNECTED RISK GRAPH',
     title: 'Underwriting, risk and operations',
-    description: 'AMLOK resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
+    description: 'Amlok resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
     graphic: 'connected-risk',
   },
   {
     id: 'loan-scale-slide-2',
     surface: 'EMBEDDINGS',
-    title: 'Connect borrower experiences to AMLOK intelligence.',
-    description: 'Deploy ready-made borrower and underwriter experiences for intake, onboarding, underwriting, and ongoing servicing, all connected to AMLOK intelligence and agents.',
+    title: 'Connect borrower experiences to Amlok intelligence.',
+    description: 'Deploy ready-made borrower and underwriter experiences for intake, onboarding, underwriting, and ongoing servicing, all connected to Amlok intelligence and agents.',
     graphic: 'embedded',
   },
   {
@@ -257,14 +257,14 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-8',
     surface: 'CONTINUOUS BEHAVIOUR INSIGHTS',
     title: 'Post-funding anomaly detection',
-    description: 'Monitor the deal after capital is deployed. AMLOK detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
+    description: 'Monitor the deal after capital is deployed. Amlok detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
     graphic: 'behaviour-insights',
   },
   {
     id: 'loan-scale-slide-0',
     surface: 'BROWSER AGENTS',
     title: 'Work directly in the systems you already use.',
-    description: 'No integration required. Train AMLOK agents to work directly in your existing systems, navigating applications and executing your financial risk workflows alongside your team.',
+    description: 'No integration required. Train Amlok agents to work directly in your existing systems, navigating applications and executing your financial risk workflows alongside your team.',
     graphic: 'browser',
   },
   {
@@ -289,7 +289,7 @@ function LoanScaleSection() {
       <header className="home-loan-scale-intro">
         <span className="home-loan-scale-eyebrow">AI-POWERED CREDIT LIFECYCLE</span>
         <h2 id="loan-scale-title">AI that lets you scale your <span className="home-heading-gradient">portfolio volume</span>, engage <span className="home-heading-gradient">more customers</span>, and <span className="home-heading-gradient">lower risk</span>.</h2>
-        <p>AMLOK gives financial institutions the intelligence and tools to strengthen decisions across the full credit lifecycle, from verification and underwriting to monitoring, simulation, and servicing. Your team owns the final decision.</p>
+        <p>Amlok gives financial institutions the intelligence and tools to strengthen decisions across the full credit lifecycle, from verification and underwriting to monitoring, simulation, and servicing. Your team owns the final decision.</p>
       </header>
 
       <div className="home-lifecycle-rows">
@@ -328,7 +328,7 @@ function FeaturesIntegrationsSection() {
         <span className="home-features-eyebrow"><i aria-hidden="true" />FEATURES &amp; INTEGRATIONS</span>
         <div className="home-features-heading-copy">
           <h2 id="home-features-title"><span className="home-heading-gradient">Connected intelligence.</span><br />Across the credit lifecycle.</h2>
-          <p>AMLOK connects financial evidence, institutional policy, and changing borrower conditions so teams can assess the full ecosystem, monitor exposure, and make informed decisions.</p>
+          <p>Amlok connects financial evidence, institutional policy, and changing borrower conditions so teams can assess the full ecosystem, monitor exposure, and make informed decisions.</p>
         </div>
       </header>
       <div className="home-features-grid">
@@ -361,7 +361,7 @@ function CaseStudiesSection() {
       <header className="home-case-studies-heading">
         <span className="home-products-eyebrow"><i aria-hidden="true" />RESEARCH &amp; CASE STUDIES</span>
         <h2 id="case-studies-title">Risk problems, re-examined.</h2>
-        <p>We’re developing retrospective case studies of publicly documented risk challenges across Canadian banks, credit unions, alternative lenders, and fintechs. Each analysis will use validated public sources to map the problem, the signals available at the time, and how AMLOK intelligence could have supported a better-informed response.</p>
+        <p>We’re developing retrospective case studies of publicly documented risk challenges across Canadian banks, credit unions, alternative lenders, and fintechs. Each analysis will use validated public sources to map the problem, the signals available at the time, and how Amlok intelligence could have supported a better-informed response.</p>
       </header>
 
       <div className="home-case-studies-toolbar">
@@ -410,7 +410,7 @@ export function HomeHero() {
       </div>
 
       {/* Temporarily hidden; retain the video block for restoration. */}
-      {/* <figure className="home-hero-video" aria-label="AMLOK overview video placeholder">
+      {/* <figure className="home-hero-video" aria-label="Amlok overview video placeholder">
         <figcaption className="home-hero-video-content">
           <span className="home-hero-video-play" aria-hidden="true"><Play size={28} fill="currentColor" strokeWidth={1.5}/></span>
           <span className="home-hero-video-label">Video placeholder</span>

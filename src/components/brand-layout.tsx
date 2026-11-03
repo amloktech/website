@@ -17,13 +17,13 @@ export function BrandLayout() {
     <div className="ds-layout-diagram" role="img" aria-label={`At ${viewport} pixels: ${content} pixels of content with ${margin} pixel margins on each side.`}>
       <div className="ds-layout-ruler"><span>{margin}px</span><strong>{content}px content</strong><span>{margin}px</span></div>
       <div className="ds-layout-model" style={{ paddingInline: `${margin / viewport * 100}%` }}>
-        <div className="ds-layout-model-header"><b>AMLOK</b><span>Action</span></div>
+        <div className="ds-layout-model-header"><b>Amlok</b><span>Action</span></div>
         <div className="ds-layout-model-grid">{Array.from({length: viewport < 768 ? 4 : viewport < 1024 ? 8 : 12}, (_, index) => <i key={index}/>)}</div>
         <div className="ds-layout-model-row"><span/><span/></div>
         <div className="ds-layout-model-footer">Shared left and right edges</div>
       </div>
     </div>
-    <p className="ds-note">AMLOK’s desktop layout uses 1,280px of content width with 48px gutters. On smaller screens, the content adapts to the available width with 20px gutters. Shared tokens keep headings, imagery, and navigation aligned.</p>
-    <div className="ds-spec-scroll" role="region" tabIndex={0} aria-label="Previous and standard website width comparison"><table className="ds-spec-table"><thead><tr><th>Screen width</th><th>Previous AMLOK</th><th>New shared width</th><th>Side margin</th></tr></thead><tbody>{viewports.map(width=><tr key={width}><td>{width}px</td><td>{previousWidth(width)}px</td><td>{contentWidth(width)}px</td><td>{(width-contentWidth(width))/2}px</td></tr>)}</tbody></table></div>
+    <p className="ds-note">Amlok’s desktop layout uses 1,280px of content width with 48px gutters. On smaller screens, the content adapts to the available width with 20px gutters. Shared tokens keep headings, imagery, and navigation aligned.</p>
+    <div className="ds-spec-scroll" role="region" tabIndex={0} aria-label="Previous and standard website width comparison"><table className="ds-spec-table"><thead><tr><th>Screen width</th><th>Previous Amlok</th><th>New shared width</th><th>Side margin</th></tr></thead><tbody>{viewports.map(width=><tr key={width}><td>{width}px</td><td>{previousWidth(width)}px</td><td>{contentWidth(width)}px</td><td>{(width-contentWidth(width))/2}px</td></tr>)}</tbody></table></div>
   </div>;
 }

@@ -1,3 +1,4 @@
+import { BrandText } from './ui';
 import { Check, X } from 'lucide-react';
 
 const workflows = [
@@ -13,13 +14,13 @@ const workflows = [
 
 export function HomeRiskComparison() {
   return <section className="home-risk-comparison" id="risk-comparison" aria-labelledby="risk-comparison-title">
-    <span className="home-products-eyebrow"><i aria-hidden="true" />THE AMLOK DIFFERENCE</span>
+    <span className="home-products-eyebrow"><i aria-hidden="true" />THE Amlok DIFFERENCE</span>
     <h2 id="risk-comparison-title">What changes with<br /><span className="home-heading-gradient">continuous risk intelligence.</span></h2>
     <p className="home-risk-comparison-description">Move from disconnected snapshots to a connected view of risk: with evidence your team can trace, policies you control, and signals that keep evolving.</p>
     <div className="home-risk-comparison-scroll" role="region" aria-label="Risk workflow comparison" tabIndex={0}>
       <table className="home-risk-comparison-table">
         <colgroup><col /><col /><col /></colgroup>
-        <thead><tr><th scope="col">Risk workflow</th><th scope="col">Before</th><th scope="col">With AMLOK</th></tr></thead>
+        <thead><tr><th scope="col">Risk workflow</th><th scope="col">Before</th><th scope="col"><BrandText>With Amlok</BrandText></th></tr></thead>
         <tbody>{workflows.map(([workflow, before, after]) => <tr key={workflow}>
           <th scope="row">{workflow}</th>
           <td><div className="home-risk-comparison-cell"><X aria-hidden="true" /><span>{before}</span></div></td>
@@ -31,7 +32,7 @@ export function HomeRiskComparison() {
       {workflows.map(([workflow, before, after]) => <article className="home-risk-comparison-card" key={workflow}>
         <h3>{workflow}</h3>
         <div className="home-risk-comparison-before"><span className="home-risk-comparison-card-label">Before</span><p><X aria-hidden="true" /><span>{before}</span></p></div>
-        <div className="home-risk-comparison-after"><span className="home-risk-comparison-card-label">With AMLOK</span><p><span className="home-risk-comparison-check"><Check aria-hidden="true" /></span><span>{after}</span></p></div>
+        <div className="home-risk-comparison-after"><span className="home-risk-comparison-card-label"><BrandText>With Amlok</BrandText></span><p><span className="home-risk-comparison-check"><Check aria-hidden="true" /></span><span>{after}</span></p></div>
       </article>)}
     </div>
   </section>;

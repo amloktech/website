@@ -1,4 +1,4 @@
-/* Shared editorial system for AMLOK's product, industry, and resource pages. */
+/* Shared editorial system for Amlok's product, industry, and resource pages. */
 .cp-page { --cp-line:#d8e0ef; --cp-muted:#5d6b83; --cp-wash:#f5f7fb; color:var(--ink); background:#fff; }
 .cp-inner { width:var(--site-content-width); max-width:1344px; margin-inline:auto; }
 .cp-page .cp-hero { padding:calc(var(--home-header-height) + 30px) 0 84px; background:linear-gradient(150deg,#fff 40%,#f2f6ff); }

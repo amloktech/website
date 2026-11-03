@@ -16,7 +16,7 @@ export function ResearchLibrary() {
             <p>{featured.description}</p>
             <ResearchAction resource={featured} className={`cp-button ${styles.featuredAction}`} availabilityId="featured-research-status"/>
           </div>
-          <div className={styles.featuredArt}><Image src={`/images/resources/${featured.image}.svg`} alt="AMLOK research report: Evidence before intelligence" width={1200} height={650} priority/></div>
+          <div className={styles.featuredArt}><Image src={`/images/resources/${featured.image}.svg`} alt="Amlok research report: Evidence before intelligence" width={1200} height={650} priority/></div>
         </article>
       </div>
     </section>

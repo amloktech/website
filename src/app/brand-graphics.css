@@ -1,4 +1,4 @@
-/* Live website-graphic reference within the AMLOK design system. */
+/* Live website-graphic reference within the Amlok design system. */
 .ds-graphics-library { border:var(--border-width) solid var(--line); background:var(--canvas); }
 .ds-graphics-library-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding:20px 24px; border-bottom:1px solid var(--line); }
 .ds-graphics-library-heading a { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:var(--blue); font-size:14px; }

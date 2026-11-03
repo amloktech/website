@@ -59,7 +59,11 @@ for entry in INDEX + [{'path': '/brand'}]:
     if re.search(r'\b(?:Kastle|Didit)\b', source, re.IGNORECASE):
         errors.append(f'Unrelated product branding on {path}')
     if re.search(r'amlok\.(?:com|tech)\b|amlok-docs\.mintlify\.site', source, re.IGNORECASE):
-        errors.append(f'Outdated AMLOK domain on {path}')
+        errors.append(f'Outdated Amlok domain on {path}')
+    # Lowercase is retained in logo wordmarks, URLs, and technical identifiers.
+    names = set(re.findall(r'\bamlok\b', source, re.IGNORECASE))
+    if names - {'Amlok', 'amlok'}:
+        errors.append(f'Incorrect written brand capitalization on {path}')
 
 for path, page in parsed.items():
     for href in page.links:

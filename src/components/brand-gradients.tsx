@@ -6,7 +6,7 @@ import { gradientFields, heroGradient, tokenGroups } from '@/lib/brand';
 import { ProductIllustration, type IllustrationKind } from './product-illustration';
 
 const fields = [
-  { id: 'hero', name: 'AMLOK hero', token: heroGradient.token, css: heroGradient.css, from: '#1B4FE0', to: '#052698', reference: 'Current AMLOK identity', use: 'Our established radial field for the hero and primary blue surfaces.' },
+  { id: 'hero', name: 'Amlok hero', token: heroGradient.token, css: heroGradient.css, from: '#1B4FE0', to: '#052698', reference: 'Current Amlok identity', use: 'Our established radial field for the hero and primary blue surfaces.' },
   ...gradientFields,
 ];
 
@@ -17,7 +17,7 @@ export function BrandGradients({ onCopy }: { onCopy: (value: string, label: stri
   const field = fields.find(item => item.id === selected)!;
 
   return <div className="ds-gradient-library">
-    <div className="ds-gradient-source"><span className="ds-meta">EXPLORATION / IMAGE BACKGROUNDS</span><p>AMLOK’s supporting gradients create depth behind product illustrations. Keep angular graphics precise and use rounded presentation panels to frame the composition.</p></div>
+    <div className="ds-gradient-source"><span className="ds-meta">EXPLORATION / IMAGE BACKGROUNDS</span><p>Amlok’s supporting gradients create depth behind product illustrations. Keep angular graphics precise and use rounded presentation panels to frame the composition.</p></div>
     <div className="ds-gradient-options" role="group" aria-label="Choose a gradient background">
       {fields.map(item => <button type="button" key={item.id} className="ds-gradient-option" aria-pressed={selected === item.id} onClick={() => setSelected(item.id)}>
         <span className="ds-gradient-color" style={{ background: `var(${item.token})` }} aria-hidden="true"><span>{selected === item.id ? <Check size={16}/> : null}</span></span>
@@ -29,7 +29,7 @@ export function BrandGradients({ onCopy }: { onCopy: (value: string, label: stri
         <ProductIllustration kind={illustration} brandFill="hero"/>
       </div>
       <div className="ds-gradient-preview-copy">
-        <span className="ds-meta">LIVE AMLOK COMPARISON</span>
+        <span className="ds-meta">LIVE Amlok COMPARISON</span>
         <h3>{field.name}</h3><p>{field.use}</p>
         <p className="ds-note">Same graphic, different field. The blue focal object and white evidence surfaces stay consistent.</p>
         <label htmlFor="gradient-illustration">Preview graphic</label>

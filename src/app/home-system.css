@@ -1,4 +1,4 @@
-/* AMLOK homepage layout and signal system. Surface styling follows in rounded-system.css. */
+/* Amlok homepage layout and signal system. Surface styling follows in rounded-system.css. */
 .home-page { --home-header-height:66px; --home-header-offset:var(--home-header-height); --text-section-description:clamp(16px,1.25vw,18px); }
 /* Inner containers own horizontal gutters; section backgrounds remain full width. */
 .home-page>section { padding-inline:0; }

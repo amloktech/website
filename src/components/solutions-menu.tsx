@@ -18,7 +18,7 @@ export const solutionModules = [
   { title:'Servicing & collections', description:'Support borrower-facing account workflows.', href:'/solutions/borrower-servicing-collections', icon:WalletCards },
   { title:'Fraud & compliance operations', description:'Investigate suspicious activity and connected evidence.', href:'/solutions/entity-fraud-resolution', icon:ShieldCheck },
   { title:'Risk simulation', description:'Test credit policies and portfolio scenarios before deployment.', href:'/platform/risk-simulation', icon:FlaskConical },
-  { title:'White-label experiences', description:'Bring AMLOK intelligence into your own branded customer journey.', href:'/modules/white-label-experiences', icon:PanelsTopLeft },
+  { title:'White-label experiences', description:'Bring Amlok intelligence into your own branded customer journey.', href:'/modules/white-label-experiences', icon:PanelsTopLeft },
 ] as const;
 
 export const solutionIndustries = [

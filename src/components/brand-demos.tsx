@@ -12,7 +12,7 @@ export function ShieldGraphic() {
   return <svg viewBox="0 0 200 220" className="ds-shield" aria-hidden="true"><path d="M24 24H176V136L100 196 24 136Z" fill="none" stroke="currentColor" strokeWidth="2"/><path d="M38 38H162V128L100 177 38 128Z" fill="currentColor" opacity=".08"/><g transform="translate(60 60) scale(2.5)"><path d="M3 26 13 6h6l10 20h-7L16 13l-3.5 7H19l3 6H3Z" fill="currentColor"/></g><path d="M16 44V16H44M156 16H184V44M16 116V144L36 160M164 160L184 144V116" fill="none" stroke="currentColor" opacity=".35"/></svg>;
 }
 
-export function RadarVisual({ paused = false, label = 'AMLOK / SIGNAL FIELD' }: { paused?: boolean; label?: string }) {
+export function RadarVisual({ paused = false, label = 'Amlok / SIGNAL FIELD' }: { paused?: boolean; label?: string }) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
   useEffect(() => {

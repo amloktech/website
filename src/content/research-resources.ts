@@ -7,7 +7,7 @@ export const resources = [
     "category": "Risk intelligence",
     "gradientTitle": "Evidence before intelligence:",
     "title": "building a foundational risk graph.",
-    "description": "A transparent account of AMLOK’s public-data experiments, the measurements they support, and the work still required for lending decisions.",
+    "description": "A transparent account of Amlok’s public-data experiments, the measurements they support, and the work still required for lending decisions.",
     "image": "retrospective-validation",
     "href": "/research/evidence-before-intelligence",
     "readMinutes": 9,

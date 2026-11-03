@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="4.125 17.449 158.973 29.553" width="158.973" height="29.553" fill="none" role="img" aria-labelledby="title">
-  <title id="title">AMLOK logo, hero gradient</title>
+  <title id="title">Amlok logo, hero gradient</title>
   <defs><radialGradient id="hero" cx="0" cy="0" r="1" gradientTransform="translate(0.5 0.42) scale(0.7071067812 0.8202438662)"><stop offset="0" stop-color="#1b4fe0"/><stop offset="0.42" stop-color="#1140c3"/><stop offset="1" stop-color="#052698"/></radialGradient></defs>
   <g fill="url(#hero)"><path transform="translate(0 10) scale(1.375)" d="M3 26 13 6h6l10 20h-7L16 13l-3.5 7H19l3 6H3Z"/></g>
   <g fill="url(#hero)">
