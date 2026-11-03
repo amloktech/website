@@ -1,3 +1,4 @@
+import { ServiceStatus } from './service-status';
 import { LegalPage } from './legal-page';
 import { legalPolicies } from '@/content/legal';
 import { IndustryPage, IndustriesOverview } from './industry-page';
@@ -76,8 +77,9 @@ export function ContentPage({page}:{page:SitePageContent}) {
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,'\\u003c')}}/>
     <section className={`cp-hero${editorial?' is-editorial':''}`} aria-labelledby="page-title"><div className="cp-inner">
       <nav className="cp-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><ChevronRight size={13}/>{page.slug.includes('/')&&<><a href={groupPaths[group]}>{groupNames[group]}</a><ChevronRight size={13}/></>}<span aria-current="page">{page.label}</span></nav>
-      <div className="cp-hero-grid"><div className="cp-hero-copy"><span className="cp-eyebrow"><i/>{page.label}</span><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p>{!legal&&<PageActions/>}{page.kind==='article'&&<span className="cp-article-meta">AMLOK Editorial · 31 October 2026 · 3 minute read</span>}</div>{!editorial&&(page.kind==='research'?<div className="cp-research-graphic"><ProductIllustration kind={page.visual} brandFill="hero"/></div>:<div className="cp-hero-visual"><div className="cp-visual-top"><span>AMLOK / CONNECTED INTELLIGENCE</span><i/></div><ProductIllustration kind={page.visual} brandFill="hero"/><div className="cp-visual-bottom"><span>Evidence</span><span>Context</span><span>Human judgment</span></div></div>)}</div>
+      <div className="cp-hero-grid"><div className="cp-hero-copy"><span className="cp-eyebrow"><i/>{page.label}</span><h1 id="page-title">{page.title}<br/><span className="home-heading-gradient">{page.accent}</span></h1><p>{page.description}</p>{!legal&&(page.slug==='status'?<div className="cp-actions"><a className="cp-button" href="#public-status">Check live status <ArrowUpRight size={17} aria-hidden="true"/></a><a className="cp-button cp-button-secondary" href="mailto:support@amlok.io">Contact support <ArrowUpRight size={17} aria-hidden="true"/></a></div>:<PageActions/>)}{page.kind==='article'&&<span className="cp-article-meta">AMLOK Editorial · 31 October 2026 · 3 minute read</span>}</div>{!editorial&&(page.kind==='research'?<div className="cp-research-graphic"><ProductIllustration kind={page.visual} brandFill="hero"/></div>:<div className="cp-hero-visual"><div className="cp-visual-top"><span>AMLOK / CONNECTED INTELLIGENCE</span><i/></div><ProductIllustration kind={page.visual} brandFill="hero"/><div className="cp-visual-bottom"><span>Evidence</span><span>Context</span><span>Human judgment</span></div></div>)}</div>
     </div></section>
+    {page.slug==='status'&&<ServiceStatus/>}
     {page.notice&&<div className="cp-inner"><p className="cp-notice">{page.notice}</p></div>}
     {page.cards&&<section className="cp-section cp-muted"><div className="cp-inner"><PageCards slugs={page.cards}/></div></section>}
     {page.kind==='integrations'&&<IntegrationDirectory/>}

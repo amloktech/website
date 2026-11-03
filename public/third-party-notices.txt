@@ -1,7 +1,5 @@
-Didit UI design-token reference
-Source: https://github.com/didit-protocol/diditui
-Reference commit: 13402adce565cc8017e78095dc6b432d429d4254 (v1.3.4)
-The UI library palette and documented component patterns are adapted from this project.
+Third-party UI code license
+The following license applies to adapted UI design tokens and component patterns.
 
 MIT License
 
@@ -24,12 +22,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Didit marketing website
-Visual reference only: https://didit.me/ and https://didit.me/brand
-Reviewed 2026-10-07. No website source, Didit logos, customer marks, or marketing
-claims are incorporated into the Amlok website. The provisional Amlok symbol
-and local component implementations are original to this project.
 
 Inter Variable and JetBrains Mono Variable
 Distributed via @fontsource-variable packages under the SIL Open Font License.

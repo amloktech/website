@@ -17,7 +17,7 @@ export function BrandGradients({ onCopy }: { onCopy: (value: string, label: stri
   const field = fields.find(item => item.id === selected)!;
 
   return <div className="ds-gradient-library">
-    <div className="ds-gradient-source"><span className="ds-meta">EXPLORATION / IMAGE BACKGROUNDS</span><p>Color stops from <a href="https://www.sardine.ai/" target="_blank" rel="noreferrer">Sardine’s “Modular building blocks” section</a>, observed October 21, 2026. The examples below preserve AMLOK’s angular graphics within rounded presentation panels.</p></div>
+    <div className="ds-gradient-source"><span className="ds-meta">EXPLORATION / IMAGE BACKGROUNDS</span><p>AMLOK’s supporting gradients create depth behind product illustrations. Keep angular graphics precise and use rounded presentation panels to frame the composition.</p></div>
     <div className="ds-gradient-options" role="group" aria-label="Choose a gradient background">
       {fields.map(item => <button type="button" key={item.id} className="ds-gradient-option" aria-pressed={selected === item.id} onClick={() => setSelected(item.id)}>
         <span className="ds-gradient-color" style={{ background: `var(${item.token})` }} aria-hidden="true"><span>{selected === item.id ? <Check size={16}/> : null}</span></span>

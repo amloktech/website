@@ -23,7 +23,7 @@ export function BrandLayout() {
         <div className="ds-layout-model-footer">Shared left and right edges</div>
       </div>
     </div>
-    <p className="ds-note">Reference measured on <a href="https://www.sardine.ai/" target="_blank" rel="noreferrer">Sardine’s homepage</a>, October 21, 2026. Its 1,376px outer container includes 48px padding on each side, leaving 1,280px for content. Our tokens express that usable width directly.</p>
+    <p className="ds-note">AMLOK’s desktop layout uses 1,280px of content width with 48px gutters. On smaller screens, the content adapts to the available width with 20px gutters. Shared tokens keep headings, imagery, and navigation aligned.</p>
     <div className="ds-spec-scroll" role="region" tabIndex={0} aria-label="Previous and standard website width comparison"><table className="ds-spec-table"><thead><tr><th>Screen width</th><th>Previous AMLOK</th><th>New shared width</th><th>Side margin</th></tr></thead><tbody>{viewports.map(width=><tr key={width}><td>{width}px</td><td>{previousWidth(width)}px</td><td>{contentWidth(width)}px</td><td>{(width-contentWidth(width))/2}px</td></tr>)}</tbody></table></div>
   </div>;
 }

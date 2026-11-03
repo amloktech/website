@@ -39,7 +39,7 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
             <img src="/images/partners/cla-lenders.png" alt="Canadian Lenders Association"/>
             <img src="/images/partners/nvidia-inception-white.svg" alt="NVIDIA Inception Program"/>
           </div>
-        </div><p className="site-footer-location">Toronto, Canada · Headquarters</p><a className="site-footer-email" href="mailto:support@amlok.tech"><Mail size={15} aria-hidden="true"/>support@amlok.tech</a></div>
+        </div><p className="site-footer-location">Toronto, Canada · Headquarters</p><a className="site-footer-email" href="mailto:support@amlok.io"><Mail size={15} aria-hidden="true"/>support@amlok.io</a></div>
         <FooterGroup title="Solutions" links={solutionUseCases.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
         <FooterGroup title="Products" links={solutionProducts.map(item=>({label:item.title,href:homeLink(item.href)}))}/><FooterGroup title="Modules" links={solutionModules.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
         <FooterGroup title="Industries" links={solutionIndustries.map(item=>({label:item.title,href:homeLink(item.href)}))}/>

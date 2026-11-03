@@ -1,0 +1,27 @@
+.section { background:var(--surface); scroll-margin-top:var(--home-header-height); }
+.summary { display:flex; justify-content:space-between; align-items:center; gap:24px; }
+.summary h2 { margin:18px 0 14px; font-size:clamp(24px,3vw,38px); line-height:1.2; letter-spacing:-.025em; }
+.summary p,.observation { color:var(--muted); font-size:14px; line-height:1.7; }
+.dot,.badge i { display:inline-block; background:#8290a8; border-radius:50%; flex:0 0 auto; }
+.dot { width:12px; height:12px; margin:0 12px 3px 0; }
+.dot[data-health='operational'],.badge[data-health='operational'] i { background:#087443; }
+.dot[data-health='degraded'],.badge[data-health='degraded'] i { background:#b42318; }
+.refresh { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:14px 20px; border:1px solid var(--line); background:white; color:var(--blue); border-radius:30px; font-size:14px; white-space:nowrap; cursor:pointer; }
+.refresh:disabled { cursor:wait; opacity:.6; }
+.refresh:focus-visible,.card a:focus-visible,.endpoint:focus-visible { outline:2px solid var(--blue-secondary); outline-offset:4px; }
+.observation { margin:22px 0; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.card { display:flex; flex-direction:column; align-items:flex-start; padding:28px; border:1px solid var(--line); border-radius:var(--radius-card); background:white; }
+.card h3 { margin:22px 0 14px; font-size:22px; line-height:1.25; }
+.card p { margin:0 0 20px; color:var(--muted); font-size:15px; line-height:1.7; }
+.card a,.endpoint { display:inline-flex; gap:8px; align-items:center; color:var(--blue); text-decoration:none; font-size:14px; line-height:1.5; }
+.card a { margin-top:auto; }
+.card a svg,.endpoint svg { flex-shrink:0; }
+.endpoint { margin-top:24px; }
+.badge { display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:12px; }
+.badge i { width:7px; height:7px; }
+.badge[data-health='operational'] { color:#087443; }
+.badge[data-health='degraded'] { color:#b42318; }
+.timing { margin-top:auto; color:var(--muted); font:11px/1.5 var(--font-mono); }
+@media(max-width:900px) { .grid { grid-template-columns:1fr; } }
+@media(max-width:600px) { .summary { flex-direction:column; align-items:flex-start; } .card { padding:24px; } }

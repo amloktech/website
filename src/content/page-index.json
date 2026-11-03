@@ -278,7 +278,7 @@
   {
     "path": "/status",
     "title": "Service status",
-    "description": "Check your environment’s health, follow service-level signals and reach the right support channel when a workflow is affected.",
+    "description": "Check live website and documentation availability, find the status reference for your AMLOK environment, and reach support when a workflow is affected.",
     "category": "status"
   },
   {

@@ -1,5 +1,6 @@
 """Check the static export after `pnpm build` without external dependencies."""
 import json
+import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -10,6 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'out'
 INDEX = json.loads((ROOT / 'src/content/page-index.json').read_text())
 NEW_PAGES = json.loads((ROOT / 'src/content/site-pages.json').read_text())
+CANONICAL_ORIGIN = 'https://amlok.io'
+DYNAMIC_PATHS = {'/api/status'}  # Served by the Cloudflare Worker, not the static export.
 errors = []
 
 
@@ -51,7 +54,12 @@ for entry in INDEX + [{'path': '/brand'}]:
     if not file:
         errors.append(f'Missing exported page: {path}')
         continue
-    parsed[path] = Page(file.read_text())
+    source = file.read_text()
+    parsed[path] = Page(source)
+    if re.search(r'\b(?:Kastle|Didit)\b', source, re.IGNORECASE):
+        errors.append(f'Unrelated product branding on {path}')
+    if re.search(r'amlok\.(?:com|tech)\b|amlok-docs\.mintlify\.site', source, re.IGNORECASE):
+        errors.append(f'Outdated AMLOK domain on {path}')
 
 for path, page in parsed.items():
     for href in page.links:
@@ -60,6 +68,8 @@ for path, page in parsed.items():
             continue
         url = urlsplit(urljoin('https://local.invalid' + path, href))
         if url.netloc != 'local.invalid' or url.scheme not in ('http', 'https'):
+            continue
+        if url.path in DYNAMIC_PATHS:
             continue
         file = exported(url.path)
         if not file:
@@ -80,6 +90,8 @@ expected = {entry['path'] for entry in INDEX}
 if paths != expected or len(urls) != len(expected):
     errors.append(f'Sitemap mismatch. Missing: {expected - paths}. Extra: {paths - expected}')
 for url in urls:
+    if f'{urlsplit(url).scheme}://{urlsplit(url).netloc}' != CANONICAL_ORIGIN:
+        errors.append(f'Non-production sitemap URL: {url}')
     page = parsed.get(urlsplit(url).path or '/')
     if not page or page.canonicals != [url.rstrip('/')]:
         errors.append(f'Canonical mismatch: {url}')
@@ -95,7 +107,23 @@ origin = urlsplit(urls[0])
 if f'Sitemap: {origin.scheme}://{origin.netloc}/sitemap.xml' not in (OUT / 'robots.txt').read_text():
     errors.append('robots.txt does not point to the generated sitemap')
 
+redirect_file = OUT / '_redirects'
+redirects = {}
+if not redirect_file.is_file():
+    errors.append('Missing Cloudflare legacy redirects')
+else:
+    for line in redirect_file.read_text().splitlines():
+        if not line.strip() or line.startswith('#'):
+            continue
+        source, target, code = line.split()
+        redirects[source] = (target, code)
+        if source in paths or not exported(target) or code != '301':
+            errors.append(f'Invalid legacy redirect: {line}')
+    for legacy in ('/modules/white-label', '/modules/white-label/'):
+        if redirects.get(legacy) != ('/modules/white-label-experiences', '301'):
+            errors.append(f'Missing white-label redirect: {legacy}')
+
 if errors:
     print('\n'.join(sorted(set(errors))))
     sys.exit(1)
-print(f'PASS: {len(parsed)} pages, {len(urls)} sitemap URLs, internal links, anchors, assets, canonical URLs, and main headings.')
+print(f'PASS: {len(parsed)} pages, {len(urls)} production sitemap URLs, links, assets, canonicals, headings, branding, and legacy redirects.')

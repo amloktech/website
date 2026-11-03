@@ -662,7 +662,7 @@
           },
           {
             "title": "Existing customers",
-            "body": "Use your established support channel or email support@amlok.tech with non-sensitive context."
+            "body": "Use your established support channel or email support@amlok.io with non-sensitive context."
           }
         ]
       }
@@ -1947,7 +1947,7 @@
       },
       {
         "title": "Discuss an MCP integration",
-        "url": "mailto:support@amlok.tech?subject=MCP%20integration"
+        "url": "mailto:support@amlok.io?subject=MCP%20integration"
       }
     ],
     "related": [
@@ -1970,7 +1970,7 @@
       },
       {
         "title": "Discuss an MCP integration",
-        "url": "mailto:support@amlok.tech?subject=MCP%20integration"
+        "url": "mailto:support@amlok.io?subject=MCP%20integration"
       }
     ]
   },
@@ -2217,23 +2217,23 @@
   {
     "slug": "status",
     "label": "Service status",
-    "title": "Understand availability.",
-    "accent": "Know the next step.",
-    "description": "Check your environment’s health, follow service-level signals and reach the right support channel when a workflow is affected.",
+    "title": "Service health",
+    "accent": "and support.",
+    "description": "Check live website and documentation availability, find the status reference for your AMLOK environment, and reach support when a workflow is affected.",
     "visual": "monitoring",
     "kind": "developer",
     "sections": [
       {
         "title": "Read the service report",
-        "body": "The service-status endpoint provides overall and per-service availability for your environment. A successful request means the report was retrieved; inspect its statuses and update timestamp."
+        "body": "Request /v1/service-status from your institution-issued AMLOK API URL. The endpoint does not require an API key. Inspect the overall status, each service’s status, and the updated_at observation time. A successful HTTP response means the report was retrieved, not that every service is operational."
       },
       {
         "title": "Check the workflow as well",
-        "body": "A healthy API does not by itself confirm a completed assessment, fresh provider data or delivered webhook. Combine availability checks with the state of the affected resource."
+        "body": "Treat unknown, stale, or unreachable status as unconfirmed availability. A healthy API does not by itself confirm a completed assessment, fresh provider data, or a delivered webhook. Check the state and source coverage of the affected resource as well."
       },
       {
         "title": "Report an incident",
-        "body": "Email support with the affected environment, impact, time window, request IDs and redacted diagnostics. Critical production incidents receive 24/7 coverage under the standard support policy."
+        "body": "Contact support@amlok.io or your agreed incident channel with the affected environment, impact, time window, request IDs, and redacted diagnostics. Follow your support agreement for incident severity, coverage, and escalation."
       }
     ],
     "steps": [],
@@ -2253,7 +2253,7 @@
       },
       {
         "title": "Contact support",
-        "url": "mailto:support@amlok.tech"
+        "url": "mailto:support@amlok.io"
       }
     ],
     "related": [
@@ -2276,10 +2276,9 @@
       },
       {
         "title": "Contact support",
-        "url": "mailto:support@amlok.tech"
+        "url": "mailto:support@amlok.io"
       }
-    ],
-    "notice": "Live telemetry is not connected to this website. Use your institution-issued environment to retrieve its current service report."
+    ]
   },
   {
     "slug": "security-compliance",
@@ -2462,7 +2461,7 @@
       },
       {
         "title": "Questions about your agreement",
-        "body": "Contact support@amlok.tech or your dedicated account manager to discuss service scope, billing, renewal, cancellation or a contractual requirement."
+        "body": "Contact support@amlok.io or your dedicated account manager to discuss service scope, billing, renewal, cancellation or a contractual requirement."
       },
       {
         "title": "Photography and asset credits",

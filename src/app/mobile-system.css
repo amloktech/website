@@ -1,5 +1,4 @@
-/* Phone layout measured against the Didit mobile reference. AMLOK keeps its
-   own content, colours, illustrations, and desktop composition. */
+/* Responsive AMLOK layouts for navigation, content, and product illustrations. */
 @media (max-width:767px) {
   html:root {
     --site-min-gutter:16px;
@@ -124,10 +123,6 @@
   .home-security-intro { gap:24px; margin-top:16px; }
   .home-security-status { gap:12px; }
   .home-security-status-card { padding:16px; }
-  .home-security-assurances { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; padding:16px; margin-top:32px; }
-  .home-security-badge { border-radius:12px; }
-  .home-security-badge>span { padding:8px 2px; font-size:8px; }
-  .home-security-scope { font-size:11px; line-height:1.6; margin-top:20px; }
   .home-risk-comparison-description { margin-bottom:24px; }
   .home-risk-comparison-scroll { display:none; }
   .home-risk-comparison-cards { display:grid; gap:16px; }

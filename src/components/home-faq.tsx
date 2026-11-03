@@ -9,7 +9,7 @@ const questions = [
   ['How is borrower data protected?', 'AMLOK’s security program covers access controls, encryption, tenant separation, privacy, retention, and incident response. Processing scope, permitted locations, security requirements, and responsibilities are agreed before connecting live borrower data. Supporting assurance materials are available for scoped review, subject to availability and distribution permissions.'],
   ['How do developers integrate AMLOK?', 'Start with the API documentation, configuration discovery, and sandbox journeys. Authorized administrators create workspace-bound API keys in the client portal. The reference includes cURL, Python, and Node.js examples, required scopes, and error definitions. Signed webhooks support asynchronous results and change notifications.'],
   ['How do underwriting and monitoring charges work together?', 'Insights and Signal draw from one shared workspace balance. Eligible underwriting and monitoring usage consumes credits at the applicable rate. Signal includes monitoring and change-driven reassessment without an additional Insights charge. Your agreement records the final rates, workload limits, eligible products, and discounts.'],
-  ['How can our team get support?', 'Contact support@amlok.tech for technical issues, product questions, or billing assistance. Enterprise clients can also work with their dedicated account manager. Support coverage and response targets follow your agreement and the documented service levels. Include request IDs and redacted diagnostics rather than borrower documents or credentials.'],
+  ['How can our team get support?', 'Contact support@amlok.io for technical issues, product questions, or billing assistance. Enterprise clients can also work with their dedicated account manager. Support coverage and response targets follow your agreement and the documented service levels. Include request IDs and redacted diagnostics rather than borrower documents or credentials.'],
 ] as const;
 
 export function HomeFaq() {
@@ -25,7 +25,7 @@ export function HomeFaq() {
           <div className="home-faq-answer"><p>{answer}</p></div>
         </details>)}
       </div>
-      <a className="home-faq-documentation" href="https://amlok-docs.mintlify.site/overview/introduction">Explore the documentation</a>
+      <a className="home-faq-documentation" href="https://docs.amlok.io/overview/introduction">Explore the documentation</a>
     </div>
   </section>;
 }

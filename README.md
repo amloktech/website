@@ -21,7 +21,9 @@ pnpm start
 ```
 
 `pnpm build` exports the site to `out/`. `pnpm start` previews that export
-with Cloudflare's local runtime on http://127.0.0.1:3000.
+with Cloudflare's local runtime on http://127.0.0.1:3000. Stop the Next.js
+dev server first if it is using the same port. The Cloudflare preview runs the
+live `/api/status` endpoint; `pnpm dev` only previews the static website UI.
 
 On this Mac, `./scripts/local.sh dev` (or `install`, `typecheck`, `build`, `start`)
 uses the system pnpm or the bundled runtime. If Turbopack cannot launch its CSS
@@ -47,21 +49,21 @@ After building, run `python3 scripts/verify-site.py` to check all public pages,
 internal links and anchors, local assets, canonical URLs, headings, and sitemap coverage.
 Interactive page tools live in `src/components/page-tools.tsx`. The contact form
 opens an email draft; it does not submit to a backend. Research covers are previews,
-workflow stories are illustrative, and the status page does not claim live telemetry.
+workflow stories are illustrative. The status page checks public web availability;
+product API telemetry is shown separately as not connected.
 
 The blog at `/blog` uses `src/content/blog-posts.json` for card metadata, topics,
 author, dates, and image paths; article bodies remain in `site-pages.json`.
 Its nine starter articles use editable SVG placeholders in `public/images/blog`.
 Topic/search/pagination state is shareable through `?topic=monitoring&q=noise&page=1#all-posts`.
-The signup form prepares an email request to `support@amlok.tech`; it does not
+The signup form prepares an email request to `support@amlok.io`; it does not
 store addresses or subscribe anyone automatically. Connect a mailing-list service
 before replacing that explicit request flow with direct subscriptions.
 
-The default canonical origin is the current deployment,
-`https://website.a-6fa.workers.dev`. Set `SITE_URL` in the build environment when
-the custom domain is connected (for example, `SITE_URL=https://amlok.io`). This
-updates sitemap URLs, the robots sitemap reference, and page canonical URLs
-together. A domain change requires rebuilding the static export.
+The canonical origin is `https://amlok.io`, including preview builds.
+Sitemap URLs, robots, structured data, and page canonicals share this value in
+`src/lib/site-config.ts`. Legacy paths are permanently redirected through
+`public/_redirects` on Cloudflare.
 
 ## AMLOK system 1.0
 
@@ -110,7 +112,7 @@ add compatible patterns; patches correct implementation or documentation.
 
 ## Cloudflare deployment
 
-The `website` Worker in the Amlok Tech account is connected to
+The `website` Worker in the AMLOK Tech account is connected to
 `amloktech/website`, branch `main`. Keep its build settings as:
 
 - Build command: `pnpm run build`
@@ -134,3 +136,25 @@ pnpm exec wrangler deploy --dry-run
 ```
 
 Authenticated maintainers can also publish with `pnpm run deploy`.
+
+## Public status monitoring
+
+`worker/index.ts` serves `GET /api/status` and `HEAD /api/status`. The rest of the
+site stays on Cloudflare Static Assets, including `_redirects` and `_headers`.
+The endpoint probes a fixed homepage asset through the ASSETS binding and the
+public documentation homepage over HTTPS. Probes have a five-second timeout;
+reports are cached at the edge for up to 60 seconds. No credentials, customer
+data, or caller-supplied probe URLs are accepted.
+
+`/status` refreshes every minute while visible. Failed refreshes, unknown results,
+and reports over two minutes old are never displayed as healthy. These checks
+cover public website delivery and documentation reachability, not external DNS,
+product APIs, assessment jobs, data-source freshness, or webhook delivery.
+Product API telemetry needs a verified production monitoring endpoint before it
+can be connected. No Mintlify deployment or documentation edits are involved.
+
+Build and typecheck regenerate the ignored Worker types from `wrangler.jsonc`.
+Run `pnpm test:status` for probe, failure, timeout, and freshness checks, then
+`pnpm build` and `pnpm start` to test the complete website in Cloudflare's local
+runtime. Support links use `support@amlok.io`; mailbox provisioning is managed
+outside this website repository.

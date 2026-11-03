@@ -18,7 +18,7 @@ export const heroGradient = {
   svgTransform: 'translate(0.5 0.42) scale(0.7071067812 0.8202438662)',
 } as const;
 
-/** Image-backdrop exploration: observed Sardine product-slide stops, 2026-10-21. */
+/** Supporting color fields for AMLOK product illustrations. */
 export const gradientFields = [
   { id: 'orchid', name: 'Orchid mist', token: '--gradient-orchid', from: '#FBEAF9', to: '#E8B9E5', reference: 'Device and behavior', use: 'A gentle field for identity and relationship illustrations.' },
   { id: 'periwinkle', name: 'Periwinkle blue', token: '--gradient-periwinkle', from: '#D8E3FA', to: '#7198F4', reference: 'Onboarding', use: 'The closest companion to AMLOK blue for product imagery.' },
@@ -27,7 +27,7 @@ export const gradientFields = [
   { id: 'apricot', name: 'Apricot warmth', token: '--gradient-apricot', from: '#FCDCCF', to: '#F8713A', reference: 'AML compliance', use: 'A warm counterpoint for a featured workflow or editorial graphic.' },
 ].map(field => ({ ...field, css: `linear-gradient(180deg, ${field.from} 0%, ${field.to} 100%)` }));
 
-/** Shared marketing layout, matched to Sardine's measured content area. */
+/** Shared AMLOK marketing layout and responsive gutters. */
 export const siteLayout = { contentMax: 1280, desktopGutter: 48, compactGutter: 20, desktopBreakpoint: 1024 } as const;
 
 /** Source of truth for the site and the downloadable design tokens. */

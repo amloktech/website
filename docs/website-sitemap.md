@@ -195,7 +195,7 @@ Research, Blog, Help Center, Demo Center, About us, Manifesto, Partners, and Car
 | Talk to us | `/contact` |
 | Six comparison links | Retain the six `/compare/...` routes listed above. |
 | Privacy, Cookies, Terms of business | Create `/privacy`, `/cookies`, and `/terms`. |
-| Footer email | Retain `mailto:support@amlok.tech`. |
+| Footer email | Retain `mailto:support@amlok.io`. |
 | LinkedIn | Replace `/links/linkedin` with the company profile verified from an official company source. |
 | GitHub | Replace `/links/github` with `https://github.com/amloktech`. |
 | X | Replace `/links/x` with the company profile verified from an official company source. |

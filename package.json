@@ -8,10 +8,12 @@
   },
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3000",
-    "build": "next build",
+    "build": "pnpm run types:worker && next build",
     "start": "wrangler dev --local --ip 127.0.0.1 --port 3000",
     "deploy": "pnpm run build && wrangler deploy",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "pnpm run types:worker && tsc --noEmit",
+    "types:worker": "wrangler types worker/worker-configuration.d.ts",
+    "test:status": "node --experimental-strip-types --test scripts/status.test.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",

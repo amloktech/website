@@ -9,3 +9,6 @@ output/review/
 .DS_Store
 .env*
 !.env.example
+
+# Regenerated from Wrangler before builds and type checks.
+worker/worker-configuration.d.ts

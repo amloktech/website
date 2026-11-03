@@ -29,13 +29,13 @@ const capabilities = [
 ];
 
 const platformFeatures = [
-  { title: 'Compliance Engine', description: 'Pre-trained on FDCPA, TILA, UDAAP, RESPA, and TCPA. Kastle’s AI agents are specialized for large banks and IMBs, with compliance at their core.' },
-  { title: '100% QA Coverage', description: 'Ensure every interaction, whether through AI or humans, is compliant with key lending and servicing regulations. Real time monitoring with automated scorecards.' },
-  { title: 'Agent Builder', description: 'Turn SOPs into AI agents using natural language. No more rigid systems that require professional services to build and maintain.', wide: true },
-  { title: 'Simulation Testing', description: 'AI Testing AI. Test edge cases before they hit production. Train on real call scenarios. Expand capabilities safely. Launch with confidence.' },
-  { title: 'Transparent Observability', description: 'Using proprietary inference technology, all of Kastle’s AI responses are fully explainable with in-built reasoning that also lead to improved performance.' },
-  { title: 'Dedicated Support', description: 'Your AI partner for the next decade. Our team works closely with yours to ensure adoption, impact, and long-term success.', wide: true },
-  { title: 'True Omnichannel Lending and Servicing', description: 'Kastle provides one centralized AI engine for consumer lending, resolving borrower issues instantly, in every language, and across every channel. Say goodbye to stitched-together call center tools with siloed, disjointed logic.', wide: true },
+  { title: 'Policy-aligned assessments', description: 'Apply your institution’s credit criteria to connected financial evidence. AMLOK surfaces policy exceptions, screening matches, and unresolved requirements so your team can review the evidence and own the decision.' },
+  { title: 'Evidence completeness', description: 'Identify missing documents, inconsistent records, and gaps in source coverage before they become assumptions. Keep incomplete or outdated evidence visible throughout the assessment.' },
+  { title: 'Connected risk workflows', description: 'Connect verification, underwriting, monitoring, and investigation around the same borrower and related entities. Carry evidence, policy requirements, and review outcomes forward as the deal evolves.', wide: true },
+  { title: 'Scenario and sandbox testing', description: 'Explore changed assumptions against a documented baseline. Use sandbox journeys to test missing evidence, policy exceptions, and integration behavior before introducing a workflow to production.' },
+  { title: 'Traceable risk intelligence', description: 'Follow an assessment back to its source records, supporting attributes, and evidence snapshot. Review what changed, where information is incomplete, and which findings need human judgment.' },
+  { title: 'Implementation support', description: 'Work with AMLOK to map your data connections, credit policies, and review process. Define deployment scope, validate the first workflow, and agree the support arrangements your institution needs.', wide: true },
+  { title: 'Shared context across the lifecycle', description: 'Bring applications, accounts, transactions, obligations, and related parties into a connected risk picture. Use AMLOK’s API and review workflows to carry underwriting context into monitoring and reassessment.', wide: true },
   { title: 'Data residency, retention, security review', description: 'Align data residency and retention requirements with your institution’s policies. Review security controls and deployment requirements with our team.' },
   { title: 'White-label flow under your own brand', description: 'Deliver a consistent borrower experience under your own brand, with your identity, messaging, and customer relationship at the forefront.' },
 ];
@@ -222,7 +222,7 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-5',
     surface: 'CONNECTED RISK GRAPH',
     title: 'Underwriting, risk and operations',
-    description: 'Amlok resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
+    description: 'AMLOK resolves fragmented banking, payment, accounting, commerce, and registry data into a shared view that risk teams can investigate and decision systems can consume.',
     graphic: 'connected-risk',
   },
   {
@@ -257,7 +257,7 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-8',
     surface: 'CONTINUOUS BEHAVIOUR INSIGHTS',
     title: 'Post-funding anomaly detection',
-    description: 'Monitor the deal after capital is deployed. Amlok detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
+    description: 'Monitor the deal after capital is deployed. AMLOK detects new obligations, concentration changes, cash-flow stress, and other behavioral shifts while there is still time to act.',
     graphic: 'behaviour-insights',
   },
   {
@@ -319,7 +319,7 @@ function FeaturesIntegrationsSection() {
     const feature = platformFeatures[index];
     return <article className="home-features-card" data-feature={featureGraphics[index]} key={feature.title}>
       <div className="home-features-media"><ProductIllustration kind={featureGraphics[index]}/></div>
-      <div className="home-features-card-copy"><h3>{feature.title === 'True Omnichannel Lending and Servicing' ? <>True Omnichannel <span className="home-mobile-title-line">Lending and Servicing</span></> : feature.title === 'White-label flow under your own brand' ? <>White-label flow <span className="home-mobile-title-line">under your own brand</span></> : feature.title}</h3><p>{feature.description}</p></div>
+      <div className="home-features-card-copy"><h3>{feature.title}</h3><p>{feature.description}</p></div>
     </article>;
   };
   return <section className="home-features" id="features-integrations" aria-labelledby="home-features-title">
@@ -327,8 +327,8 @@ function FeaturesIntegrationsSection() {
       <header className="home-features-heading">
         <span className="home-features-eyebrow"><i aria-hidden="true" />FEATURES &amp; INTEGRATIONS</span>
         <div className="home-features-heading-copy">
-          <h2 id="home-features-title"><span className="home-heading-gradient">Enterprise-grade</span><br />platform for large lenders</h2>
-          <p>Amlok is built on how the best lenders work: streamlined operations, clean data at every step, and a customer experience worth defending.</p>
+          <h2 id="home-features-title"><span className="home-heading-gradient">Connected intelligence.</span><br />Across the credit lifecycle.</h2>
+          <p>AMLOK connects financial evidence, institutional policy, and changing borrower conditions so teams can assess the full ecosystem, monitor exposure, and make informed decisions.</p>
         </div>
       </header>
       <div className="home-features-grid">

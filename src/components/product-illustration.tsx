@@ -26,12 +26,12 @@ export const illustrationDescriptions = {
   'behaviour-insights': 'Illustrative live operating behavior diverges from a 90-day baseline, with payment timing, transfer velocity, and new beneficiaries linked to an early warning and signal timeline.',
   'lifecycle-api': 'One AMLOK API connects application, identity and entity, data connections, underwriting, capital deployed, continuous monitoring, risk signals, and decision package.',
   compliance: 'A policy shield checks an incoming document and identifies an exception for review.',
-  quality: 'A field of interaction records is inspected, with one conversation enlarged for quality review.',
-  builder: 'An operating procedure is translated into modular, connected agent instructions.',
+  quality: 'A field of evidence records is inspected, with one incomplete file enlarged for review.',
+  builder: 'An operating procedure connects evidence collection, policy evaluation, and human review.',
   testing: 'Several scenario paths run through a sandbox and arrive at distinct test outcomes.',
   observability: 'A highlighted source passage is linked to the exact statement it supports.',
   support: 'An institution and an AMLOK specialist collaborate around a shared implementation plan.',
-  channels: 'Voice, messaging, and a web experience converge into a single borrower conversation.',
+  channels: 'An institution’s product, API integration, and review team connect to shared borrower context.',
   'data-security': 'A protected data vault connects residency, retention, and security review controls.',
   'white-label': 'An institution’s branded borrower flow sits above a connected AMLOK intelligence layer.',
 } as const;
@@ -216,14 +216,14 @@ function Compliance() {
   </>;
 }
 function Quality() {
-  return <><Caption>QUALITY / EACH INTERACTION MATTERS</Caption>
+  return <><Caption>EVIDENCE / MAKE THE GAPS VISIBLE</Caption>
     <g transform="translate(29 66)">{Array.from({length:30},(_,i)=><g key={i} transform={'translate('+((i%6)*33)+' '+(Math.floor(i/6)*36)+')'}><rect width={25} height={27} className={i===14?'pi-panel attention':i%4===0?'pi-blue-block':'pi-panel'}/><Glyph name={i===14?'flag':'check'} x={5} y={6} size={15} tone={i===14?'attention':i%4===0?'inverse':'blue'}/></g>)}</g>
     <Connection d="M107 151H260V125H288"/><Brackets x={91} y={132} w={37} h={39}/>
-    <Box x={274} y={68} w={180} h={188}><rect width={180} height={48} className="pi-blue-block"/><Glyph name="message" x={15} y={13} size={23} tone="inverse"/><Label x={49} y={28} size={11} tone="inverse">Interaction 014</Label><Label x={16} y={78} size={16} tone="strong">Context in focus.</Label><DocumentLines x={16} y={97} width={144} count={3}/><rect x={13} y={122} width={154} height={25} className="pi-attention-fill"/><Label x={23} y={139} size={10} tone="warning">Review this response</Label><Label x={16} y={172} size={9} tone="muted">Source evidence attached</Label></Box>
+    <Box x={274} y={68} w={180} h={188}><rect width={180} height={48} className="pi-blue-block"/><Glyph name="document" x={15} y={13} size={23} tone="inverse"/><Label x={49} y={28} size={11} tone="inverse">Evidence 014</Label><Label x={16} y={78} size={16} tone="strong">Context in focus.</Label><DocumentLines x={16} y={97} width={144} count={3}/><rect x={13} y={122} width={154} height={25} className="pi-attention-fill"/><Label x={23} y={139} size={10} tone="warning">Missing information</Label><Label x={16} y={172} size={9} tone="muted">Source evidence attached</Label></Box>
   </>;
 }
 function Builder() {
-  return <><Caption>AGENT BUILDER / TURN PROCEDURE INTO ACTION</Caption>
+  return <><Caption>WORKFLOWS / EVIDENCE INTO ACTION</Caption>
     <Paper x={25} y={66} w={188} h={200} title="Your operating procedure"><Label x={16} y={69} size={11}>1. Collect the evidence.</Label><Label x={16} y={99} size={11}>2. Apply your policy.</Label><Label x={16} y={129} size={11}>3. Ask for approval.</Label><DocumentLines y={159} width={136} count={2}/></Paper><Connection d="M213 161H271"/>
     {[['Collect evidence','document'],['Evaluate policy','shield'],['Request approval','person']].map(([label,icon],i)=><g key={label} transform={'translate('+(263+i*10)+' '+(50+i*70)+')'}><path d="M0 0 12-7h155l-12 7Z" className="pi-facet-top"/><path d="M155 0 167-7v53l-12 7Z" className="pi-side-face"/><Box x={0} y={0} w={155} h={53} tone={i===1?'brand':''}><Glyph name={icon as GlyphName} x={13} y={14} size={25} tone={i===1?'inverse':'blue'}/><Label x={49} y={23} size={10}>{label.split(' ')[0]}</Label><Label x={49} y={39} size={10}>{label.split(' ')[1]}</Label></Box></g>)}
   </>;
@@ -250,10 +250,10 @@ function Support() {
   </>;
 }
 function Channels() {
-  return <><Caption>OMNICHANNEL / ONE BORROWER. EVERY CHANNEL.</Caption>
+  return <><Caption>CONTEXT / CONNECT THE CREDIT LIFECYCLE</Caption>
     <Box x={28} y={65} w={111} h={161}><rect x={10} y={21} width={91} height={117} className="pi-chrome"/><Glyph name="phone" x={39} y={45} size={37} tone="blue"/><Label x={22} y={112} size={11}>Your product</Label></Box>
-    <Box x={179} y={45} w={111} h={72}><Glyph name="message" x={14} y={16} size={25} tone="blue"/><Label x={47} y={34} size={10}>Messaging</Label><DocumentLines x={14} y={55} width={80} count={1}/></Box>
-    <Box x={179} y={187} w={111} h={72}><Glyph name="voice" x={14} y={16} size={25} tone="blue"/><Label x={47} y={35} size={11}>Voice</Label>{[10,16,23,15,10].map((h,i)=><path key={i} d={'M'+(50+i*7)+' '+(64-h)+'v'+h} className="pi-voice-line"/>)}</Box>
+    <Box x={179} y={45} w={111} h={72}><Glyph name="code" x={14} y={16} size={25} tone="blue"/><Label x={47} y={34} size={10}>Your API</Label><DocumentLines x={14} y={55} width={80} count={1}/></Box>
+    <Box x={179} y={187} w={111} h={72}><Glyph name="document" x={14} y={16} size={25} tone="blue"/><Label x={47} y={35} size={10}>Your team</Label><DocumentLines x={14} y={55} width={80} count={1}/></Box>
     <Connection d="M139 145H324M290 81H324V145M290 223H324V145H356"/>
     <Box x={353} y={100} w={105} h={108} tone="brand"><Glyph name="person" x={36} y={16} size={31} tone="inverse"/><Label x={12} y={68} size={11}>One borrower</Label><Label x={12} y={88} size={9} tone="muted">Shared context</Label></Box><Signal x={324} y={145}/>
   </>;
