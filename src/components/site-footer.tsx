@@ -36,8 +36,8 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
           <h2>Backed by</h2>
           <div className="site-footer-partner-logos">
             <img src="/images/partners/lvlup-ventures.png" alt="LvlUp Ventures" width={380} height={38}/>
-            <img src="https://amlok.io/logos/cla-lenders.svg" alt="Canadian Lenders Association"/>
-            <img src="https://amlok.io/logos/nvidia-inception.svg" alt="NVIDIA Inception Program"/>
+            <img src="/images/partners/cla-lenders.png" alt="Canadian Lenders Association"/>
+            <img src="/images/partners/nvidia-inception.png" alt="NVIDIA Inception Program"/>
           </div>
         </div><p className="site-footer-location">Toronto, Canada · Headquarters</p><a className="site-footer-email" href="mailto:support@amlok.tech"><Mail size={15} aria-hidden="true"/>support@amlok.tech</a></div>
         <FooterGroup title="Solutions" links={solutionUseCases.map(item=>({label:item.title,href:homeLink(item.href)}))}/>

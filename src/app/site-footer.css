@@ -37,3 +37,5 @@
 @media(max-width:1100px) { .site-footer-primary { grid-template-columns:1fr 1fr; gap:36px; } .site-footer-identity { grid-column:1/-1; } .site-footer-secondary { gap:28px; } }
 @media(max-width:767px) { .site-footer-summary>.site-footer-inner { align-items:start; flex-direction:column; gap:16px; } .site-footer-primary { grid-template-columns:1fr 1fr; gap:36px 24px; padding-block:40px; } .site-footer-group.is-split .site-footer-link-columns { gap:24px; } .site-footer-secondary { grid-template-columns:1fr 1fr; gap:36px 24px; padding-block:36px 40px; } .site-footer-bottom>.site-footer-inner { align-items:start; flex-direction:column; } .site-footer-group a { min-height:44px; font-size:13px; } .site-footer-identity p { max-width:340px; } }
 @media(max-width:380px) { .site-footer-primary,.site-footer-secondary { grid-template-columns:1fr; } .site-footer-group.is-split { grid-column:auto; } .site-footer-group.is-split .site-footer-link-columns { grid-template-columns:1fr; gap:0; } }
+
+.site-footer-partner-logos img[src="/images/partners/nvidia-inception.png"] { height:40px; filter:none; }

@@ -402,8 +402,8 @@ export function HomeHero() {
           <span className="home-partners-label">BACKED BY</span>
           <div className="home-partner-logos">
             <img className="home-partner-logo home-partner-lvlup" src="/images/partners/lvlup-ventures.png" alt="LvlUp Ventures" width={380} height={38} />
-            <img className="home-partner-logo home-partner-cla" src="https://amlok.io/logos/cla-lenders.svg" alt="Canadian Lenders Association" />
-            <img className="home-partner-logo home-partner-nvidia" src="https://amlok.io/logos/nvidia-inception.svg" alt="NVIDIA Inception Program" />
+            <img className="home-partner-logo home-partner-cla" src="/images/partners/cla-lenders.png" alt="Canadian Lenders Association" />
+            <img className="home-partner-logo home-partner-nvidia" src="/images/partners/nvidia-inception.png" alt="NVIDIA Inception Program" />
           </div>
         </div>
         <PageActions className="home-hero-actions" primaryClassName="home-hero-button home-hero-button-primary" secondaryClassName="home-hero-button home-hero-button-secondary"/>

@@ -3,5 +3,15 @@
     "name": "LvlUp Ventures",
     "page": "https://www.lvlup.vc/fund/first-check-fund",
     "source": "https://cdn.prod.website-files.com/62913a79bb8e3365552852f1/66a7e820bbe2df28e1860e46_LvlUp%20Logo%20Light.png"
+  },
+  "cla-lenders.png": {
+    "name": "Canadian Lenders Association",
+    "page": "https://www.canadianlenders.org/",
+    "source": "https://www.canadianlenders.org/wp-content/uploads/2024/06/CLA-Logo-Stroke-White.png"
+  },
+  "nvidia-inception.png": {
+    "name": "NVIDIA Inception Program",
+    "page": "https://www.nvidia.com/en-us/startups/",
+    "source": "https://konvu.com/images/nvidia-inception-program-badge.png"
   }
 }
