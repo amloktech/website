@@ -100,10 +100,19 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
               <button className="home-mobile-nav-heading" type="button" aria-expanded={expanded} aria-controls={panelId} onClick={() => setExpandedGroup(expanded ? null : group.title)}>
                 {group.title}<ChevronDown aria-hidden="true" />
               </button>
-              <ul className="home-mobile-subnav" id={panelId} hidden={!expanded}>
+              <ul className={`home-mobile-subnav${group.title === 'Solutions' ? ' home-mobile-solutions' : ''}`} id={panelId} hidden={!expanded}>
                 {group.title==='Solutions'?<>
-                  {[{label:'Our products',items:solutionProducts},{label:'Use cases',items:solutionUseCases},{label:'By module',items:solutionModules},{label:'By industry',items:solutionIndustries}].map(category=><li className="home-mobile-solution-category" key={category.label}><span>{category.label}</span><ul>{category.items.map(item=><li key={item.title}><a href={destination(item.href)} onClick={closeMenu}>{item.title}<ArrowUpRight size={15} aria-hidden="true"/><small>{item.description}</small></a></li>)}</ul></li>)}
-                  <li><a href="/solutions" onClick={closeMenu}>All solutions <ArrowUpRight size={16} aria-hidden="true" /></a></li>
+                  <li className="home-mobile-solutions-section">
+                    <h3>Products</h3>
+                    <ul className="home-mobile-product-cards">
+                      {solutionProducts.map(({title,description,href,icon:Icon}) => <li key={title}><a className="home-mobile-product-card" href={destination(href)} onClick={closeMenu}><Icon size={22} aria-hidden="true"/><span><strong>{title}</strong><small>{description}</small></span><ArrowUpRight size={17} aria-hidden="true"/></a></li>)}
+                    </ul>
+                  </li>
+                  {[{label:'Use cases',items:solutionUseCases,href:'/solutions',all:'All use cases'},{label:'Modules',items:solutionModules,href:'/modules',all:'All modules'},{label:'Industries',items:solutionIndustries,href:'/industries',all:'Explore industries'}].map(category => <li className="home-mobile-solutions-section" key={category.label}>
+                    <h3>{category.label}</h3>
+                    <ul>{category.items.map(item => <li key={item.title}><a className="home-mobile-solution-link" href={destination(item.href)} onClick={closeMenu}><span>{item.title}</span><ArrowUpRight size={17} aria-hidden="true"/></a></li>)}</ul>
+                    <a className="home-mobile-solutions-all" href={category.href} onClick={closeMenu}>{category.all}<ArrowUpRight size={17} aria-hidden="true"/></a>
+                  </li>)}
                 </>:group.title==='Developers'?developerGroups.map(category=><li className="home-mobile-solution-category" key={category.title}><span>{category.title}</span><ul>{category.links.map(link=><li key={link.label}><a href={link.href} onClick={closeMenu}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a></li>)}</ul></li>):group.title==='Resources'?<>
                   <li><a href="/about-us" onClick={closeMenu}>Meet the team <ArrowUpRight size={16} aria-hidden="true" /></a></li>
                   {resourceGroups.map(category=><li className="home-mobile-solution-category" key={category.title}><span>{category.title}</span><ul>{category.links.map(link=><li key={link.label}><a href={link.href} onClick={closeMenu}>{link.label}<ArrowUpRight size={15} aria-hidden="true"/></a></li>)}</ul></li>)}

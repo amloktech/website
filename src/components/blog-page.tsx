@@ -67,7 +67,7 @@ export function BlogPage() {
 
 export function BlogArticle({ page, post }: { page: SitePageContent; post: BlogPost }) {
   const schema = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title,
-    description: post.description, datePublished: post.date, image: `${siteOrigin}${post.image}`,
+    description: post.description, image: `${siteOrigin}${post.image}`,
     author: { '@type': 'Organization', name: post.author, url: siteOrigin },
     publisher: { '@type': 'Organization', name: 'AMLOK', url: siteOrigin },
     mainEntityOfPage: `${siteOrigin}/blog/${post.slug}` };

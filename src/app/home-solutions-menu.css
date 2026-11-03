@@ -41,3 +41,20 @@
 
 .home-solutions-product strong>svg,.home-solutions-item strong>svg { flex-shrink:0; }
 .home-mobile-subnav a>svg { display:inline-block; vertical-align:middle; margin-left:6px; }
+
+@media(max-width:1023px) {
+  .home-mobile-solutions { padding:0; border-left:0; }
+  .home-mobile-solutions-section { padding:24px 0; }
+  .home-mobile-solutions-section + .home-mobile-solutions-section { border-top:1px solid var(--line); }
+  .home-mobile-solutions-section h3 { margin:0 0 16px; color:var(--blue); font:500 12px/1.5 var(--font-mono); letter-spacing:.14em; text-transform:uppercase; }
+  .home-mobile-solutions-section ul { list-style:none; margin:0; padding:0; }
+  .home-mobile-product-cards { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; }
+  .home-mobile-solutions a.home-mobile-product-card { display:grid; grid-template-columns:22px minmax(0,1fr) 17px; align-items:start; gap:12px; padding:18px 16px; border:1px solid var(--line); border-radius:16px; background:var(--surface); color:var(--blue); }
+  .home-mobile-product-card strong { display:block; color:var(--ink); font-size:16px; font-weight:600; line-height:1.4; }
+  .home-mobile-product-card small { display:block; margin-top:6px; color:var(--muted); font-size:13px; line-height:1.55; }
+  .home-mobile-solutions a>svg { flex-shrink:0; margin:2px 0 0; }
+  .home-mobile-solutions a.home-mobile-solution-link { justify-content:space-between; gap:16px; min-height:48px; padding:12px 0; color:var(--ink); }
+  .home-mobile-solutions a.home-mobile-solutions-all { gap:8px; margin-top:8px; color:var(--blue); font-size:14px; }
+  .home-mobile-solutions a:hover { color:var(--blue-secondary); }
+  .home-mobile-solutions a.home-mobile-product-card:hover { background:var(--blue-soft); }
+}

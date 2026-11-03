@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: `${page.title} ${page.accent}`, description: page.description,
       type: page.kind === 'article' ? 'article' : 'website',
-      ...(publication ? { authors: ['AMLOK'], publishedTime: publication.date, modifiedTime: publication.date } : {}),
+      ...(publication ? { authors: ['AMLOK'] } : {}),
       url: new URL(`/${page.slug}`, siteOrigin).href,
       images: [{ url: socialImage, width: 1200, height: 630, alt: publication ? `${publication.title} ${publication.accent}` : 'AMLOK: Infrastructure for risk intelligence' }],
     },

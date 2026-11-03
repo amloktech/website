@@ -61,7 +61,7 @@ for i,post in enumerate(POSTS):
 <svg x="58" y="44" width="126" height="24" viewBox="4.125 17.449 158.973 29.553" fill="#0d299c">{PATHS}</svg>
 {text(938,62,f'JOURNAL / {i+1:02}',13)}
 {text(58,194,subtitle,12,weight=600)}{main}
-{text(58,572,'AMLOK PERSPECTIVES / NOVEMBER 2026',12)}
+{text(58,572,'AMLOK PERSPECTIVES',12)}
 {art(i)}<path d="M1108 570L1140 538M1108 538H1140V570" stroke="#153b9c" fill="none" stroke-width="2"/>
 </svg>'''
  (ROOT/'public'/post['image'].lstrip('/')).write_text(svg)
