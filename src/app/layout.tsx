@@ -32,7 +32,7 @@ import { siteOrigin } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
-  title: 'AMLOK — Risk intelligence at the speed of capital',
+  title: 'AMLOK: Risk intelligence at the speed of capital',
   description: 'Risk intelligence and AI workflows across the credit lifecycle. Your team owns the final decision.',
   icons: { icon: '/icon.svg' },
 };

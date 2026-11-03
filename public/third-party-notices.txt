@@ -42,7 +42,7 @@ Coffee-shop stock photograph
 Asset: public/images/small-business-coffee-shop.avif
 Photographer: Long Chung (@chungj07)
 Source: https://unsplash.com/photos/barista-working-behind-a-coffee-counter-H7PLuaYW6UQ
-License: Unsplash License — https://unsplash.com/license
+License: Unsplash License: https://unsplash.com/license
 Downloaded 2026-10-21. Used as an illustrative business photograph, not as a
 customer testimonial or a claim about the pictured business. The blue caption
 and corner brackets are separate AMLOK interface elements.
@@ -51,7 +51,7 @@ Cool-toned cafe stock photograph (previous risk-gap option)
 Asset: public/images/small-business-cafe-cool.avif
 Photographer: XIAN TING (@jumeirah998)
 Source: https://unsplash.com/photos/baristas-prepare-coffee-at-a-cafe-counter-OJmDa2GGsnk
-License: Unsplash License — https://unsplash.com/license
+License: Unsplash License: https://unsplash.com/license
 Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
 a statement about the pictured business. The square AMLOK overlay is a separate
 interface element. Replaces the warm coffee-shop photograph in this section.
@@ -60,7 +60,7 @@ Overhead barista stock photograph (current risk-gap section)
 Asset: public/images/small-business-barista.avif
 Photographer: Lee Campbell (@leecampbell)
 Source: https://unsplash.com/photos/man-wearing-blue-shirt-pouring-coffee-in-his-cup-31QfYo1h32o
-License: Unsplash License — https://unsplash.com/license
+License: Unsplash License: https://unsplash.com/license
 Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
 a statement about the pictured business. The square AMLOK overlay is a separate
 interface element, placed over the foreground to keep the barista at work visible.
@@ -69,7 +69,7 @@ Graduation stock photograph (previous consumer risk-gap option)
 Asset: public/images/consumer-graduation.avif
 Photographer: Eduardo Fan (@eduardofanrg)
 Source: https://unsplash.com/photos/a-person-in-a-blue-graduation-gown-holding-a-book-XejjbocR3ZA
-License: Unsplash License — https://unsplash.com/license
+License: Unsplash License: https://unsplash.com/license
 Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
 a claim about the pictured person's finances. The square AMLOK overlay and
 corner brackets are separate interface elements.
@@ -78,7 +78,7 @@ Family at home stock photograph (current consumer risk-gap extension)
 Asset: public/images/consumer-family-home.avif
 Photographer: Jennifer Kalenberg (@jkalen71)
 Source: https://unsplash.com/photos/a-couple-of-people-that-are-sitting-in-front-of-a-house-6mHNgUK1hDk
-License: Unsplash License — https://unsplash.com/license
+License: Unsplash License: https://unsplash.com/license
 Downloaded 2026-10-21. Illustrative photography, not a customer endorsement or
 a statement about the family's finances or housing tenure. The AMLOK caption
 is a separate interface element, placed above the family to keep them visible.

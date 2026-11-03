@@ -271,3 +271,8 @@
 @media(prefers-reduced-motion:reduce) {
 .page *, .page *:before, .page *:after { animation:none!important; transition:none!important; }
 }
+
+@media(max-width:760px) {
+  .scenarioControl input { min-height:44px; margin-block:6px; }
+  .scenarioFoot button { min-height:44px; padding:8px 12px; font-size:14px; }
+}

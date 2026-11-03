@@ -236,7 +236,7 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-6',
     surface: 'EVENT-BASED AUTOMATIONS',
     title: 'Effortless risk operations',
-    description: 'Route assessments, exceptions, monitoring events, and evidence into the systems your team already uses—from origination through portfolio management.',
+    description: 'Route assessments, exceptions, monitoring events, and evidence into the systems your team already uses, from origination through portfolio management.',
     graphic: 'event-automations',
   },
   {
@@ -278,7 +278,7 @@ const loanScaleSlides = [
     id: 'loan-scale-slide-4',
     surface: 'ONE API · FULL LIFECYCLE',
     title: 'One API for the entire risk lifecycle.',
-    description: 'Connect onboarding data, resolve identity and financial activity, apply institution-owned risk policy, create decision packages, and monitor capital after deployment—all through one continuous intelligence layer.',
+    description: 'Connect onboarding data, resolve identity and financial activity, apply institution-owned risk policy, create decision packages, and monitor capital after deployment through one continuous intelligence layer.',
     graphic: 'lifecycle-api',
   },
 ] as const;
@@ -288,8 +288,8 @@ function LoanScaleSection() {
     <div className="home-loan-scale-inner">
       <header className="home-loan-scale-intro">
         <span className="home-loan-scale-eyebrow">AI-POWERED CREDIT LIFECYCLE</span>
-        <h2 id="loan-scale-title">AI that lets you scale loan volume, engage more customers, and lower risk.</h2>
-        <p>AMLOK gives financial institutions the intelligence and tools to strengthen decisions across the full credit lifecycle—from verification and underwriting to monitoring, simulation, and servicing. Your team owns the final decision.</p>
+        <h2 id="loan-scale-title">AI that lets you scale your <span className="home-heading-gradient">portfolio volume</span>, engage <span className="home-heading-gradient">more customers</span>, and <span className="home-heading-gradient">lower risk</span>.</h2>
+        <p>AMLOK gives financial institutions the intelligence and tools to strengthen decisions across the full credit lifecycle, from verification and underwriting to monitoring, simulation, and servicing. Your team owns the final decision.</p>
       </header>
 
       <div className="home-lifecycle-rows">

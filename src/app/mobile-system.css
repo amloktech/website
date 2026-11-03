@@ -205,3 +205,18 @@
 /* The official GIF includes a white canvas; screen blending removes it. */
 .home-validation-logos>img[alt="Lendefied"] { filter:grayscale(1) invert(1) brightness(3) contrast(3); mix-blend-mode:screen; }
 .home-page .home-customer-layers { min-height:0; padding-bottom:0; }
+
+/* Phone controls remain readable without focus zoom and easy to tap. */
+@media (max-width: 1023px) {
+  body input:not([type='range']):not([type='checkbox']):not([type='radio']),
+  body textarea, body select { font-size:16px!important; }
+  .site-footer-language select { min-height:44px; }
+}
+@media (max-width: 760px) {
+  .site-footer-legal { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:4px 16px; font-size:12px; white-space:normal; }
+  .site-footer-legal a { display:flex; align-items:center; min-height:44px; }
+  .site-footer-group a { min-height:44px; }
+}
+@media (max-width:760px) {
+  .site-footer-legal>span { grid-column:1 / -1; padding-bottom:8px; }
+}

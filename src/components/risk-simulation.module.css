@@ -87,3 +87,8 @@
 @media(max-width:800px){.heroArt { max-width:580px; width:100%; margin:auto; }.labGrid { grid-template-columns:1fr; }.result { max-width:650px; width:100%; margin:auto; }.useCases,.productLinks { grid-template-columns:1fr; }.useCases h3 { font-size:25px; }.steps { grid-template-columns:1fr 1fr; }.useCases article { padding:28px; }}
 @media(max-width:540px){.heroCard { padding:20px; gap:12px; }.heroCard strong { font-size:19px; }.baselineTag { padding:12px 16px; font-size:8px; }.baselineTag strong { font-size:18px; }.branchTag { font-size:8px; padding:8px; }.branchArt { aspect-ratio:1.45; }.heroArt figcaption { font-size:10px; }.controls h3 { font-size:28px; }.range label { font-size:12px; }.result { padding:20px; }.metrics { gap:14px; }.metrics strong { font-size:29px; }.metrics span { font-size:10px; }.result th,.result td { padding:13px 3px; font-size:10px; }.result th:first-child { max-width:115px; }.steps { grid-template-columns:1fr; gap:22px; }.chain,.review { padding:22px; }.review header { padding:24px; }.review header strong { font-size:29px; }}
 @media(prefers-reduced-motion:reduce){.page *,.page *:before,.page *:after { animation:none!important; transition:none!important; }}
+
+@media(max-width:760px) {
+  .range input { min-height:44px; margin-block:6px; }
+  .reset { min-height:44px; padding:8px 0; font-size:14px; }
+}

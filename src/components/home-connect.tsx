@@ -42,7 +42,7 @@ export function HomeConnect() {
     <div className={styles.footer}>
       <div className={styles.copy}>
         <h3 id="home-connect-title">Connect the context you need.</h3>
-        <p>Integrations across KYC/KYB, credit, fraud, open banking, and PEP screening—plus flexible connections to your internal systems.</p>
+        <p>Integrations across KYC/KYB, credit, fraud, open banking, and PEP screening, plus flexible connections to your internal systems.</p>
       </div>
       <PageActions className={styles.actions} primaryClassName="" secondaryClassName=""/>
     </div>

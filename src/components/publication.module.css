@@ -5,3 +5,10 @@
 @media print{.page :global(.home-nav),.page :global(header.home-header),.sidebar,.heroActions,.related{display:none!important}.hero{padding:0 0 24px}.heroGrid{display:block;margin-top:20px}.hero h1{font-size:34px}.cover{display:none}.readingLayout{display:block;padding:25px 0}.body{font-size:11pt;line-height:1.6}.body h2{font-size:21pt}.section{margin-bottom:28px}.figure{break-inside:avoid;print-color-adjust:exact}.overview{break-inside:avoid}.body section{scroll-margin:0}.references a{overflow-wrap:anywhere}.references li a:after{content:' (' attr(href) ')';font-size:8pt;font-weight:400}.body table{font-size:9pt}.page :global(.cp-inner){width:100%;max-width:none;padding:0}.page .hero :global(.cp-breadcrumb){display:none}}
 
 @media print { .page ~ :global(.site-footer) { display:none!important; } .flow { break-inside:avoid; } }
+
+@media(max-width:760px) {
+  .dataDetails summary { min-height:44px; padding-block:12px; }
+  .printButton { min-height:44px; }
+  .tableWrap { max-width:100%; overscroll-behavior-x:contain; }
+  .tableWrap:focus-visible { outline:3px solid #3478ff; outline-offset:3px; }
+}

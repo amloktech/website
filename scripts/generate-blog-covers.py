@@ -55,7 +55,7 @@ for i,post in enumerate(POSTS):
  title=' '.join(LINES[i]);subtitle=post['topic'].upper()
  main=''.join(text(58,265+n*57,line,46,'#0b2482',600) for n,line in enumerate(LINES[i]))
  svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
-<title>AMLOK — {escape(post['title'])}</title><desc>Original blue editorial illustration for {escape(post['topic'])}. {escape(title)}. Quantitative examples are labelled in the artwork and explained in the article.</desc>
+<title>AMLOK: {escape(post['title'])}</title><desc>Original blue editorial illustration for {escape(post['topic'])}. {escape(title)}. Quantitative examples are labelled in the artwork and explained in the article.</desc>
 <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f0f5ff"/><stop offset="1" stop-color="#cadcff"/></linearGradient><linearGradient id="blue" x2="1" y2="1"><stop stop-color="#2867ff"/><stop offset="1" stop-color="#0b269e"/></linearGradient><pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#8ba8e8" stroke-opacity=".12"/></pattern></defs>
 <rect width="1200" height="650" fill="url(#bg)"/><rect width="1200" height="650" fill="url(#grid)"/><circle cx="1070" cy="170" r="380" fill="#fff" opacity=".22"/>
 <svg x="58" y="44" width="126" height="24" viewBox="4.125 17.449 158.973 29.553" fill="#0d299c">{PATHS}</svg>

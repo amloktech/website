@@ -369,7 +369,7 @@
     "label": "All use cases",
     "title": "Start with the question.",
     "accent": "Connect the context.",
-    "description": "Explore seven ways connected risk intelligence can support your team—from resolving identity and understanding cash flow to underwriting, monitoring, simulation, and servicing reviews.",
+    "description": "Explore seven ways connected risk intelligence can support your team, from resolving identity and understanding cash flow to underwriting, monitoring, simulation, and servicing reviews.",
     "visual": "decision",
     "kind": "directory",
     "sections": [],
@@ -949,7 +949,7 @@
     "label": "Industry Guides",
     "title": "Your industry.",
     "accent": "The complete risk picture.",
-    "description": "18 comprehensive guides across consumer lending, business lending, financial institutions, fintech and insurtech. Explore how AMLOK fits your workflow—with market data, evidence maps, worked calculations and implementation plans.",
+    "description": "18 comprehensive guides across consumer lending, business lending, financial institutions, fintech and insurtech. Explore how AMLOK fits your workflow, with market data, evidence maps, worked calculations and implementation plans.",
     "visual": "behaviour-insights",
     "related": [
       "research",
@@ -1075,7 +1075,7 @@
     "label": "Consumer lending",
     "title": "See the person.",
     "accent": "Understand the commitments.",
-    "description": "Connect permitted income, financial activity, and contractual obligations to understand the household behind the application. Keep the evidence relevant to the credit product—and the decision with your team.",
+    "description": "Connect permitted income, financial activity, and contractual obligations to understand the household behind the application. Keep the evidence relevant to the credit product, and keep the decision with your team.",
     "visual": "financial",
     "kind": "industry",
     "sections": [

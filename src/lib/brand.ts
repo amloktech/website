@@ -127,7 +127,7 @@ export const colors = [
 ];
 
 const declarations = (tokens: Record<string, string>) => Object.entries(tokens).map(([key, value]) => `  ${key}: ${value};`).join('\n');
-export const tokensCSS = `/* AMLOK ${brand.version} — Rounded surfaces / Precise graphics / Clear signals. Source: /brand */
+export const tokensCSS = `/* AMLOK ${brand.version}: Rounded surfaces / Precise graphics / Clear signals. Source: /brand */
 :root {
 ${Object.values(tokenGroups).map(declarations).join('\n')}
 }

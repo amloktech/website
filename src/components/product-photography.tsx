@@ -6,42 +6,32 @@ type Workflow = 'verification' | 'underwriting' | 'monitoring' | 'servicing' | '
 
 const photographs = {
   verification: {
-    src: '/images/workflow-verify-studio.avif',
-    alt: 'A ceramic artist at her workbench, surrounded by handmade pottery in a daylight studio.',
-    photographer: 'Mina Rad',
-    href: 'https://unsplash.com/photos/a-woman-sitting-at-a-table-in-front-of-a-window-lz_zy3NEyDI',
+    src: '/images/workflows/verification.webp',
+    alt: 'A business owner and advisor reviewing onboarding records together.',
     action: 'Verify',
     details: ['Applicant identity', 'Business & ownership', 'Evidence completeness', 'Screening checks'],
   },
   underwriting: {
-    src: '/images/workflow-underwrite-planning.avif',
-    alt: 'A team reviewing architectural plans and calculations together at a wooden worktable.',
-    photographer: 'Pedro Miranda',
-    href: 'https://unsplash.com/photos/people-reviewing-architectural-blueprints-on-desk-3QzMBrvCeyQ',
+    src: '/images/workflows/underwriting.webp',
+    alt: 'Credit professionals reviewing financial records and a laptop at a meeting table.',
     action: 'Underwrite',
     details: ['Repayment capacity', 'Credit-policy fit', 'Unresolved risks', 'Ongoing reassessment'],
   },
   monitoring: {
-    src: '/images/workflow-monitor-warehouse.avif',
-    alt: 'Two colleagues with a scanner and clipboard walking through blue shelving in a working warehouse.',
-    photographer: 'Centre for Ageing Better',
-    href: 'https://unsplash.com/photos/women-walking-through-warehouse-aisle-ZlOlRnWk8zU',
+    src: '/images/workflows/monitoring.webp',
+    alt: 'A business owner and operations manager reviewing warehouse inventory with a tablet.',
     action: 'Monitor',
     details: ['Borrower performance', 'Transaction signals', 'Related entities', 'Early warning'],
   },
   servicing: {
-    src: '/images/workflow-service-florist.avif',
-    alt: 'A florist carefully preparing a fresh bouquet beside a wooden counter in her flower shop.',
-    photographer: 'Waldemar Brandt',
-    href: 'https://unsplash.com/photos/woman-wearing-gray-cardigan-holding-flower-bouquet-q3RGXuBc_SU',
+    src: '/images/workflows/servicing.webp',
+    alt: 'A customer support professional helping a customer while reviewing account information.',
     action: 'Service',
     details: ['Information requests', 'Account inquiries', 'Payment reminders', 'Repayment workflows'],
   },
   investigation: {
-    src: '/images/workflow-investigate-review.avif',
-    alt: 'An over-the-shoulder view of a professional comparing paper records at a naturally lit meeting table.',
-    photographer: 'Anastassia Anufrieva',
-    href: 'https://unsplash.com/photos/a-woman-sitting-at-a-table-reading-a-paper-ecHGTPfjNfA',
+    src: '/images/workflows/investigation.webp',
+    alt: 'Two analysts comparing business records during an evidence review.',
     action: 'Investigate',
     details: ['Suspicious activity', 'Screening matches', 'Inconsistent evidence', 'Related-entity concerns'],
   },
@@ -62,7 +52,7 @@ function VerificationOverlay({ step }: { step: number }) {
       <i><Link2 /></i>
       <span className={step > 1 ? 'is-selected' : ''}>{step === 3 ? <ShieldCheck /> : <FileCheck2 />}<small>{step === 3 ? 'Screening' : 'Evidence'}</small></span>
     </div>
-    <div className="workflow-photo-result"><Check size={14} /><span>{labels[step]}</span><span className="workflow-photo-example">Illustrative</span></div>
+    <div className="workflow-photo-result"><Check size={14} /><span>{labels[step]}</span></div>
   </div>;
 }
 
@@ -130,7 +120,6 @@ const overlays = {
 };
 
 export function ProductPhotography({ kind, step = 0 }: { kind: Workflow; step?: number }) {
-  const photo = photographs[kind];
   const Overlay = overlays[kind];
   return <figure className="workflow-photography" data-workflow={kind}>
     <div className="workflow-photo-stage">
@@ -145,6 +134,5 @@ export function ProductPhotography({ kind, step = 0 }: { kind: Workflow; step?: 
       <div className="workflow-photo-corners" aria-hidden="true"><i /><i /><i /><i /></div>
       <Overlay step={Math.min(3, Math.max(0, step))} />
     </div>
-    {/* Photo attribution retained for the future terms page: <figcaption><span>Illustrative photography</span><a href={photo.href} target="_blank" rel="noopener noreferrer">{photo.photographer} / Unsplash<span className="home-risk-gaps-sr"> (opens in a new tab)</span></a></figcaption> */}
   </figure>;
 }

@@ -17,13 +17,13 @@
     color:var(--ink);
   }
   .workflow-photo-stage { position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--blue-soft); container-type:inline-size; }
-  .workflow-photo-image { object-fit:cover; opacity:0; transition:opacity 400ms ease; filter:saturate(.66) brightness(1.05); }
+  .workflow-photo-image { object-fit:cover; opacity:0; transition:opacity 400ms ease;  }
   .workflow-photo-image.is-visible { opacity:1; }
-  .workflow-photo-image--verification { object-position:43% center; }
-  .workflow-photo-image--underwriting { object-position:center; }
-  .workflow-photo-image--monitoring { object-position:43% center; }
-  .workflow-photo-image--servicing { object-position:54% center; }
-  .workflow-photo-image--investigation { object-position:56% center; }
+  .workflow-photo-image--verification { object-position:center top; }
+  .workflow-photo-image--underwriting { object-position:center top; }
+  .workflow-photo-image--monitoring { object-position:center top; }
+  .workflow-photo-image--servicing { object-position:center top; }
+  .workflow-photo-image--investigation { object-position:center top; }
   .workflow-photo-wash { position:absolute; inset:0; background:linear-gradient(150deg,color-mix(in srgb,var(--blue-soft) 18%,transparent),color-mix(in srgb,var(--blue-secondary) 8%,transparent)); pointer-events:none; }
   .workflow-photo-corners { position:absolute; inset:16px; pointer-events:none; }
   .workflow-photo-corners i { position:absolute; width:16px; height:16px; border-color:var(--on-brand); border-style:solid; opacity:.8; }
@@ -31,15 +31,12 @@
   .workflow-photo-corners i:nth-child(2) { top:0; right:0; border-width:1px 1px 0 0; }
   .workflow-photo-corners i:nth-child(3) { bottom:0; left:0; border-width:0 0 1px 1px; }
   .workflow-photo-corners i:nth-child(4) { bottom:0; right:0; border-width:0 1px 1px 0; }
-  .workflow-photography figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:3px 12px; padding-top:10px; color:var(--muted); font-size:10px; line-height:1.5; }
-  .workflow-photography figcaption a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
   .workflow-photo-overlay { position:absolute; z-index:2; box-shadow:0 8px 28px color-mix(in srgb,var(--ink) 12%,transparent); }
   .workflow-photo-label { display:flex; align-items:center; gap:8px; font:500 clamp(8px,1.8cqw,10px)/1.4 var(--font-mono); letter-spacing:.11em; text-transform:uppercase; }
   .workflow-photo-label svg { flex:none; width:19px; height:19px; }
   .workflow-photo-overlay strong { font-size:clamp(17px,3.8cqw,23px); font-weight:500; line-height:1.2; letter-spacing:-.035em; }
   .workflow-photo-result { display:flex; align-items:center; gap:8px; color:var(--blue); font-size:clamp(10px,2.2cqw,12px); }
   .workflow-photo-result svg { flex:none; }
-  .workflow-photo-example { margin-left:auto; color:var(--muted); font:400 8px/1.4 var(--font-mono); text-transform:uppercase; letter-spacing:.08em; }
 
   /* The studio portrait stays open below this compact evidence chain. */
   .workflow-identity { top:28px; right:28px; width:54%; padding:14px 14px 12px; background:var(--canvas); border-top:3px solid var(--blue-secondary); }

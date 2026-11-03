@@ -56,7 +56,7 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
           {label:'vs Intellifi',href:'/compare/intellifi'},
           {label:'vs Inverité Insights',href:'/compare/inverite-insights'},
         ]}/>
-        <FooterGroup title="Company" links={[...resourceGroups[1].links,{label:'Brand guidelines',href:'/brand'},{label:'Site map',href:'/site-map'}]}/>
+        <FooterGroup title="Company" links={[...resourceGroups[1].links,{label:'Brand Kit',href:'/brand'},{label:'Site map',href:'/site-map'}]}/>
       </div>
     </div>
     <div className="site-footer-bottom"><div className="site-footer-inner"><div className="site-footer-legal"><span>© 2026 AMLOK</span><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms of business</a><a href="/contact">Contact</a></div><div className="site-footer-controls"><a href="https://www.linkedin.com/company/amlok" aria-label="AMLOK on LinkedIn" title="LinkedIn"><Linkedin size={20} aria-hidden="true"/></a><a href="https://github.com/amloktech" aria-label="AMLOK on GitHub" title="GitHub"><Github size={20} aria-hidden="true"/></a><label className="site-footer-language"><Globe size={19} aria-hidden="true"/><select aria-label="Footer language" value={language} onChange={event=>setLanguage(event.target.value)}><option value="English">English</option><option value="Français">Français</option></select></label></div></div></div>

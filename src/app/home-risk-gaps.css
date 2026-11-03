@@ -15,7 +15,7 @@
 }
 .home-risk-gaps-content { min-width:0; align-self:center; }
 .home-risk-gaps-consumer { margin-top:clamp(64px,7vw,112px); scroll-margin-top:calc(var(--home-header-offset,106px) - 84px); }
-.home-risk-gaps-consumer .home-risk-gaps-photo>img { object-position:62% center; }
+.home-risk-gaps-consumer .home-risk-gaps-photo>img { object-position:center; }
 /* Place the caption over the open architecture, above the family. */
 .home-risk-gaps-consumer .home-risk-gaps-photo-note { top:40px; bottom:auto; }
 .home-risk-gaps-eyebrow,.home-platform-eyebrow { display:flex; align-items:center; gap:12px; margin:0 0 24px; color:var(--blue); font:500 var(--text-label)/1.5 var(--font-mono); letter-spacing:.12em; }
@@ -41,7 +41,7 @@
 .home-risk-gap-panel a svg { flex:none; }
 .home-risk-gaps-figure { margin:0; display:flex; flex-direction:column; min-width:0; }
 .home-risk-gaps-photo { position:relative; flex:1; min-height:550px; overflow:hidden; background:var(--surface); border-radius:var(--radius-media); }
-.home-risk-gaps-photo>img { object-fit:cover; object-position:center 70%; }
+.home-risk-gaps-photo>img { object-fit:cover; object-position:center; }
 .home-risk-gaps-photo-frame { position:absolute; inset:24px; pointer-events:none; }
 .home-risk-gaps-photo-frame>span { position:absolute; width:20px; height:20px; border-color:var(--on-brand); border-style:solid; opacity:.7; }
 .home-risk-gaps-photo-frame>span:nth-child(1) { top:0; left:0; border-width:1px 0 0 1px; }
@@ -97,7 +97,7 @@
   .home-risk-gap-panel { padding-left:0; }
   .home-risk-gap-panel p { font-size:16px; }
   .home-risk-gaps-photo { min-height:0; aspect-ratio:4 / 5; }
-  .home-risk-gaps-photo>img { object-position:center bottom; }
+  .home-risk-gaps-photo>img { object-position:center; }
   .home-risk-gaps-photo-frame { inset:16px; }
   .home-risk-gaps-photo-note { left:28px; right:28px; bottom:28px; padding:20px; }
   .home-risk-gaps-consumer .home-risk-gaps-photo-note { top:28px; }

@@ -456,7 +456,7 @@
         "paragraphs": [
           "A pilot should compare a frozen set of merchant files under the current review process and the proposed evidence-led process. Measure reconciliation completeness, unresolved residuals, reviewer agreement, and time to a documented decision. Track which sources were missing; otherwise a faster result may simply reflect easier cases.",
           "If later studying repayment outcomes, define the contract-specific event, observation horizon, and treatment of renewals before scoring. Separate merchants and related entities across partitions and preserve a later evaluation period. Report uncertainty and performance by channel, season, and evidence coverage. Operational improvements should not be described as lower losses unless loss outcomes were actually measured. [@evaluation]",
-          "In AMLOK’s product framing, underwriting assembles the baseline and monitoring follows changes. The institution remains responsible for the decision and the response. A useful handoff includes the settlement bridge, obligations, assumptions, disputed classifications, and the next review date—not just a single score. [@mca]"
+          "In AMLOK’s product framing, underwriting assembles the baseline and monitoring follows changes. The institution remains responsible for the decision and the response. A useful handoff includes the settlement bridge, obligations, assumptions, disputed classifications, and the next review date, rather than just a single score. [@mca]"
         ]
       }
     ],
@@ -2310,7 +2310,7 @@
           "An operational pilot can assess the share of decisions with traceable assumptions, the proportion of follow-ups completed on time, the evidence completeness of review packets, and whether reviewers agree on the next action. These are useful process measures that do not require pretending a short pilot can already establish long-run credit performance.",
           "A separate outcome study should define the event, horizon, comparator, and uncertainty. It should distinguish a signal that arrived earlier from a response that actually improved an outcome. AMLOK’s current public research baselines do not establish that causal effect. [@evaluation][@card]"
         ],
-        "takeaway": "A monitoring system should remember why the institution said yes—and make it possible to revisit that reasoning when the evidence changes."
+        "takeaway": "A monitoring system should remember why the institution said yes and make it possible to revisit that reasoning when the evidence changes."
       }
     ],
     "related": [
@@ -2781,7 +2781,7 @@
           "A realistic integration evaluation includes partial connections, account switching, delayed refreshes, duplicate observations, and source corrections. Measure how well the product explains each state and whether calculations remain traceable. A demonstration with every source available does not establish resilience under missingness.",
           "For predictive claims, separate the effect of additional data from the effect of a different model. Compare like-for-like source coverage and include platform or institution holdouts when transfer is the intended claim. AMLOK’s current published baselines do not establish embedded-finance outcome performance. [@evaluation][@card]"
         ],
-        "takeaway": "The best connection experience continues after authorization: it keeps the user and reviewer informed about what the financial view can—and cannot—see."
+        "takeaway": "The best connection experience continues after authorization: it keeps the user and reviewer informed about what the financial view can and cannot see."
       }
     ],
     "related": [
@@ -2833,7 +2833,7 @@
     "date": "2026-11-02",
     "readMinutes": 8,
     "abstract": "Personal lending starts with a simple question: can this person meet this payment alongside the rest of their financial life? A bank balance alone cannot answer it. This guide connects income evidence, contractual obligations and payment timing to an Insights assessment, then shows how Signal can preserve that context after funding. It covers unsecured installment lending; revolving credit and secured lines require their own contractual treatment.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Separate recurring income from transfers, refunds and financing proceeds.",
       "Review residual cash and payment timing alongside debt-service ratios.",
@@ -3052,7 +3052,7 @@
     "sources": [
       {
         "id": "market",
-        "title": "Households — Financial Stability Report 2026",
+        "title": "Households: Financial Stability Report 2026",
         "publisher": "Bank of Canada",
         "url": "https://www.bankofcanada.ca/publications/financial-stability-report/financial-stability-report-2026/households/",
         "note": "Chart 6 and household-stress discussion. Borrower-level measure: more than 60 days late on at least one account; not product-level mortgage arrears."
@@ -3104,7 +3104,7 @@
     "date": "2026-11-02",
     "readMinutes": 8,
     "abstract": "Auto finance contains two connected exposures: the borrower’s ability to pay and the lender’s recovery if payments stop. Strong collateral does not create monthly cash flow, and strong income does not eliminate depreciation or negative equity. This guide shows how an AMLOK-supported workflow can connect the application, retail installment contract, income evidence, vehicle identity and lender repayment records while keeping each risk measure interpretable.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Assess repayment capacity and collateral exposure separately, then review them together.",
       "Trace financed fees and rolled-in negative equity into the actual principal.",
@@ -3380,7 +3380,7 @@
     "date": "2026-11-02",
     "readMinutes": 8,
     "abstract": "A mortgage decision creates a relationship that can outlast the evidence used to approve it. Income changes, other obligations accumulate and the contractual payment may reset at renewal. An effective workflow connects the application to a dated affordability assessment and keeps that assessment available for later review. This guide covers purchase, refinance and renewal evidence while distinguishing insured and uninsured lending, fixed and variable rates, and different lien positions.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Keep property value, income verification and repayment capacity as separate evidence questions.",
       "Make renewal scenarios reproducible, with the rate convention and remaining amortization stated.",
@@ -3651,7 +3651,7 @@
     "date": "2026-11-02",
     "readMinutes": 8,
     "abstract": "Student lending is a sequence of different financial states: study, the transition out of study, repayment, and any approved assistance or deferral. Treating them as one continuous payment obligation can create misleading arrears and affordability assessments. This guide shows how authorized education-finance evidence can support an Insights workflow and how Signal can follow financial changes once an approved baseline exists. Public-program statistics are kept separate from private education lending.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Recognize the current contractual state before calculating a payment burden.",
       "Use observed, supported income rather than inventing future earnings.",
@@ -3876,7 +3876,7 @@
     "sources": [
       {
         "id": "market",
-        "title": "Canada Student Financial Assistance Program — Annual Report 2023–2024",
+        "title": "Canada Student Financial Assistance Program: Annual Report 2023–2024",
         "publisher": "Employment and Social Development Canada",
         "url": "https://www.canada.ca/content/dam/esdc-edsc/documents/programs/canada-student-loans-grants/reports/csfa-annual-2023-2024/5447-2023-24-CSFA-Program-Annual-Report-EN.pdf",
         "note": "Table 5 and glossary: loan-dollar-weighted three-year default rates by repayment-entry year; default means more than 270 days in arrears under the direct lending regime."
@@ -3928,7 +3928,7 @@
     "date": "2026-11-02",
     "readMinutes": 8,
     "abstract": "Rent is an ongoing household commitment, not a mortgage payment and not necessarily a loan. A useful assessment connects the tenancy terms, the applicant’s responsibility, supported income and actual payment history. This guide describes an evidence-led AMLOK implementation for an authorized housing or rent-finance use case. The provider must define the permitted decision purpose and applicable policy; a lending workflow cannot simply be reused as an unrestricted tenant-screening rule.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Match payments to the tenancy ledger, including concessions and partial receipts.",
       "Separate the household obligation from one applicant’s share.",
@@ -4199,7 +4199,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Small-business credit is often decided from records that describe different versions of the same activity: invoices, processor settlements, bank deposits and management accounts. AMLOK’s role is to connect permitted evidence so an analyst can explain operating cash generation and the obligations it must support. This guide covers the practical implementation from a new application to a monitored business, with special attention to owner transfers, customer concentration and seasonality.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Count an economic event once even when it appears in several systems.",
       "Separate financing and owner transfers from operating receipts.",
@@ -4475,7 +4475,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Commercial credit is rarely one borrower, one account and one simple ratio. The assessment may cover an operating company, a holding group, several facilities and contracts with different definitions. This guide explains how AMLOK can support a consistent evidence trail across those objects. It separates amounts committed, drawn, available and secured, then connects the approved assessment to later liquidity and covenant reviews.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Define the obligor and consolidation perimeter before calculating leverage or coverage.",
       "Treat commitments, drawdowns, guarantees and collateral as different objects.",
@@ -4746,7 +4746,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Business financing is not one repayment model. An installment loan, an equipment lease, a receivables advance and a revolving line each depend on different evidence and contractual mechanics. This guide shows how to scope an AMLOK assessment around the actual financing structure, then preserve the right evidence for monitoring. The goal is a repeatable financial explanation, not a single score applied indiscriminately to every business product.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Classify the agreement before applying a ratio or delinquency rule.",
       "For receivables finance, track eligibility, dilution, concentration and collections separately.",
@@ -5027,7 +5027,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "A bank needs consistent evidence across different products, teams and review cycles without collapsing their differences. AMLOK fits as risk-intelligence infrastructure: Insights supports an authorized underwriting assessment and Signal follows supported changes from an approved baseline. This guide focuses on implementation within a bank’s existing decision and control framework, from one defined portfolio to a broader evidence architecture.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Begin with a product and decision moment, not an institution-wide average.",
       "Preserve the relationship between a recommendation, its evidence and the bank’s decision.",
@@ -5293,7 +5293,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Credit unions combine financial assessment with knowledge of members and communities. A connected evidence workflow should support that judgement, not flatten every member into a generic profile. This guide explains how Insights can help organize authorized member and business evidence, how Signal can retain the original assessment context, and how to evaluate a deployment when product and local-market samples may be small.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Resolve joint and business obligations without counting the same payment twice.",
       "Keep local concentrations visible while assessing each file on supported evidence.",
@@ -5554,7 +5554,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Alternative lending describes an institution type, not one risk model. A bridge mortgage, unsecured installment loan and receivables facility have different repayment mechanics and evidence needs. This guide shows how to build an AMLOK-supported workflow around a defined product, channel and borrower population, with a clear link between the contractual structure, supported financial position and subsequent monitoring.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Segment by product and repayment structure before comparing outcomes.",
       "Preserve evidence gaps and channel differences rather than hiding them in a pooled score.",
@@ -5778,7 +5778,7 @@
     "sources": [
       {
         "id": "market",
-        "title": "Residential Mortgage Industry Report — Fall 2026",
+        "title": "Residential Mortgage Industry Report: Fall 2026",
         "publisher": "CMHC",
         "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/housing-finance/residential-mortgage-industry-report",
         "note": "Figure 7: Canadian mortgage 90+ day delinquency by lender type, Q2 2026. Underlying CBA / Survey of Non-Bank Mortgage Lenders populations differ; not a controlled comparison or all-alternative-credit loss rate."
@@ -5830,7 +5830,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Digital origination can move an application quickly without making its evidence complete. A useful lending workflow needs both operational speed and a clear account of what supports the assessment. This guide describes how Insights can sit inside a digital application journey and how Signal can follow an approved exposure, with coverage, exceptions and reviewer effort measured alongside completion time.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Measure the full application journey, including retries and human correction.",
       "Keep insufficient evidence separate from an adverse credit conclusion.",
@@ -5958,7 +5958,7 @@
             [
               "Started applications",
               "1,000",
-              "—"
+              "Not applicable"
             ],
             [
               "Policy-eligible applications",
@@ -6101,7 +6101,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Embedded finance brings a financing decision close to the activity that creates the need. That proximity is valuable, but platform activity is still only part of the borrower’s financial picture. This guide connects commerce, payment, settlement, accounting and bank evidence so an AMLOK-supported assessment can explain cash generation without counting the same sale repeatedly. It keeps the financing contract and institution’s decision separate from the platform experience.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "A sale, processor settlement and bank receipt can represent one economic event.",
       "Explain fees, refunds, reserves and timing differences before interpreting a shortfall.",
@@ -6330,7 +6330,7 @@
     "sources": [
       {
         "id": "market",
-        "title": "Corporate reports — Canadian Payment Methods and Trends",
+        "title": "Corporate reports: Canadian Payment Methods and Trends",
         "publisher": "Payments Canada",
         "url": "https://www.payments.ca/insights/corporate-reports",
         "note": "Published annual summaries report CAD 11.9 trillion for 2023, CAD 12.2 trillion for 2024 and CAD 12.9 trillion for 2025. Values are nominal national payment totals, not embedded-finance loan balances."
@@ -6382,7 +6382,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "A platform can expose thousands of records while leaving a lender uncertain about what happened financially. Identity, settlement grouping, corrections and source timing determine whether those records can support a decision. This guide explains the platform evidence contract for an AMLOK implementation: how permitted records become ready assessment inputs, how changes remain traceable, and how to measure reconciliation quality before claiming downstream lending benefits.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Keep platform, merchant, customer, payment and settlement identifiers distinct.",
       "Measure reconciliation by both count and financial value.",
@@ -6420,7 +6420,7 @@
         "title": "What AMLOK brings to the workflow.",
         "paragraphs": [
           "AMLOK’s shared infrastructure supports authorized connections, consent, evidence uploads, normalized reads and result access. Insights consumes ready input manifests for a full underwriting workflow, while Signal uses approved baselines and newly available evidence for monitoring. API categories organize those capabilities; they are not additional standalone products. [@product] [@workflow]",
-          "A platform implementation should make source scope and data meaning clear before an assessment begins. That includes supported resource types, history windows, stable identifiers, correction handling and explicit missingness. The commercial goal is a dependable evidence interface for the financing partner, with fewer ambiguous handoffs—not an unsupported claim that every upstream event arrives instantly."
+          "A platform implementation should make source scope and data meaning clear before an assessment begins. That includes supported resource types, history windows, stable identifiers, correction handling and explicit missingness. The commercial goal is a dependable evidence interface for the financing partner, with fewer ambiguous handoffs, without claiming that every upstream event arrives instantly."
         ]
       },
       {
@@ -6643,7 +6643,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Trade credit connects the seller’s cash flow, the buyer’s payment behaviour and the insurer’s contractual exposure. Those are related but different risk questions. This guide describes how an agreed AMLOK workflow can organize authorized business and receivable evidence for assessment and monitoring, while keeping the seller, buyer, invoice and policy distinct. It does not treat an unpaid invoice as an automatically covered claim.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Resolve buyer groups before measuring concentration and policy-limit utilization.",
       "Keep contractual aging, disputes and insurance eligibility separate.",
@@ -6906,7 +6906,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Surety assessment connects a contractor’s financial resources with its ability to perform an obligation. A bond amount is not money lent to the contractor, and a growing backlog is not automatically a stronger business. This guide shows how an agreed AMLOK workflow can support evidence review around the principal, obligee, project, contract and bond, with particular attention to cash availability and changing cost-to-complete estimates.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Separate principal, obligee, contract and bond rather than treating the bond as a loan.",
       "Reconcile work in progress, billings and collections by project.",
@@ -7172,7 +7172,7 @@
     "date": "2026-11-02",
     "readMinutes": 7,
     "abstract": "Premium finance links a borrower’s installment obligation to one or more underlying insurance policies. The loan balance, insurance premium and potentially recoverable premium are different amounts. This guide focuses on property and casualty premium-finance evidence and explains how an agreed AMLOK workflow can support assessment and monitoring without assuming that the unexpired policy period is fully refundable. Life-insurance premium finance has different collateral and contractual mechanics and requires a separately scoped assessment.",
-    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios—not customer results, underwriting cutoffs or claims of validated model performance.",
+    "evidence": "A practical implementation guide grounded in AMLOK’s documented product scope and segment research. Market figures retain their original population and period. Worked examples are invented, reproducible scenarios. They do not represent customer results, underwriting cutoffs or claims of validated model performance.",
     "takeaways": [
       "Match each finance agreement to its policies, insured party and effective dates.",
       "Distinguish calculated recoverable premium from cash actually received.",

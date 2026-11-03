@@ -1,0 +1,2186 @@
+[
+  {
+    "heading": true,
+    "path": "/",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/about-us",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/platform",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/products",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/products/underwriting",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/products/portfolio-monitoring",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-graph",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-simulation",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/solutions",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/modules",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/modules/verification-onboarding",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/modules/white-label-experiences",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/integrations",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/pricing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/contact",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/get-started",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/manifesto",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/careers",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/case-studies",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/whitepapers",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/from-snapshot-to-signal",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/read-the-cash-flow",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/designing-reviewable-ai",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries/consumer-lending",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries/business-lending",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries/financial-institutions",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries/fintech",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industries/insurtech",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/solutions/cash-flow-intelligence",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/solutions/entity-fraud-resolution",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/solutions/decision-automation",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/solutions/borrower-servicing-collections",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/api-reference",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/sdks",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/webhooks",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/mcp",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/integration-prompt",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/sandbox",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/developers/agent-skills",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/changelog",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/status",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/security-compliance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/privacy",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/cookies",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/terms",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/prism-data",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/flinks",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/judi-ai",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/covaleyo",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/intellifi",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/compare/inverite-insights",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/site-map",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/risk-is-a-relationship",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/monitoring-without-the-noise",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/cash-flow-for-merchant-finance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/underwriting-to-monitoring",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/event-driven-risk-workflows",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/blog/embedded-finance-context",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/evidence-before-intelligence",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/follow-the-receipts",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/exposure-between-renewals",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/mortgage-after-the-application",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/two-risks-in-auto-finance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/one-sale-many-records",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/underwrite-the-connected-business",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/research/affordability-in-motion",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-personal",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-auto",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-mortgage",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-student",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-rent",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-smb",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-commercial",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-financing",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/banks",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/credit-unions",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/alternative-lenders",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/digital-lenders",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/embedded-finance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/platforms",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/trade-credit",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/surety",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/premium-finance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/merchant-cash-advance",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/brand",
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "heading": true,
+    "path": "/",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/about-us",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/platform",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/products",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/products/underwriting",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/products/portfolio-monitoring",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-graph",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-simulation",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/solutions",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/modules",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/modules/verification-onboarding",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/modules/white-label-experiences",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/integrations",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/pricing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/contact",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/get-started",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/manifesto",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/careers",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/case-studies",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/whitepapers",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/from-snapshot-to-signal",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/read-the-cash-flow",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/designing-reviewable-ai",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries/consumer-lending",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries/business-lending",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries/financial-institutions",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries/fintech",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industries/insurtech",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/solutions/cash-flow-intelligence",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/solutions/entity-fraud-resolution",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/solutions/decision-automation",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/solutions/borrower-servicing-collections",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/api-reference",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/sdks",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/webhooks",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/mcp",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/integration-prompt",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/sandbox",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/developers/agent-skills",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/changelog",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/status",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/security-compliance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/privacy",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/cookies",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/terms",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/prism-data",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/flinks",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/judi-ai",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/covaleyo",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/intellifi",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/compare/inverite-insights",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/site-map",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/risk-is-a-relationship",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/monitoring-without-the-noise",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/cash-flow-for-merchant-finance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/underwriting-to-monitoring",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/event-driven-risk-workflows",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/blog/embedded-finance-context",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/evidence-before-intelligence",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/follow-the-receipts",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/exposure-between-renewals",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/mortgage-after-the-application",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/two-risks-in-auto-finance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/one-sale-many-records",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/underwrite-the-connected-business",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/research/affordability-in-motion",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-personal",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-auto",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-mortgage",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-student",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-rent",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-smb",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-commercial",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-financing",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/banks",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/credit-unions",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/alternative-lenders",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/digital-lenders",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/embedded-finance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/platforms",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/trade-credit",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/surety",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/premium-finance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/merchant-cash-advance",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/brand",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "heading": true,
+    "path": "/",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/about-us",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/platform",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/products",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/products/underwriting",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/products/portfolio-monitoring",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-graph",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-simulation",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/solutions",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/modules",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/modules/verification-onboarding",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/modules/white-label-experiences",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/integrations",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/pricing",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/contact",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/get-started",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/manifesto",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/careers",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/case-studies",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/whitepapers",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/from-snapshot-to-signal",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/read-the-cash-flow",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/designing-reviewable-ai",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries/consumer-lending",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries/business-lending",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries/financial-institutions",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries/fintech",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industries/insurtech",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/solutions/cash-flow-intelligence",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/solutions/entity-fraud-resolution",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/solutions/decision-automation",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/solutions/borrower-servicing-collections",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/api-reference",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/sdks",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/webhooks",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/mcp",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/integration-prompt",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/sandbox",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/developers/agent-skills",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/changelog",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/status",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/security-compliance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/privacy",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/cookies",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/terms",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/prism-data",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/flinks",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/judi-ai",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/covaleyo",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/intellifi",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/compare/inverite-insights",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/site-map",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/risk-is-a-relationship",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/monitoring-without-the-noise",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/cash-flow-for-merchant-finance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/underwriting-to-monitoring",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/event-driven-risk-workflows",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/blog/embedded-finance-context",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/evidence-before-intelligence",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/follow-the-receipts",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/exposure-between-renewals",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/mortgage-after-the-application",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/two-risks-in-auto-finance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/one-sale-many-records",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/underwrite-the-connected-business",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/research/affordability-in-motion",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-personal",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-auto",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-mortgage",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-student",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-rent",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-smb",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-commercial",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-financing",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/banks",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/credit-unions",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/alternative-lenders",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/digital-lenders",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/embedded-finance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/platforms",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/trade-credit",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/surety",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/premium-finance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/merchant-cash-advance",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/brand",
+    "scroll": 430,
+    "width": 430
+  },
+  {
+    "heading": true,
+    "path": "/",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/about-us",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/platform",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/products",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/products/underwriting",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/products/portfolio-monitoring",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-graph",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/platform/risk-simulation",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/solutions",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/modules",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/modules/verification-onboarding",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/modules/white-label-experiences",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/integrations",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/pricing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/contact",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/get-started",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/manifesto",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/careers",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/case-studies",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/whitepapers",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/from-snapshot-to-signal",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/read-the-cash-flow",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/designing-reviewable-ai",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries/consumer-lending",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries/business-lending",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries/financial-institutions",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries/fintech",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industries/insurtech",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/solutions/cash-flow-intelligence",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/solutions/entity-fraud-resolution",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/solutions/decision-automation",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/solutions/borrower-servicing-collections",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/api-reference",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/sdks",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/webhooks",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/mcp",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/integration-prompt",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/sandbox",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/developers/agent-skills",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/changelog",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/status",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/security-compliance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/privacy",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/cookies",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/terms",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/prism-data",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/flinks",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/judi-ai",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/covaleyo",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/intellifi",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/compare/inverite-insights",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/site-map",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/risk-is-a-relationship",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/monitoring-without-the-noise",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/cash-flow-for-merchant-finance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/underwriting-to-monitoring",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/event-driven-risk-workflows",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/blog/embedded-finance-context",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/evidence-before-intelligence",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/follow-the-receipts",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/exposure-between-renewals",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/mortgage-after-the-application",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/two-risks-in-auto-finance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/one-sale-many-records",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/underwrite-the-connected-business",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/research/affordability-in-motion",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-personal",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-auto",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-mortgage",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-student",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/consumer-rent",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-smb",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-commercial",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/business-financing",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/banks",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/credit-unions",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/alternative-lenders",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/digital-lenders",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/embedded-finance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/platforms",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/trade-credit",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/surety",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/premium-finance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/industry-guides/merchant-cash-advance",
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "heading": true,
+    "path": "/brand",
+    "scroll": 768,
+    "width": 768
+  }
+]

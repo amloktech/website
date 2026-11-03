@@ -147,3 +147,9 @@
 @media (prefers-reduced-motion:reduce) {
   .featuredImage img,.cardImage img { transition:none; }
 }
+
+@media(max-width:760px) {
+  .search button { width:44px; height:44px; flex-shrink:0; margin-right:-10px; }
+  .resultsMeta button { min-height:44px; }
+  .pagination button { width:44px; height:44px; }
+}

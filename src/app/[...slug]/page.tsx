@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const blogPost = blogPosts.find(post => page.slug === `blog/${post.slug}`);
   const socialImage = publication ? `/images/publications/${publication.slug.split('/').pop()}.png` : '/images/amlok-social-card.png';
   return {
-    title: `${publication ? `${publication.title} ${publication.accent}` : blogPost?.title || page.label} — AMLOK`,
+    title: `${publication ? `${publication.title} ${publication.accent}` : blogPost?.title || page.label} | AMLOK`,
     description: page.description,
     ...(publication ? { authors: [{ name: 'AMLOK', url: siteOrigin }] } : {}),
     alternates: { canonical: `/${page.slug}` },
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: page.kind === 'article' ? 'article' : 'website',
       ...(publication ? { authors: ['AMLOK'], publishedTime: publication.date, modifiedTime: publication.date } : {}),
       url: new URL(`/${page.slug}`, siteOrigin).href,
-      images: [{ url: socialImage, width: 1200, height: 630, alt: publication ? `${publication.title} ${publication.accent}` : 'AMLOK — Infrastructure for risk intelligence' }],
+      images: [{ url: socialImage, width: 1200, height: 630, alt: publication ? `${publication.title} ${publication.accent}` : 'AMLOK: Infrastructure for risk intelligence' }],
     },
     twitter: { card: 'summary_large_image', images: [socialImage] },
   };

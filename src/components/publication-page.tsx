@@ -29,7 +29,7 @@ function Figure({ figure, number, publication }: { figure: PublicationFigure; nu
       <div className={styles.axis}><span>0</span><span>{max.toLocaleString('en-CA')} {figure.unit}</span></div>
     </div> : <ol className={styles.flow}>{figure.steps?.map((step, index) => <li key={step.title}><span className={styles.stepNumber}>{String(index + 1).padStart(2, '0')}</span><strong>{step.title}</strong><p>{step.detail}</p>{index < (figure.steps?.length ?? 0) - 1 && <span className={styles.flowArrow} aria-hidden="true">→</span>}</li>)}</ol>}
     <figcaption><Text text={figure.caption} publication={publication}/>{figure.sources.map(id => <Citation key={id} id={id} publication={publication}/>)}</figcaption>
-    {figure.values && <details className={styles.dataDetails}><summary>View figure data</summary><table><caption>{figure.title} — underlying values</caption><thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead><tbody>{figure.values.map(value => <tr key={value.label}><th scope="row">{value.label}</th><td>{value.display}</td></tr>)}</tbody></table></details>}
+    {figure.values && <details className={styles.dataDetails}><summary>View figure data</summary><div className={styles.tableWrap} role="region" aria-label={`${figure.title} data`} tabIndex={0}><table><caption>{figure.title}: underlying values</caption><thead><tr><th scope="col">Measure</th><th scope="col">Value</th></tr></thead><tbody>{figure.values.map(value => <tr key={value.label}><th scope="row">{value.label}</th><td>{value.display}</td></tr>)}</tbody></table></div></details>}
   </figure>;
 }
 

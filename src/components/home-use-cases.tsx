@@ -8,7 +8,7 @@ const cases = [
   { title: 'Expand credit approvals', description: 'Bring verified cash flow into the review so borrowers can be assessed on a fuller financial picture.', graphic: 'approvals' },
   { title: 'Surface emerging risk', description: 'Connect changes in income, spending, and liquidity before they become a larger credit concern.', graphic: 'radar' },
   { title: 'Detect first-party fraud', description: 'Connect inconsistent evidence, overlapping borrowing, and related entities for investigation.', graphic: 'fraud' },
-  { title: 'Understand borrower income', description: 'Reconcile deposits and revenue patterns to see how much income recurs—and when it arrives.', graphic: 'income' },
+  { title: 'Understand borrower income', description: 'Reconcile deposits and revenue patterns to see how much income recurs and when it arrives.', graphic: 'income' },
   { title: 'Align offers with risk', description: 'Compare repayment capacity with your policies to inform the amount, terms, and pricing you offer.', graphic: 'offers' },
   { title: 'Monitor portfolio health', description: 'Track movement across your book and bring changing borrower conditions into the next review.', graphic: 'portfolio' },
   { title: 'Prioritize collections', description: 'Use current financial context to guide outreach, payment timing, and approved repayment workflows.', graphic: 'collections' },

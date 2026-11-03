@@ -74,7 +74,7 @@ export function ResearchListing({ collection }: { collection?: 'whitepapers' | '
     <div className="cp-inner">
       <div className={styles.libraryHeading}>
         <h2 id="research-library-title">Explore the {collectionLabel}.</h2>
-        <p>{collection === 'whitepapers' ? 'Deeper perspectives on connected evidence and changing risk.' : isIndustryLibrary ? 'Find your subsegment. Understand the evidence, the workflow and the opportunity.' : 'Reports, whitepapers, and guides—with evidence you can inspect.'}</p>
+        <p>{collection === 'whitepapers' ? 'Deeper perspectives on connected evidence and changing risk.' : isIndustryLibrary ? 'Find your subsegment. Understand the evidence, the workflow and the opportunity.' : 'Reports, whitepapers, and guides with evidence you can inspect.'}</p>
       </div>
       {isIndustryLibrary && <div className={styles.industryFilters} role="group" aria-label="Industry groups">
         {industryFilters.map(filter => <button key={filter.value} type="button" aria-pressed={industry === filter.value} aria-controls="research-results" onClick={() => update(category, query, true, filter.value)}>{filter.label}<span>{filter.value === 'all' ? industryGuides.length : industryGuides.filter(guide => guide.industry === filter.label).length}</span></button>)}

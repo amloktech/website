@@ -105,7 +105,7 @@ export function HomeRiskGaps() {
 
       <figure className="home-risk-gaps-figure">
         <div className="home-risk-gaps-photo">
-          <Image src="/images/small-business-barista.avif" alt="Overhead view of a barista in a pale-blue shirt pouring milk into coffee beside a white counter and stainless-steel espresso machine." fill sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1023px) 48vw, (max-width: 1375px) 45vw, 608px" />
+          <Image src="/images/risk-gap/barista.webp" alt="A barista pouring steamed milk into a coffee cup in a bright independent café." fill sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1023px) 48vw, (max-width: 1375px) 45vw, 608px" />
           <div className="home-risk-gaps-photo-frame" aria-hidden="true"><span /><span /><span /><span /></div>
           <div className="home-risk-gaps-photo-note">
             <div className="home-risk-gaps-photo-note-label"><Mark /><span>BEHIND EVERY ASSESSMENT</span></div>
@@ -113,14 +113,13 @@ export function HomeRiskGaps() {
             <div className="home-risk-gaps-signal" aria-hidden="true"><i /><span /><i /><span /><i /></div>
           </div>
         </div>
-        {/* Photo attribution retained for the future terms page: <figcaption><span>Illustrative photography</span><a href="https://unsplash.com/photos/man-wearing-blue-shirt-pouring-coffee-in-his-cup-31QfYo1h32o" target="_blank" rel="noopener noreferrer">Photo: Lee Campbell / Unsplash<span className="home-risk-gaps-sr"> (opens in a new tab)</span></a></figcaption> */}
       </figure>
     </div>
 
     <div className="home-risk-gaps-inner home-risk-gaps-consumer" id="consumer-risk-gaps" role="group" aria-labelledby="consumer-risk-gaps-title">
       <figure className="home-risk-gaps-figure">
         <div className="home-risk-gaps-photo">
-          <Image src="/images/consumer-family-home.avif" alt="Parents with their young child on the front steps of a pale-grey house with white trim." fill sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1023px) 48vw, (max-width: 1375px) 45vw, 608px" />
+          <Image src="/images/risk-gap/family.webp" alt="Parents with their young child on the front steps of a pale-grey house with white trim." fill sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1023px) 48vw, (max-width: 1375px) 45vw, 608px" />
           <div className="home-risk-gaps-photo-frame" aria-hidden="true"><span /><span /><span /><span /></div>
           <div className="home-risk-gaps-photo-note">
             <div className="home-risk-gaps-photo-note-label"><Mark /><span>BEHIND EVERY APPLICATION</span></div>
@@ -128,7 +127,6 @@ export function HomeRiskGaps() {
             <div className="home-risk-gaps-signal" aria-hidden="true"><i /><span /><i /><span /><i /></div>
           </div>
         </div>
-        {/* Photo attribution retained for the future terms page: <figcaption><span>Illustrative photography</span><a href="https://unsplash.com/photos/a-couple-of-people-that-are-sitting-in-front-of-a-house-6mHNgUK1hDk" target="_blank" rel="noopener noreferrer">Photo: Jennifer Kalenberg / Unsplash<span className="home-risk-gaps-sr"> (opens in a new tab)</span></a></figcaption> */}
       </figure>
 
       <div className="home-risk-gaps-content">

@@ -5,7 +5,7 @@ const assurances = [
   { kind:'soc-i', name:'AICPA SOC 2 Type I', status:'Compliant' },
   { kind:'iso', name:'ISO/IEC 27001', status:'Compliant' },
   { kind:'iso-ai', name:'ISO/IEC 42001', status:'Compliant' },
-  { kind:'eu-ai-act', name:'EU AI Act — Regulation (EU) 2024/1689', status:'Compliant' },
+  { kind:'eu-ai-act', name:'EU AI Act: Regulation (EU) 2024/1689', status:'Compliant' },
   { kind:'aiuc', name:'AIUC-1', status:'Compliant' },
   { kind:'ibeta', name:'iBeta ISO 30107-3 Level 1', status:'Compliant' },
   { kind:'hipaa', name:'HIPAA', status:'Compliant' },
