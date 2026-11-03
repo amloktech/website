@@ -9,9 +9,9 @@
     "page": "https://www.canadianlenders.org/",
     "source": "https://www.canadianlenders.org/wp-content/uploads/2024/06/CLA-Logo-Stroke-White.png"
   },
-  "nvidia-inception.png": {
+  "nvidia-inception-white.svg": {
     "name": "NVIDIA Inception Program",
-    "page": "https://www.nvidia.com/en-us/startups/",
-    "source": "https://konvu.com/images/nvidia-inception-program-badge.png"
+    "source": "https://raw.githubusercontent.com/NVIDIA/bionemo-framework/main/docs/docs/assets/images/logo-white.svg",
+    "note": "White vector treatment with Inception Program label below, matching the previous website lockup."
   }
 }

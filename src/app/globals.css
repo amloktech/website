@@ -1066,6 +1066,3 @@ svg { flex-shrink: 0; }
   .home-page .home-loan-scale { padding: var(--space-section) 19px 80px; }
   .home-page .home-loan-scale-slide { gap: var(--space-media-caption); }
 }
-
-/* Keep the supplied NVIDIA program badge in its original colors. */
-.home-partner-logo.home-partner-nvidia { height:44px; filter:none; }
