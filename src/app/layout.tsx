@@ -28,12 +28,21 @@ import './desktop-spacing.css';
 import { SiteFooter } from '@/components/site-footer';
 import { BookingEmbed } from '@/components/booking-embed';
 import { tokensCSS } from '@/lib/brand';
-import { siteOrigin } from '@/lib/site-config';
+import { siteDescription, siteOrigin, siteSocialImage, siteTitle } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteOrigin),
-  title: 'Amlok: Risk intelligence at the speed of capital',
-  description: 'Risk intelligence and AI workflows across the credit lifecycle. Your team owns the final decision.',
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    type: 'website',
+    siteName: 'Amlok',
+    images: [siteSocialImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [siteSocialImage],
+  },
   icons: { icon: '/icon.svg' },
 };
 
