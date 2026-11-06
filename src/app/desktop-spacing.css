@@ -19,8 +19,8 @@
     padding-block:var(--space-section);
   }
   .home-page :is(.home-risk-operations,.home-risk-gaps,.home-products,
-    .home-customer-layers,.home-pricing) { padding-bottom:0; }
-  .home-page .home-security + .home-features { padding-block:0; }
+    .home-pricing) { padding-bottom:0; }
+  .home-page .home-security + .home-features { padding-top:var(--space-section); padding-bottom:0; }
   .home-page :is(.home-platform-section,.home-customer-layers) { display:block; min-height:0; }
   .home-page .home-products + .home-use-cases { padding-top:var(--space-section); }
   .home-page .home-risk-operations + .home-risk-gaps { padding-top:var(--space-section); }

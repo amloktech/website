@@ -1,0 +1,725 @@
+[
+  {
+    "slug": "home-capital-verification",
+    "summary": "Connect income evidence, broker relationships, and file exceptions before a verification failure spreads. Model the improvement in mortgage assessability and relationship accuracy.",
+    "thesis": "Make unsupported income visible before approval, then connect repeated exceptions across the broker channel.",
+    "access": "Authorized account transactions, income documents, employment evidence, broker identifiers, and the verification record available at each review date.",
+    "steps": [
+      {
+        "title": "Reconcile the income claim",
+        "evidence": "Application income, payroll deposits, employer evidence, and recurring debt payments.",
+        "output": "A source-linked income and debt-service assessment with missing evidence and contradictions retained.",
+        "action": "Route unsupported income to a verification exception before the institution clears the file."
+      },
+      {
+        "title": "Find the connected cohort",
+        "evidence": "Broker IDs, employers, account owners, underwriters, and repeated documentation exceptions.",
+        "output": "An evidence-backed relationship graph with uncertain links left for review.",
+        "action": "Expand a file-level investigation to the affected broker cohort without treating every linked borrower as fraudulent."
+      },
+      {
+        "title": "Turn exceptions into accountable action",
+        "evidence": "Open findings, investigation dates, policy thresholds, and the original approval record.",
+        "output": "A versioned exception history that shows which checks remain unresolved and who reviewed them.",
+        "action": "Give risk and governance teams a traceable basis to restrict a channel, re-review exposure, or escalate material findings."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible mortgage files",
+        "outcome": "additional assessable mortgage files",
+        "meaning": "More reviews could support an evidence-based affordability decision instead of proceeding with an incomplete debt-service picture.",
+        "assumption": "Assumes the supplied assessability rates transfer to mortgage files with comparable income and obligation evidence."
+      },
+      {
+        "metricId": "relationship-precision",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "accepted broker, employer, and account links",
+        "outcome": "additional correctly resolved links",
+        "meaning": "A more accurate cohort gives investigators a better basis for finding repeated verification exceptions.",
+        "assumption": "Holds the number of accepted links constant. Correct links require an independently reviewed relationship label; precision is not the share of all relationships discovered."
+      }
+    ],
+    "validation": "Replay files using only documents available before approval. Independently label income contradictions and broker relationships; compare assessable-file coverage, false links, and unresolved exceptions at approval.",
+    "limit": "The model addresses verification and escalation. It does not estimate a deposit run avoided or settlement costs saved.",
+    "productSources": [
+      "business-underwriting",
+      "entity-graph"
+    ]
+  },
+  {
+    "slug": "td-monitoring-coverage",
+    "summary": "Expose monitoring gaps, resolve transaction counterparties, and prioritize actionable AML reviews. Model a lower false-positive review burden alongside better counterparty coverage.",
+    "thesis": "Treat missing monitoring coverage as an exception, then give investigators more context for the activity that is reviewed.",
+    "access": "Authorized transaction feeds, the institution’s monitoring scope and alert records, customer identity evidence, and account-closure decisions.",
+    "steps": [
+      {
+        "title": "Make the blind spots visible",
+        "evidence": "Transaction populations by product and channel, monitoring inclusion rules, and source availability.",
+        "output": "A coverage comparison that identifies missing feeds and activity outside the configured review scope.",
+        "action": "Escalate uncovered activity to the AML program owner; an absent feed cannot be scored as low risk."
+      },
+      {
+        "title": "Connect the parties behind the activity",
+        "evidence": "Account ownership, payment references, customer records, and available counterparty evidence.",
+        "output": "Named counterparties and supported relationship paths attached to the review.",
+        "action": "Prioritize unexplained flows and related accounts for investigation instead of reviewing each alert in isolation."
+      },
+      {
+        "title": "Focus review without losing the audit trail",
+        "evidence": "False-positive alert labels, prior investigations, closure decisions, and subsequent account activity.",
+        "output": "A contextual review package with the evidence, unresolved questions, and follow-up activity.",
+        "action": "Let authorized investigators resolve supported false positives and escalate continuing activity under institution-owned AML policies."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "aml-review-burden",
+        "mode": "native",
+        "population": "Normalized AML false-positive review burden",
+        "outcome": "lower modeled review burden",
+        "meaning": "The supplied index moves from 100 to 65, leaving 35 fewer burden points for false-positive review.",
+        "assumption": "Baseline is a normalized burden index of 100. This is not an alert count, hours saved, cost reduction, or detection-accuracy measure."
+      },
+      {
+        "metricId": "counterparty-coverage",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible transaction records",
+        "outcome": "additional records with a named counterparty",
+        "meaning": "More reviewed activity would have a named party that investigators can connect to the customer and transaction history.",
+        "assumption": "Assumes comparable resolvable counterparty evidence. This does not turn the historical 92% monitoring gap into a modeled coverage gain."
+      }
+    ],
+    "validation": "Use known-at transaction and alert snapshots. Measure source coverage separately from counterparty resolution; compare labeled false-positive review burden while holding suspicious-event detection requirements fixed.",
+    "limit": "These figures model review quality and burden. They do not estimate money laundering prevented, monitoring coverage restored, or penalties avoided.",
+    "productSources": [
+      "entity-graph",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "atb-energy-concentration",
+    "summary": "Trace energy exposure through customers and repayment capacity. Model how connected financial evidence could improve concentration coverage and borrower assessment during a sector shock.",
+    "thesis": "See the energy dependency behind each borrower before a regional shock becomes a portfolio-wide surprise.",
+    "access": "Authorized borrower financials, revenue counterparties, debt obligations, and dated exposure records across energy and connected sectors.",
+    "steps": [
+      {
+        "title": "Identify the revenue dependency",
+        "evidence": "Customer receipts, borrower revenue, and verified customer-sector information.",
+        "output": "A concentration view showing how much assessable revenue depends on energy-linked customers.",
+        "action": "Review connected businesses together when a sector shock threatens their common source of cash."
+      },
+      {
+        "title": "Reassess repayment capacity",
+        "evidence": "Updated operating receipts, fixed costs, existing debt schedules, and liquidity evidence.",
+        "output": "A refreshed debt-service assessment tied to the underlying records.",
+        "action": "Prioritize borrowers whose current cash generation no longer supports the original repayment assumptions."
+      },
+      {
+        "title": "Test the response before changing exposure",
+        "evidence": "The current borrower baseline and explicit revenue, collection-delay, and expense assumptions.",
+        "output": "Comparable scenarios showing which borrowers become unassessable or fail institution-defined thresholds.",
+        "action": "Use the results to inform exposure limits, review cadence, or borrower engagement before the next renewal."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "customer-concentration",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible borrower concentration assessments",
+        "outcome": "additional assessments with customer concentration coverage",
+        "meaning": "More borrowers could be assessed for common revenue dependencies rather than viewed only through their own industry code.",
+        "assumption": "Assumes customer revenue can be linked to counterparties and that the supplied coverage definition applies to each borrower assessment."
+      },
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible borrower reviews",
+        "outcome": "additional assessable borrower reviews",
+        "meaning": "More reviews could connect current cash generation to debt commitments during a sector downturn.",
+        "assumption": "Assumes comparable financial evidence and debt-service definitions; assessability is not proof that a borrower will repay."
+      }
+    ],
+    "validation": "Freeze borrower and counterparty data before the sector deterioration. Compare concentration coverage and debt-service assessability against independently reviewed records, then evaluate the timing of review triggers.",
+    "limit": "The projection improves the view of exposure. It does not model the energy price path or convert provision amounts into avoidable losses.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "cibc-office-real-estate",
+    "summary": "Connect property cash flow, debt service, and refinancing assumptions. Model a broader assessment base and lower forecast error for an office-loan review scenario.",
+    "thesis": "Refresh the cash-flow evidence behind an office loan before renewal or refinancing decisions depend on an outdated baseline.",
+    "access": "Authorized property cash flows, rent and expense records, borrower obligations, loan terms, and available lease and refinancing evidence.",
+    "steps": [
+      {
+        "title": "Rebuild the property baseline",
+        "evidence": "Rent receipts, operating expenses, loan payments, and supporting property records.",
+        "output": "A source-linked view of cash generation and debt-service coverage with explicit evidence gaps.",
+        "action": "Identify loans requiring a deeper review before relying on stale reported income."
+      },
+      {
+        "title": "Separate the refinancing assumptions",
+        "evidence": "The current loan terms, maturity date, and reviewer-supplied rate, vacancy, and refinancing assumptions.",
+        "output": "Side-by-side scenarios that preserve the original baseline and show the effect of each changed assumption.",
+        "action": "Review a refinancing dependency before treating contractual maturity as a reliable exit."
+      },
+      {
+        "title": "Monitor the change, not just the ratio",
+        "evidence": "New receipts, expenses, payment performance, and refreshed evidence versions.",
+        "output": "A change record that ties deterioration to the affected loan and its prior underwriting assumptions.",
+        "action": "Prioritize covenant review, updated evidence, or borrower engagement using institution-defined thresholds."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible property-loan assessments",
+        "outcome": "additional assessable property-loan reviews",
+        "meaning": "A larger share of the review population could support a current debt-service assessment.",
+        "assumption": "Assumes the supplied assessability rates apply to property cash flows with comparable source quality and obligation coverage."
+      },
+      {
+        "metricId": "forecast-error",
+        "mode": "native",
+        "population": "60-day property cash-flow forecast error",
+        "outcome": "relative reduction in forecast error",
+        "meaning": "The input error measure falls by 1.5 percentage points, improving the modeled cash-flow planning baseline.",
+        "assumption": "Uses the supplied forecast-error measure unchanged. Its error definition must match in a replay; no dollar forecast or loan-loss reduction is inferred."
+      }
+    ],
+    "validation": "Replay property-level snapshots with a fixed 60-day horizon and the same error definition. Compare assessability, forecast error, and the timing of refinancing review flags against later available outcomes.",
+    "limit": "The reported decline in impaired loans includes sales and repayments. The scenario does not attribute that decline to Amlok or estimate losses avoided.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "goeasy-payment-settlement",
+    "summary": "Keep booked payments separate from collected cash. Model better settlement reconciliation and fewer classification errors before payment data changes the risk picture.",
+    "thesis": "Prevent an unconfirmed receipt from silently becoming settled cash in the evidence used for a credit review.",
+    "access": "Authorized payment events, processor settlement files, bank receipts, reversals, account schedules, and reporting cut-off rules.",
+    "steps": [
+      {
+        "title": "Preserve the payment state",
+        "evidence": "Payment initiation, processor confirmation, settlement timestamps, and actual bank receipts.",
+        "output": "A reconciliation record distinguishing pending, settled, failed, and reversed payments where supported by source data.",
+        "action": "Keep unmatched receipts in an exception queue instead of automatically treating them as collected cash."
+      },
+      {
+        "title": "Rebuild the as-of position",
+        "evidence": "The contractual schedule, verified receipts, reporting cut-off, and the evidence version used in the original review.",
+        "output": "A dated cash-flow and obligation picture that shows the effect of unsettled or reversed items.",
+        "action": "Send discrepancies to the institution’s finance and risk owners before they rely on the revised position."
+      },
+      {
+        "title": "Monitor recurring reconciliation breaks",
+        "evidence": "Repeated exceptions by channel, processor, reporting period, and account cohort.",
+        "output": "An evidence-linked pattern of where payment states and collected funds diverge.",
+        "action": "Prioritize the process failures causing repeated breaks and track whether remediation closes them."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "settlement-reconciliation",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible payment settlement groups",
+        "outcome": "additional reconciled settlement groups",
+        "meaning": "More settlement groups could be matched to verified receipts before they enter a risk assessment.",
+        "assumption": "Assumes transaction and bank evidence can be aligned to a common settlement group. Reconciliation coverage is not a charge-off or delinquency outcome."
+      },
+      {
+        "metricId": "classification-error",
+        "mode": "count",
+        "denominator": 10000,
+        "population": "classified payment transactions",
+        "outcome": "fewer expected classification errors",
+        "meaning": "The modeled error count declines from 280 to 266 across the assumed 10,000-transaction population.",
+        "assumption": "Applies the supplied classification-error rates to the same labeled transaction set. These are classification errors, not a count of mis-staged loans."
+      }
+    ],
+    "validation": "Replay reporting cut-offs using bank-confirmed settlement outcomes as labels. Measure reconciled groups and classification errors, then separately test whether corrected evidence changes delinquency staging.",
+    "limit": "The preliminary charge-off estimates include credit deterioration. They are not a measured loss caused by payment classification and are not used as a savings denominator.",
+    "productSources": [
+      "data-foundations",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "canada-drives-inventory-liquidity",
+    "summary": "Connect inventory cash cycles with funding obligations. Model better working-capital visibility and a clearer near-term cash-flow forecast during an inventory-led liquidity squeeze.",
+    "thesis": "Surface the timing gap between vehicle sales, released cash, and inventory financing obligations.",
+    "access": "Authorized inventory purchases and sales, settlement receipts, operating outflows, inventory financing terms, and available cash balances.",
+    "steps": [
+      {
+        "title": "Follow cash through the inventory cycle",
+        "evidence": "Vehicle acquisition payments, holding periods, sales, settlement timing, and financing repayments.",
+        "output": "A working-capital view that links cash tied up in inventory to when sale proceeds become available.",
+        "action": "Review slow conversion and restricted cash before treating booked sales as usable liquidity."
+      },
+      {
+        "title": "Reconcile the near-term obligations",
+        "evidence": "Floorplan payments, interest, payroll, operating costs, and permitted funding availability.",
+        "output": "A dated cash-flow baseline with explicit obligations and missing evidence.",
+        "action": "Prioritize funding gaps that appear before the expected sale proceeds arrive."
+      },
+      {
+        "title": "Compare practical operating responses",
+        "evidence": "The same baseline under stated sales delays, price changes, inventory reductions, or expense assumptions.",
+        "output": "Scenario comparisons showing the cash effect and timing of each operating choice.",
+        "action": "Support a decision to reduce inventory, adjust purchasing, or seek funding with a traceable cash-flow basis."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "working-capital-visibility",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible inventory cash-cycle assessments",
+        "outcome": "additional visible cash-cycle assessments",
+        "meaning": "More assessments could show where inventory cash is tied up and when it is expected to return.",
+        "assumption": "Assumes inventory and financing records can be linked and the supplied visibility rate transfers to this assessment unit."
+      },
+      {
+        "metricId": "forecast-error",
+        "mode": "native",
+        "population": "60-day operating cash-flow forecast error",
+        "outcome": "relative reduction in forecast error",
+        "meaning": "The modeled forecast error moves from 20% to 18.5% for the same planning horizon.",
+        "assumption": "Assumes a comparable cash-flow error definition and data quality. It does not project cash raised or a restructuring avoided."
+      }
+    ],
+    "validation": "Freeze purchase, sale, and financing information at each historical cut-off. Compare cash-cycle visibility and 60-day cash forecasts against later receipts and payments using a consistent error definition.",
+    "limit": "The reported secured-inventory repayment outcome does not describe all creditors. These projections address liquidity visibility, not insolvency prevention.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "desjardins-data-governance",
+    "summary": "Connect reliable identity and financial evidence during post-incident review. Model better relationship accuracy and counterparty coverage while keeping the scope distinct from data-loss prevention.",
+    "thesis": "Improve the financial investigation that follows compromised information, with controlled access to the evidence used for each decision.",
+    "access": "Authorized customer identity records, financial activity, investigation labels, and permitted workspace access and audit records.",
+    "steps": [
+      {
+        "title": "Keep evidence access accountable",
+        "evidence": "The evidence needed for a financial review and the institution’s permitted users and roles.",
+        "output": "A scoped review package with source references and an auditable record of access within the configured Amlok workflow.",
+        "action": "Limit review access to the approved purpose and retain the evidence used for a decision."
+      },
+      {
+        "title": "Resolve identity with corroborating evidence",
+        "evidence": "Customer records, account ownership, financial counterparties, and independently supported relationship evidence.",
+        "output": "Resolved, uncertain, and conflicting links rather than identity matches based on a shared attribute alone.",
+        "action": "Send uncertain links for human review before using them in a post-incident financial investigation."
+      },
+      {
+        "title": "Connect activity to the investigation",
+        "evidence": "Authorized transaction records and the verified parties associated with them.",
+        "output": "Named counterparties and linked activity that investigators can compare with the incident scope.",
+        "action": "Prioritize supported financial anomalies and record the basis for further investigation or customer support."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "relationship-precision",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "accepted identity and account links",
+        "outcome": "additional correctly resolved links",
+        "meaning": "A post-incident investigation could work from a more accurate set of accepted financial relationships.",
+        "assumption": "Assumes authorized data and independently labeled links. Holds the accepted-link population constant; it does not measure identity-theft prevention."
+      },
+      {
+        "metricId": "counterparty-coverage",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible post-incident financial records",
+        "outcome": "additional records with a named counterparty",
+        "meaning": "More reviewed financial activity could be connected to a named party for investigation.",
+        "assumption": "Assumes comparable counterparty evidence is available. The population is a financial-review scenario, not the people affected by the breach."
+      }
+    ],
+    "validation": "Use an authorized, labeled post-incident financial-review set. Compare correct and false relationship links, named counterparties, and access-log completeness without using breached data as proof of identity.",
+    "limit": "Amlok is not an endpoint or data-loss-prevention system. These figures do not estimate a breach prevented or a reduction in affected people.",
+    "productSources": [
+      "entity-graph",
+      "data-foundations"
+    ]
+  },
+  {
+    "slug": "bridging-connected-conflicts",
+    "summary": "Connect beneficiaries, fund flows, and related parties before a conflicted transaction passes review. Model better relationship accuracy and a larger share of transfers with named counterparties.",
+    "thesis": "Put the people benefiting from a transaction into the same review as the borrower, the cash movement, and the approval.",
+    "access": "Authorized loan and fund transactions, beneficiary and ownership evidence, conflict disclosures, and approval records available at the review date.",
+    "steps": [
+      {
+        "title": "Trace the economic beneficiary",
+        "evidence": "Borrower identities, account ownership, payment destinations, and supported beneficial-ownership evidence.",
+        "output": "A relationship graph connecting the stated purpose of a loan to the parties receiving funds.",
+        "action": "Escalate unresolved beneficiary identities and supported related-party connections before approval."
+      },
+      {
+        "title": "Reconcile the movement of funds",
+        "evidence": "Disbursements, repayments, transfers, and available bank or settlement evidence.",
+        "output": "Named-counterparty flows with the source and timing of each supported link.",
+        "action": "Review unexplained circular movements or mismatches between the documented purpose and observed payment destination."
+      },
+      {
+        "title": "Give conflicts an independent review path",
+        "evidence": "Declared conflicts, transaction rationale, approval authority, and investigation findings.",
+        "output": "An evidence package that preserves both the conflict and the decision made about it.",
+        "action": "Route the transaction to the institution’s independent conflict-review process rather than treating a connected party as automatically cleared."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "relationship-precision",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "accepted borrower, beneficiary, and principal links",
+        "outcome": "additional correctly resolved links",
+        "meaning": "A more accurate relationship set could support a better targeted conflict investigation.",
+        "assumption": "Assumes independently labeled relationships and a fixed number of accepted links. A relationship alone is not evidence of fraud."
+      },
+      {
+        "metricId": "counterparty-coverage",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible fund-transfer records",
+        "outcome": "additional transfers with a named counterparty",
+        "meaning": "More transfers could be assessed against the loan purpose and disclosed relationships.",
+        "assumption": "Assumes authorized transfer records and comparable beneficiary evidence; it does not project recoveries from missing fund assets."
+      }
+    ],
+    "validation": "Replay transactions before approval using only then-available ownership and transfer evidence. Independently label links and conflicts; compare counterparty coverage, false links, and escalation timeliness.",
+    "limit": "The Tribunal’s findings differ by respondent. The scenario is about conflict detection and review, not a finding that every connected transaction was fraudulent or recoverable.",
+    "productSources": [
+      "entity-graph",
+      "business-underwriting"
+    ]
+  },
+  {
+    "slug": "clearco-merchant-cohorts",
+    "summary": "Underwrite collected merchant cash rather than headline sales. Model better settlement reconciliation and customer-concentration visibility across an ecommerce financing cohort.",
+    "thesis": "Tie financing capacity to reconciled net cash and the dependencies behind merchant revenue.",
+    "access": "Authorized merchant sales, processor settlements, refunds, fees, reserves, financing repayments, and customer revenue evidence where available.",
+    "steps": [
+      {
+        "title": "Move from gross sales to available cash",
+        "evidence": "Gross orders, refunds, processor fees, reserves, and settled bank receipts.",
+        "output": "A reconciled revenue view showing how reported sales become available operating cash.",
+        "action": "Use the supported net-cash picture when reviewing capacity instead of assuming every sale is immediately spendable."
+      },
+      {
+        "title": "Find shared revenue dependencies",
+        "evidence": "Resolved customer receipts and supported customer or channel identifiers.",
+        "output": "A concentration view with customer-level coverage measured separately from channel-level assumptions.",
+        "action": "Review merchants exposed to a common customer dependency and investigate channel exposure where evidence supports it."
+      },
+      {
+        "title": "Refresh the financing decision",
+        "evidence": "New settlements, changing refunds and reserves, current obligations, and the original underwriting baseline.",
+        "output": "A comparison showing what changed in repayment capacity and which evidence supports it.",
+        "action": "Let the institution adjust review cadence, terms, or limits under its own policy as merchant conditions change."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "settlement-reconciliation",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible merchant settlement groups",
+        "outcome": "additional reconciled settlement groups",
+        "meaning": "More settlement groups could support a financing assessment based on collected cash.",
+        "assumption": "Assumes processor and bank evidence can be matched. The supplied reconciliation rate is not a measured merchant default or recovery rate."
+      },
+      {
+        "metricId": "customer-concentration",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible merchant concentration assessments",
+        "outcome": "additional assessments with customer concentration coverage",
+        "meaning": "More merchants could be evaluated for concentration in the customers generating their revenue.",
+        "assumption": "Assumes customer-level evidence is available. Platform or advertising-channel concentration must be tested separately, not inferred from this metric."
+      }
+    ],
+    "validation": "Replay merchant reviews with dated sales and settlement evidence. Measure reconciled groups and customer-concentration coverage first; evaluate financing performance separately on matched cohorts.",
+    "limit": "Public funding announcements do not provide a loan-level loss series. This scenario does not assert that Clearco missed these signals or that a specific funding decision caused a loss.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "vancity-margin-and-renewals",
+    "summary": "Bring current member cash flow into mortgage renewal planning. Model more assessable renewals and lower borrower cash-flow forecast error under a changing rate environment.",
+    "thesis": "Make the borrower’s ability to absorb a renewal payment visible while treasury teams manage the institution’s separate funding challenge.",
+    "access": "Authorized member income, living and debt obligations, mortgage renewal terms, and dated borrower cash-flow evidence.",
+    "steps": [
+      {
+        "title": "Refresh the member baseline",
+        "evidence": "Current income receipts, recurring commitments, debt schedules, and existing mortgage payments.",
+        "output": "A debt-service assessment grounded in the member’s available financial evidence.",
+        "action": "Prioritize renewal files that are incomplete or show less payment capacity than the original assessment."
+      },
+      {
+        "title": "Test the renewal payment",
+        "evidence": "The same cash-flow baseline under explicit renewal-rate and payment assumptions.",
+        "output": "Comparable scenarios showing the effect of each payment change on borrower cash availability.",
+        "action": "Prepare a supported review of renewal options and route constrained cases to the appropriate member-support team."
+      },
+      {
+        "title": "Monitor the transition",
+        "evidence": "New borrower cash flow, missed or changed payments, and evidence collected around renewal.",
+        "output": "A change record linking post-renewal conditions to the original scenario assumptions.",
+        "action": "Follow up when the member’s actual cash-flow pattern diverges from the reviewed baseline."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible member renewal reviews",
+        "outcome": "additional assessable renewal reviews",
+        "meaning": "More members could receive a review supported by current repayment-capacity evidence.",
+        "assumption": "Assumes the supplied assessability rates transfer to member renewal files with comparable income and debt data."
+      },
+      {
+        "metricId": "forecast-error",
+        "mode": "native",
+        "population": "60-day member cash-flow forecast error",
+        "outcome": "relative reduction in forecast error",
+        "meaning": "The modeled borrower-level forecast error falls from 20% to 18.5%.",
+        "assumption": "This is a member cash-flow scenario. It does not estimate the credit union’s net interest margin, deposit costs, or treasury forecast accuracy."
+      }
+    ],
+    "validation": "Replay member snapshots before renewal, hold renewal assumptions fixed, and compare assessability and 60-day borrower cash-flow error. Evaluate member outcomes separately from treasury margin measures.",
+    "limit": "Borrower intelligence complements renewal decisions. It does not replace asset-liability management or establish that Amlok would have reversed the reported net loss.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "romspen-trez-fund-liquidity",
+    "summary": "Distinguish contractual maturities from supported cash arrivals. Model better loan cash-cycle visibility and lower forecast error before portfolio liquidity assumptions drive a fund decision.",
+    "thesis": "Connect expected loan repayments to the evidence supporting the borrower’s exit, then stress the timing of available cash.",
+    "access": "Authorized loan schedules, actual receipts, borrower cash flows, available project-exit evidence, and fund-level obligation assumptions supplied by the manager.",
+    "steps": [
+      {
+        "title": "Challenge the assumed cash arrival",
+        "evidence": "Contractual maturities, payment history, borrower liquidity, and available sale or refinancing evidence.",
+        "output": "A loan-level cash-cycle view distinguishing a scheduled date from an evidence-supported repayment assumption.",
+        "action": "Escalate expected repayments whose timing depends on an unverified sale or refinancing event."
+      },
+      {
+        "title": "Aggregate the timing exposure",
+        "evidence": "Supported loan cash flows, outstanding obligations, and shared borrower or project dependencies.",
+        "output": "A portfolio view of expected receipts, uncertainty, and the sources supporting each item.",
+        "action": "Review concentrations in the same repayment window before using them to support liquidity planning."
+      },
+      {
+        "title": "Stress the cash gap",
+        "evidence": "The frozen loan baseline with explicit delays, reduced collections, and manager-supplied redemption assumptions.",
+        "output": "Scenario comparisons showing how delayed cash arrivals affect the planning picture.",
+        "action": "Support manager decisions on liquidity reserves and review priorities while preserving each scenario’s assumptions."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "working-capital-visibility",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible loan cash-cycle assessments",
+        "outcome": "additional visible loan cash-cycle assessments",
+        "meaning": "More loan reviews could connect cash availability to the evidence behind repayment timing.",
+        "assumption": "Assumes working-capital visibility transfers to the selected loan cash-cycle assessment unit. This is not fund-level redemption coverage."
+      },
+      {
+        "metricId": "forecast-error",
+        "mode": "native",
+        "population": "60-day underlying-loan cash-flow forecast error",
+        "outcome": "relative reduction in forecast error",
+        "meaning": "The modeled error in underlying-loan cash forecasts declines from 20% to 18.5%.",
+        "assumption": "Assumes the same forecast-error definition and comparable evidence. Fund redemptions and asset-sale liquidity require separate modeling."
+      }
+    ],
+    "validation": "Replay expected loan receipts at each historical cut-off and compare them with realized cash arrivals. Keep fund-redemption assumptions separate; test loan cash-cycle coverage and forecast error first.",
+    "limit": "The two funds’ historical events are distinct. The projection does not describe current redemption status or guarantee that contractual loan maturities produce cash.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "laurentian-mortgage-evidence",
+    "summary": "Connect mortgage eligibility to the evidence behind it. Model more assessable files and more accurate identity links before a performing loan is treated as a complete file.",
+    "thesis": "Prevent a successful payment history from standing in for the verification evidence required for a mortgage decision.",
+    "access": "Authorized mortgage files, income and identity evidence, debt obligations, and the eligibility requirements supplied by the institution or purchaser.",
+    "steps": [
+      {
+        "title": "Check evidence against the requirement",
+        "evidence": "Required verification items, supporting documents, source provenance, and the underwriting record.",
+        "output": "A traceable evidence checklist with missing, contradictory, or outdated items left unresolved.",
+        "action": "Route incomplete files for remediation before the institution marks the required verification as complete."
+      },
+      {
+        "title": "Reassess capacity and identity",
+        "evidence": "Independent income records, debt commitments, account ownership, and supported applicant relationships.",
+        "output": "A source-linked affordability assessment and identity graph that preserve uncertainty.",
+        "action": "Review the evidence gap even when the loan is paying on time."
+      },
+      {
+        "title": "Carry the evidence into transfer review",
+        "evidence": "The versioned file, completed checks, open exceptions, and purchaser requirements.",
+        "output": "A review package showing what was verified and which evidence supported the determination.",
+        "action": "Give the institution a defensible basis to clear, remediate, or exclude a file under the applicable eligibility rules."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible mortgage evidence reviews",
+        "outcome": "additional assessable mortgage files",
+        "meaning": "More files could support a debt-service assessment backed by current evidence.",
+        "assumption": "Assumes comparable income and debt records. This measures financial assessability, not CMHC or purchaser eligibility."
+      },
+      {
+        "metricId": "relationship-precision",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "accepted applicant and account links",
+        "outcome": "additional correctly resolved links",
+        "meaning": "More accepted identity and account relationships could be accurate within the review set.",
+        "assumption": "Holds accepted-link volume constant and requires independent labels. Correct identity links alone do not establish a loan’s eligibility."
+      }
+    ],
+    "validation": "Replay files before transfer using the requirements and evidence then in force. Test assessability and relationship precision; separately measure file completeness and actual eligibility outcomes.",
+    "limit": "Mortgage repurchases are not automatically credit losses. The model does not apply a reduction percentage to repurchase amounts or claim a measured eligibility improvement.",
+    "productSources": [
+      "business-underwriting",
+      "entity-graph"
+    ]
+  },
+  {
+    "slug": "lendified-funding-fragility",
+    "summary": "Connect SMB repayment evidence with the funding structure around the loan pool. Model broader debt-service assessment and working-capital visibility before cash collections become a funding dependency.",
+    "thesis": "Make borrower cash generation and collection timing visible before a funding decision depends on the pool’s expected receipts.",
+    "access": "Authorized SMB financials, repayment schedules, loan-pool receipts, available liquidity, and lender-provided funding and borrowing-base requirements.",
+    "steps": [
+      {
+        "title": "Rebuild the borrower cash picture",
+        "evidence": "Business receipts, expenses, existing obligations, and actual loan payments.",
+        "output": "A source-linked debt-service assessment with incomplete records and emerging cash pressure visible.",
+        "action": "Prioritize borrowers needing updated evidence or engagement before assuming scheduled payments will arrive."
+      },
+      {
+        "title": "Connect the pool to cash availability",
+        "evidence": "Borrower cash cycles, payment timing, collections, and the institution’s pool-level obligations.",
+        "output": "An evidence-backed view of expected collections and the assumptions behind them.",
+        "action": "Review the gap between borrower repayment timing and the institution’s funding commitments."
+      },
+      {
+        "title": "Test funding constraints explicitly",
+        "evidence": "The current baseline under stated collection delays, funding availability, and borrowing-base assumptions.",
+        "output": "Scenario comparisons that separate borrower performance from dependence on continued financing.",
+        "action": "Use the results to support earlier funding discussions, collection priorities, or adjustments to new exposure."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "debt-service-assessability",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible SMB borrower reviews",
+        "outcome": "additional assessable borrower reviews",
+        "meaning": "More borrowers could be assessed against current cash generation and debt commitments.",
+        "assumption": "Assumes the supplied assessability rates transfer to the selected SMB review population."
+      },
+      {
+        "metricId": "working-capital-visibility",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible SMB cash-cycle assessments",
+        "outcome": "additional visible cash-cycle assessments",
+        "meaning": "More reviews could connect the timing of business cash to expected loan collections.",
+        "assumption": "Assumes comparable working-capital records. Better borrower visibility does not ensure the platform’s lender renews its funding."
+      }
+    ],
+    "validation": "Replay dated borrower and pool snapshots before funding decisions. Compare debt-service assessability and cash-cycle coverage, then test collection forecasts and funding assumptions separately.",
+    "limit": "The secured asset-sale proceeds and remaining indebtedness are historical facts, not a denominator for projected savings or a valuation of avoidable loss.",
+    "productSources": [
+      "business-underwriting",
+      "monitoring"
+    ]
+  },
+  {
+    "slug": "quadriga-counterparty-verification",
+    "summary": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
+    "thesis": "Escalate unsupported financial claims when the available records cannot establish who holds or receives the money.",
+    "access": "Lawfully available platform financial records, permitted fiat-account transactions, account ownership evidence, and independently verified counterparty information.",
+    "steps": [
+      {
+        "title": "Separate a claim from verified evidence",
+        "evidence": "Stated balances and counterparties alongside the source records actually available to the reviewer.",
+        "output": "An evidence inventory that distinguishes supported claims, missing records, and unresolved ownership.",
+        "action": "Require independent evidence before relying on a platform’s financial representation."
+      },
+      {
+        "title": "Resolve the permitted fiat flows",
+        "evidence": "Authorized bank transactions, account owners, payment references, and supported counterparty records.",
+        "output": "Named parties and evidence-backed relationships for the financial activity within scope.",
+        "action": "Investigate unexplained counterparties or related-party flows without treating a name match as proof of custody."
+      },
+      {
+        "title": "Escalate what remains unverified",
+        "evidence": "The financial evidence gaps, unresolved relationships, and requirements set by the reviewing institution.",
+        "output": "A decision package that makes the remaining uncertainty explicit.",
+        "action": "Apply the institution’s evidence requirements, including specialist custody or reserve checks where needed, before accepting the exposure."
+      }
+    ],
+    "projections": [
+      {
+        "metricId": "counterparty-coverage",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "eligible permitted fiat-transaction records",
+        "outcome": "additional records with a named counterparty",
+        "meaning": "More financial activity within the authorized review scope could be attributed to a named party.",
+        "assumption": "Assumes comparable counterparty evidence is obtainable. Public case summaries do not provide the underlying transactions for this replay."
+      },
+      {
+        "metricId": "relationship-precision",
+        "mode": "count",
+        "denominator": 1000,
+        "population": "accepted platform and counterparty links",
+        "outcome": "additional correctly resolved links",
+        "meaning": "The investigation could start from a more accurate set of accepted financial relationships.",
+        "assumption": "Holds accepted-link volume constant with independent labels. Graph precision does not establish control of cryptoassets or adequacy of reserves."
+      }
+    ],
+    "validation": "Use authorized, historically timestamped fiat records and independently verified account ownership. Compare counterparty coverage and link precision; test custody and reserves through separate specialist evidence.",
+    "limit": "These projections do not quantify the C$169 million shortfall avoided. Amlok’s financial evidence workflow is not a custody audit or proof-of-reserves system.",
+    "productSources": [
+      "entity-graph",
+      "data-foundations"
+    ]
+  }
+]

@@ -1,0 +1,1067 @@
+{
+  "title": "Amlok financial risk case projections",
+  "version": 1,
+  "status": "Modeled scenarios, not institution-specific replay results",
+  "inputSource": "https://amlok.io/#retrovalidation",
+  "methodology": "Apply the supplied approximate baseline and Amlok comparison rates to an explicitly assumed population, or preserve the native index/error measure. Transferability to each case is assumed, not measured. Metrics are separate dimensions and cannot be added together. No avoided loss, penalty, or cost is estimated.",
+  "formulas": {
+    "count": "Assumed population × comparison rate ÷ 100",
+    "change": "Projected value − baseline value",
+    "relativeChange": "(Amlok rate − baseline rate) ÷ baseline rate × 100"
+  },
+  "cases": [
+    {
+      "slug": "home-capital-verification",
+      "institution": "Home Capital / Home Trust",
+      "intervention": "Make unsupported income visible before approval, then connect repeated exceptions across the broker channel.",
+      "requiredEvidence": "Authorized account transactions, income documents, employment evidence, broker identifiers, and the verification record available at each review date.",
+      "historicalSources": [
+        {
+          "title": "OSC: Home Capital settlement agreement",
+          "url": "https://www.capitalmarketstribunal.ca/sites/default/files/pdfs/proceedings/set_20170614_home-capital_0.pdf",
+          "type": "Regulatory settlement"
+        },
+        {
+          "title": "Norton Rose Fulbright: summary of the OSC settlement",
+          "url": "https://www.mondaq.com/canada/shareholders/619380/home-capital-group-inc-settlement-with-the-osc-lessons-learned",
+          "type": "Law-firm analysis of a regulatory document"
+        },
+        {
+          "title": "Investment Executive: repayment of the Berkshire line",
+          "url": "https://www.investmentexecutive.com/news/industry/home-capital-repays-2-billion-line-of-credit-from-berkshire-hathaway/",
+          "type": "Trade press"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible mortgage files",
+          "outcome": "additional assessable mortgage files",
+          "meaning": "More reviews could support an evidence-based affordability decision instead of proceeding with an incomplete debt-service picture.",
+          "assumption": "Assumes the supplied assessability rates transfer to mortgage files with comparable income and obligation evidence.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "relationship-precision",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "accepted broker, employer, and account links",
+          "outcome": "additional correctly resolved links",
+          "meaning": "A more accurate cohort gives investigators a better basis for finding repeated verification exceptions.",
+          "assumption": "Holds the number of accepted links constant. Correct links require an independently reviewed relationship label; precision is not the share of all relationships discovered.",
+          "metric": "Graph relationship precision",
+          "comparisonInputs": {
+            "baseline": 80,
+            "amlok": 95,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 800,
+            "projected": 950,
+            "change": 150,
+            "relativeChange": 18.75,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay files using only documents available before approval. Independently label income contradictions and broker relationships; compare assessable-file coverage, false links, and unresolved exceptions at approval.",
+      "interpretationLimit": "The model addresses verification and escalation. It does not estimate a deposit run avoided or settlement costs saved."
+    },
+    {
+      "slug": "td-monitoring-coverage",
+      "institution": "TD Bank (U.S.)",
+      "intervention": "Treat missing monitoring coverage as an exception, then give investigators more context for the activity that is reviewed.",
+      "requiredEvidence": "Authorized transaction feeds, the institution’s monitoring scope and alert records, customer identity evidence, and account-closure decisions.",
+      "historicalSources": [
+        {
+          "title": "U.S. Department of Justice: TD Bank pleads guilty (press release)",
+          "url": "https://www.justice.gov/archives/opa/pr/td-bank-pleads-guilty-bank-secrecy-act-and-money-laundering-conspiracy-violations-18b",
+          "type": "Primary"
+        },
+        {
+          "title": "ORX: enforcement summary: cross-agency total and asset cap",
+          "url": "https://orx.org/resource/td-bank-fined-usd-3.09-billion-orx-news-deep-dive",
+          "type": "Industry source"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "aml-review-burden",
+          "mode": "native",
+          "population": "Normalized AML false-positive review burden",
+          "outcome": "lower modeled review burden",
+          "meaning": "The supplied index moves from 100 to 65, leaving 35 fewer burden points for false-positive review.",
+          "assumption": "Baseline is a normalized burden index of 100. This is not an alert count, hours saved, cost reduction, or detection-accuracy measure.",
+          "metric": "Manual review burden from AML false-positive alerts",
+          "comparisonInputs": {
+            "baseline": 100,
+            "amlok": 65,
+            "unit": "normalized burden index",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 100,
+            "projected": 65,
+            "change": -35,
+            "relativeChange": -35,
+            "rateChange": -35,
+            "improved": true,
+            "unit": "index points"
+          }
+        },
+        {
+          "metricId": "counterparty-coverage",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible transaction records",
+          "outcome": "additional records with a named counterparty",
+          "meaning": "More reviewed activity would have a named party that investigators can connect to the customer and transaction history.",
+          "assumption": "Assumes comparable resolvable counterparty evidence. This does not turn the historical 92% monitoring gap into a modeled coverage gain.",
+          "metric": "Named counterparty coverage",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 86,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 860,
+            "change": 210,
+            "relativeChange": 32.3076923077,
+            "rateChange": 21,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Use known-at transaction and alert snapshots. Measure source coverage separately from counterparty resolution; compare labeled false-positive review burden while holding suspicious-event detection requirements fixed.",
+      "interpretationLimit": "These figures model review quality and burden. They do not estimate money laundering prevented, monitoring coverage restored, or penalties avoided."
+    },
+    {
+      "slug": "atb-energy-concentration",
+      "institution": "ATB Financial",
+      "intervention": "See the energy dependency behind each borrower before a regional shock becomes a portfolio-wide surprise.",
+      "requiredEvidence": "Authorized borrower financials, revenue counterparties, debt obligations, and dated exposure records across energy and connected sectors.",
+      "historicalSources": [
+        {
+          "title": "ATB Financial: fiscal 2016 results release",
+          "url": "https://www.newswire.ca/news-releases/atb-powers-through-the-challenging-alberta-economy-581143061.html",
+          "type": "Institution, via cnw"
+        },
+        {
+          "title": "ATB Financial: Q2 FY2017 statements (PDF)",
+          "url": "https://www.atb.com/SiteCollectionDocuments/About/full_quartly_reports/2016-17/FY17Q2.pdf",
+          "type": "Financial statements"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "customer-concentration",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible borrower concentration assessments",
+          "outcome": "additional assessments with customer concentration coverage",
+          "meaning": "More borrowers could be assessed for common revenue dependencies rather than viewed only through their own industry code.",
+          "assumption": "Assumes customer revenue can be linked to counterparties and that the supplied coverage definition applies to each borrower assessment.",
+          "metric": "Customer concentration coverage",
+          "comparisonInputs": {
+            "baseline": 60,
+            "amlok": 84,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 600,
+            "projected": 840,
+            "change": 240,
+            "relativeChange": 40,
+            "rateChange": 24,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible borrower reviews",
+          "outcome": "additional assessable borrower reviews",
+          "meaning": "More reviews could connect current cash generation to debt commitments during a sector downturn.",
+          "assumption": "Assumes comparable financial evidence and debt-service definitions; assessability is not proof that a borrower will repay.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Freeze borrower and counterparty data before the sector deterioration. Compare concentration coverage and debt-service assessability against independently reviewed records, then evaluate the timing of review triggers.",
+      "interpretationLimit": "The projection improves the view of exposure. It does not model the energy price path or convert provision amounts into avoidable losses."
+    },
+    {
+      "slug": "cibc-office-real-estate",
+      "institution": "CIBC",
+      "intervention": "Refresh the cash-flow evidence behind an office loan before renewal or refinancing decisions depend on an outdated baseline.",
+      "requiredEvidence": "Authorized property cash flows, rent and expense records, borrower obligations, loan terms, and available lease and refinancing evidence.",
+      "historicalSources": [
+        {
+          "title": "CIBC: Annual Report 2024, MD&A (PDF)",
+          "url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf",
+          "type": "Filing"
+        },
+        {
+          "title": "Financial Post: Big Six credit strain, incl. analyst estimates",
+          "url": "https://wl-comp.com/news-research/daily-news/canadas-big-banks-weathering-the-storm-as-credit-strain-mounts",
+          "type": "Reputable national reporting / analyst attribution"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible property-loan assessments",
+          "outcome": "additional assessable property-loan reviews",
+          "meaning": "A larger share of the review population could support a current debt-service assessment.",
+          "assumption": "Assumes the supplied assessability rates apply to property cash flows with comparable source quality and obligation coverage.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "forecast-error",
+          "mode": "native",
+          "population": "60-day property cash-flow forecast error",
+          "outcome": "relative reduction in forecast error",
+          "meaning": "The input error measure falls by 1.5 percentage points, improving the modeled cash-flow planning baseline.",
+          "assumption": "Uses the supplied forecast-error measure unchanged. Its error definition must match in a replay; no dollar forecast or loan-loss reduction is inferred.",
+          "metric": "60-day cash-flow forecast error",
+          "comparisonInputs": {
+            "baseline": 20,
+            "amlok": 18.5,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 20,
+            "projected": 18.5,
+            "change": -1.5,
+            "relativeChange": -7.5,
+            "rateChange": -1.5,
+            "improved": true,
+            "unit": "%"
+          }
+        }
+      ],
+      "validationProtocol": "Replay property-level snapshots with a fixed 60-day horizon and the same error definition. Compare assessability, forecast error, and the timing of refinancing review flags against later available outcomes.",
+      "interpretationLimit": "The reported decline in impaired loans includes sales and repayments. The scenario does not attribute that decline to Amlok or estimate losses avoided."
+    },
+    {
+      "slug": "goeasy-payment-settlement",
+      "institution": "goeasy / LendCare",
+      "intervention": "Prevent an unconfirmed receipt from silently becoming settled cash in the evidence used for a credit review.",
+      "requiredEvidence": "Authorized payment events, processor settlement files, bank receipts, reversals, account schedules, and reporting cut-off rules.",
+      "historicalSources": [
+        {
+          "title": "goeasy: financial and operational update, March 10, 2026",
+          "url": "https://goeasy.investorroom.com/2026-03-10-goeasy-Ltd-Provides-a-Financial-and-Operational-Update-Ahead-of-its-Fourth-Quarter-Earnings-Release",
+          "type": "Company disclosure"
+        },
+        {
+          "title": "goeasy: Material Change Report, March 2026 (PDF)",
+          "url": "https://cdn.financialreports.eu/financialreports/media/filings/42974/2026/RNS/42974_rns_2026-03-19_e4c4aa58-3b2c-4405-ba90-26f355a62da9.pdf",
+          "type": "Company filing"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "settlement-reconciliation",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible payment settlement groups",
+          "outcome": "additional reconciled settlement groups",
+          "meaning": "More settlement groups could be matched to verified receipts before they enter a risk assessment.",
+          "assumption": "Assumes transaction and bank evidence can be aligned to a common settlement group. Reconciliation coverage is not a charge-off or delinquency outcome.",
+          "metric": "Revenue settlement reconciliation",
+          "comparisonInputs": {
+            "baseline": 75,
+            "amlok": 90,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 750,
+            "projected": 900,
+            "change": 150,
+            "relativeChange": 20,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "classification-error",
+          "mode": "count",
+          "denominator": 10000,
+          "population": "classified payment transactions",
+          "outcome": "fewer expected classification errors",
+          "meaning": "The modeled error count declines from 280 to 266 across the assumed 10,000-transaction population.",
+          "assumption": "Applies the supplied classification-error rates to the same labeled transaction set. These are classification errors, not a count of mis-staged loans.",
+          "metric": "Transaction classification error",
+          "comparisonInputs": {
+            "baseline": 2.8,
+            "amlok": 2.66,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 280,
+            "projected": 266,
+            "change": -14,
+            "relativeChange": -5,
+            "rateChange": -0.14,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay reporting cut-offs using bank-confirmed settlement outcomes as labels. Measure reconciled groups and classification errors, then separately test whether corrected evidence changes delinquency staging.",
+      "interpretationLimit": "The preliminary charge-off estimates include credit deterioration. They are not a measured loss caused by payment classification and are not used as a savings denominator."
+    },
+    {
+      "slug": "canada-drives-inventory-liquidity",
+      "institution": "Canada Drives",
+      "intervention": "Surface the timing gap between vehicle sales, released cash, and inventory financing obligations.",
+      "requiredEvidence": "Authorized inventory purchases and sales, settlement receipts, operating outflows, inventory financing terms, and available cash balances.",
+      "historicalSources": [
+        {
+          "title": "Canada Drives: restructuring announcement",
+          "url": "https://www.businesswire.com/news/home/20230321005801/en/Canada-Drives-Announces-a-Restructuring-of-Business-Operations-to-Position-the-Company-for-Success",
+          "type": "Company, via business wire"
+        },
+        {
+          "title": "PwC (CCAA Monitor): court application recording the initial order and inventory liquidation (PDF)",
+          "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-032_050523.pdf",
+          "type": "Court filing"
+        },
+        {
+          "title": "PwC: Monitor's Sixth Report (PDF)",
+          "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-059_140823.pdf",
+          "type": "Court filing"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "working-capital-visibility",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible inventory cash-cycle assessments",
+          "outcome": "additional visible cash-cycle assessments",
+          "meaning": "More assessments could show where inventory cash is tied up and when it is expected to return.",
+          "assumption": "Assumes inventory and financing records can be linked and the supplied visibility rate transfers to this assessment unit.",
+          "metric": "Working-capital cycle visibility",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 79,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 790,
+            "change": 140,
+            "relativeChange": 21.5384615385,
+            "rateChange": 14,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "forecast-error",
+          "mode": "native",
+          "population": "60-day operating cash-flow forecast error",
+          "outcome": "relative reduction in forecast error",
+          "meaning": "The modeled forecast error moves from 20% to 18.5% for the same planning horizon.",
+          "assumption": "Assumes a comparable cash-flow error definition and data quality. It does not project cash raised or a restructuring avoided.",
+          "metric": "60-day cash-flow forecast error",
+          "comparisonInputs": {
+            "baseline": 20,
+            "amlok": 18.5,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 20,
+            "projected": 18.5,
+            "change": -1.5,
+            "relativeChange": -7.5,
+            "rateChange": -1.5,
+            "improved": true,
+            "unit": "%"
+          }
+        }
+      ],
+      "validationProtocol": "Freeze purchase, sale, and financing information at each historical cut-off. Compare cash-cycle visibility and 60-day cash forecasts against later receipts and payments using a consistent error definition.",
+      "interpretationLimit": "The reported secured-inventory repayment outcome does not describe all creditors. These projections address liquidity visibility, not insolvency prevention."
+    },
+    {
+      "slug": "desjardins-data-governance",
+      "institution": "Desjardins",
+      "intervention": "Improve the financial investigation that follows compromised information, with controlled access to the evidence used for each decision.",
+      "requiredEvidence": "Authorized customer identity records, financial activity, investigation labels, and permitted workspace access and audit records.",
+      "historicalSources": [
+        {
+          "title": "Privacy Commissioner of Canada: PIPEDA Findings #2020-005",
+          "url": "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2020/pipeda-2020-005/",
+          "type": "Regulator"
+        },
+        {
+          "title": "Desjardins: privacy breach settlement agreement",
+          "url": "https://www.desjardins.com/en/news/privacy-breach-settlement-agreement.html",
+          "type": "Institution"
+        },
+        {
+          "title": "Canadian Underwriter / Canadian Press: settlement approval and the 4.2M active-account figure",
+          "url": "https://canadianunderwriter.ca/news/industry/quebec-court-approves-200-9m-settlement-against-desjardins-over-data-breach/",
+          "type": "Reputable reporting, corroboration"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "relationship-precision",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "accepted identity and account links",
+          "outcome": "additional correctly resolved links",
+          "meaning": "A post-incident investigation could work from a more accurate set of accepted financial relationships.",
+          "assumption": "Assumes authorized data and independently labeled links. Holds the accepted-link population constant; it does not measure identity-theft prevention.",
+          "metric": "Graph relationship precision",
+          "comparisonInputs": {
+            "baseline": 80,
+            "amlok": 95,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 800,
+            "projected": 950,
+            "change": 150,
+            "relativeChange": 18.75,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "counterparty-coverage",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible post-incident financial records",
+          "outcome": "additional records with a named counterparty",
+          "meaning": "More reviewed financial activity could be connected to a named party for investigation.",
+          "assumption": "Assumes comparable counterparty evidence is available. The population is a financial-review scenario, not the people affected by the breach.",
+          "metric": "Named counterparty coverage",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 86,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 860,
+            "change": 210,
+            "relativeChange": 32.3076923077,
+            "rateChange": 21,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Use an authorized, labeled post-incident financial-review set. Compare correct and false relationship links, named counterparties, and access-log completeness without using breached data as proof of identity.",
+      "interpretationLimit": "Amlok is not an endpoint or data-loss-prevention system. These figures do not estimate a breach prevented or a reduction in affected people."
+    },
+    {
+      "slug": "bridging-connected-conflicts",
+      "institution": "Bridging Finance",
+      "intervention": "Put the people benefiting from a transaction into the same review as the borrower, the cash movement, and the approval.",
+      "requiredEvidence": "Authorized loan and fund transactions, beneficiary and ownership evidence, conflict disclosures, and approval records available at the review date.",
+      "historicalSources": [
+        {
+          "title": "Ontario Capital Markets Tribunal: Decision in Brief, 28 Oct 2024",
+          "url": "https://www.capitalmarketstribunal.ca/en/proceedings/decisions-in-brief/decision-brief-bridging-finance-inc-enforcement-proceeding-merits-october-28-2024",
+          "type": "Tribunal"
+        },
+        {
+          "title": "Ontario Capital Markets Tribunal: sanctions reasons (PDF)",
+          "url": "https://www.capitalmarketstribunal.ca/sites/default/files/2025-06/rad_20250617_bridging-finance-1.pdf",
+          "type": "Primary"
+        },
+        {
+          "title": "Investment Executive: receiver litigation and >$1B expected investor losses",
+          "url": "https://www.investmentexecutive.com/news/from-the-regulators/flurry-of-lawsuits-follows-bridging-collapse/",
+          "type": "Trade press, corroboration"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "relationship-precision",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "accepted borrower, beneficiary, and principal links",
+          "outcome": "additional correctly resolved links",
+          "meaning": "A more accurate relationship set could support a better targeted conflict investigation.",
+          "assumption": "Assumes independently labeled relationships and a fixed number of accepted links. A relationship alone is not evidence of fraud.",
+          "metric": "Graph relationship precision",
+          "comparisonInputs": {
+            "baseline": 80,
+            "amlok": 95,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 800,
+            "projected": 950,
+            "change": 150,
+            "relativeChange": 18.75,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "counterparty-coverage",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible fund-transfer records",
+          "outcome": "additional transfers with a named counterparty",
+          "meaning": "More transfers could be assessed against the loan purpose and disclosed relationships.",
+          "assumption": "Assumes authorized transfer records and comparable beneficiary evidence; it does not project recoveries from missing fund assets.",
+          "metric": "Named counterparty coverage",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 86,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 860,
+            "change": 210,
+            "relativeChange": 32.3076923077,
+            "rateChange": 21,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay transactions before approval using only then-available ownership and transfer evidence. Independently label links and conflicts; compare counterparty coverage, false links, and escalation timeliness.",
+      "interpretationLimit": "The Tribunal’s findings differ by respondent. The scenario is about conflict detection and review, not a finding that every connected transaction was fraudulent or recoverable."
+    },
+    {
+      "slug": "clearco-merchant-cohorts",
+      "institution": "Clearco",
+      "intervention": "Tie financing capacity to reconciled net cash and the dependencies behind merchant revenue.",
+      "requiredEvidence": "Authorized merchant sales, processor settlements, refunds, fees, reserves, financing repayments, and customer revenue evidence where available.",
+      "historicalSources": [
+        {
+          "title": "Clearco: recapitalization and operating update",
+          "url": "https://www.clear.co/blog/clearco-2-is-open-for-business",
+          "type": "Company disclosure"
+        },
+        {
+          "title": "FinTech Futures: recapitalisation summary",
+          "url": "https://www.fintechfutures.com/venture-capital-funding/clearco-completes-recapitalisation-secures-60m-series-d-funding-and-100m-financing-facility",
+          "type": "Trade press"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "settlement-reconciliation",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible merchant settlement groups",
+          "outcome": "additional reconciled settlement groups",
+          "meaning": "More settlement groups could support a financing assessment based on collected cash.",
+          "assumption": "Assumes processor and bank evidence can be matched. The supplied reconciliation rate is not a measured merchant default or recovery rate.",
+          "metric": "Revenue settlement reconciliation",
+          "comparisonInputs": {
+            "baseline": 75,
+            "amlok": 90,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 750,
+            "projected": 900,
+            "change": 150,
+            "relativeChange": 20,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "customer-concentration",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible merchant concentration assessments",
+          "outcome": "additional assessments with customer concentration coverage",
+          "meaning": "More merchants could be evaluated for concentration in the customers generating their revenue.",
+          "assumption": "Assumes customer-level evidence is available. Platform or advertising-channel concentration must be tested separately, not inferred from this metric.",
+          "metric": "Customer concentration coverage",
+          "comparisonInputs": {
+            "baseline": 60,
+            "amlok": 84,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 600,
+            "projected": 840,
+            "change": 240,
+            "relativeChange": 40,
+            "rateChange": 24,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay merchant reviews with dated sales and settlement evidence. Measure reconciled groups and customer-concentration coverage first; evaluate financing performance separately on matched cohorts.",
+      "interpretationLimit": "Public funding announcements do not provide a loan-level loss series. This scenario does not assert that Clearco missed these signals or that a specific funding decision caused a loss."
+    },
+    {
+      "slug": "vancity-margin-and-renewals",
+      "institution": "Vancity",
+      "intervention": "Make the borrower’s ability to absorb a renewal payment visible while treasury teams manage the institution’s separate funding challenge.",
+      "requiredEvidence": "Authorized member income, living and debt obligations, mortgage renewal terms, and dated borrower cash-flow evidence.",
+      "historicalSources": [
+        {
+          "title": "Vancity: 2023 financial results release",
+          "url": "https://www.vancity.com/subbrand/business/AboutVancity/News/MediaReleases/VancityReleases2023FinancialResults/",
+          "type": "Institution"
+        },
+        {
+          "title": "Vancity: 2024 return-to-profit release (republished)",
+          "url": "https://www.centralcharts.com/en/news/5120247-vancity-restores-profitability-and-stays-true-to-its-co-operative-values",
+          "type": "Institution release via access newswire"
+        },
+        {
+          "title": "Vancity: 2024 consolidated financial statements (PDF)",
+          "url": "https://edge.sitecorecloud.io/vancouverci5821-vancity9f0e-prod943f-e9a1/media/Project/public-sites/www/About/Credit-union/Annual-report/2024-Consolidated-Financial-Statements.pdf",
+          "type": "Primary"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible member renewal reviews",
+          "outcome": "additional assessable renewal reviews",
+          "meaning": "More members could receive a review supported by current repayment-capacity evidence.",
+          "assumption": "Assumes the supplied assessability rates transfer to member renewal files with comparable income and debt data.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "forecast-error",
+          "mode": "native",
+          "population": "60-day member cash-flow forecast error",
+          "outcome": "relative reduction in forecast error",
+          "meaning": "The modeled borrower-level forecast error falls from 20% to 18.5%.",
+          "assumption": "This is a member cash-flow scenario. It does not estimate the credit union’s net interest margin, deposit costs, or treasury forecast accuracy.",
+          "metric": "60-day cash-flow forecast error",
+          "comparisonInputs": {
+            "baseline": 20,
+            "amlok": 18.5,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 20,
+            "projected": 18.5,
+            "change": -1.5,
+            "relativeChange": -7.5,
+            "rateChange": -1.5,
+            "improved": true,
+            "unit": "%"
+          }
+        }
+      ],
+      "validationProtocol": "Replay member snapshots before renewal, hold renewal assumptions fixed, and compare assessability and 60-day borrower cash-flow error. Evaluate member outcomes separately from treasury margin measures.",
+      "interpretationLimit": "Borrower intelligence complements renewal decisions. It does not replace asset-liability management or establish that Amlok would have reversed the reported net loss."
+    },
+    {
+      "slug": "romspen-trez-fund-liquidity",
+      "institution": "Romspen & Trez Capital",
+      "intervention": "Connect expected loan repayments to the evidence supporting the borrower’s exit, then stress the timing of available cash.",
+      "requiredEvidence": "Authorized loan schedules, actual receipts, borrower cash flows, available project-exit evidence, and fund-level obligation assumptions supplied by the manager.",
+      "historicalSources": [
+        {
+          "title": "Romspen: Redemption Deferral Notice, 8 Nov 2022",
+          "url": "https://www.romspen.com/redemption-deferral-notice/",
+          "type": "Fund"
+        },
+        {
+          "title": "Romspen: 2021 results release",
+          "url": "https://www.newswire.ca/news-releases/romspen-mortgage-investment-fund-announces-2021-results-840266412.html",
+          "type": "Fund"
+        },
+        {
+          "title": "Romspen: Q2 2025 reporting package (PDF)",
+          "url": "https://www.romspen.com/wp-content/uploads/2025/08/RMIF-Reporting-Package-Q2-2025-final.pdf",
+          "type": "Fund"
+        },
+        {
+          "title": "Trez Capital: redemption suspension release, 18 Aug 2025",
+          "url": "https://www.newswire.ca/news-releases/trez-capital-provides-notification-of-temporary-redemption-suspension-for-five-open-ended-funds-837716617.html",
+          "type": "Firm"
+        },
+        {
+          "title": "Investment Executive: Trez suspension coverage",
+          "url": "https://www.investmentexecutive.com/news/trez-capital-announces-temporary-fund-redemption-suspensions/",
+          "type": "Trade press, corroboration"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "working-capital-visibility",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible loan cash-cycle assessments",
+          "outcome": "additional visible loan cash-cycle assessments",
+          "meaning": "More loan reviews could connect cash availability to the evidence behind repayment timing.",
+          "assumption": "Assumes working-capital visibility transfers to the selected loan cash-cycle assessment unit. This is not fund-level redemption coverage.",
+          "metric": "Working-capital cycle visibility",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 79,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 790,
+            "change": 140,
+            "relativeChange": 21.5384615385,
+            "rateChange": 14,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "forecast-error",
+          "mode": "native",
+          "population": "60-day underlying-loan cash-flow forecast error",
+          "outcome": "relative reduction in forecast error",
+          "meaning": "The modeled error in underlying-loan cash forecasts declines from 20% to 18.5%.",
+          "assumption": "Assumes the same forecast-error definition and comparable evidence. Fund redemptions and asset-sale liquidity require separate modeling.",
+          "metric": "60-day cash-flow forecast error",
+          "comparisonInputs": {
+            "baseline": 20,
+            "amlok": 18.5,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 20,
+            "projected": 18.5,
+            "change": -1.5,
+            "relativeChange": -7.5,
+            "rateChange": -1.5,
+            "improved": true,
+            "unit": "%"
+          }
+        }
+      ],
+      "validationProtocol": "Replay expected loan receipts at each historical cut-off and compare them with realized cash arrivals. Keep fund-redemption assumptions separate; test loan cash-cycle coverage and forecast error first.",
+      "interpretationLimit": "The two funds’ historical events are distinct. The projection does not describe current redemption status or guarantee that contractual loan maturities produce cash."
+    },
+    {
+      "slug": "laurentian-mortgage-evidence",
+      "institution": "Laurentian Bank",
+      "intervention": "Prevent a successful payment history from standing in for the verification evidence required for a mortgage decision.",
+      "requiredEvidence": "Authorized mortgage files, income and identity evidence, debt obligations, and the eligibility requirements supplied by the institution or purchaser.",
+      "historicalSources": [
+        {
+          "title": "DBRS: rating release on the mortgage disclosure",
+          "url": "https://dbrs.morningstar.com/research/320388/dbrs-confirms-laurentian-bank-of-canadas-ratings-revises-trends-to-negative",
+          "type": "Rating-agency document"
+        },
+        {
+          "title": "Laurentian Bank: clarification of the mortgage review",
+          "url": "https://news.laurentianbank.ca/2017-12-11-Laurentian-Bank-Clarifies-Effect-of-Recent-Review-of-Mortgages",
+          "type": "Company disclosure"
+        },
+        {
+          "title": "Laurentian Bank: progress on the mortgage review, May 2018",
+          "url": "https://news.laurentianbank.ca/2018-05-29-Laurentian-Bank-Financial-Group-Announces-Progress-on-Mortgage-Situation",
+          "type": "Company disclosure"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible mortgage evidence reviews",
+          "outcome": "additional assessable mortgage files",
+          "meaning": "More files could support a debt-service assessment backed by current evidence.",
+          "assumption": "Assumes comparable income and debt records. This measures financial assessability, not CMHC or purchaser eligibility.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "relationship-precision",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "accepted applicant and account links",
+          "outcome": "additional correctly resolved links",
+          "meaning": "More accepted identity and account relationships could be accurate within the review set.",
+          "assumption": "Holds accepted-link volume constant and requires independent labels. Correct identity links alone do not establish a loan’s eligibility.",
+          "metric": "Graph relationship precision",
+          "comparisonInputs": {
+            "baseline": 80,
+            "amlok": 95,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 800,
+            "projected": 950,
+            "change": 150,
+            "relativeChange": 18.75,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay files before transfer using the requirements and evidence then in force. Test assessability and relationship precision; separately measure file completeness and actual eligibility outcomes.",
+      "interpretationLimit": "Mortgage repurchases are not automatically credit losses. The model does not apply a reduction percentage to repurchase amounts or claim a measured eligibility improvement."
+    },
+    {
+      "slug": "lendified-funding-fragility",
+      "institution": "Lendified",
+      "intervention": "Make borrower cash generation and collection timing visible before a funding decision depends on the pool’s expected receipts.",
+      "requiredEvidence": "Authorized SMB financials, repayment schedules, loan-pool receipts, available liquidity, and lender-provided funding and borrowing-base requirements.",
+      "historicalSources": [
+        {
+          "title": "Lendified: Q3 2021 results release",
+          "url": "https://www.finanznachrichten.de/nachrichten-2021-11/54617211-lendified-holdings-inc-lendified-reports-third-quarter-results-296.htm",
+          "type": "Company disclosure, via finanznachrichten"
+        },
+        {
+          "title": "Lendified: demand letters and enforcement notices, 23 Nov 2022",
+          "url": "https://www.finanznachrichten.de/nachrichten-2022-11/57667765-lendified-holdings-inc-lendified-announces-receipt-of-demand-letters-and-notices-of-enforcement-of-security-296.htm",
+          "type": "Company disclosure"
+        },
+        {
+          "title": "Lendified: update on the sale of secured assets",
+          "url": "https://www.newsfilecorp.com/release/151697/Lendified-Provides-Update-on-the-Sale-of-Secured-Assets",
+          "type": "Issuer release via Newsfile"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "debt-service-assessability",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible SMB borrower reviews",
+          "outcome": "additional assessable borrower reviews",
+          "meaning": "More borrowers could be assessed against current cash generation and debt commitments.",
+          "assumption": "Assumes the supplied assessability rates transfer to the selected SMB review population.",
+          "metric": "Debt-service coverage assessability",
+          "comparisonInputs": {
+            "baseline": 70,
+            "amlok": 85,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 700,
+            "projected": 850,
+            "change": 150,
+            "relativeChange": 21.4285714286,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "working-capital-visibility",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible SMB cash-cycle assessments",
+          "outcome": "additional visible cash-cycle assessments",
+          "meaning": "More reviews could connect the timing of business cash to expected loan collections.",
+          "assumption": "Assumes comparable working-capital records. Better borrower visibility does not ensure the platform’s lender renews its funding.",
+          "metric": "Working-capital cycle visibility",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 79,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 790,
+            "change": 140,
+            "relativeChange": 21.5384615385,
+            "rateChange": 14,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Replay dated borrower and pool snapshots before funding decisions. Compare debt-service assessability and cash-cycle coverage, then test collection forecasts and funding assumptions separately.",
+      "interpretationLimit": "The secured asset-sale proceeds and remaining indebtedness are historical facts, not a denominator for projected savings or a valuation of avoidable loss."
+    },
+    {
+      "slug": "quadriga-counterparty-verification",
+      "institution": "QuadrigaCX",
+      "intervention": "Escalate unsupported financial claims when the available records cannot establish who holds or receives the money.",
+      "requiredEvidence": "Lawfully available platform financial records, permitted fiat-account transactions, account ownership evidence, and independently verified counterparty information.",
+      "historicalSources": [
+        {
+          "title": "OSC: QuadrigaCX review report",
+          "url": "https://www.osc.gov.on.ca/quadrigacxreport/",
+          "type": "Regulator staff report"
+        },
+        {
+          "title": "OSC: how the QuadrigaCX review was conducted",
+          "url": "https://www.osc.gov.on.ca/quadrigacxreport/how-we-conducted-our-review.html",
+          "type": "Review methodology"
+        }
+      ],
+      "projections": [
+        {
+          "metricId": "counterparty-coverage",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "eligible permitted fiat-transaction records",
+          "outcome": "additional records with a named counterparty",
+          "meaning": "More financial activity within the authorized review scope could be attributed to a named party.",
+          "assumption": "Assumes comparable counterparty evidence is obtainable. Public case summaries do not provide the underlying transactions for this replay.",
+          "metric": "Named counterparty coverage",
+          "comparisonInputs": {
+            "baseline": 65,
+            "amlok": 86,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 650,
+            "projected": 860,
+            "change": 210,
+            "relativeChange": 32.3076923077,
+            "rateChange": 21,
+            "improved": true,
+            "unit": "records"
+          }
+        },
+        {
+          "metricId": "relationship-precision",
+          "mode": "count",
+          "denominator": 1000,
+          "population": "accepted platform and counterparty links",
+          "outcome": "additional correctly resolved links",
+          "meaning": "The investigation could start from a more accurate set of accepted financial relationships.",
+          "assumption": "Holds accepted-link volume constant with independent labels. Graph precision does not establish control of cryptoassets or adequacy of reserves.",
+          "metric": "Graph relationship precision",
+          "comparisonInputs": {
+            "baseline": 80,
+            "amlok": 95,
+            "unit": "%",
+            "approximate": true
+          },
+          "calculated": {
+            "baseline": 800,
+            "projected": 950,
+            "change": 150,
+            "relativeChange": 18.75,
+            "rateChange": 15,
+            "improved": true,
+            "unit": "records"
+          }
+        }
+      ],
+      "validationProtocol": "Use authorized, historically timestamped fiat records and independently verified account ownership. Compare counterparty coverage and link precision; test custody and reserves through separate specialist evidence.",
+      "interpretationLimit": "These projections do not quantify the C$169 million shortfall avoided. Amlok’s financial evidence workflow is not a custody audit or proof-of-reserves system."
+    }
+  ]
+}

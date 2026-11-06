@@ -4,13 +4,16 @@ import { HomeFaq } from './home-faq';
 import { HomeFeaturedResources } from './home-featured-resources';
 import { HomeConnect } from './home-connect';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
-import { Activity, ArrowUpRight, Building2, Check, ChevronDown, CircleAlert, Gauge, Globe, Image as ImageIcon, Layers, Play, Search, ShieldCheck, WalletCards, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Activity, ArrowUpRight, Building2, Check, ChevronDown, CircleAlert, Gauge, Globe, Layers, Play, ShieldCheck, WalletCards, X } from 'lucide-react';
 import { HomePricing } from './home-pricing';
 import { HomeUseCases } from './home-use-cases';
 import { HomeRiskGaps } from './home-risk-gaps';
 import { HomeRiskComparison } from './home-risk-comparison';
 import { HomeSecurity } from './home-security';
+import { HomeCaseStudies } from './case-study-library';
+import { HomeRetrovalidation } from './home-retrovalidation';
+import { ResearchInstitutionLogos } from './research-institution-logos';
 import { SiteHeader } from './site-header';
 import { HomeMonitoringCta } from './home-monitoring-cta';
 import { ProductModularity } from './product-modularity';
@@ -338,56 +341,6 @@ function FeaturesIntegrationsSection() {
   </section>;
 }
 
-const caseStudyCategories = ['All cases', 'Banks', 'Credit unions', 'Alternative lenders', 'Fintech'] as const;
-type CaseStudyCategory = (typeof caseStudyCategories)[number];
-const caseStudyPlaceholders: { name: string; category: Exclude<CaseStudyCategory, 'All cases'> }[] = [
-  { name: 'Major Canadian bank', category: 'Banks' },
-  { name: 'Canadian credit union', category: 'Credit unions' },
-  { name: 'Canadian alternative lender', category: 'Alternative lenders' },
-  { name: 'Canadian fintech', category: 'Fintech' },
-];
-
-function CaseStudiesSection() {
-  const [category, setCategory] = useState<CaseStudyCategory>('All cases');
-  const [query, setQuery] = useState('');
-  const visibleCases = useMemo(() => caseStudyPlaceholders.filter(item => {
-    const matchesCategory = category === 'All cases' || item.category === category;
-    const matchesQuery = `${item.name} ${item.category}`.toLowerCase().includes(query.trim().toLowerCase());
-    return matchesCategory && matchesQuery;
-  }), [category, query]);
-
-  return <section className="home-case-studies" id="case-studies" aria-labelledby="case-studies-title">
-    <div className="home-case-studies-inner">
-      <header className="home-case-studies-heading">
-        <span className="home-products-eyebrow"><i aria-hidden="true" />RESEARCH &amp; CASE STUDIES</span>
-        <h2 id="case-studies-title">Risk problems, re-examined.</h2>
-        <p>We’re developing retrospective case studies of publicly documented risk challenges across Canadian banks, credit unions, alternative lenders, and fintechs. Each analysis will use validated public sources to map the problem, the signals available at the time, and how Amlok intelligence could have supported a better-informed response.</p>
-      </header>
-
-      <div className="home-case-studies-toolbar">
-        <div className="home-case-studies-categories" aria-label="Filter case studies by institution type">
-          {caseStudyCategories.map(item => <button key={item} type="button" className={category === item ? 'is-active' : ''} aria-pressed={category === item} onClick={() => setCategory(item)}>{item}</button>)}
-        </div>
-        <label className="home-case-studies-search">
-          <Search size={17} aria-hidden="true" />
-          <input type="search" aria-label="Search institutions" value={query} onChange={event => setQuery(event.target.value)} placeholder="Search institutions…" />
-        </label>
-      </div>
-
-      <div className="home-case-studies-grid" aria-live="polite">
-        {visibleCases.map((item, index) => <article className="home-case-study-card" key={item.name}>
-          <div className="home-case-study-logo" role="img" aria-label={`${item.category} logo placeholder`}><ImageIcon size={23} aria-hidden="true" /><span>Logo placeholder</span></div>
-          <div className="home-case-study-meta"><span>{item.category}</span><span>CANADA</span></div>
-          <h3>{item.name}</h3>
-          <p>Retrospective case study · In development</p>
-          <span className="home-case-study-signal" aria-hidden="true"><i style={{ '--case-delay': `${index * 45}ms` } as React.CSSProperties} /></span>
-        </article>)}
-        {visibleCases.length === 0 && <p className="home-case-studies-empty">No institution placeholders match that search. Try another term or category.</p>}
-      </div>
-    </div>
-  </section>;
-}
-
 export function HomeHero() {
   return <main className="home-page" id="top">
     <SiteHeader isHome />
@@ -420,20 +373,7 @@ export function HomeHero() {
         <div className="home-hero-validation-heading">
           <p>Models retrospectively validated on 275,019 deals from</p>
         </div>
-        <div className="home-validation-logos">
-          <span className="home-validation-td-bank" role="img" aria-label="TD Bank"><img className="home-validation-td" src="https://www.td.com/content/dam/tdb/images/navigation-header-and-footer/td-logo-desktop.png" alt="" aria-hidden="true"/><span aria-hidden="true">Bank</span></span>
-          <img src="https://us.cibc.com/content/dam/global-assets/logos/cibc-logos/no-tagline/cibc-logo-colour-142x36.svg" alt="CIBC" />
-          <img src="/vancity-logo.svg" alt="Vancity" />
-          <img src="/atb-logo.svg" alt="ATB" />
-          <img src="/laurentian-bank-white.svg" alt="Laurentian Bank" />
-          <img src="https://www.trezcapital.com/wp-content/themes/trezcapital/img/trez-logo.svg" alt="Trez Capital" />
-          <img src="https://www.desjardins.com/content/dam/images/logos/commun/logo-desjardins-en.svg" alt="Desjardins" />
-          <img src="https://www.canadadrives.ca/img/logo/cd-logo-black2x.png" alt="Canada Drives" />
-          <img src="https://images.ctfassets.net/fh625txf4dd5/tKuZ2ppr4fF5b5MT2YWfZ/a2cb4fc1d68cf44a1f6553b9b2ad9dc6/goeasy-logo.svg" alt="goeasy" />
-          <img src="https://cdn.prod.website-files.com/65fde10e62e6a7603e9221cc/660190120ed591c2ca6658f4_clearco-logo-black.webp" alt="Clearco" />
-          <img src="https://www.romspen.com/wp-content/themes/romspen/dist/assets/img/romspen-logo-color.svg" alt="Romspen" />
-          <img src="https://www.lendefied.com/wp-content/uploads/2024/01/Lendefied.gif" alt="Lendefied" />
-        </div>
+        <ResearchInstitutionLogos />
       </div>
     </section>
 
@@ -505,15 +445,15 @@ export function HomeHero() {
     <ProductsSection />
     <HomeUseCases />
     <CustomerLayersSection />
+    <HomeCaseStudies />
     <HomeRiskComparison />
     <LoanScaleSection />
+    <HomeRetrovalidation />
     <HomeSecurity />
     <FeaturesIntegrationsSection />
     <HomeFeaturedResources />
     <HomePricing />
     <HomeFaq />
     <HomeMonitoringCta />
-    {/* Temporarily hidden; keep the section available to restore. */}
-    {/* <CaseStudiesSection /> */}
   </main>;
 }

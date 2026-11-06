@@ -33,18 +33,18 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
   const homeHref = isHome ? '' : '/';
   const languageRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLElement>(null);
-  const signupLabelRef = useRef<HTMLSpanElement>(null);
+  const consoleLabelRef = useRef<HTMLSpanElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
     const alignMenu = () => {
-      const label = signupLabelRef.current;
+      const label = consoleLabelRef.current;
       if (!label || !headerRef.current || window.innerWidth < 1024) return;
       headerRef.current.style.setProperty('--desktop-menu-right', `${document.documentElement.clientWidth - label.getBoundingClientRect().right}px`);
     };
     alignMenu();
     const observer = new ResizeObserver(alignMenu);
     if (headerRef.current) observer.observe(headerRef.current);
-    if (signupLabelRef.current) observer.observe(signupLabelRef.current);
+    if (consoleLabelRef.current) observer.observe(consoleLabelRef.current);
     window.addEventListener('resize', alignMenu);
     return () => { observer.disconnect(); window.removeEventListener('resize', alignMenu); };
   }, []);
@@ -126,7 +126,7 @@ export function SiteHeader({isHome=false}:{isHome?:boolean}) {
             </div>
           </div>}
         </div>
-        <a className="home-signup" href="/get-started"><span ref={signupLabelRef}>Sign up</span> <ArrowUpRight size={19}/></a>
+        <a className="home-signup" href="https://console.amlok.io/"><span ref={consoleLabelRef}>Console</span> <ArrowUpRight size={19} aria-hidden="true"/></a>
         <BookingLink className="home-site-cta home-header-cta">Talk to us</BookingLink>
       </div>
       <MobileNavigation homeHref={homeHref} language={language} languages={languages} onLanguageChange={setLanguage} searchOpen={searchOpen}

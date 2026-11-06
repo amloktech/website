@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: { canonical: `/${page.slug}` },
     openGraph: {
       title: `${page.title} ${page.accent}`, description: page.description,
-      type: page.kind === 'article' ? 'article' : 'website',
+      type: ['article', 'case-study'].includes(page.kind) ? 'article' : 'website',
       siteName: 'Amlok',
       ...(publication ? { authors: ['Amlok'] } : {}),
       url: new URL(`/${page.slug}`, siteOrigin).href,

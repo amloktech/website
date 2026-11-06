@@ -28,7 +28,7 @@
   .home-page :is(.home-risk-operations,.home-risk-gaps,.home-platform-section,.home-customer-layers,.home-loan-scale,.home-security,.home-pricing,.home-monitoring-cta) { padding-block:64px; }
   .home-page .home-products { padding-top:64px; padding-bottom:32px; }
   .home-page .home-use-cases { padding-top:32px; padding-bottom:64px; }
-  .home-page .home-security+.home-features { padding-top:0; }
+  .home-page .home-security+.home-features { padding-top:var(--space-section); }
   .home-page .home-features { padding-bottom:0; }
   .home-page .home-risk-comparison { padding:64px 16px; }
   .home-page :is(.home-risk-operations-inner>h2,.home-risk-gaps-content h2,.home-platform-intro h2,.home-products-heading h2,.home-use-cases-header h2,.home-customer-layers-heading h2,.home-risk-comparison h2,.home-loan-scale-intro h2,.home-security-copy h2,.home-features-heading h2,.home-pricing-heading h2,.home-monitoring-cta-copy h2) {
@@ -199,7 +199,7 @@
 }
 /* The official GIF includes a white canvas; screen blending removes it. */
 .home-validation-logos>img[alt="Lendefied"] { filter:grayscale(1) invert(1) brightness(3) contrast(3); mix-blend-mode:screen; }
-.home-page .home-customer-layers { min-height:0; padding-bottom:0; }
+.home-page .home-customer-layers { min-height:0; }
 
 /* Phone controls remain readable without focus zoom and easy to tap. */
 @media (max-width: 1023px) {

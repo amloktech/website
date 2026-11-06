@@ -1,0 +1,1295 @@
+[
+  {
+    "slug": "home-capital-verification",
+    "institution": "Home Capital / Home Trust",
+    "type": "Alternative lenders",
+    "sector": "Residential mortgages",
+    "period": "2014–2017",
+    "title": "When a verification gap becomes a liquidity crisis.",
+    "summary": "Connect income evidence, broker relationships, and file exceptions before a verification failure spreads. Model the improvement in mortgage assessability and relationship accuracy.",
+    "image": "/images/case-studies/original/home-capital.webp",
+    "logos": [
+      "/images/case-studies/logos/home-capital.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor",
+      "Investigate"
+    ],
+    "facts": [
+      {
+        "value": "~10%",
+        "label": "2014 originations associated with terminated brokers",
+        "source": 1
+      },
+      {
+        "value": "C$12.5M",
+        "label": "Regulatory settlement, including costs",
+        "source": 1
+      },
+      {
+        "value": "C$2B",
+        "label": "Emergency credit facility",
+        "source": 3
+      }
+    ],
+    "context": [
+      "Home Capital identified failures to perform required income verification and the falsification of information within its underwriting process. Broker terminations reduced originations, but public disclosure did not promptly explain the underlying investigation. The OSC settlement recorded admissions about the company’s disclosure and governance failures.",
+      "The episode then moved beyond individual mortgage files. A loss of depositor confidence created a funding crisis, followed by emergency liquidity and recapitalization. The C$12.5 million regulatory settlement is distinct from the C$29.5 million class-action settlement; C$11 million from the regulatory settlement was directed toward that class recovery. These amounts should not be added as independent losses."
+    ],
+    "problem": "A verification record is only useful if it proves that the underlying check happened. When exceptions are concentrated in a distribution channel, file quality, broker oversight, escalation, and funding confidence become connected risks.",
+    "questions": [
+      "Does independent income evidence support the application, and is its source retained?",
+      "Do documentation exceptions cluster by broker, employer, branch, or underwriter?",
+      "Who receives a material investigation finding, and how is its resolution recorded?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Compare authorized income and employment evidence with application claims. Keep missing or contradictory evidence visible for the reviewer."
+      },
+      {
+        "title": "Monitor",
+        "body": "Track exceptions and performance by broker cohort, with escalation thresholds owned by the institution."
+      },
+      {
+        "title": "Investigate",
+        "body": "Connect files, intermediaries, and shared counterparties. Preserve the evidence and decisions behind each investigation."
+      }
+    ],
+    "boundary": "This case draws on an admissions-based regulatory settlement. It does not establish that any particular technology would have prevented the deposit run.",
+    "chain": [
+      "Income evidence",
+      "Broker cohort",
+      "Exception review",
+      "Escalation record"
+    ],
+    "sources": [
+      {
+        "title": "OSC: Home Capital settlement agreement",
+        "url": "https://www.capitalmarketstribunal.ca/sites/default/files/pdfs/proceedings/set_20170614_home-capital_0.pdf",
+        "type": "Regulatory settlement"
+      },
+      {
+        "title": "Norton Rose Fulbright: summary of the OSC settlement",
+        "url": "https://www.mondaq.com/canada/shareholders/619380/home-capital-group-inc-settlement-with-the-osc-lessons-learned",
+        "type": "Law-firm analysis of a regulatory document"
+      },
+      {
+        "title": "Investment Executive: repayment of the Berkshire line",
+        "url": "https://www.investmentexecutive.com/news/industry/home-capital-repays-2-billion-line-of-credit-from-berkshire-hathaway/",
+        "type": "Trade press"
+      }
+    ],
+    "evidence": [
+      "Terminated brokers formed an identifiable origination cohort.",
+      "Internal investigation findings and the related decline in originations preceded full public disclosure."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "td-monitoring-coverage",
+    "institution": "TD Bank (U.S.)",
+    "type": "Banks",
+    "sector": "AML & financial crime",
+    "period": "2014–2024",
+    "title": "A monitoring system is only as strong as its coverage.",
+    "summary": "Expose monitoring gaps, resolve transaction counterparties, and prioritize actionable AML reviews. Model a lower false-positive review burden alongside better counterparty coverage.",
+    "image": "/images/case-studies/original/td.webp",
+    "logos": [
+      "/images/case-studies/logos/td.png"
+    ],
+    "workflows": [
+      "Monitor",
+      "Investigate"
+    ],
+    "facts": [
+      {
+        "value": "92%",
+        "label": "Transaction volume unmonitored, Jan. 2018–Apr. 2024",
+        "source": 1
+      },
+      {
+        "value": "US$18.3T",
+        "label": "Approximate value of that unmonitored volume",
+        "source": 1
+      },
+      {
+        "value": ">US$3B",
+        "label": "Combined U.S. enforcement penalties",
+        "source": 2
+      }
+    ],
+    "context": [
+      "In October 2024, TD Bank’s U.S. entities pleaded guilty to Bank Secrecy Act and money-laundering conspiracy violations. The Department of Justice described a long-running failure to maintain and update an adequate anti-money-laundering program, despite repeated internal and external warnings.",
+      "The issue was not simply the accuracy of individual alerts. Large categories of transactions were outside monitoring coverage, and remediation did not keep pace with the institution’s activity. This case concerns the U.S. retail banking operation; its findings should not be generalized to TD’s Canadian operations."
+    ],
+    "problem": "An alert queue cannot represent the full risk picture if entire transaction categories are absent. Coverage, unresolved warnings, and remediation ownership need to be visible alongside the alerts themselves.",
+    "questions": [
+      "Which products, channels, transaction types, and counterparties are actually represented in connected data?",
+      "Can related accounts and beneficiaries be examined together rather than as isolated alerts?",
+      "Is every material warning linked to an accountable owner and a verifiable resolution?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Make source completeness and coverage exceptions visible before interpreting an absence of alerts as an absence of risk."
+      },
+      {
+        "title": "Investigate",
+        "body": "Organize authorized transaction and entity evidence around connected parties, unusual flows, and open questions."
+      },
+      {
+        "title": "Assure",
+        "body": "Retain a reviewable chain from evidence and warnings to institutional decisions and remediation."
+      }
+    ],
+    "boundary": "The enforcement findings concern TD’s U.S. entities. Amlok’s workflow analysis is retrospective and is not a claim of regulatory approval or a substitute for an institution’s AML program.",
+    "chain": [
+      "Coverage inventory",
+      "Transaction evidence",
+      "Connected parties",
+      "Remediation review"
+    ],
+    "sources": [
+      {
+        "title": "U.S. Department of Justice: TD Bank pleads guilty (press release)",
+        "url": "https://www.justice.gov/archives/opa/pr/td-bank-pleads-guilty-bank-secrecy-act-and-money-laundering-conspiracy-violations-18b",
+        "type": "Primary"
+      },
+      {
+        "title": "ORX: enforcement summary: cross-agency total and asset cap",
+        "url": "https://orx.org/resource/td-bank-fined-usd-3.09-billion-orx-news-deep-dive",
+        "type": "Industry source"
+      }
+    ],
+    "evidence": [
+      "The DOJ described repeated regulatory, audit, and consultant warnings.",
+      "Large categories of transaction activity were outside the monitoring program."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  },
+  {
+    "slug": "atb-energy-concentration",
+    "institution": "ATB Financial",
+    "type": "Banks",
+    "sector": "Energy & commercial lending",
+    "period": "2014–2016",
+    "title": "One sector shock. Many connected borrowers.",
+    "summary": "Trace energy exposure through customers and repayment capacity. Model how connected financial evidence could improve concentration coverage and borrower assessment during a sector shock.",
+    "image": "/images/case-studies/original/atb.webp",
+    "logos": [
+      "/atb-logo.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "facts": [
+      {
+        "value": "C$387.6M",
+        "label": "Fiscal 2016 provision for loan losses",
+        "source": 1
+      },
+      {
+        "value": "C$72.6M",
+        "label": "Comparable provision in fiscal 2015",
+        "source": 1
+      },
+      {
+        "value": "C$75.8M",
+        "label": "Actual loan losses reported for fiscal 2016",
+        "source": 1
+      }
+    ],
+    "context": [
+      "ATB’s fiscal 2016 results reflected the sharp deterioration in Alberta’s economy during the oil-price downturn. Provisions rose substantially, while the institution continued lending and working with customers through the cycle.",
+      "Provision expense, realized losses, and net income measure different things. The C$387.6 million provision was a forward-looking accounting charge; it was not the same as the C$75.8 million of actual loan losses reported for the year. The case is useful for studying concentration and the transmission of a common economic shock."
+    ],
+    "problem": "A portfolio can contain many legal borrowers but still depend on the same economic engine. Energy producers, suppliers, employees, and property owners can share a common source of repayment stress.",
+    "questions": [
+      "Which borrowers depend on the same sector, employer, region, or major customer?",
+      "How do receivables, payroll, and account inflows respond to a prolonged downturn?",
+      "Which viable borrowers need review before payment difficulties reduce the available options?"
+    ],
+    "workflow": [
+      {
+        "title": "Underwrite",
+        "body": "Assess repayment assumptions across plausible operating conditions using the evidence relevant to each borrower."
+      },
+      {
+        "title": "Monitor",
+        "body": "Connect sector and counterparty concentration with changes in individual cash flows and obligations."
+      },
+      {
+        "title": "Service",
+        "body": "Prioritize approved customer outreach and restructuring reviews using current, traceable evidence."
+      }
+    ],
+    "boundary": "Provision expense is not a realized-loss measure. The analysis does not attribute ATB’s portfolio performance or customer outcomes to Amlok.",
+    "chain": [
+      "Sector shock",
+      "Connected exposure",
+      "Borrower cash flow",
+      "Early review"
+    ],
+    "chart": {
+      "title": "Provision expense through the downturn",
+      "unit": "C$ millions",
+      "bars": [
+        {
+          "label": "Fiscal 2015",
+          "value": 72.6
+        },
+        {
+          "label": "Fiscal 2016",
+          "value": 387.6
+        }
+      ],
+      "source": 1,
+      "note": "Provision expense, not realized loan losses. Fiscal years as reported by ATB."
+    },
+    "sources": [
+      {
+        "title": "ATB Financial: fiscal 2016 results release",
+        "url": "https://www.newswire.ca/news-releases/atb-powers-through-the-challenging-alberta-economy-581143061.html",
+        "type": "Institution, via cnw"
+      },
+      {
+        "title": "ATB Financial: Q2 FY2017 statements (PDF)",
+        "url": "https://www.atb.com/SiteCollectionDocuments/About/full_quartly_reports/2016-17/FY17Q2.pdf",
+        "type": "Financial statements"
+      }
+    ],
+    "evidence": [
+      "ATB disclosed a large increase in provisions through the Alberta downturn.",
+      "The institution continued lending and working with customers during the difficult operating period."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  },
+  {
+    "slug": "cibc-office-real-estate",
+    "institution": "CIBC",
+    "type": "Banks",
+    "sector": "Commercial real estate",
+    "period": "2022–2024",
+    "title": "An origination valuation cannot follow a changing office market.",
+    "summary": "Connect property cash flow, debt service, and refinancing assumptions. Model a broader assessment base and lower forecast error for an office-loan review scenario.",
+    "image": "/images/case-studies/original/cibc.webp",
+    "logos": [
+      "/images/case-studies/logos/cibc.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "facts": [
+      {
+        "value": "C$3.699B",
+        "label": "Fiscal 2024 office exposure within real estate and construction",
+        "source": 1
+      },
+      {
+        "value": "C$913M",
+        "label": "Gross impaired loans in the portfolio, fiscal 2023",
+        "source": 1
+      },
+      {
+        "value": "C$237M",
+        "label": "Gross impaired loans in the portfolio, fiscal 2024",
+        "source": 1
+      }
+    ],
+    "context": [
+      "CIBC’s 2024 annual report describes its U.S. office commercial-real-estate portfolio and the effects of a difficult property market. Changes in occupancy, property values, financing costs, and exit options affected the risk picture well after origination.",
+      "Gross impaired loans in that portfolio fell from C$913 million to C$237 million, with the reduction primarily attributed to loan sales and repayments. A smaller reported impaired balance is not evidence that the underlying office market recovered, nor that every loan returned to performing status."
+    ],
+    "problem": "Collateral and repayment capacity are dynamic. A historical loan-to-value ratio cannot, on its own, capture changing rent collections, tenant concentration, refinancing constraints, or sponsor obligations.",
+    "questions": [
+      "What happens to debt-service capacity as rents, occupancy, and financing costs change?",
+      "Which maturities and lease expiries create a concentrated refinancing window?",
+      "Where do common sponsors or counterparties connect exposures across properties?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Review authorized property-level operating and cash-flow evidence against the assumptions recorded at approval."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Connect sponsor obligations, lease concentration, and refinancing timing when reassessing a deal."
+      },
+      {
+        "title": "Assure",
+        "body": "Preserve the rationale for watchlist, collateral, workout, or sale decisions and their supporting evidence."
+      }
+    ],
+    "boundary": "The figures refer to the specific U.S. office portfolio disclosed by CIBC. Exposure and drawn balances are different measures; loan sales can reduce impaired balances without eliminating economic losses.",
+    "chain": [
+      "Property cash flow",
+      "Sponsor obligations",
+      "Refinancing window",
+      "Exposure review"
+    ],
+    "chart": {
+      "title": "Gross impaired U.S. office loans",
+      "unit": "C$ millions",
+      "bars": [
+        {
+          "label": "Fiscal 2023",
+          "value": 913
+        },
+        {
+          "label": "Fiscal 2024",
+          "value": 237
+        }
+      ],
+      "source": 1,
+      "note": "The reduction primarily reflected loan sales and repayments, as disclosed by CIBC."
+    },
+    "sources": [
+      {
+        "title": "CIBC: Annual Report 2024, MD&A (PDF)",
+        "url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf",
+        "type": "Filing"
+      },
+      {
+        "title": "Financial Post: Big Six credit strain, incl. analyst estimates",
+        "url": "https://wl-comp.com/news-research/daily-news/canadas-big-banks-weathering-the-storm-as-credit-strain-mounts",
+        "type": "Reputable national reporting / analyst attribution"
+      }
+    ],
+    "evidence": [
+      "CIBC disclosed elevated impaired U.S. office balances and difficult property-market conditions.",
+      "It attributed the subsequent reduction in impaired balances primarily to loan sales and repayments."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  },
+  {
+    "slug": "goeasy-payment-settlement",
+    "institution": "goeasy / LendCare",
+    "type": "Alternative lenders",
+    "sector": "Consumer & auto lending",
+    "period": "2024–2026",
+    "title": "A recorded payment is not always a settled payment.",
+    "summary": "Keep booked payments separate from collected cash. Model better settlement reconciliation and fewer classification errors before payment data changes the risk picture.",
+    "image": "/images/case-studies/original/goeasy.webp",
+    "logos": [
+      "/images/case-studies/logos/goeasy.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Underwrite",
+      "Monitor"
+    ],
+    "facts": [
+      {
+        "value": "~C$178M",
+        "label": "Incremental Q4 2025 charge-off estimated on March 10, 2026",
+        "source": 1
+      },
+      {
+        "value": "~C$55M",
+        "label": "Related interest and fee write-down estimated in the same update",
+        "source": 1
+      },
+      {
+        "value": "~12.9%",
+        "label": "Expected full-year 2025 net charge-off rate in that update",
+        "source": 1
+      }
+    ],
+    "context": [
+      "In its March 10, 2026 update, goeasy announced expected incremental charge-offs related to LendCare and a correction to historical payment reporting. Certain payments had been recorded as received while still in settlement, and some were ultimately not collected.",
+      "The company said the reporting correction would affect historical delinquency and staging disclosures. It separately described credit deterioration and operational changes. The figures here preserve the estimates and scope of the March 10 disclosure; they are not presented as final audited results or a current forecast."
+    ],
+    "problem": "Ledger state, processor status, and cleared bank funds can disagree. That difference matters when arrears, staging, partner performance, and portfolio decisions depend on payment status.",
+    "questions": [
+      "Can each payment be reconciled from initiation through settlement or return?",
+      "Do delinquency and merchant-vintage views use consistent payment definitions?",
+      "Which exceptions need reviewer attention before portfolio reports are finalized?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Reconcile authorized payment evidence across available bank, processor, and servicing records."
+      },
+      {
+        "title": "Monitor",
+        "body": "Surface settlement exceptions and changes in repayment behavior for institution-owned review."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Use merchant and borrower context when revisiting assumptions about channel performance and future originations."
+      }
+    ],
+    "boundary": "The March 10 update contains estimates and separates credit deterioration from the reporting correction. Their relationship should not be treated as a proven single cause of all losses.",
+    "chain": [
+      "Payment initiation",
+      "Settlement evidence",
+      "Arrears calculation",
+      "Portfolio reporting"
+    ],
+    "sources": [
+      {
+        "title": "goeasy: financial and operational update, March 10, 2026",
+        "url": "https://goeasy.investorroom.com/2026-03-10-goeasy-Ltd-Provides-a-Financial-and-Operational-Update-Ahead-of-its-Fourth-Quarter-Earnings-Release",
+        "type": "Company disclosure"
+      },
+      {
+        "title": "goeasy: Material Change Report, March 2026 (PDF)",
+        "url": "https://cdn.financialreports.eu/financialreports/media/filings/42974/2026/RNS/42974_rns_2026-03-19_e4c4aa58-3b2c-4405-ba90-26f355a62da9.pdf",
+        "type": "Company filing"
+      }
+    ],
+    "evidence": [
+      "The company disclosed that some payments were recorded before settlement and were ultimately not collected.",
+      "It said historical delinquency and staging disclosures would require revision."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  },
+  {
+    "slug": "canada-drives-inventory-liquidity",
+    "institution": "Canada Drives",
+    "type": "Fintech",
+    "sector": "Auto finance",
+    "period": "2020–2023",
+    "title": "When inventory becomes a liquidity problem.",
+    "summary": "Connect inventory cash cycles with funding obligations. Model better working-capital visibility and a clearer near-term cash-flow forecast during an inventory-led liquidity squeeze.",
+    "image": "/images/case-studies/original/canada-drives.webp",
+    "logos": [
+      "/images/case-studies/logos/canada-drives.png"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "facts": [
+      {
+        "value": "C$120.9M",
+        "label": "Liabilities reported in the restructuring record",
+        "source": 2
+      },
+      {
+        "value": "2023",
+        "label": "Year of the CCAA restructuring",
+        "source": 1
+      },
+      {
+        "value": "100%",
+        "label": "Secured inventory facilities repaid through liquidation",
+        "source": 3
+      }
+    ],
+    "context": [
+      "Canada Drives entered a court-supervised restructuring in 2023 as the economics of its online used-vehicle retail operation came under pressure. The company pointed to rising costs of holding inventory and sought to concentrate on its financing and lead-generation activities.",
+      "The court and monitor records describe a controlled inventory realization process. Repayment of the secured inventory facilities does not mean all creditors received full recovery. This case is about the liquidity and economics of an inventory-owning business, rather than a demonstrated rise in defaults by its consumer borrowers."
+    ],
+    "problem": "Inventory is simultaneously a source of revenue, a funding requirement, and collateral. Its age, sale price, carrying cost, and financing terms can change faster than periodic financial statements.",
+    "questions": [
+      "How quickly is inventory turning, and what does financing cost do to the remaining unit margin?",
+      "Which business line produces cash, and which consumes it?",
+      "How much headroom remains if prices fall, sales slow, or facility availability changes?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Bring authorized inventory, accounting, and bank evidence into the same review of operating cash flow."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Separate business-line economics and obligations when assessing financing capacity and collateral assumptions."
+      },
+      {
+        "title": "Service",
+        "body": "Support earlier information requests and approved restructuring reviews when cash-flow assumptions change."
+      }
+    ],
+    "boundary": "Secured facility repayment is a specific recovery measure. It should not be presented as a recovery rate for every creditor or as a consumer-loan performance result.",
+    "chain": [
+      "Inventory age",
+      "Carrying cost",
+      "Cash-flow forecast",
+      "Funding headroom"
+    ],
+    "sources": [
+      {
+        "title": "Canada Drives: restructuring announcement",
+        "url": "https://www.businesswire.com/news/home/20230321005801/en/Canada-Drives-Announces-a-Restructuring-of-Business-Operations-to-Position-the-Company-for-Success",
+        "type": "Company, via business wire"
+      },
+      {
+        "title": "PwC (CCAA Monitor): court application recording the initial order and inventory liquidation (PDF)",
+        "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-032_050523.pdf",
+        "type": "Court filing"
+      },
+      {
+        "title": "PwC: Monitor's Sixth Report (PDF)",
+        "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-059_140823.pdf",
+        "type": "Court filing"
+      }
+    ],
+    "evidence": [
+      "The company cited rising inventory-holding costs in its restructuring announcement.",
+      "Monitor reports documented the inventory realization process and secured-facility repayments."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "desjardins-data-governance",
+    "institution": "Desjardins",
+    "type": "Credit unions",
+    "sector": "Data governance",
+    "period": "2017–2022",
+    "title": "The risk follows the data beyond the original permission.",
+    "summary": "Connect reliable identity and financial evidence during post-incident review. Model better relationship accuracy and counterparty coverage while keeping the scope distinct from data-loss prevention.",
+    "image": "/images/case-studies/original/desjardins.webp",
+    "logos": [
+      "/images/case-studies/logos/desjardins.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Investigate",
+      "Service"
+    ],
+    "facts": [
+      {
+        "value": "9.7M",
+        "label": "Individuals affected, as reported by the OPC",
+        "source": 1
+      },
+      {
+        "value": "26 months",
+        "label": "Period of unauthorized disclosure described by the OPC",
+        "source": 1
+      },
+      {
+        "value": "C$200.9M",
+        "label": "Approximate aggregate settlement compensation cap",
+        "source": 2
+      }
+    ],
+    "context": [
+      "The Office of the Privacy Commissioner of Canada investigated a breach in which an employee copied personal information from shared storage. Data had moved from controlled systems into locations accessible to employees who did not have the same rights in the original warehouse. The investigation identified deficiencies in safeguards and retention.",
+      "The 9.7 million figure concerns individuals described in the OPC investigation, while the frequently cited 4.2 million figure concerns active-account holders. The settlement cap of approximately C$200.9 million is an aggregate amount, not compensation for each individual. The OPC also recognized the organization’s response after the breach was discovered."
+    ],
+    "problem": "Protection can weaken as information is copied, retained, and reused. A risk workflow needs explicit authority for the data it receives, limited access, and an evidence trail that survives handoffs.",
+    "questions": [
+      "What authority supports collecting and retaining each item of customer evidence?",
+      "Can reviewers explain who accessed a record and why it was needed?",
+      "How are affected-customer follow-ups assigned, documented, and completed?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Record the source, authorization, and relevant scope of evidence used in a customer assessment."
+      },
+      {
+        "title": "Assure",
+        "body": "Apply scoped access and traceable evidence handling within the agreed deployment and retention requirements."
+      },
+      {
+        "title": "Service",
+        "body": "Coordinate approved information requests and customer follow-up with clear ownership and an auditable record."
+      }
+    ],
+    "boundary": "This is a data-governance case, not evidence of an Amlok deployment. Endpoint monitoring, USB controls, and data-loss prevention remain separate security capabilities.",
+    "chain": [
+      "Authorized evidence",
+      "Scoped access",
+      "Retention review",
+      "Customer follow-up"
+    ],
+    "sources": [
+      {
+        "title": "Privacy Commissioner of Canada: PIPEDA Findings #2020-005",
+        "url": "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2020/pipeda-2020-005/",
+        "type": "Regulator"
+      },
+      {
+        "title": "Desjardins: privacy breach settlement agreement",
+        "url": "https://www.desjardins.com/en/news/privacy-breach-settlement-agreement.html",
+        "type": "Institution"
+      },
+      {
+        "title": "Canadian Underwriter / Canadian Press: settlement approval and the 4.2M active-account figure",
+        "url": "https://canadianunderwriter.ca/news/industry/quebec-court-approves-200-9m-settlement-against-desjardins-over-data-breach/",
+        "type": "Reputable reporting, corroboration"
+      }
+    ],
+    "evidence": [
+      "Personal information was copied into shared folders outside the original warehouse access controls.",
+      "The OPC identified retention and safeguard weaknesses, and recognized the post-discovery response."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "bridging-connected-conflicts",
+    "institution": "Bridging Finance",
+    "type": "Alternative lenders",
+    "sector": "Business & private credit",
+    "period": "Late 2010s–2024",
+    "title": "Follow the relationships behind the loan proceeds.",
+    "summary": "Connect beneficiaries, fund flows, and related parties before a conflicted transaction passes review. Model better relationship accuracy and a larger share of transfers with named counterparties.",
+    "image": "/images/case-studies/original/bridging.webp",
+    "logos": [
+      "/images/case-studies/logos/bridging-finance.jpg"
+    ],
+    "workflows": [
+      "Verify",
+      "Underwrite",
+      "Monitor",
+      "Investigate"
+    ],
+    "facts": [
+      {
+        "value": "~C$2.09B",
+        "label": "Assets under management at receivership",
+        "source": 3
+      },
+      {
+        "value": "~26,000",
+        "label": "Investors represented in the funds",
+        "source": 3
+      },
+      {
+        "value": "~C$20M",
+        "label": "Kickbacks identified in the Tribunal’s findings",
+        "source": 1
+      }
+    ],
+    "context": [
+      "The Ontario Capital Markets Tribunal’s 2024 merits decision found that David Sharpe, Natasha Sharpe, and Andrew Mushore committed misconduct in their respective roles. Its account describes deceptive lending transactions, payments benefiting principals, and failures involving conflicts and fund assets.",
+      "Attribution matters. The Tribunal did not find that Bridging itself was responsible for the Sharpes’ frauds on the evidence presented. It did find that Bridging failed to address a material conflict in the Ninepoint transaction. These are the historical findings summarized in the 2024 merits decision, not a statement about the outcome of any later appeal."
+    ],
+    "problem": "The named borrower does not always explain who benefits from a transaction. Ownership, proceeds, repayment behavior, and credit-committee decisions need to be understood together.",
+    "questions": [
+      "Do loan proceeds reach the operating purpose and beneficiary recorded in the credit file?",
+      "Are borrowers, principals, owners, and payment recipients connected in ways that require review?",
+      "Do extensions or increases coincide with missed payments or exceptions to approval procedures?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Resolve borrower and beneficial-owner identities against the evidence available to the institution."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Compare the stated financing purpose with operating evidence, repayment capacity, and connected obligations."
+      },
+      {
+        "title": "Investigate",
+        "body": "Bring unusual payment relationships, conflicts, and approval exceptions into an evidence-based human review."
+      }
+    ],
+    "boundary": "Findings about individuals and findings about the firm are distinguished. A relationship in a graph is a prompt for investigation, not proof of wrongdoing.",
+    "chain": [
+      "Borrower identity",
+      "Use of proceeds",
+      "Related parties",
+      "Committee review"
+    ],
+    "sources": [
+      {
+        "title": "Ontario Capital Markets Tribunal: Decision in Brief, 28 Oct 2024",
+        "url": "https://www.capitalmarketstribunal.ca/en/proceedings/decisions-in-brief/decision-brief-bridging-finance-inc-enforcement-proceeding-merits-october-28-2024",
+        "type": "Tribunal"
+      },
+      {
+        "title": "Ontario Capital Markets Tribunal: sanctions reasons (PDF)",
+        "url": "https://www.capitalmarketstribunal.ca/sites/default/files/2025-06/rad_20250617_bridging-finance-1.pdf",
+        "type": "Primary"
+      },
+      {
+        "title": "Investment Executive: receiver litigation and >$1B expected investor losses",
+        "url": "https://www.investmentexecutive.com/news/from-the-regulators/flurry-of-lawsuits-follows-bridging-collapse/",
+        "type": "Trade press, corroboration"
+      }
+    ],
+    "evidence": [
+      "The Tribunal described transactions involving borrower funds and benefits to principals.",
+      "Its findings distinguish individual misconduct from the firm’s failure to address a material conflict."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "clearco-merchant-cohorts",
+    "institution": "Clearco",
+    "type": "Fintech",
+    "sector": "Revenue-based finance",
+    "period": "2021–2023",
+    "title": "Continuous revenue data still needs a cycle-aware decision.",
+    "summary": "Underwrite collected merchant cash rather than headline sales. Model better settlement reconciliation and customer-concentration visibility across an ecommerce financing cohort.",
+    "image": "/images/case-studies/original/clearco.webp",
+    "logos": [
+      "/images/case-studies/logos/clearco.webp"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "facts": [
+      {
+        "value": "US$60M",
+        "label": "Series D announced in October 2023",
+        "source": 1
+      },
+      {
+        "value": "US$100M",
+        "label": "Financing facility announced in the recapitalization",
+        "source": 2
+      },
+      {
+        "value": "10,000+",
+        "label": "Businesses funded since inception, reported in 2023",
+        "source": 1
+      }
+    ],
+    "context": [
+      "Clearco expanded revenue-based funding for e-commerce businesses during a period of strong online retail growth. As conditions changed, it reduced staffing and geographic exposure and later announced a recapitalization, including new equity and asset-backed financing.",
+      "The public record supports a business-model and funding transition. It does not provide a complete loan-level loss series or prove that particular underwriting signals were missed. The useful analytical question is how a lender translates continuously available merchant data into limits and portfolio decisions as market conditions change."
+    ],
+    "problem": "A revenue-linked repayment structure can adjust collections to sales while still exposing the lender to cohort deterioration, slower repayment, and funding pressure.",
+    "questions": [
+      "How does each merchant cohort perform as sales growth, refunds, and acquisition costs change?",
+      "Does the proposed advance remain proportionate to verified revenue and existing obligations?",
+      "Can funders see performance by vintage, sector, and geography rather than only an aggregate balance?"
+    ],
+    "workflow": [
+      {
+        "title": "Underwrite",
+        "body": "Combine authorized commerce, accounting, processor, and bank evidence to assess the merchant’s operating context."
+      },
+      {
+        "title": "Monitor",
+        "body": "Track changes in revenue and cash-flow quality against the original assessment and institution-owned review thresholds."
+      },
+      {
+        "title": "Assure",
+        "body": "Keep the evidence behind cohort trends and portfolio reports accessible to the team responsible for funding decisions."
+      }
+    ],
+    "boundary": "This is a strategy and funding case. Public data does not establish portfolio loss rates, missed signals, or an outcome that Amlok would have achieved.",
+    "chain": [
+      "Merchant revenue",
+      "Cohort behavior",
+      "Policy review",
+      "Funding evidence"
+    ],
+    "sources": [
+      {
+        "title": "Clearco: recapitalization and operating update",
+        "url": "https://www.clear.co/blog/clearco-2-is-open-for-business",
+        "type": "Company disclosure"
+      },
+      {
+        "title": "FinTech Futures: recapitalisation summary",
+        "url": "https://www.fintechfutures.com/venture-capital-funding/clearco-completes-recapitalisation-secures-60m-series-d-funding-and-100m-financing-facility",
+        "type": "Trade press"
+      }
+    ],
+    "evidence": [
+      "The company announced new equity and financing in its 2023 recapitalization.",
+      "Its funding model relied on merchant revenue and commerce data; public disclosures do not provide a complete loss series."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  },
+  {
+    "slug": "vancity-margin-and-renewals",
+    "institution": "Vancity",
+    "type": "Credit unions",
+    "sector": "Deposits & mortgages",
+    "period": "2022–2024",
+    "title": "The portfolio story includes the cost of funding.",
+    "summary": "Bring current member cash flow into mortgage renewal planning. Model more assessable renewals and lower borrower cash-flow forecast error under a changing rate environment.",
+    "image": "/images/case-studies/original/vancity.webp",
+    "logos": [
+      "/vancity-logo.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "facts": [
+      {
+        "value": "C$1.3M",
+        "label": "Net loss reported for 2023",
+        "source": 1
+      },
+      {
+        "value": "C$28.8B",
+        "label": "Assets reported for 2023",
+        "source": 1
+      },
+      {
+        "value": "C$5.8M",
+        "label": "Net income reported for 2024",
+        "source": 3
+      }
+    ],
+    "context": [
+      "Vancity reported a modest net loss in 2023 as higher funding costs and an inverted yield curve compressed margins. Members’ movement into higher-yielding deposits changed funding economics, while assets repriced on a different schedule. It returned to profitability in 2024.",
+      "This is primarily a margin and balance-sheet case. A credit-loss narrative alone would miss the interaction between member behavior, deposit pricing, mortgage renewals, and operating decisions. The financial result does not by itself establish a failure in borrower underwriting."
+    ],
+    "problem": "Assets and liabilities reprice at different speeds. A portfolio that is current on payments can still face earnings pressure, while upcoming renewals create a separate affordability question for members.",
+    "questions": [
+      "Which renewals coincide with changes in member income, expenses, or payment obligations?",
+      "How do deposit migration and funding costs change portfolio economics?",
+      "Can teams distinguish margin pressure from emerging borrower repayment stress?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Refresh the borrower-side view of renewal dates, obligations, and authorized cash-flow evidence."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Revisit affordability and repayment assumptions using current information at the renewal decision."
+      },
+      {
+        "title": "Service",
+        "body": "Organize proactive member information requests and approved support pathways before a renewal deadline."
+      }
+    ],
+    "boundary": "Amlok’s borrower intelligence can inform portfolio review. It does not replace treasury asset-liability management or establish the cause of every change in institutional earnings.",
+    "chain": [
+      "Renewal schedule",
+      "Member cash flow",
+      "Funding context",
+      "Member review"
+    ],
+    "sources": [
+      {
+        "title": "Vancity: 2023 financial results release",
+        "url": "https://www.vancity.com/subbrand/business/AboutVancity/News/MediaReleases/VancityReleases2023FinancialResults/",
+        "type": "Institution"
+      },
+      {
+        "title": "Vancity: 2024 return-to-profit release (republished)",
+        "url": "https://www.centralcharts.com/en/news/5120247-vancity-restores-profitability-and-stays-true-to-its-co-operative-values",
+        "type": "Institution release via access newswire"
+      },
+      {
+        "title": "Vancity: 2024 consolidated financial statements (PDF)",
+        "url": "https://edge.sitecorecloud.io/vancouverci5821-vancity9f0e-prod943f-e9a1/media/Project/public-sites/www/About/Credit-union/Annual-report/2024-Consolidated-Financial-Statements.pdf",
+        "type": "Primary"
+      }
+    ],
+    "evidence": [
+      "Vancity identified margin compression and changes in member deposit behavior.",
+      "Its 2024 statements reported a return to profitability."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "romspen-trez-fund-liquidity",
+    "institution": "Romspen & Trez Capital",
+    "type": "Alternative lenders",
+    "sector": "Commercial real estate",
+    "period": "2022–2025",
+    "title": "Contractual maturity is not the same as cash arriving.",
+    "summary": "Distinguish contractual maturities from supported cash arrivals. Model better loan cash-cycle visibility and lower forecast error before portfolio liquidity assumptions drive a fund decision.",
+    "image": "/images/case-studies/original/romspen-trez.webp",
+    "logos": [
+      "/images/case-studies/logos/romspen.svg",
+      "/images/case-studies/logos/trez-capital.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "facts": [
+      {
+        "value": "C$2.7B",
+        "label": "Romspen mortgage portfolio at year-end 2021",
+        "source": 2
+      },
+      {
+        "value": "92%",
+        "label": "Romspen loans with contractual maturities under one year, 2021",
+        "source": 2
+      },
+      {
+        "value": "5 funds",
+        "label": "Trez funds covered by the August 2025 suspension",
+        "source": 4
+      }
+    ],
+    "context": [
+      "Romspen’s November 2022 notice deferred redemption payments amid reduced loan repayments and elevated redemption requests. Its earlier portfolio disclosure showed predominantly short contractual maturities, illustrating why a maturity schedule alone is an incomplete liquidity forecast.",
+      "Trez Capital announced temporary redemption suspensions for five open-ended funds in August 2025, citing market conditions and loan workouts. These were separate fund actions in different periods. Their shared analytical theme is the relationship between actual asset cash realization and investor withdrawal obligations."
+    ],
+    "problem": "A fund can hold secured loans and still face a cash-timing mismatch. Extensions, delayed property sales, construction setbacks, and workouts affect when capital is available to meet redemptions.",
+    "questions": [
+      "How much of the repayment pipeline depends on refinancing or a property sale?",
+      "Which extensions, project delays, or reserve changes alter the expected timing of cash receipts?",
+      "How does the revised asset forecast compare with redemption demand and available liquidity?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Bring borrower operating evidence and changes in expected repayment timing into portfolio review."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Assess extension and exit assumptions using current project, property, and borrower information."
+      },
+      {
+        "title": "Service",
+        "body": "Support structured information requests and evidence-based workout reviews, with the fund retaining responsibility for liquidity and redemption decisions."
+      }
+    ],
+    "boundary": "The case describes notices issued in November 2022 and August 2025, not the current redemption status of any fund. A redemption suspension is not itself a finding of fraud.",
+    "chain": [
+      "Borrower repayment",
+      "Expected cash timing",
+      "Liquidity forecast",
+      "Redemption context"
+    ],
+    "sources": [
+      {
+        "title": "Romspen: Redemption Deferral Notice, 8 Nov 2022",
+        "url": "https://www.romspen.com/redemption-deferral-notice/",
+        "type": "Fund"
+      },
+      {
+        "title": "Romspen: 2021 results release",
+        "url": "https://www.newswire.ca/news-releases/romspen-mortgage-investment-fund-announces-2021-results-840266412.html",
+        "type": "Fund"
+      },
+      {
+        "title": "Romspen: Q2 2025 reporting package (PDF)",
+        "url": "https://www.romspen.com/wp-content/uploads/2025/08/RMIF-Reporting-Package-Q2-2025-final.pdf",
+        "type": "Fund"
+      },
+      {
+        "title": "Trez Capital: redemption suspension release, 18 Aug 2025",
+        "url": "https://www.newswire.ca/news-releases/trez-capital-provides-notification-of-temporary-redemption-suspension-for-five-open-ended-funds-837716617.html",
+        "type": "Firm"
+      },
+      {
+        "title": "Investment Executive: Trez suspension coverage",
+        "url": "https://www.investmentexecutive.com/news/trez-capital-announces-temporary-fund-redemption-suspensions/",
+        "type": "Trade press, corroboration"
+      }
+    ],
+    "evidence": [
+      "Romspen cited suppressed loan-payoff activity and elevated redemption requests.",
+      "Trez’s August 2025 notice cited market conditions and active loan workouts."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "slug": "laurentian-mortgage-evidence",
+    "institution": "Laurentian Bank",
+    "type": "Banks",
+    "sector": "Residential mortgages",
+    "period": "2017–2018",
+    "title": "A performing loan can still fail an evidence review.",
+    "summary": "Connect mortgage eligibility to the evidence behind it. Model more assessable files and more accurate identity links before a performing loan is treated as a complete file.",
+    "image": "/images/case-studies/original/laurentian.webp",
+    "logos": [
+      "/laurentian-bank-white.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor"
+    ],
+    "facts": [
+      {
+        "value": "~1.6%",
+        "label": "Share of residential mortgages potentially subject to repurchase, December 2017",
+        "source": 2
+      },
+      {
+        "value": "C$115M",
+        "label": "Additional branch mortgage repurchases announced in May 2018",
+        "source": 3
+      },
+      {
+        "value": "C$125–150M",
+        "label": "Estimated additional CMHC program repurchases in May 2018",
+        "source": 3
+      }
+    ],
+    "context": [
+      "Reviews of mortgages sold by Laurentian Bank identified documentation, client-representation, and eligibility issues. The resulting repurchases created a control and reputational problem even though the bank said the affected loans were performing.",
+      "The bank’s clarification stated that it had not identified an implicated employee or a concentration involving a single broker. That distinction matters: evidence quality and eligibility can fail through a broader process weakness, without establishing a single bad actor or proving that the loans will default."
+    ],
+    "problem": "Credit quality and sale eligibility are separate tests. An institution needs to demonstrate that required documents, verification steps, and insurance conditions were satisfied at the relevant decision point.",
+    "questions": [
+      "Is every required document present, current, and linked to the correct loan?",
+      "Are eligibility rules supported by evidence before sale or securitization?",
+      "Do exceptions reveal a recurring branch, channel, or process issue?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Organize source evidence and highlight missing or inconsistent information before the institution completes its review."
+      },
+      {
+        "title": "Assure",
+        "body": "Retain a loan-level evidence record that supports purchaser, auditor, and internal quality-control checks."
+      },
+      {
+        "title": "Monitor",
+        "body": "Track recurring documentation exceptions and remediation status across the portfolio."
+      }
+    ],
+    "boundary": "Repurchase amounts are not equivalent to realized credit losses. The case focuses on the 2017–2018 mortgage review, not the bank’s separate later operational events.",
+    "chain": [
+      "Loan evidence",
+      "Eligibility review",
+      "Sale-ready record",
+      "Exception follow-up"
+    ],
+    "sources": [
+      {
+        "title": "DBRS: rating release on the mortgage disclosure",
+        "url": "https://dbrs.morningstar.com/research/320388/dbrs-confirms-laurentian-bank-of-canadas-ratings-revises-trends-to-negative",
+        "type": "Rating-agency document"
+      },
+      {
+        "title": "Laurentian Bank: clarification of the mortgage review",
+        "url": "https://news.laurentianbank.ca/2017-12-11-Laurentian-Bank-Clarifies-Effect-of-Recent-Review-of-Mortgages",
+        "type": "Company disclosure"
+      },
+      {
+        "title": "Laurentian Bank: progress on the mortgage review, May 2018",
+        "url": "https://news.laurentianbank.ca/2018-05-29-Laurentian-Bank-Financial-Group-Announces-Progress-on-Mortgage-Situation",
+        "type": "Company disclosure"
+      }
+    ],
+    "evidence": [
+      "Portfolio sampling and reviews identified document and eligibility issues.",
+      "The bank said the affected loans were performing and did not identify a single-broker concentration."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "lendified-funding-fragility",
+    "institution": "Lendified",
+    "type": "Alternative lenders",
+    "sector": "Business & private credit",
+    "period": "2020–2023",
+    "title": "Borrower stress and funding stress can arrive together.",
+    "summary": "Connect SMB repayment evidence with the funding structure around the loan pool. Model broader debt-service assessment and working-capital visibility before cash collections become a funding dependency.",
+    "image": "/images/case-studies/original/lendified.webp",
+    "logos": [
+      "/images/case-studies/logos/lendified.png"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "facts": [
+      {
+        "value": "~C$6.63M",
+        "label": "Loans subject to demand and enforcement notices in November 2022",
+        "source": 2
+      },
+      {
+        "value": "C$1.47M",
+        "label": "Gross proceeds from the January 2023 secured-asset sale",
+        "source": 3
+      },
+      {
+        "value": "~C$5.04M",
+        "label": "Amount reported as still owing after the sale",
+        "source": 3
+      }
+    ],
+    "context": [
+      "Lendified disclosed facility defaults and restructuring efforts in 2020. After a recapitalization, subsidiaries received demand letters and enforcement notices in November 2022 for obligations they could not repay or refinance. Seized assets, largely loan portfolios, were sold in January 2023.",
+      "This is a default and enforcement case. It should not be labeled a CCAA restructuring. The disclosed asset-sale proceeds and remaining obligations illustrate the limits of relying on a portfolio’s nominal value when funding availability changes."
+    ],
+    "problem": "A non-deposit lender depends on both borrower collections and confidence from its own funders. Concentrated secured facilities can become a second source of pressure when operating conditions deteriorate.",
+    "questions": [
+      "Which borrower cash flows are exposed to the same sector or operating shock?",
+      "How do collections and portfolio eligibility affect facility availability and covenant headroom?",
+      "Can funders inspect current vintages, deferrals, and recoveries with supporting evidence?"
+    ],
+    "workflow": [
+      {
+        "title": "Monitor",
+        "body": "Track changes in authorized SMB bank, accounting, and payment evidence against the original credit assumptions."
+      },
+      {
+        "title": "Underwrite",
+        "body": "Refresh repayment and tenor assumptions as operating revenue and obligations change."
+      },
+      {
+        "title": "Assure",
+        "body": "Organize portfolio evidence so the institution can explain performance and exceptions to its funding partners."
+      }
+    ],
+    "boundary": "Gross sale proceeds, outstanding facility balances, and creditor recoveries are distinct measures. The public record does not establish that a different monitoring system would have preserved funding.",
+    "chain": [
+      "SMB cash flow",
+      "Portfolio performance",
+      "Facility headroom",
+      "Funder reporting"
+    ],
+    "sources": [
+      {
+        "title": "Lendified: Q3 2021 results release",
+        "url": "https://www.finanznachrichten.de/nachrichten-2021-11/54617211-lendified-holdings-inc-lendified-reports-third-quarter-results-296.htm",
+        "type": "Company disclosure, via finanznachrichten"
+      },
+      {
+        "title": "Lendified: demand letters and enforcement notices, 23 Nov 2022",
+        "url": "https://www.finanznachrichten.de/nachrichten-2022-11/57667765-lendified-holdings-inc-lendified-announces-receipt-of-demand-letters-and-notices-of-enforcement-of-security-296.htm",
+        "type": "Company disclosure"
+      },
+      {
+        "title": "Lendified: update on the sale of secured assets",
+        "url": "https://www.newsfilecorp.com/release/151697/Lendified-Provides-Update-on-the-Sale-of-Secured-Assets",
+        "type": "Issuer release via Newsfile"
+      }
+    ],
+    "evidence": [
+      "Facility defaults and enforcement notices were disclosed by the company.",
+      "The company later reported secured-asset sale proceeds and remaining obligations."
+    ],
+    "contextSources": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "quadriga-counterparty-verification",
+    "institution": "QuadrigaCX",
+    "type": "Fintech",
+    "sector": "Platforms & counterparties",
+    "period": "2013–2020",
+    "title": "Verify the platform behind the transaction.",
+    "summary": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
+    "image": "/images/case-studies/original/quadriga.webp",
+    "logos": [
+      "/images/case-studies/logos/quadriga.png"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor",
+      "Investigate"
+    ],
+    "facts": [
+      {
+        "value": "C$215M",
+        "label": "Owed to clients at bankruptcy, per the OSC review",
+        "source": 1
+      },
+      {
+        "value": "~76,000",
+        "label": "Clients affected",
+        "source": 1
+      },
+      {
+        "value": "C$169M",
+        "label": "Asset shortfall identified by OSC staff",
+        "source": 1
+      }
+    ],
+    "context": [
+      "OSC staff reconstructed QuadrigaCX’s activity after its collapse, using trading records, financial information, and other evidence. The report described fictitious trading, misuse of client assets, and an operation with concentrated control and inadequate books and oversight.",
+      "The difference between approximately C$215 million owed and C$46 million in identified or recovered assets was a C$169 million shortfall. This is a platform and counterparty case, not a lending-portfolio case. The report presents OSC staff’s conclusions rather than findings from a tribunal hearing or court judgment."
+    ],
+    "problem": "A counterparty’s interface is not evidence of its underlying controls. Legal identity, control, asset custody, liabilities, and independent records matter before and throughout a financial relationship.",
+    "questions": [
+      "Who legally owns and controls the counterparty, and what registrations apply to the proposed relationship?",
+      "Can client-asset claims be reconciled to independent records and corresponding liabilities?",
+      "How are withdrawal delays, related-party flows, and unresolved evidence gaps escalated?"
+    ],
+    "workflow": [
+      {
+        "title": "Verify",
+        "body": "Resolve counterparty identity and ownership, and organize the evidence required by the institution’s onboarding policy."
+      },
+      {
+        "title": "Investigate",
+        "body": "Connect available transaction and relationship evidence to support a human investigation of unexplained flows."
+      },
+      {
+        "title": "Monitor",
+        "body": "Revisit material evidence and unresolved conditions over the life of the relationship, rather than relying on onboarding alone."
+      }
+    ],
+    "boundary": "OSC staff conclusions are distinguished from adjudicated findings. Amlok is not presented as a custody auditor, proof-of-reserves provider, or a system that would necessarily have prevented the collapse.",
+    "chain": [
+      "Counterparty identity",
+      "Control structure",
+      "Independent evidence",
+      "Ongoing review"
+    ],
+    "sources": [
+      {
+        "title": "OSC: QuadrigaCX review report",
+        "url": "https://www.osc.gov.on.ca/quadrigacxreport/",
+        "type": "Regulator staff report"
+      },
+      {
+        "title": "OSC: how the QuadrigaCX review was conducted",
+        "url": "https://www.osc.gov.on.ca/quadrigacxreport/how-we-conducted-our-review.html",
+        "type": "Review methodology"
+      }
+    ],
+    "evidence": [
+      "OSC staff identified concentrated control and inadequate independent records.",
+      "The report reconstructed asset flows and the gap between client liabilities and available assets."
+    ],
+    "contextSources": [
+      1,
+      2
+    ]
+  }
+]

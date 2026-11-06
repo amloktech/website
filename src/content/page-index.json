@@ -128,7 +128,7 @@
   {
     "path": "/case-studies",
     "title": "Case Studies",
-    "description": "A closer look at how connected evidence can support underwriting, portfolio monitoring, and the decisions in between. Our case study collection is coming soon.",
+    "description": "Explore 14 financial risk cases, the evidence Amlok could connect, and calculated scenarios showing how the review could improve.",
     "category": "case-studies"
   },
   {
@@ -538,5 +538,89 @@
     "category": "industry-guides",
     "title": "Merchant Cash Advance. Underwrite the receipts. Understand the merchant.",
     "description": "A Canada and US guide to merchant cash advance underwriting: financing statistics, receipt reconciliation, remittance capacity, worked examples and Amlok monitoring workflows."
+  },
+  {
+    "path": "/case-studies/home-capital-verification",
+    "title": "Home Capital / Home Trust case study",
+    "description": "Connect income evidence, broker relationships, and file exceptions before a verification failure spreads. Model the improvement in mortgage assessability and relationship accuracy.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/td-monitoring-coverage",
+    "title": "TD Bank (U.S.) case study",
+    "description": "Expose monitoring gaps, resolve transaction counterparties, and prioritize actionable AML reviews. Model a lower false-positive review burden alongside better counterparty coverage.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/atb-energy-concentration",
+    "title": "ATB Financial case study",
+    "description": "Trace energy exposure through customers and repayment capacity. Model how connected financial evidence could improve concentration coverage and borrower assessment during a sector shock.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/cibc-office-real-estate",
+    "title": "CIBC case study",
+    "description": "Connect property cash flow, debt service, and refinancing assumptions. Model a broader assessment base and lower forecast error for an office-loan review scenario.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/goeasy-payment-settlement",
+    "title": "goeasy / LendCare case study",
+    "description": "Keep booked payments separate from collected cash. Model better settlement reconciliation and fewer classification errors before payment data changes the risk picture.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/canada-drives-inventory-liquidity",
+    "title": "Canada Drives case study",
+    "description": "Connect inventory cash cycles with funding obligations. Model better working-capital visibility and a clearer near-term cash-flow forecast during an inventory-led liquidity squeeze.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/desjardins-data-governance",
+    "title": "Desjardins case study",
+    "description": "Connect reliable identity and financial evidence during post-incident review. Model better relationship accuracy and counterparty coverage while keeping the scope distinct from data-loss prevention.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/bridging-connected-conflicts",
+    "title": "Bridging Finance case study",
+    "description": "Connect beneficiaries, fund flows, and related parties before a conflicted transaction passes review. Model better relationship accuracy and a larger share of transfers with named counterparties.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/clearco-merchant-cohorts",
+    "title": "Clearco case study",
+    "description": "Underwrite collected merchant cash rather than headline sales. Model better settlement reconciliation and customer-concentration visibility across an ecommerce financing cohort.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/vancity-margin-and-renewals",
+    "title": "Vancity case study",
+    "description": "Bring current member cash flow into mortgage renewal planning. Model more assessable renewals and lower borrower cash-flow forecast error under a changing rate environment.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/romspen-trez-fund-liquidity",
+    "title": "Romspen & Trez Capital case study",
+    "description": "Distinguish contractual maturities from supported cash arrivals. Model better loan cash-cycle visibility and lower forecast error before portfolio liquidity assumptions drive a fund decision.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/laurentian-mortgage-evidence",
+    "title": "Laurentian Bank case study",
+    "description": "Connect mortgage eligibility to the evidence behind it. Model more assessable files and more accurate identity links before a performing loan is treated as a complete file.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/lendified-funding-fragility",
+    "title": "Lendified case study",
+    "description": "Connect SMB repayment evidence with the funding structure around the loan pool. Model broader debt-service assessment and working-capital visibility before cash collections become a funding dependency.",
+    "category": "case-studies"
+  },
+  {
+    "path": "/case-studies/quadriga-counterparty-verification",
+    "title": "QuadrigaCX case study",
+    "description": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
+    "category": "case-studies"
   }
 ]

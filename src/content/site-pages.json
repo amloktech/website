@@ -911,9 +911,9 @@
     "sources": [],
     "slug": "case-studies",
     "label": "Case Studies",
-    "title": "Risk intelligence.",
-    "accent": "In practice.",
-    "description": "A closer look at how connected evidence can support underwriting, portfolio monitoring, and the decisions in between. Our case study collection is coming soon.",
+    "title": "Risk leaves a trail.",
+    "accent": "Learn to read it.",
+    "description": "Explore 14 financial risk cases, the evidence Amlok could connect, and calculated scenarios showing how the review could improve.",
     "visual": "underwriting",
     "related": [
       "research",
@@ -3571,5 +3571,395 @@
     "steps": [],
     "faq": [],
     "sources": []
+  },
+  {
+    "slug": "case-studies/home-capital-verification",
+    "label": "Home Capital / Home Trust case study",
+    "title": "When a verification gap becomes a liquidity crisis.",
+    "accent": "",
+    "description": "Connect income evidence, broker relationships, and file exceptions before a verification failure spreads. Model the improvement in mortgage assessability and relationship accuracy.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "OSC: Home Capital settlement agreement",
+        "url": "https://www.capitalmarketstribunal.ca/sites/default/files/pdfs/proceedings/set_20170614_home-capital_0.pdf"
+      },
+      {
+        "title": "Norton Rose Fulbright: summary of the OSC settlement",
+        "url": "https://www.mondaq.com/canada/shareholders/619380/home-capital-group-inc-settlement-with-the-osc-lessons-learned"
+      },
+      {
+        "title": "Investment Executive: repayment of the Berkshire line",
+        "url": "https://www.investmentexecutive.com/news/industry/home-capital-repays-2-billion-line-of-credit-from-berkshire-hathaway/"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/td-monitoring-coverage",
+    "label": "TD Bank (U.S.) case study",
+    "title": "A monitoring system is only as strong as its coverage.",
+    "accent": "",
+    "description": "Expose monitoring gaps, resolve transaction counterparties, and prioritize actionable AML reviews. Model a lower false-positive review burden alongside better counterparty coverage.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "U.S. Department of Justice: TD Bank pleads guilty (press release)",
+        "url": "https://www.justice.gov/archives/opa/pr/td-bank-pleads-guilty-bank-secrecy-act-and-money-laundering-conspiracy-violations-18b"
+      },
+      {
+        "title": "ORX: enforcement summary: cross-agency total and asset cap",
+        "url": "https://orx.org/resource/td-bank-fined-usd-3.09-billion-orx-news-deep-dive"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/atb-energy-concentration",
+    "label": "ATB Financial case study",
+    "title": "One sector shock. Many connected borrowers.",
+    "accent": "",
+    "description": "Trace energy exposure through customers and repayment capacity. Model how connected financial evidence could improve concentration coverage and borrower assessment during a sector shock.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "ATB Financial: fiscal 2016 results release",
+        "url": "https://www.newswire.ca/news-releases/atb-powers-through-the-challenging-alberta-economy-581143061.html"
+      },
+      {
+        "title": "ATB Financial: Q2 FY2017 statements (PDF)",
+        "url": "https://www.atb.com/SiteCollectionDocuments/About/full_quartly_reports/2016-17/FY17Q2.pdf"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/cibc-office-real-estate",
+    "label": "CIBC case study",
+    "title": "An origination valuation cannot follow a changing office market.",
+    "accent": "",
+    "description": "Connect property cash flow, debt service, and refinancing assumptions. Model a broader assessment base and lower forecast error for an office-loan review scenario.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "CIBC: Annual Report 2024, MD&A (PDF)",
+        "url": "https://www.cibc.com/content/dam/cibc-public-assets/about-cibc/investor-relations/pdfs/quarterly-results/2024/ar-24-en.pdf"
+      },
+      {
+        "title": "Financial Post: Big Six credit strain, incl. analyst estimates",
+        "url": "https://wl-comp.com/news-research/daily-news/canadas-big-banks-weathering-the-storm-as-credit-strain-mounts"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/goeasy-payment-settlement",
+    "label": "goeasy / LendCare case study",
+    "title": "A recorded payment is not always a settled payment.",
+    "accent": "",
+    "description": "Keep booked payments separate from collected cash. Model better settlement reconciliation and fewer classification errors before payment data changes the risk picture.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "goeasy: financial and operational update, March 10, 2026",
+        "url": "https://goeasy.investorroom.com/2026-03-10-goeasy-Ltd-Provides-a-Financial-and-Operational-Update-Ahead-of-its-Fourth-Quarter-Earnings-Release"
+      },
+      {
+        "title": "goeasy: Material Change Report, March 2026 (PDF)",
+        "url": "https://cdn.financialreports.eu/financialreports/media/filings/42974/2026/RNS/42974_rns_2026-03-19_e4c4aa58-3b2c-4405-ba90-26f355a62da9.pdf"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/canada-drives-inventory-liquidity",
+    "label": "Canada Drives case study",
+    "title": "When inventory becomes a liquidity problem.",
+    "accent": "",
+    "description": "Connect inventory cash cycles with funding obligations. Model better working-capital visibility and a clearer near-term cash-flow forecast during an inventory-led liquidity squeeze.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Canada Drives: restructuring announcement",
+        "url": "https://www.businesswire.com/news/home/20230321005801/en/Canada-Drives-Announces-a-Restructuring-of-Business-Operations-to-Position-the-Company-for-Success"
+      },
+      {
+        "title": "PwC (CCAA Monitor): court application recording the initial order and inventory liquidation (PDF)",
+        "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-032_050523.pdf"
+      },
+      {
+        "title": "PwC: Monitor's Sixth Report (PDF)",
+        "url": "https://www.pwc.com/ca/en/car/canada-drives/assets/canadadrives-059_140823.pdf"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/desjardins-data-governance",
+    "label": "Desjardins case study",
+    "title": "The risk follows the data beyond the original permission.",
+    "accent": "",
+    "description": "Connect reliable identity and financial evidence during post-incident review. Model better relationship accuracy and counterparty coverage while keeping the scope distinct from data-loss prevention.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Privacy Commissioner of Canada: PIPEDA Findings #2020-005",
+        "url": "https://www.priv.gc.ca/en/opc-actions-and-decisions/investigations/investigations-into-businesses/2020/pipeda-2020-005/"
+      },
+      {
+        "title": "Desjardins: privacy breach settlement agreement",
+        "url": "https://www.desjardins.com/en/news/privacy-breach-settlement-agreement.html"
+      },
+      {
+        "title": "Canadian Underwriter / Canadian Press: settlement approval and the 4.2M active-account figure",
+        "url": "https://canadianunderwriter.ca/news/industry/quebec-court-approves-200-9m-settlement-against-desjardins-over-data-breach/"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/bridging-connected-conflicts",
+    "label": "Bridging Finance case study",
+    "title": "Follow the relationships behind the loan proceeds.",
+    "accent": "",
+    "description": "Connect beneficiaries, fund flows, and related parties before a conflicted transaction passes review. Model better relationship accuracy and a larger share of transfers with named counterparties.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Ontario Capital Markets Tribunal: Decision in Brief, 28 Oct 2024",
+        "url": "https://www.capitalmarketstribunal.ca/en/proceedings/decisions-in-brief/decision-brief-bridging-finance-inc-enforcement-proceeding-merits-october-28-2024"
+      },
+      {
+        "title": "Ontario Capital Markets Tribunal: sanctions reasons (PDF)",
+        "url": "https://www.capitalmarketstribunal.ca/sites/default/files/2025-06/rad_20250617_bridging-finance-1.pdf"
+      },
+      {
+        "title": "Investment Executive: receiver litigation and >$1B expected investor losses",
+        "url": "https://www.investmentexecutive.com/news/from-the-regulators/flurry-of-lawsuits-follows-bridging-collapse/"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/clearco-merchant-cohorts",
+    "label": "Clearco case study",
+    "title": "Continuous revenue data still needs a cycle-aware decision.",
+    "accent": "",
+    "description": "Underwrite collected merchant cash rather than headline sales. Model better settlement reconciliation and customer-concentration visibility across an ecommerce financing cohort.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Clearco: recapitalization and operating update",
+        "url": "https://www.clear.co/blog/clearco-2-is-open-for-business"
+      },
+      {
+        "title": "FinTech Futures: recapitalisation summary",
+        "url": "https://www.fintechfutures.com/venture-capital-funding/clearco-completes-recapitalisation-secures-60m-series-d-funding-and-100m-financing-facility"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/vancity-margin-and-renewals",
+    "label": "Vancity case study",
+    "title": "The portfolio story includes the cost of funding.",
+    "accent": "",
+    "description": "Bring current member cash flow into mortgage renewal planning. Model more assessable renewals and lower borrower cash-flow forecast error under a changing rate environment.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Vancity: 2023 financial results release",
+        "url": "https://www.vancity.com/subbrand/business/AboutVancity/News/MediaReleases/VancityReleases2023FinancialResults/"
+      },
+      {
+        "title": "Vancity: 2024 return-to-profit release (republished)",
+        "url": "https://www.centralcharts.com/en/news/5120247-vancity-restores-profitability-and-stays-true-to-its-co-operative-values"
+      },
+      {
+        "title": "Vancity: 2024 consolidated financial statements (PDF)",
+        "url": "https://edge.sitecorecloud.io/vancouverci5821-vancity9f0e-prod943f-e9a1/media/Project/public-sites/www/About/Credit-union/Annual-report/2024-Consolidated-Financial-Statements.pdf"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/romspen-trez-fund-liquidity",
+    "label": "Romspen & Trez Capital case study",
+    "title": "Contractual maturity is not the same as cash arriving.",
+    "accent": "",
+    "description": "Distinguish contractual maturities from supported cash arrivals. Model better loan cash-cycle visibility and lower forecast error before portfolio liquidity assumptions drive a fund decision.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Romspen: Redemption Deferral Notice, 8 Nov 2022",
+        "url": "https://www.romspen.com/redemption-deferral-notice/"
+      },
+      {
+        "title": "Romspen: 2021 results release",
+        "url": "https://www.newswire.ca/news-releases/romspen-mortgage-investment-fund-announces-2021-results-840266412.html"
+      },
+      {
+        "title": "Romspen: Q2 2025 reporting package (PDF)",
+        "url": "https://www.romspen.com/wp-content/uploads/2025/08/RMIF-Reporting-Package-Q2-2025-final.pdf"
+      },
+      {
+        "title": "Trez Capital: redemption suspension release, 18 Aug 2025",
+        "url": "https://www.newswire.ca/news-releases/trez-capital-provides-notification-of-temporary-redemption-suspension-for-five-open-ended-funds-837716617.html"
+      },
+      {
+        "title": "Investment Executive: Trez suspension coverage",
+        "url": "https://www.investmentexecutive.com/news/trez-capital-announces-temporary-fund-redemption-suspensions/"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/laurentian-mortgage-evidence",
+    "label": "Laurentian Bank case study",
+    "title": "A performing loan can still fail an evidence review.",
+    "accent": "",
+    "description": "Connect mortgage eligibility to the evidence behind it. Model more assessable files and more accurate identity links before a performing loan is treated as a complete file.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "DBRS: rating release on the mortgage disclosure",
+        "url": "https://dbrs.morningstar.com/research/320388/dbrs-confirms-laurentian-bank-of-canadas-ratings-revises-trends-to-negative"
+      },
+      {
+        "title": "Laurentian Bank: clarification of the mortgage review",
+        "url": "https://news.laurentianbank.ca/2017-12-11-Laurentian-Bank-Clarifies-Effect-of-Recent-Review-of-Mortgages"
+      },
+      {
+        "title": "Laurentian Bank: progress on the mortgage review, May 2018",
+        "url": "https://news.laurentianbank.ca/2018-05-29-Laurentian-Bank-Financial-Group-Announces-Progress-on-Mortgage-Situation"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/lendified-funding-fragility",
+    "label": "Lendified case study",
+    "title": "Borrower stress and funding stress can arrive together.",
+    "accent": "",
+    "description": "Connect SMB repayment evidence with the funding structure around the loan pool. Model broader debt-service assessment and working-capital visibility before cash collections become a funding dependency.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "Lendified: Q3 2021 results release",
+        "url": "https://www.finanznachrichten.de/nachrichten-2021-11/54617211-lendified-holdings-inc-lendified-reports-third-quarter-results-296.htm"
+      },
+      {
+        "title": "Lendified: demand letters and enforcement notices, 23 Nov 2022",
+        "url": "https://www.finanznachrichten.de/nachrichten-2022-11/57667765-lendified-holdings-inc-lendified-announces-receipt-of-demand-letters-and-notices-of-enforcement-of-security-296.htm"
+      },
+      {
+        "title": "Lendified: update on the sale of secured assets",
+        "url": "https://www.newsfilecorp.com/release/151697/Lendified-Provides-Update-on-the-Sale-of-Secured-Assets"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
+  },
+  {
+    "slug": "case-studies/quadriga-counterparty-verification",
+    "label": "QuadrigaCX case study",
+    "title": "Verify the platform behind the transaction.",
+    "accent": "",
+    "description": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
+    "visual": "underwriting",
+    "kind": "case-study",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [
+      {
+        "title": "OSC: QuadrigaCX review report",
+        "url": "https://www.osc.gov.on.ca/quadrigacxreport/"
+      },
+      {
+        "title": "OSC: how the QuadrigaCX review was conducted",
+        "url": "https://www.osc.gov.on.ca/quadrigacxreport/how-we-conducted-our-review.html"
+      }
+    ],
+    "related": [
+      "case-studies"
+    ]
   }
 ]

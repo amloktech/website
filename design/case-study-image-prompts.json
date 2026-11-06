@@ -1,0 +1,104 @@
+{
+  "mode": "built-in image_gen",
+  "stylePrompt": "Use case: photorealistic-natural. Asset type: original editorial photograph for an Amlok financial case-study website card. Landscape 3:2 composition. Match a premium, understated Canadian financial-services photography series: soft cool daylight through tall windows, natural skin tones and real skin texture, quiet off-white and pale grey interiors, light oak, subtle navy and powder-blue clothing, thoughtful candid expressions, realistic ordinary objects, gentle depth of field, crisp but unretouched detail. Subjects occupy the RIGHT two-thirds, with a calm uncluttered LEFT third for a blue website overlay. Keep faces within the central-right area so they survive landscape and square crops. The image must be a clean full-bleed PHOTOGRAPH ONLY: no text, typography, logos, institutional signage, badges, UI panels, diagrams, gradients, borders, watermark, or graphic overlays. The website adds its own branding and gradient. Original fictional people, not known executives or copied individuals. Avoid artificial glamour, exaggerated smiles, posed stock-photo handshakes, strange hands, and saturated orange lighting.",
+  "assets": [
+    {
+      "slug": "home-capital-verification",
+      "name": "home-capital",
+      "scene": "A young adult couple in their mid 30s reviewing a mortgage folder and house keys at the light oak kitchen table of their modest bright new home. One has short dark hair and a light blue cotton shirt, the other shoulder-length brown hair and a navy knit sweater. Candid side-by-side shared attention on the page, soft houseplants and a window behind them. Medium-wide eye-level framing, realistic home atmosphere.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-cb62f579-654e-42bf-a9bc-1f6fd9760c62.png",
+      "output": "public/images/case-studies/original/home-capital.webp"
+    },
+    {
+      "slug": "td-monitoring-coverage",
+      "name": "td",
+      "scene": "Two experienced bank operations analysts, a Black woman with natural short hair in a navy blazer and an East Asian man in a light blue shirt, reviewing records together at a desk in a bright contemporary financial office. Both faces visible in three-quarter view toward each other and a laptop, calm focused expressions. Screen turned away from camera, slim folder on desk. Modern pale wood and glass surroundings.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-0ace412f-3a15-4142-b2e6-bf22f05fa8c5.png",
+      "output": "public/images/case-studies/original/td.webp"
+    },
+    {
+      "slug": "atb-energy-concentration",
+      "name": "atb",
+      "scene": "A woman operations manager in navy workwear and a male field engineer in a pale blue work shirt and clean white hard hat reviewing a tablet inside a bright Canadian industrial equipment workshop. A few softly blurred metal components and tall windows suggest a regional energy-services business, not an oil-rig spectacle. Calm practical collaboration, waist-up with subjects on the right.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-4ee3162d-a9b1-4a93-b330-536bfd868df5.png",
+      "output": "public/images/case-studies/original/atb.webp"
+    },
+    {
+      "slug": "cibc-office-real-estate",
+      "name": "cibc",
+      "scene": "Two commercial property professionals standing beside floor-to-ceiling windows in an uncluttered contemporary office building, reviewing a simple architectural floor plan. A middle-aged South Asian woman in a navy jacket and a man in a pale blue shirt, natural conversation, downtown buildings softly visible outside. Quiet office leasing and refinancing context, professional but approachable. Medium-wide composition.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-bb661c0a-a3df-4016-bb33-7597619a9147.png",
+      "output": "public/images/case-studies/original/cibc.webp"
+    },
+    {
+      "slug": "goeasy-payment-settlement",
+      "name": "goeasy",
+      "scene": "A working adult at a bright modest dining table checking a household payment on a laptop while a partner looks over the monthly paperwork. Diverse couple in their 40s, comfortable blue cotton clothing, thoughtful relaxed faces and natural posture. Light neutral kitchen backdrop, simple notebook and water glass, camera sees the back of the laptop rather than screen content.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-66e425bd-294d-479d-9a6a-72d7d9a176b6.png",
+      "output": "public/images/case-studies/original/goeasy.webp"
+    },
+    {
+      "slug": "canada-drives-inventory-liquidity",
+      "name": "canada-drives",
+      "scene": "A friendly female auto adviser and a male customer examining a neutral unbranded silver compact SUV inside a bright modern dealership. Three-quarter view, adviser casually holds a slim tablet, customer beside the driver door. Cool daylight, clean windows, pale grey floor, dark navy and light blue clothing. No visible car emblems or signage, natural candid interaction.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-0c75e237-e9ef-44d5-a5f1-91e8d62a0ccf.png",
+      "output": "public/images/case-studies/original/canada-drives.webp"
+    },
+    {
+      "slug": "desjardins-data-governance",
+      "name": "desjardins",
+      "scene": "A financial adviser in a navy cardigan meeting a mature couple at a light oak desk in a bright neighborhood credit-union-style office. A woman adviser with straight dark hair, older couple in understated blue and grey clothing. She carefully explains a paper form while the visitors listen. Welcoming, calm, thoughtful, a small plant and frosted glass partition in the soft background. No readable text.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-60abb74b-a5ee-423a-a32b-fcb9c7ae4acb.png",
+      "output": "public/images/case-studies/original/desjardins.webp"
+    },
+    {
+      "slug": "bridging-connected-conflicts",
+      "name": "bridging",
+      "scene": "Two private-credit analysts discussing business records across a pale oak meeting table in a bright modern office. A Black male analyst with close-cropped hair in a navy jacket and a woman with glasses and a light blue blouse. Open neutral file folder and simple laptop, calm serious expressions, natural hand placement, glass and stone architecture behind them. Not a crime scene, no conspiratorial or accusatory visual cues.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-dbb8465b-576a-46a8-8ce0-d598e65331cc.png",
+      "output": "public/images/case-studies/original/bridging.webp"
+    },
+    {
+      "slug": "clearco-merchant-cohorts",
+      "name": "clearco",
+      "scene": "An independent ecommerce founder, a woman in her early 30s wearing a navy overshirt, reviewing inventory with a colleague wearing a powder-blue shirt in a bright small fulfillment studio. A few unbranded cardboard parcels and orderly shelving, laptop on a light wooden packing bench. Candid warm collaboration, natural sunlight, practical small-business environment.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-dc3e616d-6192-4ac2-8e86-fc7f085fe1af.png",
+      "output": "public/images/case-studies/original/clearco.webp"
+    },
+    {
+      "slug": "vancity-margin-and-renewals",
+      "name": "vancity",
+      "scene": "An approachable credit-union adviser and a young adult client seated across a small pale wood table in a bright community financial office with plants and soft daylight. Adviser is a woman with curly black hair in navy, client a man with a light blue casual shirt. Natural attentive conversation around a notebook and closed folder, simple human-scale surroundings.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-6e4d9e24-c1f2-4da2-918c-99096623acc4.png",
+      "output": "public/images/case-studies/original/vancity.webp"
+    },
+    {
+      "slug": "romspen-trez-fund-liquidity",
+      "name": "romspen-trez",
+      "scene": "Two real-estate development professionals, a woman architect and a male construction project manager in navy and grey smart casual clothes with white hard hats, examining a building plan inside a bright newly built commercial interior. Big windows reveal a modern building nearby; clean unfinished concrete and pale wood details. Thoughtful collaborative posture, medium framing on the right side.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-e390c420-7b65-40c3-bc97-fdddde45af18.png",
+      "output": "public/images/case-studies/original/romspen-trez.webp"
+    },
+    {
+      "slug": "laurentian-mortgage-evidence",
+      "name": "laurentian",
+      "scene": "A mortgage adviser in a light blue shirt explaining a document to a woman homeowner in a navy knit cardigan at a bright minimal office desk. Both in their 40s with distinct original faces, relaxed and focused, folder and small house key on the light oak desk, soft green plant and glass window in background. Clean candid editorial photograph.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-efa01827-23e3-4109-9f25-a50c0f7e709e.png",
+      "output": "public/images/case-studies/original/laurentian.webp"
+    },
+    {
+      "slug": "lendified-funding-fragility",
+      "name": "lendified",
+      "scene": "A small-business owner and an employee reviewing the day's figures on a tablet in a bright independent café before opening. Owner is a woman in a navy apron over a pale blue shirt; employee a man in a dark blue cotton shirt. Light oak counter, pale brick, a softly blurred espresso machine and window light. Natural thoughtful expressions, authentic neighborhood business.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-23fb8fe5-aa46-467d-8c3f-f4e5a196c8d9.png",
+      "output": "public/images/case-studies/original/lendified.webp"
+    },
+    {
+      "slug": "quadriga-counterparty-verification",
+      "name": "quadriga",
+      "scene": "Two digital-finance professionals reviewing information together on a laptop in a bright restrained technology studio. An East Asian woman in a navy overshirt and a Black male colleague in a grey-blue shirt, both in their 30s. Soft daylight, pale wood desk, understated glass partitions, screens turned away from camera. Calm analytical collaboration, no cryptocurrency symbols, neon, holograms, or dramatic hacker imagery.",
+      "source": "/Users/luistelleria/.codex/generated_images/01a11741-db93-70e0-b344-8d65a3d76695/exec-0074fad8-cc79-4702-a006-89b130ddffb7.png",
+      "output": "public/images/case-studies/original/quadriga.webp"
+    }
+  ]
+}

@@ -21,14 +21,14 @@ export function HomeSecurity() {
           <div className="home-security-status-card"><span className="home-security-status-icon"><FileCheck2 size={24} aria-hidden="true" /></span><div><h3>SOC 2 &amp; ISO/IEC 27001 <span>CONTROL ALIGNMENT</span></h3><p>Review the applicable control evidence and assurance scope.</p></div></div>
         </div>
       </div>
+      <a className="home-security-details" href="/security-compliance">Review security &amp; compliance <ArrowUpRight size={17} aria-hidden="true" /></a>
       <div className="home-security-controls">
         {controls.map(({ icon: Icon, title, description }) => <article className="home-security-control" key={title}>
-          <Icon size={25} aria-hidden="true" />
+          <span className="home-security-control-icon"><Icon size={24} aria-hidden="true" /></span>
           <h3>{title}</h3>
           <p>{description}</p>
         </article>)}
       </div>
-      <a className="cp-text-link home-security-details" href="/security-compliance">Review security &amp; compliance <ArrowUpRight size={17} aria-hidden="true" /></a>
     </div>
   </section>;
 }

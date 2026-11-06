@@ -1,0 +1,404 @@
+[
+  {
+    "slug": "home-capital-verification",
+    "institution": "Home Capital / Home Trust",
+    "type": "Alternative lenders",
+    "sector": "Residential mortgages",
+    "title": "When a verification gap becomes a liquidity crisis.",
+    "summary": "Connect income evidence, broker relationships, and file exceptions before a verification failure spreads. Model the improvement in mortgage assessability and relationship accuracy.",
+    "image": "/images/case-studies/original/home-capital.webp",
+    "logos": [
+      "/images/case-studies/logos/home-capital.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor",
+      "Investigate"
+    ],
+    "fact": {
+      "value": "~10%",
+      "label": "2014 originations associated with terminated brokers",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "debt-service-assessability",
+      "mode": "count",
+      "population": "eligible mortgage files",
+      "outcome": "additional assessable mortgage files",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "td-monitoring-coverage",
+    "institution": "TD Bank (U.S.)",
+    "type": "Banks",
+    "sector": "AML & financial crime",
+    "title": "A monitoring system is only as strong as its coverage.",
+    "summary": "Expose monitoring gaps, resolve transaction counterparties, and prioritize actionable AML reviews. Model a lower false-positive review burden alongside better counterparty coverage.",
+    "image": "/images/case-studies/original/td.webp",
+    "logos": [
+      "/images/case-studies/logos/td.png"
+    ],
+    "workflows": [
+      "Monitor",
+      "Investigate"
+    ],
+    "fact": {
+      "value": "92%",
+      "label": "Transaction volume unmonitored, Jan. 2018–Apr. 2024",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "aml-review-burden",
+      "mode": "native",
+      "population": "Normalized AML false-positive review burden",
+      "outcome": "lower modeled review burden"
+    }
+  },
+  {
+    "slug": "atb-energy-concentration",
+    "institution": "ATB Financial",
+    "type": "Banks",
+    "sector": "Energy & commercial lending",
+    "title": "One sector shock. Many connected borrowers.",
+    "summary": "Trace energy exposure through customers and repayment capacity. Model how connected financial evidence could improve concentration coverage and borrower assessment during a sector shock.",
+    "image": "/images/case-studies/original/atb.webp",
+    "logos": [
+      "/atb-logo.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "fact": {
+      "value": "C$387.6M",
+      "label": "Fiscal 2016 provision for loan losses",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "customer-concentration",
+      "mode": "count",
+      "population": "eligible borrower concentration assessments",
+      "outcome": "additional assessments with customer concentration coverage",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "cibc-office-real-estate",
+    "institution": "CIBC",
+    "type": "Banks",
+    "sector": "Commercial real estate",
+    "title": "An origination valuation cannot follow a changing office market.",
+    "summary": "Connect property cash flow, debt service, and refinancing assumptions. Model a broader assessment base and lower forecast error for an office-loan review scenario.",
+    "image": "/images/case-studies/original/cibc.webp",
+    "logos": [
+      "/images/case-studies/logos/cibc.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "fact": {
+      "value": "C$3.699B",
+      "label": "Fiscal 2024 office exposure within real estate and construction",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "debt-service-assessability",
+      "mode": "count",
+      "population": "eligible property-loan assessments",
+      "outcome": "additional assessable property-loan reviews",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "goeasy-payment-settlement",
+    "institution": "goeasy / LendCare",
+    "type": "Alternative lenders",
+    "sector": "Consumer & auto lending",
+    "title": "A recorded payment is not always a settled payment.",
+    "summary": "Keep booked payments separate from collected cash. Model better settlement reconciliation and fewer classification errors before payment data changes the risk picture.",
+    "image": "/images/case-studies/original/goeasy.webp",
+    "logos": [
+      "/images/case-studies/logos/goeasy.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Underwrite",
+      "Monitor"
+    ],
+    "fact": {
+      "value": "~C$178M",
+      "label": "Incremental Q4 2025 charge-off estimated on March 10, 2026",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "settlement-reconciliation",
+      "mode": "count",
+      "population": "eligible payment settlement groups",
+      "outcome": "additional reconciled settlement groups",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "canada-drives-inventory-liquidity",
+    "institution": "Canada Drives",
+    "type": "Fintech",
+    "sector": "Auto finance",
+    "title": "When inventory becomes a liquidity problem.",
+    "summary": "Connect inventory cash cycles with funding obligations. Model better working-capital visibility and a clearer near-term cash-flow forecast during an inventory-led liquidity squeeze.",
+    "image": "/images/case-studies/original/canada-drives.webp",
+    "logos": [
+      "/images/case-studies/logos/canada-drives.png"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "fact": {
+      "value": "C$120.9M",
+      "label": "Liabilities reported in the restructuring record",
+      "source": 2
+    },
+    "projection": {
+      "metricId": "working-capital-visibility",
+      "mode": "count",
+      "population": "eligible inventory cash-cycle assessments",
+      "outcome": "additional visible cash-cycle assessments",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "desjardins-data-governance",
+    "institution": "Desjardins",
+    "type": "Credit unions",
+    "sector": "Data governance",
+    "title": "The risk follows the data beyond the original permission.",
+    "summary": "Connect reliable identity and financial evidence during post-incident review. Model better relationship accuracy and counterparty coverage while keeping the scope distinct from data-loss prevention.",
+    "image": "/images/case-studies/original/desjardins.webp",
+    "logos": [
+      "/images/case-studies/logos/desjardins.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Investigate",
+      "Service"
+    ],
+    "fact": {
+      "value": "9.7M",
+      "label": "Individuals affected, as reported by the OPC",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "relationship-precision",
+      "mode": "count",
+      "population": "accepted identity and account links",
+      "outcome": "additional correctly resolved links",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "bridging-connected-conflicts",
+    "institution": "Bridging Finance",
+    "type": "Alternative lenders",
+    "sector": "Business & private credit",
+    "title": "Follow the relationships behind the loan proceeds.",
+    "summary": "Connect beneficiaries, fund flows, and related parties before a conflicted transaction passes review. Model better relationship accuracy and a larger share of transfers with named counterparties.",
+    "image": "/images/case-studies/original/bridging.webp",
+    "logos": [
+      "/images/case-studies/logos/bridging-finance.jpg"
+    ],
+    "workflows": [
+      "Verify",
+      "Underwrite",
+      "Monitor",
+      "Investigate"
+    ],
+    "fact": {
+      "value": "~C$2.09B",
+      "label": "Assets under management at receivership",
+      "source": 3
+    },
+    "projection": {
+      "metricId": "relationship-precision",
+      "mode": "count",
+      "population": "accepted borrower, beneficiary, and principal links",
+      "outcome": "additional correctly resolved links",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "clearco-merchant-cohorts",
+    "institution": "Clearco",
+    "type": "Fintech",
+    "sector": "Revenue-based finance",
+    "title": "Continuous revenue data still needs a cycle-aware decision.",
+    "summary": "Underwrite collected merchant cash rather than headline sales. Model better settlement reconciliation and customer-concentration visibility across an ecommerce financing cohort.",
+    "image": "/images/case-studies/original/clearco.webp",
+    "logos": [
+      "/images/case-studies/logos/clearco.webp"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "fact": {
+      "value": "US$60M",
+      "label": "Series D announced in October 2023",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "settlement-reconciliation",
+      "mode": "count",
+      "population": "eligible merchant settlement groups",
+      "outcome": "additional reconciled settlement groups",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "vancity-margin-and-renewals",
+    "institution": "Vancity",
+    "type": "Credit unions",
+    "sector": "Deposits & mortgages",
+    "title": "The portfolio story includes the cost of funding.",
+    "summary": "Bring current member cash flow into mortgage renewal planning. Model more assessable renewals and lower borrower cash-flow forecast error under a changing rate environment.",
+    "image": "/images/case-studies/original/vancity.webp",
+    "logos": [
+      "/vancity-logo.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "fact": {
+      "value": "C$1.3M",
+      "label": "Net loss reported for 2023",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "debt-service-assessability",
+      "mode": "count",
+      "population": "eligible member renewal reviews",
+      "outcome": "additional assessable renewal reviews",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "romspen-trez-fund-liquidity",
+    "institution": "Romspen & Trez Capital",
+    "type": "Alternative lenders",
+    "sector": "Commercial real estate",
+    "title": "Contractual maturity is not the same as cash arriving.",
+    "summary": "Distinguish contractual maturities from supported cash arrivals. Model better loan cash-cycle visibility and lower forecast error before portfolio liquidity assumptions drive a fund decision.",
+    "image": "/images/case-studies/original/romspen-trez.webp",
+    "logos": [
+      "/images/case-studies/logos/romspen.svg",
+      "/images/case-studies/logos/trez-capital.svg"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor",
+      "Service"
+    ],
+    "fact": {
+      "value": "C$2.7B",
+      "label": "Romspen mortgage portfolio at year-end 2021",
+      "source": 2
+    },
+    "projection": {
+      "metricId": "working-capital-visibility",
+      "mode": "count",
+      "population": "eligible loan cash-cycle assessments",
+      "outcome": "additional visible loan cash-cycle assessments",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "laurentian-mortgage-evidence",
+    "institution": "Laurentian Bank",
+    "type": "Banks",
+    "sector": "Residential mortgages",
+    "title": "A performing loan can still fail an evidence review.",
+    "summary": "Connect mortgage eligibility to the evidence behind it. Model more assessable files and more accurate identity links before a performing loan is treated as a complete file.",
+    "image": "/images/case-studies/original/laurentian.webp",
+    "logos": [
+      "/laurentian-bank-white.svg"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor"
+    ],
+    "fact": {
+      "value": "~1.6%",
+      "label": "Share of residential mortgages potentially subject to repurchase, December 2017",
+      "source": 2
+    },
+    "projection": {
+      "metricId": "debt-service-assessability",
+      "mode": "count",
+      "population": "eligible mortgage evidence reviews",
+      "outcome": "additional assessable mortgage files",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "lendified-funding-fragility",
+    "institution": "Lendified",
+    "type": "Alternative lenders",
+    "sector": "Business & private credit",
+    "title": "Borrower stress and funding stress can arrive together.",
+    "summary": "Connect SMB repayment evidence with the funding structure around the loan pool. Model broader debt-service assessment and working-capital visibility before cash collections become a funding dependency.",
+    "image": "/images/case-studies/original/lendified.webp",
+    "logos": [
+      "/images/case-studies/logos/lendified.png"
+    ],
+    "workflows": [
+      "Underwrite",
+      "Monitor"
+    ],
+    "fact": {
+      "value": "~C$6.63M",
+      "label": "Loans subject to demand and enforcement notices in November 2022",
+      "source": 2
+    },
+    "projection": {
+      "metricId": "debt-service-assessability",
+      "mode": "count",
+      "population": "eligible SMB borrower reviews",
+      "outcome": "additional assessable borrower reviews",
+      "denominator": 1000
+    }
+  },
+  {
+    "slug": "quadriga-counterparty-verification",
+    "institution": "QuadrigaCX",
+    "type": "Fintech",
+    "sector": "Platforms & counterparties",
+    "title": "Verify the platform behind the transaction.",
+    "summary": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
+    "image": "/images/case-studies/original/quadriga.webp",
+    "logos": [
+      "/images/case-studies/logos/quadriga.png"
+    ],
+    "workflows": [
+      "Verify",
+      "Monitor",
+      "Investigate"
+    ],
+    "fact": {
+      "value": "C$215M",
+      "label": "Owed to clients at bankruptcy, per the OSC review",
+      "source": 1
+    },
+    "projection": {
+      "metricId": "counterparty-coverage",
+      "mode": "count",
+      "population": "eligible permitted fiat-transaction records",
+      "outcome": "additional records with a named counterparty",
+      "denominator": 1000
+    }
+  }
+]

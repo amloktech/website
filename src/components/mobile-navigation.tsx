@@ -125,7 +125,7 @@ export function MobileNavigation({ homeHref='', language, languages, onLanguageC
 
         <div className="home-mobile-menu-actions">
           <BookingLink className="home-mobile-contact" onClick={closeMenu}>Talk to us <ArrowUpRight aria-hidden="true" /></BookingLink>
-          <a className="home-mobile-signup" href="/get-started" onClick={closeMenu}>Sign up</a>
+          <a className="home-mobile-signup" href="https://console.amlok.io/" onClick={closeMenu}>Console <ArrowUpRight size={19} aria-hidden="true" /></a>
         </div>
 
         <div className="home-mobile-language">

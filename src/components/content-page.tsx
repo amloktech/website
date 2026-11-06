@@ -1,3 +1,5 @@
+import { CaseStudiesPage, CaseStudyPage } from './case-study-page';
+import { caseStudies } from '@/lib/case-studies';
 import { BrandText } from './ui';
 import { ServiceStatus } from './service-status';
 import { LegalPage } from './legal-page';
@@ -47,6 +49,9 @@ function SecurityScope() {
 }
 
 export function ContentPage({page}:{page:SitePageContent}) {
+  if (page.slug === 'case-studies') return <CaseStudiesPage/>;
+  const caseStudy = caseStudies.find(item => `case-studies/${item.slug}` === page.slug);
+  if (caseStudy) return <CaseStudyPage item={caseStudy}/>;
   const policy = legalPolicies.find(item => item.slug === page.slug);
   if (policy) return <LegalPage policy={policy}/>;
   if (page.slug === 'industries') return <IndustriesOverview/>;

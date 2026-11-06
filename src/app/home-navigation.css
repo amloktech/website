@@ -142,7 +142,7 @@
   .home-mobile-menu-actions { display:grid; gap:12px; margin-top:28px; padding:24px 0 48px; border-top:1px solid var(--border-subtle); }
   .home-mobile-menu-actions .home-mobile-contact { gap:10px; color:var(--blue-secondary); }
   .home-mobile-contact>svg { width:28px; height:28px; stroke-width:1.8; }
-  .home-mobile-menu-actions .home-mobile-signup { color:var(--muted); }
+  .home-mobile-menu-actions .home-mobile-signup { gap:10px; color:var(--muted); }
   .home-mobile-language { position:relative; display:flex; align-items:center; min-height:48px; flex-shrink:0; gap:12px; margin-top:auto; border-radius:var(--radius-pill); background:var(--surface); }
   .home-mobile-language>svg { position:absolute; left:18px; width:22px; height:22px; pointer-events:none; }
   .home-mobile-language>svg:last-child { left:auto; right:18px; width:18px; height:18px; color:var(--muted); }

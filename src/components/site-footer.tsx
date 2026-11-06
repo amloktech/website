@@ -21,6 +21,12 @@ function FooterGroup({title,links,splitAt}:{title:string;links:readonly FooterLi
   return <nav className={`site-footer-group${splitAt?' is-split':''}`} aria-label={`Footer ${title}`}><h2>{title}</h2><div className="site-footer-link-columns">{columns.map((column,index)=><ul key={index}>{column.map(link=><li key={link.label}><a href={link.href}>{link.label}</a></li>)}</ul>)}</div></nav>;
 }
 const homeLink = (href:string) => href.startsWith('#')?`/${href}`:href;
+const developerFooterLinks: FooterLink[] = [
+  ...developerGroups.flatMap(group => group.links.flatMap<FooterLink>(link => link.label === 'Sandbox'
+    ? [{label:'Console',href:'https://console.amlok.io/'},link]
+    : [link])),
+  {label:'Quickstart',href:'https://docs.amlok.io/api-reference/quickstart'},
+];
 
 export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
   const pathname=usePathname();
@@ -45,7 +51,7 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
         <FooterGroup title="Industries" links={solutionIndustries.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
       </div>
       <div className="site-footer-secondary">
-        <FooterGroup title="Developers" splitAt={6} links={[...developerGroups.flatMap<FooterLink>(group=>[...group.links]),{label:'Quickstart',href:'https://docs.amlok.io/api-reference/quickstart'}]}/>
+        <FooterGroup title="Developers" splitAt={6} links={developerFooterLinks}/>
         <FooterGroup title="Resources" links={resourceGroups[0].links}/>
         <FooterGroup title="Pricing & Compare" links={[
           {label:'Pricing',href:'/pricing'},
