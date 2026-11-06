@@ -1,0 +1,854 @@
+{
+  "catalogue": "https://docs.amlok.io/integrations",
+  "categories": [
+    "https://docs.amlok.io/integrations/payments-and-pos",
+    "https://docs.amlok.io/integrations/ecommerce",
+    "https://docs.amlok.io/integrations/accounting",
+    "https://docs.amlok.io/integrations/inventory-and-erp",
+    "https://docs.amlok.io/integrations/bank-integrations",
+    "https://docs.amlok.io/integrations/lender-systems"
+  ],
+  "records": 238,
+  "notes": "Names, categories, product types, status, and provider-page links follow the public Amlok catalogue. Brand icons are self-hosted; products may share their parent-company logo. Existing home-page artwork is documented in ../connect-logos/sources.json.",
+  "assets": {
+    "moneris-com.png": {
+      "provider": "https://moneris.com",
+      "source": "https://www.google.com/s2/favicons?domain=moneris.com&sz=128",
+      "sha256": "f80363d5d95424d5435675e28fe23d363b8d990d4f34355621abbbaa3f140f69"
+    },
+    "braintreepayments-com.png": {
+      "provider": "https://braintreepayments.com",
+      "source": "https://www.google.com/s2/favicons?domain=braintreepayments.com&sz=128",
+      "sha256": "e3850303cebe7f8a89ae58c425ff67407eda65e58e157d0ef40109caa24caa60"
+    },
+    "globalpayments-com.png": {
+      "provider": "https://globalpayments.com",
+      "source": "https://www.google.com/s2/favicons?domain=globalpayments.com&sz=128",
+      "sha256": "8f039a838f1cfe65860031c162255aa8b8feffbce3b294974e052406d80ad011"
+    },
+    "elavon-ca.png": {
+      "provider": "https://elavon.ca",
+      "source": "https://www.google.com/s2/favicons?domain=elavon.ca&sz=128",
+      "sha256": "f342e3941372a3ad78464fc3f0d32f49abf9373c60236580f602b7976823729f"
+    },
+    "chase-com.jpg": {
+      "provider": "https://chase.com",
+      "source": "https://www.google.com/s2/favicons?domain=chase.com&sz=128",
+      "sha256": "76f9a99577bb66567b9311b1c097981e3121c736a682fec44d912975f0866040"
+    },
+    "td-com.png": {
+      "provider": "https://td.com",
+      "source": "https://www.google.com/s2/favicons?domain=td.com&sz=128",
+      "sha256": "c538f0dc0d10094b506e822bb1c543164264ef443a3b6afea3e6ceda7e88a4f2"
+    },
+    "worldline-com.png": {
+      "provider": "https://worldline.com",
+      "source": "https://www.google.com/s2/favicons?domain=worldline.com&sz=128",
+      "sha256": "0dccd99ee1edc16e6dd70020ab9adb3931ffa8b11d7d2c0350ef3b23875acfab"
+    },
+    "nuvei-com.png": {
+      "provider": "https://nuvei.com",
+      "source": "https://www.google.com/s2/favicons?domain=nuvei.com&sz=128",
+      "sha256": "05d1f22335d64c372d9deb0773e9fa9073580f317960a15ce921b4b18fe1c1bb"
+    },
+    "helcim-com.png": {
+      "provider": "https://helcim.com",
+      "source": "https://www.google.com/s2/favicons?domain=helcim.com&sz=128",
+      "sha256": "9b63ed4076c934782cf39b3e3ab4bd01a3dcde7b8448f8d713eee83630a5903b"
+    },
+    "plooto-com.png": {
+      "provider": "https://plooto.com",
+      "source": "https://www.google.com/s2/favicons?domain=plooto.com&sz=128",
+      "sha256": "a98f4efb0ae236b901f6079d03277d0774dc519200150130e20e621b170f3321"
+    },
+    "rotessa-com.png": {
+      "provider": "https://rotessa.com",
+      "source": "https://www.google.com/s2/favicons?domain=rotessa.com&sz=128",
+      "sha256": "3a4fd37cdc3328cbb266a121898626d1f577a7b439aa00e9b34ca10ae6f77689"
+    },
+    "vopay-com.png": {
+      "provider": "https://vopay.com",
+      "source": "https://www.google.com/s2/favicons?domain=vopay.com&sz=128",
+      "sha256": "428b3c959d85fd144dced1d4b94692ef3b69fa0fe60de2085ecdd04f6c4b3c11"
+    },
+    "clearlypayments-com.png": {
+      "provider": "https://clearlypayments.com",
+      "source": "https://www.google.com/s2/favicons?domain=clearlypayments.com&sz=128",
+      "sha256": "4aeda6457327f6e8a852eb06675c6ce1abfa8f964446681391ab182f99a7ccf3"
+    },
+    "fiserv-com.svg": {
+      "provider": "https://fiserv.com",
+      "source": "https://www.fiserv.com/content/dam/fiserv-ent/final-files/digital-graphics/fiserv-com-graphics/fiserv-logo-orange-ff6600.svg",
+      "sha256": "75605328f0ba99021a81cc1771a878f37853337091094b7004a89f376b1ca2b8"
+    },
+    "e-xact-com.png": {
+      "provider": "https://e-xact.com",
+      "source": "https://www.google.com/s2/favicons?domain=e-xact.com&sz=128",
+      "sha256": "723381e9f2be77d2bea6ae96a069a239b0f1ea1eeefcc71db109dcb8a1efb5b8"
+    },
+    "payfirma-com.png": {
+      "provider": "https://payfirma.com",
+      "source": "https://www.google.com/s2/favicons?domain=payfirma.com&sz=128",
+      "sha256": "20e04a02a9e3af7f16f78a300ff0f4e6f06b792ad2b9871be92bf8ff4ca8e32c"
+    },
+    "paystone-com.png": {
+      "provider": "https://paystone.com",
+      "source": "https://www.google.com/s2/favicons?domain=paystone.com&sz=128",
+      "sha256": "822f2df5fc21d08f8239879cdfc939b71e91883bd4dee30a0307d687438a4f1a"
+    },
+    "touchbistro-com.png": {
+      "provider": "https://touchbistro.com",
+      "source": "https://www.google.com/s2/favicons?domain=touchbistro.com&sz=128",
+      "sha256": "1c9fe1d6ac8695a71869b8632e4a9461a194df73964b4c5f4b4e1c28a5552392"
+    },
+    "toasttab-com.png": {
+      "provider": "https://toasttab.com",
+      "source": "https://www.google.com/s2/favicons?domain=toasttab.com&sz=128",
+      "sha256": "7bedf623c7e0089be2db924b7dde565849d0f948cbac1b9f078a5cae14aabca5"
+    },
+    "ncrvoyix-com.png": {
+      "provider": "https://ncrvoyix.com",
+      "source": "https://www.google.com/s2/favicons?domain=ncrvoyix.com&sz=128",
+      "sha256": "70d5a77647e58bb77137315435a26d173ec2ec75b81c8d5d62ecf200356b902d"
+    },
+    "partech-com.png": {
+      "provider": "https://partech.com",
+      "source": "https://www.google.com/s2/favicons?domain=partech.com&sz=128",
+      "sha256": "1ee92cb93d1931cbf06f69fa2ca7fcd0d302b9afa12bcd9b6ef2343fa168f7e5"
+    },
+    "revelsystems-com.png": {
+      "provider": "https://revelsystems.com",
+      "source": "https://www.google.com/s2/favicons?domain=revelsystems.com&sz=128",
+      "sha256": "cfa9d0c61833f4d4f10e5f75850024ff930cf08f16854faff569a5898dd17a0d"
+    },
+    "talech-com.png": {
+      "provider": "https://talech.com",
+      "source": "https://www.google.com/s2/favicons?domain=talech.com&sz=128",
+      "sha256": "91f6bc798b8d04cc00c660760ff30f9e0d9fbc6467512533c47da643400ad3f4"
+    },
+    "retailedge-com.png": {
+      "provider": "https://retailedge.com",
+      "source": "https://www.google.com/s2/favicons?domain=retailedge.com&sz=128",
+      "sha256": "7865a66ed79f507934e03c6813d043120c4074d7b9046458771ea10bd5a22586"
+    },
+    "cegid-com.png": {
+      "provider": "https://cegid.com",
+      "source": "https://www.google.com/s2/favicons?domain=cegid.com&sz=128",
+      "sha256": "007937480bdda5ff16514be2b1c301f4572653a501dfe2b3e6b419f823d45b47"
+    },
+    "lsretail-com.png": {
+      "provider": "https://lsretail.com",
+      "source": "https://www.google.com/s2/favicons?domain=lsretail.com&sz=128",
+      "sha256": "2da76b48089511fc4c763becf5392e620b0144a8342e3a93988f6d1a740273ca"
+    },
+    "acceo-com.png": {
+      "provider": "https://acceo.com",
+      "source": "https://www.acceo.com/wp-content/uploads/2025/05/favison-acceo-300x300.png",
+      "sha256": "176b174bc33183d9dd4f5d933f3ea9bd24a3d01c4026b458c3bc3a0002cbc4c3"
+    },
+    "logivision-com.png": {
+      "provider": "https://logivision.com",
+      "source": "https://www.google.com/s2/favicons?domain=logivision.com&sz=128",
+      "sha256": "83cda7c770c1d658ffb483875ab52c79749b03a2550ad5eb86e95c345aa5746d"
+    },
+    "payfacto-com.png": {
+      "provider": "https://payfacto.com",
+      "source": "https://www.google.com/s2/favicons?domain=payfacto.com&sz=128",
+      "sha256": "555388038150cd4e1fc33ca647325b51849c33f51552e5ee77460c2261d013e3"
+    },
+    "clusterpos-com.png": {
+      "provider": "https://clusterpos.com",
+      "source": "https://www.google.com/s2/favicons?domain=clusterpos.com&sz=128",
+      "sha256": "5e1453277a89100c3efe9e659ac9c078a70874e10e14ed7f0d4a9412e4a8a012"
+    },
+    "alicepos-com.png": {
+      "provider": "https://alicepos.com",
+      "source": "https://www.google.com/s2/favicons?domain=alicepos.com&sz=128",
+      "sha256": "53068b5a217fd855f639a0af24c7df4cffe16e1abc3f8c108c6ba668f5e21927"
+    },
+    "tcpos-com.png": {
+      "provider": "https://tcpos.com",
+      "source": "https://www.google.com/s2/favicons?domain=tcpos.com&sz=128",
+      "sha256": "d08239545fd8c57db8549c524ec1fc36b2640ce0f392908b4ec8991bbdc4dbbf"
+    },
+    "retailpro-com.png": {
+      "provider": "https://retailpro.com",
+      "source": "https://www.google.com/s2/favicons?domain=retailpro.com&sz=128",
+      "sha256": "7218a223669e4b30a4bac446212d039e31c205aecdcf1302ac36329e556b0fba"
+    },
+    "erply-com.webp": {
+      "provider": "https://erply.com",
+      "source": "https://cdn.erply.com/images/533252/erplyIcon-1.webp",
+      "sha256": "47d038d4ef35d14ec761ce2b3b769477add7ccf7cee89c8b6c75d295091aa59c"
+    },
+    "hikeup-com.png": {
+      "provider": "https://hikeup.com",
+      "source": "https://www.google.com/s2/favicons?domain=hikeup.com&sz=128",
+      "sha256": "c400480b695d847999cee62129545a2ef0500401ee6108a57e24fc334b09970c"
+    },
+    "koronapos-com.png": {
+      "provider": "https://koronapos.com",
+      "source": "https://www.google.com/s2/favicons?domain=koronapos.com&sz=128",
+      "sha256": "2f206369a6c28c688e563594dc01fa7b9949444d2d98d5e81af77566e3081875"
+    },
+    "squirrelsystems-com.png": {
+      "provider": "https://squirrelsystems.com",
+      "source": "https://www.google.com/s2/favicons?domain=squirrelsystems.com&sz=128",
+      "sha256": "f70eb19558ce3d6550e9a7bb936eccc87e24bffc04d12c6b247ab3dac146fb9b"
+    },
+    "silverwarepos-com.png": {
+      "provider": "https://silverwarepos.com",
+      "source": "https://www.google.com/s2/favicons?domain=silverwarepos.com&sz=128",
+      "sha256": "ec67b9c20ac04905beddd3c047d17ebdee1e663a2771d9cd5172ae4043d38650"
+    },
+    "ecwid-com.png": {
+      "provider": "https://ecwid.com",
+      "source": "https://www.google.com/s2/favicons?domain=ecwid.com&sz=128",
+      "sha256": "34d0043329ebd6303e0eb42c14ea87343fdc447ce4dc4b60f1d52f946f121d5d"
+    },
+    "opencart-com.png": {
+      "provider": "https://opencart.com",
+      "source": "https://www.opencart.com/application/view/image/icon/opencart-logo.png",
+      "sha256": "43df7e67e23dec2fbdccb202d7abdb7963a6a1b03fccfb2e39db1905a45c966c"
+    },
+    "shopware-com.png": {
+      "provider": "https://shopware.com",
+      "source": "https://www.google.com/s2/favicons?domain=shopware.com&sz=128",
+      "sha256": "24c245967cd0c292b3be7345206f464423e43ad4cd36edd2dfa0863919379a2c"
+    },
+    "commercetools-com.png": {
+      "provider": "https://commercetools.com",
+      "source": "https://www.google.com/s2/favicons?domain=commercetools.com&sz=128",
+      "sha256": "5ccb0e6b7efbf50803c19a649cc04fe7f11912433b1c91d395aaf3e0f33d3f96"
+    },
+    "elasticpath-com.png": {
+      "provider": "https://elasticpath.com",
+      "source": "https://www.google.com/s2/favicons?domain=elasticpath.com&sz=128",
+      "sha256": "a0623c5c6bfd2b47c7509005ebdaae190bed7af5b0cc1e5534182ee694815418"
+    },
+    "vtex-com.png": {
+      "provider": "https://vtex.com",
+      "source": "https://www.google.com/s2/favicons?domain=vtex.com&sz=128",
+      "sha256": "ed9f322ca981ac3ff24716bfe47ea049ba19954d5d3d65a47e3f97f0549023d7"
+    },
+    "kibocommerce-com.jpg": {
+      "provider": "https://kibocommerce.com",
+      "source": "https://www.google.com/s2/favicons?domain=kibocommerce.com&sz=128",
+      "sha256": "838746aad8912103c67fdd3ac35c1bb9296545790be373027f7e7d0885d22a6b"
+    },
+    "spryker-com.svg": {
+      "provider": "https://spryker.com",
+      "source": "https://spryker.com/hubfs/spryker-favicon-100x100.svg",
+      "sha256": "ff5375b5aa182f308806e00348b8f7281c2e8a3e5f6fbd00313965f8a1ee6657"
+    },
+    "bigcartel-com.png": {
+      "provider": "https://bigcartel.com",
+      "source": "https://www.google.com/s2/favicons?domain=bigcartel.com&sz=128",
+      "sha256": "a2dfae04452750b2974dc84808b23d6e86608fd1a0533940085048c7b50491f3"
+    },
+    "volusion-com.png": {
+      "provider": "https://volusion.com",
+      "source": "https://www.google.com/s2/favicons?domain=volusion.com&sz=128",
+      "sha256": "360fc3ba16661a0a8c09b76df875cbb59b9971131db9ff3d70c1259b63c75f39"
+    },
+    "shift4shop-com.png": {
+      "provider": "https://shift4shop.com",
+      "source": "https://www.google.com/s2/favicons?domain=shift4shop.com&sz=128",
+      "sha256": "0d7ed655d01bdd70e77bb51c5e6851551cb2fe2f1b8bc286fbd9d70135c5d2f8"
+    },
+    "duda-co.png": {
+      "provider": "https://duda.co",
+      "source": "https://www.google.com/s2/favicons?domain=duda.co&sz=128",
+      "sha256": "b2d373b7a5cdcfb282acef62800941e900b811a1f1a17483285842917e639389"
+    },
+    "snipcart-com.png": {
+      "provider": "https://snipcart.com",
+      "source": "https://www.google.com/s2/favicons?domain=snipcart.com&sz=128",
+      "sha256": "783a4b463046ce8ebda21e49008fcc55facd9e0ecf57d07bbbba84482d2e50ce"
+    },
+    "foxycart-com.png": {
+      "provider": "https://foxycart.com",
+      "source": "https://www.google.com/s2/favicons?domain=foxycart.com&sz=128",
+      "sha256": "de8996790ebeffde80fec0c53eb08cf193f15ef8aed417a9e841f30dcc53ccbc"
+    },
+    "shopwired-co-uk.png": {
+      "provider": "https://shopwired.co.uk",
+      "source": "https://www.google.com/s2/favicons?domain=shopwired.co.uk&sz=128",
+      "sha256": "d0a8ae2255510483a3d6109321a8bfc486398d0658a82ac9b55f17e197cfab0d"
+    },
+    "nopcommerce-com.png": {
+      "provider": "https://nopcommerce.com",
+      "source": "https://www.google.com/s2/favicons?domain=nopcommerce.com&sz=128",
+      "sha256": "80deefec92daa640f78c77b2d5abbed4e92febf036029d23388adcf746ac5df7"
+    },
+    "drupalcommerce-org.png": {
+      "provider": "https://drupalcommerce.org",
+      "source": "https://www.google.com/s2/favicons?domain=drupalcommerce.org&sz=128",
+      "sha256": "8c4ee14cd8ef1e801fc368a260298a43c581e3ba957f3f0fd1cb9dd0063ae6a7"
+    },
+    "craftcms-com.png": {
+      "provider": "https://craftcms.com",
+      "source": "https://www.google.com/s2/favicons?domain=craftcms.com&sz=128",
+      "sha256": "8c27efbeef2ad5739854be216297bc0d71e7955550195885948df886a5a9dee4"
+    },
+    "cs-cart-com.png": {
+      "provider": "https://cs-cart.com",
+      "source": "https://www.google.com/s2/favicons?domain=cs-cart.com&sz=128",
+      "sha256": "8823ad661f4faf8637cf9bbda231fdbaf23d5c92935bfcdaf6b6a9588ac3f872"
+    },
+    "x-cart-com.png": {
+      "provider": "https://x-cart.com",
+      "source": "https://www.google.com/s2/favicons?domain=x-cart.com&sz=128",
+      "sha256": "78ed9f3a0384ebe1e9795ca3643174f14937216c79c5d67d50c9ce794c926c76"
+    },
+    "zen-cart-com.png": {
+      "provider": "https://zen-cart.com",
+      "source": "https://www.google.com/s2/favicons?domain=zen-cart.com&sz=128",
+      "sha256": "188c52b1db3a13cd18d273005910f62aad2811700f0a0a0aee925028001eb6a4"
+    },
+    "oscommerce-com.png": {
+      "provider": "https://oscommerce.com",
+      "source": "https://www.google.com/s2/favicons?domain=oscommerce.com&sz=128",
+      "sha256": "65d96a59d13c5962fa6ed120f6efe8374ec8d8a6601f6ae2259567780648df8c"
+    },
+    "spreecommerce-org.png": {
+      "provider": "https://spreecommerce.org",
+      "source": "https://www.google.com/s2/favicons?domain=spreecommerce.org&sz=128",
+      "sha256": "c0489b65f8569ff72fca80381b2f916d434075c608a4b6dca9d3081e76849651"
+    },
+    "solidus-io.svg": {
+      "provider": "https://solidus.io",
+      "source": "https://solidus.io/favicon.svg",
+      "sha256": "c454a560ca8c3a1f1cca0e5bf3dffb65d95b80d809763cf77878cf9265a083d4"
+    },
+    "saleor-io.png": {
+      "provider": "https://saleor.io",
+      "source": "https://www.google.com/s2/favicons?domain=saleor.io&sz=128",
+      "sha256": "0a105279944c9bc58c3cd3238da6def0c365c0a964fd2300c9c475c509f54d9f"
+    },
+    "medusajs-com.png": {
+      "provider": "https://medusajs.com",
+      "source": "https://www.google.com/s2/favicons?domain=medusajs.com&sz=128",
+      "sha256": "a30dcad525df72e9a65c72f23977f50fcc7e3eb90a78febefe0a764a114ccdb4"
+    },
+    "virtocommerce-com.png": {
+      "provider": "https://virtocommerce.com",
+      "source": "https://www.google.com/s2/favicons?domain=virtocommerce.com&sz=128",
+      "sha256": "79bf36b4668c5d6018f079ab47a7ef4bb03714789d9516f93141519e08b7115e"
+    },
+    "oroinc-com.png": {
+      "provider": "https://oroinc.com",
+      "source": "https://www.google.com/s2/favicons?domain=oroinc.com&sz=128",
+      "sha256": "6717f00114fadf7da93f6033ad2ea09202e2c7ec0dd5dd37da9f4fd78ad5ee45"
+    },
+    "sana-commerce-com.png": {
+      "provider": "https://sana-commerce.com",
+      "source": "https://www.google.com/s2/favicons?domain=sana-commerce.com&sz=128",
+      "sha256": "0a7c9623d8ac28df0e97ce146cf396652c5faffe3f900b98bc86b94a82aa7bb7"
+    },
+    "shoplazza-com.png": {
+      "provider": "https://shoplazza.com",
+      "source": "https://www.google.com/s2/favicons?domain=shoplazza.com&sz=128",
+      "sha256": "29b6704b4f91a45d25c86d474d207d5c9da9a6df5d8d2a9f7d8bb3280f4658a5"
+    },
+    "shopline-com.png": {
+      "provider": "https://shopline.com",
+      "source": "https://www.google.com/s2/favicons?domain=shopline.com&sz=128",
+      "sha256": "52210aa768f3804922067d755acbd05b7d06161ca6f128d786647068656e34c4"
+    },
+    "faire-com.png": {
+      "provider": "https://faire.com",
+      "source": "https://www.google.com/s2/favicons?domain=faire.com&sz=128",
+      "sha256": "86dda4b110746ecefab61caef7f2aa0ad2a8b275c89981c2a6287f93dfba19de"
+    },
+    "bestbuy-ca.png": {
+      "provider": "https://bestbuy.ca",
+      "source": "https://www.google.com/s2/favicons?domain=bestbuy.ca&sz=128",
+      "sha256": "0e145a04f3e9ffa3b353c8eaf811e523494c4b6784146d32921eacc41c33d9a3"
+    },
+    "waveapps-com.png": {
+      "provider": "https://waveapps.com",
+      "source": "https://www.google.com/s2/favicons?domain=waveapps.com&sz=128",
+      "sha256": "118099b96f29f04410716424b27b2cca2b7d3ac027efc8470fd9d73fe58267ba"
+    },
+    "kashoo-com.png": {
+      "provider": "https://kashoo.com",
+      "source": "https://www.google.com/s2/favicons?domain=kashoo.com&sz=128",
+      "sha256": "bf824887220a7415cf79c5a880106cdf961d6e10193ab578c55e6b951a69bc46"
+    },
+    "acomba-com.svg": {
+      "provider": "https://acomba.com",
+      "source": "https://www.acomba.com/wp-content/uploads-svn/logo_acomba.svg",
+      "sha256": "598ca47f944b73197590ee2ee32bc8d0e684c8825b6e847371bb1dd5d6a9f0a7"
+    },
+    "avantage-ca.png": {
+      "provider": "https://avantage.ca",
+      "source": "https://www.google.com/s2/favicons?domain=avantage.ca&sz=128",
+      "sha256": "bd34bd0e7f33167263244651d190b91b1de5070f9a00f206265780c785b48a99"
+    },
+    "dynacom-com.svg": {
+      "provider": "https://dynacom.com",
+      "source": "https://dynacom.com/",
+      "note": "Official inline SVG favicon.",
+      "sha256": "5628ad2ce6e8c395184adf8ada2f6707e1f755ab6b8e719d91c3d8c7b2ebb5bb"
+    },
+    "softrak-com.png": {
+      "provider": "https://softrak.com",
+      "source": "https://www.google.com/s2/favicons?domain=softrak.com&sz=128",
+      "sha256": "1ba8a1bf1a9b8236059613fffa57384b7fe3c2535af0868954e4138d7a7b879a"
+    },
+    "accountedge-com.png": {
+      "provider": "https://accountedge.com",
+      "source": "https://www.google.com/s2/favicons?domain=accountedge.com&sz=128",
+      "sha256": "3045850772b0b7fcf74daa3ee3bc4d1e343615da9d6fcc6f5b078bc27380e767"
+    },
+    "accountek-com.png": {
+      "provider": "https://accountek.com",
+      "source": "https://www.google.com/s2/favicons?domain=accountek.com&sz=128",
+      "sha256": "cf9326e5d9cf837c0a07364e1cb66c34d3a6c64e8689718ffb3f874083af5de4"
+    },
+    "newviews-com.png": {
+      "provider": "https://newviews.com",
+      "source": "https://www.google.com/s2/favicons?domain=newviews.com&sz=128",
+      "sha256": "44467c6305daf52d35af6827ad0b560ffb52399636198314da1d85b8965cc667"
+    },
+    "cognito-co-nz.png": {
+      "provider": "https://cognito.co.nz",
+      "source": "https://www.google.com/s2/favicons?domain=cognito.co.nz&sz=128",
+      "sha256": "c73fcb1bd122ec5c97a0e496bfa4a39932ac310a5fa6ab97041f211187a1c8b4"
+    },
+    "certinia-com.png": {
+      "provider": "https://certinia.com",
+      "source": "https://www.google.com/s2/favicons?domain=certinia.com&sz=128",
+      "sha256": "7e12441914b2179f12b12acde106bb84e61a501526e662b14d1c0f113faa4a89"
+    },
+    "unit4-com.png": {
+      "provider": "https://unit4.com",
+      "source": "https://www.google.com/s2/favicons?domain=unit4.com&sz=128",
+      "sha256": "7b1be8cff781d4d9e5325d0c374911d703a77a78f78580b8a6061b7077ae1252"
+    },
+    "accountingseed-com.png": {
+      "provider": "https://accountingseed.com",
+      "source": "https://www.google.com/s2/favicons?domain=accountingseed.com&sz=128",
+      "sha256": "f746f3718213e89763ac026629daf92612144698d1d62fba5cd9c7890dcebd8d"
+    },
+    "softledger-com.png": {
+      "provider": "https://softledger.com",
+      "source": "https://www.google.com/s2/favicons?domain=softledger.com&sz=128",
+      "sha256": "1c8233b90be603ca36a6f479962ff54f02aecaae28b74f281a861a234f830da2"
+    },
+    "multiviewcorp-com.png": {
+      "provider": "https://multiviewcorp.com",
+      "source": "https://www.google.com/s2/favicons?domain=multiviewcorp.com&sz=128",
+      "sha256": "f8a68368a87d4e8df83a0d9ac80eabcbbc0fb1c6805d6031ff534eca89cae243"
+    },
+    "blackbaud-com.png": {
+      "provider": "https://blackbaud.com",
+      "source": "https://www.google.com/s2/favicons?domain=blackbaud.com&sz=128",
+      "sha256": "ee248b17bd15f7dca1187d82e9b0c9aea3e29018fffdb57b777e60da1d0493eb"
+    },
+    "mip-com.png": {
+      "provider": "https://mip.com",
+      "source": "https://www.google.com/s2/favicons?domain=mip.com&sz=128",
+      "sha256": "b7abad6628cf855045bce9648d0bf619bdf803d5bfe856a8d1cb594e575e4535"
+    },
+    "aplos-com.png": {
+      "provider": "https://aplos.com",
+      "source": "https://www.google.com/s2/favicons?domain=aplos.com&sz=128",
+      "sha256": "09d9765ffd5a30692f3d382e9223727b48078a883e92f0b2077b611c11351cac"
+    },
+    "powerchurch-com.png": {
+      "provider": "https://powerchurch.com",
+      "source": "https://www.google.com/s2/favicons?domain=powerchurch.com&sz=128",
+      "sha256": "173e9b69781d973ab7c68aa2bab718ed9a0b979f34ab823012c063ec65a94016"
+    },
+    "churchwindows-com.png": {
+      "provider": "https://churchwindows.com",
+      "source": "https://eadn-wc02-18269581.nxedge.io/wp-content/uploads/2021/02/apple-touch-icon.png",
+      "sha256": "41da5356bfd04bd1d0535dd6928279bc57d321235446c535bdfbaed434b803da"
+    },
+    "cougarmtn-com.png": {
+      "provider": "https://cougarmtn.com",
+      "source": "https://www.google.com/s2/favicons?domain=cougarmtn.com&sz=128",
+      "sha256": "912154ca8b9f9caf75c963a468313234201082e293adfdf4185451fe700b4191"
+    },
+    "nchsoftware-com.png": {
+      "provider": "https://nchsoftware.com",
+      "source": "https://www.google.com/s2/favicons?domain=nchsoftware.com&sz=128",
+      "sha256": "6a21df63650da413e34ea07b32a036a53d3e0233b496052c42a07249e0a865b4"
+    },
+    "pclawtimematters-com.png": {
+      "provider": "https://pclawtimematters.com",
+      "source": "https://www.google.com/s2/favicons?domain=pclawtimematters.com&sz=128",
+      "sha256": "9e2d3c5a5723c838065f8f732a81dc90c84c5ecbe525523c8cf480280f168cc9"
+    },
+    "cosmolex-com.png": {
+      "provider": "https://cosmolex.com",
+      "source": "https://www.cosmolex.com/favicon-dark.ico",
+      "note": "Official favicon converted from ICO to PNG.",
+      "sha256": "160661fb79b2e7fd148aac24f58595cadba2f75934c3d1ec0d57bebcd8bddedb"
+    },
+    "soluno-legal.png": {
+      "provider": "https://soluno.legal",
+      "source": "https://www.google.com/s2/favicons?domain=soluno.legal&sz=128",
+      "sha256": "8307e4ed7e20c5fbf5e9153686b76a748be3d4f6e6ea19ab1d58a7a348fcd8c7"
+    },
+    "ulawpractice-com.png": {
+      "provider": "https://ulawpractice.com",
+      "source": "https://www.google.com/s2/favicons?domain=ulawpractice.com&sz=128",
+      "sha256": "1a93ec0fe49690f1b096d5c87689360d23ec138c08f1f7ccc9dd371583db041b"
+    },
+    "manager-io.svg": {
+      "provider": "https://manager.io",
+      "source": "https://manager.io/",
+      "note": "Official inline logo SVG.",
+      "sha256": "0e4d55ad430bde118e92743da2dd55cb99a60db54d6546b3927c56a43aafed9e"
+    },
+    "gnucash-org.png": {
+      "provider": "https://gnucash.org",
+      "source": "https://www.google.com/s2/favicons?domain=gnucash.org&sz=128",
+      "sha256": "d2cd1792fe29773a30c1f843069c4919227ebf84740d8dca331effa6cf2a36c9"
+    },
+    "akaunting-com.png": {
+      "provider": "https://akaunting.com",
+      "source": "https://www.google.com/s2/favicons?domain=akaunting.com&sz=128",
+      "sha256": "25a40aeec261c8f6c965bb1d0f86f4656c11be4d34e77632f5af0b9866a3abce"
+    },
+    "frontaccounting-com.png": {
+      "provider": "https://frontaccounting.com",
+      "source": "https://www.google.com/s2/favicons?domain=frontaccounting.com&sz=128",
+      "sha256": "6c758472a4f7c00d98f3a0140fdce6dc7c885fb923bb6bc7dba3df56219aea22"
+    },
+    "ledgersmb-org.jpg": {
+      "provider": "https://ledgersmb.org",
+      "source": "https://www.google.com/s2/favicons?domain=ledgersmb.org&sz=128",
+      "sha256": "74bbcce022ed73d772741de3c662961069e53259b3e6f0b5dcb29e8b6252297b"
+    },
+    "sql-ledger-com.png": {
+      "provider": "https://sql-ledger.com",
+      "source": "https://www.google.com/s2/favicons?domain=sql-ledger.com&sz=128",
+      "sha256": "2e669104a2699caa6542ba77f76d9acbee07d26821b781cdcc06a520d7d04141"
+    },
+    "acumatica-com.png": {
+      "provider": "https://acumatica.com",
+      "source": "https://www.google.com/s2/favicons?domain=acumatica.com&sz=128",
+      "sha256": "cd9d6ad585544896c1e4cb1bf07985404fd0ebabe5f852deb322de0c6d7d064a"
+    },
+    "odoo-com.png": {
+      "provider": "https://odoo.com",
+      "source": "https://www.google.com/s2/favicons?domain=odoo.com&sz=128",
+      "sha256": "2013b0de1420acdd69574152378ece6a45fed4498423c44aaa86f79d1ab90283"
+    },
+    "erpnext-com.png": {
+      "provider": "https://erpnext.com",
+      "source": "https://www.google.com/s2/favicons?domain=erpnext.com&sz=128",
+      "sha256": "41de101387ea1dbdd979513b473b920b52fd67e83b6f3848462cf9aa5ed705fb"
+    },
+    "syspro-com.png": {
+      "provider": "https://syspro.com",
+      "source": "https://www.google.com/s2/favicons?domain=syspro.com&sz=128",
+      "sha256": "88d67652e9319ae11b9313df082a710da73cba15c8c7db840fd589dd147136a5"
+    },
+    "epicor-com.png": {
+      "provider": "https://epicor.com",
+      "source": "https://www.google.com/s2/favicons?domain=epicor.com&sz=128",
+      "sha256": "4feb0f1efdbeda201d3a0f75e1cc22d5630ac1233b68d7d4a3d474e0dae94634"
+    },
+    "infor-com.png": {
+      "provider": "https://infor.com",
+      "source": "https://www.google.com/s2/favicons?domain=infor.com&sz=128",
+      "sha256": "1ea42ba772773ebc41165222430ac37eedc5d5459794029b113c1827ff2db67b"
+    },
+    "ifs-com.png": {
+      "provider": "https://ifs.com",
+      "source": "https://www.google.com/s2/favicons?domain=ifs.com&sz=128",
+      "sha256": "2a200dc5b36255ee10596f742873804efc1ca618273557f7ef0f64a425a15bfb"
+    },
+    "qad-com.png": {
+      "provider": "https://qad.com",
+      "source": "https://www.google.com/s2/favicons?domain=qad.com&sz=128",
+      "sha256": "72735e3e593c8902f2e3c33e6a10f1b7362e54ee3d8734a3e54619323cf42546"
+    },
+    "aptean-com.png": {
+      "provider": "https://aptean.com",
+      "source": "https://www.google.com/s2/favicons?domain=aptean.com&sz=128",
+      "sha256": "288024ea69d10d39a6611486b98e23803e3ea10fad3d52c055084316305e6c4e"
+    },
+    "ecisolutions-com.png": {
+      "provider": "https://ecisolutions.com",
+      "source": "https://www.google.com/s2/favicons?domain=ecisolutions.com&sz=128",
+      "sha256": "45b62d7f3222e9f35df2dbb9ec1525fe4e53630dfe0031cdfcffa671ee34d6fe"
+    },
+    "geniuserp-com.png": {
+      "provider": "https://geniuserp.com",
+      "source": "https://www.google.com/s2/favicons?domain=geniuserp.com&sz=128",
+      "sha256": "fae155e89a11a2007930b08ba809dc177390efc5630b2a6aec95f8da358f0652"
+    },
+    "globalshopsolutions-com.png": {
+      "provider": "https://globalshopsolutions.com",
+      "source": "https://www.google.com/s2/favicons?domain=globalshopsolutions.com&sz=128",
+      "sha256": "1da4d0c4193912397b52c197028f87ee59b7f593e7d144af69e320d51f630aa3"
+    },
+    "3ds-com.png": {
+      "provider": "https://3ds.com",
+      "source": "https://www.google.com/s2/favicons?domain=3ds.com&sz=128",
+      "sha256": "89050a767b8c4614de1603aa3faf3b7f031430d971c6727c9f32b30d6a45626d"
+    },
+    "plex-com.jpg": {
+      "provider": "https://plex.com",
+      "source": "https://www.google.com/s2/favicons?domain=plex.com&sz=128",
+      "sha256": "323b32e31b0e18c5a1f6a09bb95e1a4cc01d97212f60c2d7b361d3b219117739"
+    },
+    "mrpeasy-com.png": {
+      "provider": "https://mrpeasy.com",
+      "source": "https://www.google.com/s2/favicons?domain=mrpeasy.com&sz=128",
+      "sha256": "1688ee64c71874f5d9956211980da4e79037c9f5c4f033c7e2959aefc589974a"
+    },
+    "katanamrp-com.png": {
+      "provider": "https://katanamrp.com",
+      "source": "https://www.google.com/s2/favicons?domain=katanamrp.com&sz=128",
+      "sha256": "b9a45543e396ab07e80cf8c917a081704c5c6737c461b3b685e4c5e57e1e3f03"
+    },
+    "fishbowlinventory-com.png": {
+      "provider": "https://fishbowlinventory.com",
+      "source": "https://www.google.com/s2/favicons?domain=fishbowlinventory.com&sz=128",
+      "sha256": "a6a9309fa62178321f37f7d6101cd8702b707d660b82693d344e0994be104532"
+    },
+    "cin7-com.jpg": {
+      "provider": "https://cin7.com",
+      "source": "https://www.google.com/s2/favicons?domain=cin7.com&sz=128",
+      "sha256": "cf6456d9c61f37f11b3154215d1cb416523d3b5465cf3da563d3a53ea9edd6cd"
+    },
+    "unleashedsoftware-com.png": {
+      "provider": "https://unleashedsoftware.com",
+      "source": "https://www.google.com/s2/favicons?domain=unleashedsoftware.com&sz=128",
+      "sha256": "6ee91a968dde39624ff70acbfb883fdf9a4682a60d82a9d2d264fb4d69416110"
+    },
+    "inflowinventory-com.png": {
+      "provider": "https://inflowinventory.com",
+      "source": "https://www.google.com/s2/favicons?domain=inflowinventory.com&sz=128",
+      "sha256": "ca08d949a22204f411dd04cd367a307a96768a5d41b722271784a853d95dfe27"
+    },
+    "finaleinventory-com.png": {
+      "provider": "https://finaleinventory.com",
+      "source": "https://www.google.com/s2/favicons?domain=finaleinventory.com&sz=128",
+      "sha256": "9c06a7b8b6211aae91eb11bb540ce7a182b4f73925eb1d7d06788e6a7a2e25b0"
+    },
+    "acctivate-com.png": {
+      "provider": "https://acctivate.com",
+      "source": "https://www.google.com/s2/favicons?domain=acctivate.com&sz=128",
+      "sha256": "f40fb1695c1a95792a2b47aab6b3312e1e4386128b645019f6d6b169668068af"
+    },
+    "sosinventory-com.png": {
+      "provider": "https://sosinventory.com",
+      "source": "https://www.google.com/s2/favicons?domain=sosinventory.com&sz=128",
+      "sha256": "739a7014af0b668ffb92842f98d651fbb2b4390a79dbba0193ba91202a7923db"
+    },
+    "ordertime-com.png": {
+      "provider": "https://ordertime.com",
+      "source": "https://www.ordertime.com/hs-fs/hubfs/raw_assets/public/Ordertime_July2023/images/logo.png?width=150&height=246&name=logo.png",
+      "sha256": "86688229b6fac0d5be4be68b1eeef816eb8f3433c5f8ea8c74cc6f9fe68cacfb"
+    },
+    "ordoro-com.png": {
+      "provider": "https://ordoro.com",
+      "source": "https://www.google.com/s2/favicons?domain=ordoro.com&sz=128",
+      "sha256": "6ee39d0d645dec3a6952e7a4a6c0f2c0f5b75f4f741dcbdf2f398458b37f1e4a"
+    },
+    "linnworks-com.png": {
+      "provider": "https://linnworks.com",
+      "source": "https://www.google.com/s2/favicons?domain=linnworks.com&sz=128",
+      "sha256": "7ccf56b537819196b2f9c7f69c54801a1e9a81663b1751597660a77b888574bc"
+    },
+    "extensiv-com.png": {
+      "provider": "https://extensiv.com",
+      "source": "https://www.google.com/s2/favicons?domain=extensiv.com&sz=128",
+      "sha256": "0bb225930c45c0b154f7b716189d9f2b1e81aa8382f895265af1e71d38557740"
+    },
+    "logiwa-com.png": {
+      "provider": "https://logiwa.com",
+      "source": "https://www.google.com/s2/favicons?domain=logiwa.com&sz=128",
+      "sha256": "4d40ab91c53b65d4c845174806c95fb0d46b7b8ebbdce358dab187c63bc40ea8"
+    },
+    "shiphero-com.png": {
+      "provider": "https://shiphero.com",
+      "source": "https://www.google.com/s2/favicons?domain=shiphero.com&sz=128",
+      "sha256": "b098bb1ac4b19fb07bfdddfac2726695f6217bc8727ee6b3e2716a6ea537e6f9"
+    },
+    "tecsys-com.png": {
+      "provider": "https://tecsys.com",
+      "source": "https://www.google.com/s2/favicons?domain=tecsys.com&sz=128",
+      "sha256": "f5d1cf116c7d9a44c5d8853b33cd009516a963fe3602ba1ca7f3e97c8b462434"
+    },
+    "blueyonder-com.png": {
+      "provider": "https://blueyonder.com",
+      "source": "https://www.google.com/s2/favicons?domain=blueyonder.com&sz=128",
+      "sha256": "c3c998c8cd0e026557c90897c5614446701f5fd757046e11fd77a252fe7ee36c"
+    },
+    "manh-com.png": {
+      "provider": "https://manh.com",
+      "source": "https://www.google.com/s2/favicons?domain=manh.com&sz=128",
+      "sha256": "f0771bb5da5f43d5b9f145f2d4e0333a6a9c14ac638d4a07f983ffaded034d0f"
+    },
+    "peoplevox-com.png": {
+      "provider": "https://peoplevox.com",
+      "source": "https://www.google.com/s2/favicons?domain=peoplevox.com&sz=128",
+      "sha256": "ab7d915cba863f6c25295904dc23d254670df84aea47cb2594fee616679df98b"
+    },
+    "bluelinkerp-com.png": {
+      "provider": "https://bluelinkerp.com",
+      "source": "https://www.google.com/s2/favicons?domain=bluelinkerp.com&sz=128",
+      "sha256": "396c449c5d18642e6768b4a3b00b436f5f41c477f63990e2657145762368db9e"
+    },
+    "spiresystems-com.png": {
+      "provider": "https://spiresystems.com",
+      "source": "https://www.google.com/s2/favicons?domain=spiresystems.com&sz=128",
+      "sha256": "4b0b371ed9f78bf679ffa8c0d4b3ba99c72be149da3a7a7c222efd22bdd4dc0f"
+    },
+    "paragon-erp-com.png": {
+      "provider": "https://paragon-erp.com",
+      "source": "https://www.google.com/s2/favicons?domain=paragon-erp.com&sz=128",
+      "sha256": "0f836c7ede0c7b84f119213d20b205673e18cd5f6398275f0d3cc0f1f3e10dba"
+    },
+    "maestro-ca.png": {
+      "provider": "https://maestro.ca",
+      "source": "https://www.google.com/s2/favicons?domain=maestro.ca&sz=128",
+      "sha256": "00863a4dccd077b9e6ac529719732f174d596ad6c40c44910905e814499fdd72"
+    },
+    "mx-com.png": {
+      "provider": "https://mx.com",
+      "source": "https://www.google.com/s2/favicons?domain=mx.com&sz=128",
+      "sha256": "2567cbfe8f5770be73f4a6f6377b8732b585778b0fa2dede8aba0c3e8747494f"
+    },
+    "yodlee-com.png": {
+      "provider": "https://yodlee.com",
+      "source": "https://www.google.com/s2/favicons?domain=yodlee.com&sz=128",
+      "sha256": "947390fa66965bfa9d1b95aefe123f5a77dfd320271c631c640e3aa011fce150"
+    },
+    "inveriteinsights-com.png": {
+      "provider": "https://inveriteinsights.com",
+      "source": "https://www.google.com/s2/favicons?domain=inveriteinsights.com&sz=128",
+      "sha256": "a3c62768419ec6890b32b59d49d7b76182c842a13e9a2fea02ff792b6bbee72f"
+    },
+    "saltedge-com.png": {
+      "provider": "https://saltedge.com",
+      "source": "https://www.google.com/s2/favicons?domain=saltedge.com&sz=128",
+      "sha256": "51c55a8e77ec696d1d10d03c0cc153e5ba45c7fdbb7ab7c5112169c357191854"
+    },
+    "akoya-com.png": {
+      "provider": "https://akoya.com",
+      "source": "https://www.google.com/s2/favicons?domain=akoya.com&sz=128",
+      "sha256": "a35a2628db506aed6807e25b4cd3f08fc46588de1d4ed08ab1f564c7661d03df"
+    },
+    "teller-io.svg": {
+      "provider": "https://teller.io",
+      "source": "https://teller.io/",
+      "note": "Official inline logo SVG; dark monochrome wordmark for a white card.",
+      "sha256": "a370c420c8bea78c99f8b06af9497672175731ff0e8924c4690269bf3a225d8b"
+    },
+    "trustly-com.png": {
+      "provider": "https://trustly.com",
+      "source": "https://www.google.com/s2/favicons?domain=trustly.com&sz=128",
+      "sha256": "f6eb3f0b159eb7392c85523429ef02145357d2af028ca6402d42e8ce1ca49266"
+    },
+    "zumrails-com.jpg": {
+      "provider": "https://zumrails.com",
+      "source": "https://www.google.com/s2/favicons?domain=zumrails.com&sz=128",
+      "sha256": "77c7a58296ae691254becc06f1b46ccfb82f4c7eefe08d732978685ccc7d7243"
+    },
+    "mortgageautomator-com.png": {
+      "provider": "https://mortgageautomator.com",
+      "source": "https://www.google.com/s2/favicons?domain=mortgageautomator.com&sz=128",
+      "sha256": "0ab6b7987afb964b941c61e87602e5982600852e05e43fc02a60f31960eaba96"
+    },
+    "themortgageoffice-com.png": {
+      "provider": "https://themortgageoffice.com",
+      "source": "https://www.google.com/s2/favicons?domain=themortgageoffice.com&sz=128",
+      "sha256": "69209905b2dd95d856310e1f28fa49033c4a119c875685471ddab96fcd6f01d9"
+    },
+    "turnkey-lender-com.png": {
+      "provider": "https://turnkey-lender.com",
+      "source": "https://www.google.com/s2/favicons?domain=turnkey-lender.com&sz=128",
+      "sha256": "e25d4eb1870cd93b1951f3f30796a0ceae3521bf79b9165650cdf7e004f88d82"
+    },
+    "hesfintech-com.jpg": {
+      "provider": "https://hesfintech.com",
+      "source": "https://www.google.com/s2/favicons?domain=hesfintech.com&sz=128",
+      "sha256": "9ea3f302085e9ab3d9b6c19ac028a6a04440bef2a7a1de8aa2fc892dfaee2c8e"
+    },
+    "icemortgagetechnology-com.png": {
+      "provider": "https://icemortgagetechnology.com",
+      "source": "https://www.google.com/s2/favicons?domain=icemortgagetechnology.com&sz=128",
+      "sha256": "d8f818a437a37528d00a6b6a71700a2026f2f01d6b190cfda687c4238c7f71d8"
+    },
+    "meridianlink-com.png": {
+      "provider": "https://meridianlink.com",
+      "source": "https://www.google.com/s2/favicons?domain=meridianlink.com&sz=128",
+      "sha256": "a1a97982b798a3bc2ea4ea29cd04443470ffe0f424ca801e7b06dbd8dce21ffc"
+    },
+    "abrigo-com.png": {
+      "provider": "https://abrigo.com",
+      "source": "https://www.google.com/s2/favicons?domain=abrigo.com&sz=128",
+      "sha256": "d3c2956f2e14536b9fefa2837fd36eac3127fa0c1c367dd1e43e4f3891991345"
+    },
+    "lendesk-com.svg": {
+      "provider": "https://lendesk.com",
+      "source": "https://www.lendesk.com/hubfs/lendesk_logo-1.svg",
+      "sha256": "b4a61cef99439a568cf33f8e9fa53b7a6753fedd7397e27c21924e6c6242c8d3"
+    },
+    "filogix-com.png": {
+      "provider": "https://filogix.com",
+      "source": "https://www.google.com/s2/favicons?domain=filogix.com&sz=128",
+      "sha256": "2b7c94fe7d5e2d1424d45453c85a7dd5a30888f7cd54cab27117b8c8ce545961"
+    },
+    "finastra-com.png": {
+      "provider": "https://finastra.com",
+      "source": "https://www.google.com/s2/favicons?domain=finastra.com&sz=128",
+      "sha256": "bc2f0d19958b0705684d08aacac9cc7f2b7c740f5cafe763792f04c589723913"
+    },
+    "loanpro-io.png": {
+      "provider": "https://loanpro.io",
+      "source": "https://www.google.com/s2/favicons?domain=loanpro.io&sz=128",
+      "sha256": "264b9a07802b3acb2182c3c83d0dd2ce1ee9f01c298760d4e288be54565fdf2c"
+    },
+    "nortridge-com.jpg": {
+      "provider": "https://nortridge.com",
+      "source": "https://www.google.com/s2/favicons?domain=nortridge.com&sz=128",
+      "sha256": "2695784d02e69ca01989baa400ed3accc5fe870b977e31bc49b2445bc2a9eb53"
+    },
+    "margill-com.png": {
+      "provider": "https://margill.com",
+      "source": "https://www.google.com/s2/favicons?domain=margill.com&sz=128",
+      "sha256": "54a5f30d5350cc6806289cee10172ea285b0554fb742f134f985e48d73370d9a"
+    },
+    "shawsystems-com.png": {
+      "provider": "https://shawsystems.com",
+      "source": "https://www.shawsystems.com/wp-content/uploads/2024/08/cropped-squareLogo_blue_512x512-1-192x192.png",
+      "sha256": "23f2c80b5824bba0a8a0856a95c3653ef0ecdc1f6f8a862d9a33360e7537f293"
+    },
+    "fisglobal-com.png": {
+      "provider": "https://fisglobal.com",
+      "source": "https://www.google.com/s2/favicons?domain=fisglobal.com&sz=128",
+      "sha256": "1ca912888619e5568675d3f7d0d419fb00e4921f2e572211925cab2711e6c48d"
+    },
+    "mambu-com.png": {
+      "provider": "https://mambu.com",
+      "source": "https://www.google.com/s2/favicons?domain=mambu.com&sz=128",
+      "sha256": "04b244422842ccfb13e3dc227e0841bfe9263f349673e2a556d9c8a56d02e8de"
+    },
+    "thoughtmachine-net.png": {
+      "provider": "https://thoughtmachine.net",
+      "source": "https://www.google.com/s2/favicons?domain=thoughtmachine.net&sz=128",
+      "sha256": "cabb866a177d9810a7f6e3682ac906ed93dc0226df3fb921774fd7159dc936c1"
+    },
+    "provenir-com.png": {
+      "provider": "https://provenir.com",
+      "source": "https://www.google.com/s2/favicons?domain=provenir.com&sz=128",
+      "sha256": "35064566f88f5eaa2e8b5a3b99fa19f15b7d2b170ddc8747c90ec0bc1f6accee"
+    },
+    "taktile-com.png": {
+      "provider": "https://taktile.com",
+      "source": "https://www.google.com/s2/favicons?domain=taktile.com&sz=128",
+      "sha256": "030278fcd9af63bdba8b1c606e7bdcd3d7b86225ec28c9c9d817407b12f97bba"
+    }
+  }
+}

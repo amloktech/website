@@ -1,27 +1,34 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowUpRight, Check, Copy, Download, Search } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Check, ChevronDown, Copy, Download, Search } from 'lucide-react';
 import { PageActions } from './page-actions';
-import { integrationLogoRows } from './home-connect-logos';
+import integrationCatalogue from '@/content/integrations.json';
 
-const categories: Record<string, string> = {
-  Shopify:'Commerce',Stripe:'Payments',PayPal:'Payments',Square:'Payments',Amazon:'Commerce',Walmart:'Commerce',eBay:'Commerce',Etsy:'Commerce','Adobe Commerce':'Commerce',WooCommerce:'Commerce',BigCommerce:'Commerce',Wix:'Commerce',
-  'Microsoft Dynamics 365':'Enterprise',Salesforce:'Enterprise',QuickBooks:'Accounting',Xero:'Accounting',Oracle:'Enterprise',SAP:'Enterprise',Workday:'Enterprise',Sage:'Accounting',Zoho:'Enterprise',FreshBooks:'Accounting',Webflow:'Commerce',Squarespace:'Commerce',
-  'Mastercard Open Finance':'Financial data',Plaid:'Financial data',Flinks:'Financial data',FICO:'Financial data',Experian:'Financial data',nCino:'Lending systems',Lightspeed:'Payments',Clover:'Payments',Temenos:'Lending systems',Adyen:'Payments',PrestaShop:'Commerce',GoDaddy:'Commerce',
-};
+const integrationCategories = [...new Set(integrationCatalogue.map(item => item.category))];
+const integrationPageSize = 12;
+const integrationProviders = [...integrationCatalogue].sort((a,b) =>
+  Number(b.status==='Active beta')-Number(a.status==='Active beta') || a.name.localeCompare(b.name)
+);
 
 export function IntegrationDirectory() {
   const [query,setQuery]=useState('');
   const [category,setCategory]=useState('All');
-  const providers=integrationLogoRows.flat();
-  const filtered=providers.filter(item=>(category==='All'||categories[item.name]===category)&&`${item.name} ${categories[item.name]}`.toLowerCase().includes(query.toLowerCase().trim()));
+  const [status,setStatus]=useState('All');
+  const [limit,setLimit]=useState(integrationPageSize);
+  const filtered=integrationProviders.filter(item=>(category==='All'||item.category===category)&&(status==='All'||item.status===status)&&`${item.name} ${item.category} ${item.productType}`.toLowerCase().includes(query.toLowerCase().trim()));
+  const visible=filtered.slice(0,limit);
   return <section className="cp-section cp-muted" id="catalogue" aria-labelledby="catalogue-title"><div className="cp-inner">
-    <div className="cp-section-heading"><span className="cp-eyebrow">CONNECTION CATALOGUE</span><h2 id="catalogue-title">Your evidence. <span className="home-heading-gradient">Connected.</span></h2><p>Explore a selection from the documented catalogue. Confirm provider coverage and availability for your deployment.</p></div>
-    <div className="cp-filter-bar"><label className="cp-search"><Search size={19}/><input type="search" aria-label="Search integrations" placeholder="Search providers or categories" value={query} onChange={event=>setQuery(event.target.value)}/></label><label className="cp-select-label">Category<select value={category} onChange={event=>setCategory(event.target.value)}>{['All',...new Set(Object.values(categories))].map(value=><option key={value}>{value}</option>)}</select></label></div>
-    <p className="cp-result-count" role="status">{filtered.length} {filtered.length===1?'provider':'providers'}</p>
-    <div className="cp-provider-grid">{filtered.map(item=><a className="cp-provider" href="https://docs.amlok.io/integrations" key={item.name}><span className="cp-provider-logo"><img src={item.image} alt="" width={64} height={64} loading="lazy"/></span><span><strong>{item.name}</strong><small>{categories[item.name]}</small></span><ArrowUpRight size={17}/></a>)}</div>
-    {!filtered.length&&<div className="cp-empty"><h3>No matching providers</h3><p>Try another name or category, or discuss a connection with our team.</p><button className="cp-button is-secondary" onClick={()=>{setQuery('');setCategory('All');}}>Clear filters</button></div>}
+    <div className="cp-section-heading"><span className="cp-eyebrow">CONNECTION CATALOGUE</span><h2 id="catalogue-title">Your evidence. <span className="home-heading-gradient">Connected.</span></h2><p>Explore {integrationProviders.length} integrations across {integrationCategories.length} categories. Find your provider, check availability, and open its documentation for coverage and connection details.</p></div>
+    <div className="cp-filter-bar">
+      <label className="cp-search"><Search size={19} aria-hidden="true"/><input type="search" aria-label="Search integrations" placeholder="Search integrations" value={query} onChange={event=>{setQuery(event.target.value);setLimit(integrationPageSize);}}/></label>
+      <label className="cp-select-label">Category<span className="cp-select-control"><select aria-label="Category" value={category} onChange={event=>{setCategory(event.target.value);setLimit(integrationPageSize);}}><option value="All">All categories</option>{integrationCategories.map(value=><option key={value}>{value}</option>)}</select><ChevronDown size={16} aria-hidden="true"/></span></label>
+      <label className="cp-select-label">Availability<span className="cp-select-control"><select aria-label="Availability" value={status} onChange={event=>{setStatus(event.target.value);setLimit(integrationPageSize);}}><option value="All">All statuses</option><option>Active beta</option><option>In Review</option></select><ChevronDown size={16} aria-hidden="true"/></span></label>
+    </div>
+    <div className="cp-catalogue-summary"><p className="cp-result-count" role="status" aria-atomic="true">Showing {visible.length} of {filtered.length} {filtered.length===1?'integration':'integrations'}</p><a href="https://docs.amlok.io/integrations/status">View integration status <ArrowUpRight size={14} aria-hidden="true"/></a></div>
+    <div className="cp-provider-grid" id="integration-results">{visible.map(item=><a className="cp-provider" href={item.href} key={item.id}><span className="cp-provider-logo"><img src={item.image} alt="" width={64} height={64} loading="lazy"/></span><span className="cp-provider-copy"><strong>{item.name}</strong><small>{item.category}</small><span className={`cp-provider-status${item.status==='Active beta'?' is-active':''}`}>{item.status==='Active beta'?'Active · Beta':'In review'}</span></span><ArrowUpRight size={17} aria-hidden="true"/></a>)}</div>
+    {visible.length<filtered.length&&<div className="cp-catalogue-more"><button type="button" aria-controls="integration-results" onClick={()=>setLimit(value=>value+integrationPageSize)}>See more integrations <ArrowDown size={17} aria-hidden="true"/></button></div>}
+    {!filtered.length&&<div className="cp-empty"><h3>No matching integrations</h3><p>Try another name, category, or availability status.</p><button className="cp-button is-secondary" onClick={()=>{setQuery('');setCategory('All');setStatus('All');setLimit(integrationPageSize);}}>Clear filters</button></div>}
   </div></section>;
 }
 

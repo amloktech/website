@@ -22,9 +22,12 @@ function FooterGroup({title,links,splitAt}:{title:string;links:readonly FooterLi
 }
 const homeLink = (href:string) => href.startsWith('#')?`/${href}`:href;
 const developerFooterLinks: FooterLink[] = [
-  ...developerGroups.flatMap(group => group.links.flatMap<FooterLink>(link => link.label === 'Sandbox'
-    ? [{label:'Console',href:'https://console.amlok.io/'},link]
+  ...developerGroups.flatMap(group => group.links.filter(link => link.label !== 'Quickstart' && link.label !== 'Integrations').flatMap<FooterLink>(link => link.label === 'Sandbox'
+    ? [{label:'Console',href:'https://console.amlok.io/'},link,{label:'Integrations',href:'/integrations'}]
     : [link])),
+];
+const resourceFooterLinks: FooterLink[] = [
+  ...resourceGroups[0].links,
   {label:'Quickstart',href:'https://docs.amlok.io/api-reference/quickstart'},
 ];
 
@@ -52,7 +55,7 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
       </div>
       <div className="site-footer-secondary">
         <FooterGroup title="Developers" splitAt={6} links={developerFooterLinks}/>
-        <FooterGroup title="Resources" links={resourceGroups[0].links}/>
+        <FooterGroup title="Resources" links={resourceFooterLinks}/>
         <FooterGroup title="Pricing & Compare" links={[
           {label:'Pricing',href:'/pricing'},
           {label:'vs Prism Data',href:'/compare/prism-data'},

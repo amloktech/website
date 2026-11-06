@@ -7,6 +7,7 @@ import { ArrowUpRight, ChevronDown } from 'lucide-react';
 
 export const developerGroups = [
   {title:'Build',links:[
+    {label:'Quickstart',href:'https://docs.amlok.io/api-reference/quickstart'},
     {label:'Documentation',href:'https://docs.amlok.io/'},
     {label:'API Reference',href:'/developers/api-reference'},
     {label:'MCP Server',href:'/developers/mcp'},
@@ -14,6 +15,7 @@ export const developerGroups = [
     {label:'Webhooks',href:'/developers/webhooks'},
   ]},
   {title:'Ship',links:[
+    {label:'Integrations',href:'https://amlok.io/integrations'},
     {label:'Integration prompt',href:'/developers/integration-prompt'},
     {label:'Sandbox',href:'/developers/sandbox'},
     {label:'Agent Skills',href:'/developers/agent-skills'},
