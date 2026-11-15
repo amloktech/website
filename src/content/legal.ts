@@ -89,7 +89,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Commercial terms",
         "paragraphs": [
           "Fees, credits, subscriptions, renewals, payment methods, refunds, and any service levels are set out in the applicable accepted order form or service agreement. Website estimates do not replace that agreement. These terms do not introduce a new price, payment obligation, or change to an existing commercial agreement.",
-          "A merchant’s act of connecting a store does not by itself enroll that merchant in an institution’s paid Amlok subscription. Any merchant fee must be separately disclosed and agreed before it is charged."
+          "Connecting a Shopify store through Amlok is free for the store owner. Amlok does not charge the Shopify merchant for installing the app or authorizing the connection. Any institutional service arrangement is separate from the merchant’s free connection."
         ]
       },
       {
@@ -273,7 +273,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Website, communications, and scheduling",
         "paragraphs": [
           "Website contact and journal-signup features prepare a message in your email application. Preparing a draft does not submit it to an Amlok website form database; we receive it when you send it. Your email provider handles drafts and messages under its own terms.",
-          "The website loads Cal.com’s booking script after the page becomes interactive, including before a booking dialog is opened. The embed forwards page query parameters into the booking experience. Cal.com receives associated technical requests and the information you submit when booking. Keep personal or confidential information out of website URLs and booking notes.",
+          "The website requests Cal.com’s booking script when you select a scheduling link. Amlok does not automatically forward the page’s query parameters to the booking experience. When you open scheduling, Cal.com receives associated technical requests and the information you choose to submit. Keep personal or confidential information out of website URLs and booking notes.",
           "External links, including social and AI-summary links, take you to services with their own practices. Optional marketing requests are separate from necessary service communications; contact us to stop optional messages."
         ],
         "links": [
@@ -417,7 +417,7 @@ export const legalPolicies: LegalPolicy[] = [
         ],
         "bullets": [
           "Language preference: key: amlok-language. Technology: first-party local storage. Purpose: remember the selected language. Duration: until you change it, clear site data, or the browser removes it.",
-          "Cal.com booking: third-party script served from app.cal.com. Purpose: initialize and display the scheduling experience. It loads after the page becomes interactive, so a provider request can occur before a booking button is pressed. Any service-specific storage follows the provider’s configuration and policy.",
+          "Cal.com booking: third-party script served from app.cal.com. Purpose: initialize and display scheduling when you select a booking link. The script is not requested automatically on page load. Any service-specific storage after opening scheduling follows the provider’s configuration and policy.",
           "Website delivery: Cloudflare serves the website and handles technical network requests. Infrastructure security mechanisms may vary with configuration and request conditions; a fixed security-cookie lifetime is not specified by this website’s source code.",
           "Advertising and analytics: the current website implementation does not include a first-party advertising tracker or a configured analytics tag such as Google Analytics. This statement does not describe all independent processing by an external service."
         ],
@@ -451,7 +451,7 @@ export const legalPolicies: LegalPolicy[] = [
         "id": "scheduling",
         "title": "Scheduling and URL information",
         "paragraphs": [
-          "The Cal.com embed is configured to forward page query parameters into the booking experience. Parameters are the portion of a URL following a question mark, such as a campaign reference. Keep personal or confidential information out of website URLs.",
+          "Automatic forwarding of page query parameters into the Cal.com booking experience is disabled. Parameters are the portion of a URL following a question mark, such as a campaign reference. Keep personal or confidential information out of website URLs.",
           "When you open or submit a booking, Cal.com handles the associated technical requests and the details you provide. The booking provider’s policy explains its own information handling. You may contact Amlok by email if you prefer not to use the calendar."
         ],
         "links": [
@@ -631,7 +631,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Availability, fees, and ending access",
         "paragraphs": [
           "Source permissions, provider availability, and data completeness can change. We may suspend access to address unauthorized use, security risks, legal requirements, or provider restrictions. Ending access does not remove applicable privacy or deletion obligations.",
-          "Connecting a business account does not itself create a paid institutional subscription for you. Any merchant fee requires separate disclosure and agreement. These terms do not guarantee a financing outcome, impose a new monetary liability cap, or waive statutory rights."
+          "Connecting a Shopify store is free for the store owner: Amlok does not charge the merchant for installing the app or authorizing the connection. Connecting does not enroll you in an institutional subscription. These terms do not guarantee a financing outcome, impose a new monetary liability cap, or waive statutory rights."
         ]
       },
       {

@@ -13,6 +13,7 @@ export function BookingLink({ onClick, ...props }: Omit<ComponentProps<'a'>, 'hr
   return <a {...props} {...bookingLinkProps} onClickCapture={event => {
     onClick?.(event);
     if (event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    window.dispatchEvent(new Event('amlok:request-booking'));
     const cal = (window as CalWindow).Cal?.ns?.[booking.namespace];
     if (!cal) return;
     event.preventDefault();

@@ -30,9 +30,14 @@ export function BookingEmbed() {
         p(cal, ar);
       };
     })(window, "https://app.cal.com/embed/embed.js", "init");
-    Cal("init", ${JSON.stringify(booking.namespace)}, {origin: ${JSON.stringify(booking.origin)}});
-    Cal.config = Cal.config || {};
-    Cal.config.forwardQueryParams = true;
-    Cal.ns[${JSON.stringify(booking.namespace)}]("ui", {hideEventTypeDetails: false, layout: "month_view"});
+    // Defining the local queue does not contact Cal.com. Initialize only after
+    // a visitor explicitly requests scheduling through a booking link.
+    window.addEventListener("amlok:request-booking", function () {
+      if (Cal.ns && Cal.ns[${JSON.stringify(booking.namespace)}]) return;
+      Cal.config = Cal.config || {};
+      Cal.config.forwardQueryParams = false;
+      Cal("init", ${JSON.stringify(booking.namespace)}, {origin: ${JSON.stringify(booking.origin)}});
+      Cal.ns[${JSON.stringify(booking.namespace)}]("ui", {hideEventTypeDetails: false, layout: "month_view"});
+    });
   `}</Script>;
 }
