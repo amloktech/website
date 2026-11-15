@@ -290,19 +290,19 @@
   {
     "path": "/privacy",
     "title": "Privacy Policy",
-    "description": "How Amlok handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
+    "description": "How Amlok handles information across its website, business services, and authorized account connections.",
     "category": "privacy"
   },
   {
     "path": "/cookies",
     "title": "Cookies Policy",
-    "description": "Learn about Amlok website language storage, Cal.com scheduling, external services, and browser controls.",
+    "description": "Browser storage, embedded services, and the choices relevant to Amlok’s website and connection services.",
     "category": "cookies"
   },
   {
     "path": "/terms",
-    "title": "Terms of Business",
-    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an Amlok relationship.",
+    "title": "Terms and Conditions",
+    "description": "Website and service responsibilities for Amlok’s financial health intelligence and financial risk assessment technology.",
     "category": "terms"
   },
   {
@@ -622,5 +622,17 @@
     "title": "QuadrigaCX case study",
     "description": "Resolve the parties and permitted fiat flows behind a platform’s financial story. Model better counterparty coverage and relationship accuracy while keeping custody and reserves as separate checks.",
     "category": "case-studies"
+  },
+  {
+    "path": "/connection-terms",
+    "category": "legal",
+    "title": "Merchant Connection Terms",
+    "description": "Terms for authorizing Amlok Hub to connect business accounts and share data with a specified institution."
+  },
+  {
+    "path": "/privacy-requests",
+    "category": "legal",
+    "title": "Privacy Requests",
+    "description": "How to ask about your information, withdraw a connection, or request access, correction, or deletion."
   }
 ]

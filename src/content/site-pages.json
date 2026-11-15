@@ -662,7 +662,7 @@
           },
           {
             "title": "Existing customers",
-            "body": "Use your established support channel or email support@amlok.io with non-sensitive context."
+            "body": "Use your established support channel or email support@amlok.tech with non-sensitive context."
           }
         ]
       }
@@ -1947,7 +1947,7 @@
       },
       {
         "title": "Discuss an MCP integration",
-        "url": "mailto:support@amlok.io?subject=MCP%20integration"
+        "url": "mailto:support@amlok.tech?subject=MCP%20integration"
       }
     ],
     "related": [
@@ -1970,7 +1970,7 @@
       },
       {
         "title": "Discuss an MCP integration",
-        "url": "mailto:support@amlok.io?subject=MCP%20integration"
+        "url": "mailto:support@amlok.tech?subject=MCP%20integration"
       }
     ]
   },
@@ -2233,7 +2233,7 @@
       },
       {
         "title": "Report an incident",
-        "body": "Contact support@amlok.io or your agreed incident channel with the affected environment, impact, time window, request IDs, and redacted diagnostics. Follow your support agreement for incident severity, coverage, and escalation."
+        "body": "Contact support@amlok.tech or your agreed incident channel with the affected environment, impact, time window, request IDs, and redacted diagnostics. Follow your support agreement for incident severity, coverage, and escalation."
       }
     ],
     "steps": [],
@@ -2253,7 +2253,7 @@
       },
       {
         "title": "Contact support",
-        "url": "mailto:support@amlok.io"
+        "url": "mailto:support@amlok.tech"
       }
     ],
     "related": [
@@ -2276,7 +2276,7 @@
       },
       {
         "title": "Contact support",
-        "url": "mailto:support@amlok.io"
+        "url": "mailto:support@amlok.tech"
       }
     ]
   },
@@ -2338,54 +2338,16 @@
   },
   {
     "slug": "privacy",
-    "label": "Privacy",
+    "label": "Privacy Policy",
     "title": "Privacy Policy",
     "accent": "",
-    "description": "How Amlok handles website enquiries, booking information, and authorized institutional processing, including retention and privacy requests.",
+    "description": "How Amlok handles information across its website, business services, and authorized account connections.",
     "visual": "data-security",
     "kind": "legal",
-    "sections": [
-      {
-        "title": "Purpose-limited processing",
-        "body": "Amlok processes information for the agreed underwriting and monitoring workflows. Institutions define permitted purposes and source permissions; processing responsibilities are documented in their agreements."
-      },
-      {
-        "title": "Information you provide",
-        "body": "When you contact Amlok, the information you choose to send is used to respond to your request. Send only what is needed and use an approved secure channel when sensitive material is required."
-      },
-      {
-        "title": "Connected financial information",
-        "body": "Customer deployments can process authorized account information, financial records, documents, identity attributes and analysis outputs. The actual categories, providers and processing locations depend on the agreed service."
-      },
-      {
-        "title": "Retention, access and requests",
-        "body": "Workspace retention is configured for the applicable purpose and requirements. Account cancellation and workspace deletion follow the documented process. Contact privacy@amlok.io for privacy questions or rights requests."
-      },
-      {
-        "title": "Application and enterprise policies",
-        "body": "The published application privacy policy describes collection, consent, rights and cross-border processing for the Amlok web application. Enterprise processing instructions are governed by the applicable agreement."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
-    "sources": [
-      {
-        "title": "Privacy and data handling",
-        "url": "https://docs.amlok.io/security/privacy"
-      },
-      {
-        "title": "Hosting and subprocessors",
-        "url": "https://docs.amlok.io/security/hosting-and-subprocessors"
-      },
-      {
-        "title": "Application privacy policy",
-        "url": "https://app.amlok.io/privacy"
-      },
-      {
-        "title": "Privacy contact",
-        "url": "mailto:privacy@amlok.io"
-      }
-    ],
+    "sources": [],
     "related": [
       "contact",
       "security-compliance"
@@ -2393,42 +2355,16 @@
   },
   {
     "slug": "cookies",
-    "label": "Cookies & preferences",
+    "label": "Cookies Policy",
     "title": "Cookies Policy",
     "accent": "",
-    "description": "Learn about Amlok website language storage, Cal.com scheduling, external services, and browser controls.",
+    "description": "Browser storage, embedded services, and the choices relevant to Amlok’s website and connection services.",
     "visual": "customer",
     "kind": "legal",
-    "sections": [
-      {
-        "title": "Your language preference",
-        "body": "This website stores your selected language in your browser’s local storage using the key amlok-language. The preference remains in that browser until you change it or clear the site’s stored data."
-      },
-      {
-        "title": "Control stored data",
-        "body": "You can remove local storage and cookies through your browser’s site-data settings. Clearing this website’s stored preference returns it to its default selection."
-      },
-      {
-        "title": "Links and external services",
-        "body": "Documentation, social profiles, AI summary services and other linked websites have their own storage and privacy practices. Visiting those services brings their policies into scope."
-      },
-      {
-        "title": "Website and application",
-        "body": "The marketing website and authenticated Amlok application are separate experiences. The application’s published privacy and security policies describe its session and data-handling practices."
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
-    "sources": [
-      {
-        "title": "Application safeguards",
-        "url": "https://docs.amlok.io/security/platform-security"
-      },
-      {
-        "title": "Application privacy policy",
-        "url": "https://app.amlok.io/privacy"
-      }
-    ],
+    "sources": [],
     "related": [
       "contact",
       "security-compliance"
@@ -2436,55 +2372,16 @@
   },
   {
     "slug": "terms",
-    "label": "Terms of business",
-    "title": "Terms of Business",
+    "label": "Terms and Conditions",
+    "title": "Terms and Conditions",
     "accent": "",
-    "description": "Website use, service agreements, authorized processing, billing, cancellation, and responsibilities for an Amlok relationship.",
+    "description": "Website and service responsibilities for Amlok’s financial health intelligence and financial risk assessment technology.",
     "visual": "compliance",
     "kind": "legal",
-    "sections": [
-      {
-        "title": "Your service agreement",
-        "body": "The signed agreement defines the services, usage rates, workload limits, commitments and responsibilities applicable to your institution. Published product information supports evaluation and does not replace those agreed terms."
-      },
-      {
-        "title": "Authorized use and access",
-        "body": "Your institution authorizes users, protects credentials and establishes permissions for the information it provides. Keep underwriting and monitoring within the intended workflows and approved data sources."
-      },
-      {
-        "title": "Usage and billing",
-        "body": "Insights and Signal draw from one shared credit balance. Usage charges, negotiated terms, payment methods and account controls follow the relevant rate card and agreement."
-      },
-      {
-        "title": "Decisions and shared responsibility",
-        "body": "Amlok provides risk intelligence and evidence. Your institution owns its lending policies, review procedures, borrower communications and final decisions."
-      },
-      {
-        "title": "Questions about your agreement",
-        "body": "Contact support@amlok.io or your dedicated account manager to discuss service scope, billing, renewal, cancellation or a contractual requirement."
-      },
-      {
-        "title": "Photography and asset credits",
-        "body": "Team photography: Amlok. Provider and partner marks belong to their respective owners. Additional asset and software attributions are available in the website’s third-party notices.",
-        "href": "/third-party-notices.txt"
-      }
-    ],
+    "sections": [],
     "steps": [],
     "faq": [],
-    "sources": [
-      {
-        "title": "Agreement terms",
-        "url": "https://docs.amlok.io/pricing/contract-terms"
-      },
-      {
-        "title": "Security shared responsibilities",
-        "url": "https://docs.amlok.io/security/overview"
-      },
-      {
-        "title": "Account management",
-        "url": "https://docs.amlok.io/support/account-management"
-      }
-    ],
+    "sources": [],
     "related": [
       "contact",
       "security-compliance"
@@ -3960,6 +3857,42 @@
     ],
     "related": [
       "case-studies"
+    ]
+  },
+  {
+    "slug": "connection-terms",
+    "label": "Merchant Connection Terms",
+    "title": "Merchant Connection Terms",
+    "accent": "",
+    "description": "Terms for authorizing Amlok Hub to connect business accounts and share data with a specified institution.",
+    "visual": "data-security",
+    "kind": "legal",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "privacy",
+      "terms",
+      "cookies"
+    ]
+  },
+  {
+    "slug": "privacy-requests",
+    "label": "Privacy Requests",
+    "title": "Privacy Requests",
+    "accent": "",
+    "description": "How to ask about your information, withdraw a connection, or request access, correction, or deletion.",
+    "visual": "data-security",
+    "kind": "legal",
+    "sections": [],
+    "steps": [],
+    "faq": [],
+    "sources": [],
+    "related": [
+      "privacy",
+      "terms",
+      "cookies"
     ]
   }
 ]

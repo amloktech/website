@@ -56,7 +56,7 @@ The blog at `/blog` uses `src/content/blog-posts.json` for card metadata, topics
 author, dates, and image paths; article bodies remain in `site-pages.json`.
 Its nine starter articles use editable SVG placeholders in `public/images/blog`.
 Topic/search/pagination state is shareable through `?topic=monitoring&q=noise&page=1#all-posts`.
-The signup form prepares an email request to `support@amlok.io`; it does not
+The signup form prepares an email request to `support@amlok.tech`; it does not
 store addresses or subscribe anyone automatically. Connect a mailing-list service
 before replacing that explicit request flow with direct subscriptions.
 
@@ -156,5 +156,12 @@ can be connected. No Mintlify deployment or documentation edits are involved.
 Build and typecheck regenerate the ignored Worker types from `wrangler.jsonc`.
 Run `pnpm test:status` for probe, failure, timeout, and freshness checks, then
 `pnpm build` and `pnpm start` to test the complete website in Cloudflare's local
-runtime. Support links use `support@amlok.io`; mailbox provisioning is managed
+runtime. Support links use `support@amlok.tech`; mailbox provisioning is managed
 outside this website repository.
+
+## Legal policy review drafts
+
+`src/content/legal.ts` contains the revised Privacy, Terms, Cookies, Merchant Connection
+Terms, and Privacy Requests pages. Their visible review-draft status must remain
+until the decisions and evidence in `docs/legal-pages-review.md` are resolved.
+This branch does not authorize publishing new terms or changing product behavior.

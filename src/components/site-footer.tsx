@@ -48,7 +48,7 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
             <img src="/images/partners/cla-lenders.png" alt="Canadian Lenders Association"/>
             <img src="/images/partners/nvidia-inception-white.svg" alt="NVIDIA Inception Program"/>
           </div>
-        </div><p className="site-footer-location">Toronto, Canada · Headquarters</p><a className="site-footer-email" href="mailto:support@amlok.io"><Mail size={15} aria-hidden="true"/>support@amlok.io</a></div>
+        </div><p className="site-footer-location">Toronto, Canada · Headquarters</p><a className="site-footer-email" href="mailto:support@amlok.tech"><Mail size={15} aria-hidden="true"/>support@amlok.tech</a></div>
         <FooterGroup title="Solutions" links={solutionUseCases.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
         <FooterGroup title="Products" links={solutionProducts.map(item=>({label:item.title,href:homeLink(item.href)}))}/><FooterGroup title="Modules" links={solutionModules.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
         <FooterGroup title="Industries" links={solutionIndustries.map(item=>({label:item.title,href:homeLink(item.href)}))}/>
@@ -68,6 +68,6 @@ export function SiteFooter({siteOrigin}:{siteOrigin:string}) {
         <FooterGroup title="Company" links={[...resourceGroups[1].links,{label:'Brand Kit',href:'/brand'},{label:'Site map',href:'/site-map'}]}/>
       </div>
     </div>
-    <div className="site-footer-bottom"><div className="site-footer-inner"><div className="site-footer-legal"><BrandText>© 2026 Amlok</BrandText><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms of business</a><a href="/contact">Contact</a></div><div className="site-footer-controls"><a href="https://www.linkedin.com/company/amlok" aria-label="Amlok on LinkedIn" title="LinkedIn"><Linkedin size={20} aria-hidden="true"/></a><a href="https://github.com/amloktech" aria-label="Amlok on GitHub" title="GitHub"><Github size={20} aria-hidden="true"/></a><label className="site-footer-language"><Globe size={19} aria-hidden="true"/><select aria-label="Footer language" value={language} onChange={event=>setLanguage(event.target.value)}><option value="English">English</option><option value="Français">Français</option></select></label></div></div></div>
+    <div className="site-footer-bottom"><div className="site-footer-inner"><div className="site-footer-legal"><BrandText>© 2026 Amlok</BrandText><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms and conditions</a><a href="/contact">Contact</a></div><div className="site-footer-controls"><a href="https://www.linkedin.com/company/amlok" aria-label="Amlok on LinkedIn" title="LinkedIn"><Linkedin size={20} aria-hidden="true"/></a><a href="https://github.com/amloktech" aria-label="Amlok on GitHub" title="GitHub"><Github size={20} aria-hidden="true"/></a><label className="site-footer-language"><Globe size={19} aria-hidden="true"/><select aria-label="Footer language" value={language} onChange={event=>setLanguage(event.target.value)}><option value="English">English</option><option value="Français">Français</option></select></label></div></div></div>
   </footer>;
 }
