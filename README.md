@@ -159,9 +159,10 @@ Run `pnpm test:status` for probe, failure, timeout, and freshness checks, then
 runtime. Support links use `support@amlok.tech`; mailbox provisioning is managed
 outside this website repository.
 
-## Legal policy review drafts
+## Legal policies
 
-`src/content/legal.ts` contains the revised Privacy, Terms, Cookies, Merchant Connection
-Terms, and Privacy Requests pages. Their visible review-draft status must remain
-until the decisions and evidence in `docs/legal-pages-review.md` are resolved.
-This branch does not authorize publishing new terms or changing product behavior.
+`src/content/legal.ts` contains the Privacy, Terms, Cookies, Merchant Connection
+Terms, and Privacy Requests pages. The business owner authorized direct live
+publication on 15 November 2026. Operational follow-up remains documented in
+`docs/legal-pages-review.md`; publishing these notices does not attest that
+all Shopify data-protection requirements have been verified.

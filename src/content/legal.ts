@@ -2,8 +2,8 @@ export type LegalSection = { id: string; title: string; paragraphs: string[]; bu
 export type LegalPolicy = { slug: string; title: string; description: string; summary: string[]; sections: LegalSection[] };
 
 export const legalCompany = { name: "Amlok Tech Inc.", email: "support@amlok.tech", address: "15 Iceboat Terrace, Toronto ON M5V 4A5, Canada", corporationNumber: "1461755-0", businessNumber: "783288210" };
-// Draft status remains visible until factual/legal review and a separately approved release.
-export const legalRevision = { date: "2026-11-15", label: "Review draft · November 15, 2026", draft: true };
+// Website publication authorized by the business owner on 15 November 2026.
+export const legalRevision = { date: "2026-11-15", label: "Effective November 15, 2026", draft: false };
 
 export const legalPolicies: LegalPolicy[] = [
   {
@@ -164,7 +164,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Company and contact details",
         "paragraphs": [
           "Amlok Tech Inc., corporation number 1461755-0, business number 783288210, with its registered business address at 15 Iceboat Terrace, Toronto ON M5V 4A5, Canada.",
-          "Registration date supplied by the company: December 20, 2022. For privacy, support, legal, and business matters, email support@amlok.tech."
+          "Registration date: December 20, 2022. For privacy, support, legal, and business matters, email support@amlok.tech."
         ],
         "links": [
           {

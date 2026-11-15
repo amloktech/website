@@ -1,3 +1,11 @@
+# Direct website publication — 15 November 2026
+
+After reviewing the draft scope, the business owner instructed: “do not create a staging version of the website. publish directly to the live website.” This supersedes the earlier draft/staging release instruction for this website change. No staging branch or staging website was created. The release removes visible draft status and sets the effective date to 15 November 2026. The previously listed operational decisions remain outstanding; publication is not a certification of application compliance.
+
+The local package build and validation are followed by verification on the existing live Cloudflare website. The review below is preserved as the implementation and legal-readiness record. Its draft-only publication gates describe the earlier plan, not the current authorization.
+
+---
+
 # Legal and connection policies — review draft, 15 November 2026
 
 The website previously described marketing-site processing and deferred institutional use to signed contracts. This revision adds the merchant connection relationship, corrects inaccurate retention/self-service claims, and separates optional monitoring, withdrawal, deletion, and institutional decisions. All five rendered policies display **Review draft — not yet effective**. This branch is not a compliance attestation or a production release.
