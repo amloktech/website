@@ -10,7 +10,8 @@ import '../content-pages.css';
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return sitePages.map(page => ({ slug: page.slug.split('/') }));
+  // The Trust Center has its own dedicated route; its entry supplies related-page links.
+  return sitePages.filter(page => page.slug !== 'trust').map(page => ({ slug: page.slug.split('/') }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {

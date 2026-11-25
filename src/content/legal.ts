@@ -457,10 +457,6 @@ export const legalPolicies: LegalPolicy[] = [
         ],
         "links": [
           {
-            "label": "Security information",
-            "href": "/security-compliance"
-          },
-          {
             "label": "Trust Center",
             "href": "/trust"
           },

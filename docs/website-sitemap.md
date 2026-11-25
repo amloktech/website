@@ -1,5 +1,7 @@
 # AMLOK website sitemap and implementation
 
+Current update — 24 November 2026: `/trust` replaces `/security-compliance` as the security review destination in navigation, the footer, related-page cards, and both site maps. The retired page has been removed and its URL permanently redirects to `/trust`. Every legal page links to the Trust Center. The original audit and implementation history below describe earlier states.
+
 Prepared 31 October 2026 for the local website. The original architecture below is now implemented locally: all 53 planned new pages, three editorial articles, and a human-readable `/site-map`. The current site has 65 pages and 64 indexable sitemap entries, including nine blog articles. The requested removal of the customer-story page is reflected in the navigation and page inventory below. Menus, footer, and search now link to the new destinations. The following audit records the starting state.
 
 The website should explain AMLOK's platform, the problems it addresses, and how to start a relationship. Detailed integration instructions remain in the documentation. Give each subject one canonical destination, even when it appears under Products, Use cases, and Modules.

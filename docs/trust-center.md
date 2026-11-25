@@ -1,6 +1,6 @@
 # Amlok Trust Center
 
-Local route: `/trust`. The page is a standalone portal, with a compact footer instead of the marketing footer. It is excluded from indexing and has not been added to site navigation or the sitemap.
+Canonical route: `/trust`. The page is a standalone portal, with a compact footer instead of the marketing footer. The Trust Center replaces the retired `/security-compliance` page in desktop/mobile menus, the Company footer, homepage security link, related-page cards, legal navigation, and the site map. The footer's bottom row also includes a `Trust` link. The portal is indexable; the old path and its trailing-slash variant permanently redirect to `/trust` through `public/_redirects`.
 
 ## Design references
 

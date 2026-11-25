@@ -10,7 +10,7 @@ import { ModulePage, ModulesOverview } from './module-page';
 import { moduleDetails } from '@/content/modules';
 import { UseCasePage, UseCasesOverview } from './use-case-page';
 import { useCaseDetails } from '@/content/use-cases';
-import { ArrowUpRight, Check, ChevronRight, FileText, Layers, Network, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, ChevronRight, FileText, Layers, Network } from 'lucide-react';
 import { PageActions } from './page-actions';
 import { SiteHeader } from './site-header';
 import { ProductIllustration } from './product-illustration';
@@ -32,7 +32,7 @@ import pageIndex from '@/content/page-index.json';
 
 const groupNames: Record<string,string> = {products:'Products',platform:'Platform',solutions:'Use cases',modules:'Modules',industries:'Industries',developers:'Developers',compare:'Comparisons',blog:'Journal'};
 const groupPaths: Record<string,string> = {products:'/products',platform:'/platform',solutions:'/solutions',modules:'/modules',industries:'/industries',developers:'/developers',compare:'/compare',blog:'/blog'};
-const directoryGroups: Record<string,string> = {Platform:'Platform & products',platform:'Platform & products',products:'Platform & products',integrations:'Platform & products',pricing:'Platform & products',solutions:'Solutions & modules',modules:'Solutions & modules',industries:'Industries',developers:'Developers',changelog:'Developers',status:'Developers',research:'Resources','case-studies':'Resources',whitepapers:'Resources','industry-guides':'Resources',blog:'Resources',Company:'Company',manifesto:'Company',careers:'Company','security-compliance':'Company',contact:'Company','get-started':'Company',compare:'Comparisons',privacy:'Policies',cookies:'Policies',terms:'Policies','site-map':'Resources'};
+const directoryGroups: Record<string,string> = {Platform:'Platform & products',platform:'Platform & products',products:'Platform & products',integrations:'Platform & products',pricing:'Platform & products',solutions:'Solutions & modules',modules:'Solutions & modules',industries:'Industries',developers:'Developers',changelog:'Developers',status:'Developers',research:'Resources','case-studies':'Resources',whitepapers:'Resources','industry-guides':'Resources',blog:'Resources',Company:'Company',manifesto:'Company',careers:'Company',trust:'Company',contact:'Company','get-started':'Company',compare:'Comparisons',privacy:'Policies',cookies:'Policies',terms:'Policies','site-map':'Resources'};
 
 function PageCards({slugs,compact=false}:{slugs:string[];compact?:boolean}) {
   return <div className={`cp-link-grid${compact?' is-compact':''}`}>{slugs.map(slug=>{const page=findSitePage(slug);return page?<a className="cp-link-card" href={'/'+page.slug} key={slug}>{!compact&&<div className="cp-card-art"><ProductIllustration kind={page.visual}/></div>}<span className="cp-eyebrow"><BrandText>{groupNames[slug.split('/')[0]]||'Explore Amlok'}</BrandText></span><h3>{page.label}</h3><p>{page.description}</p><span className="cp-text-link">Explore <ArrowUpRight size={17} aria-hidden="true"/></span></a>:null;})}</div>;
@@ -41,11 +41,6 @@ function PageCards({slugs,compact=false}:{slugs:string[];compact?:boolean}) {
 function Comparison({page}:{page:SitePageContent}) {
   const comparison=page.comparison!;
   return <section className="cp-section cp-muted"><div className="cp-inner"><div className="cp-section-heading"><span className="cp-eyebrow">SCOPE BEFORE FEATURES</span><h2>Two perspectives on <span className="home-heading-gradient">your stack.</span></h2><p>{comparison.category}. Compare the job each product performs and the systems that remain responsible for the final action.</p></div><div className="cp-comparison-grid"><article><span className="cp-eyebrow">DOCUMENTED VENDOR FOCUS</span><h3>{comparison.vendor}</h3><ul>{comparison.vendorStrengths.map(item=><li key={item}><Layers size={19}/><span>{item}</span></li>)}</ul></article><article className="is-amlok"><span className="cp-eyebrow">CONNECTED RISK INTELLIGENCE</span><h3>Amlok</h3><ul>{comparison.amlokFit.map(item=><li key={item}><Network size={19}/><span>{item}</span></li>)}</ul></article></div><div className="cp-comparison-notes"><h3>Questions to bring to your evaluation.</h3>{comparison.considerations.map((item,index)=><p key={item}><span>{String(index+1).padStart(2,'0')}</span>{item}</p>)}</div><p className="cp-small">Based on official product information reviewed 31 October 2026. Product scope can change. Confirm the capabilities and commercial terms relevant to your deployment with each provider.</p></div></section>;
-}
-
-function SecurityScope() {
-  const items=[['Data protection','Encryption, scoped access, tenant separation, and deployment-specific data handling.'],['Control alignment','Review applicable SOC 2 and ISO/IEC 27001 control evidence and assurance scope.'],['AI governance','Define intended use, evaluate representative outputs, and keep review and accountability explicit.'],['Institutional review','Request the security documentation and supporting materials relevant to your deployment.']];
-  return <section className="cp-section cp-muted"><div className="cp-inner"><div className="cp-section-heading"><span className="cp-eyebrow">A SCOPED SECURITY REVIEW</span><h2>Understand the controls. <span className="home-heading-gradient">Inspect the evidence.</span></h2></div><div className="cp-trust-grid">{items.map(([title,body],index)=>{const Icon=[ShieldCheck,Check,Network,FileText][index];return <article key={title}><Icon size={30}/><h3>{title}</h3><p>{body}</p></article>;})}</div><p className="cp-small">Assurance materials apply to their stated entity, service, period, and deployment. Provider reports and control alignment are not interchangeable with a certification of every Amlok workflow.</p></div></section>;
 }
 
 export function ContentPage({page}:{page:SitePageContent}) {
@@ -95,7 +90,6 @@ export function ContentPage({page}:{page:SitePageContent}) {
     {(page.slug==='whitepapers'||page.slug==='industry-guides')&&<ResearchListing collection={page.slug}/>}
     {page.kind==='sitemap'&&<section className="cp-section"><div className="cp-inner cp-site-map">{Object.entries(Object.groupBy(pageIndex,page=>directoryGroups[page.category]||'Explore Amlok')).map(([group,entries])=><nav key={group} aria-label={group}><h2>{group}</h2><ul>{entries?.map(entry=><li key={entry.path}><a href={entry.path}>{entry.title}<ArrowUpRight size={14}/></a></li>)}</ul></nav>)}</div></section>}
     {page.kind==='comparison'&&<Comparison page={page}/>}
-    {page.slug==='security-compliance'&&<SecurityScope/>}
     {page.slug==='developers/integration-prompt'&&<CopyGuide/>}
     {page.slug==='developers/agent-skills'&&<CopyGuide skill/>}
     {page.slug==='changelog'&&<section className="cp-section cp-muted"><div className="cp-inner cp-version"><span className="cp-pill">CURRENT DOCUMENTED REFERENCE</span><h2>API 1.4.2</h2><p>A starting point for reviewing your client against the published contract. Confirm the version supported by your institution’s environment.</p><a className="cp-text-link" href="https://docs.amlok.io/api-reference/versioning">Versioning & compatibility <ArrowUpRight size={17}/></a></div></section>}

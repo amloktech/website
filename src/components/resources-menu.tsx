@@ -20,7 +20,7 @@ export const resourceGroups = [
     {label:'Manifesto',href:'/manifesto'},
     {label:'Contact',href:'/contact'},
     {label:'Careers',href:'/careers'},
-    {label:'Security & Compliance',href:'/security-compliance'},
+    {label:'Trust Center',href:'/trust'},
   ]},
 ] as const;
 

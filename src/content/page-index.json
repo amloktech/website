@@ -282,10 +282,10 @@
     "category": "status"
   },
   {
-    "path": "/security-compliance",
-    "title": "Security & compliance",
-    "description": "Security, privacy, and governance designed into the workflow. Review the controls and responsibilities that apply to your deployment.",
-    "category": "security-compliance"
+    "path": "/trust",
+    "title": "Trust Center",
+    "description": "Explore Amlok security, privacy, compliance, controls, subprocessors, and due diligence resources.",
+    "category": "trust"
   },
   {
     "path": "/privacy",
