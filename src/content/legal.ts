@@ -2,8 +2,9 @@ export type LegalSection = { id: string; title: string; paragraphs: string[]; bu
 export type LegalPolicy = { slug: string; title: string; description: string; summary: string[]; sections: LegalSection[] };
 
 export const legalCompany = { name: "Amlok Tech Inc.", email: "support@amlok.tech", address: "15 Iceboat Terrace, Toronto ON M5V 4A5, Canada", corporationNumber: "1461755-0", businessNumber: "783288210" };
-// Website publication authorized by the business owner on 15 November 2026.
-export const legalRevision = { date: "2026-11-15", label: "Effective November 15, 2026", draft: false };
+// Provider and policy alignment updated locally on 24 November 2026.
+// This revision does not amend separately signed agreements by itself.
+export const legalRevision = { date: "2026-11-24", label: "Updated November 24, 2026", draft: false };
 
 export const legalPolicies: LegalPolicy[] = [
   {
@@ -41,7 +42,18 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "Amlok provides financial health intelligence and financial risk assessment technology, including authorized data connections, data preparation, analysis, and monitoring where enabled and separately authorized. The institution determines its requested workflow and remains responsible for its own policies, decisions, and obligations.",
           "Amlok does not provide financing or guarantee a financial or commercial outcome through these services. Outputs depend on available source data, scope, freshness, assumptions, and service limitations. They may require correction or further investigation and should not be treated as a guarantee of accuracy or a substitute for appropriate professional judgment.",
-          "An integration catalog, illustration, or prospective feature is not a promise that the capability is available in every deployment. Available integrations, permissions, workloads, and service levels are specified in the applicable service arrangement."
+          "An integration catalog, illustration, or prospective feature is not a promise that the capability is available in every deployment. Available integrations, permissions, workloads, and service levels are specified in the applicable service arrangement.",
+          "The Trust Center and security documentation describe relevant controls, standards, provider roles, and review materials. A framework listing is not a guarantee that every law applies to every workflow, and a provider’s certification does not extend its audit scope to Amlok or your institution."
+        ],
+        "links": [
+          {
+            "label": "Trust Center",
+            "href": "/trust"
+          },
+          {
+            "label": "Standards and scope",
+            "href": "https://docs.amlok.io/security/standards"
+          }
         ]
       },
       {
@@ -62,7 +74,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Institutional responsibilities",
         "paragraphs": [
           "The institution is responsible for the lawful purpose and instructions it supplies, its authorized users, its notices and required permissions, and its handling of data and outputs. Source access does not permit every downstream use, and an institution’s instruction does not remove Amlok’s own legal obligations.",
-          "The institution must establish appropriate review, correction, explanation, and rights procedures for decisions it makes using outputs. It must consider evidence gaps and applicable restrictions on profiling or automated consequential decisions. Amlok’s service does not authorize a prohibited use of information."
+          "The institution must establish appropriate review, correction, explanation, and rights procedures for decisions it makes using outputs. It must consider evidence gaps and applicable restrictions on profiling or automated consequential decisions. Amlok’s service does not authorize a prohibited use of information.",
+          "An institution must identify who can instruct Amlok, the people and records within scope, permitted recipients and purposes, and any restrictions on retention, automated processing, or source data. Instructions must be lawful and consistent with the source permissions. Amlok’s role as a service provider does not authorize it to determine a new unrelated purpose for institution-controlled information."
         ]
       },
       {
@@ -71,7 +84,8 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "Personal and confidential information is handled under the Privacy Policy and applicable confidentiality and data-processing agreements. The processing schedule should identify permitted purposes, categories, recipients, duration, provider roles, security requirements, rights assistance, and return or deletion obligations.",
           "Connection authorization does not grant unrestricted rights to sell data, use it for unrelated advertising, train models, or create unrelated products. Any separate use must meet applicable law and source-provider conditions and receive any required separate authorization. Neither these terms nor an institution’s general instructions override stricter source restrictions.",
-          "Use approved secure channels for sensitive records. General website enquiries and booking notes are intended for business contact details and a brief description of your request."
+          "Use approved secure channels for sensitive records. General website enquiries and booking notes are intended for business contact details and a brief description of your request.",
+          "The applicable processing arrangement also addresses provider oversight and changes, confidentiality, security incidents, assistance with individual requests, and return or deletion of information. Statutory obligations continue to apply. The Trust Center is a review resource, not a substitute for those terms or evidence that a particular assessment has been completed."
         ],
         "links": [
           {
@@ -89,6 +103,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Commercial terms",
         "paragraphs": [
           "Fees, credits, subscriptions, renewals, payment methods, refunds, and any service levels are set out in the applicable accepted order form or service agreement. Website estimates do not replace that agreement. These terms do not introduce a new price, payment obligation, or change to an existing commercial agreement.",
+          "Stripe is Amlok’s payment provider for platform billing and service-credit funding. This relationship is separate from any institution’s borrower disbursements, loan repayments, or customer-payment operations. Payment availability and the collection, refund, and security responsibilities for an enabled payment flow are governed by the applicable service arrangement and provider terms.",
           "Connecting a Shopify store through Amlok is free for the store owner. Amlok does not charge the Shopify merchant for installing the app or authorizing the connection. Any institutional service arrangement is separate from the merchant’s free connection."
         ]
       },
@@ -129,8 +144,10 @@ export const legalPolicies: LegalPolicy[] = [
         "id": "third-parties",
         "title": "Connected and external services",
         "paragraphs": [
-          "Providers such as Shopify operate their own services under their own terms. Their availability, permissions, records, or interfaces can change. We do not guarantee uninterrupted access or that a provider will supply every requested record.",
-          "The website also uses Cal.com scheduling and links to external sites and AI-summary services. Those destinations receive the requests you open and have their own privacy practices. A link alone does not imply endorsement."
+          "Amlok uses Microsoft Azure for the institutional platform, Stripe for platform billing, and Cloudflare for website delivery, domain management, and DNS. Authorized financial-data connections can use Flinks and Plaid; Baselayer supplies business-verification and risk information for applicable workflows. The provider register describes their respective roles and the data involved.",
+          "Google, Microsoft, and GitHub provide optional user sign-in. GitHub also supports Amlok’s source-code versioning and development workflows. Public documentation is hosted through Mintlify, and Cal.com provides scheduling when requested. A sign-in provider, source-data service, development provider, or linked destination is not automatically a subprocessor for every customer dataset; the activity and applicable agreement determine the role.",
+          "Connected sources such as Shopify operate under their own terms and permissions. Availability, records, and interfaces can change. Source-specific use restrictions continue to apply: for example, Baselayer business information must not be used for consumer eligibility decisions prohibited by its terms. A connection does not grant unrestricted access, onward disclosure, or secondary-use rights.",
+          "External websites and AI-summary links open services with their own practices. A link does not itself transfer your account or financial records, grant access to them, or imply endorsement."
         ],
         "links": [
           {
@@ -140,6 +157,18 @@ export const legalPolicies: LegalPolicy[] = [
           {
             "label": "Shopify connection responsibilities",
             "href": "/connection-terms#shopify"
+          },
+          {
+            "label": "Provider register",
+            "href": "/trust#subprocessors"
+          },
+          {
+            "label": "Hosting and provider responsibilities",
+            "href": "https://docs.amlok.io/security/hosting-and-subprocessors"
+          },
+          {
+            "label": "Processing locations",
+            "href": "/privacy#locations"
           }
         ]
       },
@@ -200,7 +229,8 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "We determine the purposes of our own website administration, business communications, account administration, and security activities. For information processed on behalf of an institution, we process the agreed information under documented instructions and the applicable processing agreement. Actual activities and applicable law determine each party’s legal role.",
           "The institution identified in a connection determines its requested assessment and is responsible for its own policies, decisions, notices, and handling of information it receives. Its privacy notice applies to its independent activities. The connected source, such as Shopify, also remains responsible for its own service and records. This policy does not transfer Amlok’s own obligations to either party.",
-          "A merchant’s permission to connect a store does not replace notices, consent, or another lawful authority required for personal information about shoppers or other individuals."
+          "A merchant’s permission to connect a store does not replace notices, consent, or another lawful authority required for personal information about shoppers or other individuals.",
+          "Where we process personal information for an institution, our instructions and permitted service purposes define that processing. Where we determine a purpose ourselves, such as account administration or website security, we are responsible for that activity. These roles can differ within the same relationship. We do not treat an institution’s general instruction as authority for an unrelated use or a disclosure prohibited by law."
         ],
         "links": [
           {
@@ -217,10 +247,63 @@ export const legalPolicies: LegalPolicy[] = [
         ],
         "bullets": [
           "Information you provide: name, business contact details, organization, role, support correspondence, meeting requests, and account or billing information relevant to your relationship with Amlok.",
+          "Sign-in information: your provider account identifier, basic profile details and email, relevant verification information, and the sign-in association when you choose Google, Microsoft, or GitHub. These permissions are separate from financial-source access.",
           "Connection and authorization records: institution and workspace references, provider and account identifiers, selected sources, permitted data and purposes, one-time or monitoring choices, notice versions, and authorization, expiry, or withdrawal events.",
           "Authorized source information: the account, financial, transaction, commerce, document, or verification information specified for the enabled connection. The Shopify scope is described below.",
+          "Verification information: business identifiers and submitted details, related business or ownership records, and verification or risk results returned by an enabled service such as Baselayer, limited to the permitted workflow.",
           "Analysis: normalized records, calculated measures, financial health findings, risk indicators, and other outputs generated within the authorized service.",
           "Technical and security information: IP address, device and browser information, request times, service activity, errors, and information needed to protect accounts and investigate misuse."
+        ]
+      },
+      {
+        "id": "sign-in",
+        "title": "Google, Microsoft, and GitHub sign-in",
+        "paragraphs": [
+          "When you choose an available Google, Microsoft, or GitHub sign-in option, that provider authenticates you and supplies the permitted basic identity and email information to Amlok. We use it to establish or link your Amlok account, check account eligibility, and protect access. The provider handles its own account and authentication service under its applicable terms and privacy notice.",
+          "Console sign-in requests basic profile and email permissions. It does not request Google mail or Drive access, Microsoft mailbox or directory access, or GitHub repository access. Provider access, refresh, and identity tokens are discarded after identity resolution; the Amlok account association and session are separate records.",
+          "Disconnecting a sign-in method from Amlok does not delete your provider account or necessarily revoke a consent grant stored by the provider. Use the provider’s account controls for its records, and the Amlok account or privacy-request process for records within our responsibility. Sign-in alone does not authorize a bank-data connection or disclosure to an institution."
+        ],
+        "links": [
+          {
+            "label": "Google Privacy Policy",
+            "href": "https://policies.google.com/privacy"
+          },
+          {
+            "label": "Microsoft Privacy Statement",
+            "href": "https://www.microsoft.com/en-us/privacy/privacystatement"
+          },
+          {
+            "label": "GitHub Privacy Statement",
+            "href": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          }
+        ]
+      },
+      {
+        "id": "financial-and-verification-providers",
+        "title": "Financial connections and business verification",
+        "paragraphs": [
+          "Amlok uses Flinks and Plaid for supported, authorized financial-data connections and Baselayer for applicable business-verification and risk workflows. Which provider is used, the requested information, the recipient institution, and the purpose depend on the enabled connection and the authority for that use. These services are not invoked for every website visitor or every Amlok account.",
+          "Financial connections can involve selected account identifiers, ownership information, balances, transactions, and documents where that information is requested and permitted. Business verification can involve business identifiers, submitted business details, associated people, public or licensed records, and verification or risk results. Do not infer that every product offered by a provider, or every field in its privacy policy, is collected by Amlok.",
+          "Flinks, Plaid, and Baselayer may have distinct contractual and legal roles for their services, source datasets, security activities, and relationships with you. Their own notices explain those independent activities; our agreement and connection authorization govern processing they perform for Amlok. A provider’s independent source records are not erased merely because an Amlok record is deleted.",
+          "Source permissions and permitted-use restrictions apply to the returned information. Baselayer’s business information is not a consumer report and must not be used for personal credit, employment, housing, or other consumer eligibility purposes prohibited by its terms. Contact Amlok and the relevant source about inaccuracies; the institution remains responsible for its decisions."
+        ],
+        "links": [
+          {
+            "label": "Flinks privacy information",
+            "href": "https://www.flinks.com/privacy-policy"
+          },
+          {
+            "label": "Plaid privacy and service terms",
+            "href": "https://plaid.com/legal/"
+          },
+          {
+            "label": "Baselayer Privacy Policy",
+            "href": "https://baselayer.com/privacy-policy/"
+          },
+          {
+            "label": "Provider register",
+            "href": "/trust#subprocessors"
+          }
         ]
       },
       {
@@ -241,7 +324,8 @@ export const legalPolicies: LegalPolicy[] = [
           "Before a connection is authorized, the connection experience must identify the recipient institution, the selected source or accounts, the data and purpose, and the access mode. Only an authorized business representative may grant access. Provider installation permission and authorization to share with an institution are distinct; installation alone does not authorize sharing with an institution.",
           "One-time access permits an initial collection and the work necessary to complete that collection. Ongoing monitoring permits further collections for the disclosed purpose while authorization remains valid. An institution’s choice to offer monitoring does not itself authorize it: the connecting user must separately allow it. Adding another source, store, or recipient requires the applicable authorization.",
           "You may ask us to withdraw a connection or monitoring permission at support@amlok.tech. Identify the institution and business account without including credentials. You may also use the connection controls made available in your deployment. Shopify merchants can uninstall the app through Shopify. Removing the entire app can affect all institutions connected through that installation.",
-          "Withdrawal stops future collection under the affected authorization. It does not automatically erase earlier records or copies independently held by an institution or source provider. Deletion requests are assessed separately under the retention section; information that no longer has a permitted purpose must not be kept merely because it was once authorized."
+          "Withdrawal stops future collection under the affected authorization. It does not automatically erase earlier records or copies independently held by an institution or source provider. Deletion requests are assessed separately under the retention section; information that no longer has a permitted purpose must not be kept merely because it was once authorized.",
+          "You may choose not to provide optional information or authorize an optional connection. If information is necessary for a requested service, declining or withdrawing access can prevent that service from being provided or updated. The institution is responsible for explaining any effect on its own application or customer relationship. Withdrawal does not by itself end an account or cancel an applicable agreement."
         ],
         "links": [
           {
@@ -265,7 +349,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Analysis and institutional decisions",
         "paragraphs": [
           "Amlok supplies data and analytical outputs for financial health intelligence and financial risk assessment. An institution remains responsible for decisions it makes using those outputs, including the appropriate review, explanations, and rights procedures. Outputs may be incomplete, may contain errors, and must be considered with their source dates, assumptions, and limitations.",
-          "If a workflow involves profiling or automated processing with legal or similarly significant effects on an individual, the applicable notices, lawful basis, and review or opt-out rights must be addressed for that workflow. Describing an output as intelligence does not remove those obligations. Contact us and the identified institution about a relevant objection, correction, or request for human review; we will coordinate the part within our responsibility."
+          "If a workflow involves profiling or automated processing with legal or similarly significant effects on an individual, the applicable notices, lawful basis, and review or opt-out rights must be addressed for that workflow. Describing an output as intelligence does not remove those obligations. Contact us and the identified institution about a relevant objection, correction, or request for human review; we will coordinate the part within our responsibility.",
+          "Where applicable law gives you rights concerning an automated decision, you can ask about the personal information used, the reasons and principal factors behind the decision, correction of inaccurate information, and review by a person able to reconsider it. Contact the decision-making institution and Amlok for the relevant parts of that request. Describing a person as involved does not establish meaningful review if that person cannot affect the decision."
         ]
       },
       {
@@ -274,6 +359,7 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "Website contact and journal-signup features prepare a message in your email application. Preparing a draft does not submit it to an Amlok website form database; we receive it when you send it. Your email provider handles drafts and messages under its own terms.",
           "The website requests Cal.com’s booking script when you select a scheduling link. Amlok does not automatically forward the page’s query parameters to the booking experience. When you open scheduling, Cal.com receives associated technical requests and the information you choose to submit. Keep personal or confidential information out of website URLs and booking notes.",
+          "Some pages request institution logos from the institution’s own website or an external asset host. Your browser sends technical request information, including an IP address and browser details, to that host when it loads the image. Displaying a logo does not give that institution access to your Amlok account or financial records, and does not make it an Amlok-contracted subprocessor.",
           "External links, including social and AI-summary links, take you to services with their own practices. Optional marketing requests are separate from necessary service communications; contact us to stop optional messages."
         ],
         "links": [
@@ -291,23 +377,52 @@ export const legalPolicies: LegalPolicy[] = [
         "id": "sharing",
         "title": "Recipients and service providers",
         "paragraphs": [
-          "Information is disclosed to the institution identified in your authorized connection and the personnel it authorizes for the stated purpose. We also use service providers for functions such as hosting, storage, security, communications, scheduling, and other expressly enabled services. They receive information appropriate to their function and applicable agreement.",
-          "The marketing website uses Cloudflare infrastructure and Cal.com scheduling. Providers for institutional services depend on the deployed service and may differ from website providers. An integration catalog is not a list of every recipient of your data. Ask support@amlok.tech for the applicable provider register, processing locations, and contractual safeguards.",
+          "Information is disclosed to the institution identified in your authorized connection and the personnel it authorizes for the stated purpose. Service providers receive information appropriate to the function they perform and the applicable agreement. The register separates institutional processing, billing, identity services, development services, and the public website.",
+          "Not every listed provider receives borrower records, and not every service provider acts solely as an Amlok subprocessor. Identity providers and financial-data services may also handle information independently under their own notices. An integration catalog lists available or prospective connections; it is not a declaration that every listed company receives your information.",
+          "The main provider functions are listed below. Review the Trust Center and deployment-specific processing schedule for the contracted entity, services, data categories, locations, onward providers, and applicable change-notice process. These public descriptions do not replace a signed data-processing agreement.",
+          "Provider appointments and material changes to processing follow the applicable agreement and legal requirements, including any required notice, authorization, or opportunity to object. A public provider entry does not itself authorize a new purpose or override a contractual restriction. Ask support@amlok.tech for the change process applicable to your service.",
           "Information may also be disclosed when legally required or lawfully necessary to protect systems or people, investigate misuse, resolve a dispute, or complete a corporate transaction subject to applicable confidentiality and data-protection safeguards. Disclosure remains limited by applicable law and source-provider restrictions."
         ],
         "links": [
           {
+            "label": "Trust Center provider register",
+            "href": "/trust#subprocessors"
+          },
+          {
             "label": "Hosting and provider information",
             "href": "https://docs.amlok.io/security/hosting-and-subprocessors"
           }
+        ],
+        "bullets": [
+          "Microsoft Azure: institutional-platform hosting, account and product services, database and artifact storage, secrets, operational monitoring, and transactional account email. The information depends on the hosted service.",
+          "Stripe: platform billing and service-credit funding, including billing identity and payment or transaction information required by the enabled payment flow. This is separate from borrower payments and from any authorized Stripe financial-data connection.",
+          "Flinks and Plaid: authorized financial-data connections, involving the information selected and permitted for the configured service.",
+          "Baselayer: business-verification and risk information, involving the permitted business details, related-person information, source records, and returned results for the applicable workflow.",
+          "Google, Microsoft, and GitHub: optional user sign-in, involving basic identity, email, authentication, and account-association information. Microsoft’s identity role is distinct from Azure platform hosting.",
+          "GitHub development services: source-code versioning and development workflows, including contributor details, repository content, change history, and workflow metadata. Source control is not the designated repository for customer financial records; sensitive customer information must use approved channels.",
+          "Cloudflare: public website delivery, domain management, and DNS, involving domain and administrative records and relevant network-request metadata. Domain management does not itself make Cloudflare the host of the institutional application database.",
+          "Cal.com: requested meeting scheduling, involving booking details and associated technical requests.",
+          "Mintlify: public documentation hosting, involving documentation content and relevant visitor or interaction information. Visiting documentation is separate from authorizing access to institutional account records."
         ]
       },
       {
         "id": "locations",
         "title": "Processing locations",
         "paragraphs": [
-          "Information may be handled in Canada and other countries where relevant providers or authorized personnel operate. Laws and lawful-access requirements can differ. We do not make a Canada-only processing commitment through this policy.",
-          "Applicable transfer protections and any geographic restrictions are addressed for the service and jurisdiction involved. Storage, backups, operational access, exports, and any authorized model processing must be considered together; the primary database region alone does not establish the complete processing location."
+          "Amlok’s institutional platform is hosted on Microsoft Azure in Canada, with Canada Central used for core hosting. Processing carried out under Amlok’s provider arrangements is contractually restricted to Canada, including storage, backups, and support access. The applicable agreement and processing schedule identify the services and information covered by that restriction.",
+          "This restriction concerns the processing performed for Amlok. It does not mean every provider is headquartered in Canada or that its independent services operate only in Canada. For example, your existing Google, Microsoft, or GitHub account and a provider’s independently maintained source records remain subject to that provider’s own relationship with you and applicable privacy notice.",
+          "Provider corporate location, Amlok-contracted processing location, and an independent service’s processing are distinct. Review the relevant service terms before connecting an account or requesting an optional service. Contact support@amlok.tech for the processing schedule and transfer safeguards applicable to your service; a change to this webpage does not broaden an agreed geographic restriction.",
+          "Canadian processing can still involve a transfer outside your province. Where Québec law applies, relevant handling outside Québec, including elsewhere in Canada, requires the applicable privacy assessment and written safeguards. The Canadian contractual restriction remains in place; a legal rule permitting an international transfer does not itself authorize Amlok to disregard it."
+        ],
+        "links": [
+          {
+            "label": "Provider locations and responsibilities",
+            "href": "/trust#subprocessors"
+          },
+          {
+            "label": "Hosting documentation",
+            "href": "https://docs.amlok.io/security/hosting-and-subprocessors"
+          }
         ]
       },
       {
@@ -318,7 +433,8 @@ export const legalPolicies: LegalPolicy[] = [
           "Raw source records, normalized records, outputs, exports, authorization evidence, security logs, correspondence, and billing records can require different schedules. Contact support@amlok.tech for the schedule applicable to your service. The Console does not currently provide a customer-configurable retention setting. A request acknowledgment is not confirmation that deletion has been completed.",
           "For Shopify Merchant Data, the applicable API terms generally require deletion of originals, copies, and reproductions within 30 days of uninstalling the app, when the data is no longer needed to provide the permitted service, or following an enforceable deletion request. An applicable legal requirement may prohibit or vary deletion. Where that exception applies, retained information is limited to the required purpose; it does not authorize continued collection or unrelated analysis. Shopify must be notified when its deletion requirement cannot be met.",
           "Shopify data-request and redaction events must also be handled within the applicable provider deadlines. A commercial billing cycle or month-end cancellation process does not extend a privacy or provider deletion deadline.",
-          "Deletion must address relevant source records, normalized data, derived records, files, exports, and backups, including preventing erased records from being restored into active use. Any legal exception or backup handling affecting completion must be identified in the response. Amlok deletion does not remove original records held independently by Shopify or another source, and the recipient institution must address copies it holds under its own responsibilities."
+          "Deletion must address relevant source records, normalized data, derived records, files, exports, and backups, including preventing erased records from being restored into active use. Any legal exception or backup handling affecting completion must be identified in the response. Amlok deletion does not remove original records held independently by Shopify or another source, and the recipient institution must address copies it holds under its own responsibilities.",
+          "A legal hold or other retention exception must have an identified basis and scope. Information retained for that purpose is restricted to authorized access and must be reviewed when the reason ends. Backup expiry, restricted recovery copies, and necessary billing or security records must be accounted for in the applicable schedule and completion response. We do not treat an unspecified future use as justification for indefinite retention."
         ],
         "links": [
           {
@@ -336,12 +452,40 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Safeguards and secure communications",
         "paragraphs": [
           "Our safeguards are intended to protect information through measures such as scoped access, tenant separation, encryption, and controlled handling of credentials. The controls and assurance materials applicable to a service must be assessed for that deployment. This policy is not a certification and no transmission or storage method eliminates all risk.",
+          "Azure supplies the underlying platform services; Amlok remains responsible for its application, configuration, access, and agreed processing. Stripe’s payment-service assurance and other providers’ reports apply to their stated scope. A framework or provider badge is not a substitute for assessing the controls, evidence, and responsibilities that apply to your service.",
           "Do not send passwords, access tokens, complete financial files, identity documents, or sensitive account records in an ordinary support email or booking note. We will identify an approved secure channel if additional information is needed."
         ],
         "links": [
           {
             "label": "Security information",
             "href": "/security-compliance"
+          },
+          {
+            "label": "Trust Center",
+            "href": "/trust"
+          },
+          {
+            "label": "Standards and framework scope",
+            "href": "https://docs.amlok.io/security/standards"
+          }
+        ]
+      },
+      {
+        "id": "security-incidents",
+        "title": "Security incidents and breach communications",
+        "paragraphs": [
+          "Report a suspected security or privacy incident to support@amlok.tech or your agreed incident contact. Identify the service, approximate time, and concern without including credentials or complete sensitive records. Use the secure channel we identify if further evidence is needed.",
+          "Incident handling includes assessing the information and people affected, limiting harm, coordinating with relevant providers and institutions, preserving necessary evidence, and considering required notifications. Where Amlok processes information for an institution, its incident obligations and the assistance it provides follow applicable law and the processing agreement; coordination does not remove either party’s own responsibilities.",
+          "We provide required notices and regulatory reports under the thresholds and timelines applicable to the incident. Depending on the law, a record may be required even when individual notification is not. Required communications explain the nature of the incident, relevant information and risks, available protective steps, and a contact for further information to the extent known and legally permitted. An initial notice may be supplemented as the investigation develops."
+        ],
+        "links": [
+          {
+            "label": "Incident-response guidance",
+            "href": "https://docs.amlok.io/security/incident-response"
+          },
+          {
+            "label": "Contact Amlok",
+            "href": "mailto:support@amlok.tech"
           }
         ]
       },
@@ -351,7 +495,9 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "Depending on applicable law and the circumstances, you may have rights to information about processing, access, correction, deletion, portability, objection, restriction, withdrawal of consent, and review of certain automated processing. Rights can have conditions and lawful exceptions. Withdrawing consent does not invalidate earlier lawful processing.",
           "Send privacy requests to support@amlok.tech. We may verify identity or authority using proportionate information and will coordinate with the responsible institution where needed. Requests concerning Shopify shoppers may be made through the merchant; we assist the merchant with data within our control. Correcting source information may also require reviewing affected outputs.",
-          "We handle requests within applicable legal and source-provider deadlines. You may also complain to the relevant regulator, including the Office of the Privacy Commissioner of Canada or another competent provincial, state, or national authority. This policy does not limit statutory rights."
+          "We handle requests within applicable legal and source-provider deadlines. You may also complain to the relevant regulator, including the Office of the Privacy Commissioner of Canada or another competent provincial, state, or national authority. This policy does not limit statutory rights.",
+          "You may use an authorized representative where the law allows. We may ask for proof of the representative’s authority and proportionate identity confirmation, without collecting more information than needed. You do not need to create a new Amlok account solely to submit a privacy request. We do not penalize the lawful exercise of privacy rights; any necessary service limitation caused by withdrawal is explained separately.",
+          "If a request is limited or refused, we explain the applicable reason and available review or complaint route, subject to lawful restrictions. Where an appeal right applies, you may request that review through support@amlok.tech. PIPEDA, applicable provincial privacy laws, and U.S. privacy or financial-sector rules have different scope, exemptions, and rights; this policy does not assert that every regime applies to every person or service."
         ],
         "links": [
           {
@@ -361,6 +507,10 @@ export const legalPolicies: LegalPolicy[] = [
           {
             "label": "Office of the Privacy Commissioner of Canada",
             "href": "https://www.priv.gc.ca/en/report-a-concern/"
+          },
+          {
+            "label": "Canadian and U.S. privacy scope",
+            "href": "https://docs.amlok.io/security/standards"
           }
         ]
       },
@@ -376,7 +526,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Changes and contact",
         "paragraphs": [
           "We will identify the date of an effective policy revision and provide further notice or obtain consent where required. Posting a policy does not authorize an unrelated new use of information or amend a signed agreement by itself.",
-          "Privacy, support, legal, and business enquiries: support@amlok.tech. Mail: Amlok Tech Inc., 15 Iceboat Terrace, Toronto ON M5V 4A5, Canada."
+          "Address privacy, access, correction, deletion, and complaint enquiries to the person responsible for privacy protection through support@amlok.tech. The same address handles support, legal, and business enquiries. Mail: Amlok Tech Inc., 15 Iceboat Terrace, Toronto ON M5V 4A5, Canada."
         ],
         "links": [
           {
@@ -418,7 +568,8 @@ export const legalPolicies: LegalPolicy[] = [
         "bullets": [
           "Language preference: key: amlok-language. Technology: first-party local storage. Purpose: remember the selected language. Duration: until you change it, clear site data, or the browser removes it.",
           "Cal.com booking: third-party script served from app.cal.com. Purpose: initialize and display scheduling when you select a booking link. The script is not requested automatically on page load. Any service-specific storage after opening scheduling follows the provider’s configuration and policy.",
-          "Website delivery: Cloudflare serves the website and handles technical network requests. Infrastructure security mechanisms may vary with configuration and request conditions; a fixed security-cookie lifetime is not specified by this website’s source code.",
+          "Website delivery and domains: Cloudflare serves the website and provides domain management and DNS. Website delivery involves technical network requests; domain management and DNS are distinct from a browser advertising tracker. Infrastructure storage or security mechanisms depend on the enabled service and configuration, so no fixed security-cookie lifetime is asserted here.",
+          "Externally hosted images: some institution logos load from the institution’s website or asset hosts such as Contentful and Webflow. The browser contacts the relevant host to fetch the image. This can disclose technical request information even if no cookie is set; these requests are separate from Amlok’s contracted platform processing.",
           "Advertising and analytics: the current website implementation does not include a first-party advertising tracker or a configured analytics tag such as Google Analytics. This statement does not describe all independent processing by an external service."
         ],
         "links": [
@@ -436,14 +587,53 @@ export const legalPolicies: LegalPolicy[] = [
         "id": "connected-services",
         "title": "Authenticated services and connection flows",
         "paragraphs": [
-          "Authenticated Amlok services use session mechanisms to maintain sign-in and protect access. Some Console screens also store interface preferences or temporary flow state. These mechanisms are distinct from the marketing website’s language preference; availability and configuration depend on the deployed service.",
-          "Amlok Hub may be opened as a hosted link or embedded in an institution’s website. The institution controls its own website cookies and tracking. Shopify and other source providers control cookies and storage on their own authorization pages. Review those parties’ notices as well as Amlok’s.",
-          "Removing browser storage does not revoke server-side access to a connected source or request deletion of previously collected records. Use the connection withdrawal or privacy-request process for those actions. Contact support@amlok.tech for the inventory applicable to your service."
+          "Authenticated Amlok services use sessions and security mechanisms to maintain sign-in and protect access. Some Console screens store interface preferences or temporary invitation and authorization-flow state. These mechanisms are separate from the marketing website’s language preference.",
+          "Choosing Google, Microsoft, or GitHub sign-in sends you through that provider’s authentication service. The provider controls storage on its own domain; Amlok uses its own session and short-lived sign-in-state mechanisms. Basic identity sign-in does not request access to your mailbox, cloud files, or source-code repositories.",
+          "Amlok Hub can be opened as a hosted link or embedded in an institution’s website. The institution controls its own cookies and tracking. Flinks, Plaid, Shopify, and other enabled connection providers control storage used by their own authorization or connection experiences. Baselayer verification and Stripe payment services can have separate provider interactions where the relevant feature is enabled; their inclusion in the provider register does not mean their scripts run on every page.",
+          "The documentation at docs.amlok.io is hosted through Mintlify and has its own reader experience. Its storage and interaction handling are distinct from the public website inventory above. Review the notice and controls applicable to the service you open.",
+          "Clearing browser storage does not revoke server-side access to a connected source or request deletion of previously collected records. Use the withdrawal or privacy-request process for those actions. Contact support@amlok.tech for the inventory applicable to your service."
         ],
         "links": [
           {
             "label": "Withdraw access or request deletion",
             "href": "/privacy-requests"
+          },
+          {
+            "label": "Sign-in information",
+            "href": "/privacy#sign-in"
+          },
+          {
+            "label": "Provider register",
+            "href": "/trust#subprocessors"
+          },
+          {
+            "label": "Hosting and service scope",
+            "href": "https://docs.amlok.io/security/hosting-and-subprocessors"
+          }
+        ]
+      },
+      {
+        "id": "console-storage",
+        "title": "Console storage and sign-in security",
+        "paragraphs": [
+          "The Console uses first-party storage for authenticated access and interface state. The inventory below describes the current application configuration; an authentication-state lifetime does not determine how long underlying account, audit, billing, or financial records are retained.",
+          "Sign-out revokes the Amlok session and clears its session cookie. Clearing a browser cookie alone does not necessarily revoke every server-side session or an independent provider authorization. Review your account’s sessions and sign-in methods as well as browser storage when you want to remove access."
+        ],
+        "bullets": [
+          "Amlok session cookies: maintain database-backed sign-in. Session lifetime is configured for seven days with renewal during continued use; sessions can end earlier through revocation or sign-out. Production session cookies use HttpOnly, Secure, and SameSite=Lax protections. Session tokens are not stored in local storage.",
+          "OAuth and multi-factor state: short-lived security state links a sign-in request to its response and prevents replay. The multi-factor challenge is configured for up to ten minutes. This state does not grant access to your mailbox, files, repositories, or financial accounts.",
+          "Workspace invitations: the Console uses tab session storage and a narrowly scoped, HttpOnly continuation cookie to resume an invitation. The continuation expires with the invitation and is cleared on acceptance. It is separate from the provider’s sign-in service.",
+          "Interface preferences: the sidebar_state cookie remembers whether the Console sidebar is expanded, with a configured lifetime of seven days. Some setup notices use local storage; Sandbox preparation and dismissal state can use tab session storage. These are interface records, not a record of consent for financial-data collection.",
+          "Email preferences: a temporary token may be retained in tab session storage while you complete the email-preference flow. Keeping a page open does not itself authorize unrelated marketing or financial-source access."
+        ],
+        "links": [
+          {
+            "label": "Privacy and retention",
+            "href": "/privacy#retention"
+          },
+          {
+            "label": "Sign-in information",
+            "href": "/privacy#sign-in"
           }
         ]
       },
@@ -466,7 +656,7 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Managing browser storage",
         "paragraphs": [
           "Use your browser’s privacy or site-data settings to inspect, block, or remove cookies and local storage. Clear data for this website’s domain to remove the saved language preference. If you also want to manage an external provider’s stored data, review that provider’s domain separately.",
-          "Clearing site data can reset preferences and sign you out of other services whose data you remove. Blocking scripts or third-party content may prevent the embedded calendar from working. Browser controls usually apply to that browser and device; changing one does not necessarily update another.",
+          "Clearing site data can reset preferences and sign you out of services whose data you remove. Blocking necessary cookies or scripts may prevent sign-in, invitation completion, financial connection, or requested scheduling from working. Browser controls usually apply to that browser and device; changing one does not necessarily update another.",
           "This page does not present a cookie-consent switch because the site does not implement a category-based consent manager. A displayed preference control should not be interpreted as blocking third-party requests unless it actually does so."
         ],
         "links": [
@@ -501,7 +691,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "External links and privacy signals",
         "paragraphs": [
           "Links to social networks, research sources, documentation, and AI-summary services open those destinations under their own storage and privacy practices. Amlok’s browser preference does not control those services.",
-          "This website does not implement a custom response to the legacy Do Not Track signal or a dedicated Global Privacy Control handler. Browser-level blocking and applicable statutory rights remain available. Contact support@amlok.tech for a question about a privacy signal or request; this notice does not limit rights under applicable law."
+          "This website does not implement a custom response to the legacy Do Not Track signal or a dedicated Global Privacy Control handler. Browser-level blocking and applicable statutory rights remain available. Contact support@amlok.tech for a question about a privacy signal or request; this notice does not limit rights under applicable law.",
+          "A provider’s own consent or privacy controls do not change permissions for every Amlok service. Where applicable law requires an opt-out, consent, or privacy-signal response for a particular activity, that obligation must be assessed for the actual activity; the absence of a custom website control does not remove statutory rights. Contact support@amlok.tech about a choice you cannot exercise through the displayed controls."
         ]
       },
       {
@@ -539,7 +730,7 @@ export const legalPolicies: LegalPolicy[] = [
         "id": "agreement",
         "title": "Your connection agreement",
         "paragraphs": [
-          "These terms are between you, acting for the business you are authorized to represent, and Amlok Tech Inc. They govern use of Amlok Hub and the Shopify connection when these terms are presented and accepted during authorization. They do not make you a party to the institution’s separate Amlok subscription.",
+          "These terms are between you, acting for the business you are authorized to represent, and Amlok Tech Inc. They govern Amlok Hub and supported business-account connections when these terms are presented and accepted during authorization. They do not make you a party to the institution’s separate Amlok subscription.",
           "Amlok provides technology for financial health intelligence and financial risk assessment. A connection permits specified business information to be collected and shared with the institution identified to you for the disclosed purpose. The institution’s own relationship with you is governed by its notices and agreements."
         ],
         "links": [
@@ -558,7 +749,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Your authority and responsibilities",
         "paragraphs": [
           "You must have authority to connect the selected business account and grant the specified permissions. Check the institution and account details before confirming. Do not connect accounts belonging to another business without authority or provide passwords or access tokens to an unauthorized person.",
-          "You remain responsible for notices, consent, or other lawful authority required for information about shoppers or other individuals within your business records. Installing an app does not override those obligations, provider restrictions, or an individual’s rights."
+          "You remain responsible for notices, consent, or other lawful authority required for information about shoppers or other individuals within your business records. Installing an app does not override those obligations, provider restrictions, or an individual’s rights.",
+          "Provide accurate connection details and notify Amlok or the institution if authority changes or an account should no longer be accessed. Where the records identify other people, use the service only for the disclosed lawful business purpose and respect any source-specific restrictions. A technical ability to connect is not proof that all required notices or permissions exist."
         ]
       },
       {
@@ -567,12 +759,22 @@ export const legalPolicies: LegalPolicy[] = [
         "paragraphs": [
           "When you confirm a connection, you authorize Amlok to retrieve the specified information, process it for the disclosed service, and provide the authorized information and outputs to the named institution. We may use service providers as described in the Privacy Policy to carry out that service. Permission is limited by the selected source, accounts, purpose, access mode, and applicable provider rules.",
           "For Shopify, the scope is financial order information and relevant store references, including historical orders where approved. The financial order query excludes buyer names, emails, phone numbers, billing and shipping addresses, payment credentials, and order notes. Required privacy-event processing is described separately in the Privacy Policy.",
-          "Installing the Shopify app alone does not authorize sharing with an institution. Each additional account, store, or recipient requires the applicable authorization. An order-history permission is not unrestricted access to every Shopify data field."
+          "Installing the Shopify app alone does not authorize sharing with an institution. Each additional account, store, or recipient requires the applicable authorization. An order-history permission is not unrestricted access to every Shopify data field.",
+          "Flinks and Plaid can provide supported financial connections; Baselayer can supply business-verification and risk information where the workflow and permitted use apply. The authorization notice and provider permissions identify the information actually involved. Choosing Google, Microsoft, or GitHub to sign in does not itself authorize a financial connection or an institution’s access to your records.",
+          "If a purpose, recipient, or requested data category changes materially, the applicable notice and authorization must be addressed before that changed collection or disclosure. A provider’s ordinary interface update does not expand the permission you granted. Geographic processing commitments and safeguards are described in the Privacy Policy and applicable agreement."
         ],
         "links": [
           {
             "label": "Shopify data and purposes",
             "href": "/privacy#shopify"
+          },
+          {
+            "label": "Financial and verification providers",
+            "href": "/privacy#financial-and-verification-providers"
+          },
+          {
+            "label": "Processing locations",
+            "href": "/privacy#locations"
           }
         ]
       },
@@ -589,8 +791,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Withdrawal, disconnection, and deletion",
         "paragraphs": [
           "You can request withdrawal of a connection or monitoring permission at support@amlok.tech or use the controls available in your deployment. Include the business, source account, and institution without sending credentials. Shopify merchants can uninstall the app in Shopify; uninstalling affects the app installation and may affect multiple connected institutions.",
-          "Withdrawal stops future collection under the affected authorization. It does not by itself erase information already collected or information independently retained by an institution or source. Request deletion separately; applicable legal and Shopify deletion rules govern what must be erased, any lawful exception, and the deadline.",
-          "An institution’s commercial cancellation or billing schedule cannot extend Shopify’s applicable deletion deadline."
+          "Withdrawal stops future collection under the affected authorization. It does not by itself erase information already collected or information independently retained by an institution or source. Request deletion separately; applicable law, source-provider obligations, and permitted exceptions govern what must be erased and the deadline. The Shopify-specific rules are described in the Privacy Policy.",
+          "An institution’s commercial cancellation or billing schedule cannot extend an applicable privacy or source-provider deletion deadline."
         ],
         "links": [
           {
@@ -608,7 +810,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "The institution’s use and decisions",
         "paragraphs": [
           "The identified institution is responsible for the purpose it requests, its access to received information, its policies and decisions, and its notices and rights procedures. Amlok is responsible for the parts of the service and processing within its own control.",
-          "Amlok does not provide financing through the connection or guarantee an institution’s decision. Data and analysis can contain gaps or errors. Contact Amlok about a connection or processing error, and contact the institution about its decision, review, or correction process."
+          "Amlok does not provide financing through the connection or guarantee an institution’s decision. Data and analysis can contain gaps or errors. Contact Amlok about a connection or processing error, and contact the institution about its decision, review, or correction process.",
+          "For a decision that affects you, ask the institution for the explanation, correction, or human-review process required by applicable law. Amlok assists with the records and processing within its responsibility. Rights to challenge a decision are distinct from withdrawing an account connection or requesting deletion."
         ]
       },
       {
@@ -666,7 +869,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Send your request",
         "paragraphs": [
           "Email support@amlok.tech with a subject such as “Privacy request” or “Withdraw connection.” You can also write to Amlok Tech Inc., 15 Iceboat Terrace, Toronto ON M5V 4A5, Canada.",
-          "Tell us which business or institution the request concerns, the service or source involved, the type of request, and a contact method. A store domain or connection reference can help. Provide only the information needed to locate the relationship."
+          "Tell us which business or institution the request concerns, the service or source involved, the type of request, and a contact method. A store domain or connection reference can help. Provide only the information needed to locate the relationship.",
+          "You do not need to open a new account to make a request. If you cannot use email, write to the mailing address above and include a safe way for us to respond. Mark the request for the person responsible for privacy protection."
         ],
         "links": [
           {
@@ -682,11 +886,12 @@ export const legalPolicies: LegalPolicy[] = [
           "Available rights depend on the applicable law and circumstances. Tell us what you need even if you are unsure which category applies."
         ],
         "bullets": [
-          "Information about collection, recipients, purposes, retention, or providers.",
+          "Information about collection, recipients, purposes, retention, provider roles, Canadian processing commitments, or applicable safeguards.",
           "Access to information, a copy in an applicable portable format, or correction of inaccurate records.",
           "Deletion, restriction, objection, or withdrawal of consent where applicable.",
           "Withdrawal of a specific connection or ongoing monitoring permission.",
-          "Assistance with applicable automated-processing review or opt-out rights, or a privacy complaint."
+          "Assistance with applicable automated-processing review or opt-out rights, or a privacy complaint.",
+          "An explanation of the personal information and principal factors used in an applicable automated decision, and routing to the responsible person or institution for meaningful review."
         ]
       },
       {
@@ -694,15 +899,31 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Verification and secure handling",
         "paragraphs": [
           "We may need to verify your identity or authority and the affected account, institution, or records. Verification should be proportionate to the sensitivity and request. Do not send passwords, API tokens, banking credentials, identity-document scans, or complete financial records in the initial email.",
-          "If additional evidence is necessary, we will explain the approved secure method. A support acknowledgment means the request has been received; it is not confirmation that data has been delivered or erased."
+          "If additional evidence is necessary, we will explain the approved secure method. A support acknowledgment means the request has been received; it is not confirmation that data has been delivered or erased.",
+          "An authorized representative may act where applicable law permits. We may request written authority or other appropriate evidence and, when necessary and permitted, confirmation from the individual. Verification must not become a reason to collect unrelated information. We will explain any additional information needed to identify the records or confirm authority."
         ]
       },
       {
         "id": "relationships",
-        "title": "Merchants, institutions, and Shopify shoppers",
+        "title": "Institutions, connected businesses, and source-provider records",
         "paragraphs": [
           "If you connected your business account, identify the institution and source you want us to review. If you are a shopper whose information is held by a Shopify merchant, the merchant can initiate Shopify’s data-request or deletion process. You may also contact Amlok about information within our responsibility.",
-          "For information processed on behalf of an institution or merchant, we coordinate with the responsible organization and assist within our role. We do not disclose another customer’s information without verifying authority. Independent copies held by the institution or original source require that party’s own handling."
+          "For information processed on behalf of an institution or merchant, we coordinate with the responsible organization and assist within our role. We do not disclose another customer’s information without verifying authority. Independent copies held by the institution or original source require that party’s own handling.",
+          "For a Flinks, Plaid, or Baselayer record, identify the provider and affected business or connection. We coordinate requests for information within Amlok’s responsibility; a provider’s independent source records or your Google, Microsoft, or GitHub account may require a request to that provider. Disconnecting an Amlok sign-in method and deleting a provider account are separate actions."
+        ],
+        "links": [
+          {
+            "label": "Provider roles and contacts",
+            "href": "/trust#subprocessors"
+          },
+          {
+            "label": "Sign-in information",
+            "href": "/privacy#sign-in"
+          },
+          {
+            "label": "Financial and verification providers",
+            "href": "/privacy#financial-and-verification-providers"
+          }
         ]
       },
       {
@@ -724,7 +945,8 @@ export const legalPolicies: LegalPolicy[] = [
         "title": "Responses and complaints",
         "paragraphs": [
           "Applicable legal and source-provider deadlines govern the request. We will explain required clarification, the outcome, and any applicable exception or permitted extension. Shopify’s compliance-event handling has its own deadlines and cannot be treated as completed merely because a webhook was acknowledged.",
-          "If you disagree with a response, reply to support@amlok.tech requesting a privacy review. You may also contact the competent privacy regulator, including the Office of the Privacy Commissioner of Canada or another relevant authority."
+          "If you disagree with a response, reply to support@amlok.tech requesting a privacy review. You may also contact the competent privacy regulator, including the Office of the Privacy Commissioner of Canada or another relevant authority.",
+          "If we cannot fulfill all or part of a request, we explain the applicable reason and review or complaint options, subject to legal limits. You may ask for an appeal or further review where the applicable law provides one. Amlok does not penalize the lawful exercise of privacy rights. Withdrawal can affect a service that depends on the information; this is assessed and explained separately from the request itself."
         ],
         "links": [
           {

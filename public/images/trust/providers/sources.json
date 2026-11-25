@@ -1,0 +1,69 @@
+{
+  "reviewed": "2026-11-24",
+  "notes": "Provider-identification marks, self-hosted to avoid third-party image requests. Names remain adjacent. No endorsement is implied. No AI-generated brand artwork.",
+  "assets": {
+    "azure.svg": {
+      "provider": "Microsoft Azure",
+      "source": "https://raw.githubusercontent.com/pheralb/svgl/main/static/library/azure.svg",
+      "reference": "https://azure.microsoft.com/en-us/blog/a-fluent-new-look-for-the-azure-icon/",
+      "note": "Azure product mark; vector matches the Microsoft-published product icon. Distributed by the SVGL asset library."
+    },
+    "microsoft.svg": {
+      "provider": "Microsoft",
+      "source": "https://cal.com/landing/hero/microsoft-logo.svg",
+      "reference": "https://www.microsoft.com/",
+      "note": "Microsoft four-square mark served by Cal.com\u2019s Microsoft integration panel."
+    },
+    "google.png": {
+      "provider": "Google",
+      "source": "https://developers.google.com/static/identity/images/g-logo.png",
+      "reference": "https://developers.google.com/identity/branding-guidelines"
+    },
+    "github.svg": {
+      "provider": "GitHub",
+      "source": "https://brand.github.com/GitHub_Logos.zip",
+      "reference": "https://github.com/logos",
+      "note": "GitHub Logos/SVG/GitHub_Invertocat_Black.svg; unmodified official vector."
+    },
+    "baselayer.png": {
+      "provider": "Baselayer",
+      "source": "https://baselayer.com/favicons/apple-touch-icon.png",
+      "reference": "https://baselayer.com/"
+    },
+    "cloudflare.svg": {
+      "provider": "Cloudflare",
+      "source": "https://www.cloudflare.com/",
+      "reference": "https://www.cloudflare.com/trademark/",
+      "note": "Official nav-logo-icon, colored cf-logo-base variant. Standalone SVG retains original paths and colors; redundant light variant and page classes omitted."
+    },
+    "cal.svg": {
+      "provider": "Cal.com",
+      "source": "https://cal.com/landing/cal-icon.svg",
+      "reference": "https://cal.com/"
+    },
+    "mintlify.svg": {
+      "provider": "Mintlify",
+      "source": "https://www.mintlify.com/",
+      "reference": "https://www.mintlify.com/",
+      "note": "Official header symbol, first three brand paths. Standalone emblem retains original vector coordinates/colors; adjoining wordmark omitted."
+    },
+    "stripe.svg": {
+      "provider": "Stripe",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/stripe.svg",
+      "reference": "https://stripe.com/",
+      "note": "Existing recognizable Stripe S mark; unchanged from connect-logos."
+    },
+    "flinks.jpg": {
+      "provider": "Flinks",
+      "source": "https://cdn.prod.website-files.com/6733567c88ece7f1d9007402/67349ac1936e891beb457710_logo_webclip.jpg",
+      "reference": "https://www.flinks.com/",
+      "note": "Existing official site webclip; unchanged from connect-logos."
+    },
+    "plaid.png": {
+      "provider": "Plaid",
+      "source": "https://plaid.com/assets/img/favicons/apple-touch-icon.png",
+      "reference": "https://plaid.com/",
+      "note": "Existing official site icon; unchanged from connect-logos."
+    }
+  }
+}
