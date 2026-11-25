@@ -27,13 +27,8 @@ export function FrameworkBadge({ kind }: { kind: TrustFramework['badge'] }) {
     <path d="M26 30h46m-9-8 9 8-9 8M74 70H28m9-8-9 8 9 8" fill="none" stroke="#376fa0" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
     <text x="50" y="58" fill="#17395f" textAnchor="middle" fontSize="26" fontWeight="700" fontFamily="Arial,sans-serif">FDX</text>
   </svg>;
-  if (kind === 'soc2') return <img className={s.certificationBadge} src="/images/trust/soc2-badge.webp" alt="" width={64} height={64}/>;
-  if (kind === 'soc3') return <svg className={s.certificationBadge} viewBox="0 0 100 100" aria-hidden="true">
-    <circle cx="50" cy="50" r="48" fill="#17395f"/><circle cx="50" cy="50" r="43" fill="none" stroke="#d2e1ed" strokeWidth="1.2"/>
-    <text x="50" y="28" fill="#d2e1ed" textAnchor="middle" fontSize="8" letterSpacing="1.5" fontFamily="Arial,sans-serif">ASSURANCE</text>
-    <text x="50" y="55" fill="#fff" textAnchor="middle" fontSize="24" fontWeight="700" fontFamily="Arial,sans-serif">SOC 3</text>
-    <path d="M29 64h42" stroke="#8fb6ce"/><text x="50" y="77" fill="#d2e1ed" textAnchor="middle" fontSize="8" letterSpacing="1" fontFamily="Arial,sans-serif">GENERAL USE</text>
-  </svg>;
+  // AICPA's service-organization SOC mark applies to both reports; keep the artwork identical.
+  if (kind === 'soc2' || kind === 'soc3') return <img className={s.certificationBadge} src="/images/trust/aicpa-soc-service-organizations.jpg" alt="" width={64} height={64}/>;
   if (kind === 'iso27001' || kind === 'iso42001') return <svg className={s.certificationBadge} viewBox="0 0 100 100" aria-hidden="true">
     <defs><linearGradient id={gradient} x1="0" y1="0" x2="1" y2="1"><stop stopColor="#275488"/><stop offset="1" stopColor="#142f58"/></linearGradient></defs>
     <circle cx="50" cy="50" r="48" fill={`url(#${gradient})`}/><circle cx="50" cy="50" r="44" fill="none" stroke="#fff" strokeWidth="1.1"/>
